@@ -1,0 +1,2995 @@
+PROPBANK_2	3
+Rolls - Royce Motor Cars Inc. said it expects its U.S. sales to remain steady at about 1,200 cars in 1990 .
+6	said	2
+who	_	_	said	something	_	_	?	Rolls - Royce Motor Cars Inc.
+what	was	_	said	_	_	_	?	it expects its U.S. sales to remain steady at about 1,200 cars in 1990
+8	expects	4
+who	_	_	expects	something	_	_	?	Rolls - Royce Motor Cars Inc. ### it
+what	is	_	expected	_	_	_	?	its U.S. sales to remain steady at about 1,200 cars in 1990
+when	is	something	expected	_	_	_	?	1990
+how much	is	_	expected	_	_	_	?	1,200 cars
+13	remain	3
+what	will	_	remain	_	_	_	?	U.S. sales
+how	will	something	remain	_	_	_	?	steady at about 1,200 cars in 1990
+when	will	something	remain	_	_	_	?	1990
+
+PROPBANK_28	5
+Considered as a whole , Mr. Lane said , the filings required under the proposed rules `` will be at least as effective , if not more so , for investors following transactions . ''
+0	considered	3
+what	was	_	considered	_	_	_	?	the filings ### the filings required under the proposed rules
+who	_	_	considered	something	_	_	?	Mr. Lane
+how	was	something	considered	_	_	_	?	as a whole
+7	said	2
+what	was	_	said	_	_	_	?	the filings required under the proposed rules `` will be at least as effective , if not more so , for investors following transactions ### the filings required under the proposed rules `` will be at least as effective , if not more so ### the filings required under the proposed rules `` will be at least as effective
+who	_	_	said	something	_	_	?	Mr. Lane
+11	required	2
+what	is	_	required	_	_	_	?	the filings
+how	is	something	required	_	_	_	?	under the proposed rules
+14	proposed	1
+what	is	_	proposed	_	_	_	?	rules
+31	following	2
+what	will	_	be followed	_	_	_	?	transactions
+what	will	_	follow	something	_	_	?	the filings ### the filings required under the proposed rules
+
+PROPBANK_52	2
+Years ago , he collaborated with the new music gurus Peter Serkin and Fred Sherry in the very countercultural chamber group Tashi , which won audiences over to dreaded contemporary scores like Messiaen 's `` Quartet for the End of Time . ''
+4	collaborated	4
+when	did	someone	collaborate	_	_	_	?	Years ago
+what	did	someone	collaborate	_	in	_	?	the very countercultural chamber group Tashi
+who	_	_	collaborated	_	with	someone	?	he
+who	did	someone	collaborate	_	with	_	?	the new music gurus ### Peter Serkin ### Fred Sherry
+24	won	4
+who	_	_	won	something	over	_	?	the very countercultural chamber group Tashi ### he ### Peter SerkinFred Sherry
+what	was	_	won	_	over to	_	?	dreaded contemporary scores like Messiaen 's `` Quartet for the End of Time . ''
+who	was	_	won	_	over to	something	?	audiences
+when	was	something	won	_	over	_	?	Years ago
+
+PROPBANK_55	1
+But you ca n't dismiss Mr. Stoltzman 's music or his motives as merely commercial and lightweight .
+4	dismiss	2
+what	ca n't	someone	dismiss	_	_	_	?	Mr. Stoltzman 's music ### his motives as merely commercial and lightweight
+who	ca n't	_	dismiss	something	_	_	?	you
+
+PROPBANK_77	3
+He also unfortunately illustrated this intricate , jazzy tapestry with Mr. Pearson 's images , this time of geometric or repeating objects , in a kitschy mirroring of the musical structure that was thoroughly distracting from Mr. Reich 's piece and Mr. Stoltzman 's elegant execution of it .
+3	illustrated	3
+what	is	_	illustrated	_	_	_	?	this intricate , jazzy tapestry with Mr. Pearson 's images ### geometric or repeating objects
+who	has	_	illustrated	something	_	_	?	he
+how	has	something	been illustrated	_	_	_	?	in a kitschy mirroring of the musical structure
+20	repeating	2
+what	is	_	repeated	_	_	_	?	objects
+where	is	something	being repeated	_	_	_	?	this intricate , jazzy tapestry ### in a kitschy mirroring of the musical structure
+34	distracting	2
+what	was	_	distracting	_	_	_	?	a kitschy mirroring of the musical structure
+what	was	something	being distracted	_	from	_	?	Mr. Reich 's piece ### Mr. Stoltzman 's elegant execution of it
+
+PROPBANK_89	3
+This is the U.N. group that managed to traduce its own charter of promoting education , science and culture .
+6	managed	2
+what	did	something	manage	_	_	_	?	to traduce its own charter ### to traduce its own charter of promoting education , science and culture
+what	_	_	managed	something	_	_	?	the U.N. group ### This
+8	traduce	2
+what	was	_	traduced	_	_	_	?	its own charter ### its own charter of promoting education , science and culture
+what	_	_	traduced	something	_	_	?	This ### the U.N. group
+13	promoting	2
+what	should	_	have been promoted	_	_	_	?	education , science and culture ### education ### science ### culture
+what	should	_	have been promoting	something	_	_	?	This ### the U.N. group
+
+PROPBANK_90	1
+Ever since , the remaining members have been desperate for the United States to rejoin this dreadful group .
+4	remaining	2
+who	_	_	remains	_	_	_	?	members
+when	has	something	remained	_	_	_	?	Ever since
+
+PROPBANK_92	2
+But we can think of many reasons to stay out for the foreseeable future and well beyond .
+3	think	2
+who	can	_	think	_	of	something	?	we
+what	can	someone	think	_	of	_	?	many reasons to stay out for the foreseeable future and well beyond
+8	stay	3
+who	_	_	stays	_	of	something	?	we
+why	does	someone	stay	_	_	_	?	for the foreseeable future and well beyond
+where	does	someone	stay	_	_	_	?	out
+
+PROPBANK_103	1
+He has n't been able to replace the M'Bow cabal .
+6	replace	2
+who	has n't	_	replaced	something	_	_	?	He
+what	has n't	_	been replaced	_	_	_	?	the M'Bow cabal
+
+PROPBANK_104	2
+Soviets remain in charge of education programs , a former head of an African military tribunal for executions is in charge of culture , and a hard - line Polish communist in exile directs the human - rights and peace division .
+1	remain	2
+who	_	_	remained	_	to	do something	?	Soviets
+what	is	_	remained	_	_	_	?	in charge of education programs
+33	directs	2
+who	_	_	directs	something	_	_	?	a hard - line Polish communist in exile
+what	does	someone	direct	_	_	_	?	human - rights and peace division
+
+PROPBANK_128	1
+A similar technique is almost impossible to apply to other crops , such as cotton , soybeans and rice .
+7	apply	2
+what	might not	_	apply	_	to	something	?	A similar technique
+where	might	something	be applied	_	_	_	?	to other crops , such as cotton , soybeans and rice
+
+PROPBANK_190	3
+Crouched at shortstop , Bert Campaneris , once Oakland 's master thief , effortlessly scoops up a groundball and flips it to second .
+0	crouched	2
+who	is	_	crouched	_	_	_	?	Bert Campaneris ### Oakland 's master thief
+where	is	someone	crouched	_	_	_	?	at shortstop
+14	scoops	3
+who	_	_	scoops	something	_	_	?	Bert Campaneris ### Oakland 's master thief
+what	does	someone	scoop	_	_	_	?	a groundball
+how	does	someone	scoop	something	_	_	?	effortlessly
+19	flips	3
+who	_	_	flips	something	_	_	?	Bert Campaneris ### Oakland 's master thief
+what	does	someone	flip	_	_	_	?	a groundball
+where	does	someone	flip	something	to	_	?	second
+
+PROPBANK_206	1
+`` Nothing can be better than this , '' says Don Sider , owner of the West Palm Beach Tropics .
+9	says	2
+who	_	_	said	something	_	_	?	Don Side ### owner of the West Palm Beach Tropics
+what	was	_	said	_	_	_	?	Nothing can be better than this
+
+PROPBANK_207	1
+Early in the morning Mr. Sider , an estate lawyer , pores over last wills and testaments .
+11	pores	3
+who	_	_	pores	_	over	something	?	Mr. Sider ### an estate lawyer
+when	does	someone	pore	_	over	something	?	Early in the morning
+what	does	someone	pore	_	over	_	?	last wills and testaments
+
+PROPBANK_223	2
+Now Mr. Broberg , a lawyer , claims he 'd play for free .
+7	claims	3
+who	_	_	claims	something	_	_	?	Mr. Broberg ### a lawyer ### he
+what	did	someone	claim	_	_	_	?	he 'd play for free
+what	did	someone	claim	something	for	_	?	free
+10	play	3
+who	would	_	play	_	_	_	?	Mr. Broberg ### a lawyer ### he
+what	would	someone	play	_	for	_	?	free
+how	would	someone	play	_	_	_	?	for free
+
+PROPBANK_254	2
+And do n't expect many complete games by pitchers -- perhaps three out of 288 , laughs Mr. Fingers , the former Oakland reliever .
+3	expect	3
+what	should n't	_	be expected	_	_	_	?	many complete games by pitchers
+who	would n't	_	expect	something	_	_	?	Mr. Fingers ### former Oakland reliever .
+what	should	_	be expected	_	_	_	?	perhaps three out of 288
+16	laughs	2
+who	_	_	laughs	_	_	_	?	Mr. Fingers ### former Oakland reliever .
+what	did	someone	laughed	_	_	_	?	do n't expect many complete games by pitchers -- perhaps three out of 288
+
+PROPBANK_260	3
+`` I wo n't be throwing 90 mph , but I will throw 80 - plus , '' he says .
+5	throwing	2
+who	is	_	throwing	something	_	_	?	he
+what	wo n't	_	be thrown	_	_	_	?	90 mph
+12	throw	2
+what	will	_	be thrown	_	_	_	?	80 - plus
+who	is	_	throwing	something	_	_	?	he
+19	says	2
+who	_	_	said	something	_	_	?	he
+what	did	someone	say	_	_	_	?	`` I wo n't be throwing 90 mph , but I will throw 80 - plus , ''
+
+PROPBANK_279	4
+Hani Zayadi was appointed president and chief executive officer of this financially troubled department store chain , effective Nov. 15 , succeeding Frank Robertson , who is retiring early .
+3	appointed	3
+who	was	_	appointed	_	_	_	?	Hani Zayadi
+what	was	someone	appointed	something	of	_	?	this financially troubled department store chain
+where	was	someone	appointed	_	_	_	?	president and chief executive officer of this financially troubled department store chain
+12	troubled	2
+what	is	_	troubled	_	_	_	?	department store chain
+how	is	something	troubled	_	_	_	?	financially
+21	succeeding	5
+who	was	_	succeeded	_	_	_	?	Frank Robertson
+why	was	someone	succeeded	_	_	_	?	retiring early
+who	_	_	succeeded	someone	_	_	?	Hani Zayadi
+when	will	someone	be succeeded	_	_	_	?	Nov. 15
+where	is	someone	succeeding	someone	_	_	?	president and chief executive officer of this financially troubled department store chain
+27	retiring	3
+who	is	_	retiring	_	_	_	?	Frank Robertson
+where	has	someone	retired	_	_	_	?	president and chief executive officer of this financially troubled department store chain
+when	will	someone	retire	_	_	_	?	Nov. 15
+
+PROPBANK_280	2
+Mr. Zayadi was previously president and chief operating officer of Zellers Inc. , a retail chain that is owned by Toronto - based Hudson 's Bay Co. , Canada 's largest department store operator .
+18	owned	2
+who	_	_	owns	something	_	_	?	Toronto - based Hudson 's Bay Co ### Canada 's largest department store operator
+what	is	_	owned	_	_	_	?	Zellers Inc ### retail chain
+22	based	2
+where	is	something	based	_	_	_	?	Toronto
+what	is	_	based	_	_	_	?	Hudson 's Bay Co. ### Canada 's largest department store operator
+
+PROPBANK_332	2
+Mr. Ridley 's decision fires the starting pistol for perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker .
+4	fires	3
+what	_	_	fires	something	_	_	?	Mr. Ridley 's decision
+what	does	something	fire	_	_	_	?	the starting pistol for perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker
+what	does	something	fire	something	for	_	?	perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker
+6	starting	2
+what	is	_	starting	_	_	_	?	pistol
+what	is	_	starting	something	for	_	?	perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker
+
+PROPBANK_337	3
+`` I ca n't believe they ( GM ) will let Ford have a free run , '' said Stephen Reitman , a European auto industry analyst at UBS - Phillips & Drew .
+4	believe	2
+what	ca n't	someone	believe	_	_	_	?	they ( GM ) will let Ford have a free run
+who	ca n't	_	believe	something	_	_	?	I ### Stephen Reitman ### Stephen Reitman , a European auto industry analyst ### Stephen Reitman , a European auto industry analyst at UBS - Phillips & Drew ### a European auto industry analyst at UBS - Phillips & Drew
+12	have	2
+what	might	someone	have	_	_	_	?	a free run
+who	might	_	have	something	_	_	?	Ford
+18	said	2
+what	was	_	said	_	_	_	?	I ca n't believe they ( GM ) will let Ford have a free run
+who	_	_	said	something	_	_	?	I ### Stephen Reitman ### Stephen Reitman , a European auto industry analyst ### Stephen Reitman , a European auto industry analyst at UBS - Phillips & Drew ### a European auto industry analyst at UBS - Phillips & Drew
+
+PROPBANK_346	1
+The share price was languishing at about 400 pence before Ford 's Sept. 19 announcement of its interest in a minority stake .
+4	languishing	3
+what	was	_	languishing	_	_	_	?	The share price
+how much	was	something	languishing	_	for	_	?	about 400 pence
+when	was	something	languishing	_	_	_	?	before Ford 's Sept. 19 announcement
+
+PROPBANK_359	3
+Jaguar 's own defenses against a hostile bid are weakened , analysts add , because fewer than 3 % of its shares are owned by employees and management .
+9	weakened	2
+what	are	_	weakened	_	_	_	?	Jaguar 's own defenses against a hostile bid
+why	are	something	weakened	_	_	_	?	because fewer than 3 % of its shares are owned by employees and management
+12	add	2
+who	_	_	adds	something	_	_	?	analysts
+what	did	someone	add	_	_	_	?	because fewer than 3 % of its shares are owned by employees and management
+23	owned	2
+how much	are	_	owned	_	by	someone	?	fewer than 3 % of its shares
+who	_	_	owns	something	_	_	?	employees and management
+
+PROPBANK_371	3
+The government , already buffeted by high interest rates and a slowing economy , has been badly hurt by last week 's shake - up in Mrs. Thatcher 's cabinet .
+4	buffeted	2
+who	is	_	buffeted	_	by	something	?	The government
+what	_	_	buffeted	someone	_	_	?	high interest rates and a slowing economy
+11	slowing	1
+what	has	_	slowed	_	_	_	?	economy
+17	hurt	2
+who	has	_	been hurt	_	_	_	?	The government
+what	has	something	been hurt	_	by	_	?	last week 's shake - up in Mrs. Thatcher 's cabinet
+
+PROPBANK_416	1
+Second , the dollar is showing persistent strength despite a slowdown in the U.S. economy shown by economic indicators .
+5	showing	2
+what	_	_	shows	something	_	_	?	the dollar
+what	is	_	being shown	_	by	something	?	persistent strength despite a slowdown in the U.S. economy shown by economic indicators
+
+PROPBANK_439	3
+But although the golden share has been waived , a hostile bidder for Jaguar would still have to alter the British concern 's articles of association which ban shareholdings of more than 15 % .
+7	waived	1
+what	has	_	been waived	_	_	_	?	the golden share
+18	alter	2
+who	would	_	alter	something	_	_	?	a hostile bidder for Jaguar
+what	would	someone	alter	_	_	_	?	the British concern 's articles of association which ban shareholdings of more than 15 %
+27	ban	2
+what	_	_	bans	something	_	_	?	the British concern 's articles of association
+what	does	something	ban	_	_	_	?	shareholdings of more than 15 %
+
+PROPBANK_441	4
+As the London trading session drew to a close , the market was still listening to the parliamentary debate on the economy , with new Chancellor of the Exchequer John Major expected to clarify his approach to the British economy and currency issues .
+5	drew	2
+what	was	_	drawn	_	to	something	?	the London trading session
+what	was	something	drawn	_	to	_	?	a close
+14	listening	3
+who	was	_	listening	_	to	something	?	the market
+what	was	someone	listening	_	to	_	?	the parliamentary debate on the economy
+when	was	someone	listening	_	to	something	?	As the London trading session drew to a close ### still
+31	expected	2
+who	was	_	expected	something	of	_	?	new Chancellor of the Exchequer ### John Major
+what	was	_	expected	_	of	someone	?	to clarify his approach to the British economy and currency issues
+33	clarify	2
+who	would	_	clarify	something	_	_	?	new Chancellor of the Exchequer ### John Major
+what	would	someone	clarify	_	_	_	?	his approach to the British economy and currency issues
+
+PROPBANK_444	3
+Despite the modest gains , traders said the market remains dull , with investors remaining cautiously on the sidelines .
+6	said	3
+who	_	_	said	something	_	_	?	traders
+what	was	_	said	_	_	_	?	the market remains dull , with investors remaining cautiously on the sidelines .
+why	was	something	said	_	_	_	?	Despite the modest gains
+9	remains	2
+what	_	_	remains	something	_	_	?	the market
+how	does	something	remains	_	_	_	?	dull , with investors remaining cautiously on the sidelines .
+14	remaining	3
+who	are	_	remaining	_	on	something	?	investors
+where	is	someone	remaining	_	_	_	?	on the sidelines .
+how	are	someone	remaining	_	on	something	?	cautiously
+
+PROPBANK_451	3
+To make them directly comparable , each index is based on the close of 1969 equaling 100 .
+1	make	3
+what	is	_	made	something	_	_	?	them
+what	is	something	made	_	_	_	?	directly comparable
+how	is	something	made	something	_	_	?	each index is based on the close of 1969 equaling 100
+9	based	3
+what	is	_	based	_	on	something	?	each index
+what	is	something	based	_	on	_	?	the close of 1969 equaling 100
+why	is	something	based	_	on	something	?	To make them directly comparable
+15	equaling	3
+what	_	_	equals	something	_	_	?	the close of 1969
+what	does	something	equal	_	_	_	?	100
+why	does	something	equal	something	_	_	?	To make them directly comparable
+
+PROPBANK_465	2
+Metromedia , headed by John W. Kluge , has interests in telecommunications , robotic painting , computer software , restaurants and entertainment .
+2	headed	2
+who	_	_	heads	something	_	_	?	John W. Kluge
+what	does	someone	head	_	_	_	?	Metromedia
+8	has	2
+what	_	_	has	something	_	_	?	Metromedia
+what	does	something	have	_	_	_	?	interests in telecommunications , robotic painting , computer software , restaurants and entertainment
+
+PROPBANK_487	1
+Most yields on short - term jumbo CDs , those with denominations over $ 90,000 , also moved in the opposite direction of Treasury bill yields .
+17	moved	2
+what	_	_	moved	_	_	somewhere	?	Most yields on short - term jumbo CDs , those with denominations over $ 90,000
+where	did	something	moved	_	_	_	?	in the opposite direction of Treasury bill yields
+
+PROPBANK_509	3
+During the past 25 years , the number of balloonists ( those who have passed a Federal Aviation Authority lighter - than - air test ) have swelled from a couple hundred to several thousand , with some estimates running as high as 10,000 .
+14	passed	3
+who	have	_	passed	something	_	_	?	balloonists
+what	have	someone	passed	_	_	_	?	a Federal Aviation Authority lighter - than - air test
+when	have	someone	passed	something	_	_	?	During the past 25 years
+27	swelled	3
+what	have	_	swelled	_	_	_	?	the number of balloonists ( those who have passed a Federal Aviation Authority lighter - than - air test
+when	has	something	swelled	_	_	_	?	During the past 25 years
+how much	has	something	swelled	_	_	_	?	from a couple hundred to several thousand , with some estimates running as high as 10,000
+39	running	2
+what	is	_	running	_	_	_	?	some estimates
+how much	is	something	running	_	_	_	?	as high as 10,000
+
+PROPBANK_514	2
+Feeling the naggings of a culture imperative , I promptly signed up .
+0	feeling	2
+what	is	someone	feeling	_	_	_	?	naggings ### naggings of a culture imperative
+who	is	_	feeling	something	_	_	?	I
+10	signed	3
+who	_	_	signed	_	up	_	?	I
+how	did	someone	sign	_	up	_	?	promptly
+why	did	someone	sign	_	up	_	?	Feeling the naggings of a culture imperative
+
+PROPBANK_540	2
+Only when one is ascending -- or in our case descending a tad trop rapidement -- does one feel , well , airborne in a picnic basket .
+4	ascending	1
+who	is	_	ascending	_	_	_	?	one
+10	descending	1
+how	is	something	descending	_	_	_	?	a tad trop rapidement
+
+PROPBANK_567	4
+Mr. Mulford said reports of tension between the Treasury and Fed have been exaggerated , insisting that they involved `` nuances . ''
+2	said	3
+who	_	_	said	something	_	_	?	Mr. Mulford
+what	was	_	said	_	_	_	?	reports of tension between the Treasury and Fed have been exaggerated , insisting that they involved `` nuances . ''
+why	was	something	said	_	_	_	?	reports of tension between the Treasury and Fed
+13	exaggerated	1
+what	was	_	exaggerated	_	_	_	?	reports of tension between the Treasury and Fed
+15	insisting	3
+who	is	_	insisting	_	about	something	?	Mr. Mulford
+what	is	someone	insisting	_	_	_	?	involved `` nuances . ''
+why	is	someone	insisting	_	about	something	?	reports of tension between the Treasury and Fed have been exaggerated
+18	involved	4
+what	is	_	involved	_	_	_	?	`` nuances . ''
+what	is	something	involved	_	with	_	?	tension between the Treasury and Fed
+why	is	something	involved	_	_	_	?	reports of tension between the Treasury and Fed have been exaggerated
+who	_	_	involved	something	_	_	?	they
+
+PROPBANK_588	3
+The Soviets complicated the issue by offering to include light tanks , which are as light as 10 tons .
+2	complicated	3
+who	_	_	complicated	something	_	_	?	The Soviets
+what	was	_	complicated	_	by	someone	?	the issue by offering to include light tanks , which are as light as 10 tons ### the issue
+how	has	something	been complicated	_	_	_	?	by offering to include light tanks , which are as light as 10 tons ### by offering to include light tanks
+6	offering	2
+what	is	_	being offered	_	by	someone	?	to include light tanks , which are as light as 10 tons ### to include light tanks
+who	is	_	offering	something	_	_	?	The Soviets
+8	include	2
+what	will	_	be included	_	_	_	?	light tanks ### light tanks , which are as light as 10 tons
+who	will	_	include	something	_	_	?	The Soviets
+
+PROPBANK_604	5
+`` The bottom line is that if we can get that { Warsaw Pact } superiority brought down to parity , we ought to keep pressing ahead as quickly as possible .
+9	get	2
+who	might	_	get	something	_	_	?	we
+what	might	someone	get	_	_	_	?	{ Warsaw Pact } superiority brought down to parity
+16	brought	3
+what	might	_	be brought	_	down	_	?	{ Warsaw Pact } superiority
+who	might	_	have brought	something	_	_	?	we
+how	might	something	be brought	_	down	_	?	to parity
+22	ought	2
+who	_	_	ought	something	_	_	?	we
+what	did	someone	ought	_	_	_	?	to keep pressing ahead as quickly as possible
+24	keep	3
+who	must	_	keep	something	_	_	?	we
+how	must	someone	keep	something	_	_	?	as quickly as possible
+what	must	someone	keep	_	_	doing	?	pressing ahead as quickly as possible
+25	pressing	2
+who	must	_	be pressing	_	_	_	?	We
+how	must	someone	be pressing	_	_	_	?	ahead ### as quickly as possible
+
+PROPBANK_617	5
+Coca - Cola Co. , aiming to boost soft - drink volume in Singapore , said it is discussing a joint venture with Fraser & Neave Ltd. , its bottling franchisee in that country .
+5	aiming	4
+who	_	_	aiming	_	for	something	?	Coca - Cola Co.
+what	is	someone	aiming	_	for	_	?	boost soft - drink volume in Singapore
+why	is	someone	aiming	_	for	something	?	boost soft - drink volume
+where	is	someone	aiming	_	for	_	?	Singapore
+7	boost	4
+what	may	_	boost	something	_	_	?	Coca - Cola Co.
+what	may	_	be boosted	_	_	_	?	soft - drink volume in Singapore
+where	may	something	be boosted	_	_	_	?	Singapore
+how	may	something	be boosted	_	_	_	?	joint venture with Fraser & Neave Ltd. , its bottling franchisee in that country .
+15	said	3
+who	_	_	said	something	_	_	?	Coca - Cola Co.
+what	was	_	said	_	_	_	?	it is discussing a joint venture with Fraser & Neave Ltd. , its bottling franchisee in that country .
+why	was	something	said	_	_	_	?	aiming to boost soft - drink volume in Singapore
+18	discussing	3
+who	_	_	discusses	something	_	_	?	Coca - Cola Co. ### Fraser & Neave Ltd. ### bottling franchisee
+what	is	_	being discussed	_	_	_	?	joint venture
+why	is	something	being discussed	_	_	_	?	boost soft - drink volume in Singapore
+29	bottling	4
+who	is	_	bottling	something	_	_	?	Fraser & Neave Ltd.
+what	is	_	being bottled	_	_	_	?	Coca - Cola
+why	is	someone	bottling	something	_	_	?	bottling franchisee in that country .
+where	is	someone	bottling	something	_	_	?	Singapore
+
+PROPBANK_632	2
+Fraser & Neave , which also has interests in packaging , beer and dairy products , holds the Coke licenses for Malaysia and Brunei , where per - capita consumption is n't as high as in Singapore .
+6	has	2
+who	_	_	has	something	_	_	?	Fraser & Neave
+what	does	someone	have	_	_	_	?	interests in packaging , beer and dairy products
+16	holds	3
+who	_	_	holds	something	_	_	?	Fraser & Neave
+what	does	someone	hold	_	_	_	?	the Coke licenses for Malaysia and Brunei
+where	does	someone	hold	something	_	_	?	Malaysia and Brunei
+
+PROPBANK_639	1
+As of Sept. 30 , American Brands had 95.2 million shares outstanding .
+7	had	3
+what	_	_	had	something	_	_	?	American Brands
+what	did	someone	have	_	_	_	?	95.2 million shares outstanding
+when	did	someone	have	something	_	_	?	As of Sept. 30
+
+PROPBANK_669	3
+Employers could also pay a subminimum `` training wage '' for 90 days to new workers who are up to 19 years old , and then for another 90 days if the company institutes a specific training program for the newcomers .
+3	pay	2
+who	could	_	pay	something	_	_	?	Employers
+what	could	_	be paid	_	_	_	?	a subminimum `` training wage ''
+33	institutes	3
+who	_	_	institutes	something	_	_	?	company
+what	could	_	be instituted	_	_	_	?	a specific training program for the newcomers .
+who	could	_	be instituted	_	for	_	?	the newcomers .
+36	training	2
+what	is	_	training	_	_	_	?	program
+what	is	_	training	something	for	_	?	the newcomers .
+
+PROPBANK_697	2
+The price was n't disclosed but one analyst estimated that it was $ 150 million .
+4	disclosed	1
+what	was n't	_	disclosed	_	_	_	?	The price
+8	estimated	3
+who	_	_	estimated	something	_	_	?	one analyst
+how much	did	someone	estimate	something	_	_	?	$ 150 million
+what	was	_	estimated	_	_	_	?	The price
+
+PROPBANK_770	5
+He discovered a 75 - cent discrepancy in the charges made to various departments for computer time and traced it to a user named `` Hunter , '' who had no valid billing address .
+1	discovered	2
+who	_	_	discovered	something	_	_	?	He
+what	did	someone	discover	_	_	_	?	a 75 - cent discrepancy in the charges made to various departments for computer time
+10	made	2
+who	_	_	made	something	_	_	?	Hunter ### user
+what	was	_	made	_	_	_	?	a 75 - cent discrepancy in the charges made to various departments for computer time
+18	traced	3
+who	_	_	traced	something	_	_	?	He
+who	was	_	traced	_	_	_	?	Hunter ### user
+how	was	someone	traced	_	_	_	?	discovered a 75 - cent discrepancy in the charges made to various departments for computer time
+23	named	2
+who	was	_	named	something	_	_	?	user
+what	was	someone	named	_	_	_	?	Hunter
+29	had	2
+who	does n't	_	have	something	_	_	?	user ### Hunter
+what	does n't	someone	have	_	_	_	?	valid billing address
+
+PROPBANK_771	2
+Mr. Stoll suspected the intruder was one of those precocious students who has fun breaking into computers .
+2	suspected	2
+what	was	_	suspected	_	_	_	?	the intruder was one of those precocious students who has fun breaking into computers ### the intruder was one of those precocious students
+who	_	_	suspected	something	_	_	?	Mr. Stoll
+14	breaking	2
+what	does	someone	break	_	into	_	?	computers
+who	_	_	breaks	_	into	something	?	those precocious students ### precocious students ### students
+
+PROPBANK_807	2
+RISC technology speeds up a computer by simplifying the internal software .
+2	speeds	3
+what	_	_	speeds	something	_	_	?	RISC technology
+what	is	_	sped	_	by	something	?	computer
+how	is	something	speed	_	_	_	?	simplifying the internal software .
+7	simplifying	2
+what	is	_	simplified	_	_	_	?	internal software .
+how	is	something	simplified	_	_	_	?	RISC technology
+
+PROPBANK_831	5
+`` To allow this massive level of unfettered federal borrowing without prior congressional approval would be irresponsible , '' said Rep. Fortney Stark ( D. , Calif. ) , who has introduced a bill to limit the RTC 's authority to issue debt .
+2	allow	2
+what	might	_	be allowed	_	_	_	?	this massive level of unfettered federal borrowing ### this massive level of unfettered federal borrowing without prior congressional approval ### federal borrowing
+how	might	something	be allowed	_	_	_	?	without prior congressional approval
+19	said	2
+what	was	_	said	_	_	_	?	To allow this massive level of unfettered federal borrowing without prior congressional approval would be irresponsible
+who	_	_	said	something	_	_	?	Rep. Fortney Stark ( D. , Calif. ) ### Rep. Fortney Stark ### Fortney Stark
+31	introduced	3
+what	has	_	been introduced	_	_	_	?	a bill ### a bill to limit the RTC 's authority to issue debt
+who	has	_	introduced	something	_	_	?	Rep. Fortney Stark ( D. , Calif. ) ### Rep. Fortney Stark ### Fortney Stark
+why	has	something	been introduced	_	_	_	?	to limit the RTC 's authority ### to limit the RTC 's authority to issue debt
+35	limit	2
+what	might	_	be limited	_	_	_	?	the RTC 's authority ### the RTC 's authority to issue debt
+what	might	_	limit	something	_	_	?	a bill
+41	issue	2
+what	might	_	be issued	_	_	_	?	debt
+who	might	_	issue	something	_	_	?	the RTC
+
+PROPBANK_839	6
+`` If working capital financing is not provided , '' he said , `` the RTC may have to slow { S&L sales } or dump acquired assets through fire sales .
+7	provided	1
+what	is n't	_	provided	_	_	_	?	working capital financing
+11	said	2
+who	_	_	said	something	_	_	?	he
+what	was	_	said	_	_	_	?	If working capital financing is not provided ### the RTC may have to slow { S&L sales } or dump acquired assets through fire sales
+17	have	2
+who	may	_	have	_	to	do something	?	the RTC
+what	may	someone	have	_	to	do	?	slow { S&L sales } or dump acquired assets through fire sales
+19	slow	3
+what	may	_	be slowed	_	_	_	?	S&L sales
+who	might	_	slow	something	_	_	?	the RTC
+why	might	someone	slow	something	_	_	?	If working capital financing is not provided
+25	dump	3
+who	will	_	dump	something	_	_	?	the RTC
+what	will	_	be dumped	_	_	_	?	acquired assets through fire sales
+why	will	someone	dump	something	_	_	?	If working capital financing is not provided
+26	acquired	2
+what	has	_	been acquired	_	_	_	?	assets through fire sales
+what	has	something	been acquired	_	through	_	?	fire sales
+
+PROPBANK_840	3
+Panhandle Eastern Corp. said it applied , on behalf of two of its subsidiaries , to the Federal Energy Regulatory Commission for permission to build a 352 - mile , $ 273 million pipeline system from Pittsburg County , Okla. , to Independence , Miss .
+3	said	2
+who	_	_	said	something	_	_	?	Panhandle Eastern Corp. ### it
+what	was	_	said	_	_	_	?	it applied , on behalf of two of its subsidiaries , to the Federal Energy Regulatory Commission for permission to build a 352 - mile , $ 273 million pipeline system from Pittsburg County , Okla. , to Independence , Miss .
+5	applied	2
+who	_	_	applied	something	_	_	?	Panhandle Eastern Corp. ### it
+what	was	_	applied	_	_	_	?	permission to build a 352 - mile , $ 273 million pipeline system from Pittsburg County , Okla. , to Independence , Miss .
+24	build	3
+what	will	_	be built	_	_	_	?	a 352 - mile , $ 273 million pipeline system from Pittsburg County , Okla. , to Independence , Miss .
+who	will	_	build	something	_	_	?	Panhandle Eastern Corp. ### it
+where	will	something	be built	_	_	_	?	from Pittsburg County , Okla. , to Independence , Miss .
+
+PROPBANK_875	2
+A year earlier UniFirst earned $ 2.4 million , or 24 cents a share adjusted for the split .
+4	earned	4
+who	_	_	earned	something	_	_	?	UniFirst
+how much	did	someone	earn	_	_	_	?	$ 2.4 million ### 24 cents a share
+when	did	someone	earn	something	_	_	?	A year earlier
+what	did	someone	earn	something	for	_	?	the split
+14	adjusted	3
+what	was	something	adjusted	_	for	_	?	the split
+how much	was	_	adjusted	_	_	_	?	24 cents a share
+what	was	_	adjusted	_	_	_	?	a share
+
+PROPBANK_887	3
+A spokesman said HealthVest has paid two of the three banks it owed interest to in October and is in negotiations with the third bank .
+2	said	2
+who	_	_	said	something	_	_	?	A spokesman
+what	did	someone	say	_	_	_	?	HealthVest has paid two of the three banks it owed interest to in October and is in negotiations with the third bank
+5	paid	3
+who	has	_	paid	something	_	_	?	HealthVest
+when	did	someone	pay	someone	_	_	?	in October
+what	did	someone	pay	_	_	_	?	two of the three banks it owed interest to
+12	owed	3
+what	did	someone	owe	_	_	_	?	interest
+who	_	_	owed	something	_	_	?	HealthVest
+who	did	someone	owe	something	to	_	?	banks
+
+PROPBANK_890	2
+I was pleased to note that your Oct. 23 Centennial Journal item recognized the money - fund concept as one of the significant events of the past century .
+4	note	2
+what	was	_	noted	_	_	_	?	that your Oct. 23 Centennial Journal item recognized the money - fund concept as one of the significant events of the past century
+who	_	_	noted	something	_	_	?	I
+12	recognized	4
+what	_	_	recognized	something	_	_	?	your Oct. 23 Centennial Journal item
+what	was	_	recognized	_	_	_	?	the money - fund concept
+when	was	something	recognized	_	_	_	?	Oct. 23
+how	was	something	recognized	_	_	_	?	as one of the significant events of the past century
+
+PROPBANK_901	2
+But then Judge O'Kicki often behaved like a man who would be king -- and , some say , an arrogant and abusive one .
+5	behaved	3
+who	_	_	behaved	_	_	_	?	Judge O'Kicki
+how	did	someone	behave	_	_	_	?	like a man who would be king -- and , some say , an arrogant and abusive one
+when	did	someone	behave	_	_	_	?	often
+17	say	3
+who	_	_	said	something	_	_	?	some
+what	did	someone	say	_	_	_	?	an arrogant and abusive one
+why	did	someone	say	something	_	_	?	Judge O'Kicki often behaved like a man who would be king
+
+PROPBANK_929	3
+After practicing law locally , he was elected to his first 10 - year term as judge in 1971 ; in 1981 , he was effectively re - elected .
+1	practicing	3
+who	_	_	practices	something	_	_	?	he
+what	does	someone	practice	_	_	_	?	law
+where	does	someone	practice	something	_	_	?	locally
+7	elected	3
+who	was	_	elected	_	to	something	?	he
+what	was	someone	elected	_	to	_	?	his first 10 - year term as judge
+when	was	someone	elected	_	to	something	?	1971
+28	elected	4
+who	was	_	elected	_	_	_	?	he
+how	was	someone	elected	_	_	_	?	effectively
+when	was	someone	elected	_	_	_	?	1981
+what	was	someone	elected	_	as	_	?	judge
+
+PROPBANK_930	1
+Six years ago , Judge O'Kicki was voted president of the Pennsylvania Conference of State Trial Judges by the state 's 400 judges .
+7	voted	3
+who	was	_	voted	something	_	_	?	Judge O'Kicki
+who	_	_	voted	someone	to	something	?	the state 's 400 judges .
+what	was	someone	voted	_	to	_	?	president of the Pennsylvania Conference of State Trial Judges
+
+PROPBANK_940	5
+`` Nobody told us ; nobody called us , '' says an official close to the case who asked not to be named .
+2	told	2
+who	_	_	told	someone	_	something	?	Nobody
+who	was n't	_	told	something	_	_	?	us
+6	called	2
+who	_	_	called	someone	_	_	?	nobody
+who	was n't	_	called	_	_	_	?	us
+10	says	2
+what	does	someone	say	_	_	_	?	Nobody told us ; nobody called us ### Nobody told us ### nobody called us
+who	_	_	says	something	_	_	?	an official ### an official close to the case ### an official close to the case who asked not to be named
+18	asked	2
+what	did	someone	ask	_	_	_	?	not to be named
+who	_	_	asked	something	_	_	?	an official ### an official close to the case
+22	named	1
+who	was n't	_	named	_	_	_	?	an official ### an official close to the case
+
+PROPBANK_956	4
+One had best not dance on top of a coffin until the lid is sealed tightly shut . ''
+1	had	2
+who	_	_	had	something	_	_	?	One
+what	_	_	had	someone	_	do	?	best not dance on top of a coffin until the lid is sealed tightly shut
+4	dance	3
+who	had n't	_	danced	_	on	something	?	One
+where	might	someone	dance	_	_	_	?	on top of a coffin
+when	might	someone	dance	_	on	something	?	until the lid is sealed tightly shut
+14	sealed	2
+what	is	_	sealed	_	_	_	?	the lid
+how	is	something	sealed	_	_	_	?	tightly shut
+16	shut	2
+how	should	something	be shut	_	_	_	?	sealed tightly
+what	should	_	be shut	_	_	_	?	the lid
+
+PROPBANK_1047	1
+The issue is backed by a 12 % letter of credit from Credit Suisse .
+3	backed	2
+what	is	_	backed	_	by	something	?	The issue
+what	is	something	backed	_	by	_	?	a 12 % letter of credit from Credit Suisse
+
+PROPBANK_1049	1
+$ 300 million of bonds due Nov. 16 , 1993 , with equity - purchase warrants , indicating a 3 3\/4 % coupon at par via Nomura International Ltd .
+17	indicating	3
+how much	does	something	indicate	_	_	_	?	a 3 3\/4 % coupon
+what	_	_	indicates	something	_	_	?	equity - purchase warrants
+what	does	something	indicate	_	_	_	?	a 3 3\/4 % coupon at par via Nomura International Ltd
+
+PROPBANK_1073	2
+The surprise announcement came after the IRS broke off negotiations with Mr. Hunt on a settlement of the one - time tycoon 's personal bankruptcy case .
+3	came	2
+when	did	something	come	_	_	_	?	after the IRS broke off negotiations with Mr. Hunt
+what	_	_	came	_	_	_	?	The surprise announcement
+7	broke	3
+who	_	_	broke	_	off	something	?	the IRS
+what	did	someone	break	_	off	_	?	negotiations
+who	did	someone	break	_	with	_	?	Mr. Hunt ### the one - time tycoon
+
+PROPBANK_1096	2
+Earlier this year , Blackstone Group , a New York investment bank , had no trouble selling out a special $ 570 million mortgage - securities trust it created for Japanese investors .
+16	selling	3
+who	had	_	been selling	_	out	something	?	Blackstone Group , a New York investment bank
+what	had	someone	been selling	_	out	_	?	a special $ 570 million mortgage - securities trust it created for Japanese investors
+when	had	someone	been selling	_	out	something	?	Earlier this year
+28	created	3
+who	_	_	created	something	_	_	?	it ### Blackstone Group , a New York investment bank
+what	was	_	created	_	_	_	?	a special $ 570 million mortgage - securities trust
+who	was	something	created	_	for	_	?	Japanese investors
+
+PROPBANK_1097	5
+Industrial Bank of Japan , which claims to be the biggest Japanese buyer of U.S. mortgage securities , says it will more than double its purchases this year , to an amount one official puts at several billion dollars .
+6	claims	2
+who	_	_	claims	something	_	_	?	Industrial Bank of Japan ### it
+what	does	someone	claim	_	_	_	?	to be the biggest Japanese buyer of U.S. mortgage securities
+18	says	2
+who	_	_	says	something	_	_	?	Industrial Bank of Japan ### it
+what	was	_	said	_	_	_	?	it will more than double its purchases this year , to an amount one official puts at several billion dollars .
+20	will	3
+who	_	_	will	_	_	do something	?	Industrial Bank of Japan ### it
+what	_	_	will	someone	_	do	?	more than double its purchases this year , to an amount one official puts at several billion dollars
+when	_	_	will	someone	_	do something	?	this year
+23	double	4
+who	will	_	double	something	_	_	?	Industrial Bank of Japan ### it
+what	will	_	be doubled	_	_	_	?	its purchases this year , to an amount one official puts at several billion dollars
+when	will	something	be doubled	_	_	_	?	this year
+what	will	something	be doubled	_	to	_	?	an amount one official puts at several billion dollars
+34	puts	4
+who	_	_	puts	something	_	_	?	one official
+what	is	_	been put	_	_	_	?	amount
+what	will	something	be put	_	at	_	?	several billion dollars
+when	will	someone	put	something	at	_	?	this year
+
+PROPBANK_1138	2
+However , the problem is that once most poison pills are adopted , they survive forever .
+11	adopted	1
+what	are	_	adopted	_	_	_	?	most poison pills
+14	survive	1
+what	will	_	survive	_	_	_	?	they ### most poison pills
+
+PROPBANK_1145	3
+Pennzoil 's poison pill covers five years in order to give current management enough time to put these proceeds to work in a prudent manner .
+4	covers	2
+what	_	_	covers	something	_	_	?	Pennzoil 's poison pill
+what	does	something	covers	_	_	_	?	five years in order to give current management enough time to put these proceeds to work in a prudent manner
+10	give	2
+what	will	_	be given	_	to	something	?	enough time to put these proceeds to work in a prudent manner
+who	will	_	be given	something	_	_	?	current management
+16	put	2
+what	will	_	put	_	to	something	?	these proceeds to work in a prudent manner
+who	will	_	put	something	_	_	?	current management
+
+PROPBANK_1187	3
+Finally , Mitsubishi Estate has no plans to interfere with Rockefeller 's management beyond taking a place on the board .
+4	has	2
+who	does n't	_	have	something	_	_	?	Mitsubishi Estate
+what	does n't	someone	have	_	_	_	?	plans to interfere with Rockefeller 's management
+8	interfere	2
+who	wo n't	_	interfere	_	with	something	?	Mitsubishi Estate
+what	wo n't	_	be interfered	_	with	_	?	Rockefeller 's management
+14	taking	2
+who	will	_	be taking	something	_	_	?	Mitsubishi Estate
+what	will	someone	be taking	_	_	_	?	a place on the board
+
+PROPBANK_1208	1
+Meanwhile , at home , Mitsubishi has control of some major projects .
+6	has	3
+who	_	_	has	something	_	_	?	Mitsubishi
+where	do	someone	has	something	_	_	?	at home
+what	do	someone	have	_	_	_	?	control of some major projects
+
+PROPBANK_1211	1
+The centerpiece of that complex , the Landmark Tower , will be Japan 's tallest building when it is completed in 1993 .
+19	completed	3
+what	will	_	be completed	_	_	_	?	The centerpiece of that complex , the Landmark Tower ### the Landmark Tower ### The centerpiece of that complex ### Japan 's tallest building
+when	will	something	be completed	_	_	_	?	in 1993
+where	will	something	be completed	_	_	_	?	Japan
+
+PROPBANK_1217	2
+Warner Communications Inc. , which is being acquired by Time Warner , has filed a $ 1 billion breach - of - contract suit against Sony and the two producers .
+7	acquired	2
+what	will	_	be acquired	_	by	someone	?	Warner Communications Inc.
+who	will	_	acquire	something	_	_	?	Time Warner
+13	filed	3
+who	has	_	filed	something	_	_	?	Warner Communications Inc. ### Warner Communications Inc. , which is being acquired by Time Warner
+how much	has	_	been filed	_	_	_	?	$ 1 billion
+what	has	_	been filed	_	_	_	?	a $ 1 billion breach - of - contract suit against Sony and the two producers
+
+PROPBANK_1218	3
+Warner has a five - year exclusive contract with Mr. Guber and Mr. Peters that requires them to make movies exclusively at the Warner Bros. studio .
+1	has	2
+who	_	_	has	something	_	_	?	Warner
+what	does	someone	have	_	_	_	?	a five - year exclusive contract with Mr. Guber and Mr. Peters that requires them to make movies exclusively at the Warner Bros. studio
+15	requires	2
+what	_	_	requires	something	_	_	?	a five - year exclusive contract with Mr. Guber and Mr. Peters
+what	does	something	require	_	_	_	?	to make movies exclusively at the Warner Bros. studio
+18	make	3
+who	will	_	make	something	_	_	?	them ### Mr. Guber and Mr. Peters
+what	will	someone	make	_	_	_	?	movies
+where	will	someone	make	something	_	_	?	exclusively at the Warner Bros. studio
+
+PROPBANK_1225	2
+The two sides are also discussing certain business ventures involving cable rights to Columbia 's movies .
+5	discussing	2
+what	is	someone	discussing	_	_	_	?	business ventures ### certain business ventures ### certain business ventures involving cable rights to Columbia 's movies ### business ventures involving cable rights to Columbia 's movies
+who	is	_	discussing	something	_	_	?	The two sides
+9	involving	2
+what	does	something	involve	_	_	_	?	cable rights ### cable rights to Columbia 's movies
+what	_	_	involves	something	_	_	?	certain business ventures ### business ventures
+
+PROPBANK_1241	2
+Mr. Guber and Mr. Peters also almost certainly would n't be able to participate in future sequels to `` Batman , '' the blockbuster hit they produced for Warner .
+13	participate	2
+who	would n't	_	participate	_	in	something	?	Mr. Guber ### Mr. Peters ### they
+what	would n't	someone	participate	_	in	_	?	future sequels to `` Batman , ''
+26	produced	3
+what	had	_	been produced	_	_	_	?	Batman ### the blockbuster hit
+who	had	_	produced	something	_	_	?	Mr. Guber ### Mr. Peters ### they
+what	had	something	been produced	_	for	_	?	Warner
+
+PROPBANK_1264	2
+Repeat customers also can purchase luxury items at reduced prices .
+4	purchase	3
+who	can	_	purchase	something	_	_	?	Repeat customers
+what	can	_	be purchased	_	_	_	?	luxury items at reduced prices
+what	can	something	be purchased	_	at	_	?	reduced prices
+8	reduced	1
+what	is	_	reduced	_	_	_	?	prices
+
+PROPBANK_1269	1
+`` It 's really bizarre , '' says Albert Lerman , creative director at the Wells Rich Greene ad agency .
+7	says	2
+who	_	_	says	something	_	_	?	Albert Lerman , creative director at the Wells Rich Greene ad agency ### Albert Lerman
+what	does	someone	say	_	_	_	?	`` It 's really bizarre , ''
+
+PROPBANK_1273	2
+And Dewar 's gave discounts on Scottish merchandise to people who sent in bottle labels .
+3	gave	4
+who	_	_	gave	something	to	someone	?	Dewar 's
+what	did	someone	give	_	to	someone	?	discounts
+who	did	someone	give	something	to	_	?	people who sent in bottle labels
+what	did	someone	give	something	on	_	?	Scottish merchandise
+11	sent	3
+who	_	_	sent	something	_	_	?	people
+what	did	someone	send	_	_	_	?	bottle labels
+how	did	someone	send	something	_	_	?	in
+
+PROPBANK_1285	1
+That compares with 3.5 % butterfat for whole milk .
+1	compares	2
+what	_	_	compares	_	with	something	?	that
+what	does	something	compare	_	with	_	?	3.5 % butterfat for whole milk
+
+PROPBANK_1301	2
+To increase their share of that business , jewelry makers such as Crystal Brands Inc. 's Trifari and Monet units and Swank Inc. , maker of Anne Klein jewelry , are launching new lines with as much fanfare as the fragrance companies .
+1	increase	1
+what	will	_	increase	_	_	_	?	their share of that business
+31	launching	3
+what	are	someone	launching	_	_	_	?	new lines with as much fanfare as the fragrance companies .
+who	are	_	launching	something	_	_	?	jewelry makers such as Crystal Brands Inc. 's Trifari and Monet units and Swank Inc. , maker of Anne Klein jewelry
+why	are	someone	launching	something	_	_	?	To increase their share of that business
+
+PROPBANK_1313	4
+Procter & Gamble Co. recently introduced refillable versions of four products , including Tide and Mr. Clean , in Canada , but does n't plan to bring them to the U.S. .
+5	introduced	4
+who	_	_	introduced	something	_	_	?	Procter & Gamble Co.
+when	was	something	introduced	_	_	_	?	recently
+what	was	_	introduced	_	_	_	?	refillable versions of four products , including Tide and Mr. Clean
+where	was	something	introduced	_	_	_	?	Canada
+12	including	1
+what	was	someone	including	_	_	_	?	Tide and Mr. Clean
+24	plan	2
+who	did n't	_	plan	something	_	_	?	Procter & Gamble Co.
+what	was n't	_	planned	_	_	_	?	bring them to the U.S.
+26	bring	2
+where	might not	someone	bring	something	_	_	?	to the U.S.
+who	might not	_	bring	something	_	_	?	Procter & Gamble Co
+
+PROPBANK_1324	6
+The National Transportation Safety Board ruled that pilots failed to set the plane 's wing flaps and slats properly for takeoff and failed to make mandatory preflight checks that would have detected the error .
+5	ruled	2
+who	_	_	ruled	something	_	_	?	The National Transportation Safety Board
+what	was	_	ruled	_	_	_	?	pilots failed to set the plane 's wing flaps and slats properly for takeoff and failed to make mandatory preflight checks that would have detected the error
+8	failed	2
+who	_	_	failed	_	to	do something	?	pilots
+what	did	someone	fail	_	to	do	?	set the plane 's wing flaps and slats properly for takeoff and failed to make mandatory preflight checks that would have detected the error
+10	set	4
+who	would	_	set	something	_	_	?	pilots
+what	would	_	be set	_	_	_	?	the plane 's wing flaps and slats properly for takeoff
+why	would	someone	set	something	_	_	?	for takeoff
+how	would	someone	set	something	_	_	?	properly
+22	failed	2
+who	_	_	failed	_	to	do something	?	pilots
+what	did	someone	fail	_	to	do	?	make mandatory preflight checks that would have detected the error
+24	make	2
+what	could	_	be made	_	_	_	?	mandatory preflight checks that would have detected the error
+who	could	_	make	something	_	_	?	pilots
+31	detected	2
+what	would	_	have been detected	_	_	_	?	error
+what	would	_	detect	something	_	_	?	preflight checks
+
+PROPBANK_1349	4
+Only his factories in Japan and Korea , employing his followers at subsistence wages and producing everything from rifles to ginseng to expensive marble vases , kept the money flowing westward .
+8	employing	4
+who	is	_	employing	someone	_	somewhere	?	his
+where	is	someone	employing	someone	_	_	?	Japan and Korea ### Japan ### Korea ### factories in Japan and Korea
+who	is	someone	employing	_	_	somewhere	?	his followers
+how	is	someone	employing	someone	_	somewhere	?	at subsistence wages
+15	producing	3
+who	is	_	producing	something	_	_	?	his followers
+what	is	someone	producing	_	_	somewhere	?	everything from rifles to ginseng to expensive marble vases ### rifles ### ginseng ### expensive marble vases
+where	is	something	being produced	_	_	_	?	factories in Japan and Korea ### Japan ### Korea
+26	kept	5
+what	_	_	kept	something	_	somewhere	?	his factories in Japan and Korea
+what	_	_	kept	something	_	doing	?	the money
+how	was	something	kept	_	_	somewhere	?	employing his followers at subsistence wages and producing everything from rifles to ginseng to expensive marble vases
+what	does	something	keep	_	_	doing	?	flowing
+where	does	something	keep	_	_	doing	?	westward
+29	flowing	3
+what	is	_	flowing	_	_	_	?	the money
+where	is	something	flowing	_	_	_	?	westward
+where	is	something	flowing	_	from	_	?	factories in Japan and Korea ### Japan ### Korea
+
+PROPBANK_1382	2
+Unemployment has reached 27.6 % in Azerbaijan , 25.7 % in Tadzhikistan , 22.8 % in Uzbekistan , 18.8 % in Turkmenia , 18 % in Armenia and 16.3 % in Kirgizia , the Communist Party newspaper said .
+2	reached	2
+what	has	_	reached	something	_	_	?	Unemployment
+how much	has	_	been reached	_	by	something	?	27.6 % in Azerbaijan , 25.7 % in Tadzhikistan , 22.8 % in Uzbekistan , 18.8 % in Turkmenia , 18 % in Armenia and 16.3 % in Kirgizia
+37	said	2
+who	_	_	said	something	_	_	?	Communist Party newspaper
+what	did	someone	say	_	_	_	?	Unemployment has reached 27.6 % in Azerbaijan , 25.7 % in Tadzhikistan , 22.8 % in Uzbekistan , 18.8 % in Turkmenia , 18 % in Armenia and 16.3 % in Kirgizia
+
+PROPBANK_1387	2
+`` The only people who are flying are those who have to , '' said Frank Moore , chairman of the Australian Tourist Industry Association .
+6	flying	1
+who	is	_	flying	_	_	_	?	those who have to
+14	said	2
+who	_	_	said	something	_	_	?	Frank Moore , chairman of the Australian Tourist Industry Association
+what	did	someone	say	_	_	_	?	`` The only people who are flying are those who have to , ''
+
+PROPBANK_1397	3
+However , a Canadian Embassy official in Tel Aviv said that Canada was unlikely to sell the Candu heavy - water reactor to Israel since Israel has n't signed the Nuclear Non - Proliferation Treaty .
+9	said	3
+who	_	_	said	something	_	_	?	a Canadian Embassy official
+where	was	something	said	_	_	_	?	Tel Aviv
+what	was	_	said	_	_	_	?	Canada was unlikely to sell the Candu heavy - water reactor to Israel since Israel has n't signed the Nuclear Non - Proliferation Treaty
+15	sell	4
+what	might not	_	be sold	_	_	_	?	the Candu heavy - water reactor
+who	might not	_	sell	something	_	_	?	Canada
+who	might not	something	be sold	_	to	_	?	Israel
+why	might not	something	be sold	_	to	someone	?	since Israel has n't signed the Nuclear Non - Proliferation Treaty
+28	signed	2
+who	has n't	_	signed	something	_	_	?	Israel
+what	has n't	_	been signed	_	_	_	?	the Nuclear Non - Proliferation Treaty
+
+PROPBANK_1408	5
+Under the debt - equity program , potential investors will submit sealed bids on the percentage of discount they are willing to purchase the debt at , and the bids will be allocated based on these discount offers .
+10	submit	3
+who	will	_	submit	something	_	_	?	potential investors ### they
+what	will	_	be submitted	_	_	_	?	sealed bids
+what	will	something	be submitted	_	on	_	?	the percentage of discount they are willing to purchase the debt at
+11	sealed	2
+what	has	_	been sealed	_	_	_	?	bids
+what	has	something	been sealed	_	on	_	?	the percentage of discount they are willing to purchase the debt at
+22	purchase	3
+what	will	_	be purchased	_	_	_	?	the debt
+how	will	something	be purchased	_	_	_	?	Under the debt - equity program , potential investors will submit sealed bids
+what	will	something	be purchased	_	at	_	?	the percentage of discount
+32	allocated	2
+what	will	_	be allocated	_	_	_	?	bids
+how	will	something	be allocated	_	_	_	?	based on these discount offers
+33	based	2
+what	is	something	based	_	on	_	?	these discount offers
+what	is	_	based	_	_	_	?	bids
+
+PROPBANK_1416	4
+In 1988 , a year and a half after Mrs. Marcos and her late husband , Ferdinand Marcos , the ousted president of the Philippines , fled the Philippines for Hawaii , they were charged with racketeering , conspiracy , obstruction of justice and mail fraud in a scheme in which they allegedly embezzled more than $ 100 million from their homeland .
+20	ousted	3
+who	was	_	ousted	_	_	_	?	president of the Philippines ### Ferdinand Marcos ### her late husband
+where	was	someone	ousted	_	from	_	?	the Philippines ### homeland
+what	did	someone	ousted	_	_	do	?	fled the Philippines for Hawaii
+26	fled	4
+where	did	someone	flee	_	from	_	?	the Philippines ### homeland
+where	did	someone	flee	_	to	_	?	Hawaii
+who	_	_	fled	_	from	somewhere	?	Mrs. Marcos and her late husband , Ferdinand Marcos , the ousted president of the Philippines ### their ### they
+when	did	someone	flee	_	from	somewhere	?	In 1988 , a year and a half after
+34	charged	3
+what	was	someone	charged	_	with	_	?	racketeering , conspiracy , obstruction of justice and mail fraud
+who	was	_	charged	_	with	something	?	Mrs. Marcos and her late husband , Ferdinand Marcos , the ousted president of the Philippines ### their ### they
+when	was	someone	charged	_	with	something	?	In 1988
+53	embezzled	4
+what	was	_	embezzled	_	_	_	?	more than $ 100 million from their homeland
+who	_	_	embezzled	something	_	_	?	Mrs. Marcos and her late husband , Ferdinand Marcos , the ousted president of the Philippines ### their ### they
+where	did	someone	embezzle	something	from	_	?	the Philippines ### homeland
+how much	did	someone	embezzle	_	_	_	?	$ 100 million
+
+PROPBANK_1418	2
+Mrs. Marcos 's trial is expected to begin in March .
+5	expected	3
+what	is	_	expected	_	to	do something	?	Mrs. Marcos 's trial
+when	is	something	expected	_	_	_	?	in March
+what	is	something	expected	_	to	do	?	to begin
+7	begin	3
+what	might	_	begin	_	_	_	?	Mrs. Marcos 's trial
+when	might	something	begin	_	_	_	?	in March
+who	might	something	begin	_	for	_	?	Mrs. Marcos
+
+PROPBANK_1431	5
+As a result , he said he will examine the Marcos documents sought by the prosecutors to determine whether turning over the filings is self - incrimination .
+5	said	2
+who	_	_	said	something	_	_	?	he
+what	did	someone	say	_	_	_	?	he will examine the Marcos documents sought by the prosecutors to determine whether turning over the filings is self - incrimination
+8	examine	3
+who	will	_	examine	something	_	_	?	he
+what	will	_	be examined	_	by	someone	?	the Marcos documents sought by the prosecutors to determine whether turning over the filings is self - incrimination ### the Marcos documents sought by the prosecutors
+why	will	someone	examine	something	_	_	?	to determine whether turning over the filings is self - incrimination
+12	sought	2
+what	was	_	sought	_	by	someone	?	Marcos documents
+who	_	_	sought	something	_	_	?	prosecutors
+17	determine	3
+what	might	_	be determined	_	by	something	?	whether turning over the filings is self - incrimination
+how	will	something	be determined	_	by	someone	?	he will examine the Marcos documents sought by the prosecutors
+who	will	_	determine	something	_	_	?	he
+19	turning	1
+what	_	_	have been turned	_	over	_	?	the filings
+
+PROPBANK_1434	3
+Mrs. Marcos has n't admitted that she filed any documents such as those sought by the government .
+4	admitted	2
+who	has n't	_	admitted	something	_	_	?	Mrs. Marcos ### she
+what	has n't	someone	admitted	_	_	_	?	that she filed any documents such as those sought by the government
+7	filed	2
+who	might not	_	have filed	something	_	_	?	Mrs. Marcos ### she
+what	might not	someone	have filed	something	_	_	?	any documents such as those sought by the government
+13	sought	3
+who	_	_	sought	something	_	_	?	the government
+what	did	someone	seek	_	_	_	?	documents
+who	did	someone	seek	something	_	_	?	Mrs. Marcos ### she
+
+PROPBANK_1439	1
+The office may also be able to advise foreign and multinational clients on international law and general matters .
+7	advise	3
+who	might	_	advise	something	_	_	?	may also be able to advise foreign and multinational clients on international law and general matters .
+who	might	someone	advise	_	_	_	?	foreign and multinational clients
+what	might	someone	advise	_	on	_	?	international law and general matters
+
+PROPBANK_1444	1
+Sidley will maintain its association with the Hashidate Law Office in Tokyo .
+2	maintain	2
+who	will	_	maintain	something	_	_	?	Sidley
+what	will	_	be maintained	_	_	_	?	its association with the Hashidate Law Office ### its association with the Hashidate Law Office in Tokyo
+
+PROPBANK_1454	1
+Norris McLaughlin is a general - practice firm that has expanded recently into such specialties as banking , labor and environmental work .
+10	expanded	2
+what	has	_	expanded	_	_	_	?	Norris McLaughlin ### a general - practice firm
+when	has	something	expanded	_	_	_	?	recently into such specialties as banking , labor and environmental work
+
+PROPBANK_1501	3
+But when they arrived at the door , all were afraid to go in , fearing that they would be out of place .
+3	arrived	2
+where	did	someone	arrive	_	_	_	?	at the door
+who	_	_	arrived	_	_	_	?	they ### were
+12	go	2
+who	would	_	go	_	in	_	?	all ### they
+why	would n't	someone	go	_	in	_	?	all were afraid ### fearing that they would be out of place
+15	fearing	3
+what	did	someone	fear	_	_	_	?	to go in
+why	did	someone	fear	_	_	_	?	they would be out of place
+who	is	_	fearing	something	_	_	?	all ### they
+
+PROPBANK_1523	3
+Strong sales so far this year are certain to turn the tide , but even the 25 % market share that Nissan expects in 1989 will leave it far below its position at the beginning of the decade .
+9	turn	2
+what	will	_	turn	something	_	_	?	Strong sales so far this year
+what	will	_	be turned	_	_	_	?	the tide
+22	expects	3
+how much	did	someone	expect	_	_	_	?	25 % market share
+who	_	_	expects	something	_	_	?	Nissan
+when	did	someone	expected	something	_	_	?	1989
+26	leave	2
+what	will	_	be left	_	_	_	?	it ### the 25 % market share that Nissan expects in 1989
+how	will	something	be left	_	_	_	?	far below its position at the beginning of the decade
+
+PROPBANK_1591	3
+Although no specific agreements are expected , Mr. Shevardnadze said `` that does n't mean they will be without an agenda . ''
+5	expected	1
+what	is n't	_	expected	_	_	_	?	specific agreements
+9	said	2
+who	_	_	said	something	_	_	?	Mr. Shevardnadze
+what	did	someone	say	_	_	_	?	that does n't mean they will be without an agenda ### Although no specific agreements are expected
+14	mean	2
+what	does n't	_	mean	something	_	_	?	that
+what	does n't	something	mean	_	_	_	?	they will be without an agenda
+
+PROPBANK_1698	1
+In the first nine months , profit rose 10 % to $ 313.2 million , or $ 3.89 a share , from $ 283.9 million , or $ 3.53 a share .
+7	rose	5
+what	_	_	rose	_	_	_	?	profit
+when	did	something	rise	_	_	_	?	In the first nine months
+how much	did	something	rise	_	_	_	?	10 %
+how much	did	something	rise	_	to	_	?	$ 313.2 million ### $ 3.89 a share
+how much	did	something	rise	_	from	_	?	$ 283.9 million ### $ 3.53 a share
+
+PROPBANK_1726	2
+This week , New York City announced a 10 - point policy patterned on the federal bill of rights for taxpayers .
+6	announced	4
+who	_	_	announced	something	_	_	?	New York City
+when	did	someone	announce	something	_	_	?	This week
+what	did	someone	announce	_	_	_	?	a 10 - point policy patterned on the federal bill of rights for taxpayers
+what	did	someone	announce	something	for	_	?	taxpayers
+12	patterned	2
+what	was	_	patterned	_	_	_	?	a 10 - point policy
+what	was	something	patterned	_	on	_	?	the federal bill of rights for taxpayers
+
+PROPBANK_1774	1
+Few people in the advertising business have raised as many hackles as Alvin A. Achenbaum .
+7	raised	2
+who	have	_	raised	something	_	_	?	Few people in the advertising business
+how much	has	_	been raised	_	_	_	?	as many hackles as Alvin A. Achenbaum
+
+PROPBANK_1815	2
+Yesterday , Mr. Matthews , now a consultant with the Stamford , Conn. , firm Matthews & Johnston , quipped , `` I think he 'll be very good at that { new job } .
+19	quipped	3
+who	_	_	quipped	something	_	_	?	Mr. Matthews , now a consultant with the Stamford , Conn. , firm Matthews & Johnston ### Mr. Matthews
+when	did	someone	quipped	something	_	_	?	Yesterday
+what	did	someone	quip	_	_	_	?	I think he 'll be very good at that { new job }
+23	think	2
+who	_	_	thinks	something	_	_	?	I ### Mr. Matthews , now a consultant with the Stamford , Conn. , firm Matthews & Johnston ### Mr. Matthews
+what	does	someone	think	_	_	_	?	he 'll be very good at that { new job }
+
+PROPBANK_1836	4
+Prime Minister Lee Kuan Yew , Singapore 's leader and one of Asia 's leading statesmen for 30 years , recently announced his intention to retire next year -- though not necessarily to end his influence .
+14	leading	2
+who	has	_	been leading	something	_	_	?	Prime Minister Lee Kuan Yew , Singapore 's leader ### Prime Minister Lee Kuan Yew
+how	has	someone	been leading	_	_	_	?	30 years
+21	announced	3
+what	was	_	announced	_	by	someone	?	his intention to retire next year -- though not necessarily to end his influence
+who	_	_	announced	something	_	_	?	Prime Minister Lee Kuan Yew , Singapore 's leader ### Prime Minister Lee Kuan Yew ### Prime Minister Lee Kuan Yew , Singapore 's leader and one of Asia 's leading statesmen for 30 years
+when	was	_	announced	_	_	_	?	recently
+25	retire	2
+when	will	someone	retire	_	_	_	?	next year
+who	will	_	retire	_	_	_	?	Prime Minister Lee Kuan Yew , Singapore 's leader ### Prime Minister Lee Kuan Yew ### Prime Minister Lee Kuan Yew , Singapore 's leader and one of Asia 's leading statesmen for 30 years
+33	end	2
+what	would n't	_	be ended	_	_	_	?	his influence
+who	would n't	_	end	something	_	_	?	Prime Minister Lee Kuan Yew , Singapore 's leader and one of Asia 's leading statesmen for 30 years ### Prime Minister Lee Kuan Yew , Singapore 's leader ### Prime Minister Lee Kuan Yew
+
+PROPBANK_1917	2
+The field took off in 1985 after scientists at Britain 's Sheffield University developed a handy , compact magnet for brain stimulation .
+2	took	3
+what	_	_	took	_	off	_	?	The field
+when	did	something	take	_	off	_	?	in 1985
+why	did	something	take	_	off	_	?	scientists at Britain 's Sheffield University developed a handy , compact magnet for brain stimulation
+13	developed	4
+who	_	_	developed	something	_	_	?	scientists
+what	did	someone	develop	_	_	_	?	a handy , compact magnet for brain stimulation
+when	did	someone	develop	something	_	_	?	in 1985
+where	did	someone	develop	something	_	_	?	Britain 's Sheffield University
+
+PROPBANK_1939	6
+Similar studies are expected to reveal how stroke patients ' brains regroup -- a first step toward finding ways to bolster that process and speed rehabilitation .
+3	expected	2
+what	are	_	expected	_	to	do something	?	Similar studies
+what	are	_	expected	_	about	something	?	to reveal how stroke patients ' brains regroup -- a first step toward finding ways to bolster that process and speed rehabilitation ### to reveal how stroke patients ' brains regroup
+5	reveal	2
+what	would	_	reveal	something	_	_	?	Similar studies
+when	would	_	be revealed	_	_	_	?	how stroke patients ' brains regroup -- a first step toward finding ways to bolster that process and speed rehabilitation ### how stroke patients ' brains regroup
+11	regroup	1
+what	_	_	regroups	_	_	_	?	stroke patients ' brains
+17	finding	1
+what	would	_	be found	_	_	_	?	ways to bolster that process and speed rehabilitation
+20	bolster	1
+what	would	_	be bolstered	_	_	_	?	that process and speed rehabilitation
+24	speed	1
+who	would	_	be sped	_	_	_	?	rehabilitation
+
+PROPBANK_1942	1
+Between flashes , certain areas in subjects ' brains are jolted with a magnetic stimulator .
+10	jolted	2
+what	are	_	jolted	_	with	something	?	certain areas in subjects ' brains
+how	are	something	jolted	_	_	_	?	with a magnetic stimulator
+
+PROPBANK_1959	2
+The offering was priced with an 8.95 % coupon rate at 99.1875 % to yield 9.19 % .
+3	priced	2
+what	was	_	priced	_	_	_	?	The offering
+how much	was	something	priced	_	_	_	?	8.95 % coupon rate at 99.1875 % to yield 9.19 % .
+14	yield	3
+how much	will	something	yield	_	_	_	?	9.19 % .
+what	will	_	yield	something	_	_	?	The offering
+why	will	something	yield	something	_	_	?	The offering was priced with an 8.95 % coupon rate at 99.1875 %
+
+PROPBANK_1973	3
+Keeping the Japanese happy will be one of the most important tasks facing conservative leader Ernesto Ruffo when he takes office Nov. 1 , as the first opposition governor in Mexico 's modern history .
+0	keeping	2
+who	should	_	be kept	_	_	_	?	the Japanes
+who	should	_	keep	someone	_	_	?	conservative leader ### Ernesto Ruffo
+12	facing	3
+who	is	_	facing	something	_	_	?	conservative leader ### Ernesto Ruffo
+what	is	someone	facing	_	_	_	?	Keeping the Japanese happy
+when	will	someone	face	something	_	_	?	when he takes office Nov. 1 , as the first opposition governor in Mexico 's modern history
+19	takes	3
+who	will	_	take	something	_	_	?	conservative leader ### Ernesto Ruffo
+what	will	_	be taken	_	_	_	?	office
+where	will	someone	take	something	_	_	?	Mexico
+
+PROPBANK_1993	1
+Ryukichi Imai , Japan 's ambassador to Mexico , agrees that Mexico may be too eager .
+9	agrees	2
+what	is	_	agreed	_	_	_	?	that Mexico may be too eager
+who	_	_	agrees	something	_	_	?	Ryukichi Imai ### Japan 's ambassador to Mexico ### Ryukichi Imai , Japan 's ambassador to Mexico
+
+PROPBANK_1995	1
+I do n't think that is the case . ''
+3	think	2
+who	does n't	_	think	something	_	_	?	I
+what	does n't	someone	think	_	_	_	?	that is the case
+
+PROPBANK_2063	2
+The tax has raised less than one billion marks ( $ 545.3 million ) annually in recent years , but the government has been reluctant to abolish the levy for budgetary concerns .
+3	raised	4
+what	_	_	raised	something	_	_	?	The tax
+what	has	_	been raised	_	_	_	?	less than one billion marks ( $ 545.3 million ) annually in recent years
+how much	has	_	been raised	_	_	_	?	$ 545.3 million
+when	has	something	been raised	_	_	_	?	annually in recent years
+26	abolish	2
+what	should	_	be abolished	_	_	_	?	the levy for budgetary concerns
+who	should	_	abolish	something	_	_	?	the government
+
+PROPBANK_2093	2
+The Chemical spokeswoman said the bank has examined its methodologies and internal controls .
+3	said	2
+what	was	_	said	_	_	_	?	the bank has examined its methodologies and internal controls ### the bank has examined its methodologies
+who	_	_	said	something	_	_	?	The Chemical spokeswoman
+7	examined	2
+what	has	_	been examined	_	_	_	?	its methodologies ### its methodologies and internal controls
+who	has	_	examined	something	_	_	?	the bank
+
+PROPBANK_2114	2
+`` Most of the LBO guys do n't know how to run a business anyway . ''
+8	know	2
+who	does n't	_	know	something	_	_	?	Most of the LBO guys
+what	does n't	someone	know	_	_	_	?	how to run a business
+11	run	2
+what	may	_	be run	_	_	_	?	a business
+who	may	_	run	something	_	_	?	the LBO guys ### Most of the LBO guys
+
+PROPBANK_2131	3
+And he got rid of low - margin businesses that just were n't making money for the company .
+2	got	2
+who	_	_	got	_	of	something	?	he
+what	did	someone	get	_	of	_	?	low - margin businesses that just were n't making money for the company
+3	rid	2
+who	_	_	rid	something	of	something	?	he
+what	did	someone	rid	something	of	_	?	low - margin businesses that just were n't making money for the company
+13	making	3
+who	is n't	_	making	something	_	_	?	low - margin businesses
+what	is n't	something	making	_	_	_	?	money
+who	is n't	something	making	something	for	_	?	the company
+
+PROPBANK_2132	4
+Mr. Wathen , who says Pinkerton 's had a loss of nearly $ 8 million in 1987 under American Brands , boasts that he 's made Pinkerton 's profitable again .
+4	says	3
+who	_	_	says	something	_	_	?	Mr. Wathen ### he
+what	did	someone	say	_	_	_	?	Pinkerton 's had a loss of nearly $ 8 million in 1987 under American Brands
+who	had	something	said	_	about	someone	?	Pinkerton 's
+7	had	3
+who	_	_	had	something	_	_	?	Pinkerton 's
+what	did	someone	have	_	_	_	?	loss of nearly $ 8 million
+when	did	someone	have	something	_	_	?	in 1987
+21	boasts	3
+who	_	_	boasts	_	about	something	?	Mr. Wathen ### he
+what	does	someone	boast	_	_	_	?	that he 's made Pinkerton 's profitable again
+who	does	someone	boast	_	about	_	?	Pinkerton 's
+25	made	3
+who	_	_	made	something	_	_	?	Mr. Wathen ### he
+what	did	someone	make	_	_	_	?	Pinkerton 's profitable again
+who	did	someone	make	something	for	_	?	Pinkerton 's
+
+PROPBANK_2152	3
+Milk sold to the nation 's dairy plants and dealers averaged $ 14.50 for each hundred pounds , up 50 cents from September and up $ 1.50 from October 1988 , the department said .
+1	sold	4
+what	was	_	sold	_	to	someone	?	Milk
+who	was	_	sold	something	_	_	?	the nation 's dairy plants and dealers
+how much	was	something	sold	_	for	_	?	$ 14.50 for each hundred pounds
+how much	was	something	sold	_	up	_	?	50 cents from September ### $ 1.50 from October 1988
+10	averaged	2
+what	was	_	averaged	_	_	_	?	Milk sold to the nation 's dairy plants and dealers averaged
+how much	did	something	average	_	for	_	?	$ 14.50 for each hundred pounds
+33	said	2
+who	_	_	said	something	_	_	?	the department
+what	did	someone	say	_	_	_	?	Milk sold to the nation 's dairy plants and dealers averaged $ 14.50 for each hundred pounds , up 50 cents from September and up $ 1.50 from October 1988
+
+PROPBANK_2188	5
+But it does that at the cost of deepening the taxpayer 's exposure if the FHA is forced to pay for more loans going sour .
+2	does	2
+who	_	_	does	something	_	_	?	it
+what	is	_	done	_	_	_	?	that at the cost of deepening the taxpayer 's exposure if the FHA is forced to pay for more loans going sour ### that
+8	deepening	2
+what	is	_	deepened	_	by	something	?	the taxpayer 's exposure
+how	is	something	deepened	_	_	_	?	if the FHA is forced to pay for more loans going sour
+17	forced	2
+who	is	_	forced	_	to	do something	?	the FHA
+what	is	someone	forced	_	to	do	?	pay for more loans going sour
+19	pay	2
+what	will	_	be paid	_	by	someone	?	more loans going sour
+who	might	_	pay	something	_	_	?	the FHA
+23	going	2
+what	_	_	goes	something	_	_	?	more loans
+how	will	something	go	_	_	_	?	sour
+
+PROPBANK_2239	2
+The New Orleans oil and gas exploration and diving operations company added that it does n't expect any further adverse financial impact from the restructuring .
+11	added	2
+who	_	_	added	something	_	_	?	New Orleans oil and gas exploration and diving operations company
+what	was	_	added	_	_	_	?	that it does n't expect any further adverse financial impact from the restructuring
+16	expect	3
+what	does n't	someone	expect	_	_	_	?	any further adverse financial impact from the restructuring
+who	does n't	_	expect	something	_	_	?	The New Orleans oil and gas exploration and diving operations company
+what	does n't	someone	expect	something	from	_	?	from the restructuring
+
+PROPBANK_2255	3
+`` Business across the country is spending more time addressing this issue , '' says Sen. Edward Kennedy ( D. , Mass . ) .
+6	spending	3
+who	is	_	spending	something	_	_	?	Business across the country
+where	is	something	spending	something	_	_	?	across the country
+what	is	something	spending	_	_	_	?	more time addressing this issue
+9	addressing	3
+what	is	_	being addressed	_	_	_	?	this issue
+who	is	_	addressing	something	_	_	?	Business
+how	is	something	addressing	something	_	doing	?	spending more time
+14	says	2
+who	_	_	says	something	_	_	?	Sen. Edward Kennedy ### D. , Mass .
+what	was	_	said	_	_	_	?	Business across the country is spending more time addressing this issue
+
+PROPBANK_2289	3
+This involves trade - offs and { it } cuts against the grain of existing consumer and even provider conceptions of what is ` necessary . ' ''
+1	involves	2
+what	is	_	involved	_	_	_	?	trade - offs
+what	_	_	involves	something	_	_	?	This
+9	cuts	2
+what	is	_	cut	_	against	_	?	the grain ### the grain of existing consumer and even provider conceptions ### the grain of existing consumer and even provider conceptions of what is ` necessary . '
+what	_	_	cuts	_	against	something	?	This
+14	existing	1
+what	_	_	exists	_	_	_	?	consumer and even provider conceptions ### consumer and even provider conceptions of what is ` necessary . '
+
+PROPBANK_2294	1
+The company said the fastener business `` has been under severe cost pressures for some time . ''
+2	said	2
+who	_	_	said	something	_	_	?	The company
+what	did	someone	say	_	_	_	?	the fastener business `` has been under severe cost pressures for some time . ''
+
+PROPBANK_2299	2
+The three existing plants and their land will be sold .
+2	existing	2
+what	was	_	existing	_	_	_	?	plants
+how much	_	_	existed	_	_	_	?	three
+9	sold	1
+what	will	_	be sold	_	_	_	?	three existing plants ### their land
+
+PROPBANK_2314	5
+Takeover stock traders noted that with the junk - bond market in disarray , Georgia - Pacific 's bid is an indication of where the takeover game is headed : namely , industrial companies can continue bidding for one another , but financial buyers such as leveraged buy - out firms will be at a disadvantage in obtaining financing .
+3	noted	2
+who	_	_	noted	something	_	_	?	Takeover stock traders
+what	was	_	noted	_	_	_	?	with the junk - bond market in disarray , Georgia - Pacific 's bid is an indication of where the takeover game is headed : namely , industrial companies can continue bidding for one another , but financial buyers such as leveraged buy - out firms will be at a disadvantage in obtaining financing .
+28	headed	3
+where	is	something	headed	_	to	_	?	industrial companies can continue bidding for one another , but financial buyers such as leveraged buy - out firms will be at a disadvantage in obtaining financing .
+why	is	something	headed	_	to	something	?	the junk - bond market in disarray
+what	is	_	headed	_	to	something	?	takeover game
+35	continue	2
+what	can	_	continue	_	_	_	?	industrial companies can continue bidding for one another
+who	can	_	continue	something	_	_	?	industrial companies
+36	bidding	2
+who	can	_	bid	_	for	something	?	industrial companies
+what	can	_	be bid	_	for	_	?	for one another ### industrial companies
+57	obtaining	3
+what	might not	_	be obtained	_	_	_	?	financing
+who	might not	_	obtain	something	_	_	?	financial buyers such as leveraged buy - out firms
+why	might not	someone	obtain	something	_	_	?	junk - bond market in disarray
+
+PROPBANK_2390	1
+Labor costs are climbing at a far more rapid pace in the health care industry than in other industries .
+3	climbing	2
+what	have	_	been climbing	_	_	_	?	Labor costs
+how	are	something	climbing	_	_	_	?	at a far more rapid pace in the health care industry than in other industries
+
+PROPBANK_2393	3
+For the past five years , unions have n't managed to win wage increases as large as those granted to nonunion workers .
+9	managed	2
+who	have n't	_	managed	_	to	do something	?	unions
+what	have n't	_	been managed	_	_	_	?	win wage increases as large as those granted to nonunion workers
+11	win	2
+what	have n't	_	been won	_	_	_	?	wage increases as large as those granted to nonunion workers
+who	have n't	_	won	something	_	_	?	unions
+18	granted	2
+who	were	_	granted	something	_	_	?	nonunion workers
+what	_	_	have been granted	_	_	_	?	wage increases
+
+PROPBANK_2401	3
+It rose 4.8 % for the 12 months ended in June and 4.7 % in the 12 months ended in September 1988 .
+1	rose	3
+what	_	_	rose	_	_	_	?	It
+when	did	something	rise	_	_	_	?	12 months ended in June ### 12 months ended in September 1988 .
+how much	did	something	rise	_	_	_	?	4.8 % ### 4.7 %
+8	ended	2
+what	_	_	ended	_	_	_	?	It rose 4.8 %
+when	did	something	end	_	_	_	?	June
+18	ended	2
+what	_	_	ended	_	_	_	?	4.7 % ### It rose
+when	did	something	end	_	_	_	?	September 1988
+
+PROPBANK_2408	1
+However , StatesWest is n't abandoning its pursuit of the much - larger Mesa .
+5	abandoning	2
+what	is n't	someone	abandoning	_	_	_	?	its pursuit ### its pursuit of the much - larger Mesa
+who	is n't	_	abandoning	something	_	_	?	StatesWest
+
+PROPBANK_2417	1
+The dollar drew strength from the stock market 's climb .
+2	drew	3
+what	_	_	drew	something	from	something	?	The dollar
+what	was	_	drawn	_	_	_	?	strength
+what	was	something	drawn	_	from	_	?	from the stock market 's climb
+
+PROPBANK_2462	2
+The campaign , a patriotic celebration of the 200th anniversary of the Bill of Rights , does n't mention cigarettes or smoking ; cigarette ads have been prohibited on television since 1971 .
+18	mention	2
+what	does n't	_	mention	something	_	_	?	The campaign ### a patriotic celebration of the 200th anniversary of the Bill of Rights
+what	was n't	_	mentioned	_	_	_	?	cigarettes or smoking
+27	prohibited	3
+what	were	_	prohibited	_	_	_	?	cigarette ads
+when	were	something	prohibited	_	_	_	?	since 1971
+where	were	something	prohibited	_	_	_	?	on television
+
+PROPBANK_2470	2
+`` Most people -- whether in Toledo , Tucson or Topeka -- have n't got a clue who we are , '' says Guy L. Smith , Philip Morris 's vice president of corporate affairs .
+14	got	4
+who	has n't	_	got	something	_	_	?	Most people
+what	has n't	someone	got	_	_	_	?	a clue
+where	might not	someone	have gotten	something	_	_	?	Toledo ### Tucson ### Topeka
+what	has n't	someone	got	something	about	_	?	who we are
+22	says	2
+who	_	_	says	something	_	_	?	Guy L. Smith ### Philip Morris 's vice president of corporate affairs
+what	was	_	said	_	_	_	?	`` Most people -- whether in Toledo , Tucson or Topeka -- have n't got a clue who we are , ''
+
+PROPBANK_2505	4
+Technology stocks bore the brunt of the OTC market 's recent sell - off , and traders say it 's natural that they rebound sharply now that the market has turned around .
+2	bore	3
+what	_	_	bore	something	_	_	?	Technology stocks
+what	did	something	bear	_	_	_	?	the brunt of the OTC market 's recent sell - off ### the brunt of the OTC market
+why	did	something	bear	something	_	_	?	OTC market 's recent sell - off ### recent sell - off
+17	say	3
+who	_	_	said	something	_	_	?	traders
+what	did	someone	say	_	_	_	?	it 's natural that they rebound sharply ### it 's natural that they rebound sharply now that the market has turned around
+why	did	someone	say	something	_	_	?	the market has turned around
+23	rebound	3
+what	_	_	rebounded	_	_	_	?	they ### Technology stocks
+how	did	something	rebound	_	_	_	?	sharply
+why	did	something	rebound	_	_	_	?	the market has turned around
+30	turned	4
+what	has	_	turned	_	around	_	?	the market
+when	has	something	turned	_	around	_	?	now
+why	has	something	turned	_	around	_	?	market 's recent sell - off
+how	did	something	turn	_	_	_	?	around
+
+PROPBANK_2538	3
+It surged 2 3\/4 to 6 on volume of more than 1.7 million shares after the company agreed to be acquired by Japan 's Chugai Pharmaceutical for about $ 110 million -- almost double the market price of Gen - Probe 's stock .
+1	surged	5
+what	_	_	surged	something	_	_	?	It
+how much	was	_	surged	_	to	_	?	6
+what	was	something	surged	_	on	_	?	volume of more than 1.7 million shares after the company agreed to be acquired by Japan 's Chugai Pharmaceutical for about $ 110 million -- almost double the market price of Gen - Probe 's stock .
+how much	was	_	surged	_	_	_	?	2 3\/4
+when	did	something	surge	something	_	_	?	after the company agreed to be acquired by Japan 's Chugai Pharmaceutical for about $ 110 million -- almost double the market price of Gen - Probe 's stock .
+17	agreed	2
+who	_	_	agreed	something	_	_	?	the company
+what	did	something	agree	_	_	_	?	to be acquired by Japan 's Chugai Pharmaceutical for about $ 110 million -- almost double the market price of Gen - Probe 's stock .
+20	acquired	3
+what	would	_	be acquired	_	by	someone	?	the company
+who	would	_	acquire	someone	_	_	?	Japan 's Chugai Pharmaceutical for about $ 110 million -- almost double the market price of Gen - Probe 's stock .
+how much	would	someone	be acquired	_	for	_	?	about $ 110 million -- almost double the market price of Gen - Probe 's stock
+
+PROPBANK_2565	2
+This provision met early and strong resistance from investment bankers worried about disruptions in their clients ' portfolios .
+2	met	3
+what	_	_	met	something	_	_	?	This provision
+what	did	something	meet	_	_	_	?	early and strong resistance
+when	did	something	meet	something	_	_	?	early
+10	worried	2
+who	is	_	worried	_	about	something	?	investment bankers
+what	is	someone	worried	_	about	_	?	disruptions in their clients ' portfolios
+
+PROPBANK_2576	2
+Senate Appropriations Committee Chairman Robert Byrd ( D. , W.Va . ) strongly resisted deeper cuts sought by the House .
+13	resisted	3
+how	was	something	resisted	_	_	_	?	strongly
+who	_	_	resisted	something	_	_	?	Senate Appropriations Committee Chairman ### Robert Byrd ( D. , W.Va . )
+what	was	_	resisted	_	_	_	?	deeper cuts sought by the House
+16	sought	2
+who	_	_	sought	something	_	_	?	the House
+what	was	_	sought	_	_	_	?	deeper cuts
+
+PROPBANK_2580	3
+For example , a passenger can fly from Chardon , Neb. , to Denver for as little as $ 89 to $ 109 , according to prices quoted by the company .
+6	fly	4
+who	can	_	fly	_	from	somewhere	?	a passenger
+where	can	someone	fly	_	from	_	?	Chardon
+where	can	someone	fly	_	to	_	?	Denver
+how much	can	someone	fly	_	for	_	?	as little as $ 89 to $ 109
+24	according	2
+what	is	_	according	_	to	something	?	a passenger can fly from Chardon , Neb. , to Denver for as little as $ 89 to $ 109
+what	does	something	accord	_	to	_	?	prices quoted by the company
+27	quoted	2
+what	has	_	been quoted	_	by	someone	?	prices
+who	_	_	quoted	something	_	_	?	the company
+
+PROPBANK_2604	2
+With real estate experts Olympia & York and Samuel Zell 's Itel owning close to 40 % of Santa Fe 's stock , management was under pressure -- in a favored phrase of Wall Street -- to quickly `` maximize values . ''
+12	owning	2
+who	_	_	owns	something	_	_	?	real estate experts Olympia & York and Samuel Zell 's Itel ### Olympia & York and Samuel Zell 's Itel
+how much	does	someone	own	_	_	_	?	close to 40 % of Santa Fe 's stock
+39	maximize	2
+what	is	_	maximized	_	_	_	?	values
+how	is	something	maximized	_	_	_	?	quickly
+
+PROPBANK_2608	2
+Since the real estate unit also includes debt , the imputed value of the real estate itself is close to $ 3 billion .
+6	includes	2
+what	_	_	includes	something	_	_	?	real estate unit
+what	is	_	included	_	_	_	?	debt
+10	imputed	3
+how much	is	_	imputed	_	_	_	?	close to $ 3 billion
+what	is	_	imputed	_	_	_	?	value
+what	is	something	imputed	_	of	_	?	the real estate
+
+PROPBANK_2629	1
+Her recent report classifies the stock as a `` hold . ''
+3	classifies	3
+what	has	_	been classified	_	as	something	?	the stock
+how	has	something	been classified	_	_	_	?	a `` hold . ''
+what	has	_	classified	something	as	something	?	Her recent report
+
+PROPBANK_2630	3
+But it appears to be the sort of hold one makes while heading for the door .
+2	appears	2
+what	does	something	appear	_	to	_	?	the sort of hold one makes while heading for the door
+what	_	_	appears	_	to	do something	?	it
+10	makes	2
+what	does	someone	make	_	_	_	?	the sort of hold
+when	might	someone	make	something	_	_	?	while heading for the door
+12	heading	1
+what	is	someone	heading	_	for	_	?	the door
+
+PROPBANK_2678	4
+Richard Newsom , a California state official who last year examined Lincoln 's parent , American Continental Corp. , said he also saw evidence that crimes had been committed .
+10	examined	3
+when	was	someone	examined	_	_	_	?	last year
+who	_	_	examined	something	_	_	?	Richard Newsom , a California state official ### Richard Newsom
+what	was	_	examined	_	by	someone	?	Lincoln 's parent , American Continental Corp. ### Lincoln 's parent ### American Continental Corp.
+19	said	2
+who	_	_	said	something	_	_	?	Richard Newsom , a California state official ### Richard Newsom
+what	did	someone	say	_	_	_	?	he also saw evidence that crimes had been committed
+22	saw	2
+what	was	_	seen	_	by	someone	?	evidence that crimes had been committed
+who	_	_	saw	something	_	_	?	he ### Richard Newsom , a California state official ### Richard Newsom
+28	committed	2
+what	had	_	been committed	_	_	_	?	crimes
+who	has	_	committed	something	_	_	?	Lincoln 's parent , American Continental Corp. ### Lincoln 's parent ### American Continental Corp.
+
+PROPBANK_2768	6
+Company officials said the current robust domestic demand that has been fueling sustained economic expansion helped push up sales of products like ships , steel structures , power systems and machinery and resulted in sharply higher profit .
+2	said	2
+who	_	_	said	something	_	_	?	Company officials
+what	did	someone	say	_	_	_	?	the current robust domestic demand that has been fueling sustained economic expansion helped push up sales of products like ships , steel structures , power systems and machinery and resulted in sharply higher profit
+11	fueling	2
+what	is	_	fueling	something	_	_	?	the current robust domestic demand
+what	is	something	fueling	_	_	_	?	sustained economic expansion
+12	sustained	1
+what	is	_	sustained	_	_	_	?	economic expansion
+15	helped	2
+what	_	_	helped	something	_	_	?	the current robust domestic demand that has been fueling sustained economic expansion
+what	did	something	help	_	_	do	?	push up sales of products like ships , steel structures , power systems and machinery
+16	push	3
+how	was	something	pushed	_	_	_	?	up
+what	was	_	pushed	_	_	_	?	sales of products like ships , steel structures , power systems and machinery
+what	_	_	pushed	something	_	_	?	the current robust domestic demand that has been fueling sustained economic expansion
+32	resulted	2
+what	did	something	result	_	in	_	?	sharply higher profit
+what	_	_	resulted	_	in	something	?	the current robust domestic demand that has been fueling sustained economic expansion
+
+PROPBANK_2777	2
+Sen. Mitchell is confident he has sufficient votes to block such a measure with procedural actions .
+5	has	3
+who	_	_	has	something	_	_	?	Sen. Mitchell ### he
+what	does	someone	have	_	_	_	?	sufficient votes to block such a measure with procedural actions ### sufficient votes
+why	does	someone	have	something	_	_	?	to block such a measure with procedural actions
+9	block	4
+what	might	someone	block	_	_	_	?	such a measure
+who	might	_	block	something	_	_	?	Sen. Mitchell
+how	might	something	be blocked	_	_	_	?	with procedural actions
+why	might	someone	block	something	_	_	?	he has sufficient votes
+
+PROPBANK_2800	1
+At one point , almost all of the shares in the 20 - stock Major Market Index , which mimics the industrial average , were sharply higher .
+19	mimics	2
+what	_	_	mimics	something	_	_	?	almost all of the shares in the 20 - stock Major Market Index
+what	is	_	mimicked	_	_	_	?	the industrial average
+
+PROPBANK_2802	3
+Standard & Poor 's 500 - Stock Index climbed 5.29 to 340.36 , the Dow Jones Equity Market Index added 4.70 to 318.79 and the New York Stock Exchange Composite Index climbed 2.65 to
+8	climbed	3
+what	_	_	climbed	_	_	_	?	Standard & Poor 's 500 - Stock Index
+how much	did	something	climb	_	_	_	?	5.29
+how much	did	something	climb	_	to	_	?	340.36
+19	added	3
+what	_	_	added	something	_	_	?	the Dow Jones Equity Market Index
+how much	did	something	add	_	_	_	?	4.70
+how much	did	something	add	_	to	_	?	318.79
+31	climbed	2
+what	_	_	climbed	_	_	_	?	the New York Stock Exchange Composite Index
+how much	did	something	climb	_	_	_	?	2.65
+
+PROPBANK_2827	3
+Shaw Industries , which agreed to acquire Armstrong World Industries ' carpet operations for an undisclosed price , rose 2 1\/4 to 26 1\/8 .
+4	agreed	2
+who	_	_	agreed	_	to	something	?	Shaw Industries
+what	did	someone	agreed	_	_	_	?	to acquire Armstrong World Industries ' carpet operations for an undisclosed price , rose 2 1\/4 to 26 1\/8
+6	acquire	1
+what	was	_	acquired	_	_	_	?	Armstrong World Industries ' carpet operations for an undisclosed price , rose 2 1\/4 to 26 1\/8
+18	rose	2
+how much	did	something	rose	_	_	_	?	2 1\/4 to 26 1\/8
+what	has	_	risen	_	_	_	?	undisclosed price
+
+PROPBANK_2849	3
+The two leaders are expected to discuss changes sweeping the East bloc as well as human - rights issues , regional disputes and economic cooperation .
+4	expected	2
+who	is	_	expected	_	to	do something	?	The two leaders
+what	is	someone	expected	_	to	do	?	discuss changes sweeping the East bloc as well as human - rights issues , regional disputes and economic cooperation
+6	discuss	2
+who	might	_	discuss	something	_	_	?	The two leaders
+what	might	someone	discuss	_	_	_	?	changes sweeping the East bloc as well as human - rights issues , regional disputes and economic cooperation
+8	sweeping	2
+what	is	_	sweeping	something	_	_	?	changes
+what	is	something	sweeping	_	_	_	?	the East bloc
+
+PROPBANK_2859	2
+Nixon , on the fourth day of a private visit to China , said that damage to Sino - U.S. relations was `` very great , '' calling the situation `` the most serious '' since 1972 .
+13	said	3
+who	_	_	said	something	_	_	?	Nixon
+when	did	someone	say	something	_	_	?	on the fourth day of a private visit to China
+what	did	someone	say	_	_	_	?	that damage to Sino - U.S. relations was `` very great , '' calling the situation `` the most serious '' since 1972
+27	calling	4
+who	_	_	called	something	_	_	?	Nixon
+what	was	_	called	_	_	_	?	the situation
+what	was	something	called	_	_	_	?	`` the most serious '' since 1972
+when	did	someone	call	something	_	_	?	on the fourth day of a private visit to China
+
+PROPBANK_2871	3
+Hungary 's Parliament voted to hold a national referendum on an election to fill the new post of president .
+3	voted	3
+who	_	_	voted	something	_	_	?	Hungary 's Parliament
+what	was	_	voted	_	_	_	?	hold a national referendum on an election to fill the new post of president .
+why	was	something	voted	_	_	_	?	fill the new post of president .
+5	hold	3
+who	_	_	holds	something	_	_	?	Hungary 's Parliament
+what	will	_	be held	_	_	_	?	national referendum on an election to fill the new post of president .
+why	should	something	be held	_	_	_	?	fill the new post of president .
+13	fill	3
+what	should	_	be filled	_	_	_	?	the new post of president .
+how	will	something	be filled	_	_	_	?	election
+who	should	_	fill	something	_	_	?	Hungary 's Parliament
+
+PROPBANK_2906	1
+Mr. Phelan is an adroit diplomat who normally appears to be solidly in control of the Big Board 's factions .
+8	appears	3
+who	_	_	appears	something	_	_	?	Mr. Phelan ### an adroit diplomat
+how	does	someone	appear	_	_	_	?	to be solidly in control of the Big Board 's factions
+when	does	someone	appear	something	_	_	?	normally
+
+PROPBANK_2921	3
+The basket product , while it has got off to a slow start , is being supported by some big brokerage firms -- another member of Mr. Phelan 's splintered constituency .
+7	got	2
+what	has	_	got	_	off to	something	?	The basket product
+what	has	something	got	_	off to	_	?	a slow start
+16	supported	2
+what	is	_	supported	_	_	_	?	The basket product
+who	_	_	supports	something	_	_	?	some big brokerage firms
+29	splintered	1
+what	is	_	splintered	_	_	_	?	constituency
+
+PROPBANK_2979	2
+The market 's tempo was helped by the dollar 's resiliency , he said .
+5	helped	2
+what	was	something	helped	_	by	_	?	the dollar 's resiliency
+what	was	_	helped	_	_	_	?	The market's tempo
+13	said	2
+who	_	_	said	something	_	_	?	he
+what	did	someone	say	_	_	_	?	The market 's tempo was helped by the dollar 's resiliency
+
+PROPBANK_2994	1
+In the corporate market , an expected debt offering today by International Business Machines Corp. generated considerable attention .
+15	generated	3
+what	_	_	generated	something	_	_	?	International Business Machines Corp.
+what	was	_	generated	_	_	_	?	considerable attention
+when	was	something	generated	_	_	_	?	today
+
+PROPBANK_2997	2
+The last time IBM tapped the corporate debt market was in April 1988 , when it offered $ 500 million of debt securities .
+4	tapped	3
+who	_	_	tapped	something	_	_	?	IBM
+what	was	_	tapped	_	_	_	?	the corporate debt market
+when	was	something	tapped	_	_	_	?	April 1988 ### when it offered $ 500 million of debt securities
+16	offered	4
+how much	was	_	offered	_	_	_	?	$ 500 million
+what	was	_	offered	_	_	_	?	$ 500 million of debt securities
+who	_	_	offered	something	_	_	?	IBM ### it
+when	was	something	offered	_	_	_	?	April 1988
+
+PROPBANK_3012	1
+The discount rate on three - month Treasury bills rose slightly from the average rate at Monday 's auction to 7.79 % for a bond - equivalent yield of 8.04 % .
+9	rose	4
+what	_	_	rose	_	_	_	?	The discount rate on three - month Treasury bills
+how much	has	something	risen	_	_	_	?	slightly from the average rate at Monday 's auction ### to 7.79 % for a bond - equivalent yield of 8.04 %
+when	did	something	rise	_	_	_	?	Monday
+where	did	something	rise	_	_	_	?	at Monday's auction
+
+PROPBANK_3023	6
+A month ago , when Beatrice first filed to sell debt , the company had planned to offer $ 200 million of its senior subordinated reset notes at a yield of 12 3\/4 % .
+7	filed	3
+who	_	_	filed	_	for	something	?	Beatrice
+why	did	someone	file	_	_	_	?	to sell debt
+when	did	someone	file	_	for	something	?	A month ago
+9	sell	3
+what	was	_	sold	_	_	_	?	debt
+who	_	_	sold	something	_	_	?	Beatrice
+when	was	something	sold	_	_	_	?	A month ago
+15	planned	3
+what	had	someone	planned	_	to	do	?	offer $ 200 million of its senior subordinated reset notes at a yield of 12 3\/4 %
+who	had	_	planned	_	to	do something	?	the company
+when	had	someone	planned	_	to	do something	?	A month ago
+17	offer	3
+what	might	_	have been offered	_	_	_	?	$ 200 million of its senior subordinated reset notes
+who	might	_	have offered	something	_	_	?	the company
+how	might	something	have been offered	_	_	_	?	at a yield of 12 3\/4 %
+24	subordinated	2
+what	was	_	subordinated	_	_	_	?	reset notes
+who	had	something	subordinated	_	_	_	?	the company
+25	reset	1
+what	was	_	reset	_	_	_	?	notes
+
+PROPBANK_3024	4
+The $ 150 million in senior subordinated floating - rate notes were targeted to be offered at a price to float four percentage points above the three - month LIBOR .
+6	subordinated	3
+what	was	_	subordinated	_	_	_	?	floating - rate notes
+how much	was	_	subordinated	_	_	_	?	$ 150 million
+what	did	_	subordinated	something	_	do	?	targeted to be offered at a price to float four percentage points above the three - month LIBOR
+12	targeted	3
+what	was	_	targeted	_	_	_	?	senior subordinated floating - rate notes
+what	was	something	targeted	_	to	do	?	be offered at a price to float four percentage points above the three - month LIBO
+how much	was	_	targeted	_	_	_	?	$ 150 million
+15	offered	2
+what	would	something	offer	_	_	_	?	a price to float four percentage points above the three - month LIBOR
+what	_	_	offered	something	_	_	?	senior subordinated floating - rate notes
+20	float	3
+how much	would	something	float	_	above	something	?	four percentage points
+what	would	_	float	_	_	_	?	a price
+what	would	something	float	_	above	_	?	the three - month LIBOR
+
+PROPBANK_3039	2
+`` We were oversold and today we bounced back .
+3	oversold	3
+who	were	_	oversold	_	_	_	?	we
+what	did	_	oversold	someone	_	do	?	bounced back
+when	did	_	oversold	someone	_	do something	?	today
+7	bounced	4
+who	_	_	bounced	_	_	somewhere	?	we
+when	did	someone	bounce	_	_	_	?	today
+what	had	_	bounced	someone	_	do	?	oversold
+how	did	someone	bounce	_	_	_	?	back
+
+PROPBANK_3042	4
+There 's light at the end of the tunnel for municipals , '' he said , adding that he expects prices to `` inch up '' in the near term .
+14	said	2
+what	was	_	said	_	_	_	?	There 's light at the end of the tunnel for municipals , ''
+who	_	_	said	something	_	_	?	he
+16	adding	2
+what	did	someone	add	_	_	_	?	that he expects prices to `` inch up '' in the near term
+who	_	_	added	something	_	_	?	he
+19	expects	3
+what	does	someone	expect	something	to	do	?	`` inch up '' in the near term
+who	_	_	expects	something	_	_	?	he
+when	does	someone	expect	something	to	do something	?	in the near term
+23	inch	3
+when	might	something	inch	_	_	_	?	in the near term
+where	might	something	inch	_	_	_	?	up
+what	might	_	inch	_	_	_	?	prices
+
+PROPBANK_3072	3
+Avery Inc. said it completed the sale of Uniroyal Chemical Holding Co. to a group led by management of Uniroyal Chemical Co. , the unit 's main business .
+2	said	3
+who	_	_	said	something	_	_	?	Avery Inc. ### it
+what	was	_	said	_	_	_	?	it completed the sale of Uniroyal Chemical Holding Co. to a group led by management of Uniroyal Chemical Co. , the unit 's main business
+what	was	_	said	_	about	_	?	sale of Uniroyal Chemical Holding Co.
+4	completed	3
+what	was	_	completed	_	_	_	?	the sale of Uniroyal Chemical Holding Co. to a group led by management of Uniroyal Chemical Co. , the unit 's main business
+who	_	_	completed	something	_	_	?	Avery Inc.
+what	was	something	completed	_	to	_	?	a group led by management of Uniroyal Chemical Co.
+15	led	2
+what	was	something	led	_	by	_	?	management of Uniroyal Chemical Co.
+who	was	_	led	_	_	_	?	a group
+
+PROPBANK_3084	2
+The executives had profited handsomely by building American National Can Co. , Triangle 's chief asset .
+3	profited	3
+who	_	_	profited	_	_	_	?	The executives
+why	did	someone	profit	_	_	_	?	by building American National Can Co. , Triangle 's chief asset
+how	did	someone	profit	_	_	_	?	handsomely
+6	building	2
+who	_	_	built	something	_	_	?	The executives
+what	did	someone	build	_	_	_	?	American National Can Co. ### Triangle 's chief asset
+
+PROPBANK_3195	2
+To my knowledge , no government entities , including the EPA , are pursuing UV - B measurements .
+8	including	2
+who	is	_	included	_	_	_	?	the EPA
+what	are	_	included	something	_	doing	?	are pursuing UV - B measurements
+13	pursuing	2
+what	is	_	pursued	_	_	_	?	UV - B measurements
+who	are n't	_	pursuing	something	_	_	?	government entities ### the EPA
+
+PROPBANK_3217	3
+He said he expects the company to have $ 500 million in sales for this year .
+1	said	2
+who	_	_	said	something	_	_	?	He
+what	did	someone	say	_	_	_	?	he expects the company to have $ 500 million in sales for this year
+3	expects	4
+who	_	_	expects	something	_	_	?	He
+what	does	someone	expect	_	_	_	?	the company to have $ 500 million in sales for this year
+when	does	someone	expect	something	_	_	?	this year
+who	is	_	expected	_	to	do something	?	the company
+7	have	3
+who	will	_	have	something	_	_	?	the company
+how much	will	someone	have	_	_	_	?	$ 500 million
+when	will	someone	have	something	_	_	?	this year
+
+PROPBANK_3222	1
+`` It 's a wait - and - see attitude , '' said Dave Vellante , vice president of storage research for International Data Corp .
+12	said	2
+who	_	_	said	something	_	_	?	Dave Vellante ### vice president of storage research for International Data Corp ### vice president of storage research
+what	did	someone	say	_	_	_	?	It 's a wait - and - see attitude
+
+PROPBANK_3231	3
+Mr. Rifenburgh said the board still has n't acted on most of the internal report 's recommendations , pending restatement of the balance sheet .
+2	said	2
+who	_	_	said	something	_	_	?	Mr. Rifenburgh
+what	was	_	said	_	_	_	?	the board still has n't acted on most of the internal report 's recommendations , pending restatement of the balance sheet
+8	acted	2
+what	has n't	_	acted	_	on	something	?	the board
+what	has n't	_	been acted	_	on	_	?	most of the internal report 's recommendations , pending restatement of the balance sheet
+18	pending	3
+what	is	_	pending	_	_	_	?	restatement of the balance sheet .
+why	has	something	pended	_	_	_	?	the board still has n't acted on most of the internal report 's recommendations
+who	has	_	pended	something	_	_	?	the board
+
+PROPBANK_3238	1
+The operative definition of newsworthiness will favor virtually unrestrained use of personal , sensitive and intimate facts .
+6	favor	2
+what	will	_	favor	something	_	_	?	operative definition of newsworthiness
+what	will	_	be favored	_	_	_	?	virtually unrestrained use of personal , sensitive and intimate facts
+
+PROPBANK_3240	4
+And , since the public has always been fascinated by gossip and voyeurism , reporters and editors will strain for creative angles to justify the inclusion of collateral facts about private lives including sexual activities and domestic relationships , activities of family members , and all matters about mental and physical health .
+8	fascinated	2
+who	is	_	fascinated	_	by	something	?	the public
+what	is	someone	fascinated	_	with	_	?	gossip and voyeurism ### private lives including sexual activities and domestic relationships , activities of family members , and all matters about mental and physical health
+18	strain	3
+who	will	_	strain	_	for	something	?	reporters and editors
+what	will	someone	strain	_	for	_	?	creative angles to justify the inclusion of collateral facts about private lives
+why	will	someone	strain	_	for	something	?	the public has always been fascinated by gossip and voyeurism
+23	justify	2
+who	will	_	justify	something	_	_	?	reporters and editors
+what	will	someone	justify	_	_	_	?	the inclusion of collateral facts about private lives including sexual activities and domestic relationships , activities of family members , and all matters about mental and physical health
+32	including	2
+what	is	_	including	something	_	_	?	collateral facts about private lives
+what	is	_	being included	_	_	_	?	sexual activities and domestic relationships , activities of family members , and all matters about mental and physical health
+
+PROPBANK_3307	2
+At Giant Bicycle Inc. , Rancho Dominguez , Calif. , sales have tripled since the company entered the U.S. mountain - bike business in 1987 .
+12	tripled	3
+what	_	_	have tripled	_	_	_	?	sales
+when	has	something	tripled	_	_	_	?	since the company entered the U.S. mountain - bike business ### in 1987
+where	has	something	tripled	_	_	_	?	At Giant Bicycle Inc.
+16	entered	3
+what	_	_	entered	_	_	somewhere	?	Giant Bicycle Inc. ### the company
+where	was	something	entered	_	_	_	?	the U.S. mountain - bike business
+when	did	something	enter	_	_	somewhere	?	in 1987
+
+PROPBANK_3315	1
+Roger M. Marino , president , was named to the new post of vice chairman .
+7	named	2
+who	was	_	named	something	_	_	?	Roger M. Marino ### president
+what	was	someone	named	_	_	_	?	to the new post of vice chairman
+
+PROPBANK_3358	1
+It was the most active of the 100 - share index at 8.3 million shares , 6.5 million of which were traded by midday .
+21	traded	4
+what	were	_	traded	_	_	_	?	shares ### It
+how much	were	_	traded	_	_	_	?	6.5 million ### 8.3 million shares
+when	was	something	traded	_	_	_	?	midday
+where	was	something	traded	_	_	_	?	100 - share index
+
+PROPBANK_3374	2
+The Second Section index , which fell 36.87 points Friday , was down 21.44 points , or 0.59 % , to close at 3636.06 .
+6	fell	4
+what	_	_	fell	_	_	_	?	The Second Section index
+how much	did	something	fall	_	_	_	?	36.87 points
+when	did	something	fall	_	_	_	?	Friday
+what	did	something	fall	_	to	_	?	3636.06
+21	close	2
+what	did	something	close	_	at	_	?	3636.06
+what	_	_	closed	_	at	something	?	The Second Section index
+
+PROPBANK_3393	1
+Here are price trends on the world 's major stock markets , as calculated by Morgan Stanley Capital International Perspective , Geneva .
+13	calculated	2
+what	has	something	been calculated	_	by	_	?	Morgan Stanley Capital International Perspective , Geneva
+what	has	_	been calculated	_	_	_	?	price trends on the world 's major stock markets
+
+PROPBANK_3410	3
+Though Mr. Packer has since sold his stake , Courtaulds is moving to keep its institutional shareholders happy .
+5	sold	2
+who	_	_	sold	something	_	_	?	Mr. Packer ### his
+what	did	someone	sell	_	_	_	?	his stake
+11	moving	2
+who	is	_	moving	_	to	do something	?	Courtaulds ### its
+what	is	someone	moving	_	to	do	?	keep its institutional shareholders happy
+13	keep	2
+who	might	_	keep	something	_	_	?	Courtaulds ### its
+what	might	someone	keep	_	_	_	?	its institutional shareholders happy
+
+PROPBANK_3442	4
+Although the Treasury will announce details of the November refunding tomorrow , it could be delayed if Congress and President Bush fail to increase the Treasury 's borrowing capacity .
+4	announce	3
+who	will	_	announce	something	_	_	?	the Treasury
+what	will	someone	announce	_	_	_	?	details of the November refunding
+when	will	someone	announce	something	_	_	?	tomorrow
+15	delayed	1
+what	could	_	be delayed	_	_	_	?	it ### announce details of the November refunding tomorrow
+21	fail	2
+who	might	_	fail	something	_	_	?	Congress and President Bush
+what	might	someone	fail	_	_	_	?	increase the Treasury 's borrowing capacity .
+23	increase	2
+who	might not	_	increase	something	_	_	?	Congress and President Bush
+what	might not	_	increase	_	_	_	?	the Treasury 's borrowing capacity .
+
+PROPBANK_3458	4
+The latest 10 - year notes ended at about 100 16\/32 to yield 7.90 % , compared with 100 11\/32 to yield 7.93 % on Friday .
+6	ended	2
+what	_	_	ended	_	_	_	?	The latest 10 - year notes
+what	did	something	end	_	at	_	?	about 100 16\/32
+12	yield	2
+what	did	something	yield	_	_	_	?	7.90 %
+what	_	_	yielded	something	_	_	?	The latest 10 - year notes
+16	compared	2
+what	was	something	compared	_	with	_	?	100 11\/32 ### 7.90 %
+what	was	_	compared	_	with	something	?	100 16\/32 ### 7.93 %
+21	yield	3
+what	did	something	yield	_	_	_	?	7.93 %
+what	_	_	yielded	something	_	_	?	10 - year notes
+when	was	something	yielded	_	_	_	?	on Friday
+
+PROPBANK_3494	4
+The senior subordinated debentures maturing in 2004 are targeted to be offered at a yield of between 12 5\/8 % to 12 3\/4 % .
+2	subordinated	1
+what	is	_	subordinated	_	_	_	?	debentures maturing in 2004 are targeted to be offered at a yield of between 12 5\/8 % to 12 3\/4 %
+4	maturing	2
+what	is	_	maturing	_	_	_	?	The senior subordinated debenture
+when	is	something	maturing	_	_	_	?	in 2004
+8	targeted	1
+what	is	_	targeted	_	_	_	?	The senior subordinated debenture
+11	offered	2
+what	will	_	be offered	_	_	_	?	The senior subordinated debenture
+what	will	something	be offered	_	at	_	?	a yield of between 12 5\/8 % to 12 3\/4 %
+
+PROPBANK_3511	2
+British government bonds ended moderately higher , encouraged by a steadier pound and a rise in British stocks .
+3	ended	2
+what	_	_	ended	_	_	_	?	British government bonds
+how	did	something	end	_	_	_	?	moderately higher
+7	encouraged	2
+what	was	_	encouraged	_	_	_	?	British government bonds
+what	was	something	encouraged	_	by	_	?	a steadier pound ### a rise in British stocks
+
+PROPBANK_3559	3
+Osamu Nagayama , deputy president of Chugai , which spends about 15 % of its sales on research and development , was unable to pinpoint how much money Chugai would pump into Gen - Probe .
+9	spends	4
+what	_	_	spends	something	on	something	?	Chugai
+what	does	something	spend	something	on	_	?	research and development
+how much	does	something	spend	_	of	something	?	about 15 %
+what	does	something	spend	_	on	something	?	its sales
+24	pinpoint	2
+who	could n't	_	pinpoint	something	_	_	?	Osamu Nagayama , deputy president of Chugai ### Osamu Nagayama
+what	could n't	someone	pinpoint	_	_	_	?	how much money Chugai would pump into Gen - Probe
+30	pump	3
+who	would	_	pump	something	into	something	?	Chugai
+where	would	someone	pump	something	_	_	?	into Gen - Probe
+what	would	someone	pump	_	into	something	?	money
+
+PROPBANK_3569	1
+A half - dozen Soviet space officials , in Tokyo in July for an exhibit , stopped by to see their counterparts at the National Space Development Agency of Japan .
+16	stopped	5
+where	did	someone	stop	_	by	_	?	the National Space Development Agency of Japan
+who	_	_	stopped	_	by	somewhere	?	Soviet space officials ### their
+why	did	someone	stop	_	by	somewhere	?	to see their counterparts
+when	did	someone	stop	_	by	somewhere	?	in July
+how much	_	_	stopped	_	by	somewhere	?	A half - dozen
+
+PROPBANK_3630	1
+It came in London 's `` Big Bang '' 1986 deregulation ; and Toronto 's `` Little Bang '' the same year .
+1	came	3
+where	did	something	come	_	in	_	?	London 's `` Big Bang '' 1986 deregulation ; and Toronto 's `` Little Bang '' the same year
+what	_	_	came	_	in	_	?	It
+when	did	something	come	_	in	_	?	1986
+
+PROPBANK_3643	2
+Among other things , they said , Mr. Azoff would develop musical acts for a new record label .
+5	said	2
+who	_	_	said	something	_	_	?	they
+what	did	someone	say	_	_	_	?	Mr. Azoff would develop musical acts for a new record label
+10	develop	3
+who	would	_	develop	something	_	_	?	Mr. Azoff
+what	would	someone	develop	_	_	_	?	musical acts
+what	would	someone	develop	something	for	_	?	a new record label
+
+PROPBANK_3645	3
+Although Mr. Azoff wo n't produce films at first , it is possible that he could do so later , the sources said .
+5	produce	3
+what	wo n't	someone	produce	_	_	_	?	films
+who	wo n't	_	produce	something	_	_	?	Mr. Azoff ### he
+when	would	someone	produce	something	_	_	?	later
+16	do	2
+when	could	someone	do	something	_	_	?	later
+who	could	_	do	something	_	_	?	Mr. Azoff ### he
+22	said	2
+who	_	_	said	something	_	_	?	the sources
+what	was	_	said	_	_	_	?	Although Mr. Azoff wo n't produce films at first , it is possible that he could do so later
+
+PROPBANK_3647	2
+The 41 - year - old Mr. Azoff , a former rock 'n' roll manager , is credited with turning around MCA 's once - moribund music division in his six years at the company .
+17	credited	2
+who	has	_	been credited	_	with	something	?	The 41 - year - old Mr. Azoff ### a former rock 'n' roll manager
+what	has	someone	been credited	_	with	_	?	urning around MCA 's once - moribund music division in his six years at the company
+19	turning	4
+who	_	_	turned	_	around	something	?	The 41 - year - old Mr. Azoff ### a former rock 'n' roll manager
+who	did	someone	turn	_	around	_	?	MCA 's once - moribund music division in his six years at the company
+when	did	someone	turn	_	around	someone	?	in his six years at the company
+how	was	someone	turned	_	_	_	?	around
+
+PROPBANK_3653	3
+Tom Panelli had a perfectly good reason for not using the $ 300 rowing machine he bought three years ago .
+2	had	4
+who	_	_	had	something	_	_	?	Tom Panelli
+what	did	someone	have	_	_	_	?	a perfectly good reason ### a perfectly good reason for not using the $ 300 rowing machine he bought three years ago
+how	did	someone	have	something	for	_	?	perfectly
+what	did	someone	have	something	for	_	?	not using the $ 300 rowing machine he bought three years ago
+9	using	2
+what	is n't	someone	using	_	_	_	?	the $ 300 rowing machine he bought three years ago ### the $ 300 rowing machine
+who	is n't	_	using	something	_	_	?	Tom Panelli
+16	bought	4
+who	_	_	bought	something	_	_	?	Tom Panelli ### he
+when	did	someone	buy	something	_	_	?	three years ago
+how much	did	someone	buy	something	for	_	?	$ 300
+what	did	someone	buy	_	_	_	?	rowing machine
+
+PROPBANK_3657	5
+A San Francisco lawyer , Mr. Panelli rowed religiously when he first got the machine , but , he complains , it left grease marks on his carpet , `` and it was boring .
+7	rowed	4
+who	_	_	rowed	_	_	_	?	A San Francisco lawyer , Mr. Panelli ### A San Francisco lawyer ### Mr. Panelli
+what	did	someone	row	_	_	_	?	the machine
+when	did	someone	row	_	_	_	?	when he first got the machine
+how	did	someone	row	_	_	_	?	religiously
+12	got	2
+who	_	_	got	something	_	_	?	A San Francisco lawyer , Mr. Panelli ### A San Francisco lawyer ### Mr. Panelli
+what	did	someone	get	_	_	_	?	the machine
+19	complains	2
+who	_	_	complains	_	_	_	?	he ### A San Francisco lawyer , Mr. Panelli ### A San Francisco lawyer ### Mr. Panelli
+why	does	someone	complain	_	_	_	?	it left grease marks on his carpet , `` and it was boring ### it left grease marks on his carpet ### it was boring
+22	left	3
+what	_	_	left	something	_	_	?	it ### the machine
+what	did	something	leave	_	_	_	?	grease marks
+where	did	something	leave	something	_	_	?	on his carpet
+33	boring	1
+what	was	_	boring	_	_	_	?	it ### the machine
+
+PROPBANK_3664	2
+The fitness craze itself has gone soft , the survey found .
+5	gone	2
+what	has	something	gone	_	_	_	?	soft
+what	has	_	gone	something	_	_	?	The fitness craze ### itself
+10	found	2
+what	_	_	found	something	_	_	?	the survey
+what	was	_	found	_	_	_	?	The fitness craze itself has gone soft
+
+PROPBANK_3674	3
+With more than 15 million exercise bikes sold in the past five years , he adds , `` a lot of garages , basements and attics must be populated with them . ''
+7	sold	2
+what	is	_	sold	_	_	_	?	more than 15 million exercise bikes
+when	was	something	sold	_	_	_	?	in the past five years
+15	adds	2
+who	_	_	adds	something	_	_	?	he
+what	did	someone	add	_	_	_	?	a lot of garages , basements and attics must be populated with them
+28	populated	2
+what	must	_	be populated	_	with	something	?	a lot of garages , basements and attics
+what	must	_	populate	something	_	_	?	them
+
+PROPBANK_3686	2
+A surprising 78 % of people said they exercise regularly , up from 73 % in 1981 .
+6	said	2
+who	_	_	said	something	_	_	?	78 % of people
+what	did	someone	say	_	_	_	?	they exercise regularly
+8	exercise	1
+who	_	_	exercise	_	_	_	?	78 % of people s
+
+PROPBANK_3708	3
+Sometimes , if you have a headache , you can go out and walk it right off . ''
+4	have	3
+what	might	someone	have	_	_	_	?	a headache
+who	might	_	have	something	_	_	?	you
+when	might	someone	have	something	_	_	?	Sometimes
+10	go	2
+who	can	_	go	_	_	somewhere	?	you
+where	can	someone	go	_	_	_	?	out and walk it right off ### out
+13	walk	1
+what	would	someone	walk	_	off	_	?	a headache ### it
+
+PROPBANK_3712	3
+But fully 90 % of those polled felt they did n't need to belong to a health club .
+6	polled	1
+who	was	_	polled	_	_	_	?	those
+7	felt	2
+who	_	_	felt	something	_	_	?	90 % of those polled ### they
+what	did	someone	feel	_	_	_	?	they did n't need to belong to a health club
+13	belong	2
+who	would n't	_	belong	_	to	something	?	90 % of those polled ### they
+where	would n't	someone	belong	_	to	_	?	a health club
+
+PROPBANK_3748	1
+If there 's something ' weird and it do n't look good .
+10	look	2
+how	does	something	look	_	_	_	?	it do n't look good .
+what	does n't	_	look	_	_	_	?	it ### something
+
+PROPBANK_3752	2
+They claim to have busted spirits , poltergeists and other spooks in hundreds of houses around the country .
+1	claim	2
+who	_	_	claims	something	_	_	?	They
+what	does	someone	claim	_	_	_	?	to have busted spirits , poltergeists and other spooks in hundreds of houses around the country
+4	busted	3
+who	might	_	have busted	something	_	_	?	They
+what	might	_	have been busted	_	_	_	?	spirits , poltergeists and other spooks
+where	might	something	have been busted	_	_	_	?	in hundreds of houses around the country
+
+PROPBANK_3780	6
+On a recent afternoon , Mr. Baker and a reporter go ghost - busting , visiting Kathleen Stinnett , a Lexington woman who has phoned the University of Kentucky to report mysterious happenings in her house .
+10	go	4
+where	does	someone	go	_	_	_	?	ghost - busting
+who	_	_	goes	_	_	somewhere	?	Mr. Baker and a reporter
+when	did	someone	go	_	_	somewhere	?	On a recent afternoon
+why	did	someone	go	_	_	somewhere	?	visiting Kathleen Stinnett , a Lexington woman who has phoned the University of Kentucky to report mysterious happenings in her house
+11	ghost	3
+who	does	_	ghost	_	_	_	?	Mr. Baker and a reporter
+when	did	someone	ghost	_	_	_	?	On a recent afternoon
+why	did	someone	ghost	_	_	_	?	visiting Kathleen Stinnett , a Lexington woman who has phoned the University of Kentucky to report mysterious happenings in her house
+13	busting	3
+what	is	someone	busting	_	_	_	?	ghost
+who	is	_	busting	something	_	_	?	Mr. Baker and a reporter
+when	did	someone	bust	something	_	_	?	On a recent afternoon
+15	visiting	4
+who	was	someone	visiting	_	_	_	?	Kathleen Stinnett ### a Lexington woman
+who	was	_	visiting	someone	_	_	?	Mr. Baker and a reporter
+when	was	someone	being visited	_	_	_	?	On a recent afternoon
+why	was	someone	being visited	_	_	_	?	mysterious happenings in her house ### ghost - busting
+24	phoned	3
+who	_	_	phoned	_	_	somewhere	?	Kathleen Stinnett ### a Lexington woman
+where	did	someone	phone	_	_	_	?	the University of Kentucky
+why	did	someone	phone	_	_	_	?	to report mysterious happenings in her house
+30	report	4
+who	_	_	reported	something	_	_	?	Kathleen Stinnett ### a Lexington woman
+what	did	someone	report	_	_	_	?	mysterious happenings in her house
+who	did	someone	report	something	to	_	?	the University of Kentucky
+how	do	someone	report	something	_	_	?	phoned
+
+PROPBANK_3784	2
+Of the self - starting vacuum cleaner , he says : `` Could be Cuddles , { Mrs. Stinnett 's dog } . ''
+4	starting	2
+what	is	_	starting	_	_	_	?	vacuum cleaner
+how	does	something	start	_	_	_	?	self
+9	says	3
+who	_	_	says	something	_	_	?	he
+what	did	someone	say	_	_	_	?	`` Could be Cuddles , { Mrs. Stinnett 's dog } . ''
+what	did	someone	say	something	about	_	?	the self - starting vacuum cleaner
+
+PROPBANK_3844	2
+`` I do n't foresee any shortages over the next few months , '' says Ken Allen , an official of Operating Engineers Local 3 in San Francisco .
+4	foresee	3
+who	do n't	_	foresee	something	_	_	?	I ### Ken Allen ### an official of Operating Engineers Local 3 in San Francisco
+what	does n't	someone	foresee	_	_	_	?	any shortages over the next few months
+when	does n't	someone	foresee	something	_	_	?	over the next few months
+14	says	2
+who	_	_	says	something	_	_	?	I ### Ken Allen ### an official of Operating Engineers Local 3 in San Francisco
+what	does	someone	say	_	_	_	?	I do n't foresee any shortages over the next few months
+
+PROPBANK_3849	3
+But , with the state offering only $ 39,000 a year and California 's high standard of living , `` there are n't too many to choose from , '' says Brent Scott , a recruiting officer .
+5	offering	5
+how much	is	_	offered	_	_	_	?	$ 39,000
+who	_	_	offers	something	_	_	?	state
+what	is	_	offered	_	_	_	?	only $ 39,000 a year
+when	is	something	offered	_	_	_	?	a year
+where	is	something	offered	_	_	_	?	state
+26	choose	1
+why	is n't	something	chosen	_	from	_	?	state offering only $ 39,000 a year and California 's high standard of living
+30	says	2
+who	_	_	says	something	_	_	?	Brent Scott ### a recruiting officer
+what	does	someone	say	_	_	_	?	But , with the state offering only $ 39,000 a year and California 's high standard of living , `` there are n't too many to choose from , ''
+
+PROPBANK_3862	1
+Both reflect the dismissal of lower - level and shorter - tenure executives .
+1	reflect	2
+what	is	_	reflected	_	_	_	?	the dismissal of lower - level and shorter - tenure executives
+what	_	_	reflects	something	_	_	?	Both
+
+PROPBANK_3878	2
+Student job postings at Boston University slip 10 % this year following a 10 % drop in 1988 .
+6	slip	4
+what	_	_	slipped	_	_	_	?	Student job postings
+when	did	something	slipped	_	_	_	?	this year
+where	did	something	slipped	_	_	_	?	Boston University
+how much	did	something	slipped	_	_	_	?	10 %
+11	following	4
+what	_	_	followed	something	_	_	?	Student job postings at Boston University slip 10 % this year
+what	did	something	follow	_	_	_	?	a 10 % drop in 1988 .
+when	did	something	follow	_	_	_	?	this year
+where	did	something	follow	_	_	_	?	Boston University
+
+PROPBANK_3895	4
+To avoid a runoff , one candidate would have to win 50 % of the vote -- a feat that most analysts consider impossible with so many candidates running .
+1	avoid	2
+what	might	_	be avoided	_	_	_	?	a runoff
+how	can	someone	avoid	something	_	_	?	one candidate would have to win 50 % of the vote -- a feat that most analysts consider impossible with so many candidates running ### one candidate would have to win 50 % of the vote
+10	win	3
+how much	must	someone	win	_	_	_	?	50 % of the vote
+who	must	_	win	something	_	_	?	one candidate
+why	must	someone	win	something	_	_	?	To avoid a runoff
+22	consider	3
+who	_	_	considers	something	_	_	?	most analyst
+what	is	_	considered	_	by	someone	?	one candidate would have to win 50 % of the vote
+why	is	something	considered	_	_	_	?	with so many candidates running
+28	running	1
+who	_	_	have been running	_	_	_	?	candidates
+
+PROPBANK_3909	3
+About $ 70 billion is estimated to be tied up in the short - term money market , which acts both as a hedge against inflation for consumers and an accelerator of inflation and deficits for the government .
+5	estimated	2
+how much	has	_	been estimated	_	_	_	?	About $ 70 billion
+what	is	_	estimated	_	_	_	?	to be tied up in the short - term money market , which acts both as a hedge against inflation for consumers and an accelerator of inflation and deficits for the government
+8	tied	2
+how much	is	_	tied	_	up	_	?	About $ 70 billion
+where	is	something	tied	_	up	_	?	in the short - term money market
+19	acts	2
+what	_	_	acts	_	as	something	?	short - term money market
+how	does	something	acts	_	_	_	?	both as a hedge against inflation for consumers and an accelerator of inflation and deficits for the government
+
+PROPBANK_3936	2
+Humana contends that $ 8,000 represents an extreme case and that its regular charge for lithotripsy is $ 4,900 .
+1	contends	2
+who	_	_	contends	something	_	_	?	Humana
+what	does	someone	contend	_	_	_	?	$ 8,000 represents an extreme case and that its regular charge for lithotripsy is $ 4,900 .
+5	represents	2
+what	_	_	represents	something	_	_	?	$ 8,000
+what	does	something	represent	_	_	_	?	an extreme case
+
+PROPBANK_3959	1
+Because patients require less attention from nurses and other staff , room charges are lower -- about $ 100 less per day than a regular room at the Vermont hospital .
+2	require	4
+who	_	_	requires	something	_	_	?	patients
+how much	does	someone	require	_	from	someone	?	less
+what	does	someone	require	_	_	_	?	attention
+who	does	someone	require	something	from	_	?	nurses ### other staff
+
+PROPBANK_3964	1
+THE CHIEF NURSING officer can be responsible for more than 1,000 employees and at least one - third of a hospital 's budget ; a head nurse typically oversees up to 80 employees and $ 8 million .
+28	oversees	3
+who	_	_	oversees	something	_	_	?	a head nurse
+what	does	someone	oversee	_	up to	_	?	80 employees and $ 8 million
+how much	does	someone	oversee	_	_	_	?	$ 8 million
+
+PROPBANK_3997	4
+USG Corp. agreed to sell its headquarters building here to Manufacturers Life Insurance Co. of Toronto , and will lease the 19 - story facility until it moves to a new quarters in 1992 .
+2	agreed	2
+who	has	_	agreed	_	to	something	?	USG Corp
+what	has	someone	agreed	_	to	_	?	sell its headquarters building here to Manufacturers Life Insurance Co. of Toronto
+4	sell	2
+who	will	_	sell	something	_	_	?	USG Corp
+who	will	someone	sell	something	to	_	?	Manufacturers Life Insurance Co. of Toronto
+19	lease	3
+who	will	_	lease	something	_	_	?	USG Corp
+when	will	someone	lease	something	_	_	?	until it moves to a new quarters in 1992
+what	will	someone	lease	_	_	_	?	the 19 - story facility
+27	moves	3
+who	will	_	move	_	_	_	?	USG Corp.
+when	will	someone	move	_	_	_	?	in 1992
+where	will	someone	move	_	to	_	?	a new quarters
+
+PROPBANK_4004	2
+`` Now everything '' -- such as program trading and wide stock market swings -- `` that everyone had pushed back in their consciousness is just sitting right there . ''
+19	pushed	2
+who	_	_	pushed	something	_	_	?	everyone
+where	was	something	pushed	_	_	_	?	back in their consciousness
+26	sitting	2
+where	was	something	been sitting	_	_	_	?	right there
+what	has	_	been sitting	_	_	somewhere	?	`` Now everything '' -- such as program trading and wide stock market swings -- `` that everyone had pushed back in their consciousness
+
+PROPBANK_4018	3
+Overall , net sales of all mutual funds , excluding money market funds , fell to $ 1.9 billion in September from $ 4.2 billion in August , the trade group said .
+9	excluding	2
+what	_	_	excluded	something	_	_	?	net sales of all mutual funds
+what	was	something	excluding	_	_	_	?	money market funds
+14	fell	6
+what	_	something	fell	_	_	_	?	net sales of all mutual funds
+when	did	something	fall	_	_	_	?	in September
+how much	did	something	fall	_	to	_	?	$ 1.9 billion
+how much	did	something	fall	_	from	_	?	$ 4.2 billion
+when	did	something	fall	_	from	_	?	in August
+what	did n't	_	fall	_	_	_	?	money market funds
+31	said	2
+who	_	_	said	something	_	_	?	the trade group
+what	was	_	said	_	_	_	?	Overall , net sales of all mutual funds , excluding money market funds , fell to $ 1.9 billion in September from $ 4.2 billion in August
+
+PROPBANK_4025	1
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .
+2	emphasized	2
+who	_	_	emphasized	something	_	_	?	he
+what	was	_	emphasized	_	_	_	?	new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .
+
+PROPBANK_4076	1
+Vernon E. Jordan was elected to the board of this transportation services concern .
+4	elected	2
+who	was	_	elected	_	_	_	?	Vernon E. Jordan
+what	was	someone	elected	_	to	_	?	to the board of this transportation services concern
+
+PROPBANK_4100	3
+( Separately , the Senate last week passed a bill permitting execution of terrorists who kill Americans abroad . )
+7	passed	4
+who	_	_	passed	something	_	_	?	Senate
+what	was	_	passed	_	_	_	?	a bill ### a bill permitting execution of terrorists who kill Americans abroad
+when	was	something	passed	_	_	_	?	last week
+what	was	something	passed	_	about	_	?	permitting execution of terrorists who kill Americans abroad
+10	permitting	2
+what	will	_	be permitting	something	_	_	?	a bill
+what	will	_	be permitted	_	_	_	?	execution of terrorists who kill Americans abroad
+15	kill	3
+who	_	_	kills	someone	_	_	?	terrorists ### who
+who	are	_	killed	_	_	_	?	Americans
+where	is	someone	killed	_	_	_	?	abroad
+
+PROPBANK_4131	3
+A state judge postponed a decision on a move by holders of Telerate Inc. to block the tender offer of Dow Jones & Co. for the 33 % of Telerate it does n't already own .
+3	postponed	2
+who	_	_	postponed	something	_	_	?	A state judge
+what	did	someone	postpone	_	_	_	?	a decision on a move by holders of Telerate Inc. to block the tender offer of Dow Jones & Co.
+15	block	3
+what	will	_	be blocked	_	_	_	?	the tender offer
+who	will	_	block	something	_	_	?	Telerate Inc.
+who	will	something	be blocked	_	for	_	?	Dow Jones & Co.
+34	own	2
+who	does n't	_	own	something	_	_	?	Dow Jones & Co.
+what	does n't	someone	own	_	_	_	?	33 % of Telerate
+
+PROPBANK_4139	4
+He also contended that the plaintiffs failed to cite any legal authority that would justify such an injunction .
+2	contended	3
+who	_	_	contended	something	_	_	?	he
+what	was	_	contended	_	_	_	?	the plaintiffs failed to cite any legal authority that would justify such an injunction
+who	_	_	have been contended	_	_	_	?	plaintiffs
+6	failed	2
+who	_	_	failed	_	to	do something	?	plaintiffs
+what	was	_	failed	_	_	_	?	cite any legal authority that would justify such an injunction
+8	cite	2
+who	did n't	_	cite	something	_	_	?	plaintiffs
+what	was n't	_	cited	_	_	_	?	any legal authority that would justify such an injunction
+14	justify	2
+what	would	_	justify	something	_	_	?	any legal authority
+what	would	_	be justified	_	_	_	?	such an injunction
+
+PROPBANK_4149	5
+The Lone Star Steel lawsuit also asks the court to rule that Lone Star Technologies is jointly responsible for a $ 4.5 million Lone Star Steel pension payment that was due , but was n't paid , in September and that the parent company ca n't recover the amount from its subsidiary if the parent company makes the payment .
+6	asks	2
+what	_	_	asks	something	_	_	?	The Lone Star Steel lawsuit
+what	does	something	ask	_	_	_	?	the court to rule that Lone Star Technologies is jointly responsible for a $ 4.5 million Lone Star Steel pension payment that was due , but was n't paid , in September and that the parent company ca n't recover the amount from its subsidiary if the parent company makes the payment
+10	rule	2
+who	will	_	rule	something	_	_	?	the court
+what	will	someone	rule	_	_	_	?	that Lone Star Technologies is jointly responsible for a $ 4.5 million Lone Star Steel pension payment that was due , but was n't paid , in September and that the parent company ca n't recover the amount from its subsidiary if the parent company makes the payment
+35	paid	3
+what	was n't	_	paid	_	_	_	?	a $ 4.5 million Lone Star Steel pension payment that was due
+who	did n't	_	pay	something	_	_	?	Lone Star Technologies
+how much	did n't	someone	pay	_	_	_	?	$ 4.5 million
+46	recover	3
+who	ca n't	_	recover	something	_	_	?	the parent company
+what	ca n't	someone	recover	_	_	_	?	the amount from its subsidiary
+why	could n't	someone	recover	something	_	_	?	if the parent company makes the payment
+56	makes	2
+who	_	_	makes	something	_	_	?	the parent company
+what	does	someone	make	_	_	_	?	the payment
+
+PROPBANK_4168	1
+Indeed , the insurance adjusters had already bolted out of the courtroom .
+7	bolted	2
+who	had	_	bolted	something	_	_	?	the insurance adjusters
+where	had	someone	bolted	_	out of	_	?	the courtroom
+
+PROPBANK_4170	2
+For the record , Jeffrey Kaufman , an attorney for Fireman 's Fund , said he was `` rattled -- both literally and figuratively . ''
+14	said	2
+who	_	_	said	something	_	_	?	Jeffrey Kaufman , an attorney for Fireman 's Fund ### Jeffrey Kaufman ### he
+what	did	someone	say	_	_	_	?	he was `` rattled -- both literally and figuratively . ''
+18	rattled	2
+who	was	_	rattled	_	_	_	?	he ### Jeffrey Kaufman , an attorney for Fireman 's Fund ### Jeffrey Kaufman
+how	was	someone	rattled	_	_	_	?	both literally and figuratively
+
+PROPBANK_4175	3
+Edison Brothers Stores Inc. said it agreed to buy 229 Foxmoor women 's apparel stores from Foxmoor Specialty Stores Corp. , a unit of Dylex Ltd. of Toronto .
+4	said	2
+who	_	_	said	something	_	_	?	Edison Brothers Stores Inc. ### it
+what	was	_	said	_	_	_	?	it agreed to buy 229 Foxmoor women 's apparel stores from Foxmoor Specialty Stores Corp. , a unit of Dylex Ltd. of Toronto .
+6	agreed	3
+who	_	_	agreed	_	to	something	?	Edison Brothers Stores Inc. ### it
+what	did	someone	agree	_	to	do	?	to buy 229 Foxmoor women 's apparel stores from Foxmoor Specialty Stores Corp. , a unit of Dylex Ltd. of Toronto
+who	did	someone	agree	_	with	_	?	Foxmoor Specialty Stores Corp ### a unit of Dylex Ltd. of Toronto
+8	buy	3
+what	might	someone	buy	_	_	_	?	229 Foxmoor women 's apparel stores
+who	might	_	buy	something	_	_	?	Edison Brothers Stores Inc. ### it
+who	might	something	be bought	_	from	_	?	Foxmoor Specialty Stores Corp ### a unit of Dylex Ltd. of Toronto
+
+PROPBANK_4204	3
+With companies such as Honda Motor Co. , Toyota Motor Corp. and Nissan Motor Co. running so - called transplant auto operations , Japanese auto production in the U.S. will reach one million vehicles this year .
+15	running	2
+who	are	_	running	something	_	_	?	companies such as Honda Motor Co. , Toyota Motor Corp. and Nissan Motor Co.
+what	are	_	being run	_	_	_	?	so - called transplant auto operations
+18	called	1
+how	is	something	called	_	_	_	?	transplant auto operations
+30	reach	3
+how much	will	something	reach	_	_	_	?	one million vehicles
+when	will	something	be reached	_	_	_	?	this year
+who	will	_	reach	something	_	_	?	Japanese auto production in the U.S.
+
+PROPBANK_4238	3
+Also , the premiums paid by the U.S. government on a purchase of copper for the U.S. Mint were lower than expected , and acted as a price depressant , analysts said .
+4	paid	3
+what	has	_	been paid	_	_	_	?	premiums
+who	_	_	paid	something	_	_	?	the U.S. government
+what	did	someone	pay	_	for	_	?	a purchase of copper for the U.S. Mint
+24	acted	2
+what	_	_	acted	_	as	something	?	the premiums paid
+what	did	something	act	_	as	_	?	a price depressant
+31	said	2
+who	_	_	said	something	_	_	?	analysts
+what	did	someone	say	_	_	_	?	Also , the premiums paid by the U.S. government on a purchase of copper for the U.S. Mint were lower than expected , and acted as a price depressant
+
+PROPBANK_4254	5
+Workers at two Chilean mines , Los Bronces and El Soldado , which belong to the Exxon - owned Minera Disputado group , will vote Thursday on whether to strike after a two - year labor pact ends today .
+13	belong	2
+what	_	_	belongs	_	to	someone	?	two Chilean mines ### Los Bronces and El Soldado
+who	does	something	belong	_	to	_	?	the Exxon - owned Minera Disputado group
+18	owned	2
+who	_	_	owns	something	_	_	?	Exxon
+what	does	someone	own	_	_	_	?	Minera Disputado group
+24	vote	3
+who	will	_	vote	_	on	something	?	Workers at two Chilean mines
+what	will	someone	vote	_	on	_	?	whether to strike after a two - year labor pact ends
+when	will	someone	vote	_	_	_	?	Thursday
+29	strike	2
+who	might	_	strike	_	_	_	?	Workers at two Chilean mines
+why	might	someone	strike	_	_	_	?	a two - year labor pact ends today
+37	ends	2
+what	will	_	end	_	_	_	?	a two - year labor pact
+when	will	something	end	_	_	_	?	today
+
+PROPBANK_4266	4
+The prices of most corn , soybean and wheat futures contracts dropped slightly as farmers in the Midwest continued to rebuild stockpiles that were depleted by the 1988 drought .
+11	dropped	3
+what	_	_	dropped	_	_	_	?	The prices of most corn , soybean and wheat futures contracts
+how	did	something	drop	_	_	_	?	slightly
+why	did	something	drop	_	_	_	?	farmers in the Midwest continued to rebuild stockpiles that were depleted by the 1988 drought
+18	continued	4
+what	did	someone	continue	_	to	do	?	rebuild stockpiles
+who	_	_	continued	_	to	do something	?	farmers
+why	did	someone	continue	_	to	do something	?	depleted by the 1988 drought
+where	did	someone	continue	_	to	do something	?	in the Midwest
+20	rebuild	4
+who	_	_	rebuilds	something	_	_	?	farmers
+what	will	_	be rebuilt	_	_	_	?	stockpiles
+where	will	something	be rebuilt	_	_	_	?	in the Midwest
+why	will	someone	rebuild	something	_	_	?	were depleted by the 1988 drought
+24	depleted	5
+what	was	_	depleted	_	_	_	?	stockpiles
+where	was	something	depleted	_	_	_	?	in the Midwest
+why	was	something	depleted	_	_	_	?	the 1988 drought
+when	was	something	depleted	_	_	_	?	1988
+who	had	something	depleted	_	_	_	?	farmers
+
+PROPBANK_4286	1
+The forest - products concern currently has about 38 million shares outstanding .
+6	has	3
+what	does	something	have	_	_	_	?	about 38 million shares outstanding
+who	_	_	have	something	_	_	?	The forest - products
+how much	does	something	have	_	_	_	?	about 38 million shares outstanding
+
+PROPBANK_4292	5
+Yet the Soviet leader 's readiness to embark on foreign visits and steady accumulation of personal power , particularly since the last Politburo reshuffle on Sept. 30 , do not suggest that Mr. Gorbachev is on the verge of being toppled ; nor does he look likely to reverse the powers of perestroika .
+7	embark	2
+who	might	_	embark	_	_	_	?	the Soviet leader ### Mr. Gorbachev
+what	might	someone	embark	_	on	_	?	foreign visits
+30	suggest	2
+what	does n't	_	suggest	something	_	_	?	the Soviet leader 's readiness to embark on foreign visits and steady accumulation of personal power , particularly since the last Politburo reshuffle on Sept. 30
+what	does n't	something	suggest	_	_	_	?	that Mr. Gorbachev is on the verge of being toppled
+40	toppled	1
+what	might	_	be toppled	_	_	_	?	Mr. Gorbachev
+45	look	2
+how	does n't	someone	look	_	_	_	?	likely to reverse the powers of perestroika
+who	does n't	_	look	_	to	do something	?	the Soviet leader ### Mr. Gorbachev ### he
+48	reverse	2
+who	might not	_	reverse	something	_	_	?	the Soviet leader ### Mr. Gorbachev ### he
+what	might not	_	be reversed	_	_	_	?	the powers of perestroika
+
+PROPBANK_4303	4
+Medical cooperatives , among the most successful in the U.S.S.R. , are banned from providing general - practitioner services ( their main source of income ) , carrying out surgery , and treating cancer patients , drug addicts and pregnant women .
+12	banned	2
+who	is	_	banned	_	from	doing something	?	Medical cooperatives
+what	is	someone	banned	_	from	_	?	providing general - practitioner services ( their main source of income ) , carrying out surgery , and treating cancer patients , drug addicts and pregnant women .
+14	providing	3
+who	ca n't	_	provide	something	_	_	?	Medical cooperatives
+what	ca n't	someone	provide	_	_	_	?	general - practitioner services ( their main source of income ) , carrying out surgery , and treating cancer patients , drug addicts and pregnant women .
+why	ca n't	someone	provide	something	_	_	?	are banned
+27	carrying	3
+what	wo n't	_	be carried	_	out	_	?	surgery
+who	wo n't	_	carry	_	out	something	?	Medical cooperatives
+why	wo n't	something	be carried	_	out	_	?	are banned
+32	treating	3
+who	wo n't	someone	be treating	_	_	_	?	cancer patients , drug addicts and pregnant women .
+who	wo n't	_	be treating	someone	_	_	?	Medical cooperatives
+why	wo n't	someone	treat	someone	_	_	?	are banned
+
+PROPBANK_4368	3
+First Boston incurred millions of dollars of losses on Campeau securities it owned as well as on special securities it could n't sell .
+2	incurred	2
+who	_	_	incurred	something	_	_	?	First Boston
+what	did	someone	incur	_	_	_	?	millions of dollars of losses
+12	owned	2
+what	did	someone	own	_	_	_	?	Campeau securities
+who	_	_	owned	something	_	_	?	First Boston ### it
+22	sell	2
+what	could n't	someone	sell	_	_	_	?	special securities
+who	could n't	_	sell	something	_	_	?	First Boston ### it
+
+PROPBANK_4371	4
+It said CS First Boston `` has consistently been one of the most aggressive firms in merchant banking '' and that `` a very significant portion '' of the firm 's profit in recent years has come from merchant banking - related business .
+1	said	2
+what	_	_	have been said	_	_	_	?	CS First Boston `` has consistently been one of the most aggressive firms in merchant banking '' and that `` a very significant portion '' of the firm 's profit in recent years has come from merchant banking - related business .
+what	_	_	said	something	_	_	?	It
+36	come	5
+what	_	_	came	_	to	something	?	a very significant portion '' of the firm 's profit in recent years
+why	did	something	came	_	to	something	?	merchant banking - related business .
+what	did	something	came	_	to	_	?	CS First Boston ### one of the most aggressive firms in merchant banking
+when	did	something	came	_	to	something	?	in recent years
+how much	_	something	came	_	to	something	?	a very significant portion
+39	banking	4
+what	is	_	banking	something	_	_	?	CS First Boston ### one of the most aggressive firms in merchant banking
+when	is	someone	banking	_	_	_	?	in recent years
+what	is	_	being banked	_	_	_	?	a very significant portion '' of the firm 's profit
+how much	is	_	being banked	_	_	_	?	a very significant portion
+41	related	1
+what	is	_	related	_	to	something	?	business
+
+PROPBANK_4440	4
+Combined PC and work - station use in Japan will jump as much as 25 % annually over the next five years , according to some analysts , compared with about 10 % in the U.S. .
+0	combined	3
+what	is	_	combined	_	_	_	?	PC and work - station use
+where	is	something	combined	_	_	_	?	in Japan ### in the U.S.
+what	will	_	combined	something	_	do	?	jump as much as 25 % annually
+10	jump	4
+what	will	_	jump	_	_	_	?	Combined PC and work - station use
+where	will	something	jump	_	_	_	?	in Japan ### in the U.S.
+when	will	something	jump	_	_	_	?	over the next five years
+how much	will	something	jump	_	_	_	?	as much as 25 % annually ### about 10 %
+23	according	2
+who	is	something	according	_	to	_	?	some analysts
+what	is	_	according	_	to	someone	?	Combined PC and work - station use in Japan will jump as much as 25 % annually over the next five years ### compared with about 10 % in the U.S.
+28	compared	3
+what	has	_	been compared	_	_	_	?	Combined PC and work - station use
+who	has	something	been compared	_	for	_	?	Japan ### the U.S.
+how much	has	_	been compared	_	_	_	?	about 10 % ### as much as 25 % annually
+
+PROPBANK_4447	3
+After years of talking about selling in Japan , more and more U.S. companies are seriously pouring in .
+3	talking	1
+what	is	_	talked	_	about	_	?	selling in Japan
+5	selling	1
+where	is	something	being sold	_	_	_	?	in Japan
+16	pouring	3
+who	is	_	pouring	_	in	_	?	more and more U.S. companies
+when	is	someone	pouring	_	in	_	?	After years of talking about selling in Japan
+how	is	someone	pouring	_	in	_	?	seriously
+
+PROPBANK_4454	1
+But amid the two dozen bureaucrats and secretaries sits only one real - life PC .
+8	sits	4
+what	_	_	sits	_	_	_	?	one real - life PC
+who	_	_	sits	_	_	_	?	bureaucrats and secretaries
+how much	_	_	sit	_	_	somewhere	?	two dozen
+where	does	something	sit	_	_	_	?	amid the two dozen bureaucrats and secretaries
+
+PROPBANK_4456	1
+Japanese office workers use PCs at half the rate of their European counterparts and one - third that of the Americans .
+3	use	2
+who	_	_	use	something	_	_	?	Japanese office workers
+what	do	someone	use	_	_	_	?	PCs at half the rate of their European counterparts and one - third that of the Americans
+
+PROPBANK_4468	2
+In the U.S. , more than half the PC software sold is either for spreadsheets or for database analysis , according to Lotus .
+10	sold	4
+what	is	_	sold	_	_	_	?	PC software
+how much	is	_	sold	_	_	_	?	more than half
+what	is	something	sold	_	for	_	?	for spreadsheets or for database analysis
+where	is	something	sold	_	_	_	?	In the U.S.
+20	according	2
+what	is	_	according	_	to	someone	?	In the U.S. , more than half the PC software sold is either for spreadsheets or for database analysis
+who	is	something	according	_	to	_	?	Lotus
+
+PROPBANK_4469	1
+In Japan , those functions account for only about a third of the software market .
+5	account	4
+what	does	something	account	_	for	_	?	a third of the software market
+what	_	_	accounts	_	for	something	?	those functions
+where	does	something	account	_	for	something	?	In Japan
+how much	does	something	account	_	for	_	?	only about a third
+
+PROPBANK_4489	1
+The U.S. market , too , is dominated by a giant , International Business Machines Corp .
+7	dominated	2
+who	_	_	dominates	something	_	_	?	a giant ### International Business Machines Corp
+what	is	_	dominated	_	by	something	?	The U.S. market
+
+PROPBANK_4514	6
+By increasing the number of PCs it uses from 66 to 1,000 , Omron Tateishi Electronics Co. , of Kyoto , hopes not only to make certain tasks easier but also to transform the way the company is run .
+1	increasing	5
+what	is	_	be increased	_	_	_	?	the number of PCs it uses from 66 to 1,000
+how much	is	something	increased	_	from	_	?	66
+how much	is	something	increased	_	to	_	?	1,000
+who	_	_	increased	something	_	_	?	Omron Tateishi Electronics Co. ### it ### company
+why	is	something	increased	_	_	_	?	to make certain tasks easier but also to transform the way the company is run .
+7	uses	3
+what	is	_	used	_	_	_	?	PCs
+who	_	_	uses	something	_	_	?	Omron Tateishi Electronics Co. ### it ### company
+why	is	something	used	_	_	_	?	to make certain tasks easier but also to transform the way the company is run .
+21	hopes	2
+who	_	_	hopes	_	to	do something	?	Omron Tateishi Electronics Co. ### it ### company
+what	does	someone	hope	_	to	do	?	make certain tasks easier but also to transform the way the company is run
+25	make	3
+what	will	_	be made	_	_	_	?	certain tasks easier
+who	will	_	make	something	_	_	?	Omron Tateishi Electronics Co. ### it ### company
+how	will	something	be made	_	_	_	?	By increasing the number of PCs it uses from 66 to 1,000
+32	transform	3
+who	will	_	transform	something	_	_	?	Omron Tateishi Electronics Co. ### it ### company
+what	will	_	be transformed	_	_	_	?	the way the company is run
+how	will	something	be transformed	_	_	_	?	By increasing the number of PCs it uses from 66 to 1,000
+38	run	2
+what	is	_	run	_	_	_	?	Omron Tateishi Electronics Co. ### it ### company
+how	will	something	be run	_	_	_	?	By increasing the number of PCs it uses from 66 to 1,000
+
+PROPBANK_4530	2
+U.S. makers have under 10 % share , compared with half the market in Europe and 80 % at home .
+2	have	2
+what	_	_	have	something	_	_	?	U.S. makers
+what	does	someone	have	_	_	_	?	under 10 % share
+8	compared	2
+who	are	_	compared	_	to	someone	?	U.S. makers
+how much	is	something	compared	_	with	_	?	half the market in Europe and 80 % at home
+
+PROPBANK_4563	3
+Rather ominously , rabbit studies reveal that RU-486 can cause birth defects , Lancet , the British medical journal , reported in 1987 .
+5	reveal	2
+what	_	_	reveals	something	_	_	?	rabbit studies ### studies
+what	is	_	revealed	_	_	_	?	that RU-486 can cause birth defects
+9	cause	2
+what	can	something	cause	_	_	_	?	birth defects ### defects
+what	can	_	cause	something	_	_	?	RU-486
+20	reported	3
+what	was	_	reported	_	_	_	?	Rather ominously , rabbit studies reveal that RU-486 can cause birth defects ### rabbit studies reveal that RU-486 can cause birth defects ### RU-486 can cause birth defects
+when	was	something	reported	_	_	_	?	in 1987
+who	_	_	reported	something	_	_	?	Lancet ### Lancet , the British medical journal ### the British medical journal
+
+PROPBANK_4616	5
+According to one person familiar with the airline , the buy - out group -- led by United 's pilots union and UAL Chairman Stephen Wolf -- has begun billing UAL for fees and expenses it owes to investment bankers , law firms and banks .
+0	according	2
+who	is	something	according	_	to	_	?	one person familiar with the airline
+what	is	_	according	_	to	someone	?	the buy - out group -- led by United 's pilots union and UAL Chairman Stephen Wolf -- has begun billing UAL for fees and expenses it owes to investment bankers , law firms and banks .
+15	led	3
+who	is	something	led	_	by	_	?	United 's pilots union and UAL Chairman Stephen Wolf
+what	is	_	led	_	by	someone	?	the buy - out group
+what	is	something	led	_	_	doing	?	billing UAL for fees and expenses it owes to investment bankers , law firms and banks .
+28	begun	2
+what	has	_	begun	_	_	_	?	billing UAL for fees and expenses it owes to investment bankers , law firms and banks .
+who	has	_	begun	something	_	_	?	the buy - out group ### United 's pilots union and UAL Chairman Stephen Wolf
+29	billing	3
+who	is	_	being billed	_	_	_	?	UAL ### the airline
+who	is	_	billing	something	_	_	?	the buy - out group ### United 's pilots union and UAL Chairman Stephen Wolf
+what	is	someone	being billed	_	for	_	?	fees and expenses it owes to investment bankers , law firms and banks .
+36	owes	3
+who	_	_	owes	something	_	_	?	UAL ### the airline
+who	is	_	owed	something	_	_	?	investment bankers , law firms and banks .
+what	does	someone	owe	_	_	_	?	fees and expenses
+
+PROPBANK_4618	6
+Under a merger agreement reached Sept. 14 , the UAL board agreed to reimburse certain of the buy - out group 's expenses out of company funds even if the transaction was n't completed , provided the group did n't breach the agreement .
+4	reached	3
+what	was	_	reached	_	_	_	?	a merger agreement
+when	was	something	reached	_	_	_	?	Sept. 14
+who	_	_	reached	something	_	_	?	UAL board
+11	agreed	3
+who	_	_	agreed	something	_	_	?	UAL board
+what	was	_	agreed	_	_	_	?	reimburse certain of the buy - out group 's expenses out of company funds even if the transaction was n't completed , provided the group did n't breach the agreement .
+when	was	something	agreed	_	_	_	?	Sept. 14
+13	reimburse	2
+who	would	_	reimburse	something	_	_	?	UAL board
+what	would	_	be reimbursed	_	_	_	?	certain of the buy - out group 's expenses out of company funds even if the transaction was n't completed , provided the group did n't breach the agreement
+33	completed	2
+what	was n't	_	completed	_	_	_	?	the transaction
+when	had n't	something	been completed	_	_	_	?	Sept. 14
+35	provided	2
+what	was	_	provided	_	_	_	?	the group did n't breach the agreement .
+who	_	_	provided	something	_	_	?	the group
+40	breach	3
+what	would n't	_	be breached	_	_	_	?	the agreement
+who	would n't	_	breach	something	_	_	?	the group
+when	had n't	something	been breached	_	_	_	?	Sept. 14
+
+PROPBANK_4631	3
+A specialist is an exchange member designated to maintain a fair and orderly market in a specified stock .
+6	designated	2
+who	is	_	designated	_	_	_	?	A specialist ### an exchange member
+why	is	someone	designated	_	_	_	?	to maintain a fair and orderly market ### to maintain a fair and orderly market in a specified stock
+8	maintain	2
+what	will	someone	maintain	_	_	_	?	a fair and orderly market ### a fair and orderly market in a specified stock
+who	will	_	maintain	something	_	_	?	A specialist ### an exchange member
+16	specified	1
+what	is	_	specified	_	_	_	?	stock
+
+PROPBANK_4647	6
+But yesterday , Mr. Carpenter said big institutional investors , which he would n't identify , `` told us they would n't do business with firms '' that continued to do index arbitrage for their own accounts .
+5	said	3
+who	_	_	said	something	_	_	?	Mr. Carpenter ### he
+when	did	someone	say	something	_	_	?	yesterday
+what	did	someone	say	_	_	_	?	big institutional investors , which he would n't identify , `` told us they would n't do business with firms '' that continued to do index arbitrage for their own accounts
+14	identify	2
+what	would n't	someone	identify	_	_	_	?	big institutional investors
+who	would n't	_	identify	something	_	_	?	Mr. Carpenter ### he
+17	told	3
+what	was	someone	told	_	_	_	?	they would n't do business with firms '' that continued to do index arbitrage for their own accounts
+who	was	_	told	something	_	_	?	Mr. Carpenter ### he
+who	_	_	told	someone	_	something	?	they ### big institutional investors
+22	do	2
+what	would n't	_	be done	_	_	_	?	business with firms '' that continued to do index arbitrage for their own accounts
+who	would n't	_	do	something	_	_	?	they ### big institutional investors
+28	continued	2
+who	_	_	continued	_	to	do something	?	firms
+what	had	_	been continued	_	_	_	?	do index arbitrage for their own accounts
+30	do	2
+what	would	_	be done	_	_	_	?	index arbitrage for their own accounts
+who	_	_	did	something	_	_	?	firms
+
+PROPBANK_4658	3
+Merrill said it continues to believe that `` the causes of excess market volatility are far more complex than any particular computer trading strategy .
+1	said	2
+who	_	_	said	something	_	_	?	Merrill
+what	did	someone	say	_	_	_	?	it continues to believe that `` the causes of excess market volatility are far more complex than any particular computer trading strategy
+3	continues	2
+what	does	someone	continue	_	to	_	?	believe that `` the causes of excess market volatility are far more complex than any particular computer trading strategy
+who	_	_	continues	_	to	do something	?	Merrill
+5	believe	2
+what	does	someone	believe	_	_	_	?	that `` the causes of excess market volatility are far more complex than any particular computer trading strategy
+who	_	_	believes	something	_	_	?	Merrill
+
+PROPBANK_4685	7
+He sold them well below market value to raise cash `` to pay off mounting credit - card debts , '' incurred to buy presents for his girlfriend , his attorney , Philip Russell , told IFAR .
+1	sold	4
+who	_	_	sold	something	_	_	?	He
+what	was	_	sold	_	_	_	?	them
+how	was	something	sold	_	_	_	?	well below market value to raise cash
+why	was	something	sold	_	_	_	?	to raise cash
+8	raise	3
+what	would	_	be raised	_	_	_	?	cash
+how	would	something	be raised	_	_	_	?	He sold them well below market value
+what	would	_	raised	something	_	do	?	pay off mounting credit - card debts
+12	pay	2
+what	would	_	pay	_	off	_	?	cash
+what	would	_	be paid	_	off	_	?	mounting credit - card debts
+14	mounting	1
+what	was	_	mounting	_	_	_	?	credit - card debts
+21	incurred	2
+what	was	_	incurred	_	_	_	?	credit - card debts
+what	was	something	incurred	_	to	do	?	buy presents for his girlfriend
+23	buy	3
+what	did	something	buy	_	_	_	?	presents for his girlfriend
+what	had	_	bought	something	_	_	?	cash
+what	did	something	buy	something	for	_	?	his girlfriend
+35	told	3
+who	was	_	told	something	_	_	?	IFAR
+who	_	_	told	something	_	_	?	his attorney ### Philip Russell
+what	was	_	told	_	_	_	?	He sold them well below market value to raise cash `` to pay off mounting credit - card debts , '' incurred to buy presents for his girlfriend
+
+PROPBANK_4697	2
+Although Heathrow authorities have been watching a group of allegedly crooked baggage handlers for some time , the Gauguin may be `` lost . ''
+5	watching	4
+who	has	_	been watching	something	_	_	?	Heathrow authorities
+what	has	someone	been watching	_	_	_	?	a group of allegedly crooked baggage handlers
+when	has	someone	been watching	someone	_	_	?	for some time
+where	has	someone	been watched	_	_	_	?	Heathrow
+22	lost	3
+what	may	_	be lost	_	_	_	?	the Gauguin
+who	may	_	have lost	something	_	_	?	Heathrow authorities
+where	may	something	have been lost	_	_	_	?	Heathrow
+
+PROPBANK_4722	3
+Ford Motor Co. said it is recalling about 3,600 of its 1990 - model Escorts because the windshield adhesive was improperly applied to some cars .
+3	said	2
+who	_	_	said	something	_	_	?	Ford Motor Co.
+what	did	someone	say	_	_	_	?	it is recalling about 3,600 of its 1990 - model Escorts because the windshield adhesive was improperly applied to some cars
+6	recalling	4
+what	is	_	being recalled	_	_	_	?	about 3,600 of its 1990 - model Escorts
+why	is	something	being recalled	_	_	_	?	because the windshield adhesive was improperly applied to some cars
+who	is	_	recalling	something	_	_	?	Ford Motor Co.
+how much	is	_	being recalled	_	_	_	?	about 3,600
+21	applied	3
+what	was	_	applied	_	_	_	?	windshield adhesive
+how	was	something	applied	_	_	_	?	improperly
+where	was	something	applied	_	_	_	?	the windshield
+
+PROPBANK_4723	5
+Separately , Ford and Mazda Motor Corp. 's U.S. sales arm said they are recalling about 88,500 1988 - model Mercury Tracers and 220,000 1986 , 1987 and 1988 model Mazda 323s equipped with 1.6 - liter fuel - injected engines to replace the oil filler cap .
+11	said	2
+who	_	_	said	something	_	_	?	Ford ### Mazda Motor Corp. ### they ### U.S. sales arm
+what	was	_	said	_	_	_	?	they are recalling about 88,500 1988 - model Mercury Tracers and 220,000 1986 , 1987 and 1988 model Mazda 323s equipped with 1.6 - liter fuel - injected engines to replace the oil filler cap .
+14	recalling	3
+who	is	_	recalling	something	_	_	?	Ford ### Mazda Motor Corp. ### they ### U.S. sales arm
+what	has	_	been recalled	_	_	_	?	about 88,500 1988 - model Mercury Tracers and 220,000 1986 , 1987 and 1988 model Mazda 323s equipped with 1.6 - liter fuel - injected engines
+what	has	something	been recalled	_	to	do	?	replace the oil filler cap
+32	equipped	3
+what	has	_	been equipped	_	with	something	?	about 88,500 1988 - model Mercury Tracers and 220,000 1986 , 1987 and 1988 model Mazda 323s
+what	has	something	been equipped	_	with	_	?	1.6 - liter fuel - injected engines
+what	has	something	been equipped	_	with	do	?	replace the oil filler cap
+39	injected	3
+what	is	_	injected	_	_	_	?	engines
+what	has	_	been injected	_	to	something	?	1.6 - liter fuel
+what	will	_	injected	something	_	do	?	replace the oil filler cap
+42	replace	2
+what	will	_	be replaced	_	_	_	?	the oil filler cap
+what	will	_	replace	something	_	_	?	1.6 - liter fuel - injected engines
+
+PROPBANK_4767	2
+Within two hours , viewers pledged over $ 400,000 , according to a Red Cross executive .
+5	pledged	3
+who	_	_	pledged	something	_	_	?	viewers
+how much	did	someone	pledge	_	_	_	?	over $ 400,000
+when	did	someone	pledge	something	_	_	?	Within two hours
+10	according	2
+who	was	something	according	_	to	_	?	a Red Cross executive
+what	was	_	according	_	to	someone	?	Within two hours , viewers pledged over $ 400,000
+
+PROPBANK_4796	3
+While the campaign was Mr. Gibbons 's idea , however , he wo n't be paying for it : The donations will come out of the chain 's national advertising fund , which is financed by the franchisees .
+15	paying	2
+who	wo n't	_	be paying	_	for	something	?	Mr. Gibbons ### he
+what	wo n't	someone	be paying	_	for	_	?	the campaign
+22	come	2
+what	will	_	come	_	out of	something	?	The donations
+where	will	something	come	_	out of	_	?	the chain 's national advertising fund
+34	financed	2
+what	is	_	financed	_	by	someone	?	the chain 's national advertising fund
+who	is	something	financed	_	by	_	?	the franchisees
+
+PROPBANK_4820	3
+On a broader scale , the ruling could encourage other states ' courts to adopt the logic of the New York court , not only in DES cases but in other product - related lawsuits , as well .
+8	encourage	4
+who	could	_	encourage	something	_	_	?	the ruling
+what	could	someone	encourage	_	_	_	?	other states ' courts to adopt the logic of the New York court , not only in DES cases but in other product - related lawsuits , as well
+what	could	someone	encourage	someone	to	do	?	adopt the logic of the New York court , not only in DES cases but in other product - related lawsuits , as well
+who	could	someone	encourage	_	_	_	?	other states ' courts
+14	adopt	2
+who	could	_	adopt	something	_	_	?	other states ' courts
+what	could	_	be adopted	_	_	_	?	the logic of the New York court , not only in DES cases but in other product - related lawsuits , as well
+33	related	2
+what	is	_	related	_	_	_	?	lawsuits
+what	_	_	relates	_	to	something	?	other product
+
+PROPBANK_4823	2
+Now that the New York decision has been left intact , other states may follow suit .
+8	left	3
+what	has	_	been left	_	_	_	?	the New York decision
+how	has	something	been left	_	_	_	?	intact
+when	has	something	been left	_	_	_	?	Now
+14	follow	1
+what	may	_	follow	_	_	_	?	other states
+
+PROPBANK_4831	1
+Each company 's share of liability would be based on their share of the national DES market .
+8	based	2
+what	would	_	be based	_	on	something	?	Each company 's share of liability
+what	would	something	be based	_	on	_	?	their share of the national DES market
+
+PROPBANK_4833	3
+The effect is that lawsuits that might have been barred because they were filed too late could proceed because of the one - year extension .
+9	barred	2
+what	might	_	have been barred	_	_	_	?	lawsuits ### they
+why	might	something	have been barred	_	_	_	?	because they were filed too late could proceed because of the one - year extension
+13	filed	3
+what	was	_	filed	_	_	_	?	lawsuits ### they
+when	was	something	filed	_	_	_	?	too late
+what	could	something	filed	_	_	do	?	proceed because of the one - year extension
+17	proceed	2
+what	could	_	proceed	_	_	_	?	lawsuits ### they
+why	could	something	proceed	_	_	_	?	because of the one - year extension
+
+PROPBANK_4849	1
+The conviction stemmed from federal charges of consumer fraud for sale of phony infant apple juice between 1978 and 1983 .
+2	stemmed	2
+what	_	_	stemmed	_	from	something	?	The conviction
+what	did	something	stem	_	from	_	?	federal charges ### federal charges of consumer fraud ### federal charges of consumer fraud for sale of phony infant apple juice ### federal charges of consumer fraud for sale of phony infant apple juice between 1978 and 1983
+
+PROPBANK_4920	2
+Annualized interest rates on certain investments as reported by the Federal Reserve Board on a weekly - average basis :
+0	annualized	2
+what	is	_	annualized	_	_	_	?	interest rates
+what	is	something	annualized	_	for	_	?	certain investments
+7	reported	3
+who	has	_	reported	something	_	_	?	the Federal Reserve Board
+when	does	someone	report	something	_	_	?	on a weekly - average basis
+what	does	someone	report	_	_	_	?	Annualized interest rates on certain investments
+
+PROPBANK_4929	4
+In recent testimony on Capitol Hill , Treasury officials said they were considering the new reporting requirements , and the expected publication of the proposal in the Federal Register today is the first official step toward creating final regulations .
+9	said	3
+who	_	_	said	something	_	_	?	Treasury officials
+what	did	someone	say	_	_	_	?	they were considering the new reporting requirements , and the expected publication of the proposal in the Federal Register today is the first official step toward creating final regulations
+where	did	someone	said	something	_	_	?	Capitol Hill
+12	considering	2
+who	were	_	considering	something	_	_	?	they ### Treasury officials
+what	were	_	being considered	_	by	someone	?	the new reporting requirements
+20	expected	2
+when	is	something	expected	_	_	_	?	today
+what	is	_	expected	_	_	_	?	publication of the proposal in the Federal Register
+36	creating	1
+what	will	_	be created	_	_	_	?	final regulations
+
+PROPBANK_4935	2
+But wire transfers from a standing account -- including those bigger than $ 10,000 -- are n't reported .
+8	including	2
+what	is	_	included	_	_	_	?	those bigger than $ 10,000
+what	is	someone	included	_	with	_	?	wire transfers from a standing account
+17	reported	1
+what	is n't	_	reported	_	_	_	?	wire transfers from a standing account -- including those bigger than $ 10,000 ### wire transfers from a standing account
+
+PROPBANK_4977	2
+Daimler said it has had talks with Jaguar about possible joint ventures .
+1	said	4
+who	_	_	said	something	_	_	?	Daimler ### it
+what	was	_	said	_	_	_	?	it has had talks with Jaguar about possible joint ventures
+what	was	_	said	_	about	_	?	possible joint ventures
+who	was	_	said	_	about	_	?	Jaguar
+4	had	2
+what	did	someone	have	_	_	_	?	talks ### talks with Jaguar about possible joint ventures
+who	_	_	had	something	_	_	?	Daimler ### it
+
+PROPBANK_4999	4
+`` It 's a super - exciting set of discoveries , '' says Bert Vogelstein , a Johns Hopkins University researcher who has just found a gene pivotal to the triggering of colon cancer .
+6	exciting	1
+what	is	_	exciting	_	_	_	?	it ### set of discoveries
+12	says	2
+who	_	_	says	something	_	_	?	Bert Vogelstein , a Johns Hopkins University researcher who has just found a gene pivotal to the triggering of colon cancer
+what	does	someone	says	_	_	_	?	`` It 's a super - exciting set of discoveries , ''
+24	found	2
+who	has	_	found	something	_	_	?	Bert Vogelstein , a Johns Hopkins University researcher
+what	has	someone	found	_	_	_	?	a gene pivotal to the triggering of colon cancer
+30	triggering	2
+what	is	something	triggering	_	_	_	?	colon cancer
+what	is	_	triggering	something	_	_	?	a gene
+
