@@ -5,7 +5,7 @@ mkdir -p ./oie_corpus/newswire
 mkdir -p ./oie_corpus/wiki
 echo "Extracting from newswire..."
 echo "dev..."
-python ./qa_to_oie.py --in ./QASRL-full/newswire/propbank.dev.qa --out ./oie_corpus/newswire/propbank.dev.oie --oieinput=./raw_sentences/newswire/propbank.dev.txt
+python ./qa_to_oie.py --in ./QASRL-full/newswire/propbank.dev.qa --out ./oie_corpus/newswire/propbank.dev.oie --conll=./oie_corpus/newswire/propbank.dev.oie.conll --oieinput=./raw_sentences/newswire/propbank.dev.txt
 echo "train..."
 python ./qa_to_oie.py --in ./QASRL-full/newswire/propbank.train.qa --out ./oie_corpus/newswire/propbank.train.oie --oieinput=./raw_sentences/newswire/propbank.train.txt
 echo "test..."

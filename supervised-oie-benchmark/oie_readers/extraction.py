@@ -3,10 +3,14 @@ from oie_readers.argument import Argument
 from operator import itemgetter
 from collections import defaultdict
 import nltk
+import itertools
 import logging
+import numpy as np
 
 class Extraction:
-    ''' holds sentence, single predicate and corresponding arguments '''
+    """
+    Stores sentence, single predicate and corresponding arguments
+    """
     def __init__(self, pred, sent, confidence):
         self.pred = pred
         self.sent = sent
@@ -110,14 +114,79 @@ class Extraction:
             arg = args[0]
             indices = list(self.indsForQuestions[q].union(flatten(arg.indices)))
             if not indices:
-                logging.debug("Empty indexes for arg {} -- backing to zero".format(arg))
+                logging.warn("Empty indexes for arg {} -- backing to zero".format(arg))
                 indices = [0]
             ls.append((arg, indices))
         return [a for a, _ in sorted(ls, key = lambda (_, indices): min(indices))]
 
+    def clusterScore(self, cluster):
+        """
+        Calculate cluster density score as the mean distance of the maximum distance of each slot.
+        Lower score represents a denser clusterOD
+        """
+        logging.debug("*-*-*- Cluster: {}".format(cluster))
+        # Find global centroid
+        arr = np.array([x for ls in cluster for x in ls])
+        centroid = np.sum(arr)/arr.shape[0]
+        logging.debug("Centroid: {}".format(centroid))
+        # Calculate mean over all maxmimum points
+        return np.average([max([abs(x - centroid) for x in ls]) for ls in cluster])
+
+    def resolveAmbiguity(self):
+        """
+        Heursitic to map the elments (argument and predicates) of this extraction
+        back to the indices of the sentence.
+        """
+        ## TODO: This removes arguments for which there was no consecutive span found
+        ## Part of these are non-consecutive arguments, but other could be a bug in recognizing some punctuation marks
+        elements = [self.pred] + [(s, indices) for (s, indices) in self.args if indices]
+        logging.debug("Resolving ambiguity in: {}".format(elements))
+
+        # Collect all possible combinations of arguments and predicate indices
+        # (hopefully it's not too much)
+        all_combinations = list(itertools.product(*map(itemgetter(1), elements)))
+        logging.debug("Number of combinations: {}".format(len(all_combinations)))
+
+        # Choose the ones with best clustering and unfold them
+        resolved_elements = zip(map(itemgetter(0), elements),
+                                min(all_combinations, key = lambda cluster: self.clusterScore(cluster)))
+        logging.debug("Resolved elements = {}".format(resolved_elements))
+
+        self.pred = resolved_elements[0]
+        self.args = resolved_elements[1:]
+
+    def conll(self):
+        """
+        Return a CoNLL string representation of this extraction
+        """
+        return '\n'.join(["\n".join((w, self.get_label(i)))
+                          for (i, w) in enumerate(self.sent.split(" "))]) + '\n'
+
+    def get_label(self, index):
+        """
+        Given an index in the sentence -- returns the appropriate BIO conll label
+        Assumes that ambiguation was already resolved.
+        """
+        # Get the element in which this index appears
+        ent = [(elem_ind, elem) for (elem_ind, ls) in enumerate(map(itemgetter(0), [self.pred] + self.args)) if index in ls]
+        if not ent:
+            # index doesnt appear in any element
+            return "O"
+        assert len(ent) == 1, "Index {} appears in one than more element: {}".format(ent)
+        elem_ind, elem = ent[0]
+
+        # Distinguish between predicate and arguments
+        prefix = "P" if elem_ind == 0 else "A{}".format(elem_ind - 1)
+
+        # Distinguish between Beginning and Inside labels
+        suffix = "B" if index == elem[0] else "I"
+
+        return "{}-{}".format(prefix, suffix)
+
     def __str__(self):
+        return '{0}\t{1}'.format(self.elementToStr(self.pred, print_indices = True), '\t'.join([self.elementToStr(arg) for arg in self.args]))
 #        return '{0}\t{1}'.format(self.elementToStr(self.pred, print_indices = True), '\t'.join([escape_special_chars(self.elementToStr(arg)) for arg in self.getSortedArgs()]))
-        return '{0}\t{1}'.format(self.elementToStr(self.pred, print_indices = True), '\t'.join([self.elementToStr(arg) for arg in self.getSortedArgs()]))
+#        return '{0}\t{1}'.format(self.elementToStr(self.pred, print_indices = True), '\t'.join([self.elementToStr(arg) for arg in self.getSortedArgs()]))
 
 # Flatten a list of lists
 flatten = lambda l: [item for sublist in l for item in sublist]

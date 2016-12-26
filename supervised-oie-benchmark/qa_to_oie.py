@@ -1,5 +1,5 @@
 """ Usage:
-    qa_to_oie --in=INPUT_FILE --out=OUTPUT_FILE [--oieinput=OIE_INPUT]
+    qa_to_oie --in=INPUT_FILE --out=OUTPUT_FILE --conll=CONLL_FILE [--oieinput=OIE_INPUT] [-v]
 """
 
 from docopt import docopt
@@ -15,6 +15,7 @@ from fuzzywuzzy.utils import full_process
 import itertools
 from fuzzywuzzy.string_processing import StringProcessor
 from fuzzywuzzy.utils import asciidammit
+from operator import itemgetter
 
 ## CONSTANTS
 
@@ -65,8 +66,11 @@ class Qa2OIE:
                     indsForQuestions[q] = indsForQuestions[q].union(flatten(indices))
 
                 if sent:
+                    logging.debug("DEBUG")
                     if cur.noPronounArgs():
+                        cur.resolveAmbiguity()
                         d[sent].append(cur)
+
         return d
 
     def preproc(self, s):
@@ -162,6 +166,14 @@ class Qa2OIE:
                 for ex in extractions:
                     fout.write('{}\t{}\n'.format(escape_special_chars(sent),
                                                  ex.__str__()))
+    def writeConllFile(self, fn):
+        """
+        Write a conll representation of all of the extractions to file
+        """
+        with open(fn, 'w') as fout:
+            for extractions in self.dic.itervalues():
+                for ex in extractions:
+                    fout.write(ex.conll() + '\n')
 
 # MORE HELPER
 
@@ -195,12 +207,8 @@ def encodeQuestion(question, mask):
     encoding = "\t".join(info)
     (val, count) = questionsDic.get(encoding, (len(questionsDic), 0)) # get the encoding of a question, and the count of times it appeared
     questionsDic[encoding] = (val, count+1)
-    # remove underscores just for better readability
-#     ret = '{0}'.format(" ".join([x for x in info if x != "_"]))
     ret = " ".join(info)
     return ret
-
-
 
 def all_index(s, ss, matchCase = True, ignoreSpaces = True):
     ''' Find all occurrences of substring ss in s '''
@@ -239,34 +247,64 @@ def fuzzy_match_phrase(phrase, sentence):
     returns a list of indexes in the length of phrase which match the best return from fuzzy.
     """
     logging.debug("Fuzzy searching \"{}\" in \"{}\"".format(" ".join(phrase), " ".join(sentence)))
-    # Get all possible fuzzy indices per words, only allow raising indexes
-    indices = filter(lambda ls: is_consecutive(ls), itertools.product(*[fuzzy_match_word(w, sentence) for w in phrase]))
-    assert(len(indices) > 0)
+    limit = min((len(phrase) / 2) + 1, 3)
+    possible_indices = [fuzzy_match_word(w, sentence, limit) for w in phrase]
+    indices = find_consecutive_combinations(*possible_indices)
+    if not indices:
+        logging.warn("\t".join(map(str, ["*** {}".format(len(indices)), " ".join(phrase), " ".join(sentence), possible_indices, indices])))
     return indices
 
 
-def is_ascending(ls):
+def find_consecutive_combinations(*lists):
     """
-    Returns True iff ls is ascending
+    Given a list of lists of integers, find only the consecutive options from the Cartesian product.
     """
-    return (sorted(ls) == ls)     #TODO: efficiency
+    ret = []
+    desired_length = len(lists) # this is the length of a valid walk
+    logging.debug("desired length: {}".format(desired_length))
+    for first_item in lists[0]:
+        logging.debug("starting with {}".format(first_item))
+        cur_walk = [first_item]
+        cur_item = first_item
+        for ls_ind, ls in enumerate(lists[1:]):
+            logging.debug("ls = {}".format(ls))
+            for cur_candidate in ls:
+                if cur_candidate - cur_item == 1:
+                    logging.debug("Found match: {}".format(cur_candidate))
+                    # This is a valid option from this list,
+                    # add it and break out of this list
+                    cur_walk.append(cur_candidate)
+                    cur_item = cur_candidate
+                    break
+            if len(cur_walk) != ls_ind + 2:
+                # Didn't find a valid candidate -
+                # break out of this first item
+                break
+
+        if len(cur_walk) == desired_length:
+            ret.append(cur_walk)
+    return ret
 
 
-def fuzzy_match_word(word, words):
+def fuzzy_match_word(word, words, limit):
     """
     Fuzzy find the indexes of word in words, returns a list of indexes which match the
     best return from fuzzy.
+    limit controls the number of choices to allow.
     """
     # Try finding exact matches
-    exact_matches = [i for (i, w) in enumerate(words) if w == word]
+    exact_matches = set([i for (i, w) in enumerate(words) if w == word])
     if exact_matches:
         logging.debug("Found exact match for {}".format(word))
-        return exact_matches
 
     # Else, return fuzzy matching
     logging.debug("No exact match for: {}".format(word))
-    best_match, score = process.extractOne(word, words, processor = semi_process)
-    return [(word, w, i) for (i, w) in enumerate(words) if w == best_match]
+    # Allow some variance which extractOne misses
+    # For example: "Armstrong World Industries Inc" in "Armstrong World Industries Inc. agreed in principle to sell its carpet operations to Shaw Industries Inc ."
+    best_matches  = [w for (w, s) in process.extract(word, words, processor = semi_process, limit = limit) if (s > 70)]
+    logging.debug("Best matches = {}".format(best_matches))
+    return list(exact_matches.union([i for (i, w) in enumerate(words) if w in best_matches]))
+
 
 # Flatten a list of lists
 flatten = lambda l: [item for sublist in l for item in sublist]
@@ -295,15 +333,19 @@ def semi_process(s, force_ascii=False):
 
 ## MAIN
 if __name__ == '__main__':
-    logging.basicConfig(level = logging.DEBUG)
     args = docopt(__doc__)
+    if args['-v']:
+        logging.basicConfig(level = logging.DEBUG)
+    else:
+        logging.basicConfig(level = logging.INFO)
     logging.debug(args)
     q = Qa2OIE(args['--in'])
     q.writeOIE(args['--out'])
+    q.writeConllFile(args['--conll'])
     if args['--oieinput']:
         q.createOIEInput(args['--oieinput'])
 
-
-
     # ls = fuzzy_match_phrase("lve ' mom".split(), "love ' I love my move".split(' '))
     # print ls
+
+    # x = find_consecutive_combinations([1])
