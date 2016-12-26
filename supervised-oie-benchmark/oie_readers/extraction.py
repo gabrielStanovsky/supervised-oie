@@ -159,20 +159,20 @@ class Extraction:
         """
         Return a CoNLL string representation of this extraction
         """
-        return '\n'.join(["\n".join((w, self.get_label(i)))
+        return '\n'.join(["\t".join((w, self.get_label(i)))
                           for (i, w) in enumerate(self.sent.split(" "))]) + '\n'
 
     def get_label(self, index):
         """
-        Given an index in the sentence -- returns the appropriate BIO conll label
+        Given an index of a word in the sentence -- returns the appropriate BIO conll label
         Assumes that ambiguation was already resolved.
         """
         # Get the element in which this index appears
-        ent = [(elem_ind, elem) for (elem_ind, ls) in enumerate(map(itemgetter(0), [self.pred] + self.args)) if index in ls]
+        ent = [(elem_ind, elem) for (elem_ind, elem) in enumerate(map(itemgetter(1), [self.pred] + self.args)) if index in elem]
         if not ent:
             # index doesnt appear in any element
             return "O"
-        assert len(ent) == 1, "Index {} appears in one than more element: {}".format(ent)
+        assert len(ent) == 1, "Index {} appears in one than more element: {}".format(index, (ent, self.sent, self.pred, self.args))
         elem_ind, elem = ent[0]
 
         # Distinguish between predicate and arguments
