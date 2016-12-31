@@ -167,13 +167,26 @@ class Extraction:
         Given an index of a word in the sentence -- returns the appropriate BIO conll label
         Assumes that ambiguation was already resolved.
         """
-        # Get the element in which this index appears
+        # Get the element(s) in which this index appears
         ent = [(elem_ind, elem) for (elem_ind, elem) in enumerate(map(itemgetter(1), [self.pred] + self.args)) if index in elem]
+
         if not ent:
             # index doesnt appear in any element
+
             return "O"
-        assert len(ent) == 1, "Index {} appears in one than more element: {}".format(index, (ent, self.sent, self.pred, self.args))
-        elem_ind, elem = ent[0]
+        if len(ent) > 1:
+            # The same word appears in two different answers
+            # In this case we choose the first one as label
+            logging.warn("Index {} appears in one than more element: {}".format(index, "\t".join(map(str, [ent, self.sent, self.pred, self.args]))))
+
+        ## Some indices appear in more than one argument (ones where the above message appears)
+        ## From empricial observation, these seem to mostly consist of different levels of granularity:
+        ##     what	had	_	been taken	_	_	_	?	loan commitments topping $ 3 billion
+        ##     how much	had	_	been taken	_	_	_	?	topping $ 3 billion
+        ## In these cases we heuristically choose the shorter answer span, hopefully creating minimal spans
+        ## E.g., in this example two arguemnts are created: (loan commitments, topping $ 3 billion)
+
+        elem_ind, elem = min(ent, key = lambda (_, ls): len(ls))
 
         # Distinguish between predicate and arguments
         prefix = "P" if elem_ind == 0 else "A{}".format(elem_ind - 1)

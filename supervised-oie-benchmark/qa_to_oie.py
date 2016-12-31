@@ -60,7 +60,7 @@ class Qa2OIE:
                 for q, a in zip(data[1::2], data[2::2]):
                     preproc_arg = self.preproc(a)
                     if not preproc_arg:
-                        logging.debug("Argument reduced to None: {}".format(a))
+                        logging.warn("Argument reduced to None: {}".format(a))
                     indices = fuzzy_match_phrase(preproc_arg.split(" "), sent.split(" "))
                     cur.addArg((preproc_arg, indices), q)
                     indsForQuestions[q] = indsForQuestions[q].union(flatten(indices))
