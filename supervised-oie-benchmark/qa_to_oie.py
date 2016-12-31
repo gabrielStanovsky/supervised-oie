@@ -171,9 +171,9 @@ class Qa2OIE:
         Write a conll representation of all of the extractions to file
         """
         with open(fn, 'w') as fout:
-            for extractions in self.dic.itervalues():
+            for i, extractions in enumerate(self.dic.itervalues()):
                 for ex in extractions:
-                    fout.write(ex.conll() + '\n')
+                    fout.write(ex.conll(sentId = i) + '\n')
 
 # MORE HELPER
 
