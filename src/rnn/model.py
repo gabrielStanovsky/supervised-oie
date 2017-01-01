@@ -51,6 +51,13 @@ class RNN_model:
                                                        results.std() * 100))
         return results
 
+    def train_and_test(self, train_fn, test_fn):
+        """
+        Train and then test on given files
+        """
+        self.train(train_fn)
+        return self.test(test_fn)
+
     def train(self, train_fn):
         """
         Train this model on a given train dataset
@@ -124,6 +131,6 @@ if __name__ == "__main__":
     train_fn = args["--train"]
     test_fn = args["--test"]
     rnn = RNN_model(model = RNN_model.baseline_model, sep = ',')
-    rnn.train(train_fn)
-    rnn.test(test_fn)
+    rnn.train_and_test(train_fn, test_fn)
+
 #    rnn.kfold_evaluation(train_fn)
