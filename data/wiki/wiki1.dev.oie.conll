@@ -1,3 +1,4 @@
+word_id	word	pred	pred_id	sent_id	run_id	label
 0	Although	assigned	[7]	0	0	O
 1	in	assigned	[7]	0	0	O
 2	Flanders	assigned	[7]	0	0	O

@@ -1,3 +1,4 @@
+word_id	word	pred	pred_id	sent_id	run_id	label
 0	Learning	established	[8]	0	0	A0-B
 1	Center	established	[8]	0	0	A0-I
 2	of	established	[8]	0	0	A0-I

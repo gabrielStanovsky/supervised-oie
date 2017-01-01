@@ -23,11 +23,17 @@ cat ./oie_corpus/newswire/propbank.train.oie ./oie_corpus/wiki/wiki1.train.oie >
 cat ./oie_corpus/newswire/propbank.test.oie ./oie_corpus/wiki/wiki1.test.oie > ./oie_corpus/test.oie
 cat ./oie_corpus/dev.oie ./oie_corpus/train.oie ./oie_corpus/test.oie > ./oie_corpus/all.oie
 
-cat ./oie_corpus/newswire/propbank.dev.oie.conll ./oie_corpus/wiki/wiki1.dev.oie.conll > ./oie_corpus/dev.oie.conll
-cat ./oie_corpus/newswire/propbank.train.oie.conll ./oie_corpus/wiki/wiki1.train.oie.conll > ./oie_corpus/train.oie.conll
-cat ./oie_corpus/newswire/propbank.test.oie.conll ./oie_corpus/wiki/wiki1.test.oie.conll > ./oie_corpus/test.oie.conll
-cat ./oie_corpus/dev.oie.conll ./oie_corpus/train.oie.conll ./oie_corpus/test.oie.conll > ./oie_corpus/all.oie.conll
+cat ./oie_corpus/newswire/propbank.dev.oie.conll  > ./oie_corpus/dev.oie.conll
+tail -n +2 ./oie_corpus/wiki/wiki1.dev.oie.conll >> ./oie_corpus/dev.oie.conll
 
+cat ./oie_corpus/newswire/propbank.train.oie.conll > ./oie_corpus/train.oie.conll
+tail -n +2 ./oie_corpus/wiki/wiki1.train.oie.conll >> ./oie_corpus/train.oie.conll
 
+cat ./oie_corpus/newswire/propbank.test.oie.conll > ./oie_corpus/test.oie.conll
+tail -n +2 ./oie_corpus/wiki/wiki1.test.oie.conll >> ./oie_corpus/test.oie.conll
+
+cat ./oie_corpus/dev.oie.conll  > ./oie_corpus/all.oie.conll
+tail -n +2 ./oie_corpus/train.oie.conll >> ./oie_corpus/all.oie.conll
+tail -n +2 ./oie_corpus/test.oie.conll >> ./oie_corpus/all.oie.conll
 
 echo "DONE"

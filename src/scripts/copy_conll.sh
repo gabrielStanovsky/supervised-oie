@@ -9,3 +9,4 @@ cp -v ../supervised-oie-benchmark/oie_corpus/wiki/wiki1.test.oie.conll ../data/w
 cp -v ../supervised-oie-benchmark/oie_corpus/dev.oie.conll ../data/
 cp -v ../supervised-oie-benchmark/oie_corpus/train.oie.conll ../data/
 cp -v ../supervised-oie-benchmark/oie_corpus/test.oie.conll ../data/
+cp -v ../supervised-oie-benchmark/oie_corpus/all.oie.conll ../data

@@ -1,3 +1,4 @@
+word_id	word	pred	pred_id	sent_id	run_id	label
 0	The	barred	[9]	1	0	O
 1	effect	barred	[9]	1	0	O
 2	is	barred	[9]	1	0	O

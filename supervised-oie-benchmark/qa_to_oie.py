@@ -171,7 +171,17 @@ class Qa2OIE:
         Write a conll representation of all of the extractions to file
         """
         running_index = 0 # Running index enumerates the predicates in the dataset
+        # Add a header file identifying each column
+        header = '\t'.join(["word_id",
+                            "word",
+                            "pred",
+                            "pred_id",
+                            "sent_id",
+                            "run_id",
+                            "label"])
+
         with open(fn, 'w') as fout:
+            fout.write(header + '\n')
             for sent_index, extractions in enumerate(self.dic.itervalues()):
                 for ex in extractions:
                     fout.write(ex.conll(external_feats = [sent_index, running_index]) + '\n')

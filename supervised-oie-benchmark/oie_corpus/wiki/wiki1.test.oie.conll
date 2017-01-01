@@ -1,3 +1,4 @@
+word_id	word	pred	pred_id	sent_id	run_id	label
 0	While	pursuing	[1]	0	0	O
 1	pursuing	pursuing	[1]	0	0	P-B
 2	his	pursuing	[1]	0	0	A1-B

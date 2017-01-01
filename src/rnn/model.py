@@ -7,7 +7,7 @@ import numpy as np
 import pandas
 from docopt import docopt
 from keras.models import Sequential
-from keras.layers import Dense
+from keras.layers import Dense, LSTM
 from keras.wrappers.scikit_learn import KerasClassifier
 from keras.utils import np_utils
 from sklearn.model_selection import cross_val_score
@@ -79,6 +79,7 @@ class RNN_model:
     def load_dataset(self, fn):
         """
         Load a supervised OIE dataset from file
+        Assumes that the labels appear in the last column.
         """
         df = pandas.read_csv(fn, sep = self.sep, header = None)
         dataset = df.values
@@ -113,9 +114,10 @@ class RNN_model:
         return self.encoder.inverse_transform(encoded_label)
 
     @staticmethod
-    def baseline_model():
+    def iris_model():
         """
         Return a baseline model for multi-class classification
+        http://machinelearningmastery.com/multi-class-classification-tutorial-keras-deep-learning-library/
         """
         model = Sequential()
         model.add(Dense(4, input_dim = 4, init = "normal", activation = "relu"))
@@ -130,7 +132,7 @@ if __name__ == "__main__":
     args = docopt(__doc__)
     train_fn = args["--train"]
     test_fn = args["--test"]
-    rnn = RNN_model(model = RNN_model.baseline_model, sep = ',')
+    rnn = RNN_model(model = RNN_model.iris_model, sep = ',')
     rnn.train_and_test(train_fn, test_fn)
 
 #    rnn.kfold_evaluation(train_fn)
