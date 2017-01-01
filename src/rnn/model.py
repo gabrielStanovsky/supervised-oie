@@ -14,6 +14,7 @@ from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import KFold
 from sklearn.preprocessing import LabelEncoder
 from sklearn.pipeline import Pipeline
+from sklearn.metrics import accuracy_score
 import logging
 logging.basicConfig(level = logging.DEBUG)
 
@@ -48,6 +49,25 @@ class RNN_model:
         results = cross_val_score(self.estimator, X, Y, cv = kfold)
         logging.info("Results: {:.2f} ({:.2f})".format(results.mean()*100,
                                                        results.std() * 100))
+        return results
+
+    def train(self, train_fn):
+        """
+        Train this model on a given train dataset
+        """
+        X, Y = self.load_dataset(train_fn)
+        logging.debug("Training model on {}".format(train_fn))
+        self.estimator.fit(X, Y)
+
+    def test(self, test_fn):
+        """
+        Evaluate this model on a test file
+        """
+        X, Y = self.load_dataset(test_fn)
+        self.predicted = np_utils.to_categorical(self.estimator.predict(X))
+        acc = accuracy_score(Y, self.predicted) * 100
+        logging.info("ACC: {:.2f}".format(acc))
+        return acc
 
     def load_dataset(self, fn):
         """
@@ -64,21 +84,26 @@ class RNN_model:
         # Encode one-hot representation of the labels
         self.encoder.fit(self.labels)
 
-        return  self.encode(self.samples,
-                            self.labels)
+        return  self.encode_inputs(self.samples), self.encode_outputs(self.labels)
 
-    def encode(self, inputs, outputs):
+    def encode_inputs(self, inputs):
         """
-        Prepare inputs and outputs for processing in the RNN
+        Encode inputs for rnn classification.
         """
-        # TODO - handle encoding of inputs
-        return inputs, np_utils.to_categorical(self.encoder.transform(outputs))
+        return inputs
+
+    def encode_outputs(self, outputs):
+        """
+        Encode outputs of rnn classification
+        """
+        return np_utils.to_categorical(self.encoder.transform(outputs))
+
 
     def decode_label(self, encoded_label):
         """
-        Decode a one-hot representation of a label back to chunking label
+        Decode a categorical representation of a label back to textual chunking label
         """
-        return self.encoder.inverse_transform(np.argmax(encoded_label))
+        return self.encoder.inverse_transform(encoded_label)
 
     @staticmethod
     def baseline_model():
@@ -99,4 +124,6 @@ if __name__ == "__main__":
     train_fn = args["--train"]
     test_fn = args["--test"]
     rnn = RNN_model(model = RNN_model.baseline_model, sep = ',')
-    rnn.kfold_evaluation(train_fn)
+    rnn.train(train_fn)
+    rnn.test(test_fn)
+#    rnn.kfold_evaluation(train_fn)
