@@ -155,11 +155,11 @@ class Extraction:
         self.pred = resolved_elements[0]
         self.args = resolved_elements[1:]
 
-    def conll(self, sentId = None):
+    def conll(self, external_feats = []):
         """
         Return a CoNLL string representation of this extraction
         """
-        return '\n'.join(["\t".join(map(str,[i, w, sentId, self.pred, self.get_label(i)]))
+        return '\n'.join(["\t".join(map(str,[i, w] +  list(self.pred) + external_feats + [self.get_label(i)]))
                           for (i, w) in enumerate(self.sent.split(" "))]) + '\n'
 
     def get_label(self, index):
