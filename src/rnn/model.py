@@ -24,7 +24,7 @@ class RNN_model:
     """
     Represents an RNN model for supervised OIE
     """
-    def __init__(self,  sent_maxlen, batch_size, seed = 42, sep = '\t', vocab_size = 10000, hidden_units = 128):
+    def __init__(self,  sent_maxlen, batch_size, seed = 42, sep = '\t', vocab_size = 10000, hidden_units = 128, embedding_size = 300):
         """
         Initialize the model
         sent_maxlen - the maximum length in words of each sentence - will be used for padding / truncating
@@ -33,6 +33,7 @@ class RNN_model:
         sep  - separator in the csv dataset files for this model
         vocab_size - size of the language voacbaulary to be used
         hidden_units - number of hidden units per layer
+        embedding_size - the word embedding dimension
         """
         self.sent_maxlen = sent_maxlen
         self.batch_size = batch_size
@@ -42,6 +43,7 @@ class RNN_model:
         np.random.seed(self.seed)
         self.encoder = LabelEncoder()
         self.hidden_units = hidden_units
+        self.embedding_size = embedding_size
 
     def classes_(self):
         return self.encoder.classes_
@@ -81,8 +83,9 @@ class RNN_model:
         Train this model on a given train dataset
         """
         X, Y = self.load_dataset(train_fn)
+        self.set_oie_model() # Called here after labels have been identified in load dataset
         logging.debug("Training model on {}".format(train_fn))
-        self.estimator.fit(X, Y, batch_size = self.batch_size)
+        self.model.fit(X, Y, batch_size = self.batch_size)
 
     def test(self, test_fn):
         """
@@ -179,14 +182,14 @@ class RNN_model:
         """
         return len(self.classes_())
 
-    def oie_model(self):
+    def set_oie_model(self):
         """
         Return a function which returns a Keras sequential model for predicting OIE
         this should be given as input to set_estimator
         """
         self.model = Sequential()
-        self.model.add(TimeDistributed(Embedding(self.vocab_size, 128, dropout=0.2), input_shape = (self.sent_maxlen, 1)))
-        self.model.add(TimeDistributed(LSTM(self.hidden_units, input_shape = (self.sent_maxlen, 128),  return_sequences = True)))
+        self.model.add(TimeDistributed(Embedding(self.vocab_size, self.embedding_size, dropout=0.2), input_shape = (self.sent_maxlen, 1)))
+        self.model.add(TimeDistributed(LSTM(self.hidden_units, input_shape = (self.sent_maxlen, self.embedding_size),  return_sequences = True)))
         self.model.add(TimeDistributed(LSTM(self.hidden_units, input_shape = (self.sent_maxlen, self.hidden_units), return_sequences = False)))
         self.model.add(TimeDistributed(Dense(output_dim = self.num_of_classes(), activation = 'sigmoid')))
 
@@ -194,8 +197,6 @@ class RNN_model:
                       loss='categorical_crossentropy',
                       metrics=['accuracy'])
         logging.debug(self.model.summary())
-
-        return (lambda : self.model)
 
 
 class Sample:
@@ -243,11 +244,6 @@ if __name__ == "__main__":
     train_fn = args["--train"]
     test_fn = args["--test"]
     rnn = RNN_model(sent_maxlen = 20, batch_size = 5)
-    x, y = rnn.load_dataset(train_fn)
-    rnn.set_estimator(rnn.oie_model())
-#    y = np.zeros((726, 20, 2))
-    model = rnn.oie_model()()
-    model.fit(x, y)
-#    rnn.train(train_fn)
+    rnn.train(train_fn)
 
 #    rnn.kfold_evaluation(train_fn)
