@@ -7,7 +7,7 @@ import numpy as np
 import pandas
 from docopt import docopt
 from keras.models import Sequential
-from keras.layers import Dense, LSTM, Embedding
+from keras.layers import Dense, LSTM, Embedding, TimeDistributedDense, TimeDistributed
 from keras.wrappers.scikit_learn import KerasClassifier
 from keras.utils import np_utils
 from keras.preprocessing.text import one_hot
@@ -24,20 +24,24 @@ class RNN_model:
     """
     Represents an RNN model for supervised OIE
     """
-    def __init__(self,  maxlen, seed = 42, sep = '\t', vocab_size = 10000):
+    def __init__(self,  sent_maxlen, batch_size, seed = 42, sep = '\t', vocab_size = 10000, hidden_units = 128):
         """
         Initialize the model
-        maxlen - the maximum length in words of each sentence - will be used for padding
+        sent_maxlen - the maximum length in words of each sentence - will be used for padding / truncating
+        batch_size - batch size for training
         seed - the random seed for reproduciblity
         sep  - separator in the csv dataset files for this model
         vocab_size - size of the language voacbaulary to be used
+        hidden_units - number of hidden units per layer
         """
-        self.maxlen = maxlen
+        self.sent_maxlen = sent_maxlen
+        self.batch_size = batch_size
         self.seed = seed
         self.sep = sep
         self.vocab_size = vocab_size
         np.random.seed(self.seed)
         self.encoder = LabelEncoder()
+        self.hidden_units = hidden_units
 
     def classes_(self):
         return self.encoder.classes_
@@ -51,7 +55,7 @@ class RNN_model:
         """
         self.estimator = KerasClassifier(build_fn = model,
                                          nb_epoch = 200,
-                                         batch_size = 5,
+                                         batch_size = self.batch_size,
                                          verbose = 0)
 
     def kfold_evaluation(self, dataset_fn, n_splits = 10):
@@ -78,7 +82,7 @@ class RNN_model:
         """
         X, Y = self.load_dataset(train_fn)
         logging.debug("Training model on {}".format(train_fn))
-        self.estimator.fit(X, Y)
+        self.estimator.fit(X, Y, batch_size = self.batch_size)
 
     def test(self, test_fn):
         """
@@ -102,7 +106,8 @@ class RNN_model:
 
         # Split according to sentences and encode
         sents = self.get_sents_from_df(df)
-        return self.encode_inputs(sents), self.encode_outputs(sents)
+        return (np.array(self.encode_inputs(sents)),
+                np.array(self.encode_outputs(sents)))
 
     def get_sents_from_df(self, df):
         """
@@ -118,7 +123,7 @@ class RNN_model:
         # Encode inputs
         input_encodings = []
         for sent in sents:
-            word_encodings = [one_hot(w, self.vocab_size, filters = "") for w in sent.word.values]
+            word_encodings = [one_hot(w, self.vocab_size, filters = "")[0] for w in sent.word.values]
             pred_word_encodings = [one_hot(w, self.vocab_size, filters = "")[0] for w in sent.pred.values]
             input_encodings.append([Sample(word, pred_word) for (word, pred_word) in
                                     zip(word_encodings, pred_word_encodings)])
@@ -126,7 +131,7 @@ class RNN_model:
         ret = []
         for samples in pad_sequences(input_encodings,
                                      pad_func = lambda : Pad_sample(),
-                                     maxlen = self.maxlen):
+                                     maxlen = self.sent_maxlen):
             cur = []
             for sample in samples:
                 cur.append(sample.encode())
@@ -145,7 +150,7 @@ class RNN_model:
             output_encodings.append(np_utils.to_categorical(self.encoder.transform(sent.label.values)))
 
         # Pad / truncate to maximum length
-        return pad_sequences(output_encodings, lambda : [0] * len(self.classes_()), maxlen = self.maxlen)
+        return pad_sequences(output_encodings, lambda : np.array([0] * self.num_of_classes()), maxlen = self.sent_maxlen)
 
 
     def decode_label(self, encoded_label):
@@ -168,18 +173,29 @@ class RNN_model:
                       metrics=['accuracy'])
         return model
 
+    def num_of_classes(self):
+        """
+        Return the number of ouput classes
+        """
+        return len(self.classes_())
+
     def oie_model(self):
         """
-        Return a Keras sequential model for predicting OIE
+        Return a function which returns a Keras sequential model for predicting OIE
+        this should be given as input to set_estimator
         """
-        model = Sequential()
-        model.add(Embedding(self.vocab_size, 128, dropout=0.2))
-        model.add(LSTM(128, dropout_W=0.2, dropout_U=0.2, return_sequences = True))
-        model.add(Dense(3, activation = "sigmoid"))
-        model.compile(optimizer='rmsprop',
+        self.model = Sequential()
+        self.model.add(TimeDistributed(Embedding(self.vocab_size, 128, dropout=0.2), input_shape = (self.sent_maxlen, 1)))
+        self.model.add(TimeDistributed(LSTM(self.hidden_units, input_shape = (self.sent_maxlen, 128),  return_sequences = True)))
+        self.model.add(TimeDistributed(LSTM(self.hidden_units, input_shape = (self.sent_maxlen, self.hidden_units), return_sequences = False)))
+        self.model.add(TimeDistributed(Dense(output_dim = self.num_of_classes(), activation = 'sigmoid')))
+
+        self.model.compile(optimizer='rmsprop',
                       loss='categorical_crossentropy',
                       metrics=['accuracy'])
-        return model
+        logging.debug(self.model.summary())
+
+        return (lambda : self.model)
 
 
 class Sample:
@@ -196,7 +212,7 @@ class Sample:
         Encode this sample as vector as input for rnn,
         Probably just concatenating members in the right order.
         """
-        return np.array([self.word])
+        return [self.word]
 
 class Pad_sample(Sample):
     """
@@ -226,9 +242,12 @@ if __name__ == "__main__":
     args = docopt(__doc__)
     train_fn = args["--train"]
     test_fn = args["--test"]
-    rnn = RNN_model(maxlen = 20)
-    inp, out = map(np.array, rnn.load_dataset(test_fn))
-#    rnn.train_and_test(train_fn, test_fn)
-
+    rnn = RNN_model(sent_maxlen = 20, batch_size = 5)
+    x, y = rnn.load_dataset(train_fn)
+    rnn.set_estimator(rnn.oie_model())
+#    y = np.zeros((726, 20, 2))
+    model = rnn.oie_model()()
+    model.fit(x, y)
+#    rnn.train(train_fn)
 
 #    rnn.kfold_evaluation(train_fn)
