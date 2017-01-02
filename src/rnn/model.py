@@ -60,17 +60,6 @@ class RNN_model:
                                          batch_size = self.batch_size,
                                          verbose = 0)
 
-    def kfold_evaluation(self, dataset_fn, n_splits = 10):
-        """
-        Perform k-fold evaluation given a dataset file (csv)
-        """
-        kfold = KFold(n_splits = n_splits, shuffle = True, random_state = self.seed)
-        X, Y = self.load_dataset(dataset_fn)
-        results = cross_val_score(self.estimator, X, Y, cv = kfold)
-        logging.info("Results: {:.2f} ({:.2f})".format(results.mean()*100,
-                                                       results.std() * 100))
-        return results
-
     def train_and_test(self, train_fn, test_fn):
         """
         Train and then test on given files
@@ -161,20 +150,6 @@ class RNN_model:
         Decode a categorical representation of a label back to textual chunking label
         """
         return self.encoder.inverse_transform(encoded_label)
-
-    @staticmethod
-    def iris_model():
-        """
-        Return a baseline model for multi-class classification
-        http://machinelearningmastery.com/multi-class-classification-tutorial-keras-deep-learning-library/
-        """
-        model = Sequential()
-        model.add(Dense(4, input_dim = 4, init = "normal", activation = "relu"))
-        model.add(Dense(3, init="normal", activation = "sigmoid"))
-        model.compile(optimizer='rmsprop',
-                      loss='categorical_crossentropy',
-                      metrics=['accuracy'])
-        return model
 
     def num_of_classes(self):
         """
