@@ -39,6 +39,9 @@ class RNN_model:
         np.random.seed(self.seed)
         self.encoder = LabelEncoder()
 
+    def classes_(self):
+        return self.encoder.classes_
+
     def set_estimator(self, model):
         """
         Set this rnn's model
@@ -99,7 +102,6 @@ class RNN_model:
 
         # Split according to sentences and encode
         sents = self.get_sents_from_df(df)
-#        return self.encode_inputs(sents), sents
         return self.encode_inputs(sents), self.encode_outputs(sents)
 
     def get_sents_from_df(self, df):
@@ -113,12 +115,14 @@ class RNN_model:
         Given a dataframe split to sentences, encode inputs for rnn classification.
         Should return a  sequence of sample of length maxlen.
         """
+        # Encode inputs
         input_encodings = []
         for sent in sents:
             word_encodings = [one_hot(w, self.vocab_size, filters = "") for w in sent.word.values]
             pred_word_encodings = [one_hot(w, self.vocab_size, filters = "")[0] for w in sent.pred.values]
             input_encodings.append([Sample(word, pred_word) for (word, pred_word) in
                                     zip(word_encodings, pred_word_encodings)])
+        # Pad / truncate to desired maximum length
         ret = []
         for samples in pad_sequences(input_encodings,
                                      pad_func = lambda : Pad_sample(),
@@ -136,9 +140,12 @@ class RNN_model:
         Should return a list sequence of sample of length maxlen.
         """
         output_encodings = []
+        # Encode outputs
         for sent in sents:
             output_encodings.append(np_utils.to_categorical(self.encoder.transform(sent.label.values)))
-        return output_encodings
+
+        # Pad / truncate to maximum length
+        return pad_sequences(output_encodings, lambda : [0] * len(self.classes_()), maxlen = self.maxlen)
 
 
     def decode_label(self, encoded_label):
@@ -204,17 +211,23 @@ def pad_sequences(sequences, pad_func, maxlen = None):
     abstraction.
     pad_func is a pad class generator.
     """
+    ret = []
     if maxlen is None:
         maxlen = max(map(len, sequences))
-    return [sequence[:maxlen] + [pad_func()] * (maxlen - len(sequence))
-            for sequence in sequences]
+
+    # Pad / truncate (done this way to deal with np.array)
+    for sequence in sequences:
+        cur_seq = list(sequence[:maxlen])
+        cur_seq.extend([pad_func()] * (maxlen - len(sequence)))
+        ret.append(cur_seq)
+    return ret
 
 if __name__ == "__main__":
     args = docopt(__doc__)
     train_fn = args["--train"]
     test_fn = args["--test"]
     rnn = RNN_model(maxlen = 20)
-    inp, sents = rnn.load_dataset(test_fn)
+    inp, out = map(np.array, rnn.load_dataset(test_fn))
 #    rnn.train_and_test(train_fn, test_fn)
 
 
