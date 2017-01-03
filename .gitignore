@@ -90,3 +90,4 @@ ENV/
 \#*
 std*
 iris.data.txt
+pretrained_word_embeddings/
