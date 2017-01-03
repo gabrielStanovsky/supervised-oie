@@ -1,8 +1,6 @@
 """ Usage:
     model --train=TRAIN_FN --test=TEST_FN
 """
-
-
 import numpy as np
 import pandas
 from docopt import docopt
@@ -24,9 +22,10 @@ class RNN_model:
     """
     Represents an RNN model for supervised OIE
     """
-    def __init__(self,  sent_maxlen, batch_size, seed = 42, sep = '\t', vocab_size = 10000, hidden_units = 128, embedding_size = 300):
+    def __init__(self,  model_fn, sent_maxlen, batch_size, seed = 42, sep = '\t', vocab_size = 10000, hidden_units = 128, embedding_size = 300):
         """
         Initialize the model
+        model_fn - a model generating function, to be called when training with self as a single argument.
         sent_maxlen - the maximum length in words of each sentence - will be used for padding / truncating
         batch_size - batch size for training
         seed - the random seed for reproduciblity
@@ -35,6 +34,7 @@ class RNN_model:
         hidden_units - number of hidden units per layer
         embedding_size - the word embedding dimension
         """
+        self.model_fn = model_fn
         self.sent_maxlen = sent_maxlen
         self.batch_size = batch_size
         self.seed = seed
@@ -48,18 +48,6 @@ class RNN_model:
     def classes_(self):
         return self.encoder.classes_
 
-    def set_estimator(self, model):
-        """
-        Set this rnn's model
-        model - a function which returns a Keras model, this would be
-        passed to the KerasClassifier function, which will call the fit function
-        internally.
-        """
-        self.estimator = KerasClassifier(build_fn = model,
-                                         nb_epoch = 200,
-                                         batch_size = self.batch_size,
-                                         verbose = 0)
-
     def train_and_test(self, train_fn, test_fn):
         """
         Train and then test on given files
@@ -72,7 +60,7 @@ class RNN_model:
         Train this model on a given train dataset
         """
         X, Y = self.load_dataset(train_fn)
-        self.set_oie_model() # Called here after labels have been identified in load dataset
+        self.model_fn(self)  # Set model params, called here after labels have been identified in load dataset
         logging.debug("Training model on {}".format(train_fn))
         self.model.fit(X, Y, batch_size = self.batch_size)
 
@@ -157,11 +145,12 @@ class RNN_model:
         """
         return len(self.classes_())
 
-    def set_oie_model(self):
+    def set_vanilla_model(self):
         """
-        Return a function which returns a Keras sequential model for predicting OIE
-        this should be given as input to set_estimator
+        Set a Keras sequential model for predicting OIE as a member of this class
+        Can be passed as model_fn to the constructor
         """
+        logging.debug("Setting vanilla model")
         self.model = Sequential()
         self.model.add(TimeDistributed(Embedding(self.vocab_size, self.embedding_size, dropout=0.2), input_shape = (self.sent_maxlen, 1)))
         self.model.add(TimeDistributed(LSTM(self.hidden_units, input_shape = (self.sent_maxlen, self.embedding_size),  return_sequences = True)))
@@ -171,8 +160,7 @@ class RNN_model:
         self.model.compile(optimizer='rmsprop',
                       loss='categorical_crossentropy',
                       metrics=['accuracy'])
-        logging.debug(self.model.summary())
-
+        self.model.summary()
 
 class Sample:
     """
@@ -218,7 +206,16 @@ if __name__ == "__main__":
     args = docopt(__doc__)
     train_fn = args["--train"]
     test_fn = args["--test"]
-    rnn = RNN_model(sent_maxlen = 20, batch_size = 5)
+    rnn = RNN_model(model_fn = RNN_model.set_vanilla_model,sent_maxlen = 20, batch_size = 5)
     rnn.train(train_fn)
 
 #    rnn.kfold_evaluation(train_fn)
+
+"""
+Things to do:
+
+ 1. Set pretrained embeddings
+ 2. Add features (merge rnns?)
+ 3. Test performance.
+
+"""
