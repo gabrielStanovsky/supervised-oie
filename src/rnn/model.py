@@ -15,6 +15,7 @@ from sklearn.model_selection import KFold
 from sklearn.preprocessing import LabelEncoder
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import accuracy_score
+from word_index import Word_index
 import logging
 logging.basicConfig(level = logging.DEBUG)
 
@@ -44,6 +45,7 @@ class RNN_model:
         self.encoder = LabelEncoder()
         self.hidden_units = hidden_units
         self.embedding_size = embedding_size
+        self.word_index = Word_index()
 
     def classes_(self):
         return self.encoder.classes_
@@ -59,6 +61,7 @@ class RNN_model:
         """
         Train this model on a given train dataset
         """
+        self.word_index.reset()
         X, Y = self.load_dataset(train_fn)
         self.model_fn(self)  # Set model params, called here after labels have been identified in load dataset
         logging.debug("Training model on {}".format(train_fn))
@@ -68,6 +71,7 @@ class RNN_model:
         """
         Evaluate this model on a test file
         """
+        self.word_index.finalize()
         X, Y = self.load_dataset(test_fn)
         self.predicted = np_utils.to_categorical(self.estimator.predict(X))
         acc = accuracy_score(Y, self.predicted) * 100
@@ -103,8 +107,8 @@ class RNN_model:
         # Encode inputs
         input_encodings = []
         for sent in sents:
-            word_encodings = [one_hot(w, self.vocab_size, filters = "")[0] for w in sent.word.values]
-            pred_word_encodings = [one_hot(w, self.vocab_size, filters = "")[0] for w in sent.pred.values]
+            word_encodings = [self.word_index[w] for w in sent.word.values]
+            pred_word_encodings = [self.word_index[w] for w in sent.pred.values]
             input_encodings.append([Sample(word, pred_word) for (word, pred_word) in
                                     zip(word_encodings, pred_word_encodings)])
         # Pad / truncate to desired maximum length
