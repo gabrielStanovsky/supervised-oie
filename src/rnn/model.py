@@ -15,7 +15,6 @@ from sklearn.model_selection import KFold
 from sklearn.preprocessing import LabelEncoder
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import accuracy_score
-from word_index import Word_index
 import logging
 logging.basicConfig(level = logging.DEBUG)
 
@@ -23,17 +22,20 @@ class RNN_model:
     """
     Represents an RNN model for supervised OIE
     """
-    def __init__(self,  model_fn, sent_maxlen, batch_size, seed = 42, sep = '\t', vocab_size = 10000, hidden_units = 128, embedding_size = 300):
+    def __init__(self,  model_fn, sent_maxlen, batch_size, emb,
+                 seed = 42, sep = '\t', vocab_size = 10000, hidden_units = 128, embedding_size = 300, trainable_emb = True):
         """
         Initialize the model
         model_fn - a model generating function, to be called when training with self as a single argument.
         sent_maxlen - the maximum length in words of each sentence - will be used for padding / truncating
         batch_size - batch size for training
+        pre_trained_emb - an embedding class
         seed - the random seed for reproduciblity
         sep  - separator in the csv dataset files for this model
         vocab_size - size of the language voacbaulary to be used
         hidden_units - number of hidden units per layer
         embedding_size - the word embedding dimension
+        trainable_emb - controls if the loss should propagate to the word embeddings during training
         """
         self.model_fn = model_fn
         self.sent_maxlen = sent_maxlen
@@ -45,7 +47,8 @@ class RNN_model:
         self.encoder = LabelEncoder()
         self.hidden_units = hidden_units
         self.embedding_size = embedding_size
-        self.word_index = Word_index()
+        self.emb = emb
+        self.trainable_emb = trainable_emb
 
     def classes_(self):
         return self.encoder.classes_
@@ -61,7 +64,6 @@ class RNN_model:
         """
         Train this model on a given train dataset
         """
-        self.word_index.reset()
         X, Y = self.load_dataset(train_fn)
         self.model_fn(self)  # Set model params, called here after labels have been identified in load dataset
         logging.debug("Training model on {}".format(train_fn))
@@ -71,7 +73,6 @@ class RNN_model:
         """
         Evaluate this model on a test file
         """
-        self.word_index.finalize()
         X, Y = self.load_dataset(test_fn)
         self.predicted = np_utils.to_categorical(self.estimator.predict(X))
         acc = accuracy_score(Y, self.predicted) * 100
@@ -107,10 +108,11 @@ class RNN_model:
         # Encode inputs
         input_encodings = []
         for sent in sents:
-            word_encodings = [self.word_index[w] for w in sent.word.values]
-            pred_word_encodings = [self.word_index[w] for w in sent.pred.values]
+            word_encodings = [self.emb.get_word_index(w) for w in sent.word.values]
+            pred_word_encodings = [self.emb.get_word_index(w) for w in sent.pred.values]
             input_encodings.append([Sample(word, pred_word) for (word, pred_word) in
                                     zip(word_encodings, pred_word_encodings)])
+
         # Pad / truncate to desired maximum length
         ret = []
         for samples in pad_sequences(input_encodings,
@@ -156,7 +158,7 @@ class RNN_model:
         """
         logging.debug("Setting vanilla model")
         self.model = Sequential()
-        self.model.add(TimeDistributed(Embedding(self.vocab_size, self.embedding_size, dropout=0.2), input_shape = (self.sent_maxlen, 1)))
+        self.model.add(TimeDistributed(Embedding(self.vocab_size, self.embedding_size, dropout=0.2), input_shape = (self.sent_maxlen, 1), weights = [self.emb.get_embedding_matrix()], trainable = self.trainable_emb))
         self.model.add(TimeDistributed(LSTM(self.hidden_units, input_shape = (self.sent_maxlen, self.embedding_size),  return_sequences = True)))
         self.model.add(TimeDistributed(LSTM(self.hidden_units, input_shape = (self.sent_maxlen, self.hidden_units), return_sequences = False)))
         self.model.add(TimeDistributed(Dense(output_dim = self.num_of_classes(), activation = 'sigmoid')))

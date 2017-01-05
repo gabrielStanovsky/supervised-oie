@@ -35,6 +35,13 @@ class Word_index:
         # By now, word is in self.dic for sure
         return self.dic[word]
 
+    def set_word(self, word):
+        """
+        Add this word to the mapping.
+        Same as getitem.
+        """
+        return self.__getitem__(word)
+
     def __len__(self, include_UNK = False):
         """
         Returns the length of this dictionary, by default omitting UNK
@@ -46,8 +53,8 @@ class Word_index:
         """
         Reset this mapping.
         """
-        self.dic = {UNK_SYMBOL : 1}
-        self.last_index = 1
+        self.dic = {UNK_SYMBOL : 0}
+        self.last_index = 0
         self.finalized = False
 
     def finalize(self):
@@ -64,8 +71,6 @@ class Word_index:
         min_index = 1 if return_UNK else 2
         return iter([(k - ((min_index) - 1), v) for k, v in   # scale indices to [1, n]
                      self.dic.iteritems() if k >= min_index])
-
-
 
 
 # CONSTANTS
