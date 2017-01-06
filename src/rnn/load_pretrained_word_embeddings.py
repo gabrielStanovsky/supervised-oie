@@ -16,16 +16,14 @@ class Glove:
     Stores pretrained word embeddings for GloVe, and
     outputs a Keras Embeddings layer.
     """
-    def __init__(self, fn, nb_words = None, dim = None):
+    def __init__(self, fn, dim = None):
         """
         Load a GloVe pretrained embeddings model.
         fn - Filename from which to load the embeddings
-        nb_words - Maximum number of words to include (None includes all words)
         dim - Dimension of expected word embeddings, used as verficiation,
               None avoids this check.
         """
         self.fn = fn
-        self.nb_words = nb_words
         self.dim = dim
         logging.debug("Loading GloVe embeddings from: {} ...".format(self.fn))
         self._load(self.fn)
@@ -52,6 +50,8 @@ class Glove:
 
         # Add UNK at the first index in the table
         self.emb = np.array([UNK_VALUE(self.dim)] + emb)
+        # Set the vobabulary size
+        self.vocab_size = len(self.emb)
 
     def get_word_index(self, word, lower = True):
         """
@@ -89,6 +89,7 @@ if __name__ == "__main__":
         glove_fn = args["--glove"]
         emb = Glove(glove_fn)
         mat = emb.get_embedding_matrix()
+        logging.debug("Emb size: {}".format(emb.vocab_size))
     else:
         logging.info(__doc__)
         exit
