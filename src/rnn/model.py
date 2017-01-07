@@ -25,7 +25,9 @@ class RNN_model:
     """
     def __init__(self,  model_fn, sent_maxlen, emb,
                  batch_size = 50, seed = 42, sep = '\t',
-                 hidden_units = 128,trainable_emb = True):
+                 hidden_units = 128,trainable_emb = True,
+                 emb_dropout = 0.2
+    ):
         """
         Initialize the model
         model_fn - a model generating function, to be called when training with self as a single argument.
@@ -36,6 +38,7 @@ class RNN_model:
         sep  - separator in the csv dataset files for this model
         hidden_units - number of hidden units per layer
         trainable_emb - controls if the loss should propagate to the word embeddings during training
+        emb_dropout - the percentage of dropout during embedding
         """
         self.model_fn = model_fn
         self.sent_maxlen = sent_maxlen
@@ -48,6 +51,7 @@ class RNN_model:
         self.emb = emb
         self.embedding_size = self.emb.dim
         self.trainable_emb = trainable_emb
+        self.emb_dropout = emb_dropout
 
     def classes_(self):
         return self.encoder.classes_
@@ -150,6 +154,8 @@ class RNN_model:
         """
         return len(self.classes_())
 
+
+
     def set_vanilla_model(self):
         """
         Set a Keras sequential model for predicting OIE as a member of this class
@@ -157,12 +163,10 @@ class RNN_model:
         """
         logging.debug("Setting vanilla model")
         self.model = Sequential()
-        self.model.add(TimeDistributed(Embedding(self.emb.vocab_size,
-                                                 self.embedding_size,
-                                                 dropout=0.2,
-                                                 weights = [self.emb.get_embedding_matrix()],
-                                                 trainable = self.trainable_emb),
+        self.model.add(TimeDistributed(self.emb.get_keras_embedding(dropout = self.emb_dropout,
+                                                                    trainable = self.trainable_emb),
                                        input_shape = (self.sent_maxlen, 1)))
+
         self.model.add(TimeDistributed(LSTM(self.hidden_units, input_shape = (self.sent_maxlen, self.embedding_size),  return_sequences = True)))
         self.model.add(TimeDistributed(LSTM(self.hidden_units, input_shape = (self.sent_maxlen, self.hidden_units), return_sequences = False)))
         self.model.add(TimeDistributed(Dense(output_dim = self.num_of_classes(), activation = 'sigmoid')))

@@ -10,6 +10,7 @@ logging.basicConfig(level = logging.DEBUG)
 import sys
 sys.path.append("./common")
 from symbols import UNK_INDEX, UNK_SYMBOL, UNK_VALUE
+from keras .layers import Embedding
 
 class Glove:
     """
@@ -72,16 +73,17 @@ class Glove:
         """
         return self.emb
 
-        # self.embedding_matrix = np.zeros((len(word_index) + 2, self.dim)) # Word indices start from 1 and have an UNK symbol
-        # for word, i in word_index.iteritems():
-        #     logging.debug("Adding {}".format((word, i)))
-        #     embedding_vector = self.embedding_index.get(word)
-        #     if embedding_vector is not None:
-        #         # Words not found in embedding index will be all-zeros.
-        #         # Note - but these words will still have their own vector, not unkified
-        #         self.embedding_matrix[i] = embedding_vector
+    def get_keras_embedding(self, **args):
+        """
+        Get a Keras Embedding layer, loading this embedding as pretrained weights
+        The additional arguments given to this function are passed to the Keras Embbeding constructor.
+        """
+        return Embedding(self.vocab_size,
+                         self.dim,
+                         weights = [self.get_embedding_matrix()],
+                         **args)
 
-        # return self.embedding_matrix
+
 
 if __name__ == "__main__":
     args = docopt(__doc__)
