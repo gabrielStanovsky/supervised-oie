@@ -121,10 +121,7 @@ class RNN_model:
         for samples in pad_sequences(input_encodings,
                                      pad_func = lambda : Pad_sample(),
                                      maxlen = self.sent_maxlen):
-            cur = []
-            for sample in samples:
-                cur.append(sample.encode())
-                ret.append(cur)
+            ret.append([sample.encode() for sample in samples])
         return ret
 
 
@@ -139,7 +136,9 @@ class RNN_model:
             output_encodings.append(np_utils.to_categorical(self.encoder.transform(sent.label.values)))
 
         # Pad / truncate to maximum length
-        return pad_sequences(output_encodings, lambda : np.array([0] * self.num_of_classes()), maxlen = self.sent_maxlen)
+        return pad_sequences(output_encodings,
+                             lambda : np.array([0] * self.num_of_classes()),
+                             maxlen = self.sent_maxlen)
 
 
     def decode_label(self, encoded_label):
@@ -180,7 +179,7 @@ class RNN_model:
         output = predict(deep(word_embeddings))
 
         # Build model
-        self.model = Model(input = word_inputs, output = output)
+        self.model = Model(input = [word_inputs], output = [output])
 
         # Loss
         self.model.compile(optimizer='rmsprop',
