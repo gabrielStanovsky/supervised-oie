@@ -157,9 +157,15 @@ class RNN_model:
     # https://keras.io/getting-started/functional-api-guide/
 
     ## Embed word sequences using self's embedding class
-    embed = lambda self: lambda word_inputs: TimeDistributed(self.emb.get_keras_embedding(dropout = self.emb_dropout,
-                                                                                          trainable = self.trainable_emb))\
-                                                                                          (word_inputs)
+    embed = lambda self: lambda word_inputs: \
+            TimeDistributed(self.emb.get_keras_embedding(dropout = self.emb_dropout,
+                                                         trainable = self.trainable_emb))\
+                                                        (word_inputs)
+
+    ## Predict to the number of classes
+    predict = lambda self: lambda inp:\
+              TimeDistributed(Dense(output_dim = self.num_of_classes(), activation = 'sigmoid'))(inp)
+
     def stack_latent_layers(self, n):
         """
         Stack layers by applying recursively on the output, until returing the input
@@ -175,6 +181,8 @@ class RNN_model:
                                             (inner(x, n - 1, return_sequences = True))
         return lambda x: inner(x, n, return_sequences = False)
 
+
+
     def set_vanilla_model(self):
         """
         Set a Keras sequential model for predicting OIE as a member of this class
@@ -184,16 +192,18 @@ class RNN_model:
         # First layer
         ## Word embedding
         word_inputs = Input(shape = (self.sent_maxlen, 1), dtype="int32", name = "word_inputs")
-        embed_layer = self.embed()
+
+        # Embedding Layer
+        embedding_layer = self.embed()
 
         # Deep layers
         latent_layers = self.stack_latent_layers(2)
 
         # Prediction
-        predict = lambda inp:\
-                  TimeDistributed(Dense(output_dim = self.num_of_classes(), activation = 'sigmoid'))(inp)
+        predict_layer = self.predict()
 
-        output = predict(deep(embed(word_inputs)))
+        # Build model
+        output = predict_layer(latent_layers(embedding_layer((word_inputs))))
 
         # Build model
         self.model = Model(input = [word_inputs], output = [output])
