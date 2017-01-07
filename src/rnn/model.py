@@ -157,9 +157,9 @@ class RNN_model:
     # https://keras.io/getting-started/functional-api-guide/
 
     ## Embed word sequences using self's embedding class
-    embed = lambda self, word_inputs: TimeDistributed(self.emb.get_keras_embedding(dropout = self.emb_dropout,
-                                                                                   trainable = self.trainable_emb))\
-                                                                                   (word_inputs)
+    embed = lambda self: lambda word_inputs: TimeDistributed(self.emb.get_keras_embedding(dropout = self.emb_dropout,
+                                                                                          trainable = self.trainable_emb))\
+                                                                                          (word_inputs)
     def stack_latent_layers(self, n):
         """
         Stack layers by applying recursively on the output, until returing the input
@@ -184,21 +184,16 @@ class RNN_model:
         # First layer
         ## Word embedding
         word_inputs = Input(shape = (self.sent_maxlen, 1), dtype="int32", name = "word_inputs")
-        word_embeddings = self.embed(word_inputs)
+        embed_layer = self.embed()
 
         # Deep layers
-        deep = self.stack_latent_layers(2)
+        latent_layers = self.stack_latent_layers(2)
 
-        # lambda inp:\
-        #        TimeDistributed(LSTM(self.hidden_units,
-        #                             return_sequences = False)) \
-        #                             (TimeDistributed(LSTM(self.hidden_units,
-        #                                                   return_sequences = True)) (inp))
-
+        # Prediction
         predict = lambda inp:\
                   TimeDistributed(Dense(output_dim = self.num_of_classes(), activation = 'sigmoid'))(inp)
 
-        output = predict(deep(word_embeddings))
+        output = predict(deep(embed(word_inputs)))
 
         # Build model
         self.model = Model(input = [word_inputs], output = [output])
