@@ -153,7 +153,7 @@ class RNN_model:
         """
         return len(self.classes_())
 
-    # Functional Keras -- all of the following are functions expecting models as input
+    # Functional Keras -- all of the following are currying functions expecting models as input
     # https://keras.io/getting-started/functional-api-guide/
 
     ## Embed word sequences using self's embedding class
@@ -197,12 +197,12 @@ class RNN_model:
         embedding_layer = self.embed()
 
         # Deep layers
-        latent_layers = self.stack_latent_layers(2)
+        latent_layers = self.stack_latent_layers(10)
 
         # Prediction
         predict_layer = self.predict()
 
-        # Build model
+        # Build model function
         output = predict_layer(latent_layers(embedding_layer((word_inputs))))
 
         # Build model
