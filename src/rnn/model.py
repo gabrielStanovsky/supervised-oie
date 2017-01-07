@@ -222,7 +222,7 @@ class RNN_model:
         output = predict_layer(latent_layers(inp))
 
         # Build model
-        self.model = Model(input = [word_inputs, predicate_inputs], output = [output])
+        self.model = Model(input = [word_inputs], output = [output])
 
         # Loss
         self.model.compile(optimizer='rmsprop',
@@ -244,8 +244,7 @@ class Sample:
         Encode this sample as vector as input for rnn,
         Probably just concatenating members in the right order.
         """
-        return [[self.word],
-                [self.pred_word]]
+        return [self.word]
 
 class Pad_sample(Sample):
     """
