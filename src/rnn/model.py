@@ -4,8 +4,8 @@
 import numpy as np
 import pandas
 from docopt import docopt
-from keras.models import Sequential
-from keras.layers import Dense, LSTM, Embedding, TimeDistributedDense, TimeDistributed
+from keras.models import Sequential, Model
+from keras.layers import Input, Dense, LSTM, Embedding, TimeDistributedDense, TimeDistributed
 from keras.wrappers.scikit_learn import KerasClassifier
 from keras.utils import np_utils
 from keras.preprocessing.text import one_hot
@@ -124,7 +124,7 @@ class RNN_model:
             cur = []
             for sample in samples:
                 cur.append(sample.encode())
-            ret.append(cur)
+                ret.append(cur)
         return ret
 
 
@@ -154,26 +154,38 @@ class RNN_model:
         """
         return len(self.classes_())
 
-
-
     def set_vanilla_model(self):
         """
         Set a Keras sequential model for predicting OIE as a member of this class
         Can be passed as model_fn to the constructor
+        https://keras.io/getting-started/functional-api-guide/
         """
         logging.debug("Setting vanilla model")
-        self.model = Sequential()
-        self.model.add(TimeDistributed(self.emb.get_keras_embedding(dropout = self.emb_dropout,
-                                                                    trainable = self.trainable_emb),
-                                       input_shape = (self.sent_maxlen, 1)))
+        # First layer
+        ## Word embedding
+        word_inputs = Input(shape = (self.sent_maxlen, 1), dtype="int32", name = "word_inputs")
+        word_embeddings = TimeDistributed(self.emb.get_keras_embedding(dropout = self.emb_dropout,
+                                                                       trainable = self.trainable_emb))\
+                                                                       (word_inputs)
+        # Deep layers
+        deep = lambda inp:\
+               TimeDistributed(LSTM(self.hidden_units,
+                                            return_sequences = False)) \
+                                            (TimeDistributed(LSTM(self.hidden_units,
+                                                                  return_sequences = True)) (inp))
 
-        self.model.add(TimeDistributed(LSTM(self.hidden_units, input_shape = (self.sent_maxlen, self.embedding_size),  return_sequences = True)))
-        self.model.add(TimeDistributed(LSTM(self.hidden_units, input_shape = (self.sent_maxlen, self.hidden_units), return_sequences = False)))
-        self.model.add(TimeDistributed(Dense(output_dim = self.num_of_classes(), activation = 'sigmoid')))
+        predict = lambda inp:\
+                  TimeDistributed(Dense(output_dim = self.num_of_classes(), activation = 'sigmoid'))(inp)
 
+        output = predict(deep(word_embeddings))
+
+        # Build model
+        self.model = Model(input = word_inputs, output = output)
+
+        # Loss
         self.model.compile(optimizer='rmsprop',
-                      loss='categorical_crossentropy',
-                      metrics=['accuracy'])
+                           loss='categorical_crossentropy',
+                           metrics=['accuracy'])
         self.model.summary()
 
 class Sample:
@@ -215,7 +227,7 @@ def pad_sequences(sequences, pad_func, maxlen = None):
     else:
         maxlen = min(max_value, maxlen)
         logging.debug("Padding / truncating to {} words (max observed was {})".format(maxlen, max_value))
-    # Pad / truncate (done this way to deal with np.array)
+        # Pad / truncate (done this way to deal with np.array)
     for sequence in sequences:
         cur_seq = list(sequence[:maxlen])
         cur_seq.extend([pad_func()] * (maxlen - len(sequence)))
@@ -228,8 +240,8 @@ if __name__ == "__main__":
     test_fn = args["--test"]
     if "--glove" in args:
         emb = Glove(args["--glove"])
-    rnn = RNN_model(model_fn = RNN_model.set_vanilla_model, sent_maxlen = None, emb = emb)
-    rnn.train(train_fn)
+        rnn = RNN_model(model_fn = RNN_model.set_vanilla_model, sent_maxlen = None, emb = emb)
+        rnn.train(train_fn)
 
 
 
