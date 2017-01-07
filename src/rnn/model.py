@@ -26,7 +26,7 @@ class RNN_model:
     def __init__(self,  model_fn, sent_maxlen, emb,
                  batch_size = 50, seed = 42, sep = '\t',
                  hidden_units = 128,trainable_emb = True,
-                 emb_dropout = 0.2
+                 emb_dropout = 0.2, num_of_latent_layers = 2,
     ):
         """
         Initialize the model
@@ -39,6 +39,7 @@ class RNN_model:
         hidden_units - number of hidden units per layer
         trainable_emb - controls if the loss should propagate to the word embeddings during training
         emb_dropout - the percentage of dropout during embedding
+        num_of_latent_layers - how many LSTMs to stack
         """
         self.model_fn = model_fn
         self.sent_maxlen = sent_maxlen
@@ -52,6 +53,7 @@ class RNN_model:
         self.embedding_size = self.emb.dim
         self.trainable_emb = trainable_emb
         self.emb_dropout = emb_dropout
+        self.num_of_latent_layers = num_of_latent_layers
 
     def classes_(self):
         return self.encoder.classes_
@@ -197,7 +199,7 @@ class RNN_model:
         embedding_layer = self.embed()
 
         # Deep layers
-        latent_layers = self.stack_latent_layers(10)
+        latent_layers = self.stack_latent_layers(self.num_of_latent_layers)
 
         # Prediction
         predict_layer = self.predict()
