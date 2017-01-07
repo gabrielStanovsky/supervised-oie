@@ -153,25 +153,47 @@ class RNN_model:
         """
         return len(self.classes_())
 
+    # Functional Keras -- all of the following are functions expecting models as input
+    # https://keras.io/getting-started/functional-api-guide/
+
+    ## Embed word sequences using self's embedding class
+    embed = lambda self, word_inputs: TimeDistributed(self.emb.get_keras_embedding(dropout = self.emb_dropout,
+                                                                                   trainable = self.trainable_emb))\
+                                                                                   (word_inputs)
+    def stack_latent_layers(self, n):
+        """
+        Stack layers by applying recursively on the output, until returing the input
+        as the base case for the recursion
+        """
+        def inner(x, n, return_sequences):
+            if n == 0:
+                return x # Base case of the recursion is the just returning the input
+            else:
+                # The last layer unifies, hence return_sequences = False for it
+                return TimeDistributed(LSTM(self.hidden_units,
+                                            return_sequences = return_sequences))\
+                                            (inner(x, n - 1, return_sequences = True))
+        return lambda x: inner(x, n, return_sequences = False)
+
     def set_vanilla_model(self):
         """
         Set a Keras sequential model for predicting OIE as a member of this class
         Can be passed as model_fn to the constructor
-        https://keras.io/getting-started/functional-api-guide/
         """
         logging.debug("Setting vanilla model")
         # First layer
         ## Word embedding
         word_inputs = Input(shape = (self.sent_maxlen, 1), dtype="int32", name = "word_inputs")
-        word_embeddings = TimeDistributed(self.emb.get_keras_embedding(dropout = self.emb_dropout,
-                                                                       trainable = self.trainable_emb))\
-                                                                       (word_inputs)
+        word_embeddings = self.embed(word_inputs)
+
         # Deep layers
-        deep = lambda inp:\
-               TimeDistributed(LSTM(self.hidden_units,
-                                            return_sequences = False)) \
-                                            (TimeDistributed(LSTM(self.hidden_units,
-                                                                  return_sequences = True)) (inp))
+        deep = self.stack_latent_layers(2)
+
+        # lambda inp:\
+        #        TimeDistributed(LSTM(self.hidden_units,
+        #                             return_sequences = False)) \
+        #                             (TimeDistributed(LSTM(self.hidden_units,
+        #                                                   return_sequences = True)) (inp))
 
         predict = lambda inp:\
                   TimeDistributed(Dense(output_dim = self.num_of_classes(), activation = 'sigmoid'))(inp)
