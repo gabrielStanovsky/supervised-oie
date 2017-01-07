@@ -5,7 +5,7 @@ import numpy as np
 import pandas
 from docopt import docopt
 from keras.models import Sequential, Model
-from keras.layers import Input, Dense, LSTM, Embedding, TimeDistributedDense, TimeDistributed
+from keras.layers import Input, Dense, LSTM, Embedding, TimeDistributedDense, TimeDistributed, merge
 from keras.wrappers.scikit_learn import KerasClassifier
 from keras.utils import np_utils
 from keras.preprocessing.text import one_hot
@@ -56,6 +56,9 @@ class RNN_model:
         self.num_of_latent_layers = num_of_latent_layers
 
     def classes_(self):
+        """
+        Return the classes which are classified by this model
+        """
         return self.encoder.classes_
 
     def train_and_test(self, train_fn, test_fn):
@@ -159,14 +162,13 @@ class RNN_model:
     # https://keras.io/getting-started/functional-api-guide/
 
     ## Embed word sequences using self's embedding class
-    embed = lambda self: lambda word_inputs: \
+    embed = lambda self:\
             TimeDistributed(self.emb.get_keras_embedding(dropout = self.emb_dropout,
-                                                         trainable = self.trainable_emb))\
-                                                        (word_inputs)
+                                                         trainable = self.trainable_emb))
 
     ## Predict to the number of classes
-    predict = lambda self: lambda inp:\
-              TimeDistributed(Dense(output_dim = self.num_of_classes(), activation = 'sigmoid'))(inp)
+    predict = lambda self:\
+              TimeDistributed(Dense(output_dim = self.num_of_classes(), activation = 'sigmoid'))
 
     def stack_latent_layers(self, n):
         """
@@ -184,7 +186,6 @@ class RNN_model:
         return lambda x: inner(x, n, return_sequences = False)
 
 
-
     def set_vanilla_model(self):
         """
         Set a Keras sequential model for predicting OIE as a member of this class
@@ -192,8 +193,13 @@ class RNN_model:
         """
         logging.debug("Setting vanilla model")
         # First layer
-        ## Word embedding
-        word_inputs = Input(shape = (self.sent_maxlen, 1), dtype="int32", name = "word_inputs")
+        ## Words and predicates
+        word_inputs = Input(shape = (self.sent_maxlen, 1),
+                            dtype="int32",
+                            name = "word_inputs")
+        predicate_inputs = Input(shape = (self.sent_maxlen, 1),
+                                 dtype="int32",
+                                 name = "predicate_inputs")
 
         # Embedding Layer
         embedding_layer = self.embed()
@@ -204,11 +210,19 @@ class RNN_model:
         # Prediction
         predict_layer = self.predict()
 
+        # inp = merge([embedding_layer(word_inputs),
+        #              embedding_layer(predicate_inputs)],
+        #             mode = "concat",
+        #             concat_axis = -1)
+
+        inp = embedding_layer(word_inputs)
+
+
         # Build model function
-        output = predict_layer(latent_layers(embedding_layer((word_inputs))))
+        output = predict_layer(latent_layers(inp))
 
         # Build model
-        self.model = Model(input = [word_inputs], output = [output])
+        self.model = Model(input = [word_inputs, predicate_inputs], output = [output])
 
         # Loss
         self.model.compile(optimizer='rmsprop',
@@ -230,7 +244,8 @@ class Sample:
         Encode this sample as vector as input for rnn,
         Probably just concatenating members in the right order.
         """
-        return [self.word]
+        return [[self.word],
+                [self.pred_word]]
 
 class Pad_sample(Sample):
     """
