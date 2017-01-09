@@ -28,6 +28,7 @@ class RNN_model:
                  batch_size = 50, seed = 42, sep = '\t',
                  hidden_units = 128,trainable_emb = True,
                  emb_dropout = 0.2, num_of_latent_layers = 2,
+                 epochs = 10,
     ):
         """
         Initialize the model
@@ -41,6 +42,7 @@ class RNN_model:
         trainable_emb - controls if the loss should propagate to the word embeddings during training
         emb_dropout - the percentage of dropout during embedding
         num_of_latent_layers - how many LSTMs to stack
+        epochs - the number of epochs to train the model.
         """
         self.model_fn = model_fn
         self.sent_maxlen = sent_maxlen
@@ -55,6 +57,7 @@ class RNN_model:
         self.trainable_emb = trainable_emb
         self.emb_dropout = emb_dropout
         self.num_of_latent_layers = num_of_latent_layers
+        self.epochs = epochs
 
     def classes_(self):
         """
@@ -76,17 +79,24 @@ class RNN_model:
         X, Y = self.load_dataset(train_fn)
         self.model_fn(self)  # Set model params, called here after labels have been identified in load dataset
         logging.debug("Training model on {}".format(train_fn))
-        self.model.fit(X, Y, batch_size = self.batch_size)
+        self.model.fit(X, Y, batch_size = self.batch_size, nb_epoch = self.epochs)
 
     def test(self, test_fn):
         """
         Evaluate this model on a test file
         """
         X, Y = self.load_dataset(test_fn)
-        self.predicted = np_utils.to_categorical(self.estimator.predict(X))
+        self.predicted = np_utils.to_categorical(self.model.predict(X))
         acc = accuracy_score(Y, self.predicted) * 100
         logging.info("ACC: {:.2f}".format(acc))
         return acc
+
+    def predict(self, input_fn):
+        """
+        Run this model on an input CoNLLL file
+        """
+        X, _ = self.load_dataset(input_fn)
+        return np_utils.to_categorical(self.model.predict(X))
 
     def load_dataset(self, fn):
         """
@@ -148,9 +158,9 @@ class RNN_model:
             output_encodings.append(np_utils.to_categorical(self.encoder.transform(sent.label.values)))
 
         # Pad / truncate to maximum length
-        return pad_sequences(output_encodings,
-                             lambda : np.array([0] * self.num_of_classes()),
-                             maxlen = self.sent_maxlen)
+        return np.array(pad_sequences(output_encodings,
+                                      lambda : np.array([0] * self.num_of_classes()),
+                                      maxlen = self.sent_maxlen))
 
 
     def decode_label(self, encoded_label):
@@ -285,16 +295,6 @@ if __name__ == "__main__":
     test_fn = args["--test"]
     if "--glove" in args:
         emb = Glove(args["--glove"])
-        rnn = RNN_model(model_fn = RNN_model.set_vanilla_model, sent_maxlen = None, emb = emb)
+        rnn = RNN_model(model_fn = RNN_model.set_vanilla_model, sent_maxlen = None, emb = emb, epochs = 1)
         rnn.train(train_fn)
     x, y = rnn.load_dataset(train_fn)
-
-
-"""
-Things to do:
-
- 1. Set pretrained embeddings
- 2. Add features (merge rnns?)
- 3. Test performance.
-
-"""
