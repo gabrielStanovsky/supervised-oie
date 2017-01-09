@@ -16,6 +16,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import accuracy_score
 from load_pretrained_word_embeddings import Glove
+from operator import itemgetter
 import logging
 logging.basicConfig(level = logging.DEBUG)
 
@@ -99,8 +100,8 @@ class RNN_model:
 
         # Split according to sentences and encode
         sents = self.get_sents_from_df(df)
-        return (np.array(self.encode_inputs(sents)),
-                np.array(self.encode_outputs(sents)))
+        return (self.encode_inputs(sents),
+                self.encode_outputs(sents))
 
     def get_sents_from_df(self, df):
         """
@@ -111,23 +112,29 @@ class RNN_model:
     def encode_inputs(self, sents):
         """
         Given a dataframe split to sentences, encode inputs for rnn classification.
-        Should return a  sequence of sample of length maxlen.
+        Should return a dictionary of sequences of sample of length maxlen.
         """
         # Encode inputs
-        input_encodings = []
+        word_inputs = []
+        pred_inputs = []
         for sent in sents:
             word_encodings = [self.emb.get_word_index(w) for w in sent.word.values]
             pred_word_encodings = [self.emb.get_word_index(w) for w in sent.pred.values]
-            input_encodings.append([Sample(word, pred_word) for (word, pred_word) in
-                                    zip(word_encodings, pred_word_encodings)])
+            word_inputs.append([Sample(w) for w in word_encodings])
+            pred_inputs.append([Sample(w) for w in pred_word_encodings])
 
         # Pad / truncate to desired maximum length
-        ret = []
-        for samples in pad_sequences(input_encodings,
-                                     pad_func = lambda : Pad_sample(),
-                                     maxlen = self.sent_maxlen):
-            ret.append([sample.encode() for sample in samples])
-        return ret
+        ret = {"word_inputs" : [],
+               "predicate_inputs": []}
+
+        for name, sequence in zip(["word_inputs", "predicate_inputs"],
+                                  [word_inputs, pred_inputs]):
+            for samples in pad_sequences(sequence,
+                                         pad_func = lambda : Pad_sample(),
+                                         maxlen = self.sent_maxlen):
+                ret[name].append([sample.encode() for sample in samples])
+
+        return {k: np.array(v) for k, v in ret.iteritems()}
 
 
     def encode_outputs(self, sents):
@@ -192,14 +199,7 @@ class RNN_model:
         Can be passed as model_fn to the constructor
         """
         logging.debug("Setting vanilla model")
-        # First layer
-        ## Words and predicates
-        word_inputs = Input(shape = (self.sent_maxlen, 1),
-                            dtype="int32",
-                            name = "word_inputs")
-        predicate_inputs = Input(shape = (self.sent_maxlen, 1),
-                                 dtype="int32",
-                                 name = "predicate_inputs")
+        # Build model
 
         # Embedding Layer
         embedding_layer = self.embed()
@@ -210,19 +210,23 @@ class RNN_model:
         # Prediction
         predict_layer = self.predict()
 
-        # inp = merge([embedding_layer(word_inputs),
-        #              embedding_layer(predicate_inputs)],
-        #             mode = "concat",
-        #             concat_axis = -1)
+        # Prepare input features, and indicate how to embed them
+        inputs_and_embeddings = [(Input(shape = (self.sent_maxlen, 1),
+                                       dtype="int32",
+                                       name = "word_inputs"),
+                                  embedding_layer),
+                                 (Input(shape = (self.sent_maxlen, 1),
+                                       dtype="int32",
+                                        name = "predicate_inputs"),
+                                  embedding_layer)]
 
-        inp = embedding_layer(word_inputs)
-
-
-        # Build model function
-        output = predict_layer(latent_layers(inp))
+        # Concat all inputs and run on deep network
+        output = predict_layer(latent_layers(merge([embed(inp) for inp, embed in inputs_and_embeddings],
+                                                   mode = "concat",
+                                                   concat_axis = -1)))
 
         # Build model
-        self.model = Model(input = [word_inputs], output = [output])
+        self.model = Model(input = map(itemgetter(0), inputs_and_embeddings), output = [output])
 
         # Loss
         self.model.compile(optimizer='rmsprop',
@@ -235,9 +239,8 @@ class Sample:
     Single sample representation.
     Containter which names spans in the input vector to simplify access
     """
-    def __init__(self, word, pred_word):
+    def __init__(self, word):
         self.word = word
-        self.pred_word = pred_word
 
     def encode(self):
         """
@@ -251,7 +254,7 @@ class Pad_sample(Sample):
     A dummy sample used for padding
     """
     def __init__(self):
-        Sample.__init__(self, word = 0, pred_word = 0)
+        Sample.__init__(self, word = 0)
 
 def pad_sequences(sequences, pad_func, maxlen = None):
     """
@@ -284,7 +287,7 @@ if __name__ == "__main__":
         emb = Glove(args["--glove"])
         rnn = RNN_model(model_fn = RNN_model.set_vanilla_model, sent_maxlen = None, emb = emb)
         rnn.train(train_fn)
-
+    x, y = rnn.load_dataset(train_fn)
 
 
 """
