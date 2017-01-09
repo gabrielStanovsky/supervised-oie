@@ -178,14 +178,18 @@ class RNN_model:
     # Functional Keras -- all of the following are currying functions expecting models as input
     # https://keras.io/getting-started/functional-api-guide/
 
-    ## Embed word sequences using self's embedding class
-    embed = lambda self:\
-            TimeDistributed(self.emb.get_keras_embedding(dropout = self.emb_dropout,
-                                                         trainable = self.trainable_emb))
+    def embed(self):
+        """
+        Embed word sequences using self's embedding class
+        """
+        return TimeDistributed(self.emb.get_keras_embedding(dropout = self.emb_dropout,
+                                                            trainable = self.trainable_emb))
 
-    ## Predict to the number of classes
-    predict = lambda self:\
-              TimeDistributed(Dense(output_dim = self.num_of_classes(), activation = 'sigmoid'))
+    def predict(self):
+        """
+        Predict to the number of classes
+        """
+        return TimeDistributed(Dense(output_dim = self.num_of_classes(), activation = 'sigmoid'))
 
     def stack_latent_layers(self, n):
         """
