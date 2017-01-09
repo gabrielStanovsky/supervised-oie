@@ -185,11 +185,14 @@ class RNN_model:
         return TimeDistributed(self.emb.get_keras_embedding(dropout = self.emb_dropout,
                                                             trainable = self.trainable_emb))
 
-    def predict(self):
+    def predict_classes(self, **args):
         """
         Predict to the number of classes
+        Named arguments are passed to the keras function
         """
-        return TimeDistributed(Dense(output_dim = self.num_of_classes(), activation = 'sigmoid'))
+        logging.debug("Predict layer: {}".format(args))
+        return TimeDistributed(Dense(output_dim = self.num_of_classes(),
+                                     **args))
 
     def stack_latent_layers(self, n):
         """
@@ -222,7 +225,7 @@ class RNN_model:
         latent_layers = self.stack_latent_layers(self.num_of_latent_layers)
 
         # Prediction
-        predict_layer = self.predict()
+        predict_layer = self.predict_classes(activation = "softmax")
 
         # Prepare input features, and indicate how to embed them
         inputs_and_embeddings = [(Input(shape = (self.sent_maxlen, 1),
@@ -297,8 +300,19 @@ if __name__ == "__main__":
     args = docopt(__doc__)
     train_fn = args["--train"]
     test_fn = args["--test"]
+
     if "--glove" in args:
         emb = Glove(args["--glove"])
-        rnn = RNN_model(model_fn = RNN_model.set_vanilla_model, sent_maxlen = None, emb = emb, epochs = 1)
+        rnn = RNN_model(model_fn = RNN_model.set_vanilla_model,
+                        sent_maxlen = None,
+                        num_of_latent_layers = 10,
+                        emb = emb,
+                        epochs = 1)
         rnn.train(train_fn)
-    x, y = rnn.load_dataset(train_fn)
+    y1 = rnn.predict(train_fn)
+
+
+"""
+TODO:
+- the *shape* of y1 is incorrect -- (2172, 1). First fix this
+"""
