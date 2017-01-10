@@ -94,9 +94,10 @@ class RNN_model:
     def predict(self, input_fn):
         """
         Run this model on an input CoNLLL file
+        Returns (gold, predicted)
         """
-        X, _ = self.load_dataset(input_fn)
-        return np_utils.to_categorical(self.model.predict(X))
+        X, Y = self.load_dataset(input_fn)
+        return Y, self.model.predict(X)
 
     def load_dataset(self, fn):
         """
@@ -218,16 +219,16 @@ class RNN_model:
         logging.debug("Setting vanilla model")
         # Build model
 
-        # Embedding Layer
+        ## Embedding Layer
         embedding_layer = self.embed()
 
-        # Deep layers
+        ## Deep layers
         latent_layers = self.stack_latent_layers(self.num_of_latent_layers)
 
-        # Prediction
+        ## Prediction
         predict_layer = self.predict_classes(activation = "softmax")
 
-        # Prepare input features, and indicate how to embed them
+        ## Prepare input features, and indicate how to embed them
         inputs_and_embeddings = [(Input(shape = (self.sent_maxlen, 1),
                                        dtype="int32",
                                        name = "word_inputs"),
@@ -237,7 +238,7 @@ class RNN_model:
                                         name = "predicate_inputs"),
                                   embedding_layer)]
 
-        # Concat all inputs and run on deep network
+        ## Concat all inputs and run on deep network
         output = predict_layer(latent_layers(merge([embed(inp) for inp, embed in inputs_and_embeddings],
                                                    mode = "concat",
                                                    concat_axis = -1)))
@@ -305,11 +306,11 @@ if __name__ == "__main__":
         emb = Glove(args["--glove"])
         rnn = RNN_model(model_fn = RNN_model.set_vanilla_model,
                         sent_maxlen = None,
-                        num_of_latent_layers = 10,
+                        num_of_latent_layers = 2,
                         emb = emb,
                         epochs = 1)
         rnn.train(train_fn)
-    y1 = rnn.predict(train_fn)
+    Y, y1 = rnn.predict(train_fn)
 
 
 """
