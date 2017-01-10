@@ -5,7 +5,7 @@ import numpy as np
 import pandas
 from docopt import docopt
 from keras.models import Sequential, Model
-from keras.layers import Input, Dense, LSTM, Embedding, TimeDistributedDense, TimeDistributed, merge
+from keras.layers import Input, Dense, LSTM, Embedding, TimeDistributedDense, TimeDistributed, merge, Bidirectional, Dropout
 from keras.wrappers.scikit_learn import KerasClassifier
 from keras.utils import np_utils
 from keras.preprocessing.text import one_hot
@@ -17,6 +17,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.metrics import accuracy_score
 from load_pretrained_word_embeddings import Glove
 from operator import itemgetter
+from keras.callbacks import LambdaCallback
 import logging
 logging.basicConfig(level = logging.DEBUG)
 
@@ -26,9 +27,9 @@ class RNN_model:
     """
     def __init__(self,  model_fn, sent_maxlen, emb,
                  batch_size = 50, seed = 42, sep = '\t',
-                 hidden_units = 128,trainable_emb = True,
-                 emb_dropout = 0.2, num_of_latent_layers = 2,
-                 epochs = 10,
+                 hidden_units = pow(2, 12),trainable_emb = True,
+                 emb_dropout = 0.4, num_of_latent_layers = 2,
+                 epochs = 10, pred_dropout = 0.5,
     ):
         """
         Initialize the model
@@ -42,7 +43,8 @@ class RNN_model:
         trainable_emb - controls if the loss should propagate to the word embeddings during training
         emb_dropout - the percentage of dropout during embedding
         num_of_latent_layers - how many LSTMs to stack
-        epochs - the number of epochs to train the model.
+        epochs - the number of epochs to train the model
+        pred_dropout - the proportion to dropout before prediction
         """
         self.model_fn = model_fn
         self.sent_maxlen = sent_maxlen
@@ -58,6 +60,8 @@ class RNN_model:
         self.emb_dropout = emb_dropout
         self.num_of_latent_layers = num_of_latent_layers
         self.epochs = epochs
+        self.pred_dropout = pred_dropout
+
 
     def classes_(self):
         """
@@ -77,9 +81,19 @@ class RNN_model:
         Train this model on a given train dataset
         """
         X, Y = self.load_dataset(train_fn)
-        self.model_fn(self)  # Set model params, called here after labels have been identified in load dataset
+        # Set model params, called here after labels have been identified in load dataset
+        self.model_fn(self)
+
+        # Create a callback to print a sample after each epoch
+        sample_output_callback = LambdaCallback(on_epoch_end =
+                                                lambda epoch, logs:\
+                                                pprint(self.sample_labels(self.model.predict(X)
+                                                )))
         logging.debug("Training model on {}".format(train_fn))
-        self.model.fit(X, Y, batch_size = self.batch_size, nb_epoch = self.epochs)
+        self.model.fit(X, Y,
+                       batch_size = self.batch_size,
+                       nb_epoch = self.epochs,
+                       callbacks = [sample_output_callback])
 
     def test(self, test_fn):
         """
@@ -205,9 +219,10 @@ class RNN_model:
                 return x # Base case of the recursion is the just returning the input
             else:
                 # The last layer unifies, hence return_sequences = False for it
-                return TimeDistributed(LSTM(self.hidden_units,
-                                            return_sequences = return_sequences))\
-                                            (inner(x, n - 1, return_sequences = True))
+                return TimeDistributed(Bidirectional(LSTM(self.hidden_units,
+                                                          return_sequences = return_sequences)))\
+                    (inner(x, n - 1, return_sequences = True))
+
         return lambda x: inner(x, n, return_sequences = False)
 
 
@@ -225,6 +240,9 @@ class RNN_model:
         ## Deep layers
         latent_layers = self.stack_latent_layers(self.num_of_latent_layers)
 
+        ## Dropout
+        dropout = Dropout(self.pred_dropout)
+
         ## Prediction
         predict_layer = self.predict_classes(activation = "softmax")
 
@@ -239,18 +257,34 @@ class RNN_model:
                                   embedding_layer)]
 
         ## Concat all inputs and run on deep network
-        output = predict_layer(latent_layers(merge([embed(inp) for inp, embed in inputs_and_embeddings],
-                                                   mode = "concat",
-                                                   concat_axis = -1)))
+        output = predict_layer(dropout(latent_layers(merge([embed(inp) for inp, embed in inputs_and_embeddings],
+                                                           mode = "concat",
+                                                           concat_axis = -1))))
 
         # Build model
-        self.model = Model(input = map(itemgetter(0), inputs_and_embeddings), output = [output])
+        self.model = Model(input = map(itemgetter(0), inputs_and_embeddings),
+                           output = [output])
 
         # Loss
         self.model.compile(optimizer='rmsprop',
                            loss='categorical_crossentropy',
                            metrics=['accuracy'])
         self.model.summary()
+
+    def sample_labels(self, y, num_of_sents = 5, num_of_samples = 3, num_of_classes = 5):
+        """
+        Get a sense of how labels in y look like
+        """
+        classes = self.classes_()
+        ret = []
+        for sent in y[:num_of_sents]:
+            cur = []
+            for word in sent[:num_of_samples]:
+                sorted_prob = am(word)
+                cur.append([(classes[ind], word[ind]) for ind in sorted_prob[:num_of_classes]])
+            ret.append(cur)
+        return ret
+
 
 class Sample:
     """
@@ -297,7 +331,14 @@ def pad_sequences(sequences, pad_func, maxlen = None):
         ret.append(cur_seq)
     return ret
 
+
+# Helper functions
+
+## Argmaxes
+am = lambda myList: [i[0] for i in sorted(enumerate(myList), key=lambda x:x[1], reverse= True)]
+
 if __name__ == "__main__":
+    from pprint import pprint
     args = docopt(__doc__)
     train_fn = args["--train"]
     test_fn = args["--test"]
@@ -305,12 +346,14 @@ if __name__ == "__main__":
     if "--glove" in args:
         emb = Glove(args["--glove"])
         rnn = RNN_model(model_fn = RNN_model.set_vanilla_model,
-                        sent_maxlen = None,
-                        num_of_latent_layers = 2,
+                        sent_maxlen = 25,
+                        num_of_latent_layers = 5,
                         emb = emb,
-                        epochs = 1)
+                        epochs = 100)
         rnn.train(train_fn)
     Y, y1 = rnn.predict(train_fn)
+    pprint(rnn.sample_labels(y1))
+
 
 
 """
