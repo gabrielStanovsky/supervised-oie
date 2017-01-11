@@ -235,17 +235,11 @@ class RNN_model:
         logging.debug("Setting vanilla model")
         # Build model
 
-
-        # inp = Input(shape = (self.sent_maxlen,),
-        #             dtype="int32",
-        #             name = "word_inputs")
-
         ## Embedding Layer
         embedding_layer = self.embed()
 
         ## Deep layers
         latent_layers = self.stack_latent_layers(self.num_of_latent_layers)
-
 
         # ## Dropout
         dropout = Dropout(self.pred_dropout)
@@ -353,7 +347,7 @@ if __name__ == "__main__":
     if "--glove" in args:
         emb = Glove(args["--glove"])
         rnn = RNN_model(model_fn = RNN_model.set_vanilla_model,
-                        sent_maxlen = None,
+                        sent_maxlen = 1,
                         num_of_latent_layers = 3,
                         emb = emb,
                         epochs = 1)
