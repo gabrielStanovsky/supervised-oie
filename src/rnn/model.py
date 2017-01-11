@@ -236,36 +236,29 @@ class RNN_model:
         # Build model
 
 
-        inp = Input(shape = (self.sent_maxlen,),
-                    dtype="int32",
-                    name = "word_inputs")
-
-        x2 = self.embed()(inp)
-
-        lstm_out_2 = self.stack_latent_layers(2)(x2)
-
-
-        ## Deep layers
-        #latent_layers = self.stack_latent_layers(self.num_of_latent_layers)
-
-
+        # inp = Input(shape = (self.sent_maxlen,),
+        #             dtype="int32",
+        #             name = "word_inputs")
 
         ## Embedding Layer
         embedding_layer = self.embed()
 
+        ## Deep layers
+        latent_layers = self.stack_latent_layers(self.num_of_latent_layers)
 
-        ## Dropout
+
+        # ## Dropout
         dropout = Dropout(self.pred_dropout)
 
         ## Prediction
         predict_layer = self.predict_classes(activation = "softmax")
 
         ## Prepare input features, and indicate how to embed them
-        inputs_and_embeddings = [(Input(shape = (self.sent_maxlen, 1),
+        inputs_and_embeddings = [(Input(shape = (self.sent_maxlen,),
                                        dtype="int32",
                                        name = "word_inputs"),
                                   embedding_layer),
-                                 (Input(shape = (self.sent_maxlen, 1),
+                                 (Input(shape = (self.sent_maxlen,),
                                        dtype="int32",
                                         name = "predicate_inputs"),
                                   embedding_layer)]
@@ -360,7 +353,7 @@ if __name__ == "__main__":
     if "--glove" in args:
         emb = Glove(args["--glove"])
         rnn = RNN_model(model_fn = RNN_model.set_vanilla_model,
-                        sent_maxlen = 25,
+                        sent_maxlen = None,
                         num_of_latent_layers = 3,
                         emb = emb,
                         epochs = 1)
