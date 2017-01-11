@@ -27,7 +27,7 @@ class RNN_model:
     """
     def __init__(self,  model_fn, sent_maxlen, emb,
                  batch_size = 50, seed = 42, sep = '\t',
-                 hidden_units = pow(2, 12),trainable_emb = True,
+                 hidden_units = pow(2, 7),trainable_emb = True,
                  emb_dropout = 0.4, num_of_latent_layers = 2,
                  epochs = 10, pred_dropout = 0.5,
     ):
@@ -197,8 +197,9 @@ class RNN_model:
         """
         Embed word sequences using self's embedding class
         """
-        return TimeDistributed(self.emb.get_keras_embedding(dropout = self.emb_dropout,
-                                                            trainable = self.trainable_emb))
+        return self.emb.get_keras_embedding(dropout = self.emb_dropout,
+                                            trainable = self.trainable_emb,
+                                            input_length = self.sent_maxlen)
 
     def predict_classes(self, **args):
         """
@@ -219,11 +220,11 @@ class RNN_model:
                 return x # Base case of the recursion is the just returning the input
             else:
                 # The last layer unifies, hence return_sequences = False for it
-                return TimeDistributed(Bidirectional(LSTM(self.hidden_units,
-                                                          return_sequences = return_sequences)))\
+                return Bidirectional(LSTM(self.hidden_units,
+                                          return_sequences = return_sequences))\
                     (inner(x, n - 1, return_sequences = True))
 
-        return lambda x: inner(x, n, return_sequences = False)
+        return lambda x: inner(x, n, return_sequences = True)
 
 
     def set_vanilla_model(self):
@@ -234,11 +235,24 @@ class RNN_model:
         logging.debug("Setting vanilla model")
         # Build model
 
+
+        inp = Input(shape = (self.sent_maxlen,),
+                    dtype="int32",
+                    name = "word_inputs")
+
+        x2 = self.embed()(inp)
+
+        lstm_out_2 = self.stack_latent_layers(2)(x2)
+
+
+        ## Deep layers
+        #latent_layers = self.stack_latent_layers(self.num_of_latent_layers)
+
+
+
         ## Embedding Layer
         embedding_layer = self.embed()
 
-        ## Deep layers
-        latent_layers = self.stack_latent_layers(self.num_of_latent_layers)
 
         ## Dropout
         dropout = Dropout(self.pred_dropout)
@@ -299,7 +313,7 @@ class Sample:
         Encode this sample as vector as input for rnn,
         Probably just concatenating members in the right order.
         """
-        return [self.word]
+        return self.word
 
 class Pad_sample(Sample):
     """
@@ -347,9 +361,9 @@ if __name__ == "__main__":
         emb = Glove(args["--glove"])
         rnn = RNN_model(model_fn = RNN_model.set_vanilla_model,
                         sent_maxlen = 25,
-                        num_of_latent_layers = 5,
+                        num_of_latent_layers = 3,
                         emb = emb,
-                        epochs = 100)
+                        epochs = 1)
         rnn.train(train_fn)
     Y, y1 = rnn.predict(train_fn)
     pprint(rnn.sample_labels(y1))
