@@ -207,8 +207,17 @@ class RNN_model:
         Named arguments are passed to the keras function
         """
         logging.debug("Predict layer: {}".format(args))
-        return TimeDistributed(Dense(output_dim = self.num_of_classes(),
-                                     **args))
+
+        # model = Dense(output_dim = self.num_of_classes(),
+        #                              **args)(Dropout(0.5)(Dense(64, activation='relu')(Dropout(0.5)(Dense(64, input_dim=20, init='uniform', activation='relu')))))
+
+        model = Dense(output_dim = self.num_of_classes(),
+                      **args)
+
+        return model
+
+        # return TimeDistributed(Dense(output_dim = self.num_of_classes(),
+        #                              **args))
 
     def stack_latent_layers(self, n):
         """
@@ -347,17 +356,10 @@ if __name__ == "__main__":
     if "--glove" in args:
         emb = Glove(args["--glove"])
         rnn = RNN_model(model_fn = RNN_model.set_vanilla_model,
-                        sent_maxlen = 1,
+                        sent_maxlen = 20,
                         num_of_latent_layers = 3,
                         emb = emb,
-                        epochs = 1)
+                        epochs = 5)
         rnn.train(train_fn)
     Y, y1 = rnn.predict(train_fn)
     pprint(rnn.sample_labels(y1))
-
-
-
-"""
-TODO:
-- the *shape* of y1 is incorrect -- (2172, 1). First fix this
-"""
