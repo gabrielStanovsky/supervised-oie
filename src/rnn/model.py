@@ -28,8 +28,8 @@ class RNN_model:
     def __init__(self,  model_fn, sent_maxlen, emb,
                  batch_size = 50, seed = 42, sep = '\t',
                  hidden_units = pow(2, 7),trainable_emb = True,
-                 emb_dropout = 0.4, num_of_latent_layers = 2,
-                 epochs = 10, pred_dropout = 0.5,
+                 emb_dropout = 0.1, num_of_latent_layers = 2,
+                 epochs = 10, pred_dropout = 0.1,
     ):
         """
         Initialize the model
@@ -61,6 +61,14 @@ class RNN_model:
         self.num_of_latent_layers = num_of_latent_layers
         self.epochs = epochs
         self.pred_dropout = pred_dropout
+
+
+    def plot(self, fn):
+        """
+        Plot this model to an image file
+        """
+        from keras.utils.visualize_util import plot
+        plot(self.model, to_file = fn)
 
 
     def classes_(self):
@@ -206,18 +214,16 @@ class RNN_model:
         Predict to the number of classes
         Named arguments are passed to the keras function
         """
+
+        def inner(x):
+            return Dense(output_dim = self.num_of_classes(),
+                         **args) (Dense(64, activation='linear')(x))
+
+
         logging.debug("Predict layer: {}".format(args))
 
-        # model = Dense(output_dim = self.num_of_classes(),
-        #                              **args)(Dropout(0.5)(Dense(64, activation='relu')(Dropout(0.5)(Dense(64, input_dim=20, init='uniform', activation='relu')))))
+        return inner
 
-        model = Dense(output_dim = self.num_of_classes(),
-                      **args)
-
-        return model
-
-        # return TimeDistributed(Dense(output_dim = self.num_of_classes(),
-        #                              **args))
 
     def stack_latent_layers(self, n):
         """
@@ -276,7 +282,7 @@ class RNN_model:
                            output = [output])
 
         # Loss
-        self.model.compile(optimizer='rmsprop',
+        self.model.compile(optimizer='adam',
                            loss='categorical_crossentropy',
                            metrics=['accuracy'])
         self.model.summary()
@@ -334,6 +340,7 @@ def pad_sequences(sequences, pad_func, maxlen = None):
     else:
         maxlen = min(max_value, maxlen)
         logging.debug("Padding / truncating to {} words (max observed was {})".format(maxlen, max_value))
+
         # Pad / truncate (done this way to deal with np.array)
     for sequence in sequences:
         cur_seq = list(sequence[:maxlen])
@@ -356,7 +363,7 @@ if __name__ == "__main__":
     if "--glove" in args:
         emb = Glove(args["--glove"])
         rnn = RNN_model(model_fn = RNN_model.set_vanilla_model,
-                        sent_maxlen = 20,
+                        sent_maxlen = None,
                         num_of_latent_layers = 3,
                         emb = emb,
                         epochs = 5)
