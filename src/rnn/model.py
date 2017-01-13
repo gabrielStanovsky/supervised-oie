@@ -46,7 +46,7 @@ class RNN_model:
         epochs - the number of epochs to train the model
         pred_dropout - the proportion to dropout before prediction
         """
-        self.model_fn = model_fn
+        self.model_fn = lambda : model_fn(self)
         self.sent_maxlen = sent_maxlen
         self.batch_size = batch_size
         self.seed = seed
@@ -63,11 +63,14 @@ class RNN_model:
         self.pred_dropout = pred_dropout
 
 
-    def plot(self, fn):
+    def plot(self, fn, train_fn):
         """
         Plot this model to an image file
+        Train file is needed as it influences the dimentions of the RNN
         """
         from keras.utils.visualize_util import plot
+        X, Y = self.load_dataset(train_fn)
+        self.model_fn()
         plot(self.model, to_file = fn)
 
 
@@ -90,7 +93,7 @@ class RNN_model:
         """
         X, Y = self.load_dataset(train_fn)
         # Set model params, called here after labels have been identified in load dataset
-        self.model_fn(self)
+        self.model_fn()
 
         # Create a callback to print a sample after each epoch
         sample_output_callback = LambdaCallback(on_epoch_end =
@@ -216,8 +219,8 @@ class RNN_model:
         """
 
         def inner(x):
-            return Dense(output_dim = self.num_of_classes(),
-                         **args) (Dense(64, activation='linear')(x))
+            return TimeDistributed(Dense(output_dim = self.num_of_classes(),
+                         **args)) (TimeDistributed(Dense(64, activation='linear'))(x))
 
 
         logging.debug("Predict layer: {}".format(args))
@@ -360,13 +363,16 @@ if __name__ == "__main__":
     train_fn = args["--train"]
     test_fn = args["--test"]
 
+
+
     if "--glove" in args:
         emb = Glove(args["--glove"])
         rnn = RNN_model(model_fn = RNN_model.set_vanilla_model,
                         sent_maxlen = None,
                         num_of_latent_layers = 3,
                         emb = emb,
-                        epochs = 5)
-        rnn.train(train_fn)
+                        epochs = 1)
+    #    rnn.train(train_fn)
+        rnn.plot("./model.png", train_fn)
     Y, y1 = rnn.predict(train_fn)
     pprint(rnn.sample_labels(y1))
