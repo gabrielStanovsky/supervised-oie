@@ -87,7 +87,7 @@ ENV/
 
 # Rope project settings
 .ropeproject
-\#*
+*\#*
 std*
 iris.data.txt
 pretrained_word_embeddings/

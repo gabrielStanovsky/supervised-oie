@@ -10,21 +10,17 @@ logging.basicConfig(level = logging.DEBUG)
 import sys
 sys.path.append("./common")
 from utils import joinstr
+import pandas
 
 if __name__ == "__main__":
     args = docopt(__doc__)
     input_file = args["--in"]
     output_file = args["--out"]
-    labels_dic = defaultdict(lambda : 0)
 
-    # Process input file
-    for line in open(input_file):
-        line = line.strip()
-        if not line:
-            continue
-        word, label = line.split('\t')
-        labels_dic[label] += 1
-    total = sum(labels_dic.itervalues())
+    df = pandas.read_csv(input_file, sep = '\t', header = 0)
+    labels_dic = dict([(label, df[df.label == label].shape[0]) for
+                       label in df.label.unique()])
+    total = df.label.shape[0]
 
     # Print to output file
     with open(output_file, 'w') as fout:
