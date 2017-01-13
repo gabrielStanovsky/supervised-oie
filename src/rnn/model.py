@@ -212,37 +212,37 @@ class RNN_model:
                                             trainable = self.trainable_emb,
                                             input_length = self.sent_maxlen)
 
-    def predict_classes(self, **args):
+    def predict_classes(self):
         """
         Predict to the number of classes
         Named arguments are passed to the keras function
         """
 
-        def inner(x):
-            return TimeDistributed(Dense(output_dim = self.num_of_classes(),
-                         **args)) (TimeDistributed(Dense(64, activation='linear'))(x))
-
-
-        logging.debug("Predict layer: {}".format(args))
-
-        return inner
-
+        return lambda x: self.stack(x,
+                                    [lambda : TimeDistributed(Dense(output_dim = self.num_of_classes(),
+                                                                    activation = "softmax"))] +
+                                    [lambda : TimeDistributed(Dense(1028, activation='relu'))] * 3)
 
     def stack_latent_layers(self, n):
         """
-        Stack layers by applying recursively on the output, until returing the input
+        Stack n bidi LSTMs
+        """
+        return lambda x: self.stack(x, [lambda : Bidirectional(LSTM(self.hidden_units,
+                                                                    return_sequences = True))] * n )
+
+    def stack(self, x, layers):
+        """
+        Stack layers (FIFO) by applying recursively on the output, until returing the input
         as the base case for the recursion
         """
-        def inner(x, n, return_sequences):
-            if n == 0:
-                return x # Base case of the recursion is the just returning the input
-            else:
-                # The last layer unifies, hence return_sequences = False for it
-                return Bidirectional(LSTM(self.hidden_units,
-                                          return_sequences = return_sequences))\
-                    (inner(x, n - 1, return_sequences = True))
+        if not layers:
+            return x # Base case of the recursion is the just returning the input
+        else:
+            return layers[0]()(self.stack(x, layers[1:]))
 
-        return lambda x: inner(x, n, return_sequences = True)
+
+            # return Bidirectional(LSTM(self.hidden_units,
+            #                           return_sequences = return_sequences))\
 
 
     def set_vanilla_model(self):
@@ -263,7 +263,7 @@ class RNN_model:
         dropout = Dropout(self.pred_dropout)
 
         ## Prediction
-        predict_layer = self.predict_classes(activation = "softmax")
+        predict_layer = self.predict_classes()
 
         ## Prepare input features, and indicate how to embed them
         inputs_and_embeddings = [(Input(shape = (self.sent_maxlen,),
@@ -368,11 +368,11 @@ if __name__ == "__main__":
     if "--glove" in args:
         emb = Glove(args["--glove"])
         rnn = RNN_model(model_fn = RNN_model.set_vanilla_model,
-                        sent_maxlen = None,
+                        sent_maxlen = 20,
                         num_of_latent_layers = 3,
                         emb = emb,
                         epochs = 1)
-    #    rnn.train(train_fn)
-        rnn.plot("./model.png", train_fn)
+        rnn.train(train_fn)
+#        rnn.plot("./model.png", train_fn)
     Y, y1 = rnn.predict(train_fn)
     pprint(rnn.sample_labels(y1))
