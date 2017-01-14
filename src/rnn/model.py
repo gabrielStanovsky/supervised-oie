@@ -29,12 +29,12 @@ class RNN_model:
     """
     Represents an RNN model for supervised OIE
     """
-    def __init__(self,  model_fn, sent_maxlen = None, emb = None,
+    def __init__(self,  model_fn, sent_maxlen = None, emb_filename = None,
                  batch_size = 50, seed = 42, sep = '\t',
                  hidden_units = pow(2, 7),trainable_emb = True,
                  emb_dropout = 0.1, num_of_latent_layers = 2,
                  epochs = 10, pred_dropout = 0.1, model_dir = "./models/",
-                 embedding_size = None, classes = None,
+                 classes = None,
     ):
         """
         Initialize the model
@@ -42,6 +42,8 @@ class RNN_model:
                    training with self as a single argument.
         sent_maxlen - the maximum length in words of each sentence -
                       will be used for padding / truncating
+        emb_filename - the filename from which to load the embedding
+                       (Currenly only Glove. Idea: parse by filename)
         batch_size - batch size for training
         pre_trained_emb - an embedding class
         seed - the random seed for reproduciblity
@@ -53,7 +55,6 @@ class RNN_model:
         epochs - the number of epochs to train the model
         pred_dropout - the proportion to dropout before prediction
         model_dir - the path in which to save model
-        embedding_size - the dimension of the embedding
         classes - the classes to be encoded (list of strings)
         """
         self.model_fn = lambda : model_fn(self)
@@ -64,10 +65,9 @@ class RNN_model:
         self.sep = sep
         self.encoder = LabelEncoder()
         self.hidden_units = hidden_units
-        self.emb = emb
-        self.embedding_size = embedding_size
-        if self.emb:
-            assert(self.embedding_size == self.emb.dim)
+        self.emb_filename = emb_filename
+        self.emb = Glove(emb_filename)
+        self.embedding_size = self.emb.dim
         self.trainable_emb = trainable_emb
         self.emb_dropout = emb_dropout
         self.num_of_latent_layers = num_of_latent_layers
@@ -145,10 +145,13 @@ class RNN_model:
         Evaluate this model on a test file
         """
         X, Y = self.load_dataset(test_fn)
-        self.predicted = np_utils.to_categorical(self.model.predict(X))
-        acc = accuracy_score(Y, self.predicted) * 100
-        logging.info("ACC: {:.2f}".format(acc))
-        return acc
+        return self.model.predict(X)
+
+        # TODO: this part needs fixin'
+        # self.predicted = np_utils.to_categorical(self.model.predict(X))
+        # acc = accuracy_score(Y, self.predicted) * 100
+        # logging.info("ACC: {:.2f}".format(acc))
+        # return acc
 
     def predict(self, input_fn):
         """
@@ -228,7 +231,7 @@ class RNN_model:
         """
         # Fallback:
         # return self.encoder.transform(labels)
-        classes  = self.classes_()
+        classes  = list(self.classes_())
         return [classes.index(label) for label in labels]
 
     def inverse_transform_labels(self, indices):
@@ -352,30 +355,30 @@ class RNN_model:
         """
         return {
             "sent_maxlen": self.sent_maxlen,
-            "emb": None,
             "batch_size": self.batch_size,
             "seed": self.seed,
             "sep": self.sep,
-            "classes": self.classes_(),
+            "classes": list(self.classes_()),
             "hidden_units": self.hidden_units,
             "trainable_emb": self.trainable_emb,
             "emb_dropout": self.emb_dropout,
             "num_of_latent_layers": self.num_of_latent_layers,
             "epochs": self.epochs,
             "pred_dropout": self.pred_dropout,
-            "embedding_size": self.embedding_size,
+            "emb_filename": self.emb_filename,
         }
 
-    def save_model_to_file(fn):
+    def save_model_to_file(self, fn):
         """
         Saves this model to file, also encodes class inits in the model's json
         """
-        json = self.model.to_json()
+        js = json.loads(self.model.to_json())
 
+        logging.debug("classes to save = {}".format(list(self.classes_())))
         # Add this model's params
-        json["rnn"] = self.to_json()
+        js["rnn"] = self.to_json()
         with open(fn, 'w') as fout:
-            fout.write(json)
+            json.dump(js, fout)
 
 
     def sample_labels(self, y, num_of_sents = 5, num_of_samples = 10,
@@ -456,7 +459,6 @@ if __name__ == "__main__":
         train_fn = args["--train"]
         epochs = int(args["--epochs"])
         emb_filename = args["--glove"]
-        emb = Glove(emb_filename)
         model_dir = "../models/rnn_{}_epocs_{}/".format(epochs,
                                                  emb_filename.split('/')[-1].split(".")[0])
         if not os.path.exists(model_dir):
@@ -464,41 +466,28 @@ if __name__ == "__main__":
         rnn = RNN_model(model_fn = RNN_model.set_vanilla_model,
                         sent_maxlen = 20,
                         num_of_latent_layers = 3,
-                        emb = emb,
-                        embedding_size = emb.dim,
+                        emb_filename = emb_filename,
                         epochs = epochs,
                         model_dir = model_dir)
 
-#        rnn.train(train_fn)
+        rnn.train(train_fn)
+        # rnn.save_model_to_file(open(os.path.join(model_dir,
+        #                                          "./model.json")))
 
     if args["--pretrained"] is not None:
         model_dir = args["--pretrained"]
         rnn_params = json.load(open(os.path.join(model_dir,
                                                  "./model.json")))["rnn"]
+
         logging.info("Loading model from: {}".format(model_dir))
         rnn = RNN_model(model_fn = RNN_model.set_model_from_file,
                         model_dir = model_dir,
                         **rnn_params)
 
-        # rnn = RNN_model(model_fn = RNN_model.set_model_from_file,
-        #                 model_dir = model_dir,
-        #                 sent_maxlen = rnn_params["sent_maxlen"],
-        #                 batch_size = rnn_params["batch_size"],
-        #                 seed = rnn_params["seed"],
-        #                 sep = rnn_params["sep"],
-        #                 hidden_units = rnn_params["hidden_units"],
-        #                 trainable_emb = rnn_params["trainable_emb"],
-        #                 emb_dropout = rnn_params["emb_dropout"],
-        #                 num_of_latent_layers = rnn_params["num_of_latent_layers"],
-        #                 epochs = rnn_params["epochs"],
-        #                 pred_dropout = rnn_params["pred_dropout"],
-        #                 embedding_size = rnn_params["embedding_size"],
-        #                 classes = rnn_params["classes"])
-
         # Compile model
         rnn.model_fn()
 
-#    rnn.test(test_fn)
+    y = rnn.test(test_fn)
 
 #    rnn.train_and_test(train_fn, test_fn)
 #        rnn.plot("./model.png", train_fn)
