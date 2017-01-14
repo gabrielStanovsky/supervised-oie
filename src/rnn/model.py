@@ -1,5 +1,5 @@
 """ Usage:
-    model --train=TRAIN_FN --test=TEST_FN [--glove=EMBEDDING]
+    model --train=TRAIN_FN --test=TEST_FN --epochs=EPOCHS [--glove=EMBEDDING]
 """
 import numpy as np
 import pandas
@@ -17,7 +17,8 @@ from sklearn.pipeline import Pipeline
 from sklearn.metrics import accuracy_score
 from load_pretrained_word_embeddings import Glove
 from operator import itemgetter
-from keras.callbacks import LambdaCallback
+from keras.callbacks import LambdaCallback, ModelCheckpoint
+import os
 import logging
 logging.basicConfig(level = logging.DEBUG)
 
@@ -29,7 +30,7 @@ class RNN_model:
                  batch_size = 50, seed = 42, sep = '\t',
                  hidden_units = pow(2, 7),trainable_emb = True,
                  emb_dropout = 0.1, num_of_latent_layers = 2,
-                 epochs = 10, pred_dropout = 0.1,
+                 epochs = 10, pred_dropout = 0.1, model_dir = "./models/",
     ):
         """
         Initialize the model
@@ -45,13 +46,13 @@ class RNN_model:
         num_of_latent_layers - how many LSTMs to stack
         epochs - the number of epochs to train the model
         pred_dropout - the proportion to dropout before prediction
+        model_dir - the path in which to save model
         """
         self.model_fn = lambda : model_fn(self)
         self.sent_maxlen = sent_maxlen
         self.batch_size = batch_size
         self.seed = seed
         self.sep = sep
-        np.random.seed(self.seed)
         self.encoder = LabelEncoder()
         self.hidden_units = hidden_units
         self.emb = emb
@@ -61,7 +62,29 @@ class RNN_model:
         self.num_of_latent_layers = num_of_latent_layers
         self.epochs = epochs
         self.pred_dropout = pred_dropout
+        self.model_dir = model_dir
 
+        np.random.seed(self.seed)
+
+    def get_callbacks(self, X):
+        """
+        Sets these callbacks as a class member.
+        X is the encoded dataset used to print a sample of the output.
+        Callbacks created:
+        1. Sample output each epoch
+        2. Save best performing model each epoch
+        """
+
+        sample_output_callback = LambdaCallback(on_epoch_end = lambda epoch, logs:\
+                                                pprint(self.sample_labels(self.model.predict(X))))
+        checkpoint = ModelCheckpoint(os.path.join(self.model_dir, "weights.best.hdf5"),
+                                     monitor='val_acc',
+                                     verbose=1,
+                                     save_best_only=True,
+                                     mode='max')
+
+        return [sample_output_callback,
+                checkpoint]
 
     def plot(self, fn, train_fn):
         """
@@ -73,7 +96,6 @@ class RNN_model:
         self.model_fn()
         plot(self.model, to_file = fn)
 
-
     def classes_(self):
         """
         Return the classes which are classified by this model
@@ -84,8 +106,11 @@ class RNN_model:
         """
         Train and then test on given files
         """
+        logging.info("Training..")
         self.train(train_fn)
+        logging.info("Testing..")
         return self.test(test_fn)
+        logging.info("Done!")
 
     def train(self, train_fn):
         """
@@ -97,15 +122,11 @@ class RNN_model:
         self.model_fn()
 
         # Create a callback to print a sample after each epoch
-        sample_output_callback = LambdaCallback(on_epoch_end =
-                                                lambda epoch, logs:\
-                                                pprint(self.sample_labels(self.model.predict(X)
-                                                )))
         logging.debug("Training model on {}".format(train_fn))
         self.model.fit(X, Y,
                        batch_size = self.batch_size,
                        nb_epoch = self.epochs,
-                       callbacks = [sample_output_callback])
+                       callbacks = self.get_callbacks(X))
 
     def test(self, test_fn):
         """
@@ -277,7 +298,8 @@ class RNN_model:
                                   embedding_layer)]
 
         ## Concat all inputs and run on deep network
-        output = predict_layer(dropout(latent_layers(merge([embed(inp) for inp, embed in inputs_and_embeddings],
+        output = predict_layer(dropout(latent_layers(merge([embed(inp)
+                                                            for inp, embed in inputs_and_embeddings],
                                                            mode = "concat",
                                                            concat_axis = -1))))
 
@@ -290,6 +312,11 @@ class RNN_model:
                            loss='categorical_crossentropy',
                            metrics=['accuracy'])
         self.model.summary()
+
+        # Save model json to file
+        with open(os.path.join(self.model_dir, "model.json"), 'w') as fout:
+            fout.write(self.model.to_json())
+
 
     def sample_labels(self, y, num_of_sents = 5, num_of_samples = 10, num_of_classes = 3, start_index = 5):
         """
@@ -363,17 +390,23 @@ if __name__ == "__main__":
     args = docopt(__doc__)
     train_fn = args["--train"]
     test_fn = args["--test"]
-
-
+    epochs = int(args["--epochs"])
 
     if "--glove" in args:
-        emb = Glove(args["--glove"])
+        emb_filename = args["--glove"]
+        emb = Glove(emb_filename)
+        model_dir = "./models/rnn_{}_{}/".format(epochs,
+                                                 emb_filename.split('/')[-1].split(".")[0])
+        logging.info("Dumping model to: {}".format(model_dir))
+        if not os.path.exists(model_dir):
+            os.makedirs(model_dir)
         rnn = RNN_model(model_fn = RNN_model.set_vanilla_model,
                         sent_maxlen = 20,
                         num_of_latent_layers = 3,
                         emb = emb,
-                        epochs = 100)
-        rnn.train(train_fn)
+                        epochs = epochs,
+                        model_dir = model_dir)
+    rnn.train_and_test(train_fn, test_fn)
 #        rnn.plot("./model.png", train_fn)
     Y, y1 = rnn.predict(train_fn)
     pprint(rnn.sample_labels(y1))
