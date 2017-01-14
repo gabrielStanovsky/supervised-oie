@@ -92,6 +92,7 @@ class RNN_model:
         Train this model on a given train dataset
         """
         X, Y = self.load_dataset(train_fn)
+        logging.debug("Classes: {}".format((self.num_of_classes(), self.classes_())))
         # Set model params, called here after labels have been identified in load dataset
         self.model_fn()
 
@@ -290,7 +291,7 @@ class RNN_model:
                            metrics=['accuracy'])
         self.model.summary()
 
-    def sample_labels(self, y, num_of_sents = 5, num_of_samples = 3, num_of_classes = 5):
+    def sample_labels(self, y, num_of_sents = 5, num_of_samples = 10, num_of_classes = 3):
         """
         Get a sense of how labels in y look like
         """
@@ -298,7 +299,7 @@ class RNN_model:
         ret = []
         for sent in y[:num_of_sents]:
             cur = []
-            for word in sent[:num_of_samples]:
+            for word in sent[5: 5 + num_of_samples]:
                 sorted_prob = am(word)
                 cur.append([(classes[ind], word[ind]) for ind in sorted_prob[:num_of_classes]])
             ret.append(cur)
@@ -371,7 +372,7 @@ if __name__ == "__main__":
                         sent_maxlen = 20,
                         num_of_latent_layers = 3,
                         emb = emb,
-                        epochs = 1)
+                        epochs = 10)
         rnn.train(train_fn)
 #        rnn.plot("./model.png", train_fn)
     Y, y1 = rnn.predict(train_fn)
