@@ -291,7 +291,7 @@ class RNN_model:
                            metrics=['accuracy'])
         self.model.summary()
 
-    def sample_labels(self, y, num_of_sents = 5, num_of_samples = 10, num_of_classes = 3):
+    def sample_labels(self, y, num_of_sents = 5, num_of_samples = 10, num_of_classes = 3, start_index = 5):
         """
         Get a sense of how labels in y look like
         """
@@ -299,7 +299,7 @@ class RNN_model:
         ret = []
         for sent in y[:num_of_sents]:
             cur = []
-            for word in sent[5: 5 + num_of_samples]:
+            for word in sent[start_index: start_index + num_of_samples]:
                 sorted_prob = am(word)
                 cur.append([(classes[ind], word[ind]) for ind in sorted_prob[:num_of_classes]])
             ret.append(cur)
@@ -372,7 +372,7 @@ if __name__ == "__main__":
                         sent_maxlen = 20,
                         num_of_latent_layers = 3,
                         emb = emb,
-                        epochs = 10)
+                        epochs = 100)
         rnn.train(train_fn)
 #        rnn.plot("./model.png", train_fn)
     Y, y1 = rnn.predict(train_fn)
