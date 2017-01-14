@@ -18,6 +18,7 @@ from sklearn.metrics import accuracy_score
 from load_pretrained_word_embeddings import Glove
 from operator import itemgetter
 from keras.callbacks import LambdaCallback, ModelCheckpoint
+from keras.models import model_from_json
 import os
 import logging
 logging.basicConfig(level = logging.DEBUG)
@@ -252,8 +253,8 @@ class RNN_model:
 
     def stack(self, x, layers):
         """
-        Stack layers (FIFO) by applying recursively on the output, until returing the input
-        as the base case for the recursion
+        Stack layers (FIFO) by applying recursively on the output,
+        until returing the input as the base case for the recursion
         """
         if not layers:
             return x # Base case of the recursion is the just returning the input
@@ -264,6 +265,18 @@ class RNN_model:
             # return Bidirectional(LSTM(self.hidden_units,
             #                           return_sequences = return_sequences))\
 
+
+    def set_model_from_file(self):
+        """
+        Receives an instance of RNN and returns a model from the self.model_dir
+        path which should contain files named: model.json, weights.best.hdf5
+        """
+        self.model = model_from_json(open(os.path.join(self.model_dir,
+                                                       "./model.json").read()))
+        self.model.load_weights(os.path.join(self.model_dir, "./weights.best.hdf5"))
+        self.model.compile(optimizer="adam",
+                           loss='categorical_crossentropy',
+                           metrics = ["accuracy"])
 
     def set_vanilla_model(self):
         """
@@ -412,13 +425,3 @@ if __name__ == "__main__":
     pprint(rnn.sample_labels(y1))
 
 ### TODO: loading model:
-# >>> from keras.models import model_from_json
-# Using TensorFlow backend.
-# >>> loaded_model = model_from_json(open("./model.json").read())
-# /home/ir/satanog/factuality-project/venv/lib/python2.7/site-packages/keras/engine/topology.py:368: UserWarning: The `regularizers` property of layers/models is deprecated. Regularization losses are now managed via the `losses` layer/model property.
-#   warnings.warn('The `regularizers` property of '
-#                 >>> loaded_model.load_weights
-#                 <bound method Model.load_weights of <keras.engine.training.Model object at 0x3ca18d0>>
-#                 >>> loaded_model.load_weights("./weights.best.hdf5")
-#                 >>> loaded_model.compile(optimizer="adam", loss='categorical_crossentropy', metrics = ["accuracy"])
-#   )
