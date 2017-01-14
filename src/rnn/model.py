@@ -410,3 +410,15 @@ if __name__ == "__main__":
 #        rnn.plot("./model.png", train_fn)
     Y, y1 = rnn.predict(train_fn)
     pprint(rnn.sample_labels(y1))
+
+### TODO: loading model:
+# >>> from keras.models import model_from_json
+# Using TensorFlow backend.
+# >>> loaded_model = model_from_json(open("./model.json").read())
+# /home/ir/satanog/factuality-project/venv/lib/python2.7/site-packages/keras/engine/topology.py:368: UserWarning: The `regularizers` property of layers/models is deprecated. Regularization losses are now managed via the `losses` layer/model property.
+#   warnings.warn('The `regularizers` property of '
+#                 >>> loaded_model.load_weights
+#                 <bound method Model.load_weights of <keras.engine.training.Model object at 0x3ca18d0>>
+#                 >>> loaded_model.load_weights("./weights.best.hdf5")
+#                 >>> loaded_model.compile(optimizer="adam", loss='categorical_crossentropy', metrics = ["accuracy"])
+#   )
