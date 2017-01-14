@@ -78,10 +78,8 @@ class RNN_model:
         sample_output_callback = LambdaCallback(on_epoch_end = lambda epoch, logs:\
                                                 pprint(self.sample_labels(self.model.predict(X))))
         checkpoint = ModelCheckpoint(os.path.join(self.model_dir, "weights.best.hdf5"),
-                                     monitor='val_acc',
-                                     verbose=1,
-                                     save_best_only=True,
-                                     mode='max')
+                                     verbose = 1,
+                                     save_best_only = False)
 
         return [sample_output_callback,
                 checkpoint]
@@ -395,7 +393,7 @@ if __name__ == "__main__":
     if "--glove" in args:
         emb_filename = args["--glove"]
         emb = Glove(emb_filename)
-        model_dir = "./models/rnn_{}_{}/".format(epochs,
+        model_dir = "../models/rnn_{}_epocs_{}/".format(epochs,
                                                  emb_filename.split('/')[-1].split(".")[0])
         logging.info("Dumping model to: {}".format(model_dir))
         if not os.path.exists(model_dir):
@@ -406,7 +404,9 @@ if __name__ == "__main__":
                         emb = emb,
                         epochs = epochs,
                         model_dir = model_dir)
-    rnn.train_and_test(train_fn, test_fn)
+
+    rnn.train(train_fn)
+#    rnn.train_and_test(train_fn, test_fn)
 #        rnn.plot("./model.png", train_fn)
     Y, y1 = rnn.predict(train_fn)
     pprint(rnn.sample_labels(y1))
