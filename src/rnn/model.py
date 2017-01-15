@@ -1,5 +1,5 @@
 """ Usage:
-    model [--train=TRAIN_FN] --test=TEST_FN [--epochs=EPOCHS] (--glove=EMBEDDING | --pretrained=MODEL_DIR)
+    model [--train=TRAIN_FN] [--dev=DEV_FN] --test=TEST_FN [--epochs=EPOCHS] (--glove=EMBEDDING | --pretrained=MODEL_DIR)
 """
 import numpy as np
 import pandas
@@ -18,7 +18,7 @@ from sklearn.metrics import accuracy_score
 from load_pretrained_word_embeddings import Glove
 from operator import itemgetter
 from keras.callbacks import LambdaCallback, ModelCheckpoint
-from pretrained_model import Pretrained_model
+
 import os
 import json
 from keras.models import model_from_json
@@ -90,7 +90,7 @@ class RNN_model:
                                                 pprint(self.sample_labels(self.model.predict(X))))
         checkpoint = ModelCheckpoint(os.path.join(self.model_dir, "weights.best.hdf5"),
                                      verbose = 1,
-                                     save_best_only = False)
+                                     save_best_only = True)
 
         return [sample_output_callback,
                 checkpoint]
@@ -124,21 +124,24 @@ class RNN_model:
         return self.test(test_fn)
         logging.info("Done!")
 
-    def train(self, train_fn):
+    def train(self, train_fn, dev_fn):
         """
         Train this model on a given train dataset
+        Dev test is used for model checkpointing
         """
-        X, Y = self.load_dataset(train_fn)
+        X_train, Y_train = self.load_dataset(train_fn)
+        X_dev, Y_dev = self.load_dataset(dev_fn)
         logging.debug("Classes: {}".format((self.num_of_classes(), self.classes_())))
         # Set model params, called here after labels have been identified in load dataset
         self.model_fn()
 
         # Create a callback to print a sample after each epoch
         logging.debug("Training model on {}".format(train_fn))
-        self.model.fit(X, Y,
+        self.model.fit(X_train, Y_train,
                        batch_size = self.batch_size,
                        nb_epoch = self.epochs,
-                       callbacks = self.get_callbacks(X))
+                       validation_data = (X_dev, Y_dev),
+                       callbacks = self.get_callbacks(X_train))
 
     def test(self, test_fn):
         """
@@ -374,7 +377,6 @@ class RNN_model:
         """
         js = json.loads(self.model.to_json())
 
-        logging.debug("classes to save = {}".format(list(self.classes_())))
         # Add this model's params
         js["rnn"] = self.to_json()
         with open(fn, 'w') as fout:
@@ -457,6 +459,7 @@ if __name__ == "__main__":
 
     if args["--glove"] is not None:
         train_fn = args["--train"]
+        dev_fn = args["--dev"]
         epochs = int(args["--epochs"])
         emb_filename = args["--glove"]
         model_dir = "../models/rnn_{}_epocs_{}/".format(epochs,
@@ -470,9 +473,7 @@ if __name__ == "__main__":
                         epochs = epochs,
                         model_dir = model_dir)
 
-        rnn.train(train_fn)
-        # rnn.save_model_to_file(open(os.path.join(model_dir,
-        #                                          "./model.json")))
+        rnn.train(train_fn, dev_fn)
 
     if args["--pretrained"] is not None:
         model_dir = args["--pretrained"]
@@ -487,9 +488,4 @@ if __name__ == "__main__":
         # Compile model
         rnn.model_fn()
 
-    y = rnn.test(test_fn)
-
-#    rnn.train_and_test(train_fn, test_fn)
-#        rnn.plot("./model.png", train_fn)
-#    Y, y1 = rnn.predict(train_fn)
-#    pprint(rnn.sample_labels(y1))
+    y = rnn.test(dev_fn)
