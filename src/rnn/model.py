@@ -89,7 +89,7 @@ class RNN_model:
         sample_output_callback = LambdaCallback(on_epoch_end = lambda epoch, logs:\
                                                 pprint(self.sample_labels(self.model.predict(X))))
         checkpoint = ModelCheckpoint(os.path.join(self.model_dir,
-                                                  "weights-improvement-{epoch:02d}-{val_acc:.2f}.hdf5"),
+                                                  "{epoch:02d}-{val_categorical_accuracy:.2f}.hdf5"),
                                      verbose = 1,
                                      save_best_only = True)
 
@@ -270,7 +270,8 @@ class RNN_model:
         return lambda x: self.stack(x,
                                     [lambda : TimeDistributed(Dense(output_dim = self.num_of_classes(),
                                                                     activation = "softmax"))] +
-                                    [lambda : TimeDistributed(Dense(16, activation='relu'))] * 1)
+                                    [lambda : TimeDistributed(Dense(self.hidden_units,
+                                                                    activation='linear'))] * 3)
 
     def stack_latent_layers(self, n):
         """
@@ -346,7 +347,7 @@ class RNN_model:
         # Loss
         self.model.compile(optimizer='adam',
                            loss='categorical_crossentropy',
-                           metrics=['accuracy'])
+                           metrics=['categorical_accuracy'])
         self.model.summary()
 
         # Save model json to file
@@ -467,13 +468,13 @@ if __name__ == "__main__":
         if not os.path.exists(model_dir):
             os.makedirs(model_dir)
         rnn = RNN_model(model_fn = RNN_model.set_vanilla_model,
-                        sent_maxlen = 20,
-                        hidden_units = 16,
+                        sent_maxlen = 40,
+                        hidden_units = pow(2, 6),
                         num_of_latent_layers = 1,
                         emb_filename = emb_filename,
                         epochs = epochs,
                         trainable_emb = True,
-                        batch_size = 1,
+                        batch_size = 25,
                         model_dir = model_dir)
 
         rnn.train(train_fn, dev_fn)
@@ -492,3 +493,19 @@ if __name__ == "__main__":
         rnn.model_fn()
 
     y = rnn.test(dev_fn)
+
+
+"""
+- the sentence max length is an important factor on convergence.
+This makes sense, shorter sentences are easier to memorize.
+The model was able to crack 20 words sentences pretty easily, but seems to be having a harder time with
+40 words sentences.
+Need to find a better balance.
+
+- The batch size also seems to be having a lot of effect, but I'm note sure how to account for that.
+
+- Maybe actually *increasing* dimensionalty would be better?
+There are many ways to crack the train set - we want the model to be free in more
+dimensions to allow for more flexibility while still fitting training data.
+
+"""
