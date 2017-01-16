@@ -88,7 +88,7 @@ if __name__ == "__main__":
     if args["--glove"] is not None:
         glove_fn = args["--glove"]
         g = Glove(glove_fn)
-        emb = g.get_keras_embedding(trainable = False)
+        emb = g.get_keras_embedding()
     else:
         logging.info(__doc__)
         exit
