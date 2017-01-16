@@ -30,7 +30,7 @@ class RNN_model:
     Represents an RNN model for supervised OIE
     """
     def __init__(self,  model_fn, sent_maxlen = None, emb_filename = None,
-                 batch_size = 50, seed = 42, sep = '\t',
+                 batch_size = 5, seed = 42, sep = '\t',
                  hidden_units = pow(2, 7),trainable_emb = True,
                  emb_dropout = 0.1, num_of_latent_layers = 2,
                  epochs = 10, pred_dropout = 0.1, model_dir = "./models/",
@@ -88,11 +88,12 @@ class RNN_model:
 
         sample_output_callback = LambdaCallback(on_epoch_end = lambda epoch, logs:\
                                                 pprint(self.sample_labels(self.model.predict(X))))
-        checkpoint = ModelCheckpoint(os.path.join(self.model_dir, "weights.best.hdf5"),
+        checkpoint = ModelCheckpoint(os.path.join(self.model_dir,
+                                                  "weights-improvement-{epoch:02d}-{val_acc:.2f}.hdf5"),
                                      verbose = 1,
                                      save_best_only = True)
 
-        return [sample_output_callback,
+        return [#sample_output_callback,
                 checkpoint]
 
     def plot(self, fn, train_fn):
@@ -266,11 +267,10 @@ class RNN_model:
         Predict to the number of classes
         Named arguments are passed to the keras function
         """
-
         return lambda x: self.stack(x,
                                     [lambda : TimeDistributed(Dense(output_dim = self.num_of_classes(),
                                                                     activation = "softmax"))] +
-                                    [lambda : TimeDistributed(Dense(1028, activation='relu'))] * 3)
+                                    [lambda : TimeDistributed(Dense(16, activation='relu'))] * 1)
 
     def stack_latent_layers(self, n):
         """
@@ -468,9 +468,12 @@ if __name__ == "__main__":
             os.makedirs(model_dir)
         rnn = RNN_model(model_fn = RNN_model.set_vanilla_model,
                         sent_maxlen = 20,
-                        num_of_latent_layers = 3,
+                        hidden_units = 16,
+                        num_of_latent_layers = 1,
                         emb_filename = emb_filename,
                         epochs = epochs,
+                        trainable_emb = True,
+                        batch_size = 1,
                         model_dir = model_dir)
 
         rnn.train(train_fn, dev_fn)

@@ -83,15 +83,12 @@ class Glove:
                          weights = [self.get_embedding_matrix()],
                          **args)
 
-
-
 if __name__ == "__main__":
     args = docopt(__doc__)
-    if "--glove" in args:
+    if args["--glove"] is not None:
         glove_fn = args["--glove"]
-        emb = Glove(glove_fn)
-        mat = emb.get_embedding_matrix()
-        logging.debug("Emb size: {}".format(emb.vocab_size))
+        g = Glove(glove_fn)
+        emb = g.get_keras_embedding(trainable = False)
     else:
         logging.info(__doc__)
         exit
