@@ -271,8 +271,7 @@ class RNN_model:
                                     [lambda : TimeDistributed(Dense(output_dim = self.num_of_classes(),
                                                                     activation = "softmax"))] +
                                     [lambda : TimeDistributed(Dense(self.hidden_units,
-                                                                    activation='linear'))] * 3)
-
+                                                                    activation='relu'))] * 3)
     def stack_latent_layers(self, n):
         """
         Stack n bidi LSTMs
@@ -468,13 +467,13 @@ if __name__ == "__main__":
         if not os.path.exists(model_dir):
             os.makedirs(model_dir)
         rnn = RNN_model(model_fn = RNN_model.set_vanilla_model,
-                        sent_maxlen = 40,
-                        hidden_units = pow(2, 6),
-                        num_of_latent_layers = 1,
+                        sent_maxlen = 20,
+                        hidden_units = pow(2, 10),
+                        num_of_latent_layers = 2,
                         emb_filename = emb_filename,
                         epochs = epochs,
                         trainable_emb = True,
-                        batch_size = 25,
+                        batch_size = 50,
                         model_dir = model_dir)
 
         rnn.train(train_fn, dev_fn)
@@ -492,7 +491,7 @@ if __name__ == "__main__":
         # Compile model
         rnn.model_fn()
 
-    y = rnn.test(dev_fn)
+    y = rnn.test(test_fn)
 
 
 """
@@ -501,6 +500,8 @@ This makes sense, shorter sentences are easier to memorize.
 The model was able to crack 20 words sentences pretty easily, but seems to be having a harder time with
 40 words sentences.
 Need to find a better balance.
+
+- relu activation seems to have a lot of positive impact
 
 - The batch size also seems to be having a lot of effect, but I'm note sure how to account for that.
 
