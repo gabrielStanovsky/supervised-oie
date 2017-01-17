@@ -18,6 +18,7 @@ from sklearn.metrics import accuracy_score
 from load_pretrained_word_embeddings import Glove
 from operator import itemgetter
 from keras.callbacks import LambdaCallback, ModelCheckpoint
+from sklearn import metrics
 
 import os
 import json
@@ -91,7 +92,7 @@ class RNN_model:
         checkpoint = ModelCheckpoint(os.path.join(self.model_dir,
                                                   "{epoch:02d}-{val_categorical_accuracy:.2f}.hdf5"),
                                      verbose = 1,
-                                     save_best_only = True)
+                                     save_best_only = True)   # TODO: is there a way to save by best val_acc?
 
         return [#sample_output_callback,
                 checkpoint]
@@ -144,18 +145,27 @@ class RNN_model:
                        validation_data = (X_dev, Y_dev),
                        callbacks = self.get_callbacks(X_train))
 
-    def test(self, test_fn):
+    def test(self, test_fn, eval_metrics):
         """
         Evaluate this model on a test file
+        eval metrics is a list composed of:
+        (name, f: (y_true, y_pred) -> float (some performance metric))
+        Prints and returns the metrics name and numbers
         """
+        # Load gold and predict
         X, Y = self.load_dataset(test_fn)
-        return self.model.predict(X)
+        y = self.model.predict(X)
 
-        # TODO: this part needs fixin'
-        # self.predicted = np_utils.to_categorical(self.model.predict(X))
-        # acc = accuracy_score(Y, self.predicted) * 100
-        # logging.info("ACC: {:.2f}".format(acc))
-        # return acc
+        # Get most probable predictions and flatten
+        Y = np.array(rnn.transform_output_probs(Y)).flatten()
+        y = np.array(rnn.transform_output_probs(y)).flatten()
+
+        # Run evaluation metrics and report
+        ret = [(metric_name, metric_func(Y, y)) for (metric_name, metric_func) in eval_metrics]
+        for (metric_name, metric_val) in ret:
+            logging.info("{}: {:.4f}".format(metric_name,
+                                             metric_val))
+        return ret
 
     def predict(self, input_fn):
         """
@@ -238,6 +248,19 @@ class RNN_model:
         classes  = list(self.classes_())
         return [classes.index(label) for label in labels]
 
+    def transform_output_probs(self, y):
+        """
+        Given a list of probabilities over labels, get the textual representation of the
+        most probable assignment
+        """
+        return self.sample_labels(y,
+                                  num_of_sents = len(y), # all sentences
+                                  num_of_samples = max(map(len, y)), # all words
+                                  num_of_classes = 1, # Only top probability
+                                  start_index = 0, # all sentences
+                                  get_prob = False, # Get only labels
+        )
+
     def inverse_transform_labels(self, indices):
         """
         Encode a list of textual labels
@@ -292,13 +315,21 @@ class RNN_model:
     def set_model_from_file(self):
         """
         Receives an instance of RNN and returns a model from the self.model_dir
-        path which should contain files named: model.json, weights.best.hdf5
+        path which should contain a file named: model.json,
+        and a single file with the hdf5 extension.
         Note: Use this function for a pretrained model, running model training
         on the loaded model will override the files in the model_dir
         """
+        from glob import glob
+
+        weights_fn = glob(os.path.join(self.model_dir, "*.hdf5"))
+        assert len(weights_fn) == 1, "More/Less than one weights file in {}: {}".format(self.model_dir,
+                                                                                        weights_fn)
+        weights_fn = weights_fn[0]
+        logging.debug("Weights file: {}".format(weights_fn))
         self.model = model_from_json(open(os.path.join(self.model_dir,
                                                        "./model.json")).read())
-        self.model.load_weights(os.path.join(self.model_dir, "./weights.best.hdf5"))
+        self.model.load_weights(weights_fn)
         self.model.compile(optimizer="adam",
                            loss='categorical_crossentropy',
                            metrics = ["accuracy"])
@@ -384,7 +415,7 @@ class RNN_model:
 
 
     def sample_labels(self, y, num_of_sents = 5, num_of_samples = 10,
-                      num_of_classes = 3, start_index = 5):
+                      num_of_classes = 3, start_index = 5, get_prob = True):
         """
         Get a sense of how labels in y look like
         """
@@ -394,7 +425,8 @@ class RNN_model:
             cur = []
             for word in sent[start_index: start_index + num_of_samples]:
                 sorted_prob = am(word)
-                cur.append([(classes[ind], word[ind]) for ind in sorted_prob[:num_of_classes]])
+                cur.append([(classes[ind], word[ind]) if get_prob else classes[ind]
+                            for ind in sorted_prob[:num_of_classes]])
             ret.append(cur)
         return ret
 
@@ -491,7 +523,11 @@ if __name__ == "__main__":
         # Compile model
         rnn.model_fn()
 
-    y = rnn.test(test_fn)
+    rnn.test(test_fn,
+             eval_metrics = [("f1 (micro)", lambda Y, y: metrics.f1_score(Y, y,
+                                                                          average = 'micro')),
+                             ("accuracy_score (keras)", metrics.accuracy_score),
+                         ])
 
 
 """
