@@ -145,6 +145,13 @@ class RNN_model:
                        validation_data = (X_dev, Y_dev),
                        callbacks = self.get_callbacks(X_train))
 
+    @staticmethod
+    def consolidate_labels(labels):
+        """
+        Return a consolidated list of labels, e.g., O-A1 -> O, A1-I -> A
+        """
+        return map(lambda label: label.split("-")[0], labels)
+
     def test(self, test_fn, eval_metrics):
         """
         Evaluate this model on a test file
@@ -157,15 +164,19 @@ class RNN_model:
         y = self.model.predict(X)
 
         # Get most probable predictions and flatten
-        Y = np.array(rnn.transform_output_probs(Y)).flatten()
-        y = np.array(rnn.transform_output_probs(y)).flatten()
+        Y = RNN_model.consolidate_labels(np.array(rnn.transform_output_probs(Y)).flatten())
+        y = RNN_model.consolidate_labels(np.array(rnn.transform_output_probs(y)).flatten())
 
         # Run evaluation metrics and report
-        ret = [(metric_name, metric_func(Y, y)) for (metric_name, metric_func) in eval_metrics]
+        ret = []
+        for (metric_name, metric_func) in eval_metrics:
+            ret.append((metric_name, metric_func(Y, y)))
+            logging.debug("calculating {}".format(ret[-1]))
+
         for (metric_name, metric_val) in ret:
             logging.info("{}: {:.4f}".format(metric_name,
                                              metric_val))
-        return ret
+        return Y, y, ret
 
     def predict(self, input_fn):
         """
@@ -523,13 +534,15 @@ if __name__ == "__main__":
         # Compile model
         rnn.model_fn()
 
-    rnn.test(test_fn,
-             eval_metrics = [("f1 (micro)", lambda Y, y: metrics.f1_score(Y, y,
-                                                                          average = 'micro')),
-                             ("accuracy_score (keras)", metrics.accuracy_score),
-                         ])
-
-
+        Y, y, metrics = rnn.test(test_fn,
+                                 eval_metrics = [("F1 (micro)", lambda Y, y: metrics.f1_score(Y, y,
+                                                                                              average = 'micro')),
+                                                 ("Precision (micro)", lambda Y, y: metrics.precision_score(Y, y,
+                                                                                                            average = 'micro')),
+                                                 ("Recall (micro)", lambda Y, y: metrics.recall_score(Y, y,
+                                                                                                      average = 'micro')),
+                                                 ("Accuracy", metrics.accuracy_score),
+                                             ])
 """
 - the sentence max length is an important factor on convergence.
 This makes sense, shorter sentences are easier to memorize.
@@ -539,10 +552,14 @@ Need to find a better balance.
 
 - relu activation seems to have a lot of positive impact
 
-- The batch size also seems to be having a lot of effect, but I'm note sure how to account for that.
+- The batch size also seems to be having a lot of effect, but I'm not sure how to account for that.
 
 - Maybe actually *increasing* dimensionalty would be better?
 There are many ways to crack the train set - we want the model to be free in more
 dimensions to allow for more flexibility while still fitting training data.
+
+Ideas:
+
+- test performance on arguments vs. adjuncts.
 
 """

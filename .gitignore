@@ -92,4 +92,5 @@ std*
 iris.data.txt
 pretrained_word_embeddings/
 model.png
+*.hdf5
 models/
