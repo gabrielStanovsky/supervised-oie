@@ -94,3 +94,4 @@ pretrained_word_embeddings/
 model.png
 *.hdf5
 models/
+best_models/

@@ -1,2 +1,0 @@
-Epoch 00099: saving model to ../models/rnn_100_epocs_glove/weights.best.hdf5
-2171/2171 [==============================] - 40s - loss: 0.2521 - acc: 0.8509
