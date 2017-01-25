@@ -207,8 +207,8 @@ class RNN_model:
         y = self.model.predict(X)
 
         # Get most probable predictions and flatten
-        Y = RNN_model.consolidate_labels(self.transform_output_probs(Y)).flatten()
-        y = RNN_model.consolidate_labels(self.transform_output_probs(y)).flatten()
+        Y = RNN_model.consolidate_labels(self.transform_output_probs(Y).flatten())
+        y = RNN_model.consolidate_labels(self.transform_output_probs(y).flatten())
 
         # Run evaluation metrics and report
         ret = []
@@ -288,6 +288,7 @@ class RNN_model:
         Should return a list sequence of sample of length maxlen.
         """
         output_encodings = []
+        sents = self.get_fixed_size(sents)
         # Encode outputs
         for sent in sents:
             output_encodings.append(np_utils.to_categorical(self.transform_labels(sent.label.values)))
