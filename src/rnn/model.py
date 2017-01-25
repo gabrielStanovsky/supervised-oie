@@ -160,13 +160,18 @@ class RNN_model:
         sent - a list of string tokens
         """
         # Create instances for all verbs as possible predicates
-        instances = [create_sample(sent, pred_word)
-                     for i in [ind for ind, (pred_word, pos) in enumerate(nltk.pos_tag(sent))
-                               if pos.startswith("V")]]
-        X = self.encode_inputs([sent])
-        # Get most probable predictions and flatten
-        y = RNN_model.consolidate_labels(np.array(rnn.transform_output_probs(y)).flatten())
-        return y
+        X = [create_sample(sent, pred_word)
+             for i in [ind for ind, (pred_word, pos) in enumerate(nltk.pos_tag(sent))
+                       if pos.startswith("V")]]
+
+
+        return [RNN_model.consolidate_labels(np.array(rnn.transform_output_probs(self.model.predict(x))).flatten())
+         for x in X]
+        # [  self.model.predict(x)]
+        # X = self.encode_inputs([sent])
+        # # Get most probable predictions and flatten
+        # y = RNN_model.consolidate_labels(np.array(rnn.transform_output_probs(y)).flatten())
+        # return y
 
     def create_sample(self, sent, pred_word):
         """
