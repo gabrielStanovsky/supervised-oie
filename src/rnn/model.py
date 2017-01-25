@@ -3,6 +3,7 @@
 """
 import numpy as np
 import pandas
+import nltk
 from docopt import docopt
 from keras.models import Sequential, Model
 from keras.layers import Input, Dense, LSTM, Embedding, TimeDistributedDense, TimeDistributed, merge, Bidirectional, Dropout
@@ -152,6 +153,28 @@ class RNN_model:
         """
         return map(lambda label: label.split("-")[0], labels)
 
+
+    def predict_sentence(self, sent):
+        """
+        Return a predicted label for each word in an arbitrary length sentence
+        sent - a list of string tokens
+        """
+        # Create instances for all verbs as possible predicates
+        instances = [create_sample(sent, pred_word)
+                     for i in [ind for ind, (pred_word, pos) in enumerate(nltk.pos_tag(sent))
+                               if pos.startswith("V")]]
+        X = self.encode_inputs([sent])
+        # Get most probable predictions and flatten
+        y = RNN_model.consolidate_labels(np.array(rnn.transform_output_probs(y)).flatten())
+        return y
+
+    def create_sample(self, sent, pred_word):
+        """
+        Return a dataframe which could be given to encode_inputs
+        """
+        return pandas.DataFrame({"word": sent,
+                                 "pred": [pred_word] * len(sent)})
+
     def test(self, test_fn, eval_metrics):
         """
         Evaluate this model on a test file
@@ -178,13 +201,13 @@ class RNN_model:
                                              metric_val))
         return Y, y, ret
 
-    def predict(self, input_fn):
-        """
-        Run this model on an input CoNLLL file
-        Returns (gold, predicted)
-        """
-        X, Y = self.load_dataset(input_fn)
-        return Y, self.model.predict(X)
+    # def predict(self, input_fn):
+    #     """
+    #     Run this model on an input CoNLLL file
+    #     Returns (gold, predicted)
+    #     """
+    #     X, Y = self.load_dataset(input_fn)
+    #     return Y, self.model.predict(X)
 
     def load_dataset(self, fn):
         """
@@ -440,6 +463,17 @@ class RNN_model:
                             for ind in sorted_prob[:num_of_classes]])
             ret.append(cur)
         return ret
+
+class Sentence:
+    """
+    Prepare sentence sample for encoding
+    """
+    def __init__(words, pred_index):
+        """
+        words - list of strings representing the words in the sentence.
+        pred_index - int representing the index of the current predicate for which to predict OIE extractions
+        """
+
 
 
 class Sample:
