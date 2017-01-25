@@ -151,7 +151,14 @@ class RNN_model:
         """
         Return a consolidated list of labels, e.g., O-A1 -> O, A1-I -> A
         """
-        return map(lambda label: label.split("-")[0], labels)
+        return map(RNN_model.consolidate_label , labels)
+
+    @staticmethod
+    def consolidate_label(label):
+        """
+        Return a consolidated label, e.g., O-A1 -> O, A1-I -> A
+        """
+        return label.split("-")[0] if label.startswith("O") else label
 
 
     def predict_sentence(self, sent):
@@ -159,14 +166,32 @@ class RNN_model:
         Return a predicted label for each word in an arbitrary length sentence
         sent - a list of string tokens
         """
-        # Create instances for all verbs as possible predicates
-        X = [create_sample(sent, pred_word)
-             for i in [ind for ind, (pred_word, pos) in enumerate(nltk.pos_tag(sent))
-                       if pos.startswith("V")]]
+        ret = []
+
+        # Extract predicates by looking at verbal POS
+        preds = [pred_word for (pred_word, pos) in nltk.pos_tag(sent)
+                 if pos.startswith("V")]
+
+        # Run RNN for each predicate on this sentence
+        for pred in preds:
+            cur_sample = self.create_sample(sent, pred)
+            X = self.encode_inputs([cur_sample])
+            ret.append([(self.consolidate_label(label), prob) for [(label, prob)] in
+                        self.transform_output_probs(self.model.predict(X), get_prob = True)[0]])
+        return ret
+
+        # # Create instances for all verbs as possible predicates
+        # self.X = self.encode_inputs([self.create_sample(sent, pred_word)
+        #                         for pred_word in ])
+
+        # return [(self.consolidate_label(label), prob)
+        #         for [(label, prob)] in self.transform_output_probs(self.model.predict(self.X), get_prob = True)[0]]
 
 
-        return [RNN_model.consolidate_labels(np.array(rnn.transform_output_probs(self.model.predict(x))).flatten())
-         for x in X]
+
+        #return [RNN_model.consolidate_labels(np.array(self.transform_output_probs(self.model.predict(x))).flatten())
+        #        for x in X]
+
         # [  self.model.predict(x)]
         # X = self.encode_inputs([sent])
         # # Get most probable predictions and flatten
@@ -177,6 +202,7 @@ class RNN_model:
         """
         Return a dataframe which could be given to encode_inputs
         """
+        logging.debug("Creating sample with pred: {}".format(pred_word))
         return pandas.DataFrame({"word": sent,
                                  "pred": [pred_word] * len(sent)})
 
@@ -192,8 +218,8 @@ class RNN_model:
         y = self.model.predict(X)
 
         # Get most probable predictions and flatten
-        Y = RNN_model.consolidate_labels(np.array(rnn.transform_output_probs(Y)).flatten())
-        y = RNN_model.consolidate_labels(np.array(rnn.transform_output_probs(y)).flatten())
+        Y = RNN_model.consolidate_labels(np.array(self.transform_output_probs(Y)).flatten())
+        y = RNN_model.consolidate_labels(np.array(self.transform_output_probs(y)).flatten())
 
         # Run evaluation metrics and report
         ret = []
@@ -205,14 +231,6 @@ class RNN_model:
             logging.info("{}: {:.4f}".format(metric_name,
                                              metric_val))
         return Y, y, ret
-
-    # def predict(self, input_fn):
-    #     """
-    #     Run this model on an input CoNLLL file
-    #     Returns (gold, predicted)
-    #     """
-    #     X, Y = self.load_dataset(input_fn)
-    #     return Y, self.model.predict(X)
 
     def load_dataset(self, fn):
         """
@@ -287,7 +305,7 @@ class RNN_model:
         classes  = list(self.classes_())
         return [classes.index(label) for label in labels]
 
-    def transform_output_probs(self, y):
+    def transform_output_probs(self, y, get_prob = False):
         """
         Given a list of probabilities over labels, get the textual representation of the
         most probable assignment
@@ -297,7 +315,7 @@ class RNN_model:
                                   num_of_samples = max(map(len, y)), # all words
                                   num_of_classes = 1, # Only top probability
                                   start_index = 0, # all sentences
-                                  get_prob = False, # Get only labels
+                                  get_prob = get_prob, # Indicate whether to get only labels
         )
 
     def inverse_transform_labels(self, indices):
@@ -479,8 +497,6 @@ class Sentence:
         pred_index - int representing the index of the current predicate for which to predict OIE extractions
         """
 
-
-
 class Sample:
     """
     Single sample representation.
@@ -511,13 +527,12 @@ def pad_sequences(sequences, pad_func, maxlen = None):
     """
     ret = []
 
-    # Determine the maxlen -- Make sure it doesn't exceed the maximum observed length
+    # Determine the maxlen
     max_value = max(map(len, sequences))
     if maxlen is None:
         maxlen = max_value
         logging.debug("Padding to maximum observed length ({})".format(max_value))
     else:
-        maxlen = min(max_value, maxlen)
         logging.debug("Padding / truncating to {} words (max observed was {})".format(maxlen, max_value))
 
         # Pad / truncate (done this way to deal with np.array)

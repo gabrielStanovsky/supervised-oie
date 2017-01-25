@@ -34,6 +34,7 @@ class Trained_oie:
         Returns a list of OIE extractions for a given sentence
         sent - a list of tokens
         """
+        return self.model.predict_sentence(sent)
 
     def parse_sents(self, sents, tokenize):
         """
@@ -44,8 +45,6 @@ class Trained_oie:
         return [self.get_extractions(nltk.word_tokenize(sent) if tokenize else sent)
                 for sent in sents]
 
-
-
 if __name__ == "__main__":
     args = docopt(__doc__)
     logging.debug(args)
@@ -55,3 +54,4 @@ if __name__ == "__main__":
     tokenize = args["--tokenize"]
 
     oie = Trained_oie(load_pretrained_rnn(model_dir))
+    y = oie.parse_sents(["John loves Mary"], tokenize = True)
