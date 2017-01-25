@@ -1,5 +1,5 @@
 """ Usage:
-    model [--train=TRAIN_FN] [--dev=DEV_FN] --test=TEST_FN [--epochs=EPOCHS] (--glove=EMBEDDING | --pretrained=MODEL_DIR)
+    model [--train=TRAIN_FN] [--dev=DEV_FN] --test=TEST_FN [--epochs=EPOCHS] (--glove=EMBEDDING | --pretrained=MODEL_DIR) [--load_hyperparams=MODEL_JSON]
 """
 import numpy as np
 import pandas
@@ -211,6 +211,7 @@ class RNN_model:
         y = RNN_model.consolidate_labels(self.transform_output_probs(y).flatten())
 
         # Run evaluation metrics and report
+        # TODO: is it possible to compare without the padding?
         ret = []
         for (metric_name, metric_func) in eval_metrics:
             ret.append((metric_name, metric_func(Y, y)))
@@ -574,6 +575,7 @@ if __name__ == "__main__":
     test_fn = args["--test"]
 
     if args["--glove"] is not None:
+
         train_fn = args["--train"]
         dev_fn = args["--dev"]
         epochs = int(args["--epochs"])
