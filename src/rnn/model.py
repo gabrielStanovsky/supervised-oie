@@ -180,24 +180,6 @@ class RNN_model:
                         self.transform_output_probs(self.model.predict(X), get_prob = True)[0]])
         return ret
 
-        # # Create instances for all verbs as possible predicates
-        # self.X = self.encode_inputs([self.create_sample(sent, pred_word)
-        #                         for pred_word in ])
-
-        # return [(self.consolidate_label(label), prob)
-        #         for [(label, prob)] in self.transform_output_probs(self.model.predict(self.X), get_prob = True)[0]]
-
-
-
-        #return [RNN_model.consolidate_labels(np.array(self.transform_output_probs(self.model.predict(x))).flatten())
-        #        for x in X]
-
-        # [  self.model.predict(x)]
-        # X = self.encode_inputs([sent])
-        # # Get most probable predictions and flatten
-        # y = RNN_model.consolidate_labels(np.array(rnn.transform_output_probs(y)).flatten())
-        # return y
-
     def create_sample(self, sent, pred_word):
         """
         Return a dataframe which could be given to encode_inputs
