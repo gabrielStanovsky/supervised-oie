@@ -169,15 +169,22 @@ class RNN_model:
         ret = []
 
         # Extract predicates by looking at verbal POS
-        preds = [pred_word for (pred_word, pos) in nltk.pos_tag(sent)
+        preds = [(ind, pred_word) for ind, (pred_word, pos) in enumerate(nltk.pos_tag(sent))
                  if pos.startswith("V")]
 
+        # Calculate num of samples (round up to the nearst multiple of sent_maxlen)
+        num_of_samples = np.ceil(float(len(sent)) / self.sent_maxlen) * self.sent_maxlen
+
         # Run RNN for each predicate on this sentence
-        for pred in preds:
+        for ind, pred in preds:
             cur_sample = self.create_sample(sent, pred)
             X = self.encode_inputs([cur_sample])
-            ret.append([(self.consolidate_label(label), prob) for [(label, prob)] in
-                        self.transform_output_probs(self.model.predict(X), get_prob = True)[0]])
+            ret.append(((ind, pred),
+                        [(self.consolidate_label(label), prob)
+                         for (label, prob) in
+                         self.transform_output_probs(self.model.predict(X),           # "flatten" and truncate
+                                                     get_prob = True).reshape(num_of_samples,
+                                                                              2)[:len(sent)]]))
         return ret
 
     def create_sample(self, sent, pred_word):
@@ -200,8 +207,8 @@ class RNN_model:
         y = self.model.predict(X)
 
         # Get most probable predictions and flatten
-        Y = RNN_model.consolidate_labels(np.array(self.transform_output_probs(Y)).flatten())
-        y = RNN_model.consolidate_labels(np.array(self.transform_output_probs(y)).flatten())
+        Y = RNN_model.consolidate_labels(self.transform_output_probs(Y)).flatten()
+        y = RNN_model.consolidate_labels(self.transform_output_probs(y)).flatten()
 
         # Run evaluation metrics and report
         ret = []
@@ -235,14 +242,26 @@ class RNN_model:
         """
         return [df[df.run_id == i] for i in range(min(df.run_id), max(df.run_id))]
 
+
+    def get_fixed_size(self, sents):
+        """
+        Partition sents into lists of sent_maxlen elements
+        (execept the last in each sentence, which might be shorter)
+        """
+        return [sent[s_ind : s_ind + self.sent_maxlen]
+                for sent in sents
+                for s_ind in range(0, len(sent), self.sent_maxlen)]
+
+
     def encode_inputs(self, sents):
         """
         Given a dataframe split to sentences, encode inputs for rnn classification.
         Should return a dictionary of sequences of sample of length maxlen.
         """
-        # Encode inputs
         word_inputs = []
         pred_inputs = []
+        sents = self.get_fixed_size(sents)
+
         for sent in sents:
             word_encodings = [self.emb.get_word_index(w) for w in sent.word.values]
             pred_word_encodings = [self.emb.get_word_index(w) for w in sent.pred.values]
@@ -292,13 +311,13 @@ class RNN_model:
         Given a list of probabilities over labels, get the textual representation of the
         most probable assignment
         """
-        return self.sample_labels(y,
+        return np.array(self.sample_labels(y,
                                   num_of_sents = len(y), # all sentences
                                   num_of_samples = max(map(len, y)), # all words
                                   num_of_classes = 1, # Only top probability
                                   start_index = 0, # all sentences
                                   get_prob = get_prob, # Indicate whether to get only labels
-        )
+        ))
 
     def inverse_transform_labels(self, indices):
         """

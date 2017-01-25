@@ -15,6 +15,7 @@ from rnn.model import load_pretrained_rnn
 from docopt import docopt
 import logging
 import nltk
+import numpy as np
 
 logging.basicConfig(level = logging.DEBUG)
 
@@ -54,4 +55,7 @@ if __name__ == "__main__":
     tokenize = args["--tokenize"]
 
     oie = Trained_oie(load_pretrained_rnn(model_dir))
-    y = oie.parse_sents(["John loves Mary"], tokenize = True)
+
+    s = "The Economist is an English language weekly magazine format newspaper owned by the Economist Group\
+    and edited at offices in London."
+    y = oie.parse_sents([s], tokenize = True)
