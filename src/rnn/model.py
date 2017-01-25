@@ -489,6 +489,23 @@ def pad_sequences(sequences, pad_func, maxlen = None):
     return ret
 
 
+
+def load_pretrained_rnn(model_dir):
+    """ Static trained model loader function """
+    rnn_params = json.load(open(os.path.join(model_dir,
+                                             "./model.json")))["rnn"]
+
+    logging.info("Loading model from: {}".format(model_dir))
+    rnn = RNN_model(model_fn = RNN_model.set_model_from_file,
+                    model_dir = model_dir,
+                    **rnn_params)
+
+    # Compile model
+    rnn.model_fn()
+
+    return rnn
+
+
 # Helper functions
 
 ## Argmaxes
@@ -522,25 +539,17 @@ if __name__ == "__main__":
         rnn.train(train_fn, dev_fn)
 
     if args["--pretrained"] is not None:
-        model_dir = args["--pretrained"]
-        rnn_params = json.load(open(os.path.join(model_dir,
-                                                 "./model.json")))["rnn"]
-
-        logging.info("Loading model from: {}".format(model_dir))
-        rnn = RNN_model(model_fn = RNN_model.set_model_from_file,
-                        model_dir = model_dir,
-                        **rnn_params)
-
-        # Compile model
-        rnn.model_fn()
-
+        rnn = load_pretrained_rnn(args["--pretrained"])
         Y, y, metrics = rnn.test(test_fn,
-                                 eval_metrics = [("F1 (micro)", lambda Y, y: metrics.f1_score(Y, y,
-                                                                                              average = 'micro')),
-                                                 ("Precision (micro)", lambda Y, y: metrics.precision_score(Y, y,
-                                                                                                            average = 'micro')),
-                                                 ("Recall (micro)", lambda Y, y: metrics.recall_score(Y, y,
-                                                                                                      average = 'micro')),
+                                 eval_metrics = [("F1 (micro)",
+                                                  lambda Y, y: metrics.f1_score(Y, y,
+                                                                                average = 'micro')),
+                                                 ("Precision (micro)",
+                                                  lambda Y, y: metrics.precision_score(Y, y,
+                                                                                       average = 'micro')),
+                                                 ("Recall (micro)",
+                                                  lambda Y, y: metrics.recall_score(Y, y,
+                                                                                    average = 'micro')),
                                                  ("Accuracy", metrics.accuracy_score),
                                              ])
 """
