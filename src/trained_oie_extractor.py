@@ -34,12 +34,36 @@ class Trained_oie:
         Returns a list of OIE extractions for a given sentence
         sent - a list of tokens
         """
-        for ((pred_ind, pred_word), labels) self.model.predict_sentence(sent):
+        ret = []
+        for ((pred_ind, pred_word), labels) in self.model.predict_sentence(sent):
             cur_args = []
             cur_arg = []
             cur_prob = 1.0
+
             # collect args
-            for word_ind, (label, prob) in enumerate()
+            for (label, prob), word in zip(labels, sent):
+                if label.startswith("A"):
+                    cur_arg.append(word)
+                    cur_prob *= prob
+                elif cur_arg:
+                    cur_args.append(cur_arg)
+                    cur_arg = []
+
+            # Create extraction
+            if cur_args:
+                ret.append(Extraction(sent,
+                                      cur_prob,
+                                      pred_word,
+                                      cur_args))
+        return ret
+
+    def parse_sent(self, sent, tokenize):
+        """
+        Returns a list of extractions for the given sentence
+        sent - a tokenized sentence
+        tokenize - boolean indicating whether the sentences should be tokenized first
+        """
+        return self.get_extractions(nltk.word_tokenize(sent) if tokenize else sent)
 
     def parse_sents(self, sents, tokenize):
         """
@@ -47,7 +71,7 @@ class Trained_oie:
         sents - list of tokenized sentences
         tokenize - boolean indicating whether the sentences should be tokenized first
         """
-        return [self.get_extractions(nltk.word_tokenize(sent) if tokenize else sent)
+        return [self.parse_sent(sent, tokenize)
                 for sent in sents]
 
 
@@ -55,7 +79,7 @@ class Extraction:
     """
     Store and print an OIE extraction
     """
-    def __init__(self, sent, prob, pred, argsx):
+    def __init__(self, sent, prob, pred, args):
         """
         sent - Tokenized sentence - list of strings
         pred - Predicate word
@@ -67,6 +91,7 @@ class Extraction:
         self.prob = prob
         self.pred = pred
         self.args = args
+        logging.debug(self)
 
     def __str__(self):
         """
@@ -77,7 +102,13 @@ class Extraction:
                              [' '.join(self.sent),
                               self.prob,
                               self.pred,
-                              '\t'.join(self.args)]))
+                              '\t'.join([' '.join(arg)
+                                         for arg in self.args])]))
+
+
+example_sent = "The Economist is an English language weekly magazine format newspaper owned by the Economist Group\
+    and edited at offices in London."
+
 
 if __name__ == "__main__":
     args = docopt(__doc__)
@@ -89,6 +120,10 @@ if __name__ == "__main__":
 
     oie = Trained_oie(load_pretrained_rnn(model_dir))
 
-    s = "The Economist is an English language weekly magazine format newspaper owned by the Economist Group\
-    and edited at offices in London."
-    y = oie.parse_sents([s], tokenize = True)
+    # Iterate over all raw sentences
+    with open(output_fn, 'w') as fout:
+        fout.write('\n'.join([str(ex)
+                              for sent in open(input_fn)
+                              for ex in oie.parse_sent(sent.strip().split(' '),
+                                                       tokenize = tokenize)
+                              if sent.strip()]))

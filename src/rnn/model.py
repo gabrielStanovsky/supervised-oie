@@ -95,7 +95,7 @@ class RNN_model:
         checkpoint = ModelCheckpoint(os.path.join(self.model_dir,
                                                   "{epoch:02d}-{val_categorical_accuracy:.2f}.hdf5"),
                                      verbose = 1,
-                                     save_best_only = True)   # TODO: is there a way to save by best val_acc?
+                                     save_best_only = False)   # TODO: is there a way to save by best val_acc?
 
         return [#sample_output_callback,
                 checkpoint]
@@ -542,11 +542,8 @@ def pad_sequences(sequences, pad_func, maxlen = None):
     max_value = max(map(len, sequences))
     if maxlen is None:
         maxlen = max_value
-        logging.debug("Padding to maximum observed length ({})".format(max_value))
-    else:
-        logging.debug("Padding / truncating to {} words (max observed was {})".format(maxlen, max_value))
 
-        # Pad / truncate (done this way to deal with np.array)
+    # Pad / truncate (done this way to deal with np.array)
     for sequence in sequences:
         cur_seq = list(sequence[:maxlen])
         cur_seq.extend([pad_func()] * (maxlen - len(sequence)))
