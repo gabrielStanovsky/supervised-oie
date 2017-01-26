@@ -1,5 +1,5 @@
 """ Usage:
-    model [--train=TRAIN_FN] [--dev=DEV_FN] --test=TEST_FN (--glove=EMBEDDING | --pretrained=MODEL_DIR) [--load_hyperparams=MODEL_JSON]
+    model [--train=TRAIN_FN] [--dev=DEV_FN] --test=TEST_FN [--pretrained=MODEL_DIR] [--load_hyperparams=MODEL_JSON]
 """
 import numpy as np
 import pandas
@@ -582,10 +582,9 @@ if __name__ == "__main__":
     logging.debug(args)
     test_fn = args["--test"]
 
-    if args["--glove"] is not None:
+    if args["--train"] is not None:
         train_fn = args["--train"]
         dev_fn = args["--dev"]
-        emb_filename = args["--glove"]
 
         if args["--load_hyperparams"] is not None:
             # load hyperparams from json file
@@ -602,14 +601,14 @@ if __name__ == "__main__":
                           "emb_filename": emb_filename,
                           "epochs": 10,
                           "trainable_emb": True,
-                          "batch_size": 50}
+                          "batch_size": 50,
+                          "emb_filename": "../pretrained_word_embeddings/glove.6B.50d.txt",
+            }
+
 
         logging.debug("hyperparams:\n{}".format(pformat(rnn_params)))
-
         model_dir = "../models/{}/".format(time.strftime("%d_%m_%Y_%H_%M"))
-
         logging.debug("Saving models to: {}".format(model_dir))
-
         if not os.path.exists(model_dir):
             os.makedirs(model_dir)
 
@@ -618,7 +617,7 @@ if __name__ == "__main__":
                         **rnn_params)
         rnn.train(train_fn, dev_fn)
 
-    if args["--pretrained"] is not None:
+    elif args["--pretrained"] is not None:
         rnn = load_pretrained_rnn(args["--pretrained"])
         Y, y, metrics = rnn.test(test_fn,
                                  eval_metrics = [("F1 (micro)",
