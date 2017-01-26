@@ -182,7 +182,7 @@ class RNN_model:
             cur_sample = self.create_sample(sent, pred)
             X = self.encode_inputs([cur_sample])
             ret.append(((ind, pred),
-                        [(self.consolidate_label(label), prob)
+                        [(self.consolidate_label(label), float(prob))
                          for (label, prob) in
                          self.transform_output_probs(self.model.predict(X),           # "flatten" and truncate
                                                      get_prob = True).reshape(num_of_samples,

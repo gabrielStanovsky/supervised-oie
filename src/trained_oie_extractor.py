@@ -19,7 +19,6 @@ import numpy as np
 
 logging.basicConfig(level = logging.DEBUG)
 
-
 class Trained_oie:
     """
     Compose OIE extractions given a pretrained RNN OIE model predicting classes per word
@@ -35,7 +34,12 @@ class Trained_oie:
         Returns a list of OIE extractions for a given sentence
         sent - a list of tokens
         """
-        return self.model.predict_sentence(sent)
+        for ((pred_ind, pred_word), labels) self.model.predict_sentence(sent):
+            cur_args = []
+            cur_arg = []
+            cur_prob = 1.0
+            # collect args
+            for word_ind, (label, prob) in enumerate()
 
     def parse_sents(self, sents, tokenize):
         """
@@ -45,6 +49,35 @@ class Trained_oie:
         """
         return [self.get_extractions(nltk.word_tokenize(sent) if tokenize else sent)
                 for sent in sents]
+
+
+class Extraction:
+    """
+    Store and print an OIE extraction
+    """
+    def __init__(self, sent, prob, pred, argsx):
+        """
+        sent - Tokenized sentence - list of strings
+        pred - Predicate word
+        args - List of arguments (each a string)
+        prob - Gloat in [0,1] indicating the probablity
+               of this extraction
+        """
+        self.sent = sent
+        self.prob = prob
+        self.pred = pred
+        self.args = args
+
+    def __str__(self):
+        """
+        Format (tab separated):
+        Sent, prob, pred, arg1, arg2, ...
+        """
+        return '\t'.join(map(str,
+                             [' '.join(self.sent),
+                              self.prob,
+                              self.pred,
+                              '\t'.join(self.args)]))
 
 if __name__ == "__main__":
     args = docopt(__doc__)
