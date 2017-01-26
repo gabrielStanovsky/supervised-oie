@@ -4,6 +4,7 @@
 import numpy as np
 import pandas
 import nltk
+import time
 from docopt import docopt
 from keras.models import Sequential, Model
 from keras.layers import Input, Dense, LSTM, Embedding, TimeDistributedDense, TimeDistributed, merge, Bidirectional, Dropout
@@ -591,6 +592,7 @@ if __name__ == "__main__":
             json_fn = args["--load_hyperparams"]
             logging.info("Loading model from: {}".format(json_fn))
             rnn_params = json.load(open(json_fn))["rnn"]
+            rnn_params["classes"] = None  # Just to make sure the model computes the correct labels
 
         else:
             # Use some default params
@@ -604,8 +606,9 @@ if __name__ == "__main__":
 
         logging.debug("hyperparams:\n{}".format(pformat(rnn_params)))
 
-        model_dir = "../models/rnn_{}_epocs_{}/".format(rnn_params["epochs"],
-                                                        emb_filename.split('/')[-1].split(".")[0])
+        model_dir = "../models/{}/".format(time.strftime("%d_%m_%Y_%H_%M"))
+
+        logging.debug("Saving models to: {}".format(model_dir))
 
         if not os.path.exists(model_dir):
             os.makedirs(model_dir)
