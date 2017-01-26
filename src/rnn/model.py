@@ -1,5 +1,5 @@
 """ Usage:
-    model [--train=TRAIN_FN] [--dev=DEV_FN] --test=TEST_FN [--epochs=EPOCHS] (--glove=EMBEDDING | --pretrained=MODEL_DIR) [--load_hyperparams=MODEL_JSON]
+    model [--train=TRAIN_FN] [--dev=DEV_FN] --test=TEST_FN (--glove=EMBEDDING | --pretrained=MODEL_DIR) [--load_hyperparams=MODEL_JSON]
 """
 import numpy as np
 import pandas
@@ -20,6 +20,7 @@ from load_pretrained_word_embeddings import Glove
 from operator import itemgetter
 from keras.callbacks import LambdaCallback, ModelCheckpoint
 from sklearn import metrics
+from pprint import pformat
 
 import os
 import json
@@ -581,25 +582,37 @@ if __name__ == "__main__":
     test_fn = args["--test"]
 
     if args["--glove"] is not None:
-
         train_fn = args["--train"]
         dev_fn = args["--dev"]
-        epochs = int(args["--epochs"])
         emb_filename = args["--glove"]
-        model_dir = "../models/rnn_{}_epocs_{}/".format(epochs,
-                                                 emb_filename.split('/')[-1].split(".")[0])
+
+        if args["--load_hyperparams"] is not None:
+            # load hyperparams from json file
+            json_fn = args["--load_hyperparams"]
+            logging.info("Loading model from: {}".format(json_fn))
+            rnn_params = json.load(open(json_fn))["rnn"]
+
+        else:
+            # Use some default params
+            rnn_params = {"sent_maxlen":  20,
+                          "hidden_units": pow(2, 10),
+                          "num_of_latent_layers": 2,
+                          "emb_filename": emb_filename,
+                          "epochs": 10,
+                          "trainable_emb": True,
+                          "batch_size": 50}
+
+        logging.debug("hyperparams:\n{}".format(pformat(rnn_params)))
+
+        model_dir = "../models/rnn_{}_epocs_{}/".format(rnn_params["epochs"],
+                                                        emb_filename.split('/')[-1].split(".")[0])
+
         if not os.path.exists(model_dir):
             os.makedirs(model_dir)
-        rnn = RNN_model(model_fn = RNN_model.set_vanilla_model,
-                        sent_maxlen = 20,
-                        hidden_units = pow(2, 10),
-                        num_of_latent_layers = 2,
-                        emb_filename = emb_filename,
-                        epochs = epochs,
-                        trainable_emb = True,
-                        batch_size = 50,
-                        model_dir = model_dir)
 
+        rnn = RNN_model(model_fn = RNN_model.set_vanilla_model,
+                        model_dir = model_dir,
+                        **rnn_params)
         rnn.train(train_fn, dev_fn)
 
     if args["--pretrained"] is not None:
