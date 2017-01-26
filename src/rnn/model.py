@@ -292,12 +292,18 @@ class RNN_model:
         sents = self.get_fixed_size(sents)
         # Encode outputs
         for sent in sents:
-            output_encodings.append(list(np_utils.to_categorical(list(self.transform_labels(sent.label.values)), nb_classes = self.num_of_classes())))
+            output_encodings.append(list(np_utils.to_categorical(\
+                                                list(self.transform_labels(sent.label.values)),
+                                                            nb_classes = self.num_of_classes())))
 
         # Pad / truncate to maximum length
-        return np.array(pad_sequences(output_encodings,
-                                      lambda : np.array([0] * self.num_of_classes()),
-                                      maxlen = self.sent_maxlen))
+        return np.ndarray(shape = (len(sents),
+                                  self.sent_maxlen,
+                                  self.num_of_classes()),
+                          buffer = np.array(pad_sequences(output_encodings,
+                                                          lambda : \
+                                                            np.zeros(self.num_of_classes()),
+                                                          maxlen = self.sent_maxlen)))
 
     def transform_labels(self, labels):
         """
