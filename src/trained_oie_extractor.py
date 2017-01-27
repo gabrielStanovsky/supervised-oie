@@ -44,7 +44,9 @@ class Trained_oie:
             for (label, prob), word in zip(labels, sent):
                 if label.startswith("A"):
                     cur_arg.append(word)
-                    cur_prob *= prob
+                    if prob < cur_prob:
+                        cur_prob = prob
+#                    cur_prob *= prob
                 elif cur_arg:
                     cur_args.append(cur_arg)
                     cur_arg = []
