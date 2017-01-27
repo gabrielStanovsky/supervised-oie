@@ -24,6 +24,6 @@ class ReVerbReader(OieReader):
         
     # ReVerb requires a different files from which to get the input sentences
     # Relative to repo root folder
-    RAW_SENTS_FILE = './oie_corpus/oie_input.txt'    
+    RAW_SENTS_FILE = './raw_sentences/all.txt'    
 
 

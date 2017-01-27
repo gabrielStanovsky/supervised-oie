@@ -1,0 +1,902 @@
+For the record , Jeffrey Kaufman , an attorney for Fireman 's Fund , said he was `` rattled -- both literally and figuratively . ''	1.0	for	Fireman	Fund
+For the record , Jeffrey Kaufman , an attorney for Fireman 's Fund , said he was `` rattled -- both literally and figuratively . ''	1.0	said For	Jeffrey Kaufman	record
+For the record , Jeffrey Kaufman , an attorney for Fireman 's Fund , said he was `` rattled -- both literally and figuratively . ''	1.0	attorney for	Jeffrey Kaufman	Fireman 's Fund
+Hani Zayadi was appointed president and chief executive officer of this financially troubled department store chain , effective Nov. 15 , succeeding Frank Robertson , who is retiring early .	1.0	was appointed	Hani Zayadi	effective
+Hani Zayadi was appointed president and chief executive officer of this financially troubled department store chain , effective Nov. 15 , succeeding Frank Robertson , who is retiring early .	1.0	was appointed	Hani Zayadi	president
+Hani Zayadi was appointed president and chief executive officer of this financially troubled department store chain , effective Nov. 15 , succeeding Frank Robertson , who is retiring early .	1.0	was	Hani Zayadi	appointed
+Hani Zayadi was appointed president and chief executive officer of this financially troubled department store chain , effective Nov. 15 , succeeding Frank Robertson , who is retiring early .	1.0	was appointed	Hani Zayadi	effective Nov. 15
+Milk sold to the nation 's dairy plants and dealers averaged $ 14.50 for each hundred pounds , up 50 cents from September and up $ 1.50 from October 1988 , the department said .	1.0	sold to	Milk	nation 's dairy plants
+Milk sold to the nation 's dairy plants and dealers averaged $ 14.50 for each hundred pounds , up 50 cents from September and up $ 1.50 from October 1988 , the department said .	1.0	to	nation	dairy plants
+Mrs. Marcos 's trial is expected to begin in March .	1.0	begin in	Mrs. Marcos 's trial	March
+Mrs. Marcos 's trial is expected to begin in March .	1.0	is expected	Mrs. Marcos 's trial	begin
+Mrs. Marcos 's trial is expected to begin in March .	1.0	is expected	Mrs. Marcos 's trial	begin in March
+Mrs. Marcos 's trial is expected to begin in March .	1.0	is	Mrs. Marcos 's trial	expected
+Mrs. Marcos 's trial is expected to begin in March .	1.0	has	Mrs. Marcos	trial
+Although Heathrow authorities have been watching a group of allegedly crooked baggage handlers for some time , the Gauguin may be `` lost . ''	1.0	may	Gauguin	may lost
+Although Heathrow authorities have been watching a group of allegedly crooked baggage handlers for some time , the Gauguin may be `` lost . ''	0.909	group of	Heathrow authorities	allegedly crooked baggage handlers
+Although Heathrow authorities have been watching a group of allegedly crooked baggage handlers for some time , the Gauguin may be `` lost . ''	0.909	group of	Heathrow authorities	baggage handlers
+Although Heathrow authorities have been watching a group of allegedly crooked baggage handlers for some time , the Gauguin may be `` lost . ''	0.909	group of	Heathrow authorities	crooked baggage handlers
+A similar technique is almost impossible to apply to other crops , such as cotton , soybeans and rice .	1.0	apply to	similar technique	crops
+A similar technique is almost impossible to apply to other crops , such as cotton , soybeans and rice .	1.0	apply to	technique	crops
+A similar technique is almost impossible to apply to other crops , such as cotton , soybeans and rice .	1.0	is	technique	impossible
+A similar technique is almost impossible to apply to other crops , such as cotton , soybeans and rice .	1.0	is	technique	almost impossible
+A similar technique is almost impossible to apply to other crops , such as cotton , soybeans and rice .	1.0	is	similar technique	almost impossible
+A similar technique is almost impossible to apply to other crops , such as cotton , soybeans and rice .	1.0	apply to	technique	other crops
+A similar technique is almost impossible to apply to other crops , such as cotton , soybeans and rice .	1.0	apply to	similar technique	other crops
+A similar technique is almost impossible to apply to other crops , such as cotton , soybeans and rice .	1.0	is	similar technique	impossible
+Pennzoil 's poison pill covers five years in order to give current management enough time to put these proceeds to work in a prudent manner .	1.0	covers	Pennzoil 's poison pill	five years in order
+Pennzoil 's poison pill covers five years in order to give current management enough time to put these proceeds to work in a prudent manner .	1.0	has	Pennzoil	poison pill
+Pennzoil 's poison pill covers five years in order to give current management enough time to put these proceeds to work in a prudent manner .	1.0	covers	Pennzoil 's poison pill	five years
+Pennzoil 's poison pill covers five years in order to give current management enough time to put these proceeds to work in a prudent manner .	1.0	is in	five years	order
+After practicing law locally , he was elected to his first 10 - year term as judge in 1971 ; in 1981 , he was effectively re - elected .	1.0	practicing	he	law
+After practicing law locally , he was elected to his first 10 - year term as judge in 1971 ; in 1981 , he was effectively re - elected .	1.0	practicing locally	he	law
+After practicing law locally , he was elected to his first 10 - year term as judge in 1971 ; in 1981 , he was effectively re - elected .	1.0	is in	judge	1971
+After practicing law locally , he was elected to his first 10 - year term as judge in 1971 ; in 1981 , he was effectively re - elected .	1.0	was elected to	he	his first 10
+After practicing law locally , he was elected to his first 10 - year term as judge in 1971 ; in 1981 , he was effectively re - elected .	1.0	was	he	elected
+For the past five years , unions have n't managed to win wage increases as large as those granted to nonunion workers .	1.0	win wage increases as	unions	large as those granted to nonunion workers
+It said CS First Boston `` has consistently been one of the most aggressive firms in merchant banking '' and that `` a very significant portion '' of the firm 's profit in recent years has come from merchant banking - related business .	1.0	of	firm	profit in recent years
+It said CS First Boston `` has consistently been one of the most aggressive firms in merchant banking '' and that `` a very significant portion '' of the firm 's profit in recent years has come from merchant banking - related business .	1.0	is in	firm 's profit	recent years
+It said CS First Boston `` has consistently been one of the most aggressive firms in merchant banking '' and that `` a very significant portion '' of the firm 's profit in recent years has come from merchant banking - related business .	1.0	is in	aggressive firms	merchant banking
+Crouched at shortstop , Bert Campaneris , once Oakland 's master thief , effortlessly scoops up a groundball and flips it to second .	1.0	flips	Bert Campaneris	it
+Crouched at shortstop , Bert Campaneris , once Oakland 's master thief , effortlessly scoops up a groundball and flips it to second .	1.0	thief 's	Bert Campaneris	Oakland
+Crouched at shortstop , Bert Campaneris , once Oakland 's master thief , effortlessly scoops up a groundball and flips it to second .	1.0	Crouched at	Bert Campaneris	shortstop
+Within two hours , viewers pledged over $ 400,000 , according to a Red Cross executive .	1.0	pledged	viewers	over $ 400,000
+Within two hours , viewers pledged over $ 400,000 , according to a Red Cross executive .	1.0	pledged	viewers	$ 400,000
+`` Now everything '' -- such as program trading and wide stock market swings -- `` that everyone had pushed back in their consciousness is just sitting right there . ''	1.0	had pushed in	everyone	their consciousness
+`` Now everything '' -- such as program trading and wide stock market swings -- `` that everyone had pushed back in their consciousness is just sitting right there . ''	1.0	had pushed back in	everyone	their consciousness
+A San Francisco lawyer , Mr. Panelli rowed religiously when he first got the machine , but , he complains , it left grease marks on his carpet , `` and it was boring .	1.0	got	he	machine
+A San Francisco lawyer , Mr. Panelli rowed religiously when he first got the machine , but , he complains , it left grease marks on his carpet , `` and it was boring .	1.0	first got	he	machine
+THE CHIEF NURSING officer can be responsible for more than 1,000 employees and at least one - third of a hospital 's budget ; a head nurse typically oversees up to 80 employees and $ 8 million .	1.0	of	hospital	budget
+The prices of most corn , soybean and wheat futures contracts dropped slightly as farmers in the Midwest continued to rebuild stockpiles that were depleted by the 1988 drought .	1.0	is in	farmers	Midwest
+But it does that at the cost of deepening the taxpayer 's exposure if the FHA is forced to pay for more loans going sour .	1.0	does	it	that at cost
+But it does that at the cost of deepening the taxpayer 's exposure if the FHA is forced to pay for more loans going sour .	1.0	has	taxpayer	exposure
+But it does that at the cost of deepening the taxpayer 's exposure if the FHA is forced to pay for more loans going sour .	1.0	does	it	that
+The National Transportation Safety Board ruled that pilots failed to set the plane 's wing flaps and slats properly for takeoff and failed to make mandatory preflight checks that would have detected the error .	1.0	has	plane	wing flaps
+The National Transportation Safety Board ruled that pilots failed to set the plane 's wing flaps and slats properly for takeoff and failed to make mandatory preflight checks that would have detected the error .	1.0	set properly	pilots	plane 's wing flaps
+The National Transportation Safety Board ruled that pilots failed to set the plane 's wing flaps and slats properly for takeoff and failed to make mandatory preflight checks that would have detected the error .	1.0	set	pilots	plane 's wing flaps
+RISC technology speeds up a computer by simplifying the internal software .	1.0	simplifying	RISC technology	software
+RISC technology speeds up a computer by simplifying the internal software .	1.0	simplifying	RISC technology	internal software
+`` It 's a wait - and - see attitude , '' said Dave Vellante , vice president of storage research for International Data Corp .	1.0	president of	Dave Vellante	storage research
+`` It 's a wait - and - see attitude , '' said Dave Vellante , vice president of storage research for International Data Corp .	1.0	president for	Dave Vellante	International Data Corp
+Panhandle Eastern Corp. said it applied , on behalf of two of its subsidiaries , to the Federal Energy Regulatory Commission for permission to build a 352 - mile , $ 273 million pipeline system from Pittsburg County , Okla. , to Independence , Miss .	1.0	to mile is	Independence	$ 273 million pipeline system from Pittsburg County
+Panhandle Eastern Corp. said it applied , on behalf of two of its subsidiaries , to the Federal Energy Regulatory Commission for permission to build a 352 - mile , $ 273 million pipeline system from Pittsburg County , Okla. , to Independence , Miss .	1.0	system from	352 mile	Pittsburg County
+Keeping the Japanese happy will be one of the most important tasks facing conservative leader Ernesto Ruffo when he takes office Nov. 1 , as the first opposition governor in Mexico 's modern history .	1.0	takes	he	office
+Keeping the Japanese happy will be one of the most important tasks facing conservative leader Ernesto Ruffo when he takes office Nov. 1 , as the first opposition governor in Mexico 's modern history .	1.0	takes office at_time	he	Nov. 1
+Keeping the Japanese happy will be one of the most important tasks facing conservative leader Ernesto Ruffo when he takes office Nov. 1 , as the first opposition governor in Mexico 's modern history .	1.0	is in	first opposition governor	Mexico 's modern history
+Keeping the Japanese happy will be one of the most important tasks facing conservative leader Ernesto Ruffo when he takes office Nov. 1 , as the first opposition governor in Mexico 's modern history .	1.0	in	Mexico	modern history
+Only his factories in Japan and Korea , employing his followers at subsistence wages and producing everything from rifles to ginseng to expensive marble vases , kept the money flowing westward .	1.0	producing	his followers	everything from rifles
+Only his factories in Japan and Korea , employing his followers at subsistence wages and producing everything from rifles to ginseng to expensive marble vases , kept the money flowing westward .	1.0	producing	his followers	everything from rifles to ginseng to expensive marble vases
+Only his factories in Japan and Korea , employing his followers at subsistence wages and producing everything from rifles to ginseng to expensive marble vases , kept the money flowing westward .	0.946	everything from	producing	rifles to expensive marble vases
+Only his factories in Japan and Korea , employing his followers at subsistence wages and producing everything from rifles to ginseng to expensive marble vases , kept the money flowing westward .	0.946	everything from	producing	rifles to ginseng to expensive marble vases
+Only his factories in Japan and Korea , employing his followers at subsistence wages and producing everything from rifles to ginseng to expensive marble vases , kept the money flowing westward .	0.946	everything from	producing	rifles to ginseng
+Only his factories in Japan and Korea , employing his followers at subsistence wages and producing everything from rifles to ginseng to expensive marble vases , kept the money flowing westward .	1.0	kept	his factories	money flowing westward
+Only his factories in Japan and Korea , employing his followers at subsistence wages and producing everything from rifles to ginseng to expensive marble vases , kept the money flowing westward .	1.0	producing	his followers	everything from rifles to ginseng
+Only his factories in Japan and Korea , employing his followers at subsistence wages and producing everything from rifles to ginseng to expensive marble vases , kept the money flowing westward .	1.0	producing	his followers	everything from rifles to ginseng to marble vases
+Only his factories in Japan and Korea , employing his followers at subsistence wages and producing everything from rifles to ginseng to expensive marble vases , kept the money flowing westward .	0.946	everything from	producing	rifles
+Only his factories in Japan and Korea , employing his followers at subsistence wages and producing everything from rifles to ginseng to expensive marble vases , kept the money flowing westward .	0.946	everything from	producing	rifles to marble vases
+Only his factories in Japan and Korea , employing his followers at subsistence wages and producing everything from rifles to ginseng to expensive marble vases , kept the money flowing westward .	1.0	producing	his followers	everything from rifles to expensive marble vases
+Only his factories in Japan and Korea , employing his followers at subsistence wages and producing everything from rifles to ginseng to expensive marble vases , kept the money flowing westward .	1.0	kept	his factories	money flowing
+Only his factories in Japan and Korea , employing his followers at subsistence wages and producing everything from rifles to ginseng to expensive marble vases , kept the money flowing westward .	0.946	everything from	producing	rifles to ginseng to marble vases
+Only his factories in Japan and Korea , employing his followers at subsistence wages and producing everything from rifles to ginseng to expensive marble vases , kept the money flowing westward .	1.0	kept	his factories	money
+Only his factories in Japan and Korea , employing his followers at subsistence wages and producing everything from rifles to ginseng to expensive marble vases , kept the money flowing westward .	1.0	producing	his followers	everything from rifles to marble vases
+Only his factories in Japan and Korea , employing his followers at subsistence wages and producing everything from rifles to ginseng to expensive marble vases , kept the money flowing westward .	1.0	is in	his factories	Japan
+Only his factories in Japan and Korea , employing his followers at subsistence wages and producing everything from rifles to ginseng to expensive marble vases , kept the money flowing westward .	1.0	producing	his followers	everything
+But when they arrived at the door , all were afraid to go in , fearing that they would be out of place .	1.0	were	all	afraid
+But when they arrived at the door , all were afraid to go in , fearing that they would be out of place .	1.0	arrived at	they	door
+But when they arrived at the door , all were afraid to go in , fearing that they would be out of place .	1.0	be out of	they	place
+Sen. Mitchell is confident he has sufficient votes to block such a measure with procedural actions .	1.0	is with	measure	procedural actions
+Sen. Mitchell is confident he has sufficient votes to block such a measure with procedural actions .	1.0	has	he	votes
+Sen. Mitchell is confident he has sufficient votes to block such a measure with procedural actions .	1.0	has	he	sufficient votes
+Sen. Mitchell is confident he has sufficient votes to block such a measure with procedural actions .	1.0	is	Sen. Mitchell	confident
+Ever since , the remaining members have been desperate for the United States to rejoin this dreadful group .	1.0	have	remaining members	Ever since have desperate
+Ever since , the remaining members have been desperate for the United States to rejoin this dreadful group .	1.0	have	members	since have desperate
+Ever since , the remaining members have been desperate for the United States to rejoin this dreadful group .	1.0	have	remaining members	since have desperate
+Ever since , the remaining members have been desperate for the United States to rejoin this dreadful group .	1.0	have	remaining members	have desperate
+Ever since , the remaining members have been desperate for the United States to rejoin this dreadful group .	1.0	have	members	Ever have desperate
+Ever since , the remaining members have been desperate for the United States to rejoin this dreadful group .	1.0	have	remaining members	Ever have desperate
+Ever since , the remaining members have been desperate for the United States to rejoin this dreadful group .	1.0	have	members	have desperate
+Ever since , the remaining members have been desperate for the United States to rejoin this dreadful group .	1.0	have	members	Ever since have desperate
+There 's light at the end of the tunnel for municipals , '' he said , adding that he expects prices to `` inch up '' in the near term .	1.0	said	he	adding
+There 's light at the end of the tunnel for municipals , '' he said , adding that he expects prices to `` inch up '' in the near term .	1.0	expects	he	prices
+`` It 's a super - exciting set of discoveries , '' says Bert Vogelstein , a Johns Hopkins University researcher who has just found a gene pivotal to the triggering of colon cancer .	0.567	pivotal to	gene	triggering of colon cancer
+`` It 's a super - exciting set of discoveries , '' says Bert Vogelstein , a Johns Hopkins University researcher who has just found a gene pivotal to the triggering of colon cancer .	0.567	pivotal to	gene	triggering
+`` It 's a super - exciting set of discoveries , '' says Bert Vogelstein , a Johns Hopkins University researcher who has just found a gene pivotal to the triggering of colon cancer .	1.0	has	It	exciting
+`` It 's a super - exciting set of discoveries , '' says Bert Vogelstein , a Johns Hopkins University researcher who has just found a gene pivotal to the triggering of colon cancer .	1.0	has	It	super
+U.S. makers have under 10 % share , compared with half the market in Europe and 80 % at home .	1.0	is in	market	Europe
+Sidley will maintain its association with the Hashidate Law Office in Tokyo .	1.0	will maintain	Sidley	its association with Hashidate Law Office in Tokyo
+Sidley will maintain its association with the Hashidate Law Office in Tokyo .	1.0	is with	its association	Hashidate Law Office in Tokyo
+Sidley will maintain its association with the Hashidate Law Office in Tokyo .	1.0	will maintain	Sidley	its association
+Sidley will maintain its association with the Hashidate Law Office in Tokyo .	1.0	will maintain	Sidley	its association with Hashidate Law Office
+Sidley will maintain its association with the Hashidate Law Office in Tokyo .	1.0	is in	Hashidate Law Office	Tokyo
+Only when one is ascending -- or in our case descending a tad trop rapidement -- does one feel , well , airborne in a picnic basket .	1.0	is ascending in	one	our case
+Warner has a five - year exclusive contract with Mr. Guber and Mr. Peters that requires them to make movies exclusively at the Warner Bros. studio .	1.0	is with	five year exclusive contract	Mr. Guber
+Warner has a five - year exclusive contract with Mr. Guber and Mr. Peters that requires them to make movies exclusively at the Warner Bros. studio .	1.0	make movies at	them	Warner Bros. studio
+Warner has a five - year exclusive contract with Mr. Guber and Mr. Peters that requires them to make movies exclusively at the Warner Bros. studio .	1.0	make movies at	them	exclusively Warner Bros. studio
+Warner has a five - year exclusive contract with Mr. Guber and Mr. Peters that requires them to make movies exclusively at the Warner Bros. studio .	1.0	make	them	movies
+Metromedia , headed by John W. Kluge , has interests in telecommunications , robotic painting , computer software , restaurants and entertainment .	0.892	headed by	Metromedia	John W. Kluge
+Metromedia , headed by John W. Kluge , has interests in telecommunications , robotic painting , computer software , restaurants and entertainment .	1.0	is in	interests	telecommunications
+Metromedia , headed by John W. Kluge , has interests in telecommunications , robotic painting , computer software , restaurants and entertainment .	1.0	has	Metromedia	interests in telecommunications
+Metromedia , headed by John W. Kluge , has interests in telecommunications , robotic painting , computer software , restaurants and entertainment .	1.0	has	Metromedia	interests
+To increase their share of that business , jewelry makers such as Crystal Brands Inc. 's Trifari and Monet units and Swank Inc. , maker of Anne Klein jewelry , are launching new lines with as much fanfare as the fragrance companies .	1.0	increase	jewelry makers	their share
+To increase their share of that business , jewelry makers such as Crystal Brands Inc. 's Trifari and Monet units and Swank Inc. , maker of Anne Klein jewelry , are launching new lines with as much fanfare as the fragrance companies .	1.0	are launching	jewelry makers	lines
+To increase their share of that business , jewelry makers such as Crystal Brands Inc. 's Trifari and Monet units and Swank Inc. , maker of Anne Klein jewelry , are launching new lines with as much fanfare as the fragrance companies .	1.0	are launching lines with	jewelry makers	much fanfare
+To increase their share of that business , jewelry makers such as Crystal Brands Inc. 's Trifari and Monet units and Swank Inc. , maker of Anne Klein jewelry , are launching new lines with as much fanfare as the fragrance companies .	1.0	maker of	Swank Inc.	Anne Klein jewelry
+To increase their share of that business , jewelry makers such as Crystal Brands Inc. 's Trifari and Monet units and Swank Inc. , maker of Anne Klein jewelry , are launching new lines with as much fanfare as the fragrance companies .	1.0	such as	Crystal Brands Inc.	Trifari
+To increase their share of that business , jewelry makers such as Crystal Brands Inc. 's Trifari and Monet units and Swank Inc. , maker of Anne Klein jewelry , are launching new lines with as much fanfare as the fragrance companies .	1.0	are launching	jewelry makers	new lines
+To increase their share of that business , jewelry makers such as Crystal Brands Inc. 's Trifari and Monet units and Swank Inc. , maker of Anne Klein jewelry , are launching new lines with as much fanfare as the fragrance companies .	1.0	are launching lines with	jewelry makers	fanfare
+To increase their share of that business , jewelry makers such as Crystal Brands Inc. 's Trifari and Monet units and Swank Inc. , maker of Anne Klein jewelry , are launching new lines with as much fanfare as the fragrance companies .	1.0	are launching lines with	jewelry makers	as fanfare
+However , a Canadian Embassy official in Tel Aviv said that Canada was unlikely to sell the Candu heavy - water reactor to Israel since Israel has n't signed the Nuclear Non - Proliferation Treaty .	1.0	is in	Canadian Embassy official	Tel Aviv
+Mr. Ridley 's decision fires the starting pistol for perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker .	1.0	fires pistol for	Mr. Ridley 's decision	contest
+Mr. Ridley 's decision fires the starting pistol for perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker .	1.0	fires pistol for	Mr. Ridley 's decision	contest between world 's auto giants for Britain 's luxury car maker
+Mr. Ridley 's decision fires the starting pistol for perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker .	1.0	fires pistol for	Mr. Ridley 's decision	costly contest between world 's auto giants
+Mr. Ridley 's decision fires the starting pistol for perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker .	1.0	fires pistol for	Mr. Ridley 's decision	perhaps contest between world 's auto giants for Britain 's leading luxury car maker
+Mr. Ridley 's decision fires the starting pistol for perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker .	1.0	fires pistol for	Mr. Ridley 's decision	perhaps contest between world 's auto giants
+Mr. Ridley 's decision fires the starting pistol for perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker .	1.0	fires pistol for	Mr. Ridley 's decision	costly contest
+Mr. Ridley 's decision fires the starting pistol for perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker .	1.0	for	Britain	leading luxury car maker
+Mr. Ridley 's decision fires the starting pistol for perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker .	1.0	fires pistol for	Mr. Ridley 's decision	perhaps costly contest
+Mr. Ridley 's decision fires the starting pistol for perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker .	1.0	fires pistol for	Mr. Ridley 's decision	perhaps contest between world 's auto giants for Britain 's luxury car maker
+Mr. Ridley 's decision fires the starting pistol for perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker .	1.0	between	world	auto giants for leading luxury car maker
+Mr. Ridley 's decision fires the starting pistol for perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker .	1.0	has	Mr. Ridley	decision
+Mr. Ridley 's decision fires the starting pistol for perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker .	1.0	fires pistol for	Mr. Ridley 's decision	contest between world 's auto giants
+Mr. Ridley 's decision fires the starting pistol for perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker .	1.0	fires	Mr. Ridley 's decision	starting pistol
+Mr. Ridley 's decision fires the starting pistol for perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker .	1.0	fires pistol for	Mr. Ridley 's decision	contest between world 's auto giants for Britain 's leading luxury car maker
+Mr. Ridley 's decision fires the starting pistol for perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker .	1.0	fires pistol for	Mr. Ridley 's decision	perhaps costly contest between world 's auto giants
+Mr. Ridley 's decision fires the starting pistol for perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker .	1.0	fires pistol for	Mr. Ridley 's decision	perhaps costly contest between world 's auto giants for Britain 's leading luxury car maker
+Mr. Ridley 's decision fires the starting pistol for perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker .	1.0	fires pistol for	Mr. Ridley 's decision	costly contest between world 's auto giants for Britain 's luxury car maker
+Mr. Ridley 's decision fires the starting pistol for perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker .	1.0	fires pistol for	Mr. Ridley 's decision	costly contest between world 's auto giants for Britain 's leading luxury car maker
+Mr. Ridley 's decision fires the starting pistol for perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker .	1.0	fires pistol for	Mr. Ridley 's decision	perhaps contest
+Mr. Ridley 's decision fires the starting pistol for perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker .	1.0	fires	Mr. Ridley 's decision	pistol
+Mr. Ridley 's decision fires the starting pistol for perhaps a costly contest between the world 's auto giants for Britain 's leading luxury - car maker .	1.0	fires pistol for	Mr. Ridley 's decision	perhaps costly contest between world 's auto giants for Britain 's luxury car maker
+The basket product , while it has got off to a slow start , is being supported by some big brokerage firms -- another member of Mr. Phelan 's splintered constituency .	1.0	being	basket product	is supported by big brokerage firms
+The basket product , while it has got off to a slow start , is being supported by some big brokerage firms -- another member of Mr. Phelan 's splintered constituency .	1.0	of	Mr. Phelan	splintered constituency
+The basket product , while it has got off to a slow start , is being supported by some big brokerage firms -- another member of Mr. Phelan 's splintered constituency .	1.0	being	basket product	is supported by brokerage firms
+The basket product , while it has got off to a slow start , is being supported by some big brokerage firms -- another member of Mr. Phelan 's splintered constituency .	1.0	being	basket product	is supported
+But although the golden share has been waived , a hostile bidder for Jaguar would still have to alter the British concern 's articles of association which ban shareholdings of more than 15 % .	1.0	alter	hostile bidder	British concern 's articles
+But although the golden share has been waived , a hostile bidder for Jaguar would still have to alter the British concern 's articles of association which ban shareholdings of more than 15 % .	1.0	alter	bidder	British concern 's articles
+But although the golden share has been waived , a hostile bidder for Jaguar would still have to alter the British concern 's articles of association which ban shareholdings of more than 15 % .	1.0	alter	bidder	concern 's articles
+But although the golden share has been waived , a hostile bidder for Jaguar would still have to alter the British concern 's articles of association which ban shareholdings of more than 15 % .	1.0	has	golden share	has waived
+But although the golden share has been waived , a hostile bidder for Jaguar would still have to alter the British concern 's articles of association which ban shareholdings of more than 15 % .	1.0	has	British concern	articles of association
+But although the golden share has been waived , a hostile bidder for Jaguar would still have to alter the British concern 's articles of association which ban shareholdings of more than 15 % .	1.0	alter	hostile bidder	concern 's articles
+But although the golden share has been waived , a hostile bidder for Jaguar would still have to alter the British concern 's articles of association which ban shareholdings of more than 15 % .	1.0	has	share	has waived
+Here are price trends on the world 's major stock markets , as calculated by Morgan Stanley Capital International Perspective , Geneva .	1.0	on	world	major stock markets
+Strong sales so far this year are certain to turn the tide , but even the 25 % market share that Nissan expects in 1989 will leave it far below its position at the beginning of the decade .	1.0	are	Strong sales	certain
+Strong sales so far this year are certain to turn the tide , but even the 25 % market share that Nissan expects in 1989 will leave it far below its position at the beginning of the decade .	1.0	turn	Strong sales	tide
+Strong sales so far this year are certain to turn the tide , but even the 25 % market share that Nissan expects in 1989 will leave it far below its position at the beginning of the decade .	1.0	turn	sales	tide
+Strong sales so far this year are certain to turn the tide , but even the 25 % market share that Nissan expects in 1989 will leave it far below its position at the beginning of the decade .	1.0	are	sales	certain
+Roger M. Marino , president , was named to the new post of vice chairman .	1.0	was named to	Roger M. Marino	post of vice chairman
+Roger M. Marino , president , was named to the new post of vice chairman .	1.0	was named to	Roger M. Marino	new post
+Roger M. Marino , president , was named to the new post of vice chairman .	1.0	was	Roger M. Marino	named
+Roger M. Marino , president , was named to the new post of vice chairman .	1.0	was named to	Roger M. Marino	post
+Roger M. Marino , president , was named to the new post of vice chairman .	1.0	was named to	Roger M. Marino	new post of vice chairman
+In the first nine months , profit rose 10 % to $ 313.2 million , or $ 3.89 a share , from $ 283.9 million , or $ 3.53 a share .	0.286	rose to	profit	$ 313.2 million
+In the first nine months , profit rose 10 % to $ 313.2 million , or $ 3.89 a share , from $ 283.9 million , or $ 3.53 a share .	0.286	rose from	profit	$ 283.9 million
+In the first nine months , profit rose 10 % to $ 313.2 million , or $ 3.89 a share , from $ 283.9 million , or $ 3.53 a share .	0.286	rose In	profit	nine months
+In the first nine months , profit rose 10 % to $ 313.2 million , or $ 3.89 a share , from $ 283.9 million , or $ 3.53 a share .	1.0	rose	profit	10 %
+In the first nine months , profit rose 10 % to $ 313.2 million , or $ 3.89 a share , from $ 283.9 million , or $ 3.53 a share .	0.286	rose In	profit	first nine months
+A spokesman said HealthVest has paid two of the three banks it owed interest to in October and is in negotiations with the third bank .	1.0	is with	negotiations	third bank
+Despite the modest gains , traders said the market remains dull , with investors remaining cautiously on the sidelines .	1.0	said Despite	traders	modest gains
+Despite the modest gains , traders said the market remains dull , with investors remaining cautiously on the sidelines .	1.0	said Despite	traders	gains
+Workers at two Chilean mines , Los Bronces and El Soldado , which belong to the Exxon - owned Minera Disputado group , will vote Thursday on whether to strike after a two - year labor pact ends today .	1.0	ends at_time	two year labor pact	today
+`` Nothing can be better than this , '' says Don Sider , owner of the West Palm Beach Tropics .	1.0	owner of	Don Sider	West Palm Beach Tropics
+Now that the New York decision has been left intact , other states may follow suit .	1.0	follow	states	suit
+Now that the New York decision has been left intact , other states may follow suit .	1.0	intact follow	states	suit
+Now that the New York decision has been left intact , other states may follow suit .	1.0	follow	other states	suit
+Now that the New York decision has been left intact , other states may follow suit .	1.0	been	New York decision	left
+Now that the New York decision has been left intact , other states may follow suit .	1.0	intact follow	other states	suit
+Rather ominously , rabbit studies reveal that RU-486 can cause birth defects , Lancet , the British medical journal , reported in 1987 .	1.0	cause	RU-486	birth defects
+And , since the public has always been fascinated by gossip and voyeurism , reporters and editors will strain for creative angles to justify the inclusion of collateral facts about private lives including sexual activities and domestic relationships , activities of family members , and all matters about mental and physical health .	1.0	has	public	has always fascinated
+And , since the public has always been fascinated by gossip and voyeurism , reporters and editors will strain for creative angles to justify the inclusion of collateral facts about private lives including sexual activities and domestic relationships , activities of family members , and all matters about mental and physical health .	1.0	will strain for	reporters	creative angles
+And , since the public has always been fascinated by gossip and voyeurism , reporters and editors will strain for creative angles to justify the inclusion of collateral facts about private lives including sexual activities and domestic relationships , activities of family members , and all matters about mental and physical health .	1.0	has	public	has always fascinated by gossip
+And , since the public has always been fascinated by gossip and voyeurism , reporters and editors will strain for creative angles to justify the inclusion of collateral facts about private lives including sexual activities and domestic relationships , activities of family members , and all matters about mental and physical health .	1.0	activities of	inclusion	family members
+And , since the public has always been fascinated by gossip and voyeurism , reporters and editors will strain for creative angles to justify the inclusion of collateral facts about private lives including sexual activities and domestic relationships , activities of family members , and all matters about mental and physical health .	1.0	has	public	has fascinated by gossip
+And , since the public has always been fascinated by gossip and voyeurism , reporters and editors will strain for creative angles to justify the inclusion of collateral facts about private lives including sexual activities and domestic relationships , activities of family members , and all matters about mental and physical health .	1.0	has	public	has fascinated
+And , since the public has always been fascinated by gossip and voyeurism , reporters and editors will strain for creative angles to justify the inclusion of collateral facts about private lives including sexual activities and domestic relationships , activities of family members , and all matters about mental and physical health .	1.0	will strain for	reporters	angles
+And , since the public has always been fascinated by gossip and voyeurism , reporters and editors will strain for creative angles to justify the inclusion of collateral facts about private lives including sexual activities and domestic relationships , activities of family members , and all matters about mental and physical health .	1.0	strain	reporters	editors
+This provision met early and strong resistance from investment bankers worried about disruptions in their clients ' portfolios .	1.0	is in	disruptions	their clients ' portfolios
+Mr. Guber and Mr. Peters also almost certainly would n't be able to participate in future sequels to `` Batman , '' the blockbuster hit they produced for Warner .	1.0	participate in	Mr. Guber	future sequels to Batman
+Mr. Guber and Mr. Peters also almost certainly would n't be able to participate in future sequels to `` Batman , '' the blockbuster hit they produced for Warner .	1.0	produced for	they	Warner
+Mr. Guber and Mr. Peters also almost certainly would n't be able to participate in future sequels to `` Batman , '' the blockbuster hit they produced for Warner .	1.0	participate	Mr. Guber	Mr. Peters
+The Lone Star Steel lawsuit also asks the court to rule that Lone Star Technologies is jointly responsible for a $ 4.5 million Lone Star Steel pension payment that was due , but was n't paid , in September and that the parent company ca n't recover the amount from its subsidiary if the parent company makes the payment .	1.0	is	Lone Star Technologies	responsible
+The Lone Star Steel lawsuit also asks the court to rule that Lone Star Technologies is jointly responsible for a $ 4.5 million Lone Star Steel pension payment that was due , but was n't paid , in September and that the parent company ca n't recover the amount from its subsidiary if the parent company makes the payment .	1.0	is	Lone Star Technologies	jointly responsible
+Years ago , he collaborated with the new music gurus Peter Serkin and Fred Sherry in the very countercultural chamber group Tashi , which won audiences over to dreaded contemporary scores like Messiaen 's `` Quartet for the End of Time . ''	1.0	Years ago collaborated in	he	chamber group
+Years ago , he collaborated with the new music gurus Peter Serkin and Fred Sherry in the very countercultural chamber group Tashi , which won audiences over to dreaded contemporary scores like Messiaen 's `` Quartet for the End of Time . ''	1.0	collaborated in	he	countercultural chamber group
+Years ago , he collaborated with the new music gurus Peter Serkin and Fred Sherry in the very countercultural chamber group Tashi , which won audiences over to dreaded contemporary scores like Messiaen 's `` Quartet for the End of Time . ''	1.0	Years collaborated with	he	new music gurus
+Years ago , he collaborated with the new music gurus Peter Serkin and Fred Sherry in the very countercultural chamber group Tashi , which won audiences over to dreaded contemporary scores like Messiaen 's `` Quartet for the End of Time . ''	1.0	collaborated with	he	music gurus
+Years ago , he collaborated with the new music gurus Peter Serkin and Fred Sherry in the very countercultural chamber group Tashi , which won audiences over to dreaded contemporary scores like Messiaen 's `` Quartet for the End of Time . ''	1.0	collaborated in	he	chamber group
+Years ago , he collaborated with the new music gurus Peter Serkin and Fred Sherry in the very countercultural chamber group Tashi , which won audiences over to dreaded contemporary scores like Messiaen 's `` Quartet for the End of Time . ''	1.0	Years collaborated in	he	countercultural chamber group
+Years ago , he collaborated with the new music gurus Peter Serkin and Fred Sherry in the very countercultural chamber group Tashi , which won audiences over to dreaded contemporary scores like Messiaen 's `` Quartet for the End of Time . ''	1.0	like	Messiaen	Quartet for End of Time
+Years ago , he collaborated with the new music gurus Peter Serkin and Fred Sherry in the very countercultural chamber group Tashi , which won audiences over to dreaded contemporary scores like Messiaen 's `` Quartet for the End of Time . ''	1.0	Years collaborated in	he	very countercultural chamber group
+Years ago , he collaborated with the new music gurus Peter Serkin and Fred Sherry in the very countercultural chamber group Tashi , which won audiences over to dreaded contemporary scores like Messiaen 's `` Quartet for the End of Time . ''	1.0	Years ago collaborated with	he	music gurus
+Years ago , he collaborated with the new music gurus Peter Serkin and Fred Sherry in the very countercultural chamber group Tashi , which won audiences over to dreaded contemporary scores like Messiaen 's `` Quartet for the End of Time . ''	1.0	collaborated with	he	new music gurus
+Years ago , he collaborated with the new music gurus Peter Serkin and Fred Sherry in the very countercultural chamber group Tashi , which won audiences over to dreaded contemporary scores like Messiaen 's `` Quartet for the End of Time . ''	1.0	Years collaborated in	he	chamber group
+Years ago , he collaborated with the new music gurus Peter Serkin and Fred Sherry in the very countercultural chamber group Tashi , which won audiences over to dreaded contemporary scores like Messiaen 's `` Quartet for the End of Time . ''	1.0	collaborated in	he	very countercultural chamber group
+Years ago , he collaborated with the new music gurus Peter Serkin and Fred Sherry in the very countercultural chamber group Tashi , which won audiences over to dreaded contemporary scores like Messiaen 's `` Quartet for the End of Time . ''	1.0	Years collaborated with	he	music gurus
+Years ago , he collaborated with the new music gurus Peter Serkin and Fred Sherry in the very countercultural chamber group Tashi , which won audiences over to dreaded contemporary scores like Messiaen 's `` Quartet for the End of Time . ''	1.0	Years ago collaborated with	he	new music gurus
+Years ago , he collaborated with the new music gurus Peter Serkin and Fred Sherry in the very countercultural chamber group Tashi , which won audiences over to dreaded contemporary scores like Messiaen 's `` Quartet for the End of Time . ''	1.0	Years ago collaborated in	he	countercultural chamber group
+Years ago , he collaborated with the new music gurus Peter Serkin and Fred Sherry in the very countercultural chamber group Tashi , which won audiences over to dreaded contemporary scores like Messiaen 's `` Quartet for the End of Time . ''	1.0	Years ago collaborated in	he	very countercultural chamber group
+Mr. Zayadi was previously president and chief operating officer of Zellers Inc. , a retail chain that is owned by Toronto - based Hudson 's Bay Co. , Canada 's largest department store operator .	1.0	was	Mr. Zayadi	previously president
+Mr. Zayadi was previously president and chief operating officer of Zellers Inc. , a retail chain that is owned by Toronto - based Hudson 's Bay Co. , Canada 's largest department store operator .	1.0	was president of	Mr. Zayadi	Zellers Inc.
+Mr. Zayadi was previously president and chief operating officer of Zellers Inc. , a retail chain that is owned by Toronto - based Hudson 's Bay Co. , Canada 's largest department store operator .	1.0	was	Mr. Zayadi	president
+Mr. Zayadi was previously president and chief operating officer of Zellers Inc. , a retail chain that is owned by Toronto - based Hudson 's Bay Co. , Canada 's largest department store operator .	1.0	based	Hudson	Bay Co.
+Mr. Zayadi was previously president and chief operating officer of Zellers Inc. , a retail chain that is owned by Toronto - based Hudson 's Bay Co. , Canada 's largest department store operator .	1.0	was previously president of	Mr. Zayadi	Zellers Inc.
+Mr. Zayadi was previously president and chief operating officer of Zellers Inc. , a retail chain that is owned by Toronto - based Hudson 's Bay Co. , Canada 's largest department store operator .	1.0	has	Canada	largest department store operator
+Mr. Zayadi was previously president and chief operating officer of Zellers Inc. , a retail chain that is owned by Toronto - based Hudson 's Bay Co. , Canada 's largest department store operator .	1.0	's Co. is	Hudson	largest department store operator
+Meanwhile , at home , Mitsubishi has control of some major projects .	1.0	has	Mitsubishi	control of major projects
+Meanwhile , at home , Mitsubishi has control of some major projects .	1.0	has	Mitsubishi	control
+Meanwhile , at home , Mitsubishi has control of some major projects .	1.0	Meanwhile has control at	Mitsubishi	home
+Meanwhile , at home , Mitsubishi has control of some major projects .	1.0	Meanwhile has	Mitsubishi	control of projects
+Meanwhile , at home , Mitsubishi has control of some major projects .	1.0	Meanwhile has	Mitsubishi	control
+Meanwhile , at home , Mitsubishi has control of some major projects .	1.0	has	Mitsubishi	control of projects
+Meanwhile , at home , Mitsubishi has control of some major projects .	1.0	Meanwhile has	Mitsubishi	control of major projects
+Meanwhile , at home , Mitsubishi has control of some major projects .	1.0	has control at	Mitsubishi	home
+But fully 90 % of those polled felt they did n't need to belong to a health club .	1.0	belong to	they	health club
+Labor costs are climbing at a far more rapid pace in the health care industry than in other industries .	1.0	are climbing at	Labor costs	rapid pace in health care industry than in industries
+Labor costs are climbing at a far more rapid pace in the health care industry than in other industries .	1.0	are climbing at	Labor costs	more rapid pace in health care industry than in other industries
+Labor costs are climbing at a far more rapid pace in the health care industry than in other industries .	1.0	is in	rapid pace	health care industry
+Labor costs are climbing at a far more rapid pace in the health care industry than in other industries .	1.0	are climbing at	Labor costs	rapid pace than in other industries
+Labor costs are climbing at a far more rapid pace in the health care industry than in other industries .	1.0	are climbing at	Labor costs	pace than in industries
+Labor costs are climbing at a far more rapid pace in the health care industry than in other industries .	1.0	are climbing at	Labor costs	pace than in other industries
+Labor costs are climbing at a far more rapid pace in the health care industry than in other industries .	1.0	are climbing at	Labor costs	rapid pace than in industries
+Labor costs are climbing at a far more rapid pace in the health care industry than in other industries .	1.0	are climbing at	Labor costs	far more rapid pace in health care industry than in industries
+Labor costs are climbing at a far more rapid pace in the health care industry than in other industries .	1.0	are climbing at	Labor costs	rapid pace in health care industry than in other industries
+Labor costs are climbing at a far more rapid pace in the health care industry than in other industries .	1.0	are climbing at	Labor costs	more rapid pace than in other industries
+Labor costs are climbing at a far more rapid pace in the health care industry than in other industries .	1.0	are climbing at	Labor costs	more rapid pace than in industries
+Labor costs are climbing at a far more rapid pace in the health care industry than in other industries .	1.0	are climbing at	Labor costs	far more rapid pace than in industries
+Labor costs are climbing at a far more rapid pace in the health care industry than in other industries .	1.0	are climbing at	Labor costs	pace in health care industry than in industries
+Labor costs are climbing at a far more rapid pace in the health care industry than in other industries .	1.0	are climbing at	Labor costs	far more rapid pace than in other industries
+Labor costs are climbing at a far more rapid pace in the health care industry than in other industries .	1.0	are climbing at	Labor costs	pace in health care industry than in other industries
+Labor costs are climbing at a far more rapid pace in the health care industry than in other industries .	1.0	are climbing at	Labor costs	more rapid pace in health care industry than in industries
+Labor costs are climbing at a far more rapid pace in the health care industry than in other industries .	1.0	are climbing at	Labor costs	far more rapid pace in health care industry than in other industries
+The forest - products concern currently has about 38 million shares outstanding .	1.0	currently has	products concern	about 38 million shares outstanding
+The forest - products concern currently has about 38 million shares outstanding .	1.0	currently has	products concern	about 38 million shares
+The forest - products concern currently has about 38 million shares outstanding .	1.0	has	products concern	about 38 million shares
+The forest - products concern currently has about 38 million shares outstanding .	1.0	has	products concern	about 38 million shares outstanding
+Sometimes , if you have a headache , you can go out and walk it right off . ''	1.0	walk	you	it
+Sometimes , if you have a headache , you can go out and walk it right off . ''	1.0	have	you	headache
+Sometimes , if you have a headache , you can go out and walk it right off . ''	1.0	walk off	you	it
+Sometimes , if you have a headache , you can go out and walk it right off . ''	1.0	walk right off	you	it
+Procter & Gamble Co. recently introduced refillable versions of four products , including Tide and Mr. Clean , in Canada , but does n't plan to bring them to the U.S. .	1.0	is in	four products	Canada
+The effect is that lawsuits that might have been barred because they were filed too late could proceed because of the one - year extension .	1.0	were	they	filed late
+The effect is that lawsuits that might have been barred because they were filed too late could proceed because of the one - year extension .	1.0	were	they	filed
+The effect is that lawsuits that might have been barred because they were filed too late could proceed because of the one - year extension .	1.0	were	they	filed too late
+The New Orleans oil and gas exploration and diving operations company added that it does n't expect any further adverse financial impact from the restructuring .	1.0	added	New Orleans oil	gas exploration
+The New Orleans oil and gas exploration and diving operations company added that it does n't expect any further adverse financial impact from the restructuring .	0.102	added	New Orleans oil	gas exploration
+The New Orleans oil and gas exploration and diving operations company added that it does n't expect any further adverse financial impact from the restructuring .	0.102	added	New Orleans oil	diving operations company
+The New Orleans oil and gas exploration and diving operations company added that it does n't expect any further adverse financial impact from the restructuring .	1.0	added	New Orleans oil	diving operations company
+The centerpiece of that complex , the Landmark Tower , will be Japan 's tallest building when it is completed in 1993 .	1.0	is	it	completed
+The centerpiece of that complex , the Landmark Tower , will be Japan 's tallest building when it is completed in 1993 .	1.0	will	centerpiece	will Japan 's tallest building
+The centerpiece of that complex , the Landmark Tower , will be Japan 's tallest building when it is completed in 1993 .	1.0	is	it	when completed in 1993
+The centerpiece of that complex , the Landmark Tower , will be Japan 's tallest building when it is completed in 1993 .	1.0	is	it	when completed
+The centerpiece of that complex , the Landmark Tower , will be Japan 's tallest building when it is completed in 1993 .	1.0	of centerpiece is	complex	Landmark Tower
+The centerpiece of that complex , the Landmark Tower , will be Japan 's tallest building when it is completed in 1993 .	1.0	will	centerpiece	will Japan 's building
+The centerpiece of that complex , the Landmark Tower , will be Japan 's tallest building when it is completed in 1993 .	1.0	is completed in	it	1993
+Norris McLaughlin is a general - practice firm that has expanded recently into such specialties as banking , labor and environmental work .	1.0	is	McLaughlin	general
+According to one person familiar with the airline , the buy - out group -- led by United 's pilots union and UAL Chairman Stephen Wolf -- has begun billing UAL for fees and expenses it owes to investment bankers , law firms and banks .	1.0	by	United	pilots union
+According to one person familiar with the airline , the buy - out group -- led by United 's pilots union and UAL Chairman Stephen Wolf -- has begun billing UAL for fees and expenses it owes to investment bankers , law firms and banks .	1.0	has begun According to	buy	one person familiar with airline
+According to one person familiar with the airline , the buy - out group -- led by United 's pilots union and UAL Chairman Stephen Wolf -- has begun billing UAL for fees and expenses it owes to investment bankers , law firms and banks .	1.0	has begun According to	buy	one person familiar
+According to one person familiar with the airline , the buy - out group -- led by United 's pilots union and UAL Chairman Stephen Wolf -- has begun billing UAL for fees and expenses it owes to investment bankers , law firms and banks .	1.0	billing	buy	UAL
+According to one person familiar with the airline , the buy - out group -- led by United 's pilots union and UAL Chairman Stephen Wolf -- has begun billing UAL for fees and expenses it owes to investment bankers , law firms and banks .	1.0	has begun According to	buy	one person
+According to one person familiar with the airline , the buy - out group -- led by United 's pilots union and UAL Chairman Stephen Wolf -- has begun billing UAL for fees and expenses it owes to investment bankers , law firms and banks .	1.0	owes to	it	investment bankers
+Employers could also pay a subminimum `` training wage '' for 90 days to new workers who are up to 19 years old , and then for another 90 days if the company institutes a specific training program for the newcomers .	1.0	could also pay	Employers	training wage
+Employers could also pay a subminimum `` training wage '' for 90 days to new workers who are up to 19 years old , and then for another 90 days if the company institutes a specific training program for the newcomers .	1.0	could pay training wage for	Employers	90 days
+Employers could also pay a subminimum `` training wage '' for 90 days to new workers who are up to 19 years old , and then for another 90 days if the company institutes a specific training program for the newcomers .	1.0	could also pay	Employers	subminimum training wage
+Employers could also pay a subminimum `` training wage '' for 90 days to new workers who are up to 19 years old , and then for another 90 days if the company institutes a specific training program for the newcomers .	1.0	could pay	Employers	training wage
+Employers could also pay a subminimum `` training wage '' for 90 days to new workers who are up to 19 years old , and then for another 90 days if the company institutes a specific training program for the newcomers .	1.0	could also pay training wage for	Employers	90 days
+Employers could also pay a subminimum `` training wage '' for 90 days to new workers who are up to 19 years old , and then for another 90 days if the company institutes a specific training program for the newcomers .	1.0	could pay	Employers	subminimum training wage
+And he got rid of low - margin businesses that just were n't making money for the company .	1.0	got	he	rid
+`` It 's really bizarre , '' says Albert Lerman , creative director at the Wells Rich Greene ad agency .	1.0	director at	Albert Lerman	Wells Rich Greene ad agency
+The fitness craze itself has gone soft , the survey found .	1.0	gone	fitness craze	soft
+Mr. Wathen , who says Pinkerton 's had a loss of nearly $ 8 million in 1987 under American Brands , boasts that he 's made Pinkerton 's profitable again .	1.0	's made	he	Pinkerton 's profitable
+Mr. Wathen , who says Pinkerton 's had a loss of nearly $ 8 million in 1987 under American Brands , boasts that he 's made Pinkerton 's profitable again .	1.0	's made again	he	Pinkerton 's profitable
+But it appears to be the sort of hold one makes while heading for the door .	1.0	appears	it	sort
+But it appears to be the sort of hold one makes while heading for the door .	1.0	appears	it	sort makes
+But it appears to be the sort of hold one makes while heading for the door .	1.0	appears	it	sort of hold one makes
+But it appears to be the sort of hold one makes while heading for the door .	1.0	be sort of	it	hold one
+But it appears to be the sort of hold one makes while heading for the door .	1.0	be	it	sort of hold one makes
+But it appears to be the sort of hold one makes while heading for the door .	1.0	be	it	sort
+But it appears to be the sort of hold one makes while heading for the door .	1.0	be	it	sort makes
+But it appears to be the sort of hold one makes while heading for the door .	1.0	appears	it	sort of hold one
+On a broader scale , the ruling could encourage other states ' courts to adopt the logic of the New York court , not only in DES cases but in other product - related lawsuits , as well .	1.0	adopt logic in	states ' courts	DES cases
+On a broader scale , the ruling could encourage other states ' courts to adopt the logic of the New York court , not only in DES cases but in other product - related lawsuits , as well .	1.0	adopt	states ' courts	logic
+On a broader scale , the ruling could encourage other states ' courts to adopt the logic of the New York court , not only in DES cases but in other product - related lawsuits , as well .	1.0	adopt	other states ' courts	logic of New York court
+On a broader scale , the ruling could encourage other states ' courts to adopt the logic of the New York court , not only in DES cases but in other product - related lawsuits , as well .	1.0	could encourage	ruling	states ' courts
+On a broader scale , the ruling could encourage other states ' courts to adopt the logic of the New York court , not only in DES cases but in other product - related lawsuits , as well .	1.0	could encourage	ruling	other states ' courts
+On a broader scale , the ruling could encourage other states ' courts to adopt the logic of the New York court , not only in DES cases but in other product - related lawsuits , as well .	1.0	adopt	other states ' courts	logic
+On a broader scale , the ruling could encourage other states ' courts to adopt the logic of the New York court , not only in DES cases but in other product - related lawsuits , as well .	1.0	adopt logic in	other states ' courts	DES cases
+On a broader scale , the ruling could encourage other states ' courts to adopt the logic of the New York court , not only in DES cases but in other product - related lawsuits , as well .	1.0	adopt	states ' courts	logic of New York court
+It came in London 's `` Big Bang '' 1986 deregulation ; and Toronto 's `` Little Bang '' the same year .	1.0	has	Toronto	Little Bang same year
+It came in London 's `` Big Bang '' 1986 deregulation ; and Toronto 's `` Little Bang '' the same year .	1.0	came in	It	London 's Big Bang 1986 deregulation
+It came in London 's `` Big Bang '' 1986 deregulation ; and Toronto 's `` Little Bang '' the same year .	1.0	in	London	Big Bang 1986 deregulation
+`` I do n't foresee any shortages over the next few months , '' says Ken Allen , an official of Operating Engineers Local 3 in San Francisco .	1.0	official of	Ken Allen	Operating Engineers Local 3 in San Francisco
+`` I do n't foresee any shortages over the next few months , '' says Ken Allen , an official of Operating Engineers Local 3 in San Francisco .	1.0	is in	Operating Engineers Local 3	San Francisco
+A state judge postponed a decision on a move by holders of Telerate Inc. to block the tender offer of Dow Jones & Co. for the 33 % of Telerate it does n't already own .	1.0	postponed	state judge	decision on move by holders of Telerate Inc.
+A state judge postponed a decision on a move by holders of Telerate Inc. to block the tender offer of Dow Jones & Co. for the 33 % of Telerate it does n't already own .	1.0	postponed	state judge	decision on move
+A state judge postponed a decision on a move by holders of Telerate Inc. to block the tender offer of Dow Jones & Co. for the 33 % of Telerate it does n't already own .	1.0	postponed	state judge	decision
+A state judge postponed a decision on a move by holders of Telerate Inc. to block the tender offer of Dow Jones & Co. for the 33 % of Telerate it does n't already own .	1.0	postponed	state judge	decision on move by holders
+Japanese office workers use PCs at half the rate of their European counterparts and one - third that of the Americans .	1.0	use	office workers	PCs
+Japanese office workers use PCs at half the rate of their European counterparts and one - third that of the Americans .	1.0	use	Japanese office workers	PCs
+A year earlier UniFirst earned $ 2.4 million , or 24 cents a share adjusted for the split .	1.0	earlier earned	UniFirst	$ 2.4 million adjusted
+A year earlier UniFirst earned $ 2.4 million , or 24 cents a share adjusted for the split .	1.0	earned	UniFirst	$ 2.4 million adjusted for split
+A year earlier UniFirst earned $ 2.4 million , or 24 cents a share adjusted for the split .	1.0	earned	UniFirst	$ 2.4 million
+A year earlier UniFirst earned $ 2.4 million , or 24 cents a share adjusted for the split .	1.0	earned	UniFirst	$ 2.4 million adjusted
+A year earlier UniFirst earned $ 2.4 million , or 24 cents a share adjusted for the split .	1.0	earlier earned	UniFirst	$ 2.4 million adjusted for split
+A year earlier UniFirst earned $ 2.4 million , or 24 cents a share adjusted for the split .	1.0	earlier earned	UniFirst	$ 2.4 million
+Richard Newsom , a California state official who last year examined Lincoln 's parent , American Continental Corp. , said he also saw evidence that crimes had been committed .	1.0	has	Lincoln	parent
+Richard Newsom , a California state official who last year examined Lincoln 's parent , American Continental Corp. , said he also saw evidence that crimes had been committed .	1.0	's parent is	Lincoln	American Continental Corp.
+Richard Newsom , a California state official who last year examined Lincoln 's parent , American Continental Corp. , said he also saw evidence that crimes had been committed .	0.604	examined	last year	American Continental Corp.
+Richard Newsom , a California state official who last year examined Lincoln 's parent , American Continental Corp. , said he also saw evidence that crimes had been committed .	0.604	examined	year	Lincoln 's parent
+Richard Newsom , a California state official who last year examined Lincoln 's parent , American Continental Corp. , said he also saw evidence that crimes had been committed .	0.604	examined	last year	Lincoln 's parent
+Richard Newsom , a California state official who last year examined Lincoln 's parent , American Continental Corp. , said he also saw evidence that crimes had been committed .	0.604	examined	year	American Continental Corp.
+This week , New York City announced a 10 - point policy patterned on the federal bill of rights for taxpayers .	1.0	announced	New York City	10 point policy patterned on federal bill of rights
+This week , New York City announced a 10 - point policy patterned on the federal bill of rights for taxpayers .	0.524	patterned on	10 point policy	federal bill rights taxpayers
+This week , New York City announced a 10 - point policy patterned on the federal bill of rights for taxpayers .	1.0	announced	New York City	10 point policy
+This week , New York City announced a 10 - point policy patterned on the federal bill of rights for taxpayers .	1.0	announced	New York City	10 point policy patterned on federal bill
+This week , New York City announced a 10 - point policy patterned on the federal bill of rights for taxpayers .	1.0	announced	New York City	10 point policy patterned
+This week , New York City announced a 10 - point policy patterned on the federal bill of rights for taxpayers .	1.0	announced	New York City	10 point policy patterned on federal bill of rights for taxpayers
+This week , New York City announced a 10 - point policy patterned on the federal bill of rights for taxpayers .	0.524	patterned on	10 point policy	federal bill
+This week , New York City announced a 10 - point policy patterned on the federal bill of rights for taxpayers .	1.0	announced	New York City	10 point policy patterned on bill
+This week , New York City announced a 10 - point policy patterned on the federal bill of rights for taxpayers .	0.524	patterned on	10 point policy	bill rights
+This week , New York City announced a 10 - point policy patterned on the federal bill of rights for taxpayers .	1.0	announced	New York City	10 point policy patterned on bill of rights
+This week , New York City announced a 10 - point policy patterned on the federal bill of rights for taxpayers .	0.524	patterned on	10 point policy	federal bill rights
+This week , New York City announced a 10 - point policy patterned on the federal bill of rights for taxpayers .	1.0	announced	New York City	10 point policy patterned on bill of rights for taxpayers
+This week , New York City announced a 10 - point policy patterned on the federal bill of rights for taxpayers .	0.524	patterned on	10 point policy	bill rights taxpayers
+This week , New York City announced a 10 - point policy patterned on the federal bill of rights for taxpayers .	0.524	patterned on	10 point policy	bill
+The campaign , a patriotic celebration of the 200th anniversary of the Bill of Rights , does n't mention cigarettes or smoking ; cigarette ads have been prohibited on television since 1971 .	0.984	have	cigarette ads	have prohibited on television since 1971
+The campaign , a patriotic celebration of the 200th anniversary of the Bill of Rights , does n't mention cigarettes or smoking ; cigarette ads have been prohibited on television since 1971 .	0.984	have	cigarette ads	have prohibited
+The campaign , a patriotic celebration of the 200th anniversary of the Bill of Rights , does n't mention cigarettes or smoking ; cigarette ads have been prohibited on television since 1971 .	1.0	celebration of	campaign	200th anniversary
+The campaign , a patriotic celebration of the 200th anniversary of the Bill of Rights , does n't mention cigarettes or smoking ; cigarette ads have been prohibited on television since 1971 .	0.984	have	cigarette ads	have prohibited on television
+The campaign , a patriotic celebration of the 200th anniversary of the Bill of Rights , does n't mention cigarettes or smoking ; cigarette ads have been prohibited on television since 1971 .	0.984	have	cigarette ads	have prohibited since 1971
+The discount rate on three - month Treasury bills rose slightly from the average rate at Monday 's auction to 7.79 % for a bond - equivalent yield of 8.04 % .	1.0	at	Monday	auction
+A half - dozen Soviet space officials , in Tokyo in July for an exhibit , stopped by to see their counterparts at the National Space Development Agency of Japan .	1.0	is in	dozen Soviet space officials	Tokyo
+A half - dozen Soviet space officials , in Tokyo in July for an exhibit , stopped by to see their counterparts at the National Space Development Agency of Japan .	1.0	is in	dozen Soviet space officials	July for exhibit
+Fraser & Neave , which also has interests in packaging , beer and dairy products , holds the Coke licenses for Malaysia and Brunei , where per - capita consumption is n't as high as in Singapore .	1.0	is in	interests	packaging
+But , with the state offering only $ 39,000 a year and California 's high standard of living , `` there are n't too many to choose from , '' says Brent Scott , a recruiting officer .	1.0	has	California	high standard of living
+Under a merger agreement reached Sept. 14 , the UAL board agreed to reimburse certain of the buy - out group 's expenses out of company funds even if the transaction was n't completed , provided the group did n't breach the agreement .	1.0	agreed Under	UAL board	merger agreement reached
+Under a merger agreement reached Sept. 14 , the UAL board agreed to reimburse certain of the buy - out group 's expenses out of company funds even if the transaction was n't completed , provided the group did n't breach the agreement .	1.0	agreed Under	UAL board	merger agreement reached Sept. 14
+Under a merger agreement reached Sept. 14 , the UAL board agreed to reimburse certain of the buy - out group 's expenses out of company funds even if the transaction was n't completed , provided the group did n't breach the agreement .	1.0	reimburse	UAL board	certain of buy
+Under a merger agreement reached Sept. 14 , the UAL board agreed to reimburse certain of the buy - out group 's expenses out of company funds even if the transaction was n't completed , provided the group did n't breach the agreement .	1.0	reimburse	UAL board	certain
+Under a merger agreement reached Sept. 14 , the UAL board agreed to reimburse certain of the buy - out group 's expenses out of company funds even if the transaction was n't completed , provided the group did n't breach the agreement .	1.0	agreed Under	UAL board	merger agreement
+Under a merger agreement reached Sept. 14 , the UAL board agreed to reimburse certain of the buy - out group 's expenses out of company funds even if the transaction was n't completed , provided the group did n't breach the agreement .	1.0	out	group	expenses out company funds even completed
+Daimler said it has had talks with Jaguar about possible joint ventures .	1.0	is with	talks	Jaguar
+They claim to have busted spirits , poltergeists and other spooks in hundreds of houses around the country .	1.0	busted spirits in	They	hundreds of houses around country
+They claim to have busted spirits , poltergeists and other spooks in hundreds of houses around the country .	1.0	busted spirits in	They	hundreds
+They claim to have busted spirits , poltergeists and other spooks in hundreds of houses around the country .	1.0	busted spirits in	They	hundreds around country
+They claim to have busted spirits , poltergeists and other spooks in hundreds of houses around the country .	1.0	busted	They	spirits
+They claim to have busted spirits , poltergeists and other spooks in hundreds of houses around the country .	1.0	busted spirits in	They	hundreds of houses
+They claim to have busted spirits , poltergeists and other spooks in hundreds of houses around the country .	0.945	hundreds	spirits	spooks
+They claim to have busted spirits , poltergeists and other spooks in hundreds of houses around the country .	0.945	hundreds	spirits	poltergeists
+They claim to have busted spirits , poltergeists and other spooks in hundreds of houses around the country .	0.945	hundreds	spirits	other spooks
+Yet the Soviet leader 's readiness to embark on foreign visits and steady accumulation of personal power , particularly since the last Politburo reshuffle on Sept. 30 , do not suggest that Mr. Gorbachev is on the verge of being toppled ; nor does he look likely to reverse the powers of perestroika .	1.0	does look	he	likely
+Yet the Soviet leader 's readiness to embark on foreign visits and steady accumulation of personal power , particularly since the last Politburo reshuffle on Sept. 30 , do not suggest that Mr. Gorbachev is on the verge of being toppled ; nor does he look likely to reverse the powers of perestroika .	1.0	has	Soviet leader	readiness embark on foreign visits
+Both reflect the dismissal of lower - level and shorter - tenure executives .	1.0	reflect	Both	dismissal
+Both reflect the dismissal of lower - level and shorter - tenure executives .	1.0	reflect	Both	dismissal of level
+Both reflect the dismissal of lower - level and shorter - tenure executives .	1.0	reflect	Both	dismissal of lower level
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all	accounts	sales of stock funds
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	are all from	accounts	September 's level
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all	accounts	subsequent sales
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all up	accounts	sales
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all up	accounts	sales
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all up	accounts	sales of stock funds
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all up	new accounts	inquiries
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all	accounts	inquiries
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all	new accounts	inquiries
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all	new accounts	sales of stock funds
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all	new accounts	sales
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all	new accounts	sales
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all up	accounts	inquiries
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all	accounts	subsequent sales of stock funds
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	are all up from	new accounts	September 's level
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all	accounts	sales
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all	accounts	sales
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all up	accounts	new sales
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	are all from	new accounts	September 's level
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all up	new accounts	new sales
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all up	accounts	subsequent sales
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all	new accounts	subsequent sales of stock funds
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	are all up from	accounts	September 's level
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all	new accounts	subsequent sales
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	are	new accounts	all up
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	from	September	level
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	are	new accounts	all
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all up	new accounts	sales
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all up	new accounts	sales
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all up	accounts	subsequent sales of stock funds
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all up	new accounts	subsequent sales
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	are	accounts	all
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	are	accounts	all up
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all up	new accounts	sales of stock funds
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all up	new accounts	subsequent sales of stock funds
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all	accounts	new sales
+But he emphasized that new accounts , new sales , inquiries and subsequent sales of stock funds are all up this month from September 's level .	1.0	all	new accounts	new sales
+Student job postings at Boston University slip 10 % this year following a 10 % drop in 1988 .	1.0	is in	10 % drop	1988
+Student job postings at Boston University slip 10 % this year following a 10 % drop in 1988 .	1.0	slip	Student job postings	10 %
+Ryukichi Imai , Japan 's ambassador to Mexico , agrees that Mexico may be too eager .	1.0	be	Mexico	too eager
+Ryukichi Imai , Japan 's ambassador to Mexico , agrees that Mexico may be too eager .	1.0	ambassador to	Ryukichi Imai	Mexico
+Ryukichi Imai , Japan 's ambassador to Mexico , agrees that Mexico may be too eager .	1.0	be	Mexico	eager
+Ryukichi Imai , Japan 's ambassador to Mexico , agrees that Mexico may be too eager .	1.0	has	Japan	ambassador to Mexico
+To make them directly comparable , each index is based on the close of 1969 equaling 100 .	1.0	is	index	based
+To make them directly comparable , each index is based on the close of 1969 equaling 100 .	1.0	make	index	them comparable
+To make them directly comparable , each index is based on the close of 1969 equaling 100 .	1.0	is based on	index	close
+To make them directly comparable , each index is based on the close of 1969 equaling 100 .	1.0	is based on	index	close of 1969
+To make them directly comparable , each index is based on the close of 1969 equaling 100 .	1.0	make	index	them directly comparable
+`` The only people who are flying are those who have to , '' said Frank Moore , chairman of the Australian Tourist Industry Association .	1.0	chairman of	Frank Moore	Australian Tourist Industry Association
+Similar studies are expected to reveal how stroke patients ' brains regroup -- a first step toward finding ways to bolster that process and speed rehabilitation .	1.0	are expected	studies	reveal
+Similar studies are expected to reveal how stroke patients ' brains regroup -- a first step toward finding ways to bolster that process and speed rehabilitation .	1.0	are	studies	expected
+Similar studies are expected to reveal how stroke patients ' brains regroup -- a first step toward finding ways to bolster that process and speed rehabilitation .	1.0	are expected	Similar studies	reveal
+Similar studies are expected to reveal how stroke patients ' brains regroup -- a first step toward finding ways to bolster that process and speed rehabilitation .	1.0	regroup	stroke patients ' brains	first step
+Similar studies are expected to reveal how stroke patients ' brains regroup -- a first step toward finding ways to bolster that process and speed rehabilitation .	1.0	regroup	stroke patients ' brains	step
+Similar studies are expected to reveal how stroke patients ' brains regroup -- a first step toward finding ways to bolster that process and speed rehabilitation .	1.0	are	Similar studies	expected
+The government , already buffeted by high interest rates and a slowing economy , has been badly hurt by last week 's shake - up in Mrs. Thatcher 's cabinet .	1.0	been	government	has hurt by week 's shake up
+The government , already buffeted by high interest rates and a slowing economy , has been badly hurt by last week 's shake - up in Mrs. Thatcher 's cabinet .	1.0	been	government	has badly hurt by week 's shake up
+The government , already buffeted by high interest rates and a slowing economy , has been badly hurt by last week 's shake - up in Mrs. Thatcher 's cabinet .	1.0	been	government	has badly hurt by week 's shake up in Mrs. Thatcher 's cabinet
+The government , already buffeted by high interest rates and a slowing economy , has been badly hurt by last week 's shake - up in Mrs. Thatcher 's cabinet .	1.0	been	government	has badly hurt by week 's shake
+The government , already buffeted by high interest rates and a slowing economy , has been badly hurt by last week 's shake - up in Mrs. Thatcher 's cabinet .	1.0	been	government	has badly hurt by last week 's shake up
+The government , already buffeted by high interest rates and a slowing economy , has been badly hurt by last week 's shake - up in Mrs. Thatcher 's cabinet .	1.0	been	government	has hurt by last week 's shake up in Mrs. Thatcher 's cabinet
+The government , already buffeted by high interest rates and a slowing economy , has been badly hurt by last week 's shake - up in Mrs. Thatcher 's cabinet .	1.0	been	government	has hurt by week 's shake
+The government , already buffeted by high interest rates and a slowing economy , has been badly hurt by last week 's shake - up in Mrs. Thatcher 's cabinet .	1.0	been	government	has hurt by last week 's shake up
+The government , already buffeted by high interest rates and a slowing economy , has been badly hurt by last week 's shake - up in Mrs. Thatcher 's cabinet .	1.0	been	government	has hurt by last week 's shake
+The government , already buffeted by high interest rates and a slowing economy , has been badly hurt by last week 's shake - up in Mrs. Thatcher 's cabinet .	1.0	been	government	has hurt by week 's shake up in Mrs. Thatcher 's cabinet
+The government , already buffeted by high interest rates and a slowing economy , has been badly hurt by last week 's shake - up in Mrs. Thatcher 's cabinet .	1.0	in	Mrs. Thatcher	cabinet
+The government , already buffeted by high interest rates and a slowing economy , has been badly hurt by last week 's shake - up in Mrs. Thatcher 's cabinet .	1.0	been	government	has hurt
+The government , already buffeted by high interest rates and a slowing economy , has been badly hurt by last week 's shake - up in Mrs. Thatcher 's cabinet .	1.0	been	government	has badly hurt
+The government , already buffeted by high interest rates and a slowing economy , has been badly hurt by last week 's shake - up in Mrs. Thatcher 's cabinet .	1.0	been	government	has badly hurt by last week 's shake
+The government , already buffeted by high interest rates and a slowing economy , has been badly hurt by last week 's shake - up in Mrs. Thatcher 's cabinet .	1.0	by	last week	shake up in cabinet
+The government , already buffeted by high interest rates and a slowing economy , has been badly hurt by last week 's shake - up in Mrs. Thatcher 's cabinet .	1.0	been	government	has badly hurt by last week 's shake up in Mrs. Thatcher 's cabinet
+The executives had profited handsomely by building American National Can Co. , Triangle 's chief asset .	1.0	building	executives	American
+The executives had profited handsomely by building American National Can Co. , Triangle 's chief asset .	1.0	building	executives	National
+The executives had profited handsomely by building American National Can Co. , Triangle 's chief asset .	1.0	has	Triangle	chief asset
+The conviction stemmed from federal charges of consumer fraud for sale of phony infant apple juice between 1978 and 1983 .	1.0	stemmed from	conviction	charges for sale
+The conviction stemmed from federal charges of consumer fraud for sale of phony infant apple juice between 1978 and 1983 .	1.0	stemmed from	conviction	federal charges of consumer fraud
+The conviction stemmed from federal charges of consumer fraud for sale of phony infant apple juice between 1978 and 1983 .	1.0	stemmed from	conviction	federal charges
+The conviction stemmed from federal charges of consumer fraud for sale of phony infant apple juice between 1978 and 1983 .	1.0	stemmed from	conviction	federal charges for sale
+The conviction stemmed from federal charges of consumer fraud for sale of phony infant apple juice between 1978 and 1983 .	1.0	stemmed from	conviction	charges of consumer fraud for sale of phony infant apple juice
+The conviction stemmed from federal charges of consumer fraud for sale of phony infant apple juice between 1978 and 1983 .	1.0	stemmed from	conviction	federal charges for sale of phony infant apple juice
+The conviction stemmed from federal charges of consumer fraud for sale of phony infant apple juice between 1978 and 1983 .	1.0	stemmed from	conviction	federal charges of consumer fraud for sale
+The conviction stemmed from federal charges of consumer fraud for sale of phony infant apple juice between 1978 and 1983 .	1.0	stemmed from	conviction	charges
+The conviction stemmed from federal charges of consumer fraud for sale of phony infant apple juice between 1978 and 1983 .	1.0	stemmed from	conviction	charges of consumer fraud for sale
+The conviction stemmed from federal charges of consumer fraud for sale of phony infant apple juice between 1978 and 1983 .	1.0	stemmed from	conviction	charges of consumer fraud
+The conviction stemmed from federal charges of consumer fraud for sale of phony infant apple juice between 1978 and 1983 .	1.0	stemmed from	conviction	charges for sale of phony infant apple juice
+The conviction stemmed from federal charges of consumer fraud for sale of phony infant apple juice between 1978 and 1983 .	1.0	stemmed from	conviction	federal charges of consumer fraud for sale of phony infant apple juice
+Takeover stock traders noted that with the junk - bond market in disarray , Georgia - Pacific 's bid is an indication of where the takeover game is headed : namely , industrial companies can continue bidding for one another , but financial buyers such as leveraged buy - out firms will be at a disadvantage in obtaining financing .	1.0	has	Pacific	bid
+Takeover stock traders noted that with the junk - bond market in disarray , Georgia - Pacific 's bid is an indication of where the takeover game is headed : namely , industrial companies can continue bidding for one another , but financial buyers such as leveraged buy - out firms will be at a disadvantage in obtaining financing .	1.0	is in	junk bond market	disarray
+Takeover stock traders noted that with the junk - bond market in disarray , Georgia - Pacific 's bid is an indication of where the takeover game is headed : namely , industrial companies can continue bidding for one another , but financial buyers such as leveraged buy - out firms will be at a disadvantage in obtaining financing .	1.0	noted	Takeover stock traders	that with junk bond market
+Takeover stock traders noted that with the junk - bond market in disarray , Georgia - Pacific 's bid is an indication of where the takeover game is headed : namely , industrial companies can continue bidding for one another , but financial buyers such as leveraged buy - out firms will be at a disadvantage in obtaining financing .	1.0	noted	Takeover stock traders	that
+Unemployment has reached 27.6 % in Azerbaijan , 25.7 % in Tadzhikistan , 22.8 % in Uzbekistan , 18.8 % in Turkmenia , 18 % in Armenia and 16.3 % in Kirgizia , the Communist Party newspaper said .	1.0	% in	25.7 %	Uzbekistan
+Unemployment has reached 27.6 % in Azerbaijan , 25.7 % in Tadzhikistan , 22.8 % in Uzbekistan , 18.8 % in Turkmenia , 18 % in Armenia and 16.3 % in Kirgizia , the Communist Party newspaper said .	1.0	is in	16.3 %	Kirgizia
+Unemployment has reached 27.6 % in Azerbaijan , 25.7 % in Tadzhikistan , 22.8 % in Uzbekistan , 18.8 % in Turkmenia , 18 % in Armenia and 16.3 % in Kirgizia , the Communist Party newspaper said .	1.0	% in	25.7 %	Armenia
+Unemployment has reached 27.6 % in Azerbaijan , 25.7 % in Tadzhikistan , 22.8 % in Uzbekistan , 18.8 % in Turkmenia , 18 % in Armenia and 16.3 % in Kirgizia , the Communist Party newspaper said .	1.0	in % is	Tadzhikistan	18 %
+Unemployment has reached 27.6 % in Azerbaijan , 25.7 % in Tadzhikistan , 22.8 % in Uzbekistan , 18.8 % in Turkmenia , 18 % in Armenia and 16.3 % in Kirgizia , the Communist Party newspaper said .	1.0	is in	27.6 %	Azerbaijan
+Unemployment has reached 27.6 % in Azerbaijan , 25.7 % in Tadzhikistan , 22.8 % in Uzbekistan , 18.8 % in Turkmenia , 18 % in Armenia and 16.3 % in Kirgizia , the Communist Party newspaper said .	1.0	is in	18 %	Armenia
+Unemployment has reached 27.6 % in Azerbaijan , 25.7 % in Tadzhikistan , 22.8 % in Uzbekistan , 18.8 % in Turkmenia , 18 % in Armenia and 16.3 % in Kirgizia , the Communist Party newspaper said .	1.0	is in	22.8 %	Uzbekistan
+Unemployment has reached 27.6 % in Azerbaijan , 25.7 % in Tadzhikistan , 22.8 % in Uzbekistan , 18.8 % in Turkmenia , 18 % in Armenia and 16.3 % in Kirgizia , the Communist Party newspaper said .	1.0	in % is	Tadzhikistan	18.8 %
+Unemployment has reached 27.6 % in Azerbaijan , 25.7 % in Tadzhikistan , 22.8 % in Uzbekistan , 18.8 % in Turkmenia , 18 % in Armenia and 16.3 % in Kirgizia , the Communist Party newspaper said .	1.0	% in	25.7 %	Turkmenia
+Unemployment has reached 27.6 % in Azerbaijan , 25.7 % in Tadzhikistan , 22.8 % in Uzbekistan , 18.8 % in Turkmenia , 18 % in Armenia and 16.3 % in Kirgizia , the Communist Party newspaper said .	1.0	is in	25.7 %	Tadzhikistan
+Unemployment has reached 27.6 % in Azerbaijan , 25.7 % in Tadzhikistan , 22.8 % in Uzbekistan , 18.8 % in Turkmenia , 18 % in Armenia and 16.3 % in Kirgizia , the Communist Party newspaper said .	1.0	is in	18.8 %	Turkmenia
+$ 300 million of bonds due Nov. 16 , 1993 , with equity - purchase warrants , indicating a 3 3\/4 % coupon at par via Nomura International Ltd .	1.0	is with	bonds due Nov. 16 1993	equity purchase warrants
+Avery Inc. said it completed the sale of Uniroyal Chemical Holding Co. to a group led by management of Uniroyal Chemical Co. , the unit 's main business .	1.0	has	unit	main business
+Avery Inc. said it completed the sale of Uniroyal Chemical Holding Co. to a group led by management of Uniroyal Chemical Co. , the unit 's main business .	1.0	business 's	Uniroyal Chemical Co.	unit
+Humana contends that $ 8,000 represents an extreme case and that its regular charge for lithotripsy is $ 4,900 .	1.0	represents	$ 8,000	extreme case
+Humana contends that $ 8,000 represents an extreme case and that its regular charge for lithotripsy is $ 4,900 .	1.0	represents	$ 8,000	case
+Humana contends that $ 8,000 represents an extreme case and that its regular charge for lithotripsy is $ 4,900 .	1.0	represents	$	extreme case
+Humana contends that $ 8,000 represents an extreme case and that its regular charge for lithotripsy is $ 4,900 .	1.0	represents	$	case
+Vernon E. Jordan was elected to the board of this transportation services concern .	1.0	was elected to	Vernon E. Jordan	board
+Vernon E. Jordan was elected to the board of this transportation services concern .	1.0	was	Vernon E. Jordan	elected
+Indeed , the insurance adjusters had already bolted out of the courtroom .	1.0	had bolted out of	insurance adjusters	courtroom
+Indeed , the insurance adjusters had already bolted out of the courtroom .	1.0	had already bolted out of	insurance adjusters	courtroom
+Indeed , the insurance adjusters had already bolted out of the courtroom .	1.0	Indeed had bolted out of	insurance adjusters	courtroom
+Indeed , the insurance adjusters had already bolted out of the courtroom .	1.0	Indeed had already bolted out of	insurance adjusters	courtroom
+Edison Brothers Stores Inc. said it agreed to buy 229 Foxmoor women 's apparel stores from Foxmoor Specialty Stores Corp. , a unit of Dylex Ltd. of Toronto .	1.0	unit of	Foxmoor Specialty Stores Corp.	Dylex Ltd.
+Edison Brothers Stores Inc. said it agreed to buy 229 Foxmoor women 's apparel stores from Foxmoor Specialty Stores Corp. , a unit of Dylex Ltd. of Toronto .	1.0	has	229 Foxmoor women	apparel stores
+Early in the morning Mr. Sider , an estate lawyer , pores over last wills and testaments .	1.0	pores in	Mr. Sider	morning
+Early in the morning Mr. Sider , an estate lawyer , pores over last wills and testaments .	1.0	pores over	Mr. Sider	wills
+Early in the morning Mr. Sider , an estate lawyer , pores over last wills and testaments .	1.0	Early pores over	Mr. Sider	wills
+Early in the morning Mr. Sider , an estate lawyer , pores over last wills and testaments .	1.0	Early pores in	Mr. Sider	morning
+Early in the morning Mr. Sider , an estate lawyer , pores over last wills and testaments .	1.0	pores over	Mr. Sider	last wills
+Early in the morning Mr. Sider , an estate lawyer , pores over last wills and testaments .	1.0	Early pores over	Mr. Sider	last wills
+Her recent report classifies the stock as a `` hold . ''	1.0	classifies	Her report	stock
+Her recent report classifies the stock as a `` hold . ''	1.0	classifies stock as	Her report	hold
+Her recent report classifies the stock as a `` hold . ''	1.0	classifies stock as	Her recent report	hold
+Her recent report classifies the stock as a `` hold . ''	1.0	classifies	Her recent report	stock
+In the corporate market , an expected debt offering today by International Business Machines Corp. generated considerable attention .	1.0	generated attention In	expected debt offering today	market
+In the corporate market , an expected debt offering today by International Business Machines Corp. generated considerable attention .	1.0	generated attention In	expected debt offering today	corporate market
+In the corporate market , an expected debt offering today by International Business Machines Corp. generated considerable attention .	1.0	generated	expected debt offering today	considerable attention
+In the corporate market , an expected debt offering today by International Business Machines Corp. generated considerable attention .	1.0	generated	expected debt offering today	attention
+In the corporate market , an expected debt offering today by International Business Machines Corp. generated considerable attention .	1.0	generated attention In	expected debt offering	corporate market
+In the corporate market , an expected debt offering today by International Business Machines Corp. generated considerable attention .	1.0	generated	expected debt offering	considerable attention
+In the corporate market , an expected debt offering today by International Business Machines Corp. generated considerable attention .	1.0	generated attention In	expected debt offering	market
+In the corporate market , an expected debt offering today by International Business Machines Corp. generated considerable attention .	1.0	generated	expected debt offering	attention
+Senate Appropriations Committee Chairman Robert Byrd ( D. , W.Va . ) strongly resisted deeper cuts sought by the House .	0.704	sought by	cuts	House
+Senate Appropriations Committee Chairman Robert Byrd ( D. , W.Va . ) strongly resisted deeper cuts sought by the House .	0.704	sought by	deeper cuts	House
+For example , a passenger can fly from Chardon , Neb. , to Denver for as little as $ 89 to $ 109 , according to prices quoted by the company .	1.0	can fly from	passenger	Chardon
+For example , a passenger can fly from Chardon , Neb. , to Denver for as little as $ 89 to $ 109 , according to prices quoted by the company .	1.0	can fly according to	passenger	prices quoted
+For example , a passenger can fly from Chardon , Neb. , to Denver for as little as $ 89 to $ 109 , according to prices quoted by the company .	1.0	can fly For	passenger	example
+For example , a passenger can fly from Chardon , Neb. , to Denver for as little as $ 89 to $ 109 , according to prices quoted by the company .	1.0	can fly for	passenger	little 89 $ 109
+For example , a passenger can fly from Chardon , Neb. , to Denver for as little as $ 89 to $ 109 , according to prices quoted by the company .	1.0	can fly for	passenger	as 89 $ 109
+For example , a passenger can fly from Chardon , Neb. , to Denver for as little as $ 89 to $ 109 , according to prices quoted by the company .	1.0	can fly for	passenger	as 89 $ 109
+For example , a passenger can fly from Chardon , Neb. , to Denver for as little as $ 89 to $ 109 , according to prices quoted by the company .	1.0	can fly from	passenger	Neb.
+For example , a passenger can fly from Chardon , Neb. , to Denver for as little as $ 89 to $ 109 , according to prices quoted by the company .	1.0	can fly for	passenger	as little 89 $ 109
+For example , a passenger can fly from Chardon , Neb. , to Denver for as little as $ 89 to $ 109 , according to prices quoted by the company .	1.0	can fly for	passenger	as little as 89 $ 109
+For example , a passenger can fly from Chardon , Neb. , to Denver for as little as $ 89 to $ 109 , according to prices quoted by the company .	1.0	can fly to	passenger	Denver
+For example , a passenger can fly from Chardon , Neb. , to Denver for as little as $ 89 to $ 109 , according to prices quoted by the company .	1.0	can fly for	passenger	as as 89 $ 109
+For example , a passenger can fly from Chardon , Neb. , to Denver for as little as $ 89 to $ 109 , according to prices quoted by the company .	1.0	can fly according to	passenger	prices quoted by company
+For example , a passenger can fly from Chardon , Neb. , to Denver for as little as $ 89 to $ 109 , according to prices quoted by the company .	1.0	can fly according to	passenger	prices
+For example , a passenger can fly from Chardon , Neb. , to Denver for as little as $ 89 to $ 109 , according to prices quoted by the company .	1.0	can fly for	passenger	89 $ 109
+For example , a passenger can fly from Chardon , Neb. , to Denver for as little as $ 89 to $ 109 , according to prices quoted by the company .	1.0	can fly for	passenger	little as 89 $ 109
+Mr. Phelan is an adroit diplomat who normally appears to be solidly in control of the Big Board 's factions .	1.0	is	Phelan	adroit
+Mr. Phelan is an adroit diplomat who normally appears to be solidly in control of the Big Board 's factions .	1.0	is diplomat	Mr. Phelan	who normally appears
+Mr. Phelan is an adroit diplomat who normally appears to be solidly in control of the Big Board 's factions .	1.0	is diplomat	Mr. Phelan	who appears
+Mr. Phelan is an adroit diplomat who normally appears to be solidly in control of the Big Board 's factions .	1.0	is adroit diplomat	Mr. Phelan	who appears
+Mr. Phelan is an adroit diplomat who normally appears to be solidly in control of the Big Board 's factions .	1.0	of	Big Board	factions
+Mr. Phelan is an adroit diplomat who normally appears to be solidly in control of the Big Board 's factions .	1.0	is adroit diplomat	Mr. Phelan	who normally appears
+`` Most people -- whether in Toledo , Tucson or Topeka -- have n't got a clue who we are , '' says Guy L. Smith , Philip Morris 's vice president of corporate affairs .	1.0	has	Philip Morris	vice president of corporate affairs
+`` Most people -- whether in Toledo , Tucson or Topeka -- have n't got a clue who we are , '' says Guy L. Smith , Philip Morris 's vice president of corporate affairs .	1.0	president of	Guy L. Smith	corporate affairs
+Technology stocks bore the brunt of the OTC market 's recent sell - off , and traders say it 's natural that they rebound sharply now that the market has turned around .	1.0	of	OTC market	recent sell
+Second , the dollar is showing persistent strength despite a slowdown in the U.S. economy shown by economic indicators .	1.0	is showing strength despite	dollar	slowdown
+Second , the dollar is showing persistent strength despite a slowdown in the U.S. economy shown by economic indicators .	1.0	is showing strength despite	dollar	slowdown in U.S. economy
+Second , the dollar is showing persistent strength despite a slowdown in the U.S. economy shown by economic indicators .	1.0	Second is showing strength despite	dollar	slowdown in U.S. economy
+Second , the dollar is showing persistent strength despite a slowdown in the U.S. economy shown by economic indicators .	1.0	Second is showing strength despite	dollar	slowdown in U.S. economy shown by economic indicators
+Second , the dollar is showing persistent strength despite a slowdown in the U.S. economy shown by economic indicators .	1.0	Second is showing strength despite	dollar	slowdown in U.S. economy shown by indicators
+Second , the dollar is showing persistent strength despite a slowdown in the U.S. economy shown by economic indicators .	1.0	is showing strength despite	dollar	slowdown in U.S. economy shown by economic indicators
+Second , the dollar is showing persistent strength despite a slowdown in the U.S. economy shown by economic indicators .	1.0	Second is showing	dollar	persistent strength
+Second , the dollar is showing persistent strength despite a slowdown in the U.S. economy shown by economic indicators .	1.0	is showing	dollar	strength
+Second , the dollar is showing persistent strength despite a slowdown in the U.S. economy shown by economic indicators .	1.0	Second is showing strength despite	dollar	slowdown
+Second , the dollar is showing persistent strength despite a slowdown in the U.S. economy shown by economic indicators .	1.0	is in	slowdown	U.S. economy shown by economic indicators
+Second , the dollar is showing persistent strength despite a slowdown in the U.S. economy shown by economic indicators .	1.0	is showing	dollar	persistent strength
+Second , the dollar is showing persistent strength despite a slowdown in the U.S. economy shown by economic indicators .	1.0	Second is showing	dollar	strength
+Second , the dollar is showing persistent strength despite a slowdown in the U.S. economy shown by economic indicators .	1.0	is showing strength despite	dollar	slowdown in U.S. economy shown
+Second , the dollar is showing persistent strength despite a slowdown in the U.S. economy shown by economic indicators .	1.0	Second is showing strength despite	dollar	slowdown in U.S. economy shown
+Second , the dollar is showing persistent strength despite a slowdown in the U.S. economy shown by economic indicators .	1.0	is showing strength despite	dollar	slowdown in U.S. economy shown by indicators
+Although the Treasury will announce details of the November refunding tomorrow , it could be delayed if Congress and President Bush fail to increase the Treasury 's borrowing capacity .	1.0	increase	Congress	President Bush
+Although the Treasury will announce details of the November refunding tomorrow , it could be delayed if Congress and President Bush fail to increase the Treasury 's borrowing capacity .	0.769	details of	Treasury	November refunding
+Although the Treasury will announce details of the November refunding tomorrow , it could be delayed if Congress and President Bush fail to increase the Treasury 's borrowing capacity .	1.0	could	it	could delayed
+Although the Treasury will announce details of the November refunding tomorrow , it could be delayed if Congress and President Bush fail to increase the Treasury 's borrowing capacity .	1.0	will announce	Treasury	details of November refunding
+Although the Treasury will announce details of the November refunding tomorrow , it could be delayed if Congress and President Bush fail to increase the Treasury 's borrowing capacity .	1.0	has	Treasury	borrowing capacity
+Although the Treasury will announce details of the November refunding tomorrow , it could be delayed if Congress and President Bush fail to increase the Treasury 's borrowing capacity .	1.0	will announce	Treasury	details
+Although the Treasury will announce details of the November refunding tomorrow , it could be delayed if Congress and President Bush fail to increase the Treasury 's borrowing capacity .	1.0	fail	Congress	President Bush
+Although the Treasury will announce details of the November refunding tomorrow , it could be delayed if Congress and President Bush fail to increase the Treasury 's borrowing capacity .	1.0	will announce details at_time	Treasury	tomorrow
+Although the Treasury will announce details of the November refunding tomorrow , it could be delayed if Congress and President Bush fail to increase the Treasury 's borrowing capacity .	1.0	increase	Congress	Treasury 's borrowing capacity
+The field took off in 1985 after scientists at Britain 's Sheffield University developed a handy , compact magnet for brain stimulation .	1.0	developed	field	compact magnet for brain stimulation
+The field took off in 1985 after scientists at Britain 's Sheffield University developed a handy , compact magnet for brain stimulation .	1.0	developed	field	handy magnet
+The field took off in 1985 after scientists at Britain 's Sheffield University developed a handy , compact magnet for brain stimulation .	0.357	handy magnet for	developed	brain stimulation
+The field took off in 1985 after scientists at Britain 's Sheffield University developed a handy , compact magnet for brain stimulation .	0.357	compact magnet for	developed	brain stimulation
+The field took off in 1985 after scientists at Britain 's Sheffield University developed a handy , compact magnet for brain stimulation .	1.0	developed	field	handy compact magnet
+The field took off in 1985 after scientists at Britain 's Sheffield University developed a handy , compact magnet for brain stimulation .	1.0	developed	field	compact magnet
+The field took off in 1985 after scientists at Britain 's Sheffield University developed a handy , compact magnet for brain stimulation .	1.0	developed	field	magnet
+The field took off in 1985 after scientists at Britain 's Sheffield University developed a handy , compact magnet for brain stimulation .	0.357	magnet for	developed	brain stimulation
+The field took off in 1985 after scientists at Britain 's Sheffield University developed a handy , compact magnet for brain stimulation .	1.0	developed	field	handy magnet for brain stimulation
+The field took off in 1985 after scientists at Britain 's Sheffield University developed a handy , compact magnet for brain stimulation .	0.357	handy compact magnet for	developed	brain stimulation
+The field took off in 1985 after scientists at Britain 's Sheffield University developed a handy , compact magnet for brain stimulation .	1.0	developed	field	handy compact magnet for brain stimulation
+The field took off in 1985 after scientists at Britain 's Sheffield University developed a handy , compact magnet for brain stimulation .	1.0	at	Britain	Sheffield University
+The field took off in 1985 after scientists at Britain 's Sheffield University developed a handy , compact magnet for brain stimulation .	1.0	developed	field	magnet for brain stimulation
+In recent testimony on Capitol Hill , Treasury officials said they were considering the new reporting requirements , and the expected publication of the proposal in the Federal Register today is the first official step toward creating final regulations .	1.0	creating	today	regulations
+In recent testimony on Capitol Hill , Treasury officials said they were considering the new reporting requirements , and the expected publication of the proposal in the Federal Register today is the first official step toward creating final regulations .	1.0	said In	Treasury officials	recent testimony on Capitol Hill
+In recent testimony on Capitol Hill , Treasury officials said they were considering the new reporting requirements , and the expected publication of the proposal in the Federal Register today is the first official step toward creating final regulations .	1.0	said In	Treasury officials	testimony
+In recent testimony on Capitol Hill , Treasury officials said they were considering the new reporting requirements , and the expected publication of the proposal in the Federal Register today is the first official step toward creating final regulations .	0.281	publication of	today	proposal
+In recent testimony on Capitol Hill , Treasury officials said they were considering the new reporting requirements , and the expected publication of the proposal in the Federal Register today is the first official step toward creating final regulations .	1.0	is	expected publication	first official step
+In recent testimony on Capitol Hill , Treasury officials said they were considering the new reporting requirements , and the expected publication of the proposal in the Federal Register today is the first official step toward creating final regulations .	0.281	expected publication of	today	proposal
+In recent testimony on Capitol Hill , Treasury officials said they were considering the new reporting requirements , and the expected publication of the proposal in the Federal Register today is the first official step toward creating final regulations .	1.0	is	expected publication	step
+In recent testimony on Capitol Hill , Treasury officials said they were considering the new reporting requirements , and the expected publication of the proposal in the Federal Register today is the first official step toward creating final regulations .	1.0	is in	proposal	Federal Register
+In recent testimony on Capitol Hill , Treasury officials said they were considering the new reporting requirements , and the expected publication of the proposal in the Federal Register today is the first official step toward creating final regulations .	1.0	is	publication	first official step
+In recent testimony on Capitol Hill , Treasury officials said they were considering the new reporting requirements , and the expected publication of the proposal in the Federal Register today is the first official step toward creating final regulations .	1.0	is	publication	step
+In recent testimony on Capitol Hill , Treasury officials said they were considering the new reporting requirements , and the expected publication of the proposal in the Federal Register today is the first official step toward creating final regulations .	1.0	is	publication	official step
+In recent testimony on Capitol Hill , Treasury officials said they were considering the new reporting requirements , and the expected publication of the proposal in the Federal Register today is the first official step toward creating final regulations .	1.0	said In	Treasury officials	recent testimony
+In recent testimony on Capitol Hill , Treasury officials said they were considering the new reporting requirements , and the expected publication of the proposal in the Federal Register today is the first official step toward creating final regulations .	1.0	is	expected publication	first step
+In recent testimony on Capitol Hill , Treasury officials said they were considering the new reporting requirements , and the expected publication of the proposal in the Federal Register today is the first official step toward creating final regulations .	1.0	is	expected publication	official step
+In recent testimony on Capitol Hill , Treasury officials said they were considering the new reporting requirements , and the expected publication of the proposal in the Federal Register today is the first official step toward creating final regulations .	0.281	expected publication of	today	proposal in Federal Register
+In recent testimony on Capitol Hill , Treasury officials said they were considering the new reporting requirements , and the expected publication of the proposal in the Federal Register today is the first official step toward creating final regulations .	0.281	publication of	today	proposal in Federal Register
+In recent testimony on Capitol Hill , Treasury officials said they were considering the new reporting requirements , and the expected publication of the proposal in the Federal Register today is the first official step toward creating final regulations .	1.0	is	publication	first step
+In recent testimony on Capitol Hill , Treasury officials said they were considering the new reporting requirements , and the expected publication of the proposal in the Federal Register today is the first official step toward creating final regulations .	1.0	said In	Treasury officials	testimony on Capitol Hill
+In recent testimony on Capitol Hill , Treasury officials said they were considering the new reporting requirements , and the expected publication of the proposal in the Federal Register today is the first official step toward creating final regulations .	1.0	creating	today	final regulations
+The last time IBM tapped the corporate debt market was in April 1988 , when it offered $ 500 million of debt securities .	1.0	offered	it	$ 500 million debt securities
+The last time IBM tapped the corporate debt market was in April 1988 , when it offered $ 500 million of debt securities .	1.0	offered	it	$ 500 million
+The last time IBM tapped the corporate debt market was in April 1988 , when it offered $ 500 million of debt securities .	1.0	tapped	IBM	corporate debt market
+The last time IBM tapped the corporate debt market was in April 1988 , when it offered $ 500 million of debt securities .	1.0	tapped	IBM	debt market
+The last time IBM tapped the corporate debt market was in April 1988 , when it offered $ 500 million of debt securities .	1.0	offered	it	$ 500 million of debt securities
+Since the real estate unit also includes debt , the imputed value of the real estate itself is close to $ 3 billion .	1.0	also includes	estate unit	debt
+Since the real estate unit also includes debt , the imputed value of the real estate itself is close to $ 3 billion .	1.0	also includes	real estate unit	debt
+Since the real estate unit also includes debt , the imputed value of the real estate itself is close to $ 3 billion .	1.0	includes	estate unit	debt
+Since the real estate unit also includes debt , the imputed value of the real estate itself is close to $ 3 billion .	1.0	includes	real estate unit	debt
+Since the real estate unit also includes debt , the imputed value of the real estate itself is close to $ 3 billion .	1.0	is close to	value	$ 3 billion
+Since the real estate unit also includes debt , the imputed value of the real estate itself is close to $ 3 billion .	1.0	is close to	imputed value	$ 3 billion
+And Dewar 's gave discounts on Scottish merchandise to people who sent in bottle labels .	1.0	gave	Dewar	discounts on merchandise
+And Dewar 's gave discounts on Scottish merchandise to people who sent in bottle labels .	1.0	gave	Dewar	discounts on Scottish merchandise
+And Dewar 's gave discounts on Scottish merchandise to people who sent in bottle labels .	1.0	gave	Dewar	discounts
+He sold them well below market value to raise cash `` to pay off mounting credit - card debts , '' incurred to buy presents for his girlfriend , his attorney , Philip Russell , told IFAR .	1.0	told	his attorney	IFAR
+He sold them well below market value to raise cash `` to pay off mounting credit - card debts , '' incurred to buy presents for his girlfriend , his attorney , Philip Russell , told IFAR .	1.0	attorney	his	Philip Russell
+That compares with 3.5 % butterfat for whole milk .	1.0	compares with	That	butterfat for milk
+That compares with 3.5 % butterfat for whole milk .	1.0	compares with	That	3.5 % butterfat
+That compares with 3.5 % butterfat for whole milk .	1.0	compares with	That	butterfat
+That compares with 3.5 % butterfat for whole milk .	1.0	compares with	That	3.5 % butterfat for whole milk
+That compares with 3.5 % butterfat for whole milk .	1.0	compares with	That	butterfat for whole milk
+That compares with 3.5 % butterfat for whole milk .	1.0	compares with	That	3.5 % butterfat for milk
+At Giant Bicycle Inc. , Rancho Dominguez , Calif. , sales have tripled since the company entered the U.S. mountain - bike business in 1987 .	1.0	entered U.S. mountain in	company	1987
+At Giant Bicycle Inc. , Rancho Dominguez , Calif. , sales have tripled since the company entered the U.S. mountain - bike business in 1987 .	1.0	entered	company	U.S. mountain
+The office may also be able to advise foreign and multinational clients on international law and general matters .	1.0	advise	office	clients
+The office may also be able to advise foreign and multinational clients on international law and general matters .	1.0	advise	office	foreign clients
+The office may also be able to advise foreign and multinational clients on international law and general matters .	1.0	may	office	may also able
+The office may also be able to advise foreign and multinational clients on international law and general matters .	1.0	advise clients on	office	law
+The office may also be able to advise foreign and multinational clients on international law and general matters .	1.0	may	office	may able
+The office may also be able to advise foreign and multinational clients on international law and general matters .	1.0	advise clients on	office	international law
+As the London trading session drew to a close , the market was still listening to the parliamentary debate on the economy , with new Chancellor of the Exchequer John Major expected to clarify his approach to the British economy and currency issues .	1.0	was still listening to	market	debate
+As the London trading session drew to a close , the market was still listening to the parliamentary debate on the economy , with new Chancellor of the Exchequer John Major expected to clarify his approach to the British economy and currency issues .	1.0	clarify	John Major	his approach to economy
+As the London trading session drew to a close , the market was still listening to the parliamentary debate on the economy , with new Chancellor of the Exchequer John Major expected to clarify his approach to the British economy and currency issues .	1.0	was listening to	market	debate
+As the London trading session drew to a close , the market was still listening to the parliamentary debate on the economy , with new Chancellor of the Exchequer John Major expected to clarify his approach to the British economy and currency issues .	1.0	was still listening to	market	parliamentary debate
+As the London trading session drew to a close , the market was still listening to the parliamentary debate on the economy , with new Chancellor of the Exchequer John Major expected to clarify his approach to the British economy and currency issues .	1.0	clarify	John Major	his approach
+As the London trading session drew to a close , the market was still listening to the parliamentary debate on the economy , with new Chancellor of the Exchequer John Major expected to clarify his approach to the British economy and currency issues .	1.0	was listening to	market	debate on economy
+As the London trading session drew to a close , the market was still listening to the parliamentary debate on the economy , with new Chancellor of the Exchequer John Major expected to clarify his approach to the British economy and currency issues .	1.0	was listening to	market	parliamentary debate
+As the London trading session drew to a close , the market was still listening to the parliamentary debate on the economy , with new Chancellor of the Exchequer John Major expected to clarify his approach to the British economy and currency issues .	1.0	clarify	John Major	his approach to British economy
+As the London trading session drew to a close , the market was still listening to the parliamentary debate on the economy , with new Chancellor of the Exchequer John Major expected to clarify his approach to the British economy and currency issues .	1.0	was still listening to	market	parliamentary debate on economy
+As the London trading session drew to a close , the market was still listening to the parliamentary debate on the economy , with new Chancellor of the Exchequer John Major expected to clarify his approach to the British economy and currency issues .	1.0	drew to	London trading session	close
+As the London trading session drew to a close , the market was still listening to the parliamentary debate on the economy , with new Chancellor of the Exchequer John Major expected to clarify his approach to the British economy and currency issues .	1.0	was still listening to	market	debate on economy
+As the London trading session drew to a close , the market was still listening to the parliamentary debate on the economy , with new Chancellor of the Exchequer John Major expected to clarify his approach to the British economy and currency issues .	1.0	was listening to	market	parliamentary debate on economy
+With real estate experts Olympia & York and Samuel Zell 's Itel owning close to 40 % of Santa Fe 's stock , management was under pressure -- in a favored phrase of Wall Street -- to quickly `` maximize values . ''	1.0	owning close to	Olympia	% of Santa Fe 's stock
+With real estate experts Olympia & York and Samuel Zell 's Itel owning close to 40 % of Santa Fe 's stock , management was under pressure -- in a favored phrase of Wall Street -- to quickly `` maximize values . ''	1.0	owning close to	Olympia	40 % of Santa Fe 's stock
+With real estate experts Olympia & York and Samuel Zell 's Itel owning close to 40 % of Santa Fe 's stock , management was under pressure -- in a favored phrase of Wall Street -- to quickly `` maximize values . ''	1.0	is in	pressure	favored phrase of Wall Street
+With real estate experts Olympia & York and Samuel Zell 's Itel owning close to 40 % of Santa Fe 's stock , management was under pressure -- in a favored phrase of Wall Street -- to quickly `` maximize values . ''	1.0	owning close to	Olympia	% of stock
+With real estate experts Olympia & York and Samuel Zell 's Itel owning close to 40 % of Santa Fe 's stock , management was under pressure -- in a favored phrase of Wall Street -- to quickly `` maximize values . ''	1.0	has	Samuel Zell	Itel
+With real estate experts Olympia & York and Samuel Zell 's Itel owning close to 40 % of Santa Fe 's stock , management was under pressure -- in a favored phrase of Wall Street -- to quickly `` maximize values . ''	1.0	owning close to	Olympia	40 % of stock
+With real estate experts Olympia & York and Samuel Zell 's Itel owning close to 40 % of Santa Fe 's stock , management was under pressure -- in a favored phrase of Wall Street -- to quickly `` maximize values . ''	1.0	owning	Olympia	Samuel Zell 's Itel
+While the campaign was Mr. Gibbons 's idea , however , he wo n't be paying for it : The donations will come out of the chain 's national advertising fund , which is financed by the franchisees .	1.0	out of	chain	national advertising fund
+While the campaign was Mr. Gibbons 's idea , however , he wo n't be paying for it : The donations will come out of the chain 's national advertising fund , which is financed by the franchisees .	1.0	was	campaign	Mr. Gibbons 's idea
+While the campaign was Mr. Gibbons 's idea , however , he wo n't be paying for it : The donations will come out of the chain 's national advertising fund , which is financed by the franchisees .	1.0	has	Mr. Gibbons	idea
+The Soviets complicated the issue by offering to include light tanks , which are as light as 10 tons .	1.0	complicated	Soviets	issue
+Combined PC and work - station use in Japan will jump as much as 25 % annually over the next five years , according to some analysts , compared with about 10 % in the U.S. .	0.966	will jump	station use	as much as 25 %
+Combined PC and work - station use in Japan will jump as much as 25 % annually over the next five years , according to some analysts , compared with about 10 % in the U.S. .	0.966	will jump annually	station use	as much as 25 %
+Combined PC and work - station use in Japan will jump as much as 25 % annually over the next five years , according to some analysts , compared with about 10 % in the U.S. .	1.0	is in	10 %	U.S.
+Combined PC and work - station use in Japan will jump as much as 25 % annually over the next five years , according to some analysts , compared with about 10 % in the U.S. .	1.0	is in	station use	Japan
+With companies such as Honda Motor Co. , Toyota Motor Corp. and Nissan Motor Co. running so - called transplant auto operations , Japanese auto production in the U.S. will reach one million vehicles this year .	1.0	reach	transplant auto operations	one million vehicles
+With companies such as Honda Motor Co. , Toyota Motor Corp. and Nissan Motor Co. running so - called transplant auto operations , Japanese auto production in the U.S. will reach one million vehicles this year .	1.0	reach	called transplant auto operations	one million vehicles
+With companies such as Honda Motor Co. , Toyota Motor Corp. and Nissan Motor Co. running so - called transplant auto operations , Japanese auto production in the U.S. will reach one million vehicles this year .	1.0	production in	called transplant auto operations	U.S.
+With companies such as Honda Motor Co. , Toyota Motor Corp. and Nissan Motor Co. running so - called transplant auto operations , Japanese auto production in the U.S. will reach one million vehicles this year .	1.0	is in	Japanese auto production	U.S.
+As of Sept. 30 , American Brands had 95.2 million shares outstanding .	1.0	had	American Brands	95.2 million shares
+As of Sept. 30 , American Brands had 95.2 million shares outstanding .	1.0	had	American Brands	95.2 million shares outstanding
+Osamu Nagayama , deputy president of Chugai , which spends about 15 % of its sales on research and development , was unable to pinpoint how much money Chugai would pump into Gen - Probe .	1.0	much pump into	money Chugai	Gen
+Osamu Nagayama , deputy president of Chugai , which spends about 15 % of its sales on research and development , was unable to pinpoint how much money Chugai would pump into Gen - Probe .	1.0	how much pump into	money Chugai	Gen
+Osamu Nagayama , deputy president of Chugai , which spends about 15 % of its sales on research and development , was unable to pinpoint how much money Chugai would pump into Gen - Probe .	1.0	pump into	money Chugai	Gen
+Osamu Nagayama , deputy president of Chugai , which spends about 15 % of its sales on research and development , was unable to pinpoint how much money Chugai would pump into Gen - Probe .	1.0	was	Osamu Nagayama	unable
+Osamu Nagayama , deputy president of Chugai , which spends about 15 % of its sales on research and development , was unable to pinpoint how much money Chugai would pump into Gen - Probe .	1.0	president of	Osamu Nagayama	Chugai
+The U.S. market , too , is dominated by a giant , International Business Machines Corp .	1.0	is	U.S. market	too dominated
+The U.S. market , too , is dominated by a giant , International Business Machines Corp .	1.0	is dominated by	U.S. market	giant
+The U.S. market , too , is dominated by a giant , International Business Machines Corp .	1.0	is dominated by	U.S. market	International Business Machines Corp
+The U.S. market , too , is dominated by a giant , International Business Machines Corp .	1.0	is	U.S. market	dominated
+The U.S. market , too , is dominated by a giant , International Business Machines Corp .	1.0	too is dominated by	U.S. market	giant
+The U.S. market , too , is dominated by a giant , International Business Machines Corp .	1.0	too is dominated by	U.S. market	International Business Machines Corp
+However , the problem is that once most poison pills are adopted , they survive forever .	1.0	are	poison pills	adopted
+However , the problem is that once most poison pills are adopted , they survive forever .	1.0	are	poison pills	once adopted
+The $ 150 million in senior subordinated floating - rate notes were targeted to be offered at a price to float four percentage points above the three - month LIBOR .	1.0	be offered at	rate notes	price float four percentage points above
+The $ 150 million in senior subordinated floating - rate notes were targeted to be offered at a price to float four percentage points above the three - month LIBOR .	1.0	were	rate notes	targeted
+The $ 150 million in senior subordinated floating - rate notes were targeted to be offered at a price to float four percentage points above the three - month LIBOR .	1.0	be offered at	rate notes	price float
+The $ 150 million in senior subordinated floating - rate notes were targeted to be offered at a price to float four percentage points above the three - month LIBOR .	1.0	were targeted	rate notes	offered at price float
+The $ 150 million in senior subordinated floating - rate notes were targeted to be offered at a price to float four percentage points above the three - month LIBOR .	1.0	be	rate notes	offered
+The $ 150 million in senior subordinated floating - rate notes were targeted to be offered at a price to float four percentage points above the three - month LIBOR .	1.0	were targeted	rate notes	offered at price float four percentage points above
+The $ 150 million in senior subordinated floating - rate notes were targeted to be offered at a price to float four percentage points above the three - month LIBOR .	1.0	be offered at	rate notes	price
+The $ 150 million in senior subordinated floating - rate notes were targeted to be offered at a price to float four percentage points above the three - month LIBOR .	1.0	were targeted	rate notes	offered
+The $ 150 million in senior subordinated floating - rate notes were targeted to be offered at a price to float four percentage points above the three - month LIBOR .	1.0	were targeted	rate notes	offered at price
+The offering was priced with an 8.95 % coupon rate at 99.1875 % to yield 9.19 % .	1.0	was priced with	offering	coupon rate at 99.1875 %
+The offering was priced with an 8.95 % coupon rate at 99.1875 % to yield 9.19 % .	1.0	was priced with	offering	8.95 % coupon rate at 99.1875 %
+The offering was priced with an 8.95 % coupon rate at 99.1875 % to yield 9.19 % .	1.0	was priced with	offering	8.95 % coupon rate
+The offering was priced with an 8.95 % coupon rate at 99.1875 % to yield 9.19 % .	1.0	was	offering	priced
+The offering was priced with an 8.95 % coupon rate at 99.1875 % to yield 9.19 % .	1.0	was priced with	offering	coupon rate
+USG Corp. agreed to sell its headquarters building here to Manufacturers Life Insurance Co. of Toronto , and will lease the 19 - story facility until it moves to a new quarters in 1992 .	1.0	sell	USG Corp.	its headquarters building
+USG Corp. agreed to sell its headquarters building here to Manufacturers Life Insurance Co. of Toronto , and will lease the 19 - story facility until it moves to a new quarters in 1992 .	1.0	moves to	it	quarters
+USG Corp. agreed to sell its headquarters building here to Manufacturers Life Insurance Co. of Toronto , and will lease the 19 - story facility until it moves to a new quarters in 1992 .	1.0	moves to	it	new quarters
+USG Corp. agreed to sell its headquarters building here to Manufacturers Life Insurance Co. of Toronto , and will lease the 19 - story facility until it moves to a new quarters in 1992 .	1.0	sell here	USG Corp.	its headquarters building
+USG Corp. agreed to sell its headquarters building here to Manufacturers Life Insurance Co. of Toronto , and will lease the 19 - story facility until it moves to a new quarters in 1992 .	1.0	moves to	it	quarters in 1992
+USG Corp. agreed to sell its headquarters building here to Manufacturers Life Insurance Co. of Toronto , and will lease the 19 - story facility until it moves to a new quarters in 1992 .	1.0	is in	new quarters	1992
+USG Corp. agreed to sell its headquarters building here to Manufacturers Life Insurance Co. of Toronto , and will lease the 19 - story facility until it moves to a new quarters in 1992 .	1.0	lease	USG Corp.	19 story facility
+USG Corp. agreed to sell its headquarters building here to Manufacturers Life Insurance Co. of Toronto , and will lease the 19 - story facility until it moves to a new quarters in 1992 .	1.0	moves to	it	new quarters in 1992
+In 1988 , a year and a half after Mrs. Marcos and her late husband , Ferdinand Marcos , the ousted president of the Philippines , fled the Philippines for Hawaii , they were charged with racketeering , conspiracy , obstruction of justice and mail fraud in a scheme in which they allegedly embezzled more than $ 100 million from their homeland .	0.722	were charged with	they	obstruction
+In 1988 , a year and a half after Mrs. Marcos and her late husband , Ferdinand Marcos , the ousted president of the Philippines , fled the Philippines for Hawaii , they were charged with racketeering , conspiracy , obstruction of justice and mail fraud in a scheme in which they allegedly embezzled more than $ 100 million from their homeland .	0.722	were	they	charged
+In 1988 , a year and a half after Mrs. Marcos and her late husband , Ferdinand Marcos , the ousted president of the Philippines , fled the Philippines for Hawaii , they were charged with racketeering , conspiracy , obstruction of justice and mail fraud in a scheme in which they allegedly embezzled more than $ 100 million from their homeland .	0.722	were charged with	they	obstruction of justice
+In 1988 , a year and a half after Mrs. Marcos and her late husband , Ferdinand Marcos , the ousted president of the Philippines , fled the Philippines for Hawaii , they were charged with racketeering , conspiracy , obstruction of justice and mail fraud in a scheme in which they allegedly embezzled more than $ 100 million from their homeland .	1.0	president of	Ferdinand Marcos	Philippines
+In 1988 , a year and a half after Mrs. Marcos and her late husband , Ferdinand Marcos , the ousted president of the Philippines , fled the Philippines for Hawaii , they were charged with racketeering , conspiracy , obstruction of justice and mail fraud in a scheme in which they allegedly embezzled more than $ 100 million from their homeland .	1.0	is in	obstruction	scheme
+In 1988 , a year and a half after Mrs. Marcos and her late husband , Ferdinand Marcos , the ousted president of the Philippines , fled the Philippines for Hawaii , they were charged with racketeering , conspiracy , obstruction of justice and mail fraud in a scheme in which they allegedly embezzled more than $ 100 million from their homeland .	0.722	were charged with	they	racketeering
+In 1988 , a year and a half after Mrs. Marcos and her late husband , Ferdinand Marcos , the ousted president of the Philippines , fled the Philippines for Hawaii , they were charged with racketeering , conspiracy , obstruction of justice and mail fraud in a scheme in which they allegedly embezzled more than $ 100 million from their homeland .	1.0	obstruction of	racketeering	justice
+In 1988 , a year and a half after Mrs. Marcos and her late husband , Ferdinand Marcos , the ousted president of the Philippines , fled the Philippines for Hawaii , they were charged with racketeering , conspiracy , obstruction of justice and mail fraud in a scheme in which they allegedly embezzled more than $ 100 million from their homeland .	1.0	obstruction in	racketeering	scheme
+Repeat customers also can purchase luxury items at reduced prices .	1.0	can purchase luxury items at	Repeat customers	prices
+Repeat customers also can purchase luxury items at reduced prices .	1.0	also can purchase luxury items at	Repeat customers	reduced prices
+Repeat customers also can purchase luxury items at reduced prices .	1.0	can purchase luxury items at	Repeat customers	reduced prices
+Repeat customers also can purchase luxury items at reduced prices .	1.0	can purchase	Repeat customers	luxury items
+Repeat customers also can purchase luxury items at reduced prices .	1.0	also can purchase	Repeat customers	luxury items
+Repeat customers also can purchase luxury items at reduced prices .	1.0	also can purchase luxury items at	Repeat customers	prices
+Prime Minister Lee Kuan Yew , Singapore 's leader and one of Asia 's leading statesmen for 30 years , recently announced his intention to retire next year -- though not necessarily to end his influence .	1.0	of	Asia	leading statesmen
+Prime Minister Lee Kuan Yew , Singapore 's leader and one of Asia 's leading statesmen for 30 years , recently announced his intention to retire next year -- though not necessarily to end his influence .	1.0	has	Singapore	leader
+A specialist is an exchange member designated to maintain a fair and orderly market in a specified stock .	1.0	is	specialist	exchange member designated
+A specialist is an exchange member designated to maintain a fair and orderly market in a specified stock .	1.0	is in	fair market	specified stock
+A specialist is an exchange member designated to maintain a fair and orderly market in a specified stock .	1.0	is	specialist	exchange member
+British government bonds ended moderately higher , encouraged by a steadier pound and a rise in British stocks .	1.0	is in	rise	British stocks
+A surprising 78 % of people said they exercise regularly , up from 73 % in 1981 .	1.0	is in	73 %	1981
+The share price was languishing at about 400 pence before Ford 's Sept. 19 announcement of its interest in a minority stake .	1.0	before	Ford	Sept. 19 announcement of interest in minority stake
+The share price was languishing at about 400 pence before Ford 's Sept. 19 announcement of its interest in a minority stake .	1.0	is in	its interest	minority stake
+The share price was languishing at about 400 pence before Ford 's Sept. 19 announcement of its interest in a minority stake .	1.0	was languishing before	share price	Ford 's Sept. 19 announcement
+The share price was languishing at about 400 pence before Ford 's Sept. 19 announcement of its interest in a minority stake .	1.0	was languishing before	share price	Ford 's Sept. 19 announcement of its interest in minority stake
+The share price was languishing at about 400 pence before Ford 's Sept. 19 announcement of its interest in a minority stake .	1.0	was languishing before	share price	Ford 's Sept. 19 announcement of its interest
+The share price was languishing at about 400 pence before Ford 's Sept. 19 announcement of its interest in a minority stake .	1.0	was languishing at	share price	about 400 pence
+I was pleased to note that your Oct. 23 Centennial Journal item recognized the money - fund concept as one of the significant events of the past century .	1.0	was pleased	I	note
+I was pleased to note that your Oct. 23 Centennial Journal item recognized the money - fund concept as one of the significant events of the past century .	1.0	recognized	your Oct. 23 Centennial Journal item	money
+I was pleased to note that your Oct. 23 Centennial Journal item recognized the money - fund concept as one of the significant events of the past century .	1.0	was	I	pleased
+I was pleased to note that your Oct. 23 Centennial Journal item recognized the money - fund concept as one of the significant events of the past century .	1.0	recognized	your Oct. Centennial Journal item	money
+Annualized interest rates on certain investments as reported by the Federal Reserve Board on a weekly - average basis :	1.0	reported on	Annualized interest rates	average basis
+Annualized interest rates on certain investments as reported by the Federal Reserve Board on a weekly - average basis :	1.0	reported on	interest rates	weekly average basis
+Annualized interest rates on certain investments as reported by the Federal Reserve Board on a weekly - average basis :	1.0	reported on	Annualized interest rates	weekly average basis
+Annualized interest rates on certain investments as reported by the Federal Reserve Board on a weekly - average basis :	1.0	reported by	interest rates	Federal Reserve Board
+Annualized interest rates on certain investments as reported by the Federal Reserve Board on a weekly - average basis :	1.0	reported on	interest rates	basis
+Annualized interest rates on certain investments as reported by the Federal Reserve Board on a weekly - average basis :	1.0	reported on	Annualized interest rates	basis
+Annualized interest rates on certain investments as reported by the Federal Reserve Board on a weekly - average basis :	1.0	reported by	Annualized interest rates	Federal Reserve Board
+Annualized interest rates on certain investments as reported by the Federal Reserve Board on a weekly - average basis :	1.0	reported on	interest rates	weekly basis
+Annualized interest rates on certain investments as reported by the Federal Reserve Board on a weekly - average basis :	1.0	reported on	Annualized interest rates	weekly basis
+Annualized interest rates on certain investments as reported by the Federal Reserve Board on a weekly - average basis :	1.0	reported on	interest rates	average basis
+It was the most active of the 100 - share index at 8.3 million shares , 6.5 million of which were traded by midday .	1.0	was	It	active
+It was the most active of the 100 - share index at 8.3 million shares , 6.5 million of which were traded by midday .	1.0	was most active of	It	100 share index
+It was the most active of the 100 - share index at 8.3 million shares , 6.5 million of which were traded by midday .	1.0	was active of	It	100 share index
+It was the most active of the 100 - share index at 8.3 million shares , 6.5 million of which were traded by midday .	1.0	was	It	most active
+Between flashes , certain areas in subjects ' brains are jolted with a magnetic stimulator .	1.0	are	certain areas	Between flashes jolted with stimulator
+Between flashes , certain areas in subjects ' brains are jolted with a magnetic stimulator .	1.0	are jolted with	certain areas	magnetic stimulator
+Between flashes , certain areas in subjects ' brains are jolted with a magnetic stimulator .	1.0	are	certain areas	Between flashes jolted with magnetic stimulator
+Between flashes , certain areas in subjects ' brains are jolted with a magnetic stimulator .	1.0	are jolted Between	areas	flashes
+Between flashes , certain areas in subjects ' brains are jolted with a magnetic stimulator .	1.0	are jolted with	areas	magnetic stimulator
+Between flashes , certain areas in subjects ' brains are jolted with a magnetic stimulator .	1.0	are	certain areas	jolted
+Between flashes , certain areas in subjects ' brains are jolted with a magnetic stimulator .	1.0	are	areas	Between flashes jolted with magnetic stimulator
+Between flashes , certain areas in subjects ' brains are jolted with a magnetic stimulator .	1.0	are jolted with	certain areas	stimulator
+Between flashes , certain areas in subjects ' brains are jolted with a magnetic stimulator .	1.0	are	areas	Between flashes jolted with stimulator
+Between flashes , certain areas in subjects ' brains are jolted with a magnetic stimulator .	1.0	is in	certain areas	subjects ' brains
+Between flashes , certain areas in subjects ' brains are jolted with a magnetic stimulator .	1.0	are	areas	jolted
+Between flashes , certain areas in subjects ' brains are jolted with a magnetic stimulator .	1.0	are jolted with	areas	stimulator
+Between flashes , certain areas in subjects ' brains are jolted with a magnetic stimulator .	1.0	are jolted Between	certain areas	flashes
+The 41 - year - old Mr. Azoff , a former rock 'n' roll manager , is credited with turning around MCA 's once - moribund music division in his six years at the company .	1.0	has	MCA	once moribund music division
+The two leaders are expected to discuss changes sweeping the East bloc as well as human - rights issues , regional disputes and economic cooperation .	1.0	are	leaders	expected
+The two leaders are expected to discuss changes sweeping the East bloc as well as human - rights issues , regional disputes and economic cooperation .	1.0	are	two leaders	expected
+Nixon , on the fourth day of a private visit to China , said that damage to Sino - U.S. relations was `` very great , '' calling the situation `` the most serious '' since 1972 .	1.0	said on	Nixon	day of private visit to China
+Nixon , on the fourth day of a private visit to China , said that damage to Sino - U.S. relations was `` very great , '' calling the situation `` the most serious '' since 1972 .	1.0	said on	Nixon	fourth day of private visit to China
+Nixon , on the fourth day of a private visit to China , said that damage to Sino - U.S. relations was `` very great , '' calling the situation `` the most serious '' since 1972 .	1.0	said on	Nixon	day
+Nixon , on the fourth day of a private visit to China , said that damage to Sino - U.S. relations was `` very great , '' calling the situation `` the most serious '' since 1972 .	1.0	said on	Nixon	fourth day of visit
+Nixon , on the fourth day of a private visit to China , said that damage to Sino - U.S. relations was `` very great , '' calling the situation `` the most serious '' since 1972 .	1.0	said on	Nixon	day of private visit
+Nixon , on the fourth day of a private visit to China , said that damage to Sino - U.S. relations was `` very great , '' calling the situation `` the most serious '' since 1972 .	1.0	said on	Nixon	day of visit to China
+Nixon , on the fourth day of a private visit to China , said that damage to Sino - U.S. relations was `` very great , '' calling the situation `` the most serious '' since 1972 .	1.0	said on	Nixon	day of visit
+Nixon , on the fourth day of a private visit to China , said that damage to Sino - U.S. relations was `` very great , '' calling the situation `` the most serious '' since 1972 .	1.0	said on	Nixon	fourth day
+Nixon , on the fourth day of a private visit to China , said that damage to Sino - U.S. relations was `` very great , '' calling the situation `` the most serious '' since 1972 .	1.0	said on	Nixon	fourth day of private visit
+Nixon , on the fourth day of a private visit to China , said that damage to Sino - U.S. relations was `` very great , '' calling the situation `` the most serious '' since 1972 .	1.0	said on	Nixon	fourth day of visit to China
+He discovered a 75 - cent discrepancy in the charges made to various departments for computer time and traced it to a user named `` Hunter , '' who had no valid billing address .	1.0	discovered	He	75 cent discrepancy in charges
+He discovered a 75 - cent discrepancy in the charges made to various departments for computer time and traced it to a user named `` Hunter , '' who had no valid billing address .	1.0	discovered	He	75 cent discrepancy in charges made
+He discovered a 75 - cent discrepancy in the charges made to various departments for computer time and traced it to a user named `` Hunter , '' who had no valid billing address .	1.0	discovered	He	75 cent discrepancy
+He discovered a 75 - cent discrepancy in the charges made to various departments for computer time and traced it to a user named `` Hunter , '' who had no valid billing address .	1.0	discovered	He	75 cent discrepancy in charges made to departments
+He discovered a 75 - cent discrepancy in the charges made to various departments for computer time and traced it to a user named `` Hunter , '' who had no valid billing address .	1.0	discovered	He	75 cent discrepancy in charges made to various departments for computer time
+He discovered a 75 - cent discrepancy in the charges made to various departments for computer time and traced it to a user named `` Hunter , '' who had no valid billing address .	1.0	discovered	He	75 cent discrepancy in charges made for computer time
+He discovered a 75 - cent discrepancy in the charges made to various departments for computer time and traced it to a user named `` Hunter , '' who had no valid billing address .	1.0	is in	75 cent discrepancy	charges made to various departments for computer time
+He discovered a 75 - cent discrepancy in the charges made to various departments for computer time and traced it to a user named `` Hunter , '' who had no valid billing address .	1.0	discovered	He	75 cent discrepancy in charges made to departments for computer time
+He discovered a 75 - cent discrepancy in the charges made to various departments for computer time and traced it to a user named `` Hunter , '' who had no valid billing address .	1.0	traced	He	it
+He discovered a 75 - cent discrepancy in the charges made to various departments for computer time and traced it to a user named `` Hunter , '' who had no valid billing address .	1.0	discovered	He	75 cent discrepancy in charges made to various departments
+Coca - Cola Co. , aiming to boost soft - drink volume in Singapore , said it is discussing a joint venture with Fraser & Neave Ltd. , its bottling franchisee in that country .	1.0	is in	soft drink volume	Singapore
+Coca - Cola Co. , aiming to boost soft - drink volume in Singapore , said it is discussing a joint venture with Fraser & Neave Ltd. , its bottling franchisee in that country .	1.0	is with	joint venture	Fraser Ltd.
+Coca - Cola Co. , aiming to boost soft - drink volume in Singapore , said it is discussing a joint venture with Fraser & Neave Ltd. , its bottling franchisee in that country .	1.0	is in	its bottling franchisee	country
+The issue is backed by a 12 % letter of credit from Credit Suisse .	1.0	is backed by	issue	12 % letter of credit
+The issue is backed by a 12 % letter of credit from Credit Suisse .	1.0	is	issue	backed
+The issue is backed by a 12 % letter of credit from Credit Suisse .	1.0	is backed by	issue	12 % letter
+The issue is backed by a 12 % letter of credit from Credit Suisse .	1.0	is backed by	issue	letter of credit from Credit Suisse
+The issue is backed by a 12 % letter of credit from Credit Suisse .	1.0	is backed by	issue	12 % letter of credit from Credit Suisse
+The issue is backed by a 12 % letter of credit from Credit Suisse .	1.0	is backed by	issue	letter
+The issue is backed by a 12 % letter of credit from Credit Suisse .	1.0	is backed by	issue	letter of credit
+To avoid a runoff , one candidate would have to win 50 % of the vote -- a feat that most analysts consider impossible with so many candidates running .	1.0	avoid	one candidate	runoff
+To avoid a runoff , one candidate would have to win 50 % of the vote -- a feat that most analysts consider impossible with so many candidates running .	1.0	win	candidate	50 % of vote
+To avoid a runoff , one candidate would have to win 50 % of the vote -- a feat that most analysts consider impossible with so many candidates running .	0.071	consider	analysts	impossible
+To avoid a runoff , one candidate would have to win 50 % of the vote -- a feat that most analysts consider impossible with so many candidates running .	1.0	consider	most analysts	that
+To avoid a runoff , one candidate would have to win 50 % of the vote -- a feat that most analysts consider impossible with so many candidates running .	1.0	win	one candidate	50 %
+To avoid a runoff , one candidate would have to win 50 % of the vote -- a feat that most analysts consider impossible with so many candidates running .	0.071	consider	most analysts	impossible
+To avoid a runoff , one candidate would have to win 50 % of the vote -- a feat that most analysts consider impossible with so many candidates running .	1.0	consider	analysts	that
+To avoid a runoff , one candidate would have to win 50 % of the vote -- a feat that most analysts consider impossible with so many candidates running .	1.0	avoid	candidate	runoff
+To avoid a runoff , one candidate would have to win 50 % of the vote -- a feat that most analysts consider impossible with so many candidates running .	1.0	win	candidate	50 %
+To avoid a runoff , one candidate would have to win 50 % of the vote -- a feat that most analysts consider impossible with so many candidates running .	1.0	win	one candidate	50 % of vote
+Jaguar 's own defenses against a hostile bid are weakened , analysts add , because fewer than 3 % of its shares are owned by employees and management .	1.0	has	Jaguar	own defenses against hostile bid
+The dollar drew strength from the stock market 's climb .	1.0	drew	dollar	strength
+The dollar drew strength from the stock market 's climb .	1.0	drew strength from	dollar	stock market 's climb
+The dollar drew strength from the stock market 's climb .	1.0	from	stock market	climb
+Because patients require less attention from nurses and other staff , room charges are lower -- about $ 100 less per day than a regular room at the Vermont hospital .	1.0	require	patients	attention
+Because patients require less attention from nurses and other staff , room charges are lower -- about $ 100 less per day than a regular room at the Vermont hospital .	1.0	require	patients	less attention
+Because patients require less attention from nurses and other staff , room charges are lower -- about $ 100 less per day than a regular room at the Vermont hospital .	1.0	are	room charges	lower
+Because patients require less attention from nurses and other staff , room charges are lower -- about $ 100 less per day than a regular room at the Vermont hospital .	0.582	attention from	patients	nurses
+Because patients require less attention from nurses and other staff , room charges are lower -- about $ 100 less per day than a regular room at the Vermont hospital .	0.582	less attention from	patients	nurses
+Because patients require less attention from nurses and other staff , room charges are lower -- about $ 100 less per day than a regular room at the Vermont hospital .	1.0	require	patients	attention from nurses
+Because patients require less attention from nurses and other staff , room charges are lower -- about $ 100 less per day than a regular room at the Vermont hospital .	1.0	require	patients	less attention from nurses
+He also unfortunately illustrated this intricate , jazzy tapestry with Mr. Pearson 's images , this time of geometric or repeating objects , in a kitschy mirroring of the musical structure that was thoroughly distracting from Mr. Reich 's piece and Mr. Stoltzman 's elegant execution of it .	1.0	has	Mr. Stoltzman	elegant execution of it
+He also unfortunately illustrated this intricate , jazzy tapestry with Mr. Pearson 's images , this time of geometric or repeating objects , in a kitschy mirroring of the musical structure that was thoroughly distracting from Mr. Reich 's piece and Mr. Stoltzman 's elegant execution of it .	1.0	from	Mr. Reich	piece
+He also unfortunately illustrated this intricate , jazzy tapestry with Mr. Pearson 's images , this time of geometric or repeating objects , in a kitschy mirroring of the musical structure that was thoroughly distracting from Mr. Reich 's piece and Mr. Stoltzman 's elegant execution of it .	1.0	in images is	kitschy mirroring	time of geometric objects
+He also unfortunately illustrated this intricate , jazzy tapestry with Mr. Pearson 's images , this time of geometric or repeating objects , in a kitschy mirroring of the musical structure that was thoroughly distracting from Mr. Reich 's piece and Mr. Stoltzman 's elegant execution of it .	1.0	is in	Mr. Pearson 's images	kitschy mirroring of musical structure
+He also unfortunately illustrated this intricate , jazzy tapestry with Mr. Pearson 's images , this time of geometric or repeating objects , in a kitschy mirroring of the musical structure that was thoroughly distracting from Mr. Reich 's piece and Mr. Stoltzman 's elegant execution of it .	1.0	time of	Mr. Pearson 's images	geometric objects
+He also unfortunately illustrated this intricate , jazzy tapestry with Mr. Pearson 's images , this time of geometric or repeating objects , in a kitschy mirroring of the musical structure that was thoroughly distracting from Mr. Reich 's piece and Mr. Stoltzman 's elegant execution of it .	1.0	's images is	Mr. Pearson	time of geometric objects
+He also unfortunately illustrated this intricate , jazzy tapestry with Mr. Pearson 's images , this time of geometric or repeating objects , in a kitschy mirroring of the musical structure that was thoroughly distracting from Mr. Reich 's piece and Mr. Stoltzman 's elegant execution of it .	1.0	with	Mr. Pearson	images in kitschy mirroring of musical structure
+Standard & Poor 's 500 - Stock Index climbed 5.29 to 340.36 , the Dow Jones Equity Market Index added 4.70 to 318.79 and the New York Stock Exchange Composite Index climbed 2.65 to	1.0	has	Standard	500 Stock Index
+Standard & Poor 's 500 - Stock Index climbed 5.29 to 340.36 , the Dow Jones Equity Market Index added 4.70 to 318.79 and the New York Stock Exchange Composite Index climbed 2.65 to	1.0	climbed	New York Stock Exchange Composite Index	2.65
+The operative definition of newsworthiness will favor virtually unrestrained use of personal , sensitive and intimate facts .	1.0	will favor	definition	virtually unrestrained use of facts
+The operative definition of newsworthiness will favor virtually unrestrained use of personal , sensitive and intimate facts .	1.0	will favor	definition	virtually unrestrained use of personal facts
+The operative definition of newsworthiness will favor virtually unrestrained use of personal , sensitive and intimate facts .	1.0	will favor	operative definition	unrestrained use of facts
+The operative definition of newsworthiness will favor virtually unrestrained use of personal , sensitive and intimate facts .	1.0	will favor	definition	unrestrained use
+The operative definition of newsworthiness will favor virtually unrestrained use of personal , sensitive and intimate facts .	1.0	will favor	operative definition	use
+The operative definition of newsworthiness will favor virtually unrestrained use of personal , sensitive and intimate facts .	1.0	will favor	definition	use of facts
+The operative definition of newsworthiness will favor virtually unrestrained use of personal , sensitive and intimate facts .	1.0	will favor	operative definition	unrestrained use
+The operative definition of newsworthiness will favor virtually unrestrained use of personal , sensitive and intimate facts .	1.0	will favor	definition	virtually unrestrained use
+The operative definition of newsworthiness will favor virtually unrestrained use of personal , sensitive and intimate facts .	1.0	will favor	operative definition	virtually unrestrained use of facts
+The operative definition of newsworthiness will favor virtually unrestrained use of personal , sensitive and intimate facts .	1.0	will favor	operative definition	use of personal facts
+The operative definition of newsworthiness will favor virtually unrestrained use of personal , sensitive and intimate facts .	1.0	will favor	operative definition	virtually unrestrained use
+The operative definition of newsworthiness will favor virtually unrestrained use of personal , sensitive and intimate facts .	1.0	will favor	definition	unrestrained use of personal facts
+The operative definition of newsworthiness will favor virtually unrestrained use of personal , sensitive and intimate facts .	1.0	will favor	operative definition	virtually unrestrained use of personal facts
+The operative definition of newsworthiness will favor virtually unrestrained use of personal , sensitive and intimate facts .	1.0	will favor	definition	use
+The operative definition of newsworthiness will favor virtually unrestrained use of personal , sensitive and intimate facts .	1.0	will favor	definition	unrestrained use of facts
+The operative definition of newsworthiness will favor virtually unrestrained use of personal , sensitive and intimate facts .	1.0	will favor	definition	use of personal facts
+The operative definition of newsworthiness will favor virtually unrestrained use of personal , sensitive and intimate facts .	1.0	will favor	operative definition	unrestrained use of personal facts
+The operative definition of newsworthiness will favor virtually unrestrained use of personal , sensitive and intimate facts .	1.0	will favor	operative definition	use of facts
+It rose 4.8 % for the 12 months ended in June and 4.7 % in the 12 months ended in September 1988 .	0.406	ended in	12 months	June
+It rose 4.8 % for the 12 months ended in June and 4.7 % in the 12 months ended in September 1988 .	0.286	rose for	It	12 months
+It rose 4.8 % for the 12 months ended in June and 4.7 % in the 12 months ended in September 1988 .	1.0	is in	4.7 %	12 months ended
+It rose 4.8 % for the 12 months ended in June and 4.7 % in the 12 months ended in September 1988 .	0.286	rose for	It	12 months ended
+It rose 4.8 % for the 12 months ended in June and 4.7 % in the 12 months ended in September 1988 .	1.0	rose	It	4.8 %
+It rose 4.8 % for the 12 months ended in June and 4.7 % in the 12 months ended in September 1988 .	0.286	rose for	It	12 months ended in June
+Under the debt - equity program , potential investors will submit sealed bids on the percentage of discount they are willing to purchase the debt at , and the bids will be allocated based on these discount offers .	1.0	are	they	willing
+Under the debt - equity program , potential investors will submit sealed bids on the percentage of discount they are willing to purchase the debt at , and the bids will be allocated based on these discount offers .	1.0	will submit	potential investors	sealed bids
+Under the debt - equity program , potential investors will submit sealed bids on the percentage of discount they are willing to purchase the debt at , and the bids will be allocated based on these discount offers .	1.0	be	bids	will allocated
+Under the debt - equity program , potential investors will submit sealed bids on the percentage of discount they are willing to purchase the debt at , and the bids will be allocated based on these discount offers .	1.0	will submit bids on	potential investors	percentage
+Under the debt - equity program , potential investors will submit sealed bids on the percentage of discount they are willing to purchase the debt at , and the bids will be allocated based on these discount offers .	1.0	purchase	they	debt
+Under the debt - equity program , potential investors will submit sealed bids on the percentage of discount they are willing to purchase the debt at , and the bids will be allocated based on these discount offers .	1.0	will submit	potential investors	bids
+He has n't been able to replace the M'Bow cabal .	1.0	replace	He	M'Bow cabal
+Soviets remain in charge of education programs , a former head of an African military tribunal for executions is in charge of culture , and a hard - line Polish communist in exile directs the human - rights and peace division .	1.0	directs	line communist	human rights
+Soviets remain in charge of education programs , a former head of an African military tribunal for executions is in charge of culture , and a hard - line Polish communist in exile directs the human - rights and peace division .	1.0	remain in	Soviets	charge of education programs
+Soviets remain in charge of education programs , a former head of an African military tribunal for executions is in charge of culture , and a hard - line Polish communist in exile directs the human - rights and peace division .	1.0	is in	former head	charge of culture
+Soviets remain in charge of education programs , a former head of an African military tribunal for executions is in charge of culture , and a hard - line Polish communist in exile directs the human - rights and peace division .	1.0	remain in	Soviets	charge
+Soviets remain in charge of education programs , a former head of an African military tribunal for executions is in charge of culture , and a hard - line Polish communist in exile directs the human - rights and peace division .	1.0	directs	line Polish communist	human rights
+Soviets remain in charge of education programs , a former head of an African military tribunal for executions is in charge of culture , and a hard - line Polish communist in exile directs the human - rights and peace division .	1.0	is in	former head	charge
+Soviets remain in charge of education programs , a former head of an African military tribunal for executions is in charge of culture , and a hard - line Polish communist in exile directs the human - rights and peace division .	1.0	directs	line Polish communist	rights
+Soviets remain in charge of education programs , a former head of an African military tribunal for executions is in charge of culture , and a hard - line Polish communist in exile directs the human - rights and peace division .	1.0	directs	hard line communist	rights
+Soviets remain in charge of education programs , a former head of an African military tribunal for executions is in charge of culture , and a hard - line Polish communist in exile directs the human - rights and peace division .	1.0	directs	line communist	rights
+Soviets remain in charge of education programs , a former head of an African military tribunal for executions is in charge of culture , and a hard - line Polish communist in exile directs the human - rights and peace division .	1.0	directs	hard line communist	human rights
+Soviets remain in charge of education programs , a former head of an African military tribunal for executions is in charge of culture , and a hard - line Polish communist in exile directs the human - rights and peace division .	1.0	directs	hard line Polish communist	human rights
+Soviets remain in charge of education programs , a former head of an African military tribunal for executions is in charge of culture , and a hard - line Polish communist in exile directs the human - rights and peace division .	1.0	directs	hard line Polish communist	rights
+Soviets remain in charge of education programs , a former head of an African military tribunal for executions is in charge of culture , and a hard - line Polish communist in exile directs the human - rights and peace division .	1.0	is in	hard line Polish communist	exile
+Separately , Ford and Mazda Motor Corp. 's U.S. sales arm said they are recalling about 88,500 1988 - model Mercury Tracers and 220,000 1986 , 1987 and 1988 model Mazda 323s equipped with 1.6 - liter fuel - injected engines to replace the oil filler cap .	1.0	has	Mazda Motor Corp.	U.S. sales arm
+Separately , Ford and Mazda Motor Corp. 's U.S. sales arm said they are recalling about 88,500 1988 - model Mercury Tracers and 220,000 1986 , 1987 and 1988 model Mazda 323s equipped with 1.6 - liter fuel - injected engines to replace the oil filler cap .	1.0	said	Ford	Mazda Motor Corp. 's U.S. sales arm
+Separately , Ford and Mazda Motor Corp. 's U.S. sales arm said they are recalling about 88,500 1988 - model Mercury Tracers and 220,000 1986 , 1987 and 1988 model Mazda 323s equipped with 1.6 - liter fuel - injected engines to replace the oil filler cap .	1.0	Separately said	Ford	Mazda Motor Corp. 's U.S. sales arm
+The two sides are also discussing certain business ventures involving cable rights to Columbia 's movies .	1.0	are discussing	two sides	certain business ventures
+The two sides are also discussing certain business ventures involving cable rights to Columbia 's movies .	1.0	to	Columbia	movies
+The two sides are also discussing certain business ventures involving cable rights to Columbia 's movies .	1.0	are discussing	two sides	business ventures
+The two sides are also discussing certain business ventures involving cable rights to Columbia 's movies .	1.0	are discussing	sides	business ventures
+The two sides are also discussing certain business ventures involving cable rights to Columbia 's movies .	1.0	are also discussing	two sides	business ventures
+The two sides are also discussing certain business ventures involving cable rights to Columbia 's movies .	1.0	are also discussing	sides	business ventures
+The two sides are also discussing certain business ventures involving cable rights to Columbia 's movies .	1.0	are also discussing	two sides	certain business ventures
+The two sides are also discussing certain business ventures involving cable rights to Columbia 's movies .	1.0	are discussing	sides	certain business ventures
+The two sides are also discussing certain business ventures involving cable rights to Columbia 's movies .	1.0	are also discussing	sides	certain business ventures
+Hungary 's Parliament voted to hold a national referendum on an election to fill the new post of president .	1.0	hold	Hungary 's Parliament	national referendum
+Hungary 's Parliament voted to hold a national referendum on an election to fill the new post of president .	1.0	hold referendum on	Hungary 's Parliament	election
+Hungary 's Parliament voted to hold a national referendum on an election to fill the new post of president .	1.0	has	Hungary	Parliament
+Hungary 's Parliament voted to hold a national referendum on an election to fill the new post of president .	1.0	hold	Hungary 's Parliament	referendum
+Six years ago , Judge O'Kicki was voted president of the Pennsylvania Conference of State Trial Judges by the state 's 400 judges .	1.0	was voted	Judge O'Kicki	president of Pennsylvania Conference of State Trial Judges
+Six years ago , Judge O'Kicki was voted president of the Pennsylvania Conference of State Trial Judges by the state 's 400 judges .	1.0	ago was voted	Judge O'Kicki	president of Pennsylvania Conference
+Six years ago , Judge O'Kicki was voted president of the Pennsylvania Conference of State Trial Judges by the state 's 400 judges .	0.218	ago was voted by	Judge O'Kicki	state 's 400 judges
+Six years ago , Judge O'Kicki was voted president of the Pennsylvania Conference of State Trial Judges by the state 's 400 judges .	1.0	by	state	400 judges
+Six years ago , Judge O'Kicki was voted president of the Pennsylvania Conference of State Trial Judges by the state 's 400 judges .	1.0	ago was voted	Judge O'Kicki	president
+Six years ago , Judge O'Kicki was voted president of the Pennsylvania Conference of State Trial Judges by the state 's 400 judges .	1.0	was voted	Judge O'Kicki	president
+Six years ago , Judge O'Kicki was voted president of the Pennsylvania Conference of State Trial Judges by the state 's 400 judges .	0.218	was	Judge O'Kicki	voted
+Six years ago , Judge O'Kicki was voted president of the Pennsylvania Conference of State Trial Judges by the state 's 400 judges .	1.0	ago was voted	Judge O'Kicki	president of Pennsylvania Conference of State Trial Judges
+Six years ago , Judge O'Kicki was voted president of the Pennsylvania Conference of State Trial Judges by the state 's 400 judges .	1.0	ago was voted president by	Judge O'Kicki	state 's 400 judges
+Six years ago , Judge O'Kicki was voted president of the Pennsylvania Conference of State Trial Judges by the state 's 400 judges .	0.218	was	Judge O'Kicki	Six years ago voted by state 's 400 judges
+Six years ago , Judge O'Kicki was voted president of the Pennsylvania Conference of State Trial Judges by the state 's 400 judges .	0.218	was voted by	Judge O'Kicki	state 's 400 judges
+Six years ago , Judge O'Kicki was voted president of the Pennsylvania Conference of State Trial Judges by the state 's 400 judges .	1.0	was voted	Judge O'Kicki	president of Pennsylvania Conference
+Six years ago , Judge O'Kicki was voted president of the Pennsylvania Conference of State Trial Judges by the state 's 400 judges .	0.218	was	Judge O'Kicki	Six years ago voted
+Six years ago , Judge O'Kicki was voted president of the Pennsylvania Conference of State Trial Judges by the state 's 400 judges .	0.218	was	Judge O'Kicki	ago voted
+Six years ago , Judge O'Kicki was voted president of the Pennsylvania Conference of State Trial Judges by the state 's 400 judges .	1.0	was voted president by	Judge O'Kicki	state 's 400 judges
+The surprise announcement came after the IRS broke off negotiations with Mr. Hunt on a settlement of the one - time tycoon 's personal bankruptcy case .	1.0	has	time tycoon	personal bankruptcy case
+The surprise announcement came after the IRS broke off negotiations with Mr. Hunt on a settlement of the one - time tycoon 's personal bankruptcy case .	0.838	negotiations on	IRS	settlement
+The surprise announcement came after the IRS broke off negotiations with Mr. Hunt on a settlement of the one - time tycoon 's personal bankruptcy case .	0.838	negotiations on	IRS	settlement of one
+The surprise announcement came after the IRS broke off negotiations with Mr. Hunt on a settlement of the one - time tycoon 's personal bankruptcy case .	0.838	negotiations with	IRS	Mr. Hunt
+The surprise announcement came after the IRS broke off negotiations with Mr. Hunt on a settlement of the one - time tycoon 's personal bankruptcy case .	1.0	is with	negotiations	Mr. Hunt
+First Boston incurred millions of dollars of losses on Campeau securities it owned as well as on special securities it could n't sell .	1.0	incurred	First Boston	millions
+First Boston incurred millions of dollars of losses on Campeau securities it owned as well as on special securities it could n't sell .	1.0	incurred	First Boston	millions of dollars
+First Boston incurred millions of dollars of losses on Campeau securities it owned as well as on special securities it could n't sell .	1.0	incurred	First Boston	millions of dollars of losses
+Though Mr. Packer has since sold his stake , Courtaulds is moving to keep its institutional shareholders happy .	1.0	keep	Courtaulds	its shareholders happy
+Though Mr. Packer has since sold his stake , Courtaulds is moving to keep its institutional shareholders happy .	1.0	is moving	Courtaulds	keep
+Though Mr. Packer has since sold his stake , Courtaulds is moving to keep its institutional shareholders happy .	1.0	keep	Courtaulds	its institutional shareholders happy
+Though Mr. Packer has since sold his stake , Courtaulds is moving to keep its institutional shareholders happy .	1.0	has sold	Mr. Packer	his stake
+As a result , he said he will examine the Marcos documents sought by the prosecutors to determine whether turning over the filings is self - incrimination .	1.0	said As	he	result
+Few people in the advertising business have raised as many hackles as Alvin A. Achenbaum .	1.0	is in	Few people	advertising business
+The market 's tempo was helped by the dollar 's resiliency , he said .	1.0	by	dollar	resiliency
+The market 's tempo was helped by the dollar 's resiliency , he said .	1.0	has	market	tempo
+Feeling the naggings of a culture imperative , I promptly signed up .	1.0	Feeling	I	naggings of culture
+Feeling the naggings of a culture imperative , I promptly signed up .	1.0	Feeling	I	naggings of culture imperative
+Feeling the naggings of a culture imperative , I promptly signed up .	1.0	Feeling	I	naggings

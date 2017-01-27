@@ -1,6 +1,6 @@
 ''' 
 Usage:
-   benchmark --gold=GOLD_OIE --out=OUTPUT_FILE (--stanford=STANFORD_OIE | --ollie=OLLIE_OIE |--reverb=REVERB_OIE | --clausie=CLAUSIE_OIE | --openiefour=OPENIEFOUR_OIE | --props=PROPS_OIE)
+   benchmark --gold=GOLD_OIE --out=OUTPUT_FILE (--stanford=STANFORD_OIE | --ollie=OLLIE_OIE |--reverb=REVERB_OIE | --clausie=CLAUSIE_OIE | --openiefour=OPENIEFOUR_OIE | --props=PROPS_OIE | --tabbed=TABBED_OIE)
 
 Options:
   --gold=GOLD_OIE              The gold reference Open IE file (by default, it should be under ./oie_corpus/all.oie).
@@ -11,6 +11,8 @@ Options:
   --props=PROPS_OIE            Read PropS format from file PROPS_OIE
   --reverb=REVERB_OIE          Read ReVerb format from file REVERB_OIE
   --stanford=STANFORD_OIE      Read Stanford format from file STANFORD_OIE
+  --tabbed=TABBED_OIE          Read simple tab format file, where each line consists of:
+                                sent, prob, pred,arg1, arg2, ...
 '''
 import docopt
 import string
@@ -26,6 +28,7 @@ from oie_readers.reVerbReader import ReVerbReader
 from oie_readers.clausieReader import ClausieReader
 from oie_readers.openieFourReader import OpenieFourReader
 from oie_readers.propsReader import PropSReader
+from oie_readers.tabReader import TabReader
 
 from oie_readers.goldReader import GoldReader
 from matcher import Matcher
@@ -175,6 +178,10 @@ if __name__ == '__main__':
     if args['--openiefour']:
         predicted = OpenieFourReader()
         predicted.read(args['--openiefour'])
+        
+    if args['--tabbed']:
+        predicted = TabReader()
+        predicted.read(args['--tabbed'])
 
     b = Benchmark(args['--gold'])
     out_filename = args['--out']
