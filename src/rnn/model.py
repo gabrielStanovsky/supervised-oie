@@ -7,7 +7,8 @@ import nltk
 import time
 from docopt import docopt
 from keras.models import Sequential, Model
-from keras.layers import Input, Dense, LSTM, Embedding, TimeDistributedDense, TimeDistributed, merge, Bidirectional, Dropout
+from keras.layers import Input, Dense, LSTM, Embedding, TimeDistributedDense,\
+    TimeDistributed, merge, Bidirectional, Dropout
 from keras.wrappers.scikit_learn import KerasClassifier
 from keras.utils import np_utils
 from keras.preprocessing.text import one_hot
@@ -22,6 +23,8 @@ from operator import itemgetter
 from keras.callbacks import LambdaCallback, ModelCheckpoint
 from sklearn import metrics
 from pprint import pformat
+from common.symbols import NLTK_POS_TAGS
+from collections import defaultdict
 
 import os
 import json
@@ -38,7 +41,7 @@ class RNN_model:
                  hidden_units = pow(2, 7),trainable_emb = True,
                  emb_dropout = 0.1, num_of_latent_layers = 2,
                  epochs = 10, pred_dropout = 0.1, model_dir = "./models/",
-                 classes = None,
+                 classes = None, pos_tag_embedding_size = 5,
     ):
         """
         Initialize the model
@@ -60,6 +63,7 @@ class RNN_model:
         pred_dropout - the proportion to dropout before prediction
         model_dir - the path in which to save model
         classes - the classes to be encoded (list of strings)
+        pos_tag_embedding_size - The number of features to use when encoding pos tags
         """
         self.model_fn = lambda : model_fn(self)
         self.model_dir = model_dir
@@ -78,6 +82,7 @@ class RNN_model:
         self.epochs = epochs
         self.pred_dropout = pred_dropout
         self.classes = classes
+        self.pos_tag_embedding_size = pos_tag_embedding_size
 
         np.random.seed(self.seed)
 
@@ -267,17 +272,20 @@ class RNN_model:
         sents = self.get_fixed_size(sents)
 
         for sent in sents:
+            pos_tags_encodings = [NLTK_POS_TAGS.index(tag) for (_, tag) in nltk.pos_tag(sent.word.values)]
             word_encodings = [self.emb.get_word_index(w) for w in sent.word.values]
             pred_word_encodings = [self.emb.get_word_index(w) for w in sent.pred.values]
             word_inputs.append([Sample(w) for w in word_encodings])
             pred_inputs.append([Sample(w) for w in pred_word_encodings])
+            pos_inputs.append([Sample(pos) for pos in pos_tags_encodings])
 
         # Pad / truncate to desired maximum length
         ret = {"word_inputs" : [],
                "predicate_inputs": []}
+        ret = defaultdict(lambda: [])
 
-        for name, sequence in zip(ret.keys(),
-                                  [word_inputs, pred_inputs]):
+        for name, sequence in zip(["word_inputs", "predicate_inputs", "postags_inputs"],
+                                  [word_inputs, pred_inputs, pos_inputs]):
             for samples in pad_sequences(sequence,
                                          pad_func = lambda : Pad_sample(),
                                          maxlen = self.sent_maxlen):
@@ -346,13 +354,21 @@ class RNN_model:
     # Functional Keras -- all of the following are currying functions expecting models as input
     # https://keras.io/getting-started/functional-api-guide/
 
-    def embed(self):
+    def embed_word(self):
         """
         Embed word sequences using self's embedding class
         """
         return self.emb.get_keras_embedding(dropout = self.emb_dropout,
                                             trainable = self.trainable_emb,
                                             input_length = self.sent_maxlen)
+
+    def embed_pos(self):
+        """
+        Embed Part of Speech using this instance params
+        """
+        return Embedding(output_dim = self.pos_tag_embedding_size,
+                         input_dim = len(NLTK_POS_TAGS),
+                         input_length = self.sent_maxlen)
 
     def predict_classes(self):
         """
@@ -412,12 +428,13 @@ class RNN_model:
         # Build model
 
         ## Embedding Layer
-        embedding_layer = self.embed()
+        word_embedding_layer = self.embed_word()
+        pos_embedding_layer = self.embed_pos()
 
         ## Deep layers
         latent_layers = self.stack_latent_layers(self.num_of_latent_layers)
 
-        # ## Dropout
+        ## Dropout
         dropout = Dropout(self.pred_dropout)
 
         ## Prediction
@@ -425,13 +442,18 @@ class RNN_model:
 
         ## Prepare input features, and indicate how to embed them
         inputs_and_embeddings = [(Input(shape = (self.sent_maxlen,),
-                                       dtype="int32",
-                                       name = "word_inputs"),
-                                  embedding_layer),
+                                        dtype="int32",
+                                        name = "word_inputs"),
+                                  word_embedding_layer),
                                  (Input(shape = (self.sent_maxlen,),
-                                       dtype="int32",
+                                        dtype="int32",
                                         name = "predicate_inputs"),
-                                  embedding_layer)]
+                                  word_embedding_layer),
+                                 (Input(shape = (self.sent_maxlen,),
+                                        dtype="int32",
+                                        name = "postags_inputs"),
+                                  word_embedding_layer),
+        ]
 
         ## Concat all inputs and run on deep network
         output = predict_layer(dropout(latent_layers(merge([embed(inp)
@@ -469,6 +491,7 @@ class RNN_model:
             "epochs": self.epochs,
             "pred_dropout": self.pred_dropout,
             "emb_filename": self.emb_filename,
+            "pos_tag_embedding_size": self.pos_tag_embedding_size,
         }
 
     def save_model_to_file(self, fn):
