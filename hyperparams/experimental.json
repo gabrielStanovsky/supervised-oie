@@ -33,6 +33,6 @@
     "O-S",
     "P-B"
   ],
-  "emb_filename": "../pretrained_word_embeddings/glove.6B.300d.txt"
+  "emb_filename": "../pretrained_word_embeddings/glove.6B.50d.txt"
   }
 }
