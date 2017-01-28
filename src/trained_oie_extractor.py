@@ -1,5 +1,5 @@
 """ Usage:
-trained_oie_extractor --model=MODEL_DIR --in=INPUT_FILE --out=OUTPUT_FILE [--tokenize]
+trained_oie_extractor --model=MODEL_DIR --in=INPUT_FILE --out=OUTPUT_FILE [--tokenize] [--conll]
 
 Run a trined OIE model on raw sentences.
 
@@ -7,6 +7,7 @@ MODEL_DIR - Pretrained RNN model folder (containing model.json and pretrained we
 INPUT FILE - File where each row is a tokenized sentence to be parsed with OIE.
 OUTPUT_FILE - File where the OIE tuples will be output.
 tokenize - indicates that the input sentences are NOT tokenized.
+conll - Print a CoNLL represenation with probabilities
 
 TODO: specify format of OUTPUT_FILE
 """
@@ -23,11 +24,23 @@ class Trained_oie:
     """
     Compose OIE extractions given a pretrained RNN OIE model predicting classes per word
     """
-    def __init__(self, model):
+    def __init__(self, model, tokenize):
         """
         model - pretrained supervised model
+        tokenize - instance-wide indication whether all of the functions should
+                   tokenize their input
         """
         self.model = model
+        self.tokenize = tokenize
+
+    def split_words(self, sent):
+        """
+        Apply tokenization if needed, else just split by space
+        sent - string
+        """
+        return nltk.word_tokenize(sent) if self.tokenize\
+            else sent.split(" ")
+
 
     def get_extractions(self, sent):
         """
@@ -59,21 +72,38 @@ class Trained_oie:
                                       cur_args))
         return ret
 
-    def parse_sent(self, sent, tokenize):
+    def conll_with_prob(self, sent):
+        """
+        Returns a conll representation of sentence
+        Format:
+        word index, word, pred_index, label, probability
+        """
+        sent = self.split_words(sent)
+        ret = ""
+        for ((pred_ind, pred_word), labels) in self.model.predict_sentence(sent):
+            for (word_ind, ((label, prob), word)) in enumerate(zip(labels, sent)):
+                ret+= "\t".join(map(str,
+                                         [word_ind, word, pred_ind, label, prob]
+                                     )) + '\n'
+            ret += '\n'
+        return ret
+
+
+    def parse_sent(self, sent):
         """
         Returns a list of extractions for the given sentence
         sent - a tokenized sentence
         tokenize - boolean indicating whether the sentences should be tokenized first
         """
-        return self.get_extractions(nltk.word_tokenize(sent) if tokenize else sent)
+        return self.get_extractions(self.split_words(sent))
 
-    def parse_sents(self, sents, tokenize):
+    def parse_sents(self, sents):
         """
         Returns a list of extractions per sent in sents.
         sents - list of tokenized sentences
         tokenize - boolean indicating whether the sentences should be tokenized first
         """
-        return [self.parse_sent(sent, tokenize)
+        return [self.parse_sent(sent)
                 for sent in sents]
 
 
@@ -120,12 +150,20 @@ if __name__ == "__main__":
     output_fn = args["--out"]
     tokenize = args["--tokenize"]
 
-    oie = Trained_oie(load_pretrained_rnn(model_dir))
+    oie = Trained_oie(load_pretrained_rnn(model_dir),
+                      tokenize = tokenize)
 
     # Iterate over all raw sentences
-    with open(output_fn, 'w') as fout:
-        fout.write('\n'.join([str(ex)
-                              for sent in open(input_fn)
-                              for ex in oie.parse_sent(sent.strip().split(' '),
-                                                       tokenize = tokenize)
-                              if sent.strip()]))
+    if args["--conll"]:
+        with open(output_fn, 'w') as fout:
+            fout.write('\n\n'.join([oie.conll_with_prob(sent.strip())
+                                  for sent in open(input_fn)
+                                  if sent.strip()
+                              ]))
+
+    else:
+        with open(output_fn, 'w') as fout:
+            fout.write('\n'.join([str(ex)
+                                  for sent in open(input_fn)
+                                  for ex in oie.parse_sent(sent.strip())
+                                  if sent.strip()]))
