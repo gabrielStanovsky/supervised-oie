@@ -263,6 +263,7 @@ class RNN_model:
         """
         word_inputs = []
         pred_inputs = []
+        pos_inputs = []
         sents = self.get_fixed_size(sents)
 
         for sent in sents:
@@ -275,7 +276,7 @@ class RNN_model:
         ret = {"word_inputs" : [],
                "predicate_inputs": []}
 
-        for name, sequence in zip(["word_inputs", "predicate_inputs"],
+        for name, sequence in zip(ret.keys(),
                                   [word_inputs, pred_inputs]):
             for samples in pad_sequences(sequence,
                                          pad_func = lambda : Pad_sample(),
