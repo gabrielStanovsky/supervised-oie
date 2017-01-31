@@ -37,17 +37,22 @@ if __name__ == '__main__':
     output_file = args['--out']
     
     # plot graphs for all *.dat files in input path
+    fig = plt.figure()
+    ax = fig.add_axes([0.1, 0.1, 0.6, 0.75])
+
     files = glob(os.path.join(input_folder, '*.dat'))
     for _file in files:
         p, r = get_pr(_file)
         name = trend_name(_file)
-        plt.plot(r, p, label = name)
+        ax.plot(r, p, label = name)
 
     # Set figure properties and save
     logging.info("Plotting P/R graph to {}".format(output_file))
     plt.ylim([0.0, 1.05])
     plt.xlim([0.0, 1.0])
+
     plt.xlabel('Recall')
     plt.ylabel('Precision')
-    plt.legend(loc="lower right")
+    ax.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+
     plt.savefig(output_file)
