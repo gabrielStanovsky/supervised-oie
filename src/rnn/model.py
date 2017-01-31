@@ -2,6 +2,7 @@
     model [--train=TRAIN_FN] [--dev=DEV_FN] --test=TEST_FN [--pretrained=MODEL_DIR] [--load_hyperparams=MODEL_JSON] [--saveto=MODEL_DIR]
 """
 import numpy as np
+import math
 import pandas
 import nltk
 import time
@@ -272,9 +273,16 @@ class RNN_model:
         sents = self.get_fixed_size(sents)
 
         for sent in sents:
-            pos_tags_encodings = [NLTK_POS_TAGS.index(tag) for (_, tag) in nltk.pos_tag(sent.word.values)]
-            word_encodings = [self.emb.get_word_index(w) for w in sent.word.values]
-            pred_word_encodings = [self.emb.get_word_index(w) for w in sent.pred.values]
+            # pd assigns NaN for very infreq. empty string (see wiki train)
+            sent_words = [word
+                         if not (isinstance(word, float) and math.isnan(word)) else " "
+                         for word in sent.word.values]
+
+            pos_tags_encodings = [NLTK_POS_TAGS.index(tag)
+                                  for (_, tag)
+                                  in nltk.pos_tag(sent_words)]
+            word_encodings = [self.emb.get_word_index(w) for w in sent_words]
+            pred_word_encodings = [self.emb.get_word_index(w) for w in sent_words]
             word_inputs.append([Sample(w) for w in word_encodings])
             pred_inputs.append([Sample(w) for w in pred_word_encodings])
             pos_inputs.append([Sample(pos) for pos in pos_tags_encodings])
@@ -452,7 +460,7 @@ class RNN_model:
                                  (Input(shape = (self.sent_maxlen,),
                                         dtype="int32",
                                         name = "postags_inputs"),
-                                  word_embedding_layer),
+                                  pos_embedding_layer),
         ]
 
         ## Concat all inputs and run on deep network
