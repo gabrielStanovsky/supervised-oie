@@ -16,4 +16,7 @@ if __name__ == "__main__":
     pd.concat([pd.read_csv(fn,
                            sep = '\t',
                            header = 0)
-               for fn in input_fns]).
+               for fn in input_fns]).to_csv(out_fn,
+                                            sep = '\t',
+                                            header = True,
+                                            index = False)
