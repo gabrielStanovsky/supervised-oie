@@ -50,18 +50,18 @@ class Trained_oie:
         sent - a list of tokens
         """
         ret = []
+
         for ((pred_ind, pred_word), labels) in self.model.predict_sentence(sent):
             cur_args = []
             cur_arg = []
-            cur_prob = 1.0
+            probs = []
 
             # collect args
             for (label, prob), word in zip(labels, sent):
                 if label.startswith("A"):
                     cur_arg.append(word)
-#                    if prob > cur_prob:
-#                        cur_prob = prob
-                    cur_prob *= prob
+                    probs.append(prob)
+
                 elif cur_arg:
                     cur_args.append(cur_arg)
                     cur_arg = []
@@ -71,7 +71,9 @@ class Trained_oie:
                 ret.append(Extraction(sent,
                                       cur_prob,
                                       pred_word,
-                                      cur_args))
+                                      cur_args,
+                                      probs
+                                  ))
         return ret
 
     def conll_with_prob(self, sent):
@@ -80,6 +82,7 @@ class Trained_oie:
         Format:
         word index, word, pred_index, label, probability
         """
+        logging.debug("Parsing: {}".format(sent))
         sent = self.split_words(sent)
         ret = ""
         for ((pred_ind, pred_word), labels) in self.model.predict_sentence(sent):
@@ -96,6 +99,7 @@ class Trained_oie:
         sent - a tokenized sentence
         tokenize - boolean indicating whether the sentences should be tokenized first
         """
+        logging.debug("Parsing: {}".format(sent))
         return self.get_extractions(self.split_words(sent))
 
     def parse_sents(self, sents):
@@ -111,17 +115,21 @@ class Extraction:
     """
     Store and print an OIE extraction
     """
-    def __init__(self, sent, prob, pred, args):
+    def __init__(self, sent, pred, args, probs,
+                 calc_prob = lambda probs: 1.0 / (reduce(lambda x, y: x * y, probs) + 0.001)):
         """
         sent - Tokenized sentence - list of strings
         pred - Predicate word
         args - List of arguments (each a string)
-        prob - Gloat in [0,1] indicating the probablity
-               of this extraction
+        probs - list of float in [0,1] indicating the probablity
+               of each of the items in the extraction
+        calc_prob - function which takes a list of probabilities for each of the
+                    items and computes a single probability for the joint occurence of this extraction.
         """
         self.sent = sent
-#        self.prob = prob
-        self.prob = 1 / (prob + 0.0001)
+        self.calc_prob = calc_prob
+        self.probs = probs
+        self.prob = self.calc_prob(self.probs)
         self.pred = pred
         self.args = args
         logging.debug(self)
@@ -174,7 +182,8 @@ class Mock_model:
                     assert(pred_word != '') # sanity check
                     cur_sent = " ".join(cur_sent)
 
-                    # TODO: this is because of the dups bug
+                    # This is because of the dups bug --
+                    # doesn't suppose to happen any more
                     ret[cur_sent][pred_word] = (((pred_ind, pred_word), cur_ex),)
 
                     sents.append(cur_sent)
@@ -242,8 +251,7 @@ if __name__ == "__main__":
     if args["--conll"]:
         with open(output_fn, 'w') as fout:
             fout.write('\n\n'.join([oie.conll_with_prob(sent.strip())
-                                  for sent in sents
-            ]))
+                                    for sent in sents]))
 
     else:
         with open(output_fn, 'w') as fout:

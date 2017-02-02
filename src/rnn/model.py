@@ -199,7 +199,6 @@ class RNN_model:
         """
         Return a dataframe which could be given to encode_inputs
         """
-        logging.debug("Creating sample with pred: {}".format(pred_word))
         return pandas.DataFrame({"word": sent,
                                  "pred": [pred_word] * len(sent)})
 
