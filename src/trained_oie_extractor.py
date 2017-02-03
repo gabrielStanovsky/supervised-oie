@@ -25,14 +25,14 @@ logging.basicConfig(level = logging.DEBUG)
 
 ## Different probability combination functions to experiment with
 def default_prob(probs):
-    return 1.0 / (reduce(lambda x, y: x * y, probs) + 0.001)
+    return 1.0/(reduce(lambda x, y: x * y, probs) + 0.001)
 
 
 def max_prob(probs):
     return max(probs)
 
 def min_prob(probs):
-    return min(probs)
+    return 1.0 / min(probs)
 
 
 
@@ -85,7 +85,8 @@ class Trained_oie:
                 ret.append(Extraction(sent,
                                       pred_word,
                                       cur_args,
-                                      probs
+                                      probs,
+                                      calc_prob = default_prob,
                                   ))
         return ret
 
@@ -190,7 +191,7 @@ class Mock_model:
 
         # Iterate over lines and populate return dictionary
         for line_ind, line in enumerate(open(conll_file)):
-            if not (line_ind % pow(10,5)):
+            if not (line_ind % pow(10,3)):
                 logging.debug(line_ind)
             line = line.strip()
             if not line:
@@ -215,7 +216,7 @@ class Mock_model:
                 if word_ind == pred_ind:
                     pred_word = word
                 cur_ex.append((label, prob))
-        return (self.flatten_ret_dic(ret, 2),
+        return (self.flatten_ret_dic(ret, 1),
                 list(set(sents)))
 
     def flatten_ret_dic(self, dic, num_of_dups):
@@ -257,6 +258,7 @@ if __name__ == "__main__":
         model = Mock_model(input_fn)
         sents = model.sents
 
+    sents = list(set(sents))
     oie = Trained_oie(model,
                       tokenize = tokenize)
 
