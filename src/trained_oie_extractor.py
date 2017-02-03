@@ -69,7 +69,6 @@ class Trained_oie:
             # Create extraction
             if cur_args:
                 ret.append(Extraction(sent,
-                                      cur_prob,
                                       pred_word,
                                       cur_args,
                                       probs
