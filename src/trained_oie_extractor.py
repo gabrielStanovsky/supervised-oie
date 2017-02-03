@@ -115,7 +115,7 @@ class Extraction:
     Store and print an OIE extraction
     """
     def __init__(self, sent, pred, args, probs,
-                 calc_prob = lambda probs: 1.0 / (reduce(lambda x, y: x * y, probs) + 0.001)):
+                 calc_prob = lambda probs: 1.0 / (reduce(lambda x, y: x * y, probs) + 0.501)):
         """
         sent - Tokenized sentence - list of strings
         pred - Predicate word
@@ -198,7 +198,7 @@ class Mock_model:
                 if word_ind == pred_ind:
                     pred_word = word
                 cur_ex.append((label, prob))
-        return (self.flatten_ret_dic(ret, 2),
+        return (self.flatten_ret_dic(ret, 1),
                 list(set(sents)))
 
     def flatten_ret_dic(self, dic, num_of_dups):
