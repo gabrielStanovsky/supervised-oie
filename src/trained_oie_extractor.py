@@ -96,7 +96,7 @@ class Trained_oie:
         Format:
         word index, word, pred_index, label, probability
         """
-#        logging.debug("Parsing: {}".format(sent))
+        logging.debug("Parsing: {}".format(sent))
         sent = self.split_words(sent)
         ret = ""
         for ((pred_ind, pred_word), labels) in self.model.predict_sentence(sent):
