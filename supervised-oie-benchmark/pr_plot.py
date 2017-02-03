@@ -1,9 +1,13 @@
 """ Usage:
-   pr_plot --in=DIR_NAME --out=OUTPUT_FILENAME
+   pr_plot --in=DIR_NAME --out=OUTPUT_DIR --outputtype=FILETYPE
+
+Output PR curve and corresponding AUC curves to file.
+Filename will be pr.filetype, auc.filetype under the given folder.
 
 Options:
   --in=DIR_NAME            Folder in which to search for *.dat files, all of which should be in a P/R column format (outputs from benchmark.py)
-  --out=OUTPUT_FILENAME    Output filename, filetype will determine the format. Possible formats: pdf, pgf, png
+  --out=OUTPUT_FILENAME    Output directory
+  --filetype               Will determine the format. Possible formats: pdf, pgf, png
 """
 
 import os
@@ -13,6 +17,8 @@ from glob import glob
 from docopt import docopt
 import matplotlib.pyplot as plt
 import logging
+from operator import itemgetter
+from scipy.integrate import simps
 logging.basicConfig(level = logging.INFO)
 
 def trend_name(path):
@@ -29,26 +35,22 @@ def get_pr(path):
         [p, r] = zip(*[map(lambda x: float(x), line.strip().split('\t')) for line in fin])
         return p, r
 
-if __name__ == '__main__':
-    args = docopt(__doc__)
-    input_folder = args['--in']
-    output_file = args['--out']
-
-    # plot graphs for all *.dat files in input path
+def plot_pr_curve(pr_ls, filename):
+    """
+    Plot PR curves to file.
+    pr_ls - List of curve names and list of AUC values and corresponding colors
+    filename - In which to save the figure.
+    """
     fig = plt.figure()
     ax = fig.add_axes([0.1, 0.1, 0.6, 0.75])
+    colors = []
 
-    files = glob(os.path.join(input_folder, '*.dat'))
-    for _file in files:
-        p, r = get_pr(_file)
-        name = trend_name(_file)
-        logging.info("{} (AUC) = {}".format(name,
-                                            np.trapz(p, x = r)))
-        ax.plot(r, p, label = name)
-
+    for (name, (p, r)) in pr_ls:
+        lines = ax.plot(r, p, label = name)
+        colors.append(lines[0].get_color())
 
     # Set figure properties and save
-    logging.info("Plotting P/R graph to {}".format(output_file))
+    logging.info("Plotting P/R graph to {}".format(filename))
     plt.ylim([0.0, 1.05])
     plt.xlim([0.0, 1.0])
 
@@ -56,4 +58,50 @@ if __name__ == '__main__':
     plt.ylabel('Precision')
     ax.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 
-    plt.savefig(output_file)
+    plt.savefig(filename)
+    return colors
+
+
+def plot_auc(auc_ls, filename):
+    """
+    Plot AUC bars to file.
+    pr_dic - List of curve names and AUC values
+    filename - in which to save the figure.
+    """
+    ind = np.arange(len(auc_ls))
+    auc_ls = sorted(auc_ls,
+                    key = lambda (name, val, color): val,
+                    reverse = True)
+    names, vals, colors = zip(*auc_ls)
+    logging.info("Plotting AUC chart to {}".format(filename))
+    fig, ax = plt.subplots()
+    width = 0.35
+    rects1 = ax.bar(ind, vals, width, color = colors)
+    ax.set_xticks(ind + width / 2)
+    ax.set_xticklabels(names)
+    plt.savefig(filename)
+
+
+if __name__ == '__main__':
+    args = docopt(__doc__)
+    input_folder = args['--in']
+    output_folder = args['--out']
+    filetype = args['--outputtype']
+
+    # plot graphs for all *.dat files in input path
+    fig = plt.figure()
+    aucs = []
+    pr_ls = []
+
+    files = glob(os.path.join(input_folder, '*.dat'))
+    for _file in files:
+        p, r = get_pr(_file)
+        name = trend_name(_file)
+        pr_ls.append((name, (p,r)))
+        aucs.append((name, np.trapz(p, x = r))) # Record AUC
+
+    colors = plot_pr_curve(pr_ls,
+                           os.path.join(output_folder, "pr.{}".format(filetype)))
+
+    plot_auc([(name, auc, color) for ((name, auc), color) in zip(aucs, colors)],
+             os.path.join(output_folder, "auc.{}".format(filetype)))

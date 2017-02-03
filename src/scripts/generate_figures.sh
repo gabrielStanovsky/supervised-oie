@@ -13,10 +13,10 @@ python benchmark.py --gold=./oie_corpus/newswire/propbank.test.oie.orig\
 python benchmark.py --gold=./oie_corpus/newswire/propbank.test.oie.orig\
        --out=$DIR/PropS.dat --tabbed=./systems_output/test/newswire/props_propbank_test.txt
 python benchmark.py --gold=./oie_corpus/newswire/propbank.test.oie.orig\
-       --out=$DIR/rnnie_in_domain.dat --tabbed=../evaluations/extractions/newswire_in_domain.txt
+       --out=$DIR/RnnOIE_in_domain.dat --tabbed=../evaluations/extractions/newswire_in_domain.txt
 python benchmark.py --gold=./oie_corpus/newswire/propbank.test.oie.orig\
-       --out=$DIR/rnnie_out_of_domain.dat --tabbed=../evaluations/extractions/wiki_out_of_domain.txt
-python pr_plot.py --in=${DIR} --out=${DIR}/newswire.png
+       --out=$DIR/RnnOIE_out_of_domain.dat --tabbed=../evaluations/extractions/wiki_out_of_domain.txt
+python pr_plot.py --in=${DIR} --out=${DIR} --outputtype=png
 
 # Wiki figure
 DIR="../evaluations/figures/wiki"
@@ -30,10 +30,10 @@ python benchmark.py --gold=./oie_corpus/wiki/wiki1.test.oie.orig\
 python benchmark.py --gold=./oie_corpus/wiki/wiki1.test.oie.orig\
        --out=$DIR/PropS.dat --tabbed=./systems_output/test/wiki/props_wiki_test.txt
 python benchmark.py --gold=./oie_corpus/wiki/wiki1.test.oie.orig\
-       --out=$DIR/rnnie_in_domain.dat --tabbed=../evaluations/extractions/wiki_in_domain.txt
+       --out=$DIR/RnnOIE_in_domain.dat --tabbed=../evaluations/extractions/wiki_in_domain.txt
 python benchmark.py --gold=./oie_corpus/wiki/wiki1.test.oie.orig\
-       --out=$DIR/rnnie_out_of_domain.dat --tabbed=../evaluations/extractions/newswire_out_of_domain.txt
-python pr_plot.py --in=${DIR} --out=${DIR}/wiki.png
+       --out=$DIR/RnnOIE_out_of_domain.dat --tabbed=../evaluations/extractions/newswire_out_of_domain.txt
+python pr_plot.py --in=${DIR} --out=${DIR} --outputtype=png
 
 
 # Joint figure
@@ -49,8 +49,8 @@ python benchmark.py --gold=./oie_corpus/test.oie.orig\
 python benchmark.py --gold=./oie_corpus/test.oie.orig\
        --out=$DIR/PropS.dat --tabbed=./systems_output/test/props_test.txt
 python benchmark.py --gold=./oie_corpus/test.oie.orig\
-       --out=$DIR/rnnie_in_domain.dat --tabbed=../evaluations/extractions/joint.txt
-python pr_plot.py --in=${DIR} --out=${DIR}/joint.png
+       --out=$DIR/RnnOIE.dat --tabbed=../evaluations/extractions/joint.txt
+python pr_plot.py --in=${DIR} --out=${DIR} --outputtype=png
 
 
 echo "DONE!"
