@@ -22,6 +22,20 @@ from collections import defaultdict
 
 logging.basicConfig(level = logging.DEBUG)
 
+
+## Different probability combination functions to experiment with
+def default_prob(probs):
+    return 1.0 / (reduce(lambda x, y: x * y, probs) + 0.001)
+
+
+def max_prob(probs):
+    return max(probs)
+
+def min_prob(probs):
+    return min(probs)
+
+
+
 class Trained_oie:
     """
     Compose OIE extractions given a pretrained RNN OIE model predicting classes per word
@@ -81,7 +95,7 @@ class Trained_oie:
         Format:
         word index, word, pred_index, label, probability
         """
-        logging.debug("Parsing: {}".format(sent))
+#        logging.debug("Parsing: {}".format(sent))
         sent = self.split_words(sent)
         ret = ""
         for ((pred_ind, pred_word), labels) in self.model.predict_sentence(sent):
@@ -98,7 +112,7 @@ class Trained_oie:
         sent - a tokenized sentence
         tokenize - boolean indicating whether the sentences should be tokenized first
         """
-        logging.debug("Parsing: {}".format(sent))
+#        logging.debug("Parsing: {}".format(sent))
         return self.get_extractions(self.split_words(sent))
 
     def parse_sents(self, sents):
@@ -115,7 +129,7 @@ class Extraction:
     Store and print an OIE extraction
     """
     def __init__(self, sent, pred, args, probs,
-                 calc_prob = lambda probs: 1.0 / (reduce(lambda x, y: x * y, probs) + 0.001)):
+                 calc_prob = default_prob):
         """
         sent - Tokenized sentence - list of strings
         pred - Predicate word
@@ -131,7 +145,7 @@ class Extraction:
         self.prob = self.calc_prob(self.probs)
         self.pred = pred
         self.args = args
-        logging.debug(self)
+#        logging.debug(self)
 
     def __str__(self):
         """
@@ -144,6 +158,9 @@ class Extraction:
                               self.pred,
                               '\t'.join([' '.join(arg)
                                          for arg in self.args])]))
+
+
+
 class Mock_model:
     """
     Load a conll file annotated with labels And probabilities
