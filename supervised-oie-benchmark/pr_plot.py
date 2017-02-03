@@ -1,11 +1,9 @@
 """ Usage:
-   pr_plot --in=DIR_NAME --out=OUTPUT_FILENAME 
+   pr_plot --in=DIR_NAME --out=OUTPUT_FILENAME
 
 Options:
   --in=DIR_NAME            Folder in which to search for *.dat files, all of which should be in a P/R column format (outputs from benchmark.py)
   --out=OUTPUT_FILENAME    Output filename, filetype will determine the format. Possible formats: pdf, pgf, png
-
-
 """
 
 import os
@@ -30,12 +28,12 @@ def get_pr(path):
         fin.readline()
         [p, r] = zip(*[map(lambda x: float(x), line.strip().split('\t')) for line in fin])
         return p, r
-    
+
 if __name__ == '__main__':
     args = docopt(__doc__)
     input_folder = args['--in']
     output_file = args['--out']
-    
+
     # plot graphs for all *.dat files in input path
     fig = plt.figure()
     ax = fig.add_axes([0.1, 0.1, 0.6, 0.75])
@@ -44,7 +42,10 @@ if __name__ == '__main__':
     for _file in files:
         p, r = get_pr(_file)
         name = trend_name(_file)
+        logging.info("{} (AUC) = {}".format(name,
+                                            np.trapz(p, x = r)))
         ax.plot(r, p, label = name)
+
 
     # Set figure properties and save
     logging.info("Plotting P/R graph to {}".format(output_file))
