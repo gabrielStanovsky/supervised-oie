@@ -77,6 +77,8 @@ def plot_auc(auc_ls, filename):
     fig, ax = plt.subplots()
     width = 0.35
     rects1 = ax.bar(ind, vals, width, color = colors)
+    for i, v in enumerate(vals):
+            ax.text(i + .1, v + .01 , "{:.2f}".format(v))
     ax.set_xticks(ind + width / 2)
     ax.set_xticklabels(names)
     plt.savefig(filename)

@@ -34,7 +34,7 @@ class TabReader(OieReader):
                 text, confidence, rel = data[:3]
                 curExtraction = Extraction(pred = rel, sent = text, confidence = float(confidence))
 
-                for arg in data[4:]:
+                for arg in data[3:]:
                     curExtraction.addArg(arg)
 
                 d[text] = d.get(text, []) + [curExtraction]

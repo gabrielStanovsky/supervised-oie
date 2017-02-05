@@ -53,5 +53,15 @@ python benchmark.py --gold=./oie_corpus/test.oie.orig\
 python pr_plot.py --in=${DIR} --out=${DIR} --outputtype=png
 
 
+DIR="../evaluations/figures/joint/"
+echo "Calculating stats"
+echo "ClausIE"
+python oie_readers/calc_corpus_stats.py --in=./systems_output/test/clausie_test.txt --out=$DIR/clausie_stats.txt
+echo "Open IE4"
+python oie_readers/calc_corpus_stats.py --in=./systems_output/test/openie4_test.txt --out=$DIR/openie4_stats.txt
+echo "PropS"
+python oie_readers/calc_corpus_stats.py --in=./systems_output/test/props_test.txt --out=$DIR/props_stats.txt
+echo "RnnOIE"
+python oie_readers/calc_corpus_stats.py --in=../evaluations/extractions/joint.txt --out=$DIR/rnnoie_stats.txt
 echo "DONE!"
 popd

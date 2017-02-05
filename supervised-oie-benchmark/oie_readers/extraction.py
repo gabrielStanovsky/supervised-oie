@@ -33,7 +33,6 @@ class Extraction:
         return sorted(self.questions[question], key = lambda arg: self.distArgFromPred(arg))
 
     def addArg(self, arg, question = None):
-        logging.debug("Adding argument: {}".format(arg))
         self.args.append(arg)
         if question:
             self.questions[question] = self.questions.get(question,[]) + [Argument(arg)]
