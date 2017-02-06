@@ -115,7 +115,7 @@ class Extraction:
     Store and print an OIE extraction
     """
     def __init__(self, sent, pred, args, probs,
-                 calc_prob = lambda probs: 1.0 / (reduce(lambda x, y: x * y, probs) + 0.501)):
+                 calc_prob = lambda probs: 1.0 / (reduce(lambda x, y: x * y, probs) + 0.001)):
         """
         sent - Tokenized sentence - list of strings
         pred - Predicate word

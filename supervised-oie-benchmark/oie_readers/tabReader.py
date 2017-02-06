@@ -32,7 +32,9 @@ class TabReader(OieReader):
                     continue
                 data = line.strip().split('\t')
                 text, confidence, rel = data[:3]
-                curExtraction = Extraction(pred = rel, sent = text, confidence = float(confidence))
+                curExtraction = Extraction(pred = rel,
+                                           sent = text,
+                                           confidence = float(confidence))
 
                 for arg in data[3:]:
                     curExtraction.addArg(arg)

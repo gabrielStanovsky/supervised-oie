@@ -1,5 +1,5 @@
 """ Usage:
-    calc_corpus_stats --in=INPUT_FILENAME --out=OUTPUT_FILENAME
+    calc_corpus_stats (--gold=INPUT_FILENAME| --in=INPUT_FILENAME) --out=OUTPUT_FILENAME
 
 Prints various stats about a given corpus to the output file. The input file should be an Open IE corpus in tabbed
 format.
@@ -10,6 +10,7 @@ Stats prints:
 1. Average length of extractions
 """
 from tabReader import TabReader
+from goldReader import GoldReader
 from docopt import docopt
 import numpy as np
 import logging
@@ -18,9 +19,14 @@ logging.basicConfig(level = logging.DEBUG)
 
 if __name__ == "__main__":
     args = docopt(__doc__)
-    inp = args["--in"]
     out = args["--out"]
-    oie = TabReader()
+    if args["--in"] is not None:
+        oie = TabReader()
+
+    elif args["--gold"] is not None:
+        oie = GoldReader()
+
+    inp = args["--in"] or args["--gold"]
     oie.read(inp)
     exs = [ex for exts_list in oie.oie.values() for ex in exts_list]
     with open(out, 'w') as fout:
