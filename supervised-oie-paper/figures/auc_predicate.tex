@@ -1,0 +1,31 @@
+\pgfplotsset{
+	compat=1.5, 
+	label style={font=\footnotesize},
+	legend style={font=\footnotesize},
+	every tick label/.append style={font=\tiny},
+}
+
+
+
+\begin{figure}  
+
+\vspace{-2mm}
+\centering
+
+\begin{tikzpicture}
+  \begin{axis}[
+  ybar,
+  bar width=2pt,
+  xtick=data,% crucial line for the xticklabels directive
+   xticklabels from table={../evaluations/figures/joint/predicate/auc.dat}{system}
+  ]
+        \addplot[red,mark size=0pt] table [x=auc] {../evaluations/figures/joint/predicate/auc.dat};
+  \end{axis}
+\end{tikzpicture}
+
+\caption{AUC Predicate identification @}
+\label{fig:rascal}
+
+
+
+\end{figure}

@@ -130,11 +130,9 @@ For example, our revisited annotation for the second example in Table \ref{tab:o
 %% \end{figure}
 
 \begin{figure}[H]
-%  \vspace{-1\baselineskip}
+%  \vspace{-1\baselineskip}x
   \framebox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{
                  \ann{Barack}{A0-B} \ann{Obama}{A0-I} \ann{,}{O-A0} \ann{a}{O-A0} \ann{former}{O-A0} \ann{U.S.}{O-A0} \ann{president}{O-A0} \ann{,}{O-A0} \ann{was}{P-B} \ann{born}{P-I} \ann{in}{P-I} \ann{Hawaii}{A1-B}
-
-    
 }}
 %\vspace{-1\baselineskip}
 \end{figure}
@@ -145,7 +143,7 @@ a much more balanced partition (Figure \ref{fig:new_label_dist}).
 As we will show in Section \ref{sec:evaluation}, this manipulation indeed enables our learning process to
 converge on a more useful model.
 Previous models have dealt with label bias in various other techniques, which might be better suited
-for tasks with smaller label sets. These methods include for example:
+for tasks with smaller label sets. These include, for example:
 relabling with BILOU labels \cite{ratinov2009design},
 label resampling \cite{estabrooks2004multiple},
 or CRF for conditioning current prediction on previous model decisions \cite{baidusrl}.

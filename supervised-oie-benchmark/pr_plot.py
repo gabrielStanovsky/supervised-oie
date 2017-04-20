@@ -62,7 +62,7 @@ def plot_pr_curve(pr_ls, filename):
     return colors
 
 
-def plot_auc(auc_ls, filename):
+def plot_auc(auc_ls, filename, output_folder):
     """
     Plot AUC bars to file.
     pr_dic - List of curve names and AUC values
@@ -72,6 +72,11 @@ def plot_auc(auc_ls, filename):
     auc_ls = sorted(auc_ls,
                     key = lambda (name, val, color): val,
                     reverse = True)
+    with open(os.path.join(output_folder, "auc.dat"), 'w') as fout:
+        fout.write("system\tauc\n")
+        for (name, val, color) in auc_ls:
+            fout.write("{}\t{}\n".format(name, val))
+
     names, vals, colors = zip(*auc_ls)
     logging.info("Plotting AUC chart to {}".format(filename))
     fig, ax = plt.subplots()
@@ -106,4 +111,6 @@ if __name__ == '__main__':
                            os.path.join(output_folder, "pr.{}".format(filetype)))
 
     plot_auc([(name, auc, color) for ((name, auc), color) in zip(aucs, colors)],
-             os.path.join(output_folder, "auc.{}".format(filetype)))
+             os.path.join(output_folder, "auc.{}".format(filetype)),
+             output_folder
+    )
