@@ -1,0 +1,115 @@
+%
+% File acl2017.tex
+%
+%% Based on the style files for ACL-2015, with some improvements
+%%  taken from the NAACL-2016 style
+%% Based on the style files for ACL-2014, which were, in turn,
+%% based on ACL-2013, ACL-2012, ACL-2011, ACL-2010, ACL-IJCNLP-2009,
+%% EACL-2009, IJCNLP-2008...
+%% Based on the style files for EACL 2006 by
+%%e.agirre@ehu.es or Sergi.Balari@uab.es
+%% and that of ACL 08 by Joakim Nivre and Noah Smith
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[hyperref]{acl2017}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{todonotes}
+\usepackage{url}
+\usepackage{blindtext}
+\usepackage{fancybox, graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{arydshln}
+\usepackage{pgf-pie}
+\usepackage{float}
+%\aclfinalcopy % Uncomment this line for the final submission
+\def\aclpaperid{517} %  Enter the acl Paper ID here
+
+%\setlength\titlebox{5cm}
+% You can expand the titlebox if you need extra space
+% to show all the authors. Please do not make the titlebox
+% smaller than 5cm (the original size); we will check this
+% in the camera-ready version and ask you to change it back.
+
+\newcommand\BibTeX{B{\sc ib}\TeX}
+\input{commands}
+\title{Supervised Open Information Extraction}
+
+\author{First Author \\
+  Affiliation / Address line 1 \\
+  Affiliation / Address line 2 \\
+  Affiliation / Address line 3 \\
+  {\tt email@domain} \\\And
+  Second Author \\
+  Affiliation / Address line 1 \\
+  Affiliation / Address line 2 \\
+  Affiliation / Address line 3 \\
+  {\tt email@domain} \\}
+
+\date{}
+
+%% FIX for the weird latex bug
+%\let\oldhref\href
+%\renewcommand{\href}[2]{\oldhref{#1}{\hbox{#2}}}
+%\usepackage{hyperref}
+
+
+\begin{document}
+\maketitle
+\begin{abstract}
+  Open Information Extraction (Open IE) has gained popularity as an underlying representation in a
+  wide array of semantic applications.
+  However, the lack of a large gold standard corpus for Open IE has
+  limited the development of automatic extraction techniques to largely rule-based algorithms.
+  In a recent advancement, a first large Open IE corpus for verbal predicates was presented, which ``opens the door'' for applying modern machine learning techniques for this task.
+  In this paper, we utilize this corpus to develop a first supervised Open IE extractor.
+  As this is the first supervised Open IE system,
+  we use a deep bi-LSTM transducer, proven to be useful in similar tasks, and focus on laying the basic building blocks needed for supervised Open IE: encoding, decoding, confidence estimation, and proper error analysis.
+  Our evaluation shows that the new extractor significantly outperforms
+  the currently most prominent Open IE systems.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:introduction}
+\input{introduction}
+
+
+\section{Background: Open Information Extraction}
+\label{sec:background}
+\input{background}
+
+
+
+\section{Model}
+\label{sec:model}
+\input{model}
+
+\section{Evaluation}
+\label{sec:evaluation}
+\input{evaluation}
+
+\section{Related Work}
+\label{sec:related}
+\input{related}
+
+\section{Conclusions and Future Work}
+\label{sec:conclusions}
+We presented the first supervised model for Open IE,
+which uses of the recently published large scale corpus for the task \cite{Stanovsky2016EMNLP}.
+We model the task as a word-transducion problem, and presented solutions and
+adjustments for various task-specific challenges: the encoding-decoding of Open IE instances, while providing a relabeling scheme which alleviates an inherent label-bias, a metric for computing the confidence of an extraction,
+and applied a bi-LSTM transducer which follows state-of-the-art models for supervised SRL.
+We tested this model against very strong baselines consisting of the current top performing Open IE systems, and
+found that it is superior in terms of overall aggregated precision and recall.
+In future work, we plan to extend this model to include a more principled learning of the confidence metric,
+as well as to extend it beyond non-verbal predicates, which first require supporting supervised
+data sets for non-verbal Open IE.
+
+% include your own bib file like this:
+%\bibliographystyle{acl}
+%\bibliography{acl2017}
+\bibliography{bib}
+\bibliographystyle{acl_natbib}
+
+\end{document}

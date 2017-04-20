@@ -1,0 +1,66 @@
+As our model is the first supervised method for Open IE, we compare it here to related work in supervised semantic role labeling (SRL), which, as mentioned throughout the paper,  bears a strong similarity to Open IE.
+In particular, we will focus on the recent state-of-the-art deep neural networks models for SRL presented in \cite{baidusrl} and \cite{RothLapata16}.
+
+\newcite{baidusrl} design an end-to-end model for SRL, taking as input the raw text
+without any prerequisite NLP annotation (not relying for example on 
+syntactic parsing, like some other SRL methods).
+Their input is composed of a raw sentence and a target predicate.
+In comparison, we take as input only the raw sentence while using a part-of-speech tagger to identify verbal predicates.
+
+Their model encodes the data using the standard BIO annotation,
+  and, similarly to our approach, annotates each word's relation to
+  a target predicate.
+  In particular, each word can either be at the Beginning or Inside of: a frame-specific SRL core argument span
+  (\oielabel{B-A\_i}, \oielabel{I-A\_i}), a non-core role (e.g., \oielabel{B-AM-LOC} for locations),
+  or a single-word predicate (\oielabel{B-V}).
+  In addition, the Outside label (\oielabel{O}) is used to indicate that
+  a word does not take part in the current proposition.
+  We use a more elaborate encoding scheme (Section \ref{sec:encoding}) to cope with label bias.
+  While the label distribution is not discussed in their paper,
+  it is probable to assume that this is a lesser problem for SRL annotation,
+  since its arguments span across full syntactic constituents and are therefore longer than Open IE arguments, leaving fewer Outside words.
+
+  Further, in terms of modeling, their method also uses a word-level LSTM transducer, but with different features than ours.
+  Their word features are: (1) the current word's embedding, (2) the predicate and its context's embedding,
+  and (3) a binary feature indicating whether the word is in ``close'' proximity to the predicate word (i.e., less than two words separate them).
+  In comparison, our features are the word and predicate embedding (without its context), the
+  embedding of their part-of-speech, and the position index of both in the sentence.
+
+  In addition, \newcite{baidusrl} use a Conditional Random Field (CRF) \cite{crf} classifier on top of
+  the LSTM as the final prediction stage.
+  CRFs can take previous predictions as features for the current predicted label. This is useful for sequence labeling
+  tasks, as previously assigned labels will affect the currently predicted label. For example, \oielabel{I-A1} typically follows \oielabel{B-A1}.
+  Using a CRF in our model fell out of scope for the current work, as we preferred focusing
+  on the novel, task-specific, challenges in devising a supervised model for Open IE. These included encoding and decoding for Open IE, dealing with label bias and computing a confidence score. Testing different extensions of our model, such as an additional CRF layer, is left for future work.
+
+  Finally, \newcite{RothLapata16} take a different and more complex approach for modeling SRL.
+  They design a pipeline, composed of 3 components: (1) syntactic dependency parsing,
+  (2) predicate identification and disambiguation, and (3) argument identification and classification.
+  One of their main novelties is using a new embedding for the dependency path between a predicate
+  and its potential arguments, as a feature for argument classification.
+
+  %% In terms of evaluation, it seems hard to compare the performance
+  %% of these two systems, as each uses a different test set; \newcite{baidusrl} use the datasets published in the shared tasks of CoNLL-2005 \cite{SRL}
+  %% and CoNLL 2012 \cite{pradhan2012conll} while \newcite{RothLapata16} use the dataset published in the CoNLL-2009 shared task \cite{hajivc2009conll}.
+
+
+
+
+%% In particular, we will focus on two recent models which are the current state of the art.
+%% the basis of this work is the deep neural network sRL model of \cite{baidusrl}.
+
+%% SRL and Open IE have been defined with different objectives. Particularly, SRL identifies argument role labels, which is not addressed in Open IE.
+%% Yet, the two tasks overlap as they both need to recover predicate-argument structures in sentences. We now examine the above Open IE requirements and suggest that while they are
+%% only partly embedded within SRL structures, they can be fully recovered from QA-SRL.
+
+%% Asserted (matrix) propositions appear in SRL as non-embedded predicates (e.g., \pred{succeeded} in the \sent{Sam succeeded to convince John}).
+%% However, SRL's predicates are grounded to a lexicon such as PropBank \cite{propbank} or FrameNet \cite{framenet}, which violates the \emph{completeness and open lexicon} principle.
+%% Further, in contrast to the \emph{minimal propositions} principle, arguments in SRL annotations are inclusive, each marked as full subtrees in a syntactic parse.
+
+%% Yet, QA-SRL seems to bridge this gap between traditional SRL structures and Open IE requirements.
+%% Its predicate vocabulary is open,
+%% and its question-answer format solicits \emph{minimal propositions}, as was found in a recent study by \cite{2016stanovskyACL}.
+%% This correlation suggests that the QA-SRL methodology is in fact also an attractive means for soliciting Open IE extractions from non-experts annotators.
+%% %Evidently, it enables us to automatically derive high quality Open IE annotations from existing QA-SRL gold annotations.
+%% Evidently, it enables automatically
+%% deriving high quality Open IE annotations from (current or future) QA-SRL gold annotations, as described in the following section

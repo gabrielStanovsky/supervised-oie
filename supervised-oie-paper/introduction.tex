@@ -1,0 +1,50 @@
+Open Information Extraction (Open IE)
+was presented as an open variant of the traditional ``closed'' information extraction task \cite{etzioni2008open}.
+It aims to extracted coherent standalone propositions, asserted by the sentence.
+For example, given the sentence
+\sent{The president congratulated the Cubs, a Chicago based baseball team, who won the World Series},
+the following are valid Open IE propositions:
+\begin{enumerate}
+\item \extraction{The president}{congratulated}{the Cubs},
+\item \extraction{The president}{congratulated}{a Chicago based baseball team},
+\item \extraction{The cubs}{won}{the World Series}, and
+\item \extraction{a Chicago based baseball team}{won}{the World Series}.
+\end{enumerate}
+Each Open IE proposition is a tuple consisting of a single predicate slot (in bold), and an arbitrary number of arguments (separated by a semicolon).
+
+Since its inception, Open IE has garnered popularity among researchers, who leveraged  its simple yet robust representation for various semantic tasks.
+For example, Open IE has been used as an underlying representation in knowledge base population \cite{2015angeli-openie}, question answering \cite{fader2014open}
+textual entailment \cite{Berant:ACL11} and more \cite{Melamud:ACL13,yang2016peak}.
+
+In spite of this wide attention, up until recently there was no large gold reference corpus for Open IE,
+which inhibited the use of modern machine learning techniques for the task.
+The developed extractors therefore used either a semi-supervised approach \cite{wu2010open,banko2007open}, or, more prominently, rule-based algorithms to extract predicate-argument structures over part-of-speech tags \cite{fader2011identifying} or  dependency trees \cite{mausam2012open,del2013clausie,props2016}.
+More recently, Open IE4\footnote{\url{https://github.com/allenai/openie-standalone}} adopted this paradigm and extracted Open IE propositions from predicted Semantic Role Labeling (SRL)
+annotations.
+
+%% Open IE4's ability to efficiently extract Open IE from SRL annotations is largely
+%% thanks to the similarities between the tasks.
+%% In particular, both SRL and Open IE try to extract predicate-argument tuples stated verbatim the text,
+%% however SRL also grounds each predicate using a predefined lexicon \cite{propbank}, and does not attempt
+%% to extract asserted or minimal propositions. 
+
+Recently, \citet{Stanovsky2016EMNLP} %used this observation and 
+presented a first large gold standard corpus of Open IE extractions for verbal predicates, automatically converted from a large QA-SRL corpus (a variant of SRL, \cite{hequestion}).
+In addition, they tested the performance of several Open IE extractors and found that
+in spite of their robustness,
+all of them lack in precision and recall.
+
+Following the creation of this Open IE corpus,
+we present here a first supervised model for Open IE.
+Using a large training corpus we can harness the latest advancements in supervised machine learning to address the Open IE task.
+In particular, we focus this work on addressing
+the novel challenges in fitting this task for an RNN framework.
+We re-frame Open IE as a \emph{word transduction} task, and address challenges in label encoding, decoding,
+and confidence estimation.
+Since we focus on these building blocks, we employ a rather simple bi-LSTM transducer model,
+inspired by the recent state-of-the-art models for supervised SRL.
+Nevertheless, we find that this model surpasses all previous Open IE systems, significantly improving their performance and
+offering users a better precision-recall trade-off.
+
+We hope that this first supervised model, made publicly available upon publication,  will be useful for semantic applications as a state of the art Open IE extractor, and will serve as the basis for further exploration of machine learning techniques for this task.
+

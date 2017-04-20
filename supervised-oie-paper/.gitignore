@@ -1,0 +1,10 @@
+*.aux
+*.bbl
+*.blg
+*.log
+*\#*
+*.pdf
+*.out
+compile
+*.orig
+*.gz
