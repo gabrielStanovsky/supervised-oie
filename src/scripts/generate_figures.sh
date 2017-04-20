@@ -22,8 +22,10 @@ DIR="../evaluations/only_in_test"
 echo "Creating OIT  figure in ${DIR}..."
 mkdir -p $DIR
 rm -f $DIR/*.dat
-python benchmark.py --gold=../evaluations/only_in_test/test.oie.filter\
-       --out=$DIR/OIT.dat --tabbed=../evaluations/only_in_test/joint.filter
+python benchmark.py --gold=../evaluations/only_in_test/test.oie.oit\
+       --out="$DIR/seen.dat" --tabbed=../evaluations/only_in_test/joint.oit
+python benchmark.py --gold=../evaluations/only_in_test/test.oie.noit\
+       --out="$DIR/unseen.dat" --tabbed=../evaluations/only_in_test/joint.noit
 python pr_plot.py --in=${DIR} --out=${DIR} --outputtype=png
 
 

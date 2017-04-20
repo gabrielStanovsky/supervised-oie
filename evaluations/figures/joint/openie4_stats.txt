@@ -1,0 +1,5 @@
+# Extractions: 1793
+Average # arguments / extraction: 2.00
+Average # words / argument: 22.75
+average predicate length: 3.071389
+average prop length: 48.573898
