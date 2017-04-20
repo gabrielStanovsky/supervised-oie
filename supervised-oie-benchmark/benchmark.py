@@ -1,6 +1,6 @@
-''' 
+'''
 Usage:
-   benchmark --gold=GOLD_OIE --out=OUTPUT_FILE (--stanford=STANFORD_OIE | --ollie=OLLIE_OIE |--reverb=REVERB_OIE | --clausie=CLAUSIE_OIE | --openiefour=OPENIEFOUR_OIE | --props=PROPS_OIE | --tabbed=TABBED_OIE)
+   benchmark --gold=GOLD_OIE --out=OUTPUT_FILE (--stanford=STANFORD_OIE | --ollie=OLLIE_OIE |--reverb=REVERB_OIE | --clausie=CLAUSIE_OIE | --openiefour=OPENIEFOUR_OIE | --props=PROPS_OIE | --tabbed=TABBED_OIE) [--exactMatch | --predMatch | --argMatch]
 
 Options:
   --gold=GOLD_OIE              The gold reference Open IE file (by default, it should be under ./oie_corpus/all.oie).
@@ -13,6 +13,7 @@ Options:
   --stanford=STANFORD_OIE      Read Stanford format from file STANFORD_OIE
   --tabbed=TABBED_OIE          Read simple tab format file, where each line consists of:
                                 sent, prob, pred,arg1, arg2, ...
+  --exactmatch                 Use exact match when judging whether an extraction is correct.
 '''
 import docopt
 import string
@@ -37,66 +38,67 @@ class Benchmark:
     ''' Compare the gold OIE dataset against a predicted equivalent '''
     def __init__(self, gold_fn):
         ''' Load gold Open IE, this will serve to compare against using the compare function '''
-        gr = GoldReader() 
+        gr = GoldReader()
         gr.read(gold_fn)
         self.gold = gr.oie
 
     def compare(self, predicted, matchingFunc, output_fn):
-        ''' Compare gold against predicted using a specified matching function. 
+        ''' Compare gold against predicted using a specified matching function.
             Outputs PR curve to output_fn '''
-        
+
         y_true = []
         y_scores = []
-        
+
         correctTotal = 0
-        unmatchedCount = 0        
+        unmatchedCount = 0
         predicted = Benchmark.normalizeDict(predicted)
         gold = Benchmark.normalizeDict(self.gold)
-                
+
         for sent, goldExtractions in gold.items():
             if sent not in predicted:
                 # The extractor didn't find any extractions for this sentence
-                for goldEx in goldExtractions:   
+                for goldEx in goldExtractions:
                     unmatchedCount += len(goldExtractions)
                     correctTotal += len(goldExtractions)
                 continue
-                
+
             predictedExtractions = predicted[sent]
-            
+
             for goldEx in goldExtractions:
                 correctTotal += 1
                 found = False
-                
+
                 for predictedEx in predictedExtractions:
                     if output_fn in predictedEx.matched:
                         # This predicted extraction was already matched against a gold extraction
                         # Don't allow to match it again
                         continue
-                    
-                    if matchingFunc(goldEx, 
-                                    predictedEx, 
-                                    ignoreStopwords = True, 
+
+                    if matchingFunc(goldEx,
+                                    predictedEx,
+                                    ignoreStopwords = True,
                                     ignoreCase = True):
-                        
+
                         y_true.append(1)
                         y_scores.append(predictedEx.confidence)
                         predictedEx.matched.append(output_fn)
                         found = True
                         break
-                    
+
                 if not found:
                     unmatchedCount += 1
-                    
+
             for predictedEx in [x for x in predictedExtractions if (output_fn not in x.matched)]:
                 # Add false positives
                 y_true.append(0)
                 y_scores.append(predictedEx.confidence)
-                
+
         y_true = y_true
         y_scores = y_scores
-        
+
         # recall on y_true, y  (r')_scores computes |covered by extractor| / |True in what's covered by extractor|
-        # to get to true recall we do r' * (|True in what's covered by extractor| / |True in gold|) = |true in what's covered| / |true in gold|
+        # to get to true recall we do:
+        # r' * (|True in what's covered by extractor| / |True in gold|) = |true in what's covered| / |true in gold|
         p, r = Benchmark.prCurve(np.array(y_true), np.array(y_scores),
                        recallMultiplier = ((correctTotal - unmatchedCount)/float(correctTotal)))
 
@@ -105,7 +107,7 @@ class Benchmark:
             fout.write('{0}\t{1}\n'.format("Precision", "Recall"))
             for cur_p, cur_r in sorted(zip(p, r), key = lambda (cur_p, cur_r): cur_r):
                 fout.write('{0}\t{1}\n'.format(cur_p, cur_r))
-    
+
     @staticmethod
     def prCurve(y_true, y_scores, recallMultiplier):
         # Recall multiplier - accounts for the percentage examples unreached by 
@@ -117,7 +119,7 @@ class Benchmark:
     @staticmethod
     def normalizeDict(d):
         return dict([(Benchmark.normalizeKey(k), v) for k, v in d.items()])
-    
+
     @staticmethod
     def normalizeKey(k):
         return Benchmark.removePunct(unicode(Benchmark.PTB_unescape(k.replace(' ','')), errors = 'ignore'))
@@ -127,21 +129,21 @@ class Benchmark:
         for u, e in Benchmark.PTB_ESCAPES:
             s = s.replace(u, e)
         return s
-    
+
     @staticmethod
     def PTB_unescape(s):
         for u, e in Benchmark.PTB_ESCAPES:
             s = s.replace(e, u)
         return s
-    
+
     @staticmethod
     def removePunct(s):
         return Benchmark.regex.sub('', s)
-    
+
     # CONSTANTS
     regex = re.compile('[%s]' % re.escape(string.punctuation))
-    
-    # Penn treebank bracket escapes 
+
+    # Penn treebank bracket escapes
     # Taken from: https://github.com/nlplab/brat/blob/master/server/src/gtbtokenize.py
     PTB_ESCAPES = [('(', '-LRB-'),
                    (')', '-RRB-'),
@@ -154,42 +156,51 @@ class Benchmark:
 if __name__ == '__main__':
     args = docopt.docopt(__doc__)
     logging.debug(args)
-    
+
     if args['--stanford']:
         predicted = StanfordReader()
         predicted.read(args['--stanford'])
-    
+
     if args['--props']:
         predicted = PropSReader()
         predicted.read(args['--props'])
-       
+
     if args['--ollie']:
         predicted = OllieReader()
         predicted.read(args['--ollie'])
-    
+
     if args['--reverb']:
         predicted = ReVerbReader()
         predicted.read(args['--reverb'])
-    
+
     if args['--clausie']:
         predicted = ClausieReader()
         predicted.read(args['--clausie'])
-        
+
     if args['--openiefour']:
         predicted = OpenieFourReader()
         predicted.read(args['--openiefour'])
-        
+
     if args['--tabbed']:
         predicted = TabReader()
         predicted.read(args['--tabbed'])
+
+    if args['--exactMatch']:
+        matchingFunc = Matcher.argMatch
+
+    elif args['--predMatch']:
+        matchingFunc = Matcher.predMatch
+
+    elif args['--argMatch']:
+        matchingFunc = Matcher.argMatch
+
+    else:
+        matchingFunc = Matcher.lexicalMatch
 
     b = Benchmark(args['--gold'])
     out_filename = args['--out']
 
     logging.info("Writing PR curve of {} to {}".format(predicted.name, out_filename))
-    b.compare(predicted = predicted.oie, 
-               matchingFunc = Matcher.lexicalMatch,
+    b.compare(predicted = predicted.oie,
+               matchingFunc = matchingFunc,
                output_fn = out_filename)
-    
-        
-        
