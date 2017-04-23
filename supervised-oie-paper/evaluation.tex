@@ -31,13 +31,16 @@ set to fit their prediction according to a strict matching function.
 \subsection{Results}
 
 \input{figures/auc_predicate.tex}
+\input{figures/auc_argument.tex}
+\input{figures/auc.tex}
+
 \input{figures/pr_all}
 \input{figures/pr_predicate}
 \input{figures/pr_args}
 \input{figures/seen_vs_unseen}
 
 
-\input{figures/pr_curves}
+%\input{figures/pr_curves}
 
 The Precision-Recall (PR) curve of our model (marked RnnOIE) is shown in Figure \ref{fig:evaluation},
 using the soft matching function discussed above.
@@ -97,15 +100,15 @@ We note, however, that the ``seen'' part is much larger, constituting roughly 93
 Overall, this indicates that the model indeed generalizes beyond the memorization of specific predicate templates, as
 it managed to predict extractions for unseen predicates with good accuracy.
 
-\begin{figure}[tb!]
+%% \begin{figure}[tb!]
 
-  \centering
-    \includegraphics[width=1\columnwidth]{figures/uniq_test_pr}
+%%   \centering
+%%     \includegraphics[width=1\columnwidth]{figures/uniq_test_pr}
 
-  \caption{Performance of our model on seen versus unseen test predicates.}
-  \label{fig:unseen}
+%%   \caption{Performance of our model on seen versus unseen test predicates.}
+%%   \label{fig:unseen}
 
-\end{figure}
+%% \end{figure}
 
 
 %% \begin{itemize}

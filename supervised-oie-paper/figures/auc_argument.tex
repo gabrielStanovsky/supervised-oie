@@ -21,14 +21,14 @@
   width = 0.9\linewidth,
   height=3cm,
   xbar,
-  xmax = 0.57,
+  xmax = 0.7,
   bar width=2pt,
   ytick=data,% crucial line for the xticklabels directive
-   yticklabels from table={../evaluations/figures/joint/predicate/auc.dat}{system},
+   yticklabels from table={../evaluations/figures/joint/arguments/auc.dat}{system},
 nodes near coords,
 nodes near coords align={horizontal}
   ]
-        \addplot[draw=blue,fill=blue!80!white,mark size=0pt] table [x=auc, y expr=\coordindex] {../evaluations/figures/joint/predicate/auc.dat};
+        \addplot[draw=blue,fill=blue!80!white,mark size=0pt] table [x=auc, y expr=\coordindex] {../evaluations/figures/joint/arguments/auc.dat};
   \end{axis}
 \end{tikzpicture}
 

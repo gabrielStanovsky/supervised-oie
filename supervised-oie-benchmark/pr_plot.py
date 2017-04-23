@@ -70,11 +70,10 @@ def plot_auc(auc_ls, filename, output_folder):
     """
     ind = np.arange(len(auc_ls))
     auc_ls = sorted(auc_ls,
-                    key = lambda (name, val, color): val,
-                    reverse = True)
+                    key = lambda (name, val, color): val)
     with open(os.path.join(output_folder, "auc.dat"), 'w') as fout:
-        fout.write("system\tauc\n")
-        for (name, val, color) in auc_ls:
+        fout.write('\t'.join(["system", "auc"])+"\n")
+        for auc_ind, (name, val, color) in enumerate(auc_ls):
             fout.write("{}\t{}\n".format(name, val))
 
     names, vals, colors = zip(*auc_ls)

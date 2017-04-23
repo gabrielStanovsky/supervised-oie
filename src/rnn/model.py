@@ -53,7 +53,6 @@ class RNN_model:
         emb_filename - the filename from which to load the embedding
                        (Currenly only Glove. Idea: parse by filename)
         batch_size - batch size for training
-        pre_trained_emb - an embedding class
         seed - the random seed for reproduciblity
         sep  - separator in the csv dataset files for this model
         hidden_units - number of hidden units per layer
@@ -680,5 +679,4 @@ dimensions to allow for more flexibility while still fitting training data.
 Ideas:
 
 - test performance on arguments vs. adjuncts.
-
 """
