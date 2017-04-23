@@ -8,29 +8,100 @@
 
 
 
-\begin{figure}[!ht]
+\begin{figure*}[!ht]
     \centering
 
-    \subfloat[Figura 1]{
+
+    \subfloat
+    {
+    \centering
+\begin{tikzpicture}
+
+\begin{axis}[
+	xlabel=Recall,
+        xticklabel pos=right,
+	ylabel=Precision,
+%	ymin=0,
+	ymax=1,
+        xmin=0,
+        xmax=1,
+	%ytick distance=.1,
+%	height=0.25\textheight,
+	width=0.32\textwidth,
+	axis lines=left,
+%	legend entries={RnnOIE,OpenIE-4,PropS,ClausIE},
+%	legend style={draw=none, font=\tiny,at={(0.5,-0.2)}, legend columns=-1, anchor=north},
+%	legend style={draw=none,font=\tiny,at={(1,0.01)}, anchor=south east},
+         /pgf/number format/.cd,
+        1000 sep={}
+]
+
+\addplot[red,mark size=0pt] table [x=Recall,y=Precision] {../evaluations/figures/joint/predicate/RnnOIE.dat};
+\addplot[brown,mark size=0pt] table [x=Recall,y=Precision] {../evaluations/figures/joint/predicate/OpenIE-4.dat};
+\addplot[orange,mark size=0pt] table [x=Recall,y=Precision] {../evaluations/figures/joint/predicate/PropS.dat};
+\addplot[blue,mark size=0pt] table [x=Recall,y=Precision] {../evaluations/figures/joint/predicate/ClausIE.dat};
+
+\end{axis}
+\end{tikzpicture}
+
+    }
+\subfloat
+    {
     \centering
 \begin{tikzpicture}
 
 
 
 \begin{axis}[
-	xlabel=Recall,
+	%%xlabel=Recall,
         xticklabel pos=right,
-	ylabel=Precision,
-	ymin=0,
+	%ylabel=Precision,
+%	ymin=0,
 	ymax=1,
         xmin=0,
         xmax=1,
 	%ytick distance=.1,
 %	height=0.25\textheight,
-%	width=\columnwidth,
+	width=0.32\textwidth,
 	axis lines=left,
 	legend entries={RnnOIE,OpenIE-4,PropS,ClausIE},
-	legend style={draw=none,font=\tiny,at={(1,0.01)}, anchor=south east},
+	legend style={draw=none, font=\tiny,at={(0.5,-0.2)}, legend columns=-1, anchor=north},
+         /pgf/number format/.cd,
+        1000 sep={}
+]
+
+
+
+\addplot[red,mark size=0pt] table [x=Recall,y=Precision] {../evaluations/figures/joint/arguments/RnnOIE.dat};
+\addplot[brown,mark size=0pt] table [x=Recall,y=Precision] {../evaluations/figures/joint/arguments/OpenIE-4.dat};
+\addplot[orange,mark size=0pt] table [x=Recall,y=Precision] {../evaluations/figures/joint/arguments/PropS.dat};
+\addplot[blue,mark size=0pt] table [x=Recall,y=Precision] {../evaluations/figures/joint/arguments/ClausIE.dat};
+
+\end{axis}
+\end{tikzpicture}
+
+    }
+\subfloat
+    {
+    \centering
+\begin{tikzpicture}
+
+
+%%% ALL
+\begin{axis}[
+	xlabel=Recall,
+        xticklabel pos=right,
+	%ylabel=Precision,
+%	ymin=0,
+	ymax=1,
+        xmin=0,
+        xmax=1,
+	%ytick distance=.1,
+%	height=0.25\textheight,
+	width=0.33\textwidth,
+	axis lines=left,
+	%% legend entries={RnnOIE,OpenIE-4,PropS,ClausIE},
+	%% legend style={draw=none,font=\tiny,at={(1,0.01)}, anchor=south east},
          /pgf/number format/.cd,
         1000 sep={}
 ]
@@ -43,15 +114,60 @@
 \end{axis}
 \end{tikzpicture}
 
+    }
 
-\vspace{0.5cm}
-
-\begin{tikzpicture}
+\renewcommand{\thesubfigure}{a}
+\subfloat[Predicate extraction]{
+\label{fig:pred}
+    \begin{tikzpicture}
   \begin{axis}[
-  width = 0.9\columnwidth,
+  width = 0.3\textwidth,
   height=3cm,
   xbar,
-  xmax = 0.5,
+  xmax = 0.62,
+  bar width=2pt,
+  ytick=data,% crucial line for the xticklabels directive
+   yticklabels from table={../evaluations/figures/joint/predicate/auc.dat}{system},
+nodes near coords,
+nodes near coords align={horizontal}
+  ]
+        \addplot[draw=blue,fill=blue!80!white,mark size=0pt] table [x=auc, y expr=\coordindex] {../evaluations/figures/joint/predicate/auc.dat};
+  \end{axis}
+\end{tikzpicture}
+
+    }
+    $\;$
+\renewcommand{\thesubfigure}{b}    
+\subfloat[Argument extraction]{
+\label{fig:arg}
+    \begin{tikzpicture}
+  \begin{axis}[
+  width = 0.3\textwidth,
+  height=3cm,
+  xbar,
+  xmax = 0.71,
+  bar width=2pt,
+  ytick=data,% crucial line for the xticklabels directive
+   yticklabels from table={../evaluations/figures/joint/arguments/auc.dat}{system},
+nodes near coords,
+nodes near coords align={horizontal}
+  ]
+        \addplot[draw=blue,fill=blue!80!white,mark size=0pt] table [x=auc, y expr=\coordindex] {../evaluations/figures/joint/arguments/auc.dat};
+  \end{axis}
+\end{tikzpicture}
+
+
+    }
+    $\;$
+\renewcommand{\thesubfigure}{c}
+\subfloat[Proposition extraction]{
+\label{fig:prop}
+    \begin{tikzpicture}
+  \begin{axis}[
+  width = 0.3\textwidth,
+  height=3cm,
+  xbar,
+  xmax = 0.49,
   bar width=2pt,
   ytick=data,% crucial line for the xticklabels directive
    yticklabels from table={../evaluations/figures/joint/auc.dat}{system},
@@ -60,80 +176,17 @@ nodes near coords align={horizontal}
   ]
         \addplot[draw=blue,fill=blue!80!white,mark size=0pt] table [x=auc, y expr=\coordindex] {../evaluations/figures/joint/auc.dat};
   \end{axis}
-\end{tikzpicture}
-
-
-
+\end{tikzpicture}}
+    %% \qquad
+    %% \subfloat[Figura 3]{
+    %%     \includegraphics[width=0.4\columnwidth]{./figures/lorem-ipsum.jpg}
+    %% }
+    \caption{Precision-recall curves of the different systems on Open IE's subtasks (top),
+    and corresponding areas under the curve (bottom)  --
+    predicate extraction (\ref{fig:pred}), argument extraction (\ref{fig:arg})
+    and complete proposition extraction (\ref{fig:prop}).
     }
-    \qquad
-    \subfloat[Figura 2]{
-        \includegraphics[width=0.4\columnwidth]{./figures/lorem-ipsum.jpg}
-    }
-    \qquad
-    \subfloat[Figura 3]{
-        \includegraphics[width=0.4\columnwidth]{./figures/lorem-ipsum.jpg}
-    }
-    \caption{Caption superior.}
     \label{fig:subfigname}
-\end{figure}
+\end{figure*}
 
 
-\begin{figure}
-
-
-\centering
-\begin{tikzpicture}
-\begin{axis}[
-	xlabel=Recall,
-        xticklabel pos=right,
-	ylabel=Precision,
-	ymin=0,
-	ymax=1,
-        xmin=0,
-        xmax=1,
-	%ytick distance=.1,
-%	height=0.25\textheight,
-%	width=\columnwidth,
-	axis lines=left,
-	legend entries={RnnOIE,OpenIE-4,PropS,ClausIE},
-	legend style={draw=none,font=\tiny,at={(1,0.01)}, anchor=south east},
-         /pgf/number format/.cd,
-        1000 sep={}
-]
-
-\addplot[red,mark size=0pt] table [x=Recall,y=Precision] {../evaluations/figures/joint/RnnOIE.dat};
-\addplot[brown,mark size=0pt] table [x=Recall,y=Precision] {../evaluations/figures/joint/OpenIE-4.dat};
-\addplot[orange,mark size=0pt] table [x=Recall,y=Precision] {../evaluations/figures/joint/PropS.dat};
-\addplot[blue,mark size=0pt] table [x=Recall,y=Precision] {../evaluations/figures/joint/ClausIE.dat};
-
-\end{axis}
-\end{tikzpicture}
-
-\vspace{0.5cm}
-
-\begin{tikzpicture}
-  \begin{axis}[
-  width = 0.9\linewidth,
-  height=3cm,
-  xbar,
-  xmax = 0.5,
-  bar width=2pt,
-  ytick=data,% crucial line for the xticklabels directive
-   yticklabels from table={../evaluations/figures/joint/auc.dat}{system},
-nodes near coords,
-nodes near coords align={horizontal}
-  ]
-        \addplot[draw=blue,fill=blue!80!white,mark size=0pt] table [x=auc, y expr=\coordindex] {../evaluations/figures/joint/auc.dat};
-  \end{axis}
-\end{tikzpicture}
-
-
-
-
-
-\caption{All @}
-\label{fig:rascal}
-
-
-
-\end{figure}
