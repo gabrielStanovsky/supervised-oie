@@ -1,5 +1,4 @@
 \pgfplotsset{
-	compat=1.5, 
 	label style={font=\footnotesize},
 	legend style={font=\footnotesize},
 	every tick label/.append style={font=\tiny},
@@ -107,9 +106,9 @@
         1000 sep={}
 ]
 
-\addplot[color1,mark size=0pt] table [x=Recall,y=Precision] {../evaluations/figures/joint/RnnOIE.dat} node[right,pos=0.9] {\tiny RnnOIE};
+\addplot[color1,mark size=0pt] table [x=Recall,y=Precision] {../evaluations/figures/joint/RnnOIE.dat} node[right,pos=1] {\tiny RnnOIE};
 \addplot[color2,mark size=0pt] table [x=Recall,y=Precision] {../evaluations/figures/joint/OpenIE-4.dat} node[left,pos=1] {\tiny OpenIE-4};
-\addplot[color3,mark size=0pt] table [x=Recall,y=Precision] {../evaluations/figures/joint/PropS.dat} node[below,pos=0.8] {\tiny PropS};
+\addplot[color3,mark size=0pt] table [x=Recall,y=Precision] {../evaluations/figures/joint/PropS.dat} node[below,pos=0.7] {\tiny PropS};
 \addplot[color4,mark size=0pt] table [x=Recall,y=Precision] {../evaluations/figures/joint/ClausIE.dat} node[above,pos=1] {\tiny ClausIE};
 
 \end{axis}
