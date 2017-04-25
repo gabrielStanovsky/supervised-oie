@@ -13,7 +13,7 @@
 When evaluating Open IE it is desired to allow some room for flexibility when comparing against gold annotated extractions, for several reasons.
 First, as we mentioned previously, current prominent Open IE systems were developed without a large reference
 corpus. Following, this created some deviation in design and representation choices between the systems.
-For example, ClausIE chooses to predict only extractions with two arguments (versus n-ary extractions in the other systems), and PropS includes prepositions as part of the predicate while Open IE4 posits them in the respective
+For example, ClausIE chooses to predict only binary extractions (versus n-ary extractions in the other systems), and PropS includes prepositions as part of the predicate while Open IE4 posits them in the respective
 argument slot.
 
 Second, like other tasks that require subtle semantic decisions, such as summarization or machine translation,
@@ -23,7 +23,7 @@ For example, for the sentence \sent{The sheriff standing against the wall spoke 
 extractions can be considered acceptable: \extraction{The Sheriff}{spoke}{in a soft voice},
 \extraction{The sheriff standing against the wall}{spoke}{in a very soft voice}
 
-To account for  this variance in predictions, we follow \newcite{hequestion} and \newcite{Stanovsky2016EMNLP} which judge an argument as correct if and only if it includes the \emph{syntactic head} of the gold argument.\footnote{We make use of the test suite published in \url{https://github.com/gabrielStanovsky/oie-benchmark}}
+To account for  this variance in predictions, we follow \newcite{hequestion} and \newcite{Stanovsky2016EMNLP} which judge an argument as correct if and only if it includes the \emph{syntactic head} of the gold argument.%\footnote{We make use of the test suite published in \url{https://github.com/gabrielStanovsky/oie-benchmark}}
 This would accept both variations of the previous example.
 Note that this relaxed matching allows for fair comparison with rule-based systems which did not use a training
 set to fit their prediction according to a strict matching function.
@@ -50,10 +50,10 @@ RnnOIE outperforms the other systems in terms of precision on most of the recall
 Superior precision performance is especially attractive for
 applications that employ Open IE over large amounts of data, in which a high degree of data redundancy is expected, such as in different news reports of the same event.
 
-Following, the Area Under the PR-Curve (AUC) shows that overall our system
+Following, the Area Under the PR-Curve (AUC), depicted below the PR curve, shows that overall our system
 produces the best combination of aggregated precision and recall with a statistically significant margin over
-the other systems. In scalar terms of the AUC, our improvement over state-of-the-art is similar in magnitude to previous
-advancements in the field (4 points).
+the other systems. Furthermore, in scalar terms of the AUC, our improvement over state-of-the-art is similar in magnitude to previous
+advancements in the field (roughly 4 points).
 
 
 %\todo{it's worth mentioning the statistical test used}
@@ -68,21 +68,20 @@ advancements in the field (4 points).
 %%   \end{itemize}
 %% \end{itemize}
 
-\input{figures/systems_stats}
-
 \subsection{Analysis}
+\label{sec:analysis}
 We describe several observations about the performance of the evaluated systems.
 
-\paragraph{RnnOIE and Open IE4 produce shorter arguments.}
-In Table \ref{tab:output_stats} we examine some properties of the output of different systems compared to the corresponding gold data.
-This allows us to gain some insight into the performance of the systems.
-For example, we can see that the best performing systems (RnnOIE and OpenIE4), tend to produce
-more arguments, each of which tending to be shorter in terms of word count.
-This observation fits the \emph{minimality} principle of Open IE, discussed in Section \ref{sec:background}.
-Comparing to the same properties in the gold data set (first row), we can see that both systems
-tend to overproduce and over-shorten their arguments.
-% Compared to 2.45 arguments of 26.91 word length in average for the gold data set,
-% RnnOIE and Open IE4 produce 3.07 and 3.19 arguments of word length 23.4 and 22.75 in average, respectively.
+\paragraph{RnnOIE outperforms the baselines at both predicate and argument extraction.}
+We analyze the systems' performance on two complementing subtasks of Open IE:
+(1) \emph{Predicate extraction} (Figure \ref{fig:pred}), which evaluates the systems' ability to correctly recover the predicate slot, and
+(2) \emph{Argument extraction} (Figure \ref{fig:arg}), which evaluates their recovery of the argument slots.
+
+This analysis shows that RnnOIE performs best (in terms of AUC) on both subtasks.
+Particularly, it most significantly outperforms the other systems on the task of predicate extraction.
+We hypothesize that this is since predicates are allotted a different label, and that
+the predicate label is the only one which must inherently appear in every training sample.
+
 
 \paragraph{RnnOIE is able to generalize to unseen predicates.}
 We analyze the extent to which our model overfits for the predicates seen during training, that is, whether it achieves good performance by memorizing specific patterns for these predicates.
@@ -99,6 +98,21 @@ The resulting PR curves (Figure \ref{fig:unseen}) depict overall good performanc
 We note, however, that the ``seen'' part is much larger, constituting roughly 93\% of the test data.
 Overall, this indicates that the model indeed generalizes beyond the memorization of specific predicate templates, as
 it managed to predict extractions for unseen predicates with good accuracy.
+
+
+\input{figures/systems_stats}
+
+\paragraph{RnnOIE and Open IE4 produce shorter arguments.}
+In Table \ref{tab:output_stats} we examine some properties of the output of the systems compared to the corresponding characteristics of the gold data.
+This allows us to gain some insight into the performance of the systems.
+For example, we can see that the best performing systems (RnnOIE and OpenIE4), tend to produce
+more arguments, each of which tending to be shorter in terms of word count.
+This observation fits the \emph{minimality} principle of Open IE, discussed in Section \ref{sec:background}.
+Comparing to the same properties in the gold data set (first row), we can see that both systems
+tend to overproduce and over-shorten their arguments.
+% Compared to 2.45 arguments of 26.91 word length in average for the gold data set,
+% RnnOIE and Open IE4 produce 3.07 and 3.19 arguments of word length 23.4 and 22.75 in average, respectively.
+
 
 %% \begin{figure}[tb!]
 

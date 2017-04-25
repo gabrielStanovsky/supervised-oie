@@ -3,21 +3,19 @@
 %% \item Give examples.
 %% \end{itemize}
 \input{figures/oie_examples}
-The task of Open Information Extraction was presented as an open variant of
-traditional information extraction \cite{etzioni2008open}.
-It focuses on extracting stand-alone propositions (predicate and arguments tuples)
+The task of Open IE focuses on extracting stand-alone propositions (predicate and arguments tuples)
 which are explicitly asserted by the sentence.
 As opposed to traditional information extraction, it is not bounded by a predefined lexicon.
-Table \ref{tab:oie_examples} depicts several example sentences and their repsective Open IE extractions.
+Table \ref{tab:oie_examples} depicts several example sentences and their respective Open IE extractions.
 
-The original task definition lacked formal rigor,
+The original Open IE task definition lacked formal rigor,
 subsequently inhibiting the creation of a large gold annotated resource
 which often accompanies better defined tasks,
 such as Penn Treebank \cite{ptb} for syntactic parsing or PropBank \cite{propbank} for semantic role labeling.
 In spite of this, recent work \cite{bhutani2016nested,Stanovsky2016EMNLP} have managed
 to identify several principles upon which the task has converged.
 For instance, each extraction should be \emph{asserted} by the sentence -
-e.g., not extracting \pred{win} as a stand-alone proposition in the first example in Table \ref{tab:oie_examples},
+e.g., not extracting \pred{won} as a stand-alone proposition in the first example in Table \ref{tab:oie_examples},
 and \emph{minimal} - e.g., ``Barack Obama'' and ``a former U.S. president''
 as separate arguments yielding two separate propositions in the second example.
 
@@ -28,13 +26,13 @@ as separate arguments yielding two separate propositions in the second example.
 %% \item End with Open IE4 which used SRL as underlying representation
 %% \end{itemize}
 
-Thanks to its simple and useful representation, Open IE has gained consistent attention.
-Various end applications have made use of it as an underlying representation for
-different semantic tasks, such as knowledge base population
-\cite{2015angeli-openie}, question answering \cite{fader2014open}, textual entailment \cite{Melamud:ACL13,Berant:ACL11}, summarization evaluation \cite{yang2016peak}, and more.
+%% Thanks to its simple and useful representation, Open IE has gained consistent attention.
+%% Various end applications have made use of it as an underlying representation for
+%% different semantic tasks, such as knowledge base population
+%% \cite{2015angeli-openie}, question answering \cite{fader2014open}, textual entailment \cite{Melamud:ACL13,Berant:ACL11}, summarization evaluation \cite{yang2016peak}, and more.
 
-Subsequently, significant effort was put in devising automatic Open IE extractors, many of
-which made publicly available, following the principles
+Significant effort was put in recent years in devising automatic Open IE extractors (many of
+which made publicly available) following the principles
 discussed above.
 A couple of  early systems attempted distant supervision \cite{wu2010open,banko2007open}.
 More recent attempts mostly apply a rule based approach, partly due to the lack of supervised annotations,
@@ -43,9 +41,9 @@ as a post processing step over an underlying core NLP pipeline.
 ReVerb \cite{fader2011identifying} extracts Open IE propositions from part of speech tags, while
 OLLIE \cite{mausam2012open}, ClausIE \cite{del2013clausie} and PropS \cite{props2016} post-process dependency trees.
 Recently, Open IE4 extracts tuples from Semantic Role Labeling (SRL) annotations.
-These systems typically associate a confidence metric with each extraction indicating
-the degree with which the model believes this extraction is correct.
-This allows end applications to choose a cut-off confidence value, trading off precision and recall according
+These systems typically associate a confidence metric with each extraction
+%indicating the degree with which the model believes this extraction is correct.
+which allows end applications to choose a cut-off value, trading off precision and recall according
 to their specific needs.
 
 
@@ -63,7 +61,6 @@ Both SRL and Open IE aim to recover predicate-argument structures from sentences
 of a single predicate and a varying number of arguments.
 Differently, SRL also identifies argument roles, but does not attempt
 to identify minimal and asserted propositions, as Open IE does.
-
 %% \begin{itemize}
 %% \item Our EMNLP paper capitalizes on these similarities, and convert a specific variant of SRL - QA-SRL
 %% \item This was shown to ``close the gap'' between SRL and OIE, and to subsume OIE
@@ -73,9 +70,6 @@ to identify minimal and asserted propositions, as Open IE does.
 %% \item The best performing systems (OIE4, ClausIE, and Props) offered different tradeoff of precision and recall
 %%   (point to figure)
 %% \end{itemize}
-
-%\todo{we need to say something it was just for verbs, the description in 3 assumes this later}
-
 Further capitalizing on the similarities between the two tasks, \newcite{Stanovsky2016EMNLP} found that QA-SRL \cite{hequestion}, a variant of traditional SRL, fully subsumes Open IE. In particular, they showed how assertedness and minimality \emph{can} be recovered from QA-SRL annotations. Consequently, they devised a high quality automatic conversion from the large hand-annotated QA-SRL bank to form the first
 large, system-independent, annotated corpus for Open IE.
 Since QA-SRL has annotated only verbal predicates, this Open IE corpus is also composed only of verbal predicates.
@@ -94,15 +88,14 @@ In addition to presenting this first corpus, they automatically tested the perfo
 Open IE systems on it. While there are many extrinsic uses for Open IE, this
 constituted the first \emph{intrinsic} comparison.
 In particular, that study found that the best performing systems - Open IE4, ClausIE, and PropS - 
-offered different trade-offs between precision and recall, as shown in  corresponding precision-recall curves in figure \ref{fig:evaluation}. These curves are based on the ranking of each system's extractions, induced by their associated confidence scores.
-Overall, there seems to be much room for improvement in both precision and recall.
+offered different trade-offs between precision and recall, as shown in Figure \ref{fig:prop} (based on the confidence scores, as assigned by the systems).
 
-We extend upon this line of work by presenting the first 
+We extend upon this line of work by presenting the first
 supervised Open IE extractor trained on
 this large recent corpus.
 %\todo{can we just say we're the first supervised, or is "fully" needed?}
 Further leveraging the inter-relation between SRL and Open IE, we take  a state of the art SRL deep learning model as our starting point,
-while modifying and extending it to fit the Open IE task and achieve good performance.
+while modifying and extending it to fit the Open IE task.
 
 
 %% Traditionally, the  formal definition of Open IE was somewhat lacking and predominantly defined by its different

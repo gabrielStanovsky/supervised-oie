@@ -9,19 +9,32 @@
 
 \end{figure*}
 %\todo{Include encoding / decoding (with confidence computation) to Figure \ref{fig:architecture}}
+In this section, We detail the modeling and design choices we make in adapting the task of Open IE for supervised learning.
+In particular, we will focus on:
+(1) encoding of the input data,
+(2) feature extraction and model architecture,
+(3) decoding Open IE extractions during inference, and 
+(4) technical details of our implementation.
 
-Our supervised Open IE model is inspired by the state of the art deep learning approach for SRL suggested by \newcite{baidusrl} (elaborated in Section \ref{sec:related}).
-Follwoing this approach is compelling thanks to its (relative) simplicity and the close resemblance between SRL and Open IE, as discussed above. 
+Within this framework, we will use a bi-LSTM transducer, inspired by the state of the art deep learning approach for SRL suggested by \newcite{baidusrl} (elaborated in Section \ref{sec:related}).
+This approach is compelling thanks to its (relative) simplicity and the close resemblance between SRL and Open IE, as discussed above. 
 %\todo{commented text repeats end of sec 2}
 % enabling us to extend and mold it into a supervised
 % Open IE extractor.
 
-We next detail the modeling and design choices we make in
-(1) encoding of the input data,
-(2) the feature extraction and model architecture,
-(3) decoding Open IE extractions during inference, and 
-(4) techinical details of our implementation.
-\input{figures/dist}
+\begin{figure}[t!]
+\centering
+%\resizebox{1\columnwidth}{!}{
+  \begin{scalebox}{0.9}{
+\begin{tikzpicture}
+  \pie[color ={blue!60 , yellow!70 , orange!70 , cyan!70, red!50, green!70, brown!70, gray!70}]{58/\oielabel{O}, 15/\oielabel{A1-I}, 9/\oielabel{A0-I}, 5/\oielabel{A2-I}, 3/\oielabel{P-B}, 3/\oielabel{A0-B}, 3/\oielabel{A1-B}, 4/Other}
+\end{tikzpicture}
+}
+\end{scalebox}
+\caption{Original label distribution in the Open IE corpus.}
+\label{fig:orig_label_dist}
+\end{figure}
+
 
 \subsection{Data Encoding}
 \label{sec:encoding}
@@ -60,11 +73,11 @@ We next detail the modeling and design choices we make in
 We choose to model Open IE as a word level annotation task. We follow,  and slightly modify, the well known BIO (Beginning, Inside, Outside)  annotation \cite{ramshaw1995text,sang1999representing},
 often used in sequence labeling tasks such as noun phrase chunking, named entity recognition and SRL.
 %\todo{notice I changed the terminology to refer consistently to  "predicate", rather that "verb", to make it general}
-In our scenario, we annotate a sentence in multiple passes, each time with respect to another targeted predicate within it. Each such target predicate induces an encoding of all other words
+In our scenario, we annotate a sentence in multiple passes, each time with respect to another targeted predicate within it. Each such target predicate generates a training instance by inducing an encoding of all other words
 in the sentence, which specifies the role of each word with respect to the target predicate.
 Concretely, each word can be either at the beginning or inside of either the predicate or an argument span, or outside of both.
 %\todo{I'm not sure for the meaning of the following sentence. Why is it important that the predicates are consecutive and non-overlapping? Worth clarifying}
-This fits our data, as all our predicates and arguments consist of consecutive, non overlapping spans of words, which BIO labeling is capable of represnting.
+This fits our data, as all our predicates and arguments consist of consecutive, non overlapping spans of words, which BIO labeling is capable of representing.
 See Table \ref{tab:oie_examples} for various encoding examples.
 
 As seen in the table, the encoding identifies each argument by specifying its index (position) in the Open IE tuple.
@@ -77,6 +90,23 @@ a relative clause construction (headed by the word ``Brexit'').
 %\todo{Please check that I phrased it properly}
 A special case for argument encoding occurs when a single target predicate yields multiple propositions.
 This might happen in several linguistic and syntactic constructions, such as apposition, co-ordination and coreference, as illustrated in the second example in the table. As can be seen in the encoding of this example, we assign the same argument index to all arguments in that position, coming from the different propositions headed by the current target predicate. This process is reversed later during decoding, at inference time (Subsection \ref{subsec-inference}).
+
+%\input{figures/dist}
+
+\begin{figure}[t!]
+\centering
+%\resizebox{1\columnwidth}{!}{
+\begin{scalebox}{0.9}{
+\begin{tikzpicture}
+  \pie[color ={blue!60, purple!50, yellow!70 , orange!70 ,  brown!30, cyan!70, purple!35, red!50, green!70, brown!70,
+      yellow!35, gray!70}]{21/\oielabel{O-E}, 20/\oielabel{O-S}, 15/\oielabel{A1-I}, 9/\oielabel{A0-I}, 8/\oielabel{O-A0}, 5/\oielabel{A2-I}, 5/\oielabel{O-A1}, 3/\oielabel{P-B}, 3/\oielabel{A0-B}, 3/\oielabel{A1-B}, 3/\oielabel{O-P}, 5/Other}
+\end{tikzpicture}
+}
+\end{scalebox}
+\caption{Label distribution in the Open IE corpus after relabeling.}
+\label{fig:new_label_dist}
+\end{figure}
+
 
 \subsubsection{Dealing with label imbalance}
 %\todo{I wonder if this should be 3.1.1, also fitting the section outline preceding 3.1}
@@ -144,9 +174,9 @@ As we will show in Section \ref{sec:evaluation}, this manipulation indeed enable
 converge on a more useful model.
 Previous models have dealt with label bias in various other techniques, which might be better suited
 for tasks with smaller label sets. These include, for example:
-relabling with BILOU labels \cite{ratinov2009design},
+relabeling with BILOU labels \cite{ratinov2009design},
 label resampling \cite{estabrooks2004multiple},
-or CRF for conditioning current prediction on previous model decisions \cite{baidusrl}.
+or CRF to condition the current prediction on previous model decisions \cite{baidusrl}.
 
 \subsection{Model Architecture and Feature Extraction}
 Given this task formulation and the fact that the sentences are of arbitrary length,
@@ -170,7 +200,7 @@ representation whether it is considered as the target predicate or not.
 % This happens in case where there is more than one predicate in the sentence as in example @ in
 % Table \ref{tab:oie_examples}.
 
-\item 5 dimensional embedding of the part of speech of the current word and the target predicate, and
+\item 5 dimensional embedding of the part of speech of the current word and the target predicate.
 \item The position index of the word and the target predicate in the sentence.
 
 \end{enumerate}
@@ -198,7 +228,7 @@ Then, if each argument index occurs only once we simply generate a single extrac
 \paragraph{Assigning extraction confidence}
 As discussed in Section \ref{sec:background}, it is beneficial for Open IE systems to associate a confidence value with each predicted extraction.
 In our case, the LSTM assigns a probability to each label prediction, for each word.
-We experimented with several heuristics to combine these predictions to an extraction level confidence metric.
+We experimented with several heuristics to combine these predictions to an extraction-level confidence metric.
 The best performance on the development set was achieved by multiplying the word-level probabilities of each
 of the elements participating in the extraction.\footnote{Other variants we tried were taking the maximum or
 minimum observed probability, but that performed worse.}
@@ -210,7 +240,9 @@ avenue for future research is developing a more principled way of assigning conf
 
 \subsection{Implementation details}
 We implemented the bi-LSTM transducer model using the \keras\ framework \cite{chollet2015} with a \tensorflow\ backend \cite{tensorflow2015-whitepaper}.
-We use 3 layers of stacked bi-LSTMs, where each LSTM cell is composed of 128 hidden units
+In the following we detail several hyperparameters which were tuned on the development set.
+
+In particular, we use 3 layers of stacked bi-LSTMs, where each LSTM cell is composed of 128 hidden units
 with a linear rectifier (ReLU) \cite{nair2010rectified} activation function.
 Training was done on 100 epochs, in mini batches of 50 samples, with 10\% word level
 dropout.
@@ -218,4 +250,4 @@ Word embeddings were initialized using the pre-trained embeddings computed in \n
 allowing them to assimilate a task-specific representation.
 
 Finally, we use the average perceptron part-of-speech tagger (as implemented in spaCy\footnote{\url{https://spacy.io}})
-to predict the part of speech for both feature computation and predicate identification (identifying verbs).
+to predict the part of speech for feature computation.% and predicate head identification (identifying verbs).
