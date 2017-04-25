@@ -1,0 +1,142 @@
+\documentclass[final]{beamer}
+\usetheme{RJH}
+\usepackage[scale=1.5,size=a0]{beamerposter}
+\setlength{\paperwidth}{90cm}
+\setlength{\paperheight}{120cm}
+
+\usepackage[absolute,overlay]{textpos}
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.3}
+\usepgfplotslibrary{units}
+\usepackage{tikz}
+\definecolor{turquoise}{RGB}{141,211,199}
+\definecolor{lightyellow}{RGB}{255,255,179}
+\definecolor{lightpurple}{RGB}{190,186,218}
+\definecolor{lightorange}{RGB}{253,192,134}
+\definecolor{lightgreen}{RGB}{127,201,127}
+
+% Nice color templates from
+% http://colorbrewer2.org/#type=qualitative&scheme=Set3&n=6
+\definecolor{color4}{RGB}{141,211,199}
+\definecolor{color2}{RGB}{127,201,127}
+\definecolor{color3}{RGB}{190,186,218}
+\definecolor{color1}{RGB}{251,128,114}
+\definecolor{color5}{RGB}{128,177,211}
+\definecolor{color6}{RGB}{253,180,98}
+
+
+\newcommand{\commonvspace}[0]{\vspace{1cm}}
+\title{Supervised Open Information Extraction}
+\author{Gabriel Stanovsky, Ido Dagan \\ Bar-Ilan University}
+\footer{More information at \texttt{https://gabrielstanovsky.github.io/}}
+\date{}
+\input{./commands}
+\begin{document}
+\begin{frame}{} 
+
+\begin{textblock}{39}(4,20)
+\begin{block}{Open Information Extraction}
+  \begin{itemize}
+        \setlength\itemsep{1em}
+  \item Extracts asserted propositions from unstructured text
+  \\
+  \sent{The president congratulated the Cubs, a Chicago based baseball team, who won the World Series}
+  \begin{enumerate}
+  \item \extraction{The president}{congratulated}{the Cubs}
+  \item \extraction{The president}{congratulated}{a Chicago based baseball team}
+  \item \extraction{The cubs}{won}{the World Series}
+  \item \extraction{a Chicago based baseball team}{won}{the World Series}
+  \end{enumerate}
+
+\item Useful for knowledge base population, question-answering, summarization and more
+\item Many automatic tools were developed: ClausIE, ReVerb, OLLIE, ....
+  
+  \end{itemize}
+
+\end{block}
+
+\commonvspace
+
+\begin{block}{Problem: No large benchmark for Open IE!}
+  \begin{itemize}
+        \setlength\itemsep{1em}
+  \item Open IE task formulation has been lacking formal rigor
+    \\
+    No common guidelines $\rightarrow$
+    \\
+    No large corpus for evaluation and \textbf{no supervision} !
+  \item Previous evaluation resorted to post-hoc analyses
+    \begin{itemize}
+          \setlength\itemsep{1em}
+    \item \alert{Precision oriented} metrics
+    \item Cross-system evaluations are \alert{not comparable}
+    \item Experiments are \alert{hard to reproduce}
+    \end{itemize}
+  \end{itemize}
+\end{block}
+
+\commonvspace
+
+\begin{block}{QASRL $\rightarrow$ Open IE}
+  \begin{itemize}
+        \setlength\itemsep{1em}
+  \item He et al. (2015) annotates \alert{SRL} through QA
+    \\ \sent{Barack Obama, the former president, flew to Moscow}
+    \begin{enumerate}
+    \item Who flew somewhere? \alert{Barack Obama} / \alert{the former president}
+    \item Where did someone fly?  \alert{to Moscow}
+    \item When did someone fly somewhere? \alert{on Tuesday}
+    \end{enumerate}
+  \item We \alert{automatically} convert QA-SRL annotations to Open IE
+    \begin{enumerate}
+    \item \extraction{Barack Obama}{flew}{to Moscow}
+    \item \extraction{the former president}{flew}{to Moscow}
+    \end{enumerate}
+  \end{itemize}
+\end{block}
+
+\commonvspace
+
+\begin{block}{Open IE Gold Corpus}
+  \begin{table}
+    \begin{tabular}{lrrr}
+      \hline
+      \textbf{Corpus}        & \multicolumn{1}{c}{\textbf{WSJ}} & \multicolumn{1}{c}{\textbf{WIKI}} & \multicolumn{1}{c}{\textbf{ALL}} \\ \hline
+      \textbf{\#Sentences}   & 1241                              & 1959                               & 3200                              \\ 
+      \textbf{\#Predicates}  & 2020                              & 5690                               & 7710                              \\ 
+      \textbf{\#Questions}   & 8112                              & 10798                              & 18910                             \\ 
+      \textbf{\#Extractions} & 4481                     & 5878                      & 10359                    \\ \hline
+    \end{tabular}
+    \label{tab:cstats}
+  \end{table}
+  \end{block}
+
+\begin{block}{Automatic System Comparison}
+
+  \input{pr_all}
+  
+  \begin{itemize}
+    \setlength\itemsep{1em}
+  \item \alert{First independent cross-system evaluation!}
+      \item Using a soft matching technique
+  \item All system lack in recall (long-distance dependencies)
+  \end{itemize}
+\end{block}
+
+\end{textblock}
+
+
+
+\begin{textblock}{39}(47,20)
+\begin{block}{Predicting Open IE}
+
+\end{block}
+
+\end{textblock}
+
+\end{frame}
+\end{document}
