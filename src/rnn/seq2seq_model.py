@@ -123,6 +123,24 @@ class Seq2seq_OIE:
             model.summary()
         return model
 
+    def get_callbacks(self, X):
+        """
+        Returns callbacks listed below.
+        X is the encoded dataset used to print a sample of the output.
+        Callbacks created:
+        1. Sample output each epoch
+        2. Save best performing model each epoch
+        """
+        sample_output_callback = LambdaCallback(on_epoch_end = lambda epoch, logs:\
+                                                pprint(self.sample_labels(self.model.predict(X))))
+        checkpoint = ModelCheckpoint(os.path.join(self.model_dir,
+                                                  "weights.hdf5"),
+                                     verbose = 1,
+                                     save_best_only = False)   # TODO: is there a way to save by best val_acc?
+        return [sample_output_callback,
+                checkpoint]
+
+
     def train(train_fn, dev_fn):
         """
         Train this model on a given train dataset
@@ -138,9 +156,6 @@ class Seq2seq_OIE:
                        nb_epoch = self.epochs,
                        validation_data = (X_dev, Y_dev),
                        callbacks = self.get_callbacks(X_train))
-
-
-
 
 if __name__ == "__main__":
     # Parse arguments
