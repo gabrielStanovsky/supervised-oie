@@ -95,3 +95,6 @@ model.png
 *.hdf5
 models/
 best_models/
+.venv/
+oie_corpus/
+*.tar.gz

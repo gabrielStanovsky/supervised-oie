@@ -28,6 +28,7 @@ class Seq2seq_OIE:
     the predictions, and not having to align the tuples words.
     """
     def __init__(self,
+                 seed,
                  batch_size,
                  maximum_output_length,
                  emb_fn,
@@ -36,7 +37,9 @@ class Seq2seq_OIE:
                  output_depth,
                  peek,
                  attention,
-                 seed,
+                 epochs,
+                 loss,
+                 optimizer,
     ):
         """
         Init and compile model's params
@@ -49,8 +52,12 @@ class Seq2seq_OIE:
         output_depth - the number of layers in decoder
         peek - (binray) add the peek feature
         attention - (binary) use attention model
+        epochs - Number of epochs to train the model
+        loss - (string) the loss function, one of keras options
+        optimizer - (string) the optimizer function, one of keras options
         """
         self.emb = Glove(emb_fn)
+        self.epochs = epochs
         self.model = Seq2seq_OIE.compile_model(input_length = batch_size,
                                                input_depth = input_depth,
                                                input_dim = self.emb.dim,
@@ -60,6 +67,8 @@ class Seq2seq_OIE:
                                                output_dim = self.emb.dim,
                                                peek = peek,
                                                attention = attention,
+                                               loss = loss,
+                                               optimizer = optimizer,
         )
 
 
@@ -73,6 +82,8 @@ class Seq2seq_OIE:
                       output_dim,
                       peek,
                       attention,
+                      loss,
+                      optimizer
     ):
         """
         Returns a compiled seq2seq model
@@ -86,10 +97,15 @@ class Seq2seq_OIE:
         output_dim - the number of features in word embedding's output
         peek - (binray) add the peek feature
         attention - (binary) use attention model
+        loss - (string) the loss function, one of keras options
+        optimizer - (string) the optimizer function, one of keras options
         """
-        model_fn = AttentionSeq2Seq \
+
+        # Only pass peek as an argument if using an attention model
+        model_fn = lambda **args: \
+                   AttentionSeq2Seq(**args) \
                    if attention \
-                      else Seq2Seq
+                      else Seq2Seq(peek = peek, **args)
 
         model = model_fn(input_length = input_length,
                          input_dim = input_dim,
@@ -98,12 +114,32 @@ class Seq2seq_OIE:
                          output_dim = output_dim,
                          depth = (input_depth,
                                   output_depth),
-#                         peek = peek, TODO
         )
-        model.compile(loss='mse', optimizer='rmsprop')
+
+        model.compile(loss = loss,
+                      optimizer = optimizer)
+
         if logging.getLogger().getEffectiveLevel() == logging.DEBUG:
             model.summary()
         return model
+
+    def train(train_fn, dev_fn):
+        """
+        Train this model on a given train dataset
+        Dev test is used for model checkpointing
+        """
+        X_train, Y_train = self.load_dataset(train_fn)
+        X_dev, Y_dev = self.load_dataset(dev_fn)
+
+        # Create a callback to print a sample after each epoch
+        logging.debug("Training model on {}".format(train_fn))
+        self.model.fit(X_train, Y_train,
+                       batch_size = self.batch_size,
+                       nb_epoch = self.epochs,
+                       validation_data = (X_dev, Y_dev),
+                       callbacks = self.get_callbacks(X_train))
+
+
 
 
 if __name__ == "__main__":
