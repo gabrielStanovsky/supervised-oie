@@ -9,15 +9,14 @@ Markdown==2.2.0
 mock==2.0.0
 numpy==1.13.0
 pbr==3.1.0
-pkg-resources==0.0.0
 protobuf==3.3.0
 pydot==1.2.3
 pyparsing==2.2.0
 PyYAML==3.12
-recurrentshop==1.0.0
 scipy==0.19.0
-seq2seq==1.0.0
 six==1.10.0
 tensorflow==1.2.0
 Theano==0.9.0
 Werkzeug==0.12.2
+git+https://github.com/datalogai/recurrentshop
+git+https://github.com/farizrahman4u/seq2seq.git
