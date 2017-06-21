@@ -286,8 +286,6 @@ class RNN_model:
             pos_inputs.append([Sample(pos) for pos in pos_tags_encodings])
 
         # Pad / truncate to desired maximum length
-        ret = {"word_inputs" : [],
-               "predicate_inputs": []}
         ret = defaultdict(lambda: [])
 
         for name, sequence in zip(["word_inputs", "predicate_inputs", "postags_inputs"],

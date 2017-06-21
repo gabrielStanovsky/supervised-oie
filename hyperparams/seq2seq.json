@@ -1,0 +1,11 @@
+{"hyperparams": {
+  "batch_size": 20,
+  "maximum_output_length": 20,
+  "emb_fn": "../pretrained_word_embeddings/glove.6B.50d.txt",
+  "hidden_dim": 30,
+  "input_depth": 3,
+  "output_depth": 3,
+  "peek": true,
+  "attention": true,
+  "seed": 42}
+}
