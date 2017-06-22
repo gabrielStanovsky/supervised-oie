@@ -161,7 +161,7 @@ class Seq2seq_OIE:
         return pd.read_csv(fn,
                            sep = sep,
                            header = None,
-                           names = ['sent', 'pred'] + \
+                           names = ['sent', 'base-pred', 'surface-pred'] + \
                            ['arg{}'.format(i) for i in range(10)],
                            engine = 'python'
         )
