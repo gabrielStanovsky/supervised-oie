@@ -13,6 +13,7 @@ Parameters:
 """
 
 import seq2seq
+import pandas as pd
 import numpy as np
 from keras.utils import plot_model
 from seq2seq.models import Seq2Seq, AttentionSeq2Seq
@@ -49,7 +50,7 @@ class Seq2seq_OIE:
         optimizer - (string) the optimizer function, one of keras options
         """
         self.args = args
-        self.sep = self.args['sep']
+        self.sep = str(self.args['sep'])
         self.emb = Glove(self.args['emb_fn'])
         self.epochs = self.args['epochs']
         np.random.seed(self.args['seed'])
@@ -152,11 +153,18 @@ class Seq2seq_OIE:
                        validation_data = (X_dev, Y_dev),
                        callbacks = self.get_callbacks(X_train))
 
-    def load_dataset(self, fn):
+    @staticmethod
+    def load_dataset(fn, sep):
         """
         Load a supervised OIE dataset from file
         """
-        self.df = pandas.read_csv(fn, sep = self.sep, header = 0)
+        return pd.read_csv(fn,
+                           sep = sep,
+                           header = None,
+                           names = ['sent', 'pred'] + \
+                           ['arg{}'.format(i) for i in range(10)],
+                           engine = 'python'
+        )
 
         # # Encode one-hot representation of the labels
         # if self.classes_() is None:
@@ -185,4 +193,5 @@ if __name__ == "__main__":
     # Parse hyperparams and initialize model
     hyperparams = json.load(open(hyperparams_fn))['hyperparams']
     logging.debug("Model hyperparms: {}".format(pformat(hyperparams)))
-    s2s = Seq2seq_OIE(**hyperparams)
+    df = Seq2seq_OIE.load_dataset(train_fn, str(hyperparams['sep']))
+#    s2s = Seq2seq_OIE(**hyperparams)
