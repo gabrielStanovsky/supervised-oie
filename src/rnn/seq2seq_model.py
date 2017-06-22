@@ -30,21 +30,7 @@ class Seq2seq_OIE:
     the predictions, and not having to align the tuples words.
     """
     def __init__(self,
-                 **args
-                 # seed,
-                 # sep,
-                 # batch_size,
-                 # maximum_output_length,
-                 # emb_fn,
-                 # hidden_dim,
-                 # input_depth,
-                 # output_depth,
-                 # peek,
-                 # attention,
-                 # epochs,
-                 # loss,
-                 # optimizer,
-    ):
+                 **args):
         """
         Init and compile model's params
         Arguments:
@@ -63,6 +49,7 @@ class Seq2seq_OIE:
         optimizer - (string) the optimizer function, one of keras options
         """
         self.args = args
+        self.sep = self.args['sep']
         self.emb = Glove(self.args['emb_fn'])
         self.epochs = self.args['epochs']
         np.random.seed(self.args['seed'])
