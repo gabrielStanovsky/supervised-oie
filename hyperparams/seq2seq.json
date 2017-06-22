@@ -10,4 +10,5 @@
   "seed" : 42,
   "epochs" : 10,
   "loss" : "mse",
-  "optimizer": "rmsprop"}}
+  "optimizer": "rmsprop",
+  "sep":"\t"}}

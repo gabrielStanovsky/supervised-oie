@@ -13,8 +13,10 @@ Parameters:
 """
 
 import seq2seq
+import numpy as np
 from keras.utils import plot_model
 from seq2seq.models import Seq2Seq, AttentionSeq2Seq
+from keras.callbacks import LambdaCallback, ModelCheckpoint
 from docopt import docopt
 from pprint import pformat
 import logging
@@ -28,22 +30,26 @@ class Seq2seq_OIE:
     the predictions, and not having to align the tuples words.
     """
     def __init__(self,
-                 seed,
-                 batch_size,
-                 maximum_output_length,
-                 emb_fn,
-                 hidden_dim,
-                 input_depth,
-                 output_depth,
-                 peek,
-                 attention,
-                 epochs,
-                 loss,
-                 optimizer,
+                 **args
+                 # seed,
+                 # sep,
+                 # batch_size,
+                 # maximum_output_length,
+                 # emb_fn,
+                 # hidden_dim,
+                 # input_depth,
+                 # output_depth,
+                 # peek,
+                 # attention,
+                 # epochs,
+                 # loss,
+                 # optimizer,
     ):
         """
         Init and compile model's params
         Arguments:
+        seed - the random seed to use
+        sep - the delimiter to be used in the csv files
         batch_size - (=input_lenght) Batch size in which to partition the elements
         maximum_output_length - The maximum number of words in output
         emb - Pretrained embeddings
@@ -56,19 +62,21 @@ class Seq2seq_OIE:
         loss - (string) the loss function, one of keras options
         optimizer - (string) the optimizer function, one of keras options
         """
-        self.emb = Glove(emb_fn)
-        self.epochs = epochs
-        self.model = Seq2seq_OIE.compile_model(input_length = batch_size,
-                                               input_depth = input_depth,
+        self.args = args
+        self.emb = Glove(self.args['emb_fn'])
+        self.epochs = self.args['epochs']
+        np.random.seed(self.args['seed'])
+        self.model = Seq2seq_OIE.compile_model(input_length = self.args['batch_size'],
+                                               input_depth = self.args['input_depth'],
                                                input_dim = self.emb.dim,
-                                               hidden_dim = hidden_dim,
-                                               output_length = maximum_output_length,
-                                               output_depth = output_depth,
+                                               hidden_dim = self.args['hidden_dim'],
+                                               output_length = self.args['maximum_output_length'],
+                                               output_depth = self.args['output_depth'],
                                                output_dim = self.emb.dim,
-                                               peek = peek,
-                                               attention = attention,
-                                               loss = loss,
-                                               optimizer = optimizer,
+                                               peek = self.args['peek'],
+                                               attention = self.args['attention'],
+                                               loss = self.args['loss'],
+                                               optimizer = self.args['optimizer'],
         )
 
 
@@ -156,6 +164,22 @@ class Seq2seq_OIE:
                        nb_epoch = self.epochs,
                        validation_data = (X_dev, Y_dev),
                        callbacks = self.get_callbacks(X_train))
+
+    def load_dataset(self, fn):
+        """
+        Load a supervised OIE dataset from file
+        """
+        df = pandas.read_csv(fn, sep = self.sep, header = 0)
+
+        # Encode one-hot representation of the labels
+        if self.classes_() is None:
+            self.encoder.fit(df.label.values)
+
+        # Split according to sentences and encode
+        sents = self.get_sents_from_df(df)
+        return (self.encode_inputs(sents),
+                self.encode_outputs(sents))
+
 
 if __name__ == "__main__":
     # Parse arguments
