@@ -156,16 +156,16 @@ class Seq2seq_OIE:
         """
         Load a supervised OIE dataset from file
         """
-        df = pandas.read_csv(fn, sep = self.sep, header = 0)
+        self.df = pandas.read_csv(fn, sep = self.sep, header = 0)
 
-        # Encode one-hot representation of the labels
-        if self.classes_() is None:
-            self.encoder.fit(df.label.values)
+        # # Encode one-hot representation of the labels
+        # if self.classes_() is None:
+        #     self.encoder.fit(df.label.values)
 
-        # Split according to sentences and encode
-        sents = self.get_sents_from_df(df)
-        return (self.encode_inputs(sents),
-                self.encode_outputs(sents))
+        # # Split according to sentences and encode
+        # sents = self.get_sents_from_df(df)
+        # return (self.encode_inputs(sents),
+        #         self.encode_outputs(sents))
 
 
 if __name__ == "__main__":
