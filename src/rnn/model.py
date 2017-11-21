@@ -8,7 +8,7 @@ import nltk
 import time
 from docopt import docopt
 from keras.models import Sequential, Model
-from keras.layers import Input, Dense, LSTM, Embedding, TimeDistributedDense,\
+from keras.layers import Input, Dense, LSTM, Embedding, \
     TimeDistributed, merge, Bidirectional, Dropout
 from keras.wrappers.scikit_learn import KerasClassifier
 from keras.utils import np_utils
@@ -176,7 +176,9 @@ class RNN_model:
         ret = []
 
         # Extract predicates by looking at verbal POS
-        preds = [(ind, pred_word) for ind, (pred_word, pos) in enumerate(nltk.pos_tag(sent))
+        preds = [(ind, pred_word)
+                 for ind, (pred_word, pos)
+                 in enumerate(nltk.pos_tag(sent))
                  if pos.startswith("V")]
 
         # Calculate num of samples (round up to the nearst multiple of sent_maxlen)
