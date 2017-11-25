@@ -369,8 +369,18 @@ def fuzzy_match_phrase(phrase, sentence):
     """
     logging.debug("Fuzzy searching \"{}\" in \"{}\"".format(" ".join(phrase), " ".join(sentence)))
     limit = min((len(phrase) / 2) + 1, 3)
-    possible_indices = [fuzzy_match_word(w, sentence, limit)
+    possible_indices = [fuzzy_match_word(w,
+                                         sentence,
+                                         limit) \
+                        + (fuzzy_match_word("not",
+                                           sentence,
+                                           limit) \
+                           if w == "n't" \
+                           else [])
                         for w in phrase]
+    if ("n't" in phrase) and ("not" in sentence):
+#        pdb.set_trace()
+        pass
     indices = find_consecutive_combinations(*possible_indices)
     if not indices:
         logging.warn("\t".join(map(str, ["*** {}".format(len(indices)),
