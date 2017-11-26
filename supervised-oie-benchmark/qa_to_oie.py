@@ -118,7 +118,6 @@ class Qa2OIE:
 
             else:
                 pred = self.preproc(data[0])
-#                pdb.set_trace()
                 pred_index = map(int,
                                  eval(data[1]))
                 cur = Extraction((pred,
@@ -231,7 +230,6 @@ class Qa2OIE:
         for (pred, pred_index), predQAs in sentQAs:
             for element in itertools.product(*predQAs):
                 self.encodeExtraction(element)
-#                pdb.set_trace()
                 ret += "\t".join([pred, str(pred_index)] +
                                  ["\t".join(x) for x in element]) + "\n"
         ret += "\n"
@@ -378,9 +376,6 @@ def fuzzy_match_phrase(phrase, sentence):
                            if w == "n't" \
                            else [])
                         for w in phrase]
-    if ("n't" in phrase) and ("not" in sentence):
-#        pdb.set_trace()
-        pass
     indices = find_consecutive_combinations(*possible_indices)
     if not indices:
         logging.warn("\t".join(map(str, ["*** {}".format(len(indices)),
