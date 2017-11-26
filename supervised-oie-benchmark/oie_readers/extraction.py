@@ -12,8 +12,9 @@ class Extraction:
     """
     Stores sentence, single predicate and corresponding arguments.
     """
-    def __init__(self, pred, sent, confidence, question_dist = ''):
+    def __init__(self, pred, head_pred_index, sent, confidence, question_dist = ''):
         self.pred = pred
+        self.head_pred_index = head_pred_index
         self.sent = sent
         self.args = []
         self.confidence = confidence
@@ -303,11 +304,12 @@ class Extraction:
         Lower score represents a denser cluster.
         """
         logging.debug("*-*-*- Cluster: {}".format(cluster))
+
         # Find global centroid
         arr = np.array([x for ls in cluster for x in ls])
-#        pdb.set_trace()
         centroid = np.sum(arr)/arr.shape[0]
         logging.debug("Centroid: {}".format(centroid))
+
         # Calculate mean over all maxmimum points
         return np.average([max([abs(x - centroid) for x in ls]) for ls in cluster])
 
@@ -348,6 +350,7 @@ class Extraction:
         return '\n'.join(["\t".join(map(str,
                                         [i, w] + \
                                         list(self.pred) + \
+                                        [self.head_pred_index] + \
                                         external_feats + \
                                         [self.get_label(i)]))
                           for (i, w)
@@ -372,7 +375,13 @@ class Extraction:
         if len(ent) > 1:
             # The same word appears in two different answers
             # In this case we choose the first one as label
-            logging.warn("Index {} appears in one than more element: {}".format(index, "\t".join(map(str, [ent, self.sent, self.pred, self.args]))))
+            logging.warn("Index {} appears in one than more element: {}".\
+                         format(index,
+                                "\t".join(map(str,
+                                              [ent,
+                                               self.sent,
+                                               self.pred,
+                                               self.args]))))
 
         ## Some indices appear in more than one argument (ones where the above message appears)
         ## From empricial observation, these seem to mostly consist of different levels of granularity:

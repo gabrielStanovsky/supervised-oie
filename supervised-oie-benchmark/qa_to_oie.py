@@ -118,14 +118,16 @@ class Qa2OIE:
 
             else:
                 pred = self.preproc(data[0])
-                pred_index = map(int,
-                                 eval(data[1]))
+                pred_indices = map(int,
+                                   eval(data[1]))
+                head_pred_index = int(data[2])
                 cur = Extraction((pred,
-                                  [pred_index]),
+                                  [pred_indices]),
+                                 head_pred_index,
                                  sent,
                                  confidence = 1.0)
 
-                for q, a in zip(data[2::2], data[3::2]):
+                for q, a in zip(data[3::2], data[4::2]):
                     preproc_arg = self.preproc(a)
                     if not preproc_arg:
                         logging.warn("Argument reduced to None: {}".format(a))
@@ -180,7 +182,7 @@ class Qa2OIE:
             elif lc == 2:
                 if curAnswers:
                     sentQAs.append(((surfacePred,
-#                                     predIndex),
+                                     predIndex,
                                      augmented_pred_indices),
                                     curAnswers))
                 curAnswers = []
@@ -215,7 +217,7 @@ class Qa2OIE:
                         augmented_pred_indices = augmented_pred_indices[0]
 #                    pdb.set_trace()
                     sentQAs.append(((surfacePred,
-#                                     predIndex),
+                                     predIndex,
                                      augmented_pred_indices),
                                     curAnswers))
                     curAnswers = []
@@ -227,10 +229,10 @@ class Qa2OIE:
 
     def printSent(self, sent, sentQAs):
         ret =  sent + "\n"
-        for (pred, pred_index), predQAs in sentQAs:
+        for (pred, head_pred_index, pred_indices), predQAs in sentQAs:
             for element in itertools.product(*predQAs):
                 self.encodeExtraction(element)
-                ret += "\t".join([pred, str(pred_index)] +
+                ret += "\t".join([pred, str(pred_indices), str(head_pred_index)] +
                                  ["\t".join(x) for x in element]) + "\n"
         ret += "\n"
         return ret
@@ -263,7 +265,7 @@ class Qa2OIE:
         return ret
 
     def createOIEInput(self, fn):
-        with open(fn, 'a') as fout:
+        with open(fn, 'w') as fout:
             for sent in self.dic:
                 fout.write(sent + '\n')
 
@@ -283,6 +285,7 @@ class Qa2OIE:
                             "word",
                             "pred",
                             "pred_id",
+                            "head_pred_id",
                             "sent_id",
                             "run_id",
                             "label"])
@@ -378,11 +381,11 @@ def fuzzy_match_phrase(phrase, sentence):
                         for w in phrase]
     indices = find_consecutive_combinations(*possible_indices)
     if not indices:
-        logging.warn("\t".join(map(str, ["*** {}".format(len(indices)),
-                                         " ".join(phrase),
-                                         " ".join(sentence),
-                                         possible_indices,
-                                         indices])))
+        logging.debug("\t".join(map(str, ["*** {}".format(len(indices)),
+                                          " ".join(phrase),
+                                          " ".join(sentence),
+                                          possible_indices,
+                                          indices])))
     return indices
 
 
