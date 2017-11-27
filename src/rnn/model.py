@@ -149,7 +149,7 @@ class RNN_model:
         logging.debug("Training model on {}".format(train_fn))
         self.model.fit(X_train, Y_train,
                        batch_size = self.batch_size,
-                       nb_epoch = self.epochs,
+                       epochs = self.epochs,
                        validation_data = (X_dev, Y_dev),
                        callbacks = self.get_callbacks(X_train))
 
@@ -234,7 +234,9 @@ class RNN_model:
         """
         Load a supervised OIE dataset from file
         """
-        df = pandas.read_csv(fn, sep = self.sep, header = 0)
+        df = pandas.read_csv(fn,
+                             sep = self.sep,
+                             header = 0)
 
         # Encode one-hot representation of the labels
         if self.classes_() is None:
@@ -249,7 +251,9 @@ class RNN_model:
         """
         Split a data frame by rows accroding to the sentences
         """
-        return [df[df.run_id == i] for i in range(min(df.run_id), max(df.run_id))]
+        return [df[df.run_id == i]
+                for i
+                in range(min(df.run_id), max(df.run_id))]
 
 
     def get_fixed_size(self, sents):
@@ -264,7 +268,8 @@ class RNN_model:
 
     def encode_inputs(self, sents):
         """
-        Given a dataframe split to sentences, encode inputs for rnn classification.
+        Given a dataframe which is already split to sentences,
+        encode inputs for rnn classification.
         Should return a dictionary of sequences of sample of length maxlen.
         """
         word_inputs = []
@@ -275,14 +280,21 @@ class RNN_model:
         for sent in sents:
             # pd assigns NaN for very infreq. empty string (see wiki train)
             sent_words = [word
-                         if not (isinstance(word, float) and math.isnan(word)) else " "
-                         for word in sent.word.values]
+                          if not (isinstance(word, float) and math.isnan(word))\
+                          else " "
+                          for word in sent.word.values]
 
             pos_tags_encodings = [NLTK_POS_TAGS.index(tag)
                                   for (_, tag)
                                   in nltk.pos_tag(sent_words)]
-            word_encodings = [self.emb.get_word_index(w) for w in sent_words]
-            pred_word_encodings = [self.emb.get_word_index(w) for w in sent_words]
+
+            word_encodings = [self.emb.get_word_index(w)
+                              for w in sent_words]
+
+            pred_word_encodings = [self.emb.get_word_index(w)
+                                    for w in sent_words]
+
+
             word_inputs.append([Sample(w) for w in word_encodings])
             pred_inputs.append([Sample(w) for w in pred_word_encodings])
             pos_inputs.append([Sample(pos) for pos in pos_tags_encodings])
@@ -309,9 +321,8 @@ class RNN_model:
         sents = self.get_fixed_size(sents)
         # Encode outputs
         for sent in sents:
-            output_encodings.append(list(np_utils.to_categorical(\
-                                                list(self.transform_labels(sent.label.values)),
-                                                            nb_classes = self.num_of_classes())))
+            output_encodings.append(list(np_utils.to_categorical(list(self.transform_labels(sent.label.values)),
+                                                                 num_classes = self.num_of_classes())))
 
         # Pad / truncate to maximum length
         return np.ndarray(shape = (len(sents),
