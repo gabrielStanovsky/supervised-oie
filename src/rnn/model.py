@@ -29,6 +29,7 @@ from collections import defaultdict
 
 import os
 import json
+import pdb
 from keras.models import model_from_json
 import logging
 logging.basicConfig(level = logging.DEBUG)
@@ -291,9 +292,11 @@ class RNN_model:
             word_encodings = [self.emb.get_word_index(w)
                               for w in sent_words]
 
-            pred_word_encodings = [self.emb.get_word_index(w)
-                                    for w in sent_words]
-
+            # Same predicate encodings throughout this sentence
+            pred_word = sent.word.values[sent.head_pred_id.values[0]]
+            pred_word_encodings = [self.emb.get_word_index(pred_word)
+                                    for _ in sent_words]
+            pdb.set_trace()
 
             word_inputs.append([Sample(w) for w in word_encodings])
             pred_inputs.append([Sample(w) for w in pred_word_encodings])
