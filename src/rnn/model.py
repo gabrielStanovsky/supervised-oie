@@ -97,13 +97,13 @@ class RNN_model:
         """
 
         sample_output_callback = LambdaCallback(on_epoch_end = lambda epoch, logs:\
-                                                pprint(self.sample_labels(self.model.predict(X))))
+                                                logging.debug(pformat(self.sample_labels(self.model.predict(X)))))
         checkpoint = ModelCheckpoint(os.path.join(self.model_dir,
                                                   "weights.hdf5"),
                                      verbose = 1,
                                      save_best_only = False)   # TODO: is there a way to save by best val_acc?
 
-        return [#sample_output_callback,
+        return [sample_output_callback,
                 checkpoint]
 
     def plot(self, fn, train_fn):
@@ -252,10 +252,9 @@ class RNN_model:
         """
         Split a data frame by rows accroding to the sentences
         """
-        return [df[df.run_id == i]
-                for i
-                in range(min(df.run_id), max(df.run_id))]
-
+        return [df[df.run_id == run_id]
+                for run_id
+                in sorted(set(df.run_id.values))]
 
     def get_fixed_size(self, sents):
         """
@@ -266,6 +265,16 @@ class RNN_model:
                 for sent in sents
                 for s_ind in range(0, len(sent), self.sent_maxlen)]
 
+    def get_head_pred_word(self, full_sent):
+        """
+        Get the head predicate word from a full sentence conll.
+        """
+        assert(len(set(full_sent.head_pred_id.values)) == 1) # Sanity check
+        pred_ind = full_sent.head_pred_id.values[0]
+
+        return full_sent.word.values[pred_ind] \
+            if pred_ind != -1 \
+               else full_sent.pred.values[0].split(" ")[0]
 
     def encode_inputs(self, sents):
         """
@@ -276,9 +285,21 @@ class RNN_model:
         word_inputs = []
         pred_inputs = []
         pos_inputs = []
-        sents = self.get_fixed_size(sents)
 
-        for sent in sents:
+        # Preproc to get all preds per run_id
+        # Sanity check - make sure that all sents agree on run_id
+        assert(all([len(set(sent.run_id.values)) == 1
+                    for sent in sents]))
+        run_id_to_pred = dict([(int(sent.run_id.values[0]),
+                                self.get_head_pred_word(sent))
+                               for sent in sents])
+
+        fixed_size_sents = self.get_fixed_size(sents)
+
+
+        for sent in fixed_size_sents:
+            assert(len(set(sent.run_id.values)) == 1)
+
             # pd assigns NaN for very infreq. empty string (see wiki train)
             sent_words = [word
                           if not (isinstance(word, float) and math.isnan(word))\
@@ -292,11 +313,10 @@ class RNN_model:
             word_encodings = [self.emb.get_word_index(w)
                               for w in sent_words]
 
-            # Same predicate encodings throughout this sentence
-            pred_word = sent.word.values[sent.head_pred_id.values[0]]
+            # Same pred word encodings for all words in the sentence
+            pred_word = run_id_to_pred[int(sent.run_id.values[0])]
             pred_word_encodings = [self.emb.get_word_index(pred_word)
                                     for _ in sent_words]
-            pdb.set_trace()
 
             word_inputs.append([Sample(w) for w in word_encodings])
             pred_inputs.append([Sample(w) for w in pred_word_encodings])
