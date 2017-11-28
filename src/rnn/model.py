@@ -187,7 +187,7 @@ class RNN_model:
 
         # Run RNN for each predicate on this sentence
         for ind, pred in preds:
-            cur_sample = self.create_sample(sent, pred)
+            cur_sample = self.create_sample(sent, ind)
             X = self.encode_inputs([cur_sample])
             ret.append(((ind, pred),
                         [(self.consolidate_label(label), float(prob))
@@ -197,12 +197,13 @@ class RNN_model:
                                                                               2)[:len(sent)]]))
         return ret
 
-    def create_sample(self, sent, pred_word):
+    def create_sample(self, sent, head_pred_id):
         """
         Return a dataframe which could be given to encode_inputs
         """
         return pandas.DataFrame({"word": sent,
-                                 "pred": [pred_word] * len(sent)})
+                                 "run_id": [-1] * len(sent), # Mock running id
+                                 "head_pred_id": head_pred_id})
 
     def test(self, test_fn, eval_metrics):
         """
