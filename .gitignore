@@ -98,3 +98,5 @@ best_models/
 .venv/
 oie_corpus/
 *.tar.gz
+*.keep
+supervised-oie-benchmark/question_distributions/
