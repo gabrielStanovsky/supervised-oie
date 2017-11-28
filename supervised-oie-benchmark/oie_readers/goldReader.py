@@ -19,7 +19,10 @@ class GoldReader(OieReader):
                 args = data[2:]
                 confidence = 1
                 
-                curExtraction = Extraction(pred = rel, sent = text, confidence = float(confidence))
+                curExtraction = Extraction(pred = rel,
+                                           head_pred_index = None,
+                                           sent = text,
+                                           confidence = float(confidence))
                 for arg in args:
                     curExtraction.addArg(arg)
                     
