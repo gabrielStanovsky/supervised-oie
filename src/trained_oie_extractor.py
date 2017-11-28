@@ -120,7 +120,7 @@ class Extraction:
         sent - Tokenized sentence - list of strings
         pred - Predicate word
         args - List of arguments (each a string)
-        probs - list of float in [0,1] indicating the probablity
+        probs - list of float in [0,1] indicating the probability
                of each of the items in the extraction
         calc_prob - function which takes a list of probabilities for each of the
                     items and computes a single probability for the joint occurence of this extraction.
