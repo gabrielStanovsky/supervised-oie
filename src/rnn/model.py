@@ -4,7 +4,6 @@
 import numpy as np
 import math
 import pandas
-import nltk
 import time
 from docopt import docopt
 from keras.models import Sequential, Model
@@ -26,6 +25,7 @@ from sklearn import metrics
 from pprint import pformat
 from common.symbols import NLTK_POS_TAGS
 from collections import defaultdict
+from parsers.spacy_wrapper import spacy_whitespace_parser as spacy_ws
 
 import os
 import json
@@ -175,12 +175,19 @@ class RNN_model:
         sent - a list of string tokens
         """
         ret = []
+        sent_str = " ".join(sent)
 
         # Extract predicates by looking at verbal POS
-        preds = [(ind, pred_word)
-                 for ind, (pred_word, pos)
-                 in enumerate(nltk.pos_tag(sent))
-                 if pos.startswith("V")]
+
+        # preds = [(ind, pred_word)
+        #          for ind, (pred_word, pos)
+        #          in enumerate(nltk.pos_tag(sent))
+        #          if pos.startswith("V")]
+
+        preds = [(word.i, word.tag_)
+                 for word
+                 in spacy_ws(sent_str)
+                 if word.tag_.startswith("V")]
 
         # Calculate num of samples (round up to the nearst multiple of sent_maxlen)
         num_of_samples = np.ceil(float(len(sent)) / self.sent_maxlen) * self.sent_maxlen
@@ -307,9 +314,15 @@ class RNN_model:
                           else " "
                           for word in sent.word.values]
 
-            pos_tags_encodings = [NLTK_POS_TAGS.index(tag)
-                                  for (_, tag)
-                                  in nltk.pos_tag(sent_words)]
+            sent_str = " ".join(sent_words)
+
+            # pos_tags_encodings = [NLTK_POS_TAGS.index(tag)
+            #                       for (_, tag)
+            #                       in nltk.pos_tag(sent_words)]
+
+            pos_tags_encodings = [NLTK_POS_TAGS.index(word.tag_)
+                                  for word
+                                  in spacy_ws(sent_str)]
 
             word_encodings = [self.emb.get_word_index(w)
                               for w in sent_words]
