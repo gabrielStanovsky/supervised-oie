@@ -33,11 +33,16 @@ if __name__ == "__main__":
     # Start computation
     df1 = pd.read_csv(df1_fn,
                       sep = '\t',
-                      header = 0)
+                      header = 0,
+                      keep_default_na = False,
+                      na_filter = False)
 
     df2 = pd.read_csv(df2_fn,
                       sep = '\t',
-                      header = 0)
+                      header = 0,
+                      keep_default_na = False,
+                      na_filter = False)
+
     logging.info("Writing concatenation to {}".format(out_fn))
     out_df = concat_dfs(df1,
                            df2,
