@@ -23,7 +23,7 @@ from operator import itemgetter
 from keras.callbacks import LambdaCallback, ModelCheckpoint
 from sklearn import metrics
 from pprint import pformat
-from common.symbols import NLTK_POS_TAGS
+from common.symbols import SPACY_POS_TAGS
 from collections import defaultdict
 from parsers.spacy_wrapper import spacy_whitespace_parser as spacy_ws
 
@@ -179,12 +179,7 @@ class RNN_model:
 
         # Extract predicates by looking at verbal POS
 
-        # preds = [(ind, pred_word)
-        #          for ind, (pred_word, pos)
-        #          in enumerate(nltk.pos_tag(sent))
-        #          if pos.startswith("V")]
-
-        preds = [(word.i, word.tag_)
+        preds = [(word.i, str(word))
                  for word
                  in spacy_ws(sent_str)
                  if word.tag_.startswith("V")]
@@ -245,7 +240,8 @@ class RNN_model:
         """
         df = pandas.read_csv(fn,
                              sep = self.sep,
-                             header = 0)
+                             header = 0,
+                             keep_default_na = False)
 
         # Encode one-hot representation of the labels
         if self.classes_() is None:
@@ -302,27 +298,35 @@ class RNN_model:
                                 self.get_head_pred_word(sent))
                                for sent in sents])
 
+        # Construct a mapping from running word index to pos
+        word_id_to_pos = {}
+        for sent in sents:
+            indices = sent.index.values
+            words = sent.word.values
+
+            for index, word in zip(indices,
+                                   spacy_ws(" ".join(words))):
+                word_id_to_pos[index] = word.tag_
+
         fixed_size_sents = self.get_fixed_size(sents)
 
 
         for sent in fixed_size_sents:
+
             assert(len(set(sent.run_id.values)) == 1)
 
-            # pd assigns NaN for very infreq. empty string (see wiki train)
-            sent_words = [word
-                          if not (isinstance(word, float) and math.isnan(word))\
-                          else " "
-                          for word in sent.word.values]
+            word_indices = sent.index.values
+            sent_words = sent.word.values
 
             sent_str = " ".join(sent_words)
 
-            # pos_tags_encodings = [NLTK_POS_TAGS.index(tag)
-            #                       for (_, tag)
-            #                       in nltk.pos_tag(sent_words)]
 
-            pos_tags_encodings = [NLTK_POS_TAGS.index(word.tag_)
-                                  for word
-                                  in spacy_ws(sent_str)]
+
+            pos_tags_encodings = [(SPACY_POS_TAGS.index(word_id_to_pos[word_ind]) \
+                                   if word_id_to_pos[word_ind] in SPACY_POS_TAGS \
+                                   else 0)
+                                  for word_ind
+                                  in word_indices]
 
             word_encodings = [self.emb.get_word_index(w)
                               for w in sent_words]
@@ -421,7 +425,7 @@ class RNN_model:
         Embed Part of Speech using this instance params
         """
         return Embedding(output_dim = self.pos_tag_embedding_size,
-                         input_dim = len(NLTK_POS_TAGS),
+                         input_dim = len(SPACY_POS_TAGS),
                          input_length = self.sent_maxlen)
 
     def predict_classes(self):
