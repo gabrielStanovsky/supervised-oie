@@ -179,7 +179,7 @@ class RNN_model:
 
         # Extract predicates by looking at verbal POS
 
-        preds = [(word.i, word.tag_)
+        preds = [(word.i, str(word))
                  for word
                  in spacy_ws(sent_str)
                  if word.tag_.startswith("V")]
