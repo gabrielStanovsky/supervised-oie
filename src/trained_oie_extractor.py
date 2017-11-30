@@ -17,6 +17,7 @@ from rnn.model import load_pretrained_rnn
 from docopt import docopt
 import logging
 import nltk
+import re
 import numpy as np
 from collections import defaultdict
 
@@ -41,7 +42,7 @@ class Trained_oie:
         sent - string
         """
         return nltk.word_tokenize(sent) if self.tokenize\
-            else sent.split(" ")
+            else re.split(r' +', sent) # Allow arbitrary number of spaces
 
 
     def get_extractions(self, sent):
