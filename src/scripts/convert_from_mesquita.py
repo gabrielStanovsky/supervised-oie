@@ -14,66 +14,82 @@ from docopt import docopt
 from pyparsing import nestedExpr
 
 # Local imports
-
+from parsers.spacy_wrapper import spacy_whitespace_parser as spacy_ws
 
 #----
+
+
+def find_enclosed_elem(annotated_sent, start_symbol, end_symbol):
+    """
+    Extract elements enclosed by some denotation.
+    """
+    sexp = nestedExpr(start_symbol,
+                      end_symbol,
+                      ignoreExpr = None).parseString("{}{}{}".format(start_symbol,
+                                                                     annotated_sent,
+                                                                     end_symbol)).asList()[0]
+    exps = [get_raw_sent(" ".join(ls))
+             for ls in sexp
+             if isinstance(ls, list)]
+
+    # Make sure there's a single predicate head
+    return exps
 
 
 def get_entities(annotated_sent):
     """
     Get the entities participating in this sentence.
     """
-    sexp = nestedExpr('[[[',
-                      ']]]',
-                      ignoreExpr = None).parseString("[[[{}]]]".format(annotated_sent)).asList()[0]
-    return [" ".join(ls[1:])  # Drop the NER label
-            for ls in sexp
-            if isinstance(ls, list)]
+    return find_enclosed_elem(annotated_sent,
+                              '[[[',
+                              ']]]')[1:] # Drop the NER label
+
+def get_predicate_head(annotated_sent):
+    """
+    Get the predicate head annotated in the input.
+    """
+    preds = find_enclosed_elem(annotated_sent,
+                               '{{{',
+                               '}}}')
+
+    # Make sure there's a single predicate head
+    assert(len(preds) == 1)
+    return preds[0]
+
 
 def get_predicate(annotated_sent):
     """
     Get the predicate in this sentence.
     """
-    if "--->" in annotated_sent:
-        pred_start = "--->"
-        pred_end = "<---"
-    else:
-        # If there's no allowed word marks, try just the bare predicate
-        pred_start = "--->"
-        pred_end = "<---"
+    pred_start = "--->"
+    pred_end = "<---"
 
-        # pred_start = "{{{"
-        # pred_end = "}}}"
+    # Some predicates are non-contiguous
+    return " ".join(find_enclosed_elem(annotated_sent,
+                                       "--->",
+                                       "<---"))
 
-    sexp = nestedExpr(pred_start,
-                      pred_end,
-                      ignoreExpr = None).parseString("{}{}{}".format(pred_start,
-                                                                     annotated_sent,
-                                                                     pred_end)).asList()[0]
-    preds = [get_raw_sent(" ".join(ls))
-             for ls in sexp
-             if isinstance(ls, list)]
 
-    if not preds:
-        #TODO: Some entries don't annotate a predicate?
-        return None
-
-    return " ".join(preds) # Some predicates are non-contiguous
-
+SPECIAL_CHARS = ["{{{",
+                 "}}}",
+                 "]]]",
+                 " --->",
+                 "<--- ",
+                 "--->", # Should appear after their superstring
+                 "<---",
+                 "-->"] # Probably a bug in the original annotation
 
 def get_raw_sent(annotated_sent):
     """
     Return the raw sentence, without the special characters.
     """
-    ret = annotated_sent.replace("{{{", ''). \
-          replace("}}}", ''). \
-          replace("]]]", ''). \
-          replace(" --->", ''). \
-          replace("<--- ", '')
+    ret = annotated_sent
+    for chars in SPECIAL_CHARS:
+        ret = ret.replace(chars, '')
 
     return " ".join([word for word
                      in ret.split(' ')
-                     if not word.startswith("[[[")])
+                     if not word.startswith("[[[")]).strip()
 
 
 
@@ -88,7 +104,7 @@ def convert_single_sent(annotated_sent):
     """
     logging.debug(annotated_sent)
     pred = get_predicate(annotated_sent)
-    if pred is None:
+    if not pred:
         return None
     return [get_raw_sent(annotated_sent),
             pred] + get_entities(annotated_sent)

@@ -88,6 +88,5 @@ def spacy_whitespace_parser(text, encoding = "utf8"):
     """
     Parse sentence with static instance.
     """
-#    logging.debug("spacy text: {}".format(text))
     return spacy_with_whitespace_tokenizer.parser(unicode(text,
                                                           encoding))
