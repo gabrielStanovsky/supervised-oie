@@ -1,5 +1,5 @@
 """ Usage:
-    convert_from_mesquita --in=INPUT_FILE --out=OUTPUT_FILE [--debug]
+    convert_from_mesquita --in=INPUT_FILE --out=OUTPUT_FILE [--verbal] [--debug]
 
 Convert ground truth annotation from Mesquita et al. to our format.
 
@@ -29,8 +29,8 @@ def find_enclosed_elem(annotated_sent, start_symbol, end_symbol):
                                                                      annotated_sent,
                                                                      end_symbol)).asList()[0]
     exps = [get_raw_sent(" ".join(ls))
-             for ls in sexp
-             if isinstance(ls, list)]
+            for ls in sexp
+            if isinstance(ls, list)]
 
     # Make sure there's a single predicate head
     return exps
@@ -40,9 +40,11 @@ def get_entities(annotated_sent):
     """
     Get the entities participating in this sentence.
     """
-    return find_enclosed_elem(annotated_sent,
-                              '[[[',
-                              ']]]')[1:] # Drop the NER label
+    return [elem.split(' ', 1)[1] # Drop the NER label
+            for elem
+            in find_enclosed_elem(annotated_sent,
+                                  '[[[',
+                                  ']]]')]
 
 def get_predicate_head(annotated_sent):
     """
@@ -52,6 +54,8 @@ def get_predicate_head(annotated_sent):
                                '{{{',
                                '}}}')
 
+    if not preds:
+        return []
     # Make sure there's a single predicate head
     assert(len(preds) == 1)
     return preds[0]
@@ -69,13 +73,12 @@ def get_predicate(annotated_sent):
                                        "--->",
                                        "<---"))
 
-
 SPECIAL_CHARS = ["{{{",
                  "}}}",
                  "]]]",
                  " --->",
                  "<--- ",
-                 "--->", # Should appear after their superstring
+                 "--->", # Should appear after their super-string
                  "<---",
                  "-->"] # Probably a bug in the original annotation
 
@@ -91,23 +94,57 @@ def get_raw_sent(annotated_sent):
                      in ret.split(' ')
                      if not word.startswith("[[[")]).strip()
 
+def strip_word_index(line):
+    """
+    Remove the word indices from string.
+    """
+    try:
+        return " ".join([word.split('_', 1)[1]
+                         for word in line.split(' ')])
+    except:
+        pdb.set_trace()
 
-
-def convert_single_sent(annotated_sent):
+def convert_single_sent(annotated_sent, verbal):
     """
     Return our format for a single annotated sentence.
+    Verbal controls whether only verbal extractions should be made.
     From Mesquita's readme:
     Annotated Sentence:  The sentence annotated with the entity pair, the trigger and allowed tokens.
                         Entities are enclosed in triple square brackets, triggers are enclosed in
                         triple curly brackets and the allowed tokens are enclosed in arrows.
                         ("--->" and "<---").
     """
-    logging.debug(annotated_sent)
-    pred = get_predicate(annotated_sent)
-    if not pred:
+    proc_sent = []
+    word_ind = 0
+    for word in annotated_sent.split():
+        if (word not in SPECIAL_CHARS):
+            if "{{{" in word:
+                # Boilerplate index
+                bp_ind = word.index('{{{') + 3
+                # Plant the index in the correct place
+                word = "{}{}_{}".format(word[0 : bp_ind],
+                                        word_ind,
+                                        word[bp_ind :])
+                word_ind += 1
+
+            elif not (word.startswith("[[[")):
+                word = "{}_{}".format(word_ind, word)
+                word_ind += 1
+
+        proc_sent.append(word)
+
+    proc_sent = " ".join(proc_sent)
+    pred = get_predicate_head(proc_sent)
+    raw_sent = get_raw_sent(proc_sent)
+    doc = spacy_ws(strip_word_index(raw_sent))
+
+    # Filter non-verbs and empty predicates
+    if (not pred) or \
+       (verbal and \
+        (not doc[int(pred.split("_")[0])].tag_.startswith("V"))):
         return None
-    return [get_raw_sent(annotated_sent),
-            pred] + get_entities(annotated_sent)
+    return map(strip_word_index,
+               [raw_sent, pred] + get_entities(proc_sent))
 
 
 if __name__ == "__main__":
@@ -116,6 +153,7 @@ if __name__ == "__main__":
     args = docopt(__doc__)
     inp_fn = args["--in"]
     out_fn = args["--out"]
+    verbal = args["--verbal"]
 
     # Determine logging level
     debug = args["--debug"]
@@ -130,13 +168,9 @@ if __name__ == "__main__":
                          sep = '\t',
                          header = 0)
 
-    # Create output df and write to file
-    # out_df = pd.DataFrame([pd.Series(convert_single_sent(annotated_sent))
-    #                        for annotated_sent
-
     ls = []
     for annotated_sent in inp_df["Annotated Sentence"].values:
-        conv_sent = convert_single_sent(annotated_sent)
+        conv_sent = convert_single_sent(annotated_sent, verbal)
         if conv_sent:
             # Ignoring annotations without a predicate
             ls.append(pd.Series(conv_sent))
