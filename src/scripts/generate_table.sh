@@ -48,8 +48,10 @@ python benchmark.py --gold=../external_datasets/mesquita_2013/processed/web.oie 
 echo "---- NYT ----"
 
 echo "RNN-aw"
+python benchmark.py --gold=../external_datasets/mesquita_2013/processed/nyt.oie   --out=/dev/null  --tabbed=../evaluations/extractions/nyt_clean_3.txt
 
 echo "RNN-verb"
+python benchmark.py --gold=../external_datasets/mesquita_2013/processed/nyt.oie   --out=/dev/null  --tabbed=../evaluations/extractions/nyt_noisy_3.txt
 
 echo "OpenIE4"
 python benchmark.py --gold=../external_datasets/mesquita_2013/processed/nyt.oie   --out=/dev/null  --tabbed=./systems_output/openie4_nyt.txt
@@ -65,8 +67,10 @@ python benchmark.py --gold=../external_datasets/mesquita_2013/processed/nyt.oie 
 echo "---- PENN ----"
 
 echo "RNN-aw"
+python benchmark.py --gold=../external_datasets/mesquita_2013/processed/penn.oie   --out=/dev/null  --tabbed=../evaluations/extractions/penn_clean_3.txt
 
 echo "RNN-verb"
+python benchmark.py --gold=../external_datasets/mesquita_2013/processed/penn.oie   --out=/dev/null  --tabbed=../evaluations/extractions/penn_noisy_3.txt
 
 echo "OpenIE4"
 python benchmark.py --gold=../external_datasets/mesquita_2013/processed/penn.oie   --out=/dev/null  --tabbed=./systems_output/openie4_penn.txt
