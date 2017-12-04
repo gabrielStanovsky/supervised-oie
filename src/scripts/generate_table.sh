@@ -39,6 +39,8 @@ echo "OpenIE4"
 python benchmark.py --gold=../external_datasets/mesquita_2013/processed/web.oie   --out=/dev/null  --tabbed=./systems_output/openie4_web.txt
 
 echo "PropS"
+python benchmark.py --gold=../external_datasets/mesquita_2013/processed/web.oie   --out=/dev/null  --tabbed=../external_datasets/mesquita_2013/processed/web.props
+
 
 echo "ClausIE"
 python benchmark.py --gold=../external_datasets/mesquita_2013/processed/web.oie   --out=/dev/null  --tabbed=./systems_output/clausie_web.txt
@@ -57,6 +59,7 @@ echo "OpenIE4"
 python benchmark.py --gold=../external_datasets/mesquita_2013/processed/nyt.oie   --out=/dev/null  --tabbed=./systems_output/openie4_nyt.txt
 
 echo "PropS"
+python benchmark.py --gold=../external_datasets/mesquita_2013/processed/nyt.oie   --out=/dev/null  --tabbed=../external_datasets/mesquita_2013/processed/nyt.props
 
 echo "ClausIE"
 python benchmark.py --gold=../external_datasets/mesquita_2013/processed/nyt.oie   --out=/dev/null  --tabbed=./systems_output/clausie_nyt.txt
@@ -76,6 +79,7 @@ echo "OpenIE4"
 python benchmark.py --gold=../external_datasets/mesquita_2013/processed/penn.oie   --out=/dev/null  --tabbed=./systems_output/openie4_penn.txt
 
 echo "PropS"
+python benchmark.py --gold=../external_datasets/mesquita_2013/processed/penn.oie   --out=/dev/null  --tabbed=../external_datasets/mesquita_2013/processed/penn.props
 
 echo "ClausIE"
 python benchmark.py --gold=../external_datasets/mesquita_2013/processed/penn.oie   --out=/dev/null  --tabbed=./systems_output/clausie_penn.txt
@@ -83,3 +87,4 @@ python benchmark.py --gold=../external_datasets/mesquita_2013/processed/penn.oie
 # Done
 echo "DONE!"
 popd
+
