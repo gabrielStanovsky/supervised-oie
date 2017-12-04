@@ -21,6 +21,7 @@ import numpy as np
 from sklearn.metrics import precision_recall_curve
 import re
 import logging
+import pdb
 logging.basicConfig(level = logging.INFO)
 
 from oie_readers.stanfordReader import StanfordReader
@@ -33,6 +34,7 @@ from oie_readers.tabReader import TabReader
 
 from oie_readers.goldReader import GoldReader
 from matcher import Matcher
+from operator import itemgetter
 
 class Benchmark:
     ''' Compare the gold OIE dataset against a predicted equivalent '''
@@ -99,9 +101,9 @@ class Benchmark:
         # recall on y_true, y  (r')_scores computes |covered by extractor| / |True in what's covered by extractor|
         # to get to true recall we do:
         # r' * (|True in what's covered by extractor| / |True in gold|) = |true in what's covered| / |true in gold|
-        p, r = Benchmark.prCurve(np.array(y_true), np.array(y_scores),
-                       recallMultiplier = ((correctTotal - unmatchedCount)/float(correctTotal)))
-
+        (p, r), optimal = Benchmark.prCurve(np.array(y_true), np.array(y_scores),
+                                            recallMultiplier = ((correctTotal - unmatchedCount)/float(correctTotal)))
+        logging.info("Optimal (precision, recall, F1, threshold): {}".format(optimal))
         # write PR to file
         with open(output_fn, 'w') as fout:
             fout.write('{0}\t{1}\n'.format("Precision", "Recall"))
@@ -110,10 +112,18 @@ class Benchmark:
 
     @staticmethod
     def prCurve(y_true, y_scores, recallMultiplier):
-        # Recall multiplier - accounts for the percentage examples unreached by 
-        precision, recall, _ = precision_recall_curve(y_true, y_scores)
-        recall = recall * recallMultiplier
-        return precision, recall
+        # Recall multiplier - accounts for the percentage examples unreached
+        # Return (precision [list], recall[list]), (Optimal F1, Optimal threshold)
+        precision_ls, recall_ls, thresholds = precision_recall_curve(y_true, y_scores)
+        recall_ls = recall_ls * recallMultiplier
+        optimal = max([(precision, recall, f1(precision, recall), threshold)
+                       for ((precision, recall), threshold)
+                       in zip(zip(precision_ls[:-1], recall_ls[:-1]),
+                              thresholds)],
+                      key = itemgetter(2))  # Sort by f1 score
+                      
+        return ((precision_ls, recall_ls),
+                optimal)
 
     # Helper functions:
     @staticmethod
@@ -151,6 +161,19 @@ class Benchmark:
                    (']', '-RSB-'),
                    ('{', '-LCB-'),
                    ('}', '-RCB-'),]
+
+
+def f_beta(precision, recall, beta = 1):
+    """
+    Get F_beta score from precision and recall.
+    """
+    beta = float(beta) # Make sure that results are in float
+    return (1 + pow(beta, 2)) * (precision * recall) / ((pow(beta, 2) * precision) + recall)
+
+
+f1 = lambda precision, recall: f_beta(precision, recall, beta = 1)
+
+
 
 
 if __name__ == '__main__':

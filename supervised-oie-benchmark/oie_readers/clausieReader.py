@@ -1,5 +1,19 @@
+""" Usage:
+    <file-name> --in=INPUT_FILE --out=OUTPUT_FILE [--debug]
+
+Convert to tabbed format
+"""
+# External imports
+import logging
+from pprint import pprint
+from pprint import pformat
+from docopt import docopt
+
+# Local imports
 from oie_readers.oieReader import OieReader
 from oie_readers.extraction import Extraction
+
+#=-----
 
 class ClausieReader(OieReader):
     
@@ -17,7 +31,10 @@ class ClausieReader(OieReader):
                     arg1, rel, arg2 = [s[1:-1] for s in data[1:4]]
                     confidence = data[4]
                     
-                    curExtraction = Extraction(pred = rel, sent = text, confidence = float(confidence))
+                    curExtraction = Extraction(pred = rel,
+                                               head_pred_index = -1,
+                                               sent = text,
+                                               confidence = float(confidence))
                     curExtraction.addArg(arg1)
                     curExtraction.addArg(arg2)
                     d[text] = d.get(text, []) + [curExtraction]
@@ -38,3 +55,23 @@ class ClausieReader(OieReader):
         for sent, extractions in self.oie.items():
             for extraction in extractions:
                 extraction.confidence = ( (extraction.confidence - minConfidence) + EPSILON) / denom
+
+
+
+if __name__ == "__main__":
+    # Parse command line arguments
+    args = docopt(__doc__)
+    inp_fn = args["--in"]
+    out_fn = args["--out"]
+    debug = args["--debug"]
+    if debug:
+        logging.basicConfig(level = logging.DEBUG)
+    else:
+        logging.basicConfig(level = logging.INFO)
+
+
+    oie = ClausieReader()
+    oie.read(inp_fn)
+    oie.output_tabbed(out_fn)
+
+    logging.info("DONE")
