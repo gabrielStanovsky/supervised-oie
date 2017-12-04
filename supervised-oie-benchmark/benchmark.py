@@ -19,6 +19,7 @@ import docopt
 import string
 import numpy as np
 from sklearn.metrics import precision_recall_curve
+from sklearn.metrics import auc
 import re
 import logging
 import pdb
@@ -103,7 +104,8 @@ class Benchmark:
         # r' * (|True in what's covered by extractor| / |True in gold|) = |true in what's covered| / |true in gold|
         (p, r), optimal = Benchmark.prCurve(np.array(y_true), np.array(y_scores),
                                             recallMultiplier = ((correctTotal - unmatchedCount)/float(correctTotal)))
-        logging.info("Optimal (precision, recall, F1, threshold): {}".format(optimal))
+        logging.info("AUC: {}\n Optimal (precision, recall, F1, threshold): {}".format(auc(r, p),
+                                                                                       optimal))
         # write PR to file
         with open(output_fn, 'w') as fout:
             fout.write('{0}\t{1}\n'.format("Precision", "Recall"))
@@ -116,12 +118,12 @@ class Benchmark:
         # Return (precision [list], recall[list]), (Optimal F1, Optimal threshold)
         precision_ls, recall_ls, thresholds = precision_recall_curve(y_true, y_scores)
         recall_ls = recall_ls * recallMultiplier
-        optimal = max([(precision, recall, f1(precision, recall), threshold)
+        optimal = max([(precision, recall, f_beta(precision, recall, beta = 1), threshold)
                        for ((precision, recall), threshold)
                        in zip(zip(precision_ls[:-1], recall_ls[:-1]),
                               thresholds)],
                       key = itemgetter(2))  # Sort by f1 score
-                      
+
         return ((precision_ls, recall_ls),
                 optimal)
 

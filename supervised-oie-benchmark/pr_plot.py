@@ -1,5 +1,5 @@
 """ Usage:
-   pr_plot --in=DIR_NAME --out=OUTPUT_DIR --outputtype=FILETYPE
+   pr_plot --in=DIR_NAME [--out=OUTPUT_DIR] [--outputtype=FILETYPE]
 
 Output PR curve and corresponding AUC curves to file.
 Filename will be pr.filetype, auc.filetype under the given folder.
@@ -19,6 +19,7 @@ import matplotlib.pyplot as plt
 import logging
 from operator import itemgetter
 from scipy.integrate import simps
+import pdb
 logging.basicConfig(level = logging.INFO)
 
 def trend_name(path):
@@ -91,15 +92,22 @@ def plot_auc(auc_ls, filename, output_folder):
 if __name__ == '__main__':
     args = docopt(__doc__)
     input_folder = args['--in']
-    output_folder = args['--out']
-    filetype = args['--outputtype']
+    output_folder = args['--out'] \
+                    if args['--out'] \
+                       else input_folder
+    filetype = args['--outputtype'] \
+               if args['--outputtype'] \
+                  else "png"
 
     # plot graphs for all *.dat files in input path
     fig = plt.figure()
     aucs = []
     pr_ls = []
 
-    files = glob(os.path.join(input_folder, '*.dat'))
+    files = [fn
+             for fn in glob(os.path.join(input_folder, '*.dat'))
+             if "auc" not in fn] # This allows input and output to be the same
+
     for _file in files:
         p, r = get_pr(_file)
         name = trend_name(_file)
