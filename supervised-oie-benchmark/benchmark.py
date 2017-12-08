@@ -116,6 +116,11 @@ class Benchmark:
     def prCurve(y_true, y_scores, recallMultiplier):
         # Recall multiplier - accounts for the percentage examples unreached
         # Return (precision [list], recall[list]), (Optimal F1, Optimal threshold)
+        y_scores = [score \
+                    if not (np.isnan(score) or (not np.isfinite(score))) \
+                    else 0
+                    for score in y_scores]
+        
         precision_ls, recall_ls, thresholds = precision_recall_curve(y_true, y_scores)
         recall_ls = recall_ls * recallMultiplier
         optimal = max([(precision, recall, f_beta(precision, recall, beta = 1), threshold)
