@@ -12,4 +12,11 @@
 ## TODO:
 * Make sure to delete [oie_benchmark](oie_benchmark)
 
+## Time stats (sec / sentence)
+Averaged over a run on 3200 sentences, including startup time for all systems.
 
+* RnnOIE - 0.074
+* OpenIE 4.0 - 0.065
+* ClausIE - 0.246
+* PropS - 0.218
+* Stanford Parser - 0.2
