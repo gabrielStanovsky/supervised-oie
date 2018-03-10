@@ -12,7 +12,7 @@ class Extraction:
     """
     Stores sentence, single predicate and corresponding arguments.
     """
-    def __init__(self, pred, head_pred_index, sent, confidence, question_dist = ''):
+    def __init__(self, pred, head_pred_index, sent, confidence, question_dist = '', index = -1):
         self.pred = pred
         self.head_pred_index = head_pred_index
         self.sent = sent
@@ -23,6 +23,7 @@ class Extraction:
         self.indsForQuestions = defaultdict(lambda: set())
         self.is_mwp = False
         self.question_dist = question_dist
+        self.index = index
 
     def distArgFromPred(self, arg):
         assert(len(self.pred) == 2)

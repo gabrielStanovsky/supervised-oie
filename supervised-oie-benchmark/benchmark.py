@@ -114,9 +114,9 @@ class Benchmark:
             logging.info("Writing {} error indices to {}".format(len(errors),
                                                                  error_file))
             with open(error_file, 'w') as fout:
-                fout.write(','.join([str(error)
+                fout.write('\n'.join([str(error)
                                      for error
-                                     in errors]))
+                                      in errors]) + '\n')
 
         # write PR to file
         with open(output_fn, 'w') as fout:
