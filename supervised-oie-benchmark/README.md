@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [oie-benchmark](#oie-benchmark)
+  - [Citing](#citing)
+  - [Requirements](#requirements)
+  - [Converting QA-SRL to Open IE](#converting-qa-srl-to-open-ie)
+  - [Evaluating an Open IE Extractor](#evaluating-an-open-ie-extractor)
+  - [Evaluating Existing Systems](#evaluating-existing-systems)
+  - [Plotting](#plotting)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # oie-benchmark
 
 Code for converting QA-SRL annotations to Open-IE extractions and comparing Open-IE parsers against a converted benchmark corpus.
