@@ -63,7 +63,7 @@ python ./trained_oie_extractor.py \
 More scripts
 ------------
 
-See [src/scripts] for more handy scripts. Additional documentation coming soon!
+See [src/scripts](src/scripts) for more handy scripts. Additional documentation coming soon!
 
 ## TODO:
 * Make sure to delete [oie_benchmark](oie_benchmark)
