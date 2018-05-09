@@ -1,6 +1,6 @@
 '''
 Usage:
-   benchmark --gold=GOLD_OIE --out=OUTPUT_FILE (--stanford=STANFORD_OIE | --ollie=OLLIE_OIE |--reverb=REVERB_OIE | --clausie=CLAUSIE_OIE | --openiefour=OPENIEFOUR_OIE | --props=PROPS_OIE | --tabbed=TABBED_OIE) [--exactMatch | --predMatch | --argMatch]
+   benchmark --gold=GOLD_OIE --out=OUTPUT_FILE (--stanford=STANFORD_OIE | --ollie=OLLIE_OIE |--reverb=REVERB_OIE | --clausie=CLAUSIE_OIE | --openiefour=OPENIEFOUR_OIE | --props=PROPS_OIE | --tabbed=TABBED_OIE) [--exactMatch | --predMatch | --argMatch] [--error-file=ERROR_FILE]
 
 Options:
   --gold=GOLD_OIE              The gold reference Open IE file (by default, it should be under ./oie_corpus/all.oie).
@@ -45,12 +45,13 @@ class Benchmark:
         gr.read(gold_fn)
         self.gold = gr.oie
 
-    def compare(self, predicted, matchingFunc, output_fn):
+    def compare(self, predicted, matchingFunc, output_fn, error_file = None):
         ''' Compare gold against predicted using a specified matching function.
             Outputs PR curve to output_fn '''
 
         y_true = []
         y_scores = []
+        errors = []
 
         correctTotal = 0
         unmatchedCount = 0
@@ -89,6 +90,7 @@ class Benchmark:
                         break
 
                 if not found:
+                    errors.append(goldEx.index)
                     unmatchedCount += 1
 
             for predictedEx in [x for x in predictedExtractions if (output_fn not in x.matched)]:
@@ -106,6 +108,16 @@ class Benchmark:
                                             recallMultiplier = ((correctTotal - unmatchedCount)/float(correctTotal)))
         logging.info("AUC: {}\n Optimal (precision, recall, F1, threshold): {}".format(auc(r, p),
                                                                                        optimal))
+
+        # Write error log to file
+        if error_file:
+            logging.info("Writing {} error indices to {}".format(len(errors),
+                                                                 error_file))
+            with open(error_file, 'w') as fout:
+                fout.write('\n'.join([str(error)
+                                     for error
+                                      in errors]) + '\n')
+
         # write PR to file
         with open(output_fn, 'w') as fout:
             fout.write('{0}\t{1}\n'.format("Precision", "Recall"))
@@ -232,5 +244,6 @@ if __name__ == '__main__':
 
     logging.info("Writing PR curve of {} to {}".format(predicted.name, out_filename))
     b.compare(predicted = predicted.oie,
-               matchingFunc = matchingFunc,
-               output_fn = out_filename)
+              matchingFunc = matchingFunc,
+              output_fn = out_filename,
+              error_file = args["--error-file"])

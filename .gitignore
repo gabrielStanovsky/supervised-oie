@@ -100,3 +100,5 @@ oie_corpus/
 *.tar.gz
 *.keep
 supervised-oie-benchmark/question_distributions/
+external_datasets/mesquita_2013/experiments/
+*.zip

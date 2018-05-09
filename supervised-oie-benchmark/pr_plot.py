@@ -36,18 +36,34 @@ def get_pr(path):
         [p, r] = zip(*[map(lambda x: float(x), line.strip().split('\t')) for line in fin])
         return p, r
 
+NICE_COLORS = [u'#ff7f0e', u'#1f77b4', u'#2ca02c', u'#d62728']
+NICE_MARKERS = ['o', '^', 's', "v"]
+NICE_LINE_STYLES = [':', '-.', '--', '-']
+
 def plot_pr_curve(pr_ls, filename):
     """
     Plot PR curves to file.
     pr_ls - List of curve names and list of AUC values and corresponding colors
     filename - In which to save the figure.
     """
-    fig = plt.figure()
+    fig = plt.figure(frameon=False)
     ax = fig.add_axes([0.1, 0.1, 0.6, 0.75])
     colors = []
 
-    for (name, (p, r)) in pr_ls:
-        lines = ax.plot(r, p, label = name)
+    for line_index, (name, (p, r)) in enumerate(pr_ls):
+        logging.debug(name)
+        lines = ax.plot(r,
+                        p,
+                        label = name,
+                        color = NICE_COLORS[line_index],
+                        marker= NICE_MARKERS[line_index],
+                        markerfacecolor = 'none',
+                        markevery = len(p) - 1,
+                        markersize = 6,
+                        linewidth = 1)
+
+        ax.spines["top"].set_visible(False)
+        ax.spines["right"].set_visible(False)
         colors.append(lines[0].get_color())
 
     # Set figure properties and save
@@ -57,9 +73,13 @@ def plot_pr_curve(pr_ls, filename):
 
     plt.xlabel('Recall')
     plt.ylabel('Precision')
-    ax.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+    leg = ax.legend(loc="lower right",
+                    borderaxespad=0.2)
 
-    plt.savefig(filename)
+    leg.get_frame().set_linewidth(0.0)
+
+    plt.savefig(filename,
+                bbox_inches='tight')
     return colors
 
 
@@ -104,9 +124,10 @@ if __name__ == '__main__':
     aucs = []
     pr_ls = []
 
-    files = [fn
-             for fn in glob(os.path.join(input_folder, '*.dat'))
-             if "auc" not in fn] # This allows input and output to be the same
+    files = [os.path.join(input_folder,
+                          fn.strip())
+             for fn
+             in open(os.path.join(input_folder, 'systems.txt'))]
 
     for _file in files:
         p, r = get_pr(_file)
@@ -117,7 +138,9 @@ if __name__ == '__main__':
     colors = plot_pr_curve(pr_ls,
                            os.path.join(output_folder, "pr.{}".format(filetype)))
 
-    plot_auc([(name, auc, color) for ((name, auc), color) in zip(aucs, colors)],
+    plot_auc([(name, auc, color)
+              for ((name, auc), color)
+              in zip(aucs, colors)],
              os.path.join(output_folder, "auc.{}".format(filetype)),
              output_folder
     )
