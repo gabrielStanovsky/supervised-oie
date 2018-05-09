@@ -5,7 +5,7 @@
 - [supervised-oie](#supervised-oie)
   - [Citing :bookmark:](#citing-bookmark)
   - [Quickstart :hatching_chick:](#quickstart-hatching_chick)
-  - [More scripts](#more-scripts)
+  - [More scripts :bicyclist:](#more-scripts-bicyclist)
   - [TODO:](#todo)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -60,7 +60,7 @@ python ./trained_oie_extractor.py \
     --conll
 ```
 
-More scripts
+More scripts :bicyclist:
 ------------
 
 See [src/scripts](src/scripts) for more handy scripts. Additional documentation coming soon!
