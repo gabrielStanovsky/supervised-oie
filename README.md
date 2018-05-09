@@ -32,18 +32,18 @@ If you use this software, please cite:
 Quickstart
 -----------
 
-1. Install requirements
+1. Install requirements :bow:
 ```bash
 pip install requirements.txt
 ```
 
-2. Download embeddings
+2. Download embeddings :walking:
 ```bash
 cd ./pretrained_word_embeddings/
 ./download_external.sh
 ```
 
-3. Train model
+3. Train model :running:
 ```bash
 cd ./src
 python  ./rnn/confidence_model.py  --train=../data/train.conll  --dev=../data/dev.conll  --test=../data/test.conll --load_hyperparams=../hyerparams/confidence.json```
@@ -51,7 +51,7 @@ python  ./rnn/confidence_model.py  --train=../data/train.conll  --dev=../data/de
 ***NOTE:*** Models are saved by default to the models dir, unless a "--saveto"
 command line argument is passed. See [confidence_model.py](src/rnn/confidence_model.py) for more details. 
 
-4. Predict with a trained model
+4. Predict with a trained model :clap:
 ```bash
 python ./trained_oie_extractor.py \
     --model=path/to/model \
