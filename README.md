@@ -4,6 +4,8 @@
 
 - [supervised-oie](#supervised-oie)
   - [Citing](#citing)
+  - [Quickstart](#quickstart)
+  - [More scripts](#more-scripts)
   - [TODO:](#todo)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
