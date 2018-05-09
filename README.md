@@ -27,9 +27,31 @@ If you use this software, please cite:
 }
 ```
 
-## External Requirements
-* Recurrent shop
-* Seq2Seq
+# Quickstart
+
+1. Install requirements
+```bash
+pip install requirements.txt
+```
+
+2. Download OIE corpus
+```bash
+cd ./src
+./scripts/download_external.sh
+```
+
+3. Download Embeddings
+```bash
+cd ./pretrained_word_embeddings/
+./download_external.sh
+```
+
+2. Train model
+```
+cd ./src
+python ./rnn/model.py --train=../data/newswire/propbank.train.oie.conll  --test=../data/newswire/propbank.dev.oie.conll --glove=../pretrained_word_embeddings/glove.6B.50d.txt
+```
+
 
 ## Training
 
