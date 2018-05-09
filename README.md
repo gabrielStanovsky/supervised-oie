@@ -29,7 +29,7 @@ If you use this software, please cite:
 }
 ```
 
-Quickstart
+Quickstart :hatching_chick:
 -----------
 
 1. Install requirements :bow:
