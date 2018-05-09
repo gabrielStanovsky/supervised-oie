@@ -49,7 +49,7 @@ cd ./src
 python  ./rnn/confidence_model.py  --train=../data/train.conll  --dev=../data/dev.conll  --test=../data/test.conll --load_hyperparams=../hyerparams/confidence.json```
 ```
 ***NOTE:*** Models are saved by default to the models dir, unless a "--saveto"
-command line argument is passed. See ```rnn/confidence_model.py``` for more details. 
+command line argument is passed. See [confidence_model.py](src/rnn/confidence_model.py) for more details. 
 
 4. Predict with a trained model
 ```bash
