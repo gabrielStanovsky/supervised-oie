@@ -4,7 +4,7 @@
 
 - [supervised-oie](#supervised-oie)
   - [Citing](#citing)
-  - [Quickstart](#quickstart)
+  - [Quickstart :hatching_chick:](#quickstart-hatching_chick)
   - [More scripts](#more-scripts)
   - [TODO:](#todo)
 
