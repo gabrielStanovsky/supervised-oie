@@ -37,7 +37,7 @@ Quickstart
 pip install requirements.txt
 ```
 
-2. Download Embeddings
+2. Download embeddings
 ```bash
 cd ./pretrained_word_embeddings/
 ./download_external.sh
