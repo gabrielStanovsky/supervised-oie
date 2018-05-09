@@ -15,6 +15,7 @@ Code for training a supervised Neural Open IE model, as described in our [NAACL2
 y
 Citing :bookmark:
 ------
+
 If you use this software, please cite:
 ```
 @InProceedings{Stanovsky2018NAACL,
