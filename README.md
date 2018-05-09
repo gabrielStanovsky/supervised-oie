@@ -27,45 +27,42 @@ If you use this software, please cite:
 }
 ```
 
-# Quickstart
+Quickstart
+-----------
 
 1. Install requirements
 ```bash
 pip install requirements.txt
 ```
 
-2. Download OIE corpus
-```bash
-cd ./src
-./scripts/download_external.sh
-```
-
-3. Download Embeddings
+2. Download Embeddings
 ```bash
 cd ./pretrained_word_embeddings/
 ./download_external.sh
 ```
 
-2. Train model
-```
+3. Train model
+```bash
 cd ./src
-python ./rnn/model.py --train=../data/newswire/propbank.train.oie.conll  --test=../data/newswire/propbank.dev.oie.conll --glove=../pretrained_word_embeddings/glove.6B.50d.txt
+python  ./rnn/confidence_model.py  --train=../data/train.conll  --dev=../data/dev.conll  --test=../data/test.conll --load_hyperparams=../hyerparams/confidence.json```
+```
+***NOTE:*** Models are saved by default to the models dir, unless a "--saveto"
+command line argument is passed. See ```rnn/confidence_model.py``` for more details. 
+
+4. Predict with a trained model
+```bash
+python ./trained_oie_extractor.py \
+    --model=path/to/model \
+    --in=path/to/raw/sentences
+    --out=path/to/output/file
+    --conll
 ```
 
+More scripts
+------------
 
-## Training
-
-    python ./rnn/model.py --train=../data/newswire/propbank.train.oie.conll  --test=../data/newswire/propbank.dev.oie.conll --glove=../pretrained_word_embeddings/glove.6B.50d.txt
-    python ./rnn/seq2seq_model.py --train=../oie_corpus/train.oie  --dev=../oie_corpus/dev.oie  --test=../oie_corpus/test.oie  --hyperparams=../hyperparams/seq2seq.json --saveto=../models/seq2seq/
+See [src/scripts] for more handy scripts. Additional documentation coming soon!
 
 ## TODO:
 * Make sure to delete [oie_benchmark](oie_benchmark)
 
-## Time stats (sec / sentence)
-Averaged over a run on 3200 sentences, including startup time for all systems.
-
-* RnnOIE - 0.074
-* OpenIE 4.0 - 0.065
-* ClausIE - 0.246
-* PropS - 0.218
-* Stanford Parser - 0.2
