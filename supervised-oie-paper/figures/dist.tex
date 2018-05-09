@@ -1,0 +1,66 @@
+%% \begin{figure*}[!hb]
+
+%% \centering
+
+%% \begin{minipage}[b]{.47\textwidth}
+
+%% %\centering
+%% %\resizebox{1\columnwidth}{!}{
+%% %  \begin{scalebox}{0.9}{
+%% \begin{tikzpicture}
+%% \pie{58/\oielabel{O}, 15/\oielabel{A1-I}, 9/\oielabel{A0-I}, 5/\oielabel{A2-I}, 3/\oielabel{P-B}, 3/\oielabel{A0-B}, 3/\oielabel{A1-B}, 4/Other}
+%% \end{tikzpicture}
+%% %}
+%% %\end{scalebox}
+%% \caption{Label distribution}
+%% \label{fig:label_dist}
+
+
+%% \end{minipage}\qquad
+
+%% \begin{minipage}[b]{0.45\textwidth}
+
+%% %\centering
+%% %\resizebox{1\columnwidth}{!}{
+%% %  \begin{scalebox}{0.9}{
+%% \begin{tikzpicture}
+%% \pie{21/\oielabel{O-E}, 20/\oielabel{O-S}, 15/\oielabel{A1-I}, 9/\oielabel{A0-I}, 8/\oielabel{O-A0}, 5/\oielabel{A2-I}, 5/\oielabel{O-A1}, 3/\oielabel{P-B}, 3/\oielabel{A0-B}, 3/\oielabel{A1-B}, 3/\oielabel{O-P}, 5/Other}
+%% \end{tikzpicture}
+%% %}
+%% %\end{scalebox}
+%% \caption{Label distribution}
+%% \label{fig:label_dist}
+
+
+%% \end{minipage}
+
+%% \end{figure*}
+
+
+\begin{figure}[t!]
+\centering
+%\resizebox{1\columnwidth}{!}{
+  \begin{scalebox}{0.9}{
+\begin{tikzpicture}
+  \pie[color ={blue!60 , yellow!70 , orange!70 , cyan!70, red!50, green!70, brown!70, gray!70}]{58/\oielabel{O}, 15/\oielabel{A1-I}, 9/\oielabel{A0-I}, 5/\oielabel{A2-I}, 3/\oielabel{P-B}, 3/\oielabel{A0-B}, 3/\oielabel{A1-B}, 4/Other}
+\end{tikzpicture}
+}
+\end{scalebox}
+\caption{Original label distribution in the Open IE corpus.}
+\label{fig:orig_label_dist}
+\end{figure}
+
+
+\begin{figure}[t!]
+\centering
+%\resizebox{1\columnwidth}{!}{
+\begin{scalebox}{0.9}{
+\begin{tikzpicture}
+  \pie[color ={blue!60, purple!50, yellow!70 , orange!70 ,  brown!30, cyan!70, purple!35, red!50, green!70, brown!70,
+      yellow!35, gray!70}]{21/\oielabel{O-E}, 20/\oielabel{O-S}, 15/\oielabel{A1-I}, 9/\oielabel{A0-I}, 8/\oielabel{O-A0}, 5/\oielabel{A2-I}, 5/\oielabel{O-A1}, 3/\oielabel{P-B}, 3/\oielabel{A0-B}, 3/\oielabel{A1-B}, 3/\oielabel{O-P}, 5/Other}
+\end{tikzpicture}
+}
+\end{scalebox}
+\caption{Label distribution in the Open IE corpus after relabeling.}
+\label{fig:new_label_dist}
+\end{figure}

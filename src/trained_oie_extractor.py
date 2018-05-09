@@ -17,24 +17,11 @@ from rnn.model import load_pretrained_rnn
 from docopt import docopt
 import logging
 import nltk
+import re
 import numpy as np
 from collections import defaultdict
 
 logging.basicConfig(level = logging.DEBUG)
-
-
-## Different probability combination functions to experiment with
-def default_prob(probs):
-    return 1.0/(reduce(lambda x, y: x * y, probs) + 0.001)
-
-
-def max_prob(probs):
-    return max(probs)
-
-def min_prob(probs):
-    return 1.0 / min(probs)
-
-
 
 class Trained_oie:
     """
@@ -55,7 +42,7 @@ class Trained_oie:
         sent - string
         """
         return nltk.word_tokenize(sent) if self.tokenize\
-            else sent.split(" ")
+            else re.split(r' +', sent) # Allow arbitrary number of spaces
 
 
     def get_extractions(self, sent):
@@ -85,8 +72,7 @@ class Trained_oie:
                 ret.append(Extraction(sent,
                                       pred_word,
                                       cur_args,
-                                      probs,
-                                      calc_prob = default_prob,
+                                      probs
                                   ))
         return ret
 
@@ -113,7 +99,7 @@ class Trained_oie:
         sent - a tokenized sentence
         tokenize - boolean indicating whether the sentences should be tokenized first
         """
-#        logging.debug("Parsing: {}".format(sent))
+        logging.debug("Parsing: {}".format(sent))
         return self.get_extractions(self.split_words(sent))
 
     def parse_sents(self, sents):
@@ -130,12 +116,12 @@ class Extraction:
     Store and print an OIE extraction
     """
     def __init__(self, sent, pred, args, probs,
-                 calc_prob = default_prob):
+                 calc_prob = lambda probs: 1.0 / (reduce(lambda x, y: x * y, probs) + 0.001)):
         """
         sent - Tokenized sentence - list of strings
         pred - Predicate word
         args - List of arguments (each a string)
-        probs - list of float in [0,1] indicating the probablity
+        probs - list of float in [0,1] indicating the probability
                of each of the items in the extraction
         calc_prob - function which takes a list of probabilities for each of the
                     items and computes a single probability for the joint occurence of this extraction.
@@ -146,7 +132,7 @@ class Extraction:
         self.prob = self.calc_prob(self.probs)
         self.pred = pred
         self.args = args
-#        logging.debug(self)
+        logging.debug(self)
 
     def __str__(self):
         """
@@ -159,9 +145,6 @@ class Extraction:
                               self.pred,
                               '\t'.join([' '.join(arg)
                                          for arg in self.args])]))
-
-
-
 class Mock_model:
     """
     Load a conll file annotated with labels And probabilities
@@ -191,7 +174,7 @@ class Mock_model:
 
         # Iterate over lines and populate return dictionary
         for line_ind, line in enumerate(open(conll_file)):
-            if not (line_ind % pow(10,3)):
+            if not (line_ind % pow(10,5)):
                 logging.debug(line_ind)
             line = line.strip()
             if not line:
@@ -258,7 +241,6 @@ if __name__ == "__main__":
         model = Mock_model(input_fn)
         sents = model.sents
 
-    sents = list(set(sents))
     oie = Trained_oie(model,
                       tokenize = tokenize)
 

@@ -1,0 +1,961 @@
+finally google bought youtube	1.91507779046	bought	google
+Google actually bought YouTube .	1.68072354159	bought	Google	YouTube
+never even saw this coming , but apparently Adobe www.msacromedia.com is about to buy Macromedia .	3.23608159931	saw	this coming
+never even saw this coming , but apparently Adobe www.msacromedia.com is about to buy Macromedia .	1.63755905447	coming	this
+never even saw this coming , but apparently Adobe www.msacromedia.com is about to buy Macromedia .	5.54367606321	is	never even saw this coming	Adobe www.msacromedia.com	to buy Macromedia
+never even saw this coming , but apparently Adobe www.msacromedia.com is about to buy Macromedia .	1.35100447182	buy	Macromedia
+The story was first seen at Techcrunch , the picked up by the Wall Street Journal and has since been the subject of much talk , posts and thoughts over the past few days and finally it has been confirmed that Google have purchased Youtube for $ 1.65 billion in an official statement .	2.14730052115	was	Google
+The story was first seen at Techcrunch , the picked up by the Wall Street Journal and has since been the subject of much talk , posts and thoughts over the past few days and finally it has been confirmed that Google have purchased Youtube for $ 1.65 billion in an official statement .	7.13577628463	seen	story	Techcrunch
+The story was first seen at Techcrunch , the picked up by the Wall Street Journal and has since been the subject of much talk , posts and thoughts over the past few days and finally it has been confirmed that Google have purchased Youtube for $ 1.65 billion in an official statement .	1.91518768641	has	The story	Google
+The story was first seen at Techcrunch , the picked up by the Wall Street Journal and has since been the subject of much talk , posts and thoughts over the past few days and finally it has been confirmed that Google have purchased Youtube for $ 1.65 billion in an official statement .	1.91518768641	has	The story	Google
+The story was first seen at Techcrunch , the picked up by the Wall Street Journal and has since been the subject of much talk , posts and thoughts over the past few days and finally it has been confirmed that Google have purchased Youtube for $ 1.65 billion in an official statement .	11.6493658058	confirmed	the subject of much talk , posts and
+The story was first seen at Techcrunch , the picked up by the Wall Street Journal and has since been the subject of much talk , posts and thoughts over the past few days and finally it has been confirmed that Google have purchased Youtube for $ 1.65 billion in an official statement .	1.02276155848	have	Google
+The story was first seen at Techcrunch , the picked up by the Wall Street Journal and has since been the subject of much talk , posts and thoughts over the past few days and finally it has been confirmed that Google have purchased Youtube for $ 1.65 billion in an official statement .	1.82239620483	purchased	Google	Youtube
+Google confirms YouTube aquisition - BBC News	1.14538615549	confirms	Google
+Novartis acquired Eon Labs and Hexal to create the world 's leading manufacturer of generic drugs .	6.45899690089	acquired	Novartis	generic drugs
+Novartis acquired Eon Labs and Hexal to create the world 's leading manufacturer of generic drugs .	8.34733175728	create	the world 's leading manufacturer of generic drugs
+Novartis buys generic drugmakers Eon , Hexal	1.0911878303	buys	Novartis	generic drugmakers Eon
+Google announced Tuesday that it bought YouTube for $ 1.65 billion .	2.19503920494	announced	Google	Tuesday
+Google announced Tuesday that it bought YouTube for $ 1.65 billion .	2.09515778601	bought	YouTube	$ 1.65 billion
+Adobe has announced the acquisition of Macromedia .	3.01553453661	has	Adobe	the
+Adobe has announced the acquisition of Macromedia .	1.46276160623	announced	Adobe	the acquisition of Macromedia
+July 11 , 2005 __ __ __ ( Nasdaq : ADBE ) and __ __ __ ( Nasdaq : MACR ) today announced that they have received a Request for Additional Information and Documentary Materials ( a second request ) from the Department of Justice ( DOJ ) in connection with Adobe 's pending acquisition of Macromedia .	966.536425538	announced	today	have received a Request for Additional Information	Documentary Materials	a second request
+July 11 , 2005 __ __ __ ( Nasdaq : ADBE ) and __ __ __ ( Nasdaq : MACR ) today announced that they have received a Request for Additional Information and Documentary Materials ( a second request ) from the Department of Justice ( DOJ ) in connection with Adobe 's pending acquisition of Macromedia .	65.9252739208	have	Request	Additional Information	Documentary Materials
+July 11 , 2005 __ __ __ ( Nasdaq : ADBE ) and __ __ __ ( Nasdaq : MACR ) today announced that they have received a Request for Additional Information and Documentary Materials ( a second request ) from the Department of Justice ( DOJ ) in connection with Adobe 's pending acquisition of Macromedia .	130.629797006	received	a Request for	Information and Documentary	second request
+July 11 , 2005 __ __ __ ( Nasdaq : ADBE ) and __ __ __ ( Nasdaq : MACR ) today announced that they have received a Request for Additional Information and Documentary Materials ( a second request ) from the Department of Justice ( DOJ ) in connection with Adobe 's pending acquisition of Macromedia .	3.09290957872	pending	acquisition of Macromedia
+Another example of a statutory merger is software maker Adobe Systems acquisition of Macromedia ( another software company ) .	1.59254350664	is	statutory merger	software maker Adobe Systems acquisition of Macromedia ( another software company )
+BASEL , Switzerland ( AP ) Swiss giant Novartis says it will buy generic drugmakers Eon Labs of the United States and Hexal of Germany for more than $ 8 billion in cash .	5.74360645186	says	Novartis	buy
+BASEL , Switzerland ( AP ) Swiss giant Novartis says it will buy generic drugmakers Eon Labs of the United States and Hexal of Germany for more than $ 8 billion in cash .	3.47303868946	buy	giant	generic drugmakers
+This week in the news we talk about Google actually does buy YouTube !	1.56268068495	talk	Google
+This week in the news we talk about Google actually does buy YouTube !	10.4358778077	does	Google	buy YouTube
+This week in the news we talk about Google actually does buy YouTube !	1.83906894973	buy	Google	YouTube
+The __ founders talk about Google acquiring Youtube	3.08272834911	talk	The __ founders
+The __ founders talk about Google acquiring Youtube	1.2593744687	acquiring	Google
+Why did Google buy YouTube ?	5.08350286385	did	Google buy YouTube
+Why did Google buy YouTube ?	1.03457872472	buy	Google
+Why Did Adobe Buy Macromedia ?	3.70679031081	Did	Why	Adobe Buy Macromedia
+And now that Google 's got YouTube , they re gonna work that same magic on your independent short , hitting the guy in the head with a shovel [ plays video of just that ] .	1.92485810824	got	Google	YouTube
+And now that Google 's got YouTube , they re gonna work that same magic on your independent short , hitting the guy in the head with a shovel [ plays video of just that ] .	5.14657400148	re	Google	work
+And now that Google 's got YouTube , they re gonna work that same magic on your independent short , hitting the guy in the head with a shovel [ plays video of just that ] .	1.67406035719	hitting	the guy
+And now that Google 's got YouTube , they re gonna work that same magic on your independent short , hitting the guy in the head with a shovel [ plays video of just that ] .	1.70607122506	plays	video
+Novartis completes acquisition of 98 % of Eon Labs , substantially strengthening the leading position of its Sandoz generics unit ( Basel , July 21 , 2005 )	2.15664116079	completes	acquisition
+Novartis completes acquisition of 98 % of Eon Labs , substantially strengthening the leading position of its Sandoz generics unit ( Basel , July 21 , 2005 )	1.30802495598	strengthening	the leading position of its Sandoz generics unit	2005
+Novartis completes acquisition of 98 % of Eon Labs , substantially strengthening the leading position of its Sandoz generics unit ( Basel , July 21 , 2005 )	2.28447517185	leading	position	its Sandoz generics unit
+"But who knows , with Google 's "" owning "" of YouTube now ...they are now in the "" media "" department with that deal...so who knows if they will move on to music stuff next : P"	79.9001131525	knows	"But	deal...so	if	move	music stuff
+"But who knows , with Google 's "" owning "" of YouTube now ...they are now in the "" media "" department with that deal...so who knows if they will move on to music stuff next : P"	6.27733021925	owning	Google	""	YouTube
+"But who knows , with Google 's "" owning "" of YouTube now ...they are now in the "" media "" department with that deal...so who knows if they will move on to music stuff next : P"	79.9001131525	knows	"But	deal...so	if	move	music stuff
+"But who knows , with Google 's "" owning "" of YouTube now ...they are now in the "" media "" department with that deal...so who knows if they will move on to music stuff next : P"	5.15004386366	move	to music stuff
+Google snaps up YouTube for $ 1.65B	3.86746236227	snaps	Google	up YouTube for
+In October 2006 , Google buys Youtube for $ 1.65 billion .	4.80432462562	buys	In October 2006	Google	Youtube	$ 1.65 billion
+On January 31 , 2006 , Viacom completed its acquisition of DreamWorks LLC ( __ ) , a producer of live - action motion pictures , television programming and home entertainment products .	57.7394223894	completed	On January 31 , 2006	Viacom	its acquisition of DreamWorks LLC ( __ )
+Oct. 10 : Google buys the online video sharing site YouTube for $ 1.65 billion in a deal expected to dramatically improve __ 's video traffic .	17.346246851	buys	10	Google	the online video sharing site YouTube	billion	deal
+Oct. 10 : Google buys the online video sharing site YouTube for $ 1.65 billion in a deal expected to dramatically improve __ 's video traffic .	1.78576530758	expected	deal
+Oct. 10 : Google buys the online video sharing site YouTube for $ 1.65 billion in a deal expected to dramatically improve __ 's video traffic .	1.61054918094	improve	__ 's video traffic
+Oct. 10 : Google buys the online video sharing site YouTube for $ 1.65 billion in a deal expected to dramatically improve __ 's video traffic .	12.4391246724	's	deal	improve __	video traffic
+Google has acquired Youtube , an online video sharing service , for US $ 1.65B in __ stock .	1.02670247805	has	Google
+Google has acquired Youtube , an online video sharing service , for US $ 1.65B in __ stock .	1.19287472072	acquired	Google
+Hmm , interesting question , what 's in store for GMT now that Google announced buying YouTube .	3.67927062139	's	store
+Hmm , interesting question , what 's in store for GMT now that Google announced buying YouTube .	2.12397824883	announced	Google	YouTube
+Hmm , interesting question , what 's in store for GMT now that Google announced buying YouTube .	1.32254099489	buying	Google	YouTube
+In a $ 1.65 billion stock - for - stock transaction , search engine Google , will purchase YouTube , the consumer video media company .	8.51696182327	purchase	stock - for - stock
+Novartis buys Hexal , Eon Labs - Sify.com	2.43984355281	buys	Novartis	Hexal
+In a move that has surprised a few people , Google announced today that it would acquire YouTube , the fast growing online video sharing site founded by Chad Hurley and Steve Chen , ending months of speculation that You Tube was bound to fail and would be soon a just a vague memory .	5.27668319475	has	a move
+In a move that has surprised a few people , Google announced today that it would acquire YouTube , the fast growing online video sharing site founded by Chad Hurley and Steve Chen , ending months of speculation that You Tube was bound to fail and would be soon a just a vague memory .	453.684527508	surprised	move	few people	it would	fast growing online video sharing site founded	soon a just
+In a move that has surprised a few people , Google announced today that it would acquire YouTube , the fast growing online video sharing site founded by Chad Hurley and Steve Chen , ending months of speculation that You Tube was bound to fail and would be soon a just a vague memory .	1.57153970839	announced	Google	today
+In a move that has surprised a few people , Google announced today that it would acquire YouTube , the fast growing online video sharing site founded by Chad Hurley and Steve Chen , ending months of speculation that You Tube was bound to fail and would be soon a just a vague memory .	30.8489356559	growing	fast	online video sharing site	Tube
+In a move that has surprised a few people , Google announced today that it would acquire YouTube , the fast growing online video sharing site founded by Chad Hurley and Steve Chen , ending months of speculation that You Tube was bound to fail and would be soon a just a vague memory .	25.6966036991	founded	growing online video sharing site	Chad Hurley	Steve Chen
+In a move that has surprised a few people , Google announced today that it would acquire YouTube , the fast growing online video sharing site founded by Chad Hurley and Steve Chen , ending months of speculation that You Tube was bound to fail and would be soon a just a vague memory .	4.39722772668	ending	months	speculation
+In a move that has surprised a few people , Google announced today that it would acquire YouTube , the fast growing online video sharing site founded by Chad Hurley and Steve Chen , ending months of speculation that You Tube was bound to fail and would be soon a just a vague memory .	1.63411776433	was	Tube
+In a move that has surprised a few people , Google announced today that it would acquire YouTube , the fast growing online video sharing site founded by Chad Hurley and Steve Chen , ending months of speculation that You Tube was bound to fail and would be soon a just a vague memory .	5.97176615559	bound	Tube	fail
+In a move that has surprised a few people , Google announced today that it would acquire YouTube , the fast growing online video sharing site founded by Chad Hurley and Steve Chen , ending months of speculation that You Tube was bound to fail and would be soon a just a vague memory .	1.72167415595	fail	vague
+In a move that has surprised a few people , Google announced today that it would acquire YouTube , the fast growing online video sharing site founded by Chad Hurley and Steve Chen , ending months of speculation that You Tube was bound to fail and would be soon a just a vague memory .	186.637846359	be	soon a just a vague memory
+On April 18 , 2005 , Adobe announced a definitive agreement to acquire Macromedia in an all - stock transaction .	200.50349935	announced	Adobe	a definitive agreement to acquire Macromedia in an all - stock transaction
+On April 18 , 2005 , Adobe announced a definitive agreement to acquire Macromedia in an all - stock transaction .	111.401125039	acquire	Macromedia in an all - stock transaction
+August 24 , 2005 __ __ __ ( Nasdaq : ADBE ) and __ __ __ ( Nasdaq : MACR ) announced that the stockholders of each company have voted in favor of Adobe 's proposed acquisition of Macromedia at their respective special stockholder meetings held today .	3.67433339528	announced	that the stockholders of each company have voted in favor of Adobe 's proposed acquisition of Macromedia at
+August 24 , 2005 __ __ __ ( Nasdaq : ADBE ) and __ __ __ ( Nasdaq : MACR ) announced that the stockholders of each company have voted in favor of Adobe 's proposed acquisition of Macromedia at their respective special stockholder meetings held today .	632.046810023	have	stockholders	each company	favor of Adobe 's proposed acquisition of Macromedia at	respective	meetings
+August 24 , 2005 __ __ __ ( Nasdaq : ADBE ) and __ __ __ ( Nasdaq : MACR ) announced that the stockholders of each company have voted in favor of Adobe 's proposed acquisition of Macromedia at their respective special stockholder meetings held today .	28.7402309961	voted	the stockholders of each company	favor of Adobe 's proposed acquisition of Macromedia at their respective special stockholder meetings held today
+August 24 , 2005 __ __ __ ( Nasdaq : ADBE ) and __ __ __ ( Nasdaq : MACR ) announced that the stockholders of each company have voted in favor of Adobe 's proposed acquisition of Macromedia at their respective special stockholder meetings held today .	20.1545699498	proposed	company	acquisition of Macromedia	respective special stockholder
+August 24 , 2005 __ __ __ ( Nasdaq : ADBE ) and __ __ __ ( Nasdaq : MACR ) announced that the stockholders of each company have voted in favor of Adobe 's proposed acquisition of Macromedia at their respective special stockholder meetings held today .	6.88801155989	held	August	their respective special stockholder meetings	today
+Adobe Systems to acquire Macromedia	1.81956137653	acquire	to
+Google Closing in on Deal to Buy YouTube	4.51236266425	Closing	Google
+__ __ __ ( Nasdaq : ADBE ) and __ __ __ ( Nasdaq : MACR ) announced that the stockholders of each company have voted in favor of Adobe 's proposed acquisition of Macromedia at their respective special stockholder meetings held today .	16.947326215	announced	__ ( Nasdaq	MACR	that the
+__ __ __ ( Nasdaq : ADBE ) and __ __ __ ( Nasdaq : MACR ) announced that the stockholders of each company have voted in favor of Adobe 's proposed acquisition of Macromedia at their respective special stockholder meetings held today .	282.536712708	have	stockholders of each company	voted in favor of Adobe	proposed acquisition	Macromedia	meetings
+__ __ __ ( Nasdaq : ADBE ) and __ __ __ ( Nasdaq : MACR ) announced that the stockholders of each company have voted in favor of Adobe 's proposed acquisition of Macromedia at their respective special stockholder meetings held today .	3.95486247204	voted	stockholders of each company	favor of Adobe 's proposed acquisition of Macromedia at their respective special stockholder
+__ __ __ ( Nasdaq : ADBE ) and __ __ __ ( Nasdaq : MACR ) announced that the stockholders of each company have voted in favor of Adobe 's proposed acquisition of Macromedia at their respective special stockholder meetings held today .	1.00885777123	held	meetings
+In case you ' re interested in that sort of thing , the WSJ has a summary of analyst comments on the Google deal for YouTube .	4.24129511634	has	the WSJ	summary
+I got a media call about google buying YouTube today .	4.17706752924	got	media call
+I got a media call about google buying YouTube today .	1.39923937348	buying	google
+Adobe bought Macromedia for the Flash Platform and they are going to invest to make it great .	1.30390854421	bought	Adobe	Macromedia
+Adobe bought Macromedia for the Flash Platform and they are going to invest to make it great .	32.6089656975	going	Adobe	invest	make	great
+Adobe bought Macromedia for the Flash Platform and they are going to invest to make it great .	2.41929825835	invest	great
+Adobe bought Macromedia for the Flash Platform and they are going to invest to make it great .	1.65768203006	make	great
+In the US , the world's largest generics market , Novartis is acquiring control of Eon Labs , one of the fastest - growing generic pharmaceutical companies .	6.96674946641	is	Novartis	acquiring control of Eon Labs	fastest - growing generic pharmaceutical companies
+In the US , the world's largest generics market , Novartis is acquiring control of Eon Labs , one of the fastest - growing generic pharmaceutical companies .	6.41170034151	acquiring	control of Eon Labs
+In the US , the world's largest generics market , Novartis is acquiring control of Eon Labs , one of the fastest - growing generic pharmaceutical companies .	1.16062025554	growing	fastest	generic pharmaceutical companies
+Google eats YouTube	1.7298853259	eats	Google
+Viacom nearing deal to acquire DreamWorks	1.00227416007	nearing	deal
+Adobe 's Macromedia takeover clears final hurdle	8.84352438899	clears	Adobe 's Macromedia takeover
+Google closes YouTube acquisition - General News - www.pcauthority.com.au	3.16961925486	closes	Google
+Adobe acquired Macromedia! - sephiroth.it - flash &amp;amp; php	1.28488296644	acquired	Adobe
+Google is going to buy YouTube for more money than I can imagine I am picturing a stack of fivers that stands about as tall as Paul Daniels , which is roughly twenty five quid .	1.86043183839	is	Google	Paul Daniels	roughly twenty five quid
+Google is going to buy YouTube for more money than I can imagine I am picturing a stack of fivers that stands about as tall as Paul Daniels , which is roughly twenty five quid .	9.12799054805	going	Google	buy YouTube
+Google is going to buy YouTube for more money than I can imagine I am picturing a stack of fivers that stands about as tall as Paul Daniels , which is roughly twenty five quid .	1.03862759904	buy	Google
+Google is going to buy YouTube for more money than I can imagine I am picturing a stack of fivers that stands about as tall as Paul Daniels , which is roughly twenty five quid .	3.63346235688	imagine	Google	Paul
+Google is going to buy YouTube for more money than I can imagine I am picturing a stack of fivers that stands about as tall as Paul Daniels , which is roughly twenty five quid .	5.20733841591	picturing	Google	a stack of fivers	Paul Daniels
+Google is going to buy YouTube for more money than I can imagine I am picturing a stack of fivers that stands about as tall as Paul Daniels , which is roughly twenty five quid .	10.1646908634	stands	Google	as tall	Paul Daniels
+Google is going to buy YouTube for more money than I can imagine I am picturing a stack of fivers that stands about as tall as Paul Daniels , which is roughly twenty five quid .	1.86043183839	is	Google	Paul Daniels	roughly twenty five quid
+Everybody knows by now that Google has just acquired YouTube ( Globe and Mail ) , adding the major play in online video clips to its arsenal of services where content meets advertising .	3.2334770152	knows	Everybody	in online video clips
+Everybody knows by now that Google has just acquired YouTube ( Globe and Mail ) , adding the major play in online video clips to its arsenal of services where content meets advertising .	1.72007997508	has	Google	video
+Everybody knows by now that Google has just acquired YouTube ( Globe and Mail ) , adding the major play in online video clips to its arsenal of services where content meets advertising .	1.35241317845	acquired	Google
+Everybody knows by now that Google has just acquired YouTube ( Globe and Mail ) , adding the major play in online video clips to its arsenal of services where content meets advertising .	1.86431828677	adding	Google	the major play
+Everybody knows by now that Google has just acquired YouTube ( Globe and Mail ) , adding the major play in online video clips to its arsenal of services where content meets advertising .	1.8445011731	meets	content
+I ' m not sure that Google will do the deal with YouTube ; perhaps it will be Yahoo that will try to level the ad revenue playing field .	8.36225611195	do	Google	deal	will try to level the ad revenue playing field
+I ' m not sure that Google will do the deal with YouTube ; perhaps it will be Yahoo that will try to level the ad revenue playing field .	2.65939815683	be	will try to level the ad
+I ' m not sure that Google will do the deal with YouTube ; perhaps it will be Yahoo that will try to level the ad revenue playing field .	2.60413962906	try	to level the ad revenue playing field
+I ' m not sure that Google will do the deal with YouTube ; perhaps it will be Yahoo that will try to level the ad revenue playing field .	1.05425723585	level	the ad revenue playing field
+RR : Guess how much Google paid for YouTube .	16.0256153127	Guess	much Google paid for YouTube
+RR : Guess how much Google paid for YouTube .	2.67192558943	paid	much Google
+Google To Acquire YouTube for $ 1.65 Billion in Stock at Total Lost in space Says :	7.07106894803	Acquire	Google	YouTube for $ 1.65 Billion in Stock
+Google To Acquire YouTube for $ 1.65 Billion in Stock at Total Lost in space Says :	1.42094809094	Says	Google To Acquire YouTube for $ 1.65 Billion in Stock at Total Lost in space
+The increased output comes a year after Viacom acquired DreamWorks Pictures ( and , as a result , its __ TV arm ) .	2.38619704993	comes	increased output	a year
+Tags : statistics google buys youtube __ buy __ care __ + buys	6.89236248308	buys	statistics google	youtube	care
+Tags : statistics google buys youtube __ buy __ care __ + buys	6.89236248308	buys	statistics google	youtube	care
+Interestingly , ShoeMoney announced that Google would acquire YouTube on Friday , October 6th .	1.55758144983	announced	ShoeMoney
+Interestingly , ShoeMoney announced that Google would acquire YouTube on Friday , October 6th .	30.2023654889	acquire	Google	YouTube on Friday	6th
+Novartis Completes Tender Offer For Eon Labs , Inc. and Purchase of Majority Stake	31.9970360438	Completes	Tender Offer	Eon Labs , Inc. and Purchase of
+- Bloomberg - Adobe Systems to Acquire Macromedia for $ 3.4 Billion	2.47467952893	Acquire	- Bloomberg - Adobe Systems
+Amid all the hubbub over Google 's swallowing of YouTube , we ve heard both considered commentary and over - the - top pontification about whether it's a good deal or a bad deal , for the newly - engorged company and for all those users in TV land .	263.385845422	ve	commentary	a	all those users in TV land
+Amid all the hubbub over Google 's swallowing of YouTube , we ve heard both considered commentary and over - the - top pontification about whether it's a good deal or a bad deal , for the newly - engorged company and for all those users in TV land .	511.620401538	considered	ve	commentary	the - top pontification about whether it's a good deal or a bad deal	for	newly -	company and for all those users in TV land
+Google aquires Youtube = $ 1.65Billion	1.24243203586	aquires	Google
+Google has officially acquired YouTube for a reported $ 1.65 bil .	1.34835036075	has	Google
+Google has officially acquired YouTube for a reported $ 1.65 bil .	4.87648539175	acquired	Google	officially	YouTube
+Google has officially acquired YouTube for a reported $ 1.65 bil .	3.41024534231	reported	Google	$ 1.65 bil
+Mega - search engine company Google bought the profitless YouTube for $ 1.65 million yesterday and this silly thank you video from Chad Hurley and Steve Chen shows the two __ twentysomething founders giddy to be billionaires .	67.2554203109	bought	Mega - search engine company Google	the profitless	$ 1.65 million yesterday
+Mega - search engine company Google bought the profitless YouTube for $ 1.65 million yesterday and this silly thank you video from Chad Hurley and Steve Chen shows the two __ twentysomething founders giddy to be billionaires .	1.49447790414	thank	you
+Mega - search engine company Google bought the profitless YouTube for $ 1.65 million yesterday and this silly thank you video from Chad Hurley and Steve Chen shows the two __ twentysomething founders giddy to be billionaires .	6.02767150519	shows	you	Steve Chen
+Mega - search engine company Google bought the profitless YouTube for $ 1.65 million yesterday and this silly thank you video from Chad Hurley and Steve Chen shows the two __ twentysomething founders giddy to be billionaires .	4.99023135066	twentysomething	engine	founders
+Mega - search engine company Google bought the profitless YouTube for $ 1.65 million yesterday and this silly thank you video from Chad Hurley and Steve Chen shows the two __ twentysomething founders giddy to be billionaires .	4.97242084697	be	giddy	billionaires
+Google looking to buy YouTube for $ 1.6B ?	21.957288564	looking	Google	to buy YouTube for $ 1.6B
+Google looking to buy YouTube for $ 1.6B ?	22.8460949298	buy	Google	YouTube	$ 1.6B
+Google has acquired social media company , Youtube for $ 1.65 billion in a stock - for - stock transaction as announcedby __ __ on October 9 , 2006 .	1.25300093724	has	Google
+Google has acquired social media company , Youtube for $ 1.65 billion in a stock - for - stock transaction as announcedby __ __ on October 9 , 2006 .	2.98378249008	acquired	Google	social media
+[ ] In the days leading up to and in the hours immediately following Google 's $ 1.65 billion buyout of YouTube , I noticed that an extrodinary number of visitors were coming to this site through Yahoo searches .	2.03199167696	leading	[
+[ ] In the days leading up to and in the hours immediately following Google 's $ 1.65 billion buyout of YouTube , I noticed that an extrodinary number of visitors were coming to this site through Yahoo searches .	47.8932550772	following	[ ]	Google	$ 1.65 billion buyout
+[ ] In the days leading up to and in the hours immediately following Google 's $ 1.65 billion buyout of YouTube , I noticed that an extrodinary number of visitors were coming to this site through Yahoo searches .	1.79975883232	were	Google
+[ ] In the days leading up to and in the hours immediately following Google 's $ 1.65 billion buyout of YouTube , I noticed that an extrodinary number of visitors were coming to this site through Yahoo searches .	85.7686798109	coming	extrodinary number of visitors	this site	searches
+Search engine giant Google has bought video - sharing website YouTube in a controversial 883million deal .	3.5702346752	has	Search engine giant Google
+Search engine giant Google has bought video - sharing website YouTube in a controversial 883million deal .	1.24037439723	bought	Search engine giant Google
+Search engine giant Google has bought video - sharing website YouTube in a controversial 883million deal .	15.5984034836	sharing	Search engine giant	bought video	website YouTube
+Google on Monday announced the acquisition of YouTube for US $ 1.65 billion in stock .	5.41647215455	announced	Monday	acquisition	YouTube
+Adobe 's Acquisition Of Macromedia Expected To Close On December 3 , 2005	10.2793266837	Expected	Acquisition Of Macromedia
+Adobe 's Acquisition Of Macromedia Expected To Close On December 3 , 2005	3.49990784998	Close	Acquisition Of Macromedia	December 3
+"Under the terms of a proposed consent order with the Commission , __ is required to divest all the assets necessary to manufacture and market generic desipramine hydrochloride tablets , orphenadrine citrate extended release ( "" ER "" ) tablets , and rifampin oral capsules in the United States to Amide within 10 days of Novartis 's acquisition of Eon ."	6.03282503066	is	__	required to divest all the assets
+"Under the terms of a proposed consent order with the Commission , __ is required to divest all the assets necessary to manufacture and market generic desipramine hydrochloride tablets , orphenadrine citrate extended release ( "" ER "" ) tablets , and rifampin oral capsules in the United States to Amide within 10 days of Novartis 's acquisition of Eon ."	2.44871516838	required	divest all the assets	manufacture
+"Under the terms of a proposed consent order with the Commission , __ is required to divest all the assets necessary to manufacture and market generic desipramine hydrochloride tablets , orphenadrine citrate extended release ( "" ER "" ) tablets , and rifampin oral capsules in the United States to Amide within 10 days of Novartis 's acquisition of Eon ."	2.30270688968	divest	__	all the assets	tablets
+"Under the terms of a proposed consent order with the Commission , __ is required to divest all the assets necessary to manufacture and market generic desipramine hydrochloride tablets , orphenadrine citrate extended release ( "" ER "" ) tablets , and rifampin oral capsules in the United States to Amide within 10 days of Novartis 's acquisition of Eon ."	3.0963549546	manufacture	generic	hydrochloride
+"Under the terms of a proposed consent order with the Commission , __ is required to divest all the assets necessary to manufacture and market generic desipramine hydrochloride tablets , orphenadrine citrate extended release ( "" ER "" ) tablets , and rifampin oral capsules in the United States to Amide within 10 days of Novartis 's acquisition of Eon ."	10.4991688982	extended	release	oral capsules
+"Under the terms of a proposed consent order with the Commission , __ is required to divest all the assets necessary to manufacture and market generic desipramine hydrochloride tablets , orphenadrine citrate extended release ( "" ER "" ) tablets , and rifampin oral capsules in the United States to Amide within 10 days of Novartis 's acquisition of Eon ."	2.39634505506	rifampin	hydrochloride tablets	oral capsules
+Where does Google 's $ 1.65 billion YouTube acquisition leave Microsoft ?	8.49199595852	does	Google 's $ 1.65 billion YouTube acquisition leave Microsoft
+Where does Google 's $ 1.65 billion YouTube acquisition leave Microsoft ?	1.07722983884	leave	Microsoft
+What Google 's YouTube deal means for Microsoft	3.10012406863	means	Google	YouTube deal
+San Jose , Calif. - based Adobe announced in April the plans to acquire Macromedia , which makes the Flash animation software used to display graphics on Web sites .	14.4366608172	based	Adobe	in April the plans	acquire Macromedia
+San Jose , Calif. - based Adobe announced in April the plans to acquire Macromedia , which makes the Flash animation software used to display graphics on Web sites .	7.46616632596	announced	Jose	Calif. - based Adobe	April the plans to acquire Macromedia
+San Jose , Calif. - based Adobe announced in April the plans to acquire Macromedia , which makes the Flash animation software used to display graphics on Web sites .	1.19962187918	acquire	Macromedia
+San Jose , Calif. - based Adobe announced in April the plans to acquire Macromedia , which makes the Flash animation software used to display graphics on Web sites .	15.3107248502	makes	the Flash	software	graphics	Web sites
+San Jose , Calif. - based Adobe announced in April the plans to acquire Macromedia , which makes the Flash animation software used to display graphics on Web sites .	3.28570607272	used	animation software	display graphics on Web sites
+San Jose , Calif. - based Adobe announced in April the plans to acquire Macromedia , which makes the Flash animation software used to display graphics on Web sites .	13.4492574736	display	San Jose	animation software	graphics on Web sites
+I was thinking about overpaying after reading an article in this morning &amp;amp; rsquos deadtree edition of the Wall Street Journal on the Viacombuyout of Dreamworks SKG .	1.63903257741	thinking	I
+I was thinking about overpaying after reading an article in this morning &amp;amp; rsquos deadtree edition of the Wall Street Journal on the Viacombuyout of Dreamworks SKG .	1.93025226467	overpaying	I
+I was thinking about overpaying after reading an article in this morning &amp;amp; rsquos deadtree edition of the Wall Street Journal on the Viacombuyout of Dreamworks SKG .	10.185986039	reading	article	this morning	Dreamworks SKG
+Novartis completes acquisition of 98 of Eon Labs	2.56750878023	completes	acquisition of
+[ ... ] More importantly though , between Google buying Youtube and their own video service , I think __ &amp;amp; #8217 ;'s thinking about the future of video .	1.63983083505	buying	Google
+The Flash Player , developed and distributed by Adobe Systems ( who bought Macromedia ) , is a client application available in most dominant web browsers .	14.9892710056	developed	The Flash Player	Systems
+The Flash Player , developed and distributed by Adobe Systems ( who bought Macromedia ) , is a client application available in most dominant web browsers .	1.20487546816	distributed	The Flash Player	Adobe Systems
+The Flash Player , developed and distributed by Adobe Systems ( who bought Macromedia ) , is a client application available in most dominant web browsers .	2.50254741528	bought	Adobe Systems	Macromedia
+The Flash Player , developed and distributed by Adobe Systems ( who bought Macromedia ) , is a client application available in most dominant web browsers .	7.84444900135	is	Flash Player	a client application	browsers
+Novartis AG bought Eon Labs ( US ) and Hexal AG ( German ) in a deal worth $ 8.3 billion today both companies being generic drug makers .	2.34838645739	bought	Novartis AG	Eon
+Novartis AG bought Eon Labs ( US ) and Hexal AG ( German ) in a deal worth $ 8.3 billion today both companies being generic drug makers .	4.41603298584	being	companies	generic drug makers
+CNN is reporting that Google has agreed to buy YouTube for $ 1.65 billion in stock ; not a bad price for a company started in February 2005 .	1.03426627599	is	CNN
+CNN is reporting that Google has agreed to buy YouTube for $ 1.65 billion in stock ; not a bad price for a company started in February 2005 .	1.50148572012	reporting	CNN
+CNN is reporting that Google has agreed to buy YouTube for $ 1.65 billion in stock ; not a bad price for a company started in February 2005 .	1.22466474803	has	Google
+CNN is reporting that Google has agreed to buy YouTube for $ 1.65 billion in stock ; not a bad price for a company started in February 2005 .	1.76402371196	agreed	Google	buy YouTube for $ 1.65 billion in stock
+CNN is reporting that Google has agreed to buy YouTube for $ 1.65 billion in stock ; not a bad price for a company started in February 2005 .	13.0526782714	buy	Google	YouTube	in stock	company	in February 2005
+CNN is reporting that Google has agreed to buy YouTube for $ 1.65 billion in stock ; not a bad price for a company started in February 2005 .	4.80428671846	started	Google	price	a company	in February 2005
+In October , Google acquired video sharing site YouTube for $ US1.65 billion ( $ 2.21 billion ) .	1.45240118225	acquired	Google
+Google Has Acquired YouTube	1.8144522256	Has	Google	Acquired
+Google May Be Buying YouTube for 1.6 Billion dollars	1.33335420028	Be	Google
+Google May Be Buying YouTube for 1.6 Billion dollars	3.11726793015	Buying	Google
+After all the speculation on the web recently about Google 's acquisition of YouTube , it has finally been confirmed .	1.58466299764	has	Google
+After all the speculation on the web recently about Google 's acquisition of YouTube , it has finally been confirmed .	1.88187118215	been	Google
+After all the speculation on the web recently about Google 's acquisition of YouTube , it has finally been confirmed .	9.49393785447	confirmed	speculation on the web	Google
+__ __ __ ( Nasdaq : ADBE ) and __ __ __ ( Nasdaq : MACR ) today announced they have either received or been notified they will receive all regulatory clearances necessary to complete Adobe 's pending acquisition of Macromedia .	292.077871947	announced	__	Nasdaq	ADBE ) and	__ __ ( Nasdaq	MACR	today	they
+__ __ __ ( Nasdaq : ADBE ) and __ __ __ ( Nasdaq : MACR ) today announced they have either received or been notified they will receive all regulatory clearances necessary to complete Adobe 's pending acquisition of Macromedia .	917.976946845	have	either received	been notified they	receive all regulatory clearances	to
+__ __ __ ( Nasdaq : ADBE ) and __ __ __ ( Nasdaq : MACR ) today announced they have either received or been notified they will receive all regulatory clearances necessary to complete Adobe 's pending acquisition of Macromedia .	19.0058326354	notified	they will	all regulatory clearances
+__ __ __ ( Nasdaq : ADBE ) and __ __ __ ( Nasdaq : MACR ) today announced they have either received or been notified they will receive all regulatory clearances necessary to complete Adobe 's pending acquisition of Macromedia .	4.3929029874	receive	all regulatory clearances necessary to complete Adobe 's pending acquisition of Macromedia
+__ __ __ ( Nasdaq : ADBE ) and __ __ __ ( Nasdaq : MACR ) today announced they have either received or been notified they will receive all regulatory clearances necessary to complete Adobe 's pending acquisition of Macromedia .	5.34800709528	complete	all regulatory clearances necessary	Adobe 's pending acquisition of
+__ __ __ ( Nasdaq : ADBE ) and __ __ __ ( Nasdaq : MACR ) today announced they have either received or been notified they will receive all regulatory clearances necessary to complete Adobe 's pending acquisition of Macromedia .	27.3735341444	pending	Nasdaq	ADBE	Nasdaq	MACR	they	Adobe	acquisition of
+as speculated over the weekend , Google pulled the trigger and acquires YouTube for $ 1.65 billion...huge windfall for their 67 employees !	9.65651166209	pulled	Google	the trigger	67 employees
+as speculated over the weekend , Google pulled the trigger and acquires YouTube for $ 1.65 billion...huge windfall for their 67 employees !	1.02214476636	acquires	YouTube
+The rumour has now been confirmed by Google and are to acquire Youtube for $ 1.65 Billion in Stock .	1.25143057871	has	The rumour
+The rumour has now been confirmed by Google and are to acquire Youtube for $ 1.65 Billion in Stock .	2.67365593364	confirmed	The rumour	Google
+The rumour has now been confirmed by Google and are to acquire Youtube for $ 1.65 Billion in Stock .	6.90307669681	acquire	Youtube for $ 1.65 Billion in Stock
+We first heard about this when the Google - Youtube acquisition news broke , and wrote briefly about it here ( see last paragraph ) .	1.74243955477	heard	We
+We first heard about this when the Google - Youtube acquisition news broke , and wrote briefly about it here ( see last paragraph ) .	1.51005031851	broke	the Google - Youtube acquisition news
+We first heard about this when the Google - Youtube acquisition news broke , and wrote briefly about it here ( see last paragraph ) .	1.47225337316	see	last paragraph
+The line of __ products is now controlled by its former rival , Adobe Systems , which acquired Macromedia on December 14 , 2005 .	6.31054338817	is	products	former rival , Adobe Systems
+The line of __ products is now controlled by its former rival , Adobe Systems , which acquired Macromedia on December 14 , 2005 .	5.64100463266	controlled	The line of __ products	its former rival , Adobe Systems	on December 14 , 2005
+The line of __ products is now controlled by its former rival , Adobe Systems , which acquired Macromedia on December 14 , 2005 .	40.3729486642	acquired	The line of __ products	December 14 , 2005
+The rumors turned out to be true , Google has officially announced the acquisition deal with YouTube , for $ 1.65 billion in stock .	44.8891579171	turned	The rumors	true	1.65 billion in stock
+The rumors turned out to be true , Google has officially announced the acquisition deal with YouTube , for $ 1.65 billion in stock .	5.73980224887	be	true	1.65 billion in stock
+The rumors turned out to be true , Google has officially announced the acquisition deal with YouTube , for $ 1.65 billion in stock .	1.27453154593	has	rumors
+The rumors turned out to be true , Google has officially announced the acquisition deal with YouTube , for $ 1.65 billion in stock .	35.382865633	announced	officially	the acquisition deal	billion
+Novartis buys Hexal , Eon for 5.6 billion	8.44783829258	buys	Novartis	Hexal
+The Data Warehousing blog speculates about what changes users might expect from Google 's acquisition of YouTube like more ads but the potential for more cool __ - esque features .	1.0643501836	speculates	The Data Warehousing blog
+The Data Warehousing blog speculates about what changes users might expect from Google 's acquisition of YouTube like more ads but the potential for more cool __ - esque features .	1.05423846031	changes	users
+The Data Warehousing blog speculates about what changes users might expect from Google 's acquisition of YouTube like more ads but the potential for more cool __ - esque features .	1.01217820736	expect	users	Google 's acquisition of YouTube like more ads
+According to Techcrunch , a possible Google buyout of YouTube is the rumor du jour .	2.0614093856	According	Techcrunch
+According to Techcrunch , a possible Google buyout of YouTube is the rumor du jour .	1.98355238363	is	YouTube
+RR : Did you know that Google just bought YouTube ?	2.85227768635	know	Google
+RR : Did you know that Google just bought YouTube ?	2.62930597905	bought	Google	YouTube
+Viacom bought Dreamworks in 2005 , who are Paramount's parent company .	2.96228825374	bought	Viacom	Dreamworks	2005
+Viacom bought Dreamworks in 2005 , who are Paramount's parent company .	1.07501797968	are	Paramount's
+Entertainment giant VIACOM has taken over the DREAMWORKS SKG studio in a deal worth $ 1.6 billion ( 914 million ) .	2.96407490535	has	giant VIACOM
+Entertainment giant VIACOM has taken over the DREAMWORKS SKG studio in a deal worth $ 1.6 billion ( 914 million ) .	656.554091736	taken	Entertainment giant VIACOM	the DREAMWORKS SKG studio in a deal worth $ 1.6 billion ( 914 million
+__ are well - known for delivering digital media content for the web , and Adobe 's acquisition of Macromedia may bring forth some exciting results .	8.88744793776	are	may bring forth some exciting results
+__ are well - known for delivering digital media content for the web , and Adobe 's acquisition of Macromedia may bring forth some exciting results .	1.0762663381	known	__	well
+__ are well - known for delivering digital media content for the web , and Adobe 's acquisition of Macromedia may bring forth some exciting results .	7.94178758118	delivering	digital media content for the web	Adobe 's acquisition of Macromedia
+__ are well - known for delivering digital media content for the web , and Adobe 's acquisition of Macromedia may bring forth some exciting results .	2.04722851146	bring	forth some exciting results
+Google is in discussions to acquire YouTube for $ 1.6 billion , people involved in the talks said yesterday .	2.66030203178	is	Google	discussions	YouTube
+Google is in discussions to acquire YouTube for $ 1.6 billion , people involved in the talks said yesterday .	3.25178266616	acquire	Google	YouTube for $ 1.6 billion
+Google is in discussions to acquire YouTube for $ 1.6 billion , people involved in the talks said yesterday .	1.340651503	involved	people
+Google is in discussions to acquire YouTube for $ 1.6 billion , people involved in the talks said yesterday .	8.96839446647	said	people involved	talks
+WSJ.com , Wired : Adobe Systems Inc. announced the acquisition of Macromedia Inc. for $ 3.4 billion in stock in a deal that will bring together the software of two companies with broad resources to distribute documents , video and other media to personal computers , cellphones and hand - held devices .	52.1874535623	announced	Adobe	the acquisition of Macromedia Inc. for	3.4 billion in stock in
+WSJ.com , Wired : Adobe Systems Inc. announced the acquisition of Macromedia Inc. for $ 3.4 billion in stock in a deal that will bring together the software of two companies with broad resources to distribute documents , video and other media to personal computers , cellphones and hand - held devices .	90.1964958551	bring	3.4 billion in	a deal	the software of two companies with broad resources to distribute documents , video and	media
+WSJ.com , Wired : Adobe Systems Inc. announced the acquisition of Macromedia Inc. for $ 3.4 billion in stock in a deal that will bring together the software of two companies with broad resources to distribute documents , video and other media to personal computers , cellphones and hand - held devices .	136.11655673	distribute	software	companies	documents , video and other media to personal computers , cellphones and hand
+WSJ.com , Wired : Adobe Systems Inc. announced the acquisition of Macromedia Inc. for $ 3.4 billion in stock in a deal that will bring together the software of two companies with broad resources to distribute documents , video and other media to personal computers , cellphones and hand - held devices .	28.7039918592	held	documents	cellphones and hand	devices
+Viacom has won the bid to acquire Dreamworks SKG , beating out NBC Universal .	3.59673318727	won	Viacom	the bid to acquire Dreamworks SKG
+Viacom has won the bid to acquire Dreamworks SKG , beating out NBC Universal .	1.343234572	acquire	Dreamworks SKG
+Viacom has won the bid to acquire Dreamworks SKG , beating out NBC Universal .	29.1755764058	beating	Viacom	bid	Dreamworks SKG	NBC Universal
+Google confirmed that it will acquire YouTube , the leading , consumer video sharing site , for $ 1.65 billion in a stock - for - stock transaction .	2.84821522894	confirmed	Google	YouTube	in a stock - for - stock transaction
+Google confirmed that it will acquire YouTube , the leading , consumer video sharing site , for $ 1.65 billion in a stock - for - stock transaction .	1.74807909731	acquire	in a stock - for - stock transaction
+Google confirmed that it will acquire YouTube , the leading , consumer video sharing site , for $ 1.65 billion in a stock - for - stock transaction .	25.3374274682	leading	in a stock - for
+Apparently the rumor that Google was buying YouTube was less of a rumor than someone on the inside letting it slip out to the entire world .	1.12268474339	was	Google
+Apparently the rumor that Google was buying YouTube was less of a rumor than someone on the inside letting it slip out to the entire world .	5.14751343878	buying	Google	a rumor
+Apparently the rumor that Google was buying YouTube was less of a rumor than someone on the inside letting it slip out to the entire world .	1.12268474339	was	Google
+Apparently the rumor that Google was buying YouTube was less of a rumor than someone on the inside letting it slip out to the entire world .	27.8821946233	letting	the inside	slip out to the entire world
+Apparently the rumor that Google was buying YouTube was less of a rumor than someone on the inside letting it slip out to the entire world .	7.63240601854	slip	entire world
+Google paid stunning YouTube price : Time Warner CEO , Reuters	3.84250494802	paid	Google	stunning YouTube price	Time Warner
+On Monday , February 21 , 2005 , __ announced it had signed a definitive merger agreement pursuant to which Novartis AG will acquire Eon .	1.52401853207	announced	2005
+On Monday , February 21 , 2005 , __ announced it had signed a definitive merger agreement pursuant to which Novartis AG will acquire Eon .	99.6231568486	had	a definitive merger agreement
+On Monday , February 21 , 2005 , __ announced it had signed a definitive merger agreement pursuant to which Novartis AG will acquire Eon .	12.6173114277	signed	a definitive merger agreement pursuant
+On Monday , February 21 , 2005 , __ announced it had signed a definitive merger agreement pursuant to which Novartis AG will acquire Eon .	1.76880169228	acquire	Novartis AG
+Adobe About to Buy Macromedia .	1.52335222798	Buy	Macromedia
+TMO Reports - Adobe Systems Agrees to Buy Macromedia for $ 3.4 Billion	25.296801523	Buy	Reports	Macromedia
+Google Interested in Acquiring YouTube	1.9323596817	Acquiring	Google
+Anyway , in a friendly merger , subject to all the usual regulatory rules , Adobe Systems is acquiring Macromedia in an all - stock transaction valued at approximately $ 3.4 billion .	1.01435466034	is	Adobe Systems	acquiring Macromedia
+Anyway , in a friendly merger , subject to all the usual regulatory rules , Adobe Systems is acquiring Macromedia in an all - stock transaction valued at approximately $ 3.4 billion .	2.1320416004	acquiring	Systems
+Anyway , in a friendly merger , subject to all the usual regulatory rules , Adobe Systems is acquiring Macromedia in an all - stock transaction valued at approximately $ 3.4 billion .	1.36735805721	valued	in an all - stock transaction	approximately $ 3.4 billion
+Google Closing In on YouTube Acquisition ( 09 - Oct - 06 )	3.39891751677	Closing	Google
+Rumours galore this morning on the possability of Google aquiring Youtube at $ 1.6 Billion .	7.57840725057	aquiring	the possability of Google	Youtube
+I thought most of what I had to say about Google 's brilliant acquisition of YouTube had already been said , so I was going to pass on writing about it .	1.31277010245	thought	I
+I thought most of what I had to say about Google 's brilliant acquisition of YouTube had already been said , so I was going to pass on writing about it .	1.53891137409	had	Google
+I thought most of what I had to say about Google 's brilliant acquisition of YouTube had already been said , so I was going to pass on writing about it .	1.98319047751	say	I
+I thought most of what I had to say about Google 's brilliant acquisition of YouTube had already been said , so I was going to pass on writing about it .	1.53891137409	had	Google
+I thought most of what I had to say about Google 's brilliant acquisition of YouTube had already been said , so I was going to pass on writing about it .	2.40987663841	was	Google
+I thought most of what I had to say about Google 's brilliant acquisition of YouTube had already been said , so I was going to pass on writing about it .	1.95091117306	going	I
+I thought most of what I had to say about Google 's brilliant acquisition of YouTube had already been said , so I was going to pass on writing about it .	5.7599333909	pass	I	writing
+Novartis completes acquisition of approximately 98 % Eon Labs , substantially strengthening the leading position of its Sandoz generics unit	8.86685870751	completes	acquisition of	Sandoz
+Novartis completes acquisition of approximately 98 % Eon Labs , substantially strengthening the leading position of its Sandoz generics unit	2.20596184505	leading	position
+Adobe Systems adquiere a su rival Macromedia @ WEB DEVELOPER's &amp;amp; DESIGNER's JOURNAL	2.50152954598	adquiere	Systems	a su rival Macromedia @ WEB DEVELOPER's
+Novartis announces final results of Eon Labs tender offer	6.42980459544	announces	final results
+Novartis to Buy Eon Labs , Hexel	1.80201284835	Buy	Labs
+Google has acquired the video sharing website YouTube for $ 1.65billion ( 883million ) in shares after a large amount of speculation over whether __ was talking about a deal with __ .	1.04245284986	has	Google
+Google has acquired the video sharing website YouTube for $ 1.65billion ( 883million ) in shares after a large amount of speculation over whether __ was talking about a deal with __ .	1.19558589687	acquired	Google
+Google has acquired the video sharing website YouTube for $ 1.65billion ( 883million ) in shares after a large amount of speculation over whether __ was talking about a deal with __ .	8.56450138042	sharing	the video	website YouTube
+Google has acquired the video sharing website YouTube for $ 1.65billion ( 883million ) in shares after a large amount of speculation over whether __ was talking about a deal with __ .	5.26918946077	was	Google	deal with __
+Google has acquired the video sharing website YouTube for $ 1.65billion ( 883million ) in shares after a large amount of speculation over whether __ was talking about a deal with __ .	1.69048063639	talking	a deal with
+Chizen's Adobe Gets U.S. DOJ OK To Buy Macromedia - Forbes.com	203.85048546	Chizen's	Adobe Gets U.S.
+Chizen's Adobe Gets U.S. DOJ OK To Buy Macromedia - Forbes.com	1.72157041653	Buy	Macromedia
+Related Posts to Adobe 's proposed acquisition of macromedia clears U.S. department of justice review :	3.39468298634	Related	Posts	Adobe
+Related Posts to Adobe 's proposed acquisition of macromedia clears U.S. department of justice review :	24.6622128759	proposed	acquisition of macromedia	U.S. department
+Related Posts to Adobe 's proposed acquisition of macromedia clears U.S. department of justice review :	7.77660372743	clears	acquisition of macromedia	U.S. department of justice review
+Google aquires YouTube	1.5797139454	aquires	Google
+Today , Google has confirmed that it is acquiring YouTube , a consumer media organization where users can view and share original videos through an Internet experience .	5.26287240724	has	Google	share original videos through
+Today , Google has confirmed that it is acquiring YouTube , a consumer media organization where users can view and share original videos through an Internet experience .	6.56112656436	confirmed	Google	is acquiring YouTube	share original videos
+Today , Google has confirmed that it is acquiring YouTube , a consumer media organization where users can view and share original videos through an Internet experience .	13.9460385527	is	Google	acquiring YouTube	share original videos through an Internet experience
+Today , Google has confirmed that it is acquiring YouTube , a consumer media organization where users can view and share original videos through an Internet experience .	1.92032568724	acquiring	YouTube
+Today , Google has confirmed that it is acquiring YouTube , a consumer media organization where users can view and share original videos through an Internet experience .	1.04680035005	view	users
+Today , Google has confirmed that it is acquiring YouTube , a consumer media organization where users can view and share original videos through an Internet experience .	2.18348022839	share	users	original videos
+It doesn ' t take long to explain the rationale of the proposed merger between software makers Adobe Systems ( ADBE ) and Macromedia ( MACR ) .	2.66270792803	take	explain the rationale of the proposed merger between software makers Adobe Systems (
+It doesn ' t take long to explain the rationale of the proposed merger between software makers Adobe Systems ( ADBE ) and Macromedia ( MACR ) .	1.24505889827	explain	the rationale of the proposed merger between software makers Adobe Systems (
+It doesn ' t take long to explain the rationale of the proposed merger between software makers Adobe Systems ( ADBE ) and Macromedia ( MACR ) .	3.92527731407	proposed	merger	software makers Adobe
+Google Is Said to Set Sights on YouTube - New York Times	2.54131561698	Is	Google
+Google Is Said to Set Sights on YouTube - New York Times	3.07556113982	Said	Google
+Google Is Said to Set Sights on YouTube - New York Times	3.07551923217	Set	Google	Sights on YouTube
+Novartis AG would then merge Hexal and Eon into its Sandoz unit .	1.75099506054	merge	Novartis AG	Hexal and Eon into its Sandoz unit
+Adobe Systems plans to acquire Macromedia for $ 3.4 billion in stock .	25.4985796716	plans	Adobe Systems	to acquire Macromedia for $ 3.4 billion in stock
+Adobe Systems plans to acquire Macromedia for $ 3.4 billion in stock .	16.2368938312	acquire	Macromedia for $ 3.4 billion in stock
+In the largest acquisition in its corporate history , Google has purchased YouTube for $ 1.65 billion worth of stocks .	4.19313396629	has	Google	$ 1.65 billion
+In the largest acquisition in its corporate history , Google has purchased YouTube for $ 1.65 billion worth of stocks .	13.2068744122	purchased	Google	YouTube	$ 1.65 billion worth of stocks
+Google shares rise on $ 1.65bn YouTube buy	5.32087373628	rise	Google shares	$ 1.65bn YouTube
+Google shares rise on $ 1.65bn YouTube buy	1.66732804012	buy	shares
+For example , if I link to &amp;amp; nbsp ; this excellent performance by The Who , does Google 's purchase of YouTube make &amp;amp; nbsp ; it more or less likely that this link will still exist a year from now ?	8.03289086245	link	&amp;amp; nbsp	still exist a year
+For example , if I link to &amp;amp; nbsp ; this excellent performance by The Who , does Google 's purchase of YouTube make &amp;amp; nbsp ; it more or less likely that this link will still exist a year from now ?	3.77127837851	&amp;amp;	nbsp	Google	link
+For example , if I link to &amp;amp; nbsp ; this excellent performance by The Who , does Google 's purchase of YouTube make &amp;amp; nbsp ; it more or less likely that this link will still exist a year from now ?	1.43345130638	does	Google
+For example , if I link to &amp;amp; nbsp ; this excellent performance by The Who , does Google 's purchase of YouTube make &amp;amp; nbsp ; it more or less likely that this link will still exist a year from now ?	11.7744440604	make	YouTube	&amp;amp; nbsp
+For example , if I link to &amp;amp; nbsp ; this excellent performance by The Who , does Google 's purchase of YouTube make &amp;amp; nbsp ; it more or less likely that this link will still exist a year from now ?	4.01182243716	exist	Google	this link	a year
+As the effectiveness of the Paramount Agreements and Viacom 's acquisition of DreamWorks Studios were each conditioned upon the other's occurrence , and as we and __ Studios were effectively under common control at the time of __ Studios ' acquisition by __ , we have recorded the $ 75 million signing bonus from Paramount , which is approximately $ 49 million on an after tax basis , as an increase to Additional - Paid - in - Capital .	51.7588445787	were	common control	bonus from Paramount	to
+As the effectiveness of the Paramount Agreements and Viacom 's acquisition of DreamWorks Studios were each conditioned upon the other's occurrence , and as we and __ Studios were effectively under common control at the time of __ Studios ' acquisition by __ , we have recorded the $ 75 million signing bonus from Paramount , which is approximately $ 49 million on an after tax basis , as an increase to Additional - Paid - in - Capital .	30.866045809	conditioned	Agreements and Viacom 's acquisition	DreamWorks Studios	the other's
+As the effectiveness of the Paramount Agreements and Viacom 's acquisition of DreamWorks Studios were each conditioned upon the other's occurrence , and as we and __ Studios were effectively under common control at the time of __ Studios ' acquisition by __ , we have recorded the $ 75 million signing bonus from Paramount , which is approximately $ 49 million on an after tax basis , as an increase to Additional - Paid - in - Capital .	51.7588445787	were	common control	bonus from Paramount	to
+As the effectiveness of the Paramount Agreements and Viacom 's acquisition of DreamWorks Studios were each conditioned upon the other's occurrence , and as we and __ Studios were effectively under common control at the time of __ Studios ' acquisition by __ , we have recorded the $ 75 million signing bonus from Paramount , which is approximately $ 49 million on an after tax basis , as an increase to Additional - Paid - in - Capital .	5.18316263815	have	we	signing bonus
+As the effectiveness of the Paramount Agreements and Viacom 's acquisition of DreamWorks Studios were each conditioned upon the other's occurrence , and as we and __ Studios were effectively under common control at the time of __ Studios ' acquisition by __ , we have recorded the $ 75 million signing bonus from Paramount , which is approximately $ 49 million on an after tax basis , as an increase to Additional - Paid - in - Capital .	15.2307123182	recorded	occurrence	$ 75 million signing bonus from Paramount
+As the effectiveness of the Paramount Agreements and Viacom 's acquisition of DreamWorks Studios were each conditioned upon the other's occurrence , and as we and __ Studios were effectively under common control at the time of __ Studios ' acquisition by __ , we have recorded the $ 75 million signing bonus from Paramount , which is approximately $ 49 million on an after tax basis , as an increase to Additional - Paid - in - Capital .	65.8914140451	is	effectiveness of	occurrence	Paramount	$ 49 million
+As the effectiveness of the Paramount Agreements and Viacom 's acquisition of DreamWorks Studios were each conditioned upon the other's occurrence , and as we and __ Studios were effectively under common control at the time of __ Studios ' acquisition by __ , we have recorded the $ 75 million signing bonus from Paramount , which is approximately $ 49 million on an after tax basis , as an increase to Additional - Paid - in - Capital .	5.4401983302	Paid	Paramount	in - Capital
+The sale to Viacom marks the end of an independent DreamWorks , founded 11 years ago by Jeffrey Katzenberg , Spielberg and Geffen .	3.0786493194	marks	The sale	Viacom	end of an independent DreamWorks
+The sale to Viacom marks the end of an independent DreamWorks , founded 11 years ago by Jeffrey Katzenberg , Spielberg and Geffen .	2.00649080184	founded	The sale	11 years
+Then , again , some things never change , which is why the new Viacom quickly renewed and won its bid for DreamWorks , which analysts speculate could one day also encompass publicly traded __ Animation .	3.48776757165	change	things	bid
+Then , again , some things never change , which is why the new Viacom quickly renewed and won its bid for DreamWorks , which analysts speculate could one day also encompass publicly traded __ Animation .	10.9704765725	is	some things	why the new Viacom quickly renewed	bid for
+Then , again , some things never change , which is why the new Viacom quickly renewed and won its bid for DreamWorks , which analysts speculate could one day also encompass publicly traded __ Animation .	3.35075409625	renewed	some	change	the new Viacom
+Then , again , some things never change , which is why the new Viacom quickly renewed and won its bid for DreamWorks , which analysts speculate could one day also encompass publicly traded __ Animation .	12.7567284342	won	the new Viacom	its
+Then , again , some things never change , which is why the new Viacom quickly renewed and won its bid for DreamWorks , which analysts speculate could one day also encompass publicly traded __ Animation .	51.4771459893	speculate	analysts	could one day also encompass	__
+Then , again , some things never change , which is why the new Viacom quickly renewed and won its bid for DreamWorks , which analysts speculate could one day also encompass publicly traded __ Animation .	1.62173813141	encompass	DreamWorks	one day	publicly traded __ Animation
+Then , again , some things never change , which is why the new Viacom quickly renewed and won its bid for DreamWorks , which analysts speculate could one day also encompass publicly traded __ Animation .	4.86552696699	traded	one	__
+Google Inc. is snapping up YouTube Inc. for $ 1.65 billion in a deal that catapults the Internet search leader to a starring role in the online video revolution .	2.44313373036	is	Google Inc.	snapping up YouTube Inc.	to a starring role in the online video revolution
+Google Inc. is snapping up YouTube Inc. for $ 1.65 billion in a deal that catapults the Internet search leader to a starring role in the online video revolution .	250.176019484	snapping	Google Inc.	YouTube Inc. for $ 1.65 billion in a deal	Internet search leader to	role
+Google Inc. is snapping up YouTube Inc. for $ 1.65 billion in a deal that catapults the Internet search leader to a starring role in the online video revolution .	2.6383897272	catapults	the Internet search leader
+Google Inc. is snapping up YouTube Inc. for $ 1.65 billion in a deal that catapults the Internet search leader to a starring role in the online video revolution .	4.82563509625	starring	role	video revolution
+The following analysis about Viacom 's purchase of DreamWorks in Levine Breaking News seems to be cribbed from Newsweek's coverage :	619.471556677	following	analysis about Viacom 's purchase of DreamWorks in Levine Breaking News	cribbed from	coverage
+The following analysis about Viacom 's purchase of DreamWorks in Levine Breaking News seems to be cribbed from Newsweek's coverage :	2.07095266571	seems	from Newsweek's coverage
+The following analysis about Viacom 's purchase of DreamWorks in Levine Breaking News seems to be cribbed from Newsweek's coverage :	6.43460096581	be	DreamWorks	Levine Breaking News	Newsweek's coverage
+The following analysis about Viacom 's purchase of DreamWorks in Levine Breaking News seems to be cribbed from Newsweek's coverage :	2.43170864475	cribbed	Newsweek's coverage
+I won t argue that it doesn t make sense for Google to purchase Youtube in many ways , but what about from a __ users perspective ?	1.30783405678	won	I
+I won t argue that it doesn t make sense for Google to purchase Youtube in many ways , but what about from a __ users perspective ?	4.86197933703	argue	I won t
+I won t argue that it doesn t make sense for Google to purchase Youtube in many ways , but what about from a __ users perspective ?	212.999971969	doesn	I	t make sense for Google to purchase Youtube in many ways	what about	users perspective
+I won t argue that it doesn t make sense for Google to purchase Youtube in many ways , but what about from a __ users perspective ?	14.7881448838	make	sense	Google	purchase Youtube in many ways
+I won t argue that it doesn t make sense for Google to purchase Youtube in many ways , but what about from a __ users perspective ?	1.2714978499	purchase	Youtube
+Google has bought YouTube for $ 1.65 - billion in stock .	1.66360106369	has	Google	for
+Google has bought YouTube for $ 1.65 - billion in stock .	6.5959799781	bought	Google	YouTube	$ 1.65 - billion in stock
+[ ] The Federal Trade Commission has approved Google 's aquisition of YouTube .	5.2246258098	has	Trade Commission	Google
+[ ] The Federal Trade Commission has approved Google 's aquisition of YouTube .	4.08657174873	approved	Federal	Commission
+Chad and Steve announce the Google acquisition of YouTube .	2.59597947669	announce	Steve	the Google acquisition of YouTube
+Novartis To Buy Hexal , Eon Labs For $ 8.3 Billion	10.8070681801	Buy	Novartis	Hexal
+"The New York Times published on december 12 an article called Adobe 's Deal for Macromedia May Help It Fend Off Microsof "" were they say that __ got the control of __ 's crown jewel : Flash ."	81.417193672	published	York Times	on december 12 an article
+"The New York Times published on december 12 an article called Adobe 's Deal for Macromedia May Help It Fend Off Microsof "" were they say that __ got the control of __ 's crown jewel : Flash ."	12.9618999706	called	Adobe 's Deal for Macromedia
+"The New York Times published on december 12 an article called Adobe 's Deal for Macromedia May Help It Fend Off Microsof "" were they say that __ got the control of __ 's crown jewel : Flash ."	1.55212501436	Help	Fend
+"The New York Times published on december 12 an article called Adobe 's Deal for Macromedia May Help It Fend Off Microsof "" were they say that __ got the control of __ 's crown jewel : Flash ."	1.56777654794	were	Microsof
+"The New York Times published on december 12 an article called Adobe 's Deal for Macromedia May Help It Fend Off Microsof "" were they say that __ got the control of __ 's crown jewel : Flash ."	78.3048545012	say	New	__ got the control of __ 's crown jewel
+"The New York Times published on december 12 an article called Adobe 's Deal for Macromedia May Help It Fend Off Microsof "" were they say that __ got the control of __ 's crown jewel : Flash ."	5.8206111753	got	the control of
+Furthermore , Novartis plans to also purchase Eon Labs ' one third of active stock on the New York Stock Exchange ( NYSE ) for around $ 1 billion .	285.86405249	plans	Novartis	Exchange ( NYSE ) for around $ 1 billion
+Furthermore , Novartis plans to also purchase Eon Labs ' one third of active stock on the New York Stock Exchange ( NYSE ) for around $ 1 billion .	55.5786976862	purchase	Novartis	Eon Labs	New	Exchange ( NYSE )
+Everyone Has One Blog Archive &amp;amp; uarr Google makes a smart move buying YouTube	2.76168828096	Has	Everyone	One Blog Archive &amp;amp;
+Everyone Has One Blog Archive &amp;amp; uarr Google makes a smart move buying YouTube	10.4736813551	makes	uarr Google	move
+Everyone Has One Blog Archive &amp;amp; uarr Google makes a smart move buying YouTube	3.01877376128	buying	a smart move
+( refer to my previous post about Google 's acquisition of Youtube here. ) So , it basically allows users to upload and share their videos. < p	11.3579041624	refer	my previous post
+( refer to my previous post about Google 's acquisition of Youtube here. ) So , it basically allows users to upload and share their videos. < p	1.70386197355	allows	users
+( refer to my previous post about Google 's acquisition of Youtube here. ) So , it basically allows users to upload and share their videos. < p	1.38850167794	share	their videos.
+Google to buy Youtube for 1.6 billion	8.21870945875	buy	Google	Youtube
+The purchase by Novartis of the 67.7 percent stake in Eon Labs held by Santo Holding ( Deutschland ) GmbH , __ __ ' majority shareholder , will be completed shortly following the expiration of the tender offer .	2.92566979124	held	Santo Holding	Deutschland
+The purchase by Novartis of the 67.7 percent stake in Eon Labs held by Santo Holding ( Deutschland ) GmbH , __ __ ' majority shareholder , will be completed shortly following the expiration of the tender offer .	34.8150795066	completed	shareholder	shortly following the expiration of the tender offer
+The purchase by Novartis of the 67.7 percent stake in Eon Labs held by Santo Holding ( Deutschland ) GmbH , __ __ ' majority shareholder , will be completed shortly following the expiration of the tender offer .	30.5285820685	following	shortly	the expiration of the tender offer
+Google announced yesterday that they have bought Youtube for $ 165 billion dollars in stock .	1.80921212377	announced	Google	yesterday
+Google announced yesterday that they have bought Youtube for $ 165 billion dollars in stock .	41.5420666818	have	Youtube for $ 165 billion dollars in stock
+Google announced yesterday that they have bought Youtube for $ 165 billion dollars in stock .	1.72283202208	bought	Youtube	$ 165 billion dollars in stock
+Novartis completes tender offer for Eon Labs , Inc. and purchase of majority stake	37.117004228	completes	tender offer	Eon Labs , Inc. and purchase of
+Adobe Systems and Macromedia Inc. are {joining this year to make a new company , called __ __ .	1.35324281723	{joining	Adobe Systems and Macromedia Inc.	this year to make a new company
+Adobe Systems and Macromedia Inc. are {joining this year to make a new company , called __ __ .	22.1992270876	make	Adobe Systems and Macromedia Inc.	a new company
+Adobe Systems and Macromedia Inc. are {joining this year to make a new company , called __ __ .	2.03897493079	called	a new company
+14 December - LAWFUEL - The Law News Network - Shearman &amp;amp; Sterling is advising Viacom and Paramount Pictures on the acquisition of DreamWorks LLC .	16.857630485	is	14 December	advising Viacom and Paramount Pictures	the acquisition of DreamWorks LLC
+14 December - LAWFUEL - The Law News Network - Shearman &amp;amp; Sterling is advising Viacom and Paramount Pictures on the acquisition of DreamWorks LLC .	176.141051868	advising	14 December - LAWFUEL - The Law News Network - Shearman &amp;amp; Sterling	Viacom	Paramount Pictures
+The entry is titled Adobe To Acquire Macromedia , and is filed under : Web , Tech &amp;amp; Design .	5.41370884415	is	The entry	titled Adobe	Acquire Macromedia
+The entry is titled Adobe To Acquire Macromedia , and is filed under : Web , Tech &amp;amp; Design .	1.13234037435	titled	The entry	Adobe To Acquire Macromedia ,
+The entry is titled Adobe To Acquire Macromedia , and is filed under : Web , Tech &amp;amp; Design .	1.02585461383	Acquire	Macromedia
+The entry is titled Adobe To Acquire Macromedia , and is filed under : Web , Tech &amp;amp; Design .	5.41370884415	is	The entry	titled Adobe	Acquire Macromedia
+The entry is titled Adobe To Acquire Macromedia , and is filed under : Web , Tech &amp;amp; Design .	2.68595512692	filed	entry	Web , Tech &amp;amp; Design
+Ola's thoughts : Google acquires YouTube	1.56609451566	acquires	Google
+Google just ate YouTube .	1.01897639745	ate	Google
+Google will acquire YouTube for a total of $ 1.65 BILLION in stock .	1.61941084096	acquire	Google	YouTube for a total of $ 1.65 BILLION in stock
+Novartis receives FTC clearance for Eon Labs purchase - MarketWatch	2.7239480578	receives	Novartis
+Adobe to buy Macromedia for $ 3.4 billion wwwk.macromedia.com	7.98479781096	buy	Macromedia	$ 3.4 billion
+Novartis to acquire Hexal AG and Eon Labs	4.23677504991	acquire	Hexal AG
+After the conversion of certain commercial agreements from debt to advances , Viacom expects a net purchase price for DreamWorks of about $ 600 million .	10.0949909041	expects	Viacom	a net purchase price for DreamWorks	about $ 600 million
+Google is reportedly in talks to acquire YouTube Inc. for $ 1.6 billion , The Wall Street Journal's online edition reported this afternoon .	2.04748112806	is	Google	acquire YouTube Inc.
+Google is reportedly in talks to acquire YouTube Inc. for $ 1.6 billion , The Wall Street Journal's online edition reported this afternoon .	2.67238131354	acquire	Google	YouTube Inc.
+Google is reportedly in talks to acquire YouTube Inc. for $ 1.6 billion , The Wall Street Journal's online edition reported this afternoon .	3.59515715552	reported	Google	this afternoon
+Why did Novartis acquire Eon Labs and integrate it with Sandoz ?	20.5733328158	did	Why	acquire Eon Labs
+Why did Novartis acquire Eon Labs and integrate it with Sandoz ?	3.55695543005	acquire	with Sandoz
+Why did Novartis acquire Eon Labs and integrate it with Sandoz ?	4.94364919227	integrate	it with Sandoz
+However , by the acquisition of the 67.5 % shareholding , Novartis will also acquire sole control over Eon Labs .	162.683181421	acquire	by the acquisition of the 67.5 % shareholding	Novartis	sole control over
+Google buys YouTube Flash application with Users for 1.65 Billion .	28.8528784129	buys	Google	YouTube Flash	Users for 1.65 Billion
+Speaking at the recent ad : tech conference , Ms Reider said that Google had bought YouTube at just the right time , Ad Age reports .	1.99421279447	Speaking	Reider
+Speaking at the recent ad : tech conference , Ms Reider said that Google had bought YouTube at just the right time , Ad Age reports .	4.6495954506	said	Ms Reider	Google	bought YouTube
+Speaking at the recent ad : tech conference , Ms Reider said that Google had bought YouTube at just the right time , Ad Age reports .	2.15200857096	had	Google	YouTube
+Speaking at the recent ad : tech conference , Ms Reider said that Google had bought YouTube at just the right time , Ad Age reports .	2.10010998318	bought	Google	YouTube
+Speaking at the recent ad : tech conference , Ms Reider said that Google had bought YouTube at just the right time , Ad Age reports .	2.15575239564	reports	Google	Ad Age
+When Google announced the buying of YouTube for 1.65 billions , some people began searching the keyword utube and ending on www.utube.com	1.3579723529	announced	Google	the buying of YouTube
+When Google announced the buying of YouTube for 1.65 billions , some people began searching the keyword utube and ending on www.utube.com	2.5631824195	began	people	the keyword utube
+When Google announced the buying of YouTube for 1.65 billions , some people began searching the keyword utube and ending on www.utube.com	21.0173655844	searching	people	the keyword utube and ending
+BREAKING : Google To Buy YouTube For $ 1.65 Billion	13.5474869941	Buy	Google	YouTube
+Viacom Gets Dreamworks __ has bought __ __ Studio .	4.59483108432	Gets	Viacom	Dreamworks
+Viacom Gets Dreamworks __ has bought __ __ Studio .	1.94197382219	has	bought
+Around that same time , Viacom completed its acquisition of DreamWorks SKG , so CBS Paramount Television will now distribute __ ' library of films ( such as Shrek and Gladiator ) and TV series ( such as Spin City , which Paramount TV had already syndicated since 2000 , and Father of the Pride ) .	62.1491807179	completed	time	Viacom	its acquisition of DreamWorks SKG
+Around that same time , Viacom completed its acquisition of DreamWorks SKG , so CBS Paramount Television will now distribute __ ' library of films ( such as Shrek and Gladiator ) and TV series ( such as Spin City , which Paramount TV had already syndicated since 2000 , and Father of the Pride ) .	2.1754307104	distribute	Around that same time	CBS Paramount Television
+Around that same time , Viacom completed its acquisition of DreamWorks SKG , so CBS Paramount Television will now distribute __ ' library of films ( such as Shrek and Gladiator ) and TV series ( such as Spin City , which Paramount TV had already syndicated since 2000 , and Father of the Pride ) .	13.4581048782	had	CBS Paramount Television	Paramount TV	syndicated since 2000
+Around that same time , Viacom completed its acquisition of DreamWorks SKG , so CBS Paramount Television will now distribute __ ' library of films ( such as Shrek and Gladiator ) and TV series ( such as Spin City , which Paramount TV had already syndicated since 2000 , and Father of the Pride ) .	2.19706237498	syndicated	Paramount TV
+"Sumner Redstone , Chairman of the Board and CEO of Viacom , said , "" The acquisition of DreamWorks is an enormous step forward in our ongoing work to unlock the full potential of __ 's brands and businesses. """	842.254038604	said	"Sumner	Chairman of the Board and CEO of	"" The acquisition of DreamWorks is
+"Sumner Redstone , Chairman of the Board and CEO of Viacom , said , "" The acquisition of DreamWorks is an enormous step forward in our ongoing work to unlock the full potential of __ 's brands and businesses. """	5.74856147788	is	The acquisition of DreamWorks
+"Sumner Redstone , Chairman of the Board and CEO of Viacom , said , "" The acquisition of DreamWorks is an enormous step forward in our ongoing work to unlock the full potential of __ 's brands and businesses. """	7.31076069589	unlock	of the	The acquisition of DreamWorks	the full potential of __ 's brands and businesses.
+Paramount Pictures , a subsidiary of Viacom , is acquiring DreamWorks in a $ 1.6 billion transaction , which includes $ 774 million in cash ; the remainder of the purchase price is the assumption of debt and certain other obligations .	79.4201889562	is	Paramount Pictures	acquiring DreamWorks	the purchase price	the assumption of debt and certain other obligations
+Paramount Pictures , a subsidiary of Viacom , is acquiring DreamWorks in a $ 1.6 billion transaction , which includes $ 774 million in cash ; the remainder of the purchase price is the assumption of debt and certain other obligations .	18.3529372154	acquiring	DreamWorks in a $ 1.6 billion transaction
+Paramount Pictures , a subsidiary of Viacom , is acquiring DreamWorks in a $ 1.6 billion transaction , which includes $ 774 million in cash ; the remainder of the purchase price is the assumption of debt and certain other obligations .	357.059401813	includes	Paramount Pictures	million	remainder of the purchase price	obligations
+Paramount Pictures , a subsidiary of Viacom , is acquiring DreamWorks in a $ 1.6 billion transaction , which includes $ 774 million in cash ; the remainder of the purchase price is the assumption of debt and certain other obligations .	79.4201889562	is	Paramount Pictures	acquiring DreamWorks	the purchase price	the assumption of debt and certain other obligations
+Novartis will buy Eon Labs and Hexal	3.82209795092	buy	Novartis	Eon Labs
+Will the Google purchase of YouTube make __ partner MySpace upset ?	5.98111995515	make	purchase of YouTube
+In a huge deal just announced , Adobe has agreed to acquire Macromedia in an all - stock transaction valued at $ 3.4 billion .	109.37984288	announced	a huge deal	at $ 3.4 billion
+In a huge deal just announced , Adobe has agreed to acquire Macromedia in an all - stock transaction valued at $ 3.4 billion .	23.7841098791	agreed	Adobe	to acquire Macromedia in an all - stock transaction valued at $ 3.4 billion
+In a huge deal just announced , Adobe has agreed to acquire Macromedia in an all - stock transaction valued at $ 3.4 billion .	107.102368079	acquire	Macromedia in an all - stock transaction	at $ 3.4 billion
+In a huge deal just announced , Adobe has agreed to acquire Macromedia in an all - stock transaction valued at $ 3.4 billion .	4.30394049336	valued	all - stock transaction	at $ 3.4 billion
+Publish : Corel CEO Sees Opportunities in Adobe - Macromedia Merger	5.02084228656	Publish	Corel CEO Sees Opportunities in Adobe - Macromedia
+Google bought Youtube! ?	1.03910462433	bought	Google
+LISTEN Google Weds YouTube - KYW's Ian Bush and KYW Tech Reporter Bob Bicknell discuss the $ 1.65 billion stock deal that makes __ part of __ .	892.25412959	LISTEN	Google Weds YouTube
+LISTEN Google Weds YouTube - KYW's Ian Bush and KYW Tech Reporter Bob Bicknell discuss the $ 1.65 billion stock deal that makes __ part of __ .	6.3411840833	makes	deal	__ part of __
+[ ... ] Commentators around the world are still trying to make sense of Google 's $ 1.7 billion acquisition of YouTube : is it the end of a free - wheeling era or the beginning of a Golden Information Age ?	25.6536740776	trying	world	sense of Google	$ 1.7 billion acquisition
+[ ... ] Commentators around the world are still trying to make sense of Google 's $ 1.7 billion acquisition of YouTube : is it the end of a free - wheeling era or the beginning of a Golden Information Age ?	59.0122358119	make	sense	Google 's $ 1.7 billion acquisition
+[ ... ] Commentators around the world are still trying to make sense of Google 's $ 1.7 billion acquisition of YouTube : is it the end of a free - wheeling era or the beginning of a Golden Information Age ?	102.44575654	is	Google	of YouTube	end	free	wheeling era
+Google finalises YouTube buy with share issue	1.17626854681	finalises	YouTube
+Google finalises YouTube buy with share issue	5.2383884382	buy	YouTube
+When Viacom announced its acquisition of DreamWorks SKG , __ stated it	4.89222230592	announced	Viacom	its acquisition of DreamWorks SKG
+Google Inc. snapped up YouTube Inc. for US $ 1.65 billion yesterday in a deal that catapults the Internet search leader to a leading role in the online video revolution .	3.40601002925	snapped	Google Inc.	up YouTube Inc. for US $ 1.65 billion yesterday	deal
+Google Inc. snapped up YouTube Inc. for US $ 1.65 billion yesterday in a deal that catapults the Internet search leader to a leading role in the online video revolution .	8.08438537918	catapults	the Internet search
+Last week the internet Giant Google bought Youtube for 1.65 billion Dollars .	73.1828972165	bought	internet Giant Google	Youtube	1.65 billion Dollars
+Google is buying video - sharing website YouTube for $ 1.65bn ( 883m ) in shares after a weekend of speculation that a deal was in the offing .	1.2982066867	is	Google	buying video - sharing website YouTube for
+Google is buying video - sharing website YouTube for $ 1.65bn ( 883m ) in shares after a weekend of speculation that a deal was in the offing .	23.36523535	buying	Google	video - sharing website YouTube for $ 1.65bn ( 883m ) in shares after a weekend of speculation
+Google is buying video - sharing website YouTube for $ 1.65bn ( 883m ) in shares after a weekend of speculation that a deal was in the offing .	240.297226809	sharing	video	website YouTube	speculation that a deal was in the offing
+Google is buying video - sharing website YouTube for $ 1.65bn ( 883m ) in shares after a weekend of speculation that a deal was in the offing .	1.79196638821	was	Google	a deal
+Adobe has just bought Macromedia for $ 3.4 Billion !	4.33708919381	has	Adobe	just bought Macromedia for $ 3.4 Billion
+Adobe has just bought Macromedia for $ 3.4 Billion !	22.544131773	bought	Adobe	Macromedia	$ 3.4 Billion
+So , it's finally official that Google is acquiring YouTube .	3.35217783049	is	Google	acquiring YouTube
+So , it's finally official that Google is acquiring YouTube .	1.51396815213	acquiring	Google	YouTube
+Recently , Adobe Systems Incorporated acquired Macromedia , Inc .	4.76091242268	acquired	Adobe Systems Incorporated	Macromedia
+[ ] BusinessWeek has an article where Microsoft's CEO Steve Ballmer speaks out about , among other things , the recent Google - YouTube acquisition .	2.6093990554	has	article
+[ ] BusinessWeek has an article where Microsoft's CEO Steve Ballmer speaks out about , among other things , the recent Google - YouTube acquisition .	1.51718131986	speaks	Ballmer
+Earlier this month , Viacom ( Research ) agreed to buy DreamWorks Animation's privately held sibling __ __ and as part of that deal , the publicly traded studio will get $ 75 million in cash to pay down debt .	3.58766004084	agreed	Earlier this month	Viacom ( Research	to buy DreamWorks Animation's privately held sibling __ __ and as
+Earlier this month , Viacom ( Research ) agreed to buy DreamWorks Animation's privately held sibling __ __ and as part of that deal , the publicly traded studio will get $ 75 million in cash to pay down debt .	2.82468663901	buy	DreamWorks Animation's
+Earlier this month , Viacom ( Research ) agreed to buy DreamWorks Animation's privately held sibling __ __ and as part of that deal , the publicly traded studio will get $ 75 million in cash to pay down debt .	2.44136179416	held	DreamWorks Animation's
+Earlier this month , Viacom ( Research ) agreed to buy DreamWorks Animation's privately held sibling __ __ and as part of that deal , the publicly traded studio will get $ 75 million in cash to pay down debt .	1.35655759944	traded	publicly
+Earlier this month , Viacom ( Research ) agreed to buy DreamWorks Animation's privately held sibling __ __ and as part of that deal , the publicly traded studio will get $ 75 million in cash to pay down debt .	13.9730921683	get	publicly	$ 75 million in cash to pay down debt
+Earlier this month , Viacom ( Research ) agreed to buy DreamWorks Animation's privately held sibling __ __ and as part of that deal , the publicly traded studio will get $ 75 million in cash to pay down debt .	9.47935834171	pay	Earlier this month	DreamWorks	cash	debt
+EMediaLive.com : Adobe 's Proposed Acquisition of Macromedia Clears U.S. Department of Justice Review	10.6729175753	Proposed	Adobe	Acquisition of Macromedia
+With the conclusion of Adobe Systems Incorporated 's acquisition of Macromedia , Inc. , many __ software applications such as Dreamweaver , Flash and Studio are available at discounted rates through the University's existing AJCU __ software agreement .	244.387658648	are	With the conclusion of Adobe Systems Incorporated 's acquisition of Macromedia , Inc.
+With the conclusion of Adobe Systems Incorporated 's acquisition of Macromedia , Inc. , many __ software applications such as Dreamweaver , Flash and Studio are available at discounted rates through the University's existing AJCU __ software agreement .	107.27773089	discounted	rates	the University's existing AJCU __ software agreement
+With the conclusion of Adobe Systems Incorporated 's acquisition of Macromedia , Inc. , many __ software applications such as Dreamweaver , Flash and Studio are available at discounted rates through the University's existing AJCU __ software agreement .	27.117271731	existing	AJCU __ software agreement
+The announcement is expected this afternoon or evening that Google 's bought Youtube for 1.6 billion .	2.15819666212	is	The announcement	expected this afternoon
+The announcement is expected this afternoon or evening that Google 's bought Youtube for 1.6 billion .	4.98637830587	expected	The announcement	this afternoon or evening
+The announcement is expected this afternoon or evening that Google 's bought Youtube for 1.6 billion .	4.65653849891	bought	Google	Youtube	1.6 billion
+Yesterday Adobe Systems announced it acquired software maker Macromedia Inc. in a stock deal worth a reported $ 3.4 billion .	13.2302073238	announced	Yesterday Adobe Systems	it acquired software
+Yesterday Adobe Systems announced it acquired software maker Macromedia Inc. in a stock deal worth a reported $ 3.4 billion .	14.9115270631	reported	Yesterday Adobe	$ 3.4 billion
+The Commission therefore has concluded that , unremedied , the Novartis - Eon deal would be likely to result in higher prices and other anticompetitive effects in each of these generic markets .	3.74839360165	has	The Commission	anticompetitive effects
+The Commission therefore has concluded that , unremedied , the Novartis - Eon deal would be likely to result in higher prices and other anticompetitive effects in each of these generic markets .	10.1815671639	concluded	The Commission	the	higher prices and other anticompetitive effects in each of these generic markets
+The Commission therefore has concluded that , unremedied , the Novartis - Eon deal would be likely to result in higher prices and other anticompetitive effects in each of these generic markets .	36.138260258	be	Novartis - Eon deal	higher prices and other anticompetitive effects in each of these generic markets
+The Commission therefore has concluded that , unremedied , the Novartis - Eon deal would be likely to result in higher prices and other anticompetitive effects in each of these generic markets .	1.67192442247	result	the Novartis - Eon deal	higher prices and other anticompetitive effects in each of these generic markets
+Flash move by Adobe to buy up Macromedia .	5.97235443126	buy	up Macromedia
+Google makes video play with YouTube buy ( October 9 , 2006 )	2.23533678534	makes	Google	video play
+Adobe Systems ' proposed buyout of Macromedia is expected to close Saturday , December 3 , both companies said Thursday night .	1.59556721321	proposed	Adobe	buyout of Macromedia
+Adobe Systems ' proposed buyout of Macromedia is expected to close Saturday , December 3 , both companies said Thursday night .	30.4998604863	is	Macromedia	expected to close Saturday , December 3
+Adobe Systems ' proposed buyout of Macromedia is expected to close Saturday , December 3 , both companies said Thursday night .	28.393226509	expected	buyout of Macromedia	close Saturday	3
+Adobe Systems ' proposed buyout of Macromedia is expected to close Saturday , December 3 , both companies said Thursday night .	7.70805010147	close	buyout	Macromedia	Saturday	December
+Adobe Systems ' proposed buyout of Macromedia is expected to close Saturday , December 3 , both companies said Thursday night .	4.5987491354	said	companies	Thursday night
+NEWS : Adobe 's Proposed Acquisition of Macromedia Clears U.S. Department of Justice	55.4397590882	Proposed	Adobe	Acquisition of Macromedia Clears U.S. Department
+After roomers spilled around the web last week about Google offering $ 1.65 Billion to buy YouTube , this offer had been confirmed and __ has accepted .	22.8176917839	spilled	roomers	around the web last week	Google
+After roomers spilled around the web last week about Google offering $ 1.65 Billion to buy YouTube , this offer had been confirmed and __ has accepted .	2.39359710747	offering	$ 1.65 Billion
+After roomers spilled around the web last week about Google offering $ 1.65 Billion to buy YouTube , this offer had been confirmed and __ has accepted .	1.53615966229	had	roomers
+Novartis completes acquisition of 98 % Eon Labs	1.30025484995	completes	acquisition
+something happened and it didnt go through , so now they are trying again with Google now owning Youtube .	1.17904367767	happened	something
+something happened and it didnt go through , so now they are trying again with Google now owning Youtube .	1.97876390576	trying	Google
+something happened and it didnt go through , so now they are trying again with Google now owning Youtube .	2.14189466039	owning	Google	Youtube
+NOTE : Viacom acquired Dreamworks in early 2006 , selling off __ ' past films to finance the purchase .	1.32119594657	acquired	Viacom
+NOTE : Viacom acquired Dreamworks in early 2006 , selling off __ ' past films to finance the purchase .	5.21135975425	selling	Viacom acquired Dreamworks	films
+NOTE : Viacom acquired Dreamworks in early 2006 , selling off __ ' past films to finance the purchase .	2.71957357297	finance	NOTE	the purchase
+The Redmond company unveiled its new collection of professional graphic design and animation tools Wednesday , moving into the longtime domain of __ __ and the company Adobe is acquiring , Macromedia .	49.9679800209	unveiled	The Redmond company	its new collection of professional graphic design and animation tools Wednesday	domain of __ __ and the company Adobe
+The Redmond company unveiled its new collection of professional graphic design and animation tools Wednesday , moving into the longtime domain of __ __ and the company Adobe is acquiring , Macromedia .	773.197490568	moving	animation	into the longtime domain of __ __ and the company
+The Redmond company unveiled its new collection of professional graphic design and animation tools Wednesday , moving into the longtime domain of __ __ and the company Adobe is acquiring , Macromedia .	218.216027777	is	The Redmond company	collection	design	domain	the company Adobe	acquiring	Macromedia
+The Redmond company unveiled its new collection of professional graphic design and animation tools Wednesday , moving into the longtime domain of __ __ and the company Adobe is acquiring , Macromedia .	3.06245141903	acquiring	the company Adobe
+Google forced to buy YouTube .	3.22289908618	forced	Google	buy YouTube
+Google forced to buy YouTube .	2.16563857519	buy	Google	YouTube
+The worst possible outcome for them ( as Internet companies ) would be Google acquiring YouTube .	1.63079993999	be	Internet
+The worst possible outcome for them ( as Internet companies ) would be Google acquiring YouTube .	1.35511454106	acquiring	YouTube
+Skittish Adobe buys Macromedia - MarketWatch	2.36850764503	buys	Skittish Adobe
+In 1994 he established the Andre Agassi Foundation to help at - risk youth in his hometown , Las Vegas , Nevada .	48.976833848	established	Andre Agassi Foundation	help	, Nevada
+In 1994 he established the Andre Agassi Foundation to help at - risk youth in his hometown , Las Vegas , Nevada .	3.40148570597	help	Foundation	risk youth
+Birthday - Composer George Gershwin ( 1898 - 1937 ) was born in Brooklyn , New York .	8.65496274631	was	Birthday - Composer George Gershwin ( 1898	Brooklyn , New York
+Birthday - Composer George Gershwin ( 1898 - 1937 ) was born in Brooklyn , New York .	2.05330798182	born	Birthday
+Franz Kafka was born at Prague , Bohemia on this day in 1883 .	3.99145363976	was	Kafka	Prague
+Franz Kafka was born at Prague , Bohemia on this day in 1883 .	1.41469375835	born	Franz Kafka
+Andre Kirk Agassi was born on April 29 1970 in Las Vegas , Nevada and turned pro in 1986 .	27.0260939352	was	Andre Kirk Agassi	pro	1986
+Andre Kirk Agassi was born on April 29 1970 in Las Vegas , Nevada and turned pro in 1986 .	2.11408846769	born	Andre Kirk
+Andre Kirk Agassi was born on April 29 1970 in Las Vegas , Nevada and turned pro in 1986 .	4.9412915001	turned	Andre Kirk Agassi	pro in 1986
+The partnership includes the creation of new 24 Hour Fitness __ Super - Sport Clubs the first of which debuted in Agassi 's Las Vegas hometown	483.550353815	includes	The partnership	the creation of new 24 Hour Fitness __ Super - Sport Clubs the first of which debuted
+Franz Kafka was born in 1883 in Prague , now in the Czech Republic but then part of Austria .	7.49985553723	was	Franz Kafka	1883
+Franz Kafka was born in 1883 in Prague , now in the Czech Republic but then part of Austria .	3.07763867418	born	Franz Kafka	1883
+Charles Spencer Chaplin was born on 16 April 1889 in London and died on 25 December 1977 in Corsier sur Vevey in Switzerland .	1.447300878	was	Charles Spencer Chaplin
+Charles Spencer Chaplin was born on 16 April 1889 in London and died on 25 December 1977 in Corsier sur Vevey in Switzerland .	3.26575641141	born	Charles Spencer Chaplin	16 April 1889
+Andre Kirk Agassi was born on April 29th 1970 in Las Vegas , Nevada .	6.77979897295	was	Andre Kirk Agassi
+Andre Kirk Agassi was born on April 29th 1970 in Las Vegas , Nevada .	2.33070181385	born	Andre Kirk
+Franz Kafka ( 1883 - 1924 ) was born in Prague , Czechoslovakia to a Jewish	18.3579954216	was	Franz Kafka (	Prague
+Franz Kafka ( 1883 - 1924 ) was born in Prague , Czechoslovakia to a Jewish	4.13147045753	born	Franz Kafka	Prague	Czechoslovakia
+No one expressed this tragic intuition more powerfully than Franz Kafka , a German Jewish writer born in Prague in 1883 when the city was still part of the Austrian Empire .	3.07165552048	expressed	No one	intuition
+No one expressed this tragic intuition more powerfully than Franz Kafka , a German Jewish writer born in Prague in 1883 when the city was still part of the Austrian Empire .	2.38146836576	born	writer
+No one expressed this tragic intuition more powerfully than Franz Kafka , a German Jewish writer born in Prague in 1883 when the city was still part of the Austrian Empire .	2.54875773548	was	city
+Andre Agassi ( 1970 - ) Champion tennis player ; born in Las Vegas .	2.17990506618	born	Andre	Las
+Agassi , an ethnic Armenian , was born and raised in Las Vegas , and lives there when not on tour .	17.6026271844	was	Agassi	ethnic Armenian	tour
+Agassi , an ethnic Armenian , was born and raised in Las Vegas , and lives there when not on tour .	23.584956705	born	Agassi	an ethnic Armenian	Las Vegas
+Agassi , an ethnic Armenian , was born and raised in Las Vegas , and lives there when not on tour .	5.83979809347	raised	an ethnic Armenian
+Agassi , an ethnic Armenian , was born and raised in Las Vegas , and lives there when not on tour .	8.52493890583	lives	ethnic Armenian	there
+It's the birthday of the novelist and short - story writer Franz Kafka , ( books by this author ) , born in Prague ( 1883 ) .	198.242397265	It's	birthday	the novelist and short	story	Kafka
+It's the birthday of the novelist and short - story writer Franz Kafka , ( books by this author ) , born in Prague ( 1883 ) .	3.98459530413	born	Prague	1883
+Andre Agassi was born on the 29th of April 1970 in Las Vegas , Nevada .	3.45856374112	was	Andre Agassi	29th
+Andre Agassi was born on the 29th of April 1970 in Las Vegas , Nevada .	1.4770432862	born	Andre Agassi
+Andre Agassi was born April 29 , 1970 , Las Vegas , Nevada .	2.96378158132	was	Andre Agassi
+Andre Agassi was born April 29 , 1970 , Las Vegas , Nevada .	2.93061440662	born	Andre Agassi	April
+__ __ , actually Charles Spencer Chaplin , was born in London , England , on April 16th 1889 .	5.80287707466	was	Spencer Chaplin
+__ __ , actually Charles Spencer Chaplin , was born in London , England , on April 16th 1889 .	1.09930736179	born	Spencer Chaplin
+Born Charles Spencer Chaplin , in London , in 1989 , he came to America and became the most successful silent film era comedian .	2.89798998687	Born	Charles Spencer Chaplin	1989
+Born Charles Spencer Chaplin , in London , in 1989 , he came to America and became the most successful silent film era comedian .	3.77177774942	came	Spencer Chaplin	America
+Born Charles Spencer Chaplin , in London , in 1989 , he came to America and became the most successful silent film era comedian .	3.77195064205	became	in 1989
+Sir Charles Spencer Chaplin Jr was born on April 16 , 1889 in London and died on Christmas Day , December 25 , 1977 in Switzerland in his sleep at age 88 .	1.75837628595	was	Sir Charles Spencer Chaplin Jr
+Sir Charles Spencer Chaplin Jr was born on April 16 , 1889 in London and died on Christmas Day , December 25 , 1977 in Switzerland in his sleep at age 88 .	2.80942242371	born	Sir Charles Spencer Chaplin Jr
+Sir Charles Spencer Chaplin Jr was born on April 16 , 1889 in London and died on Christmas Day , December 25 , 1977 in Switzerland in his sleep at age 88 .	56.7609265318	died	Charles	Jr	on Christmas Day	December
+- Franz Kafka - ( 1883 - 1924 ) - born in Prague , then part of the Austro - Hungarian empire .	2.65185921649	born	Franz Kafka	Prague
+Andre Agassi did a similar thing in his hometown of Las Vegas a few years ago .	356.127035876	did	Andre Agassi	a similar thing in his hometown of Las Vegas a few years ago
+The last stand for tennis great Andre Agassi gets underway on opening night when the36 - year - old Las Vegas native takes on Andrei Pavel of Romania on Center Court .	1.61258070966	gets	Vegas
+The last stand for tennis great Andre Agassi gets underway on opening night when the36 - year - old Las Vegas native takes on Andrei Pavel of Romania on Center Court .	523.312651458	takes	tennis great Andre Agassi	underway	the36 - year	Vegas native	Pavel
+Charlie Chaplin was born on April 15 , 1889 , in London , England to Charles __ , Sr. , and Hannah Hill ( Lynn , Kenneth , pg.376 ) .	2.05470525494	was	Charlie Chaplin	15
+Charlie Chaplin was born on April 15 , 1889 , in London , England to Charles __ , Sr. , and Hannah Hill ( Lynn , Kenneth , pg.376 ) .	5.76550804518	born	Charlie Chaplin	on April 15 , 1889
+For years , Agassi has raised money for underprivileged youth in his hometown of Las Vegas , and founded a school built around his strong belief system .	1.25868017314	has	Agassi
+For years , Agassi has raised money for underprivileged youth in his hometown of Las Vegas , and founded a school built around his strong belief system .	2.13849766262	raised	money
+For years , Agassi has raised money for underprivileged youth in his hometown of Las Vegas , and founded a school built around his strong belief system .	2.3667854793	founded	a
+For years , Agassi has raised money for underprivileged youth in his hometown of Las Vegas , and founded a school built around his strong belief system .	4.8255009922	built	school	around his strong belief system
+Andre Kirk Agassi ( born April 29 1970 , in Las Vegas , Nevada ) is a former World No. 1 professional tennis player from the United States .	2.22522303785	born	Andre Kirk
+Andre Kirk Agassi ( born April 29 1970 , in Las Vegas , Nevada ) is a former World No. 1 professional tennis player from the United States .	3.54992226684	is	Andre	former World No.
+Franz Kafka was born on July 3 , 1883 , in Prague .	3.69636166461	was	Kafka	July 3
+Franz Kafka was born on July 3 , 1883 , in Prague .	4.33336354021	born	Franz Kafka	July
+It's the birthday of George Gershwin , born Jacob Gershowitz in Brooklyn , New York ( 1898 ) .	1.8889701146	It's	Gershwin
+It's the birthday of George Gershwin , born Jacob Gershowitz in Brooklyn , New York ( 1898 ) .	2.76998626581	born	Jacob Gershowitz
+Andre Kirk Agassi , ( born April 29 1970 , in Las Vegas , Nevada ) is a professional male former World No. 1 tennis player from the United States .	2.60770360175	born	Andre Kirk
+Andre Kirk Agassi , ( born April 29 1970 , in Las Vegas , Nevada ) is a professional male former World No. 1 tennis player from the United States .	1.827278342	is	Andre
+__ __ ( Charles Spencer Chaplin ) born April 16 , 1889 in Lambeth , London , England , UK. Dies : December 25 , 1977 .	6.29278600557	born	Chaplin	April	UK.
+__ __ ( Charles Spencer Chaplin ) born April 16 , 1889 in Lambeth , London , England , UK. Dies : December 25 , 1977 .	8.74834781129	Dies	December 25 , 1977
+I t's the birthday of the filmmaker and actor Charlie Chaplin , ( books by this author ) born in London ( 1889 ) .	1.62013897552	t's	I
+I t's the birthday of the filmmaker and actor Charlie Chaplin , ( books by this author ) born in London ( 1889 ) .	2.22077131829	born	Chaplin
+"The Andre Agassi Charitable Foundation in his home city of Las Vegas , Nevada , has raised millions of dollars through its "" Grand Slam for Children "" benefit concerts ."	2.08111931582	has	"The Andre
+"The Andre Agassi Charitable Foundation in his home city of Las Vegas , Nevada , has raised millions of dollars through its "" Grand Slam for Children "" benefit concerts ."	3.14790645144	raised	millions	dollars
+( Almanac - People ) Kafka , Franz author Birthplace : Prague Born : 1883 Died : 1924 Information Please Database , .. .	1.4904462396	Died	1883
+Charlie Chaplin , who died in 1977 , was born in London to music - hall parents .	1.17597563722	died	Charlie Chaplin	in 1977
+Charlie Chaplin , who died in 1977 , was born in London to music - hall parents .	6.05894708649	was	Charlie Chaplin	in London to music - hall parents
+Charlie Chaplin , who died in 1977 , was born in London to music - hall parents .	1.8267963615	born	Charlie Chaplin	hall parents
+Andre Agassi , professional tennis player , was born in Las Vegas in 1970 .	3.01050555011	was	Andre Agassi
+Andre Agassi , professional tennis player , was born in Las Vegas in 1970 .	2.03348114482	born	Andre Agassi
+I was born Charles Spencer Chaplin in Walworth , London on April 16 , 1889 .	5.70856365978	born	Charles Spencer Chaplin	Walworth
+Kafka was born into a Jewish middle - class family in Prague , Bohemia ( now in the Czech Republic ) , on July 3 , 1883 .	1.37038864222	was	Kafka
+Kafka was born into a Jewish middle - class family in Prague , Bohemia ( now in the Czech Republic ) , on July 3 , 1883 .	9.56374071563	born	Kafka	a Jewish middle - class family in Prague
+Agassi , a Las Vegas Native , retired due to Sciatica caused by two bulging discs in his back .	21.8677454914	retired	Agassi	a Las Vegas	Sciatica
+Agassi , a Las Vegas Native , retired due to Sciatica caused by two bulging discs in his back .	86.9390522079	caused	a Las Vegas Native	retired due to Sciatica	two bulging discs in his back
+Agassi , a Las Vegas Native , retired due to Sciatica caused by two bulging discs in his back .	13.0609400282	bulging	Agassi	discs	his back
+__ __ ( 1898 - 1937 ) George Gershwin , born in Brooklyn , New York on 26 September 1898 , was born the second of four children of Morris and Rose Gershovitz , Russia.. .	558.133030102	born	Gershwin	the second of four children of Morris and Rose Gershovitz	Russia..
+__ __ ( 1898 - 1937 ) George Gershwin , born in Brooklyn , New York on 26 September 1898 , was born the second of four children of Morris and Rose Gershovitz , Russia.. .	558.133030102	born	Gershwin	the second of four children of Morris and Rose Gershovitz	Russia..
+Franz Kafka ( born July 3 , 1883 , Prague , Bohemia , Austria - Hungary - died June 3 , 1924 , Kierling , near Vienna , Austria ) Czech writer who wrote in German .	2.30150092662	born	Franz Kafka
+Franz Kafka ( born July 3 , 1883 , Prague , Bohemia , Austria - Hungary - died June 3 , 1924 , Kierling , near Vienna , Austria ) Czech writer who wrote in German .	1.19689372467	died	June 3
+Franz Kafka ( born July 3 , 1883 , Prague , Bohemia , Austria - Hungary - died June 3 , 1924 , Kierling , near Vienna , Austria ) Czech writer who wrote in German .	2.34119663242	wrote	writer
+Andre Kirk __ , son of , Emmanuel Mike Agassi , was born on April 29 , 1970 in Las Vegas Nevada .	4.62209181385	was	Vegas Nevada
+Andre Kirk __ , son of , Emmanuel Mike Agassi , was born on April 29 , 1970 in Las Vegas Nevada .	3.6481623559	born	Andre Kirk
+Andre Kirk Agassi was born April 29 , 1970 , in Las Vegas , Nevada , to Mike and Elizabeth __ .	3.73012456954	was	Andre Kirk Agassi
+Andre Kirk Agassi was born April 29 , 1970 , in Las Vegas , Nevada , to Mike and Elizabeth __ .	7.04872718923	born	Andre Kirk	April 29
+Gershwin ( 1898 - 1937 ) , was born in Brooklyn , New York , the son of	6.8493014808	was	Gershwin	Brooklyn , New York
+Gershwin ( 1898 - 1937 ) , was born in Brooklyn , New York , the son of	2.26234250903	born	Gershwin	Brooklyn
+While there is no link with any known location ( other than perhaps Kafka 's hometown of Prague ) the surroundings are modern and urban .	2.1226870671	is	link
+While there is no link with any known location ( other than perhaps Kafka 's hometown of Prague ) the surroundings are modern and urban .	3.40095280391	known	any	location
+While there is no link with any known location ( other than perhaps Kafka 's hometown of Prague ) the surroundings are modern and urban .	2.65309070126	are	Kafka 's hometown of Prague	surroundings
+The novelist Franz Kafka was born of Jewish parentage in Prague in 1883 .	2.1832535718	was	Kafka
+The novelist Franz Kafka was born of Jewish parentage in Prague in 1883 .	7.98797951173	born	Franz Kafka	parentage
+Charles Spencer Chaplin was born on April 16 , 1889 in London , England , to Charles and Hannah __ .	1.13640885036	was	Charles Spencer Chaplin
+Charles Spencer Chaplin was born on April 16 , 1889 in London , England , to Charles and Hannah __ .	3.30095674256	born	Charles Spencer Chaplin	on April 16 , 1889
+Andre Agassi is a Las Vegas native .	1.58762919333	is	Andre
+And Andre Agassi had a good week in his hometown of Las Vegas .	7.91975534655	had	Andre Agassi	good week
+__ __ was born Jacob Gershwin on Sept. 26 , 1898 in what is now Brooklyn , New York .	2.20827573414	was	Gershwin
+__ __ was born Jacob Gershwin on Sept. 26 , 1898 in what is now Brooklyn , New York .	4.93453365451	born	Jacob Gershwin
+Andre Kirk Agassi was born in the year 1970 in Las Vegas .	7.26749723448	was	Andre Kirk Agassi
+Andre Kirk Agassi was born in the year 1970 in Las Vegas .	3.283056954	born	Andre Kirk Agassi
+Chaplin was born into a London music hall family .	21.2348817077	was	Chaplin	London music hall family
+Chaplin was born into a London music hall family .	7.86063029819	born	Chaplin	a London music hall family
+George Gershwin was born in Brooklyn , New York on September 26 , 1898 .	1.48471294284	was	George Gershwin	in Brooklyn , New York on September 26 , 1898
+George Gershwin was born in Brooklyn , New York on September 26 , 1898 .	2.01766289835	born	George Gershwin
+Born : Charles Spencer Chaplin , 16 April 1889 , Walworth , London , England , UK	7.8572289144	Born	Charles Spencer Chaplin
+About the Artist : Charlie Chaplin ( 1889 1977 ) was born in London , England .	17.699090513	was	Charlie Chaplin ( 1889 1977
+About the Artist : Charlie Chaplin ( 1889 1977 ) was born in London , England .	3.22047626721	born	Charlie Chaplin
+Franz Kafka was born on 3 July 1883 in Prague , the boehmischen capital .	6.18751365579	was	Franz Kafka	3
+Franz Kafka was born on 3 July 1883 in Prague , the boehmischen capital .	1.33646489109	born	Franz Kafka
+George Gershwin was born Jacob Gershowitz in 1898 in Brooklyn , New York , the son of immigrant parents .	1.66963268206	was	George Gershwin
+George Gershwin was born Jacob Gershowitz in 1898 in Brooklyn , New York , the son of immigrant parents .	21.5361496682	born	Gershwin	Jacob Gershowitz	1898
+Franz Kafka ( 1883 - 1924 ) was born of Jewish parents in Prague .	24.1822914732	was	Franz Kafka	Jewish parents
+Franz Kafka ( 1883 - 1924 ) was born of Jewish parents in Prague .	12.2397291802	born	Franz Kafka	Jewish parents
+George Gershwin was born September 26 , 1898 in New York City .	2.69608768328	was	George Gershwin	September 26
+George Gershwin was born September 26 , 1898 in New York City .	3.31544187622	born	George Gershwin	September
+Andre Kirk Agassi was born in Las Vegas , Nevada on the 29th of April , 1970 .	7.06655516535	was	Andre Kirk Agassi
+Andre Kirk Agassi was born in Las Vegas , Nevada on the 29th of April , 1970 .	3.2783487835	born	Andre Kirk Agassi
+C harlie __ was born Charles Spencer Chaplin in London , England on 16 April 1889 .	2.38612800622	was	__
+C harlie __ was born Charles Spencer Chaplin in London , England on 16 April 1889 .	1.70411533565	born	Charles Spencer Chaplin
+George Gershwin is a famous American composer who was born in Brooklyn , New York , on September 26 , 1898 .	2.27280794451	is	George Gershwin	a famous American composer	Brooklyn
+George Gershwin is a famous American composer who was born in Brooklyn , New York , on September 26 , 1898 .	7.13349797586	was	George Gershwin	in Brooklyn , New York , on September 26 ,
+George Gershwin is a famous American composer who was born in Brooklyn , New York , on September 26 , 1898 .	2.39175514168	born	Brooklyn
+This little mother has claws , says writer Franz Kafka of the allure of his hometown of Prague .	1.7895316166	has	little mother	claws
+This little mother has claws , says writer Franz Kafka of the allure of his hometown of Prague .	2.62791532241	says	This little mother	writer Franz Kafka of the allure of his hometown of Prague
+George Gershwin was born September 26 , 1898 in Brooklyn , New York and he died July 11 , 1937 in Hollywood , California	8.72257290689	was	George Gershwin	September 26
+George Gershwin was born September 26 , 1898 in Brooklyn , New York and he died July 11 , 1937 in Hollywood , California	4.78840660558	born	George Gershwin	September 26
+George Gershwin was born September 26 , 1898 in Brooklyn , New York and he died July 11 , 1937 in Hollywood , California	2.14313629814	died	July 11
+Andre Kirk Agassi , born , April 29 , 1970 , in Las Vegas , Nevada has been one of the front line tennis players , even now .	1.735052601	born	Andre Kirk
+Andre Kirk Agassi , born , April 29 , 1970 , in Las Vegas , Nevada has been one of the front line tennis players , even now .	1.6713436433	has	Andre
+__ __ Charles Spencer Chaplin was born in Walworth , London on April 16 , 1889 .	2.17226929403	was	Spencer Chaplin
+__ __ Charles Spencer Chaplin was born in Walworth , London on April 16 , 1889 .	2.84495989138	born	Spencer Chaplin	Walworth
+Franz Kafka born July 3 in Prague - Alstandt , the first child of the merchant Hermann __ ( 1852 - 1931 ) and his wife Julie , n e L wy ( 1856 - 1934 ) .	31.4248928005	born	Franz Kafka	July	- 1931 )
+An eight - time Grand Slam tournament champion , tennis legend Andre Kirk Agassi ( 1970 - ) was born on this day in Las Vegas , Nevada .	5.10055944431	was	Andre Kirk Agassi
+An eight - time Grand Slam tournament champion , tennis legend Andre Kirk Agassi ( 1970 - ) was born on this day in Las Vegas , Nevada .	4.32485839633	born	Andre Kirk
+Charlie Chaplin was born April 16 , 1889 in London , England , to music hall performers .	2.37752431893	was	Charlie Chaplin	April 16
+Charlie Chaplin was born April 16 , 1889 in London , England , to music hall performers .	1.69935270075	born	Charlie Chaplin	April 16
+This category lists pages and sites about George Gershwin ( 1898 - 1937 ) , born in New York to Russian - Jewish parents .	4.26116973409	lists	category	pages	Russian - Jewish parents
+This category lists pages and sites about George Gershwin ( 1898 - 1937 ) , born in New York to Russian - Jewish parents .	40.1357614675	born	Russian - Jewish parents
+Birthday - Film comedian Charlie Chaplin ( 1889 - 1977 ) was born in London .	1.11450590725	was	Birthday - Film comedian Charlie Chaplin ( 1889
+Birthday - Film comedian Charlie Chaplin ( 1889 - 1977 ) was born in London .	6.70675287525	born	Birthday	Film	Charlie Chaplin
+Andre Agassi is a famous tennis star and native son of Las Vegas .	8.96944291521	is	Andre	famous tennis star
+The great Charlie Chaplin arrived into this world on this day in 1889 , in London .	1.99279482484	arrived	The great Charlie Chaplin
+Franz Kafka rarely left his home town of Prague .	4.0030959843	left	Kafka rarely
+Franz Kafka born in Prague , which was then part of the Hapsburg empire .	3.07402658536	born	Franz Kafka	Prague
+Franz Kafka born in Prague , which was then part of the Hapsburg empire .	1.99710419891	was	Kafka
+Andre Agassi was born on April 29 , 1970 in Las Vegas , Nevada .	2.21853022547	was	Andre Agassi
+Andre Agassi was born on April 29 , 1970 in Las Vegas , Nevada .	1.38576095242	born	Andre Agassi
+George Gershwin was born Jacob Gershovitz in Brooklyn , New York on September 26 , 1898 .	2.39699165601	was	George Gershwin
+George Gershwin was born Jacob Gershovitz in Brooklyn , New York on September 26 , 1898 .	3.71427200348	born	Jacob Gershovitz
+Where can you see a statue of Charlie Chaplin , the famous actor born in East London , who became famous in the United States ?	3.08329738175	see	you	statue
+Where can you see a statue of Charlie Chaplin , the famous actor born in East London , who became famous in the United States ?	2.16968687079	born	East
+Where can you see a statue of Charlie Chaplin , the famous actor born in East London , who became famous in the United States ?	2.20226480913	became	famous
+Franz Kafka was born July 3 rd 1883 in Prague , at that time part of Austria - Hungary .	13.7971297716	was	Franz Kafka	July 3
+Franz Kafka was born July 3 rd 1883 in Prague , at that time part of Austria - Hungary .	2.2378799271	born	Franz Kafka	July
+Franz Kafka ( born Prague July 3 , 1883 died near Vienna June 3 , 1924 ) was a famous Czech - born , German - speaking writer .	21.4367733138	born	Franz Kafka	- speaking writer
+Franz Kafka ( born Prague July 3 , 1883 died near Vienna June 3 , 1924 ) was a famous Czech - born , German - speaking writer .	1.99686492207	died	Kafka
+Franz Kafka ( born Prague July 3 , 1883 died near Vienna June 3 , 1924 ) was a famous Czech - born , German - speaking writer .	21.4367733138	born	Franz Kafka	- speaking writer
+Franz Kafka ( born Prague July 3 , 1883 died near Vienna June 3 , 1924 ) was a famous Czech - born , German - speaking writer .	1.10413542884	speaking	writer
+George Gershwin was born September 26 , 1898 in Brooklyn New York .	19.9807296951	was	George Gershwin	September 26	Brooklyn New York
+George Gershwin was born September 26 , 1898 in Brooklyn New York .	3.74620844222	born	George Gershwin	September
+TRACK 12 - George Gershwin , son of Russian immigrants , was born in Brooklyn , New York in 1898 .	1.86783220617	TRACK	12 - George Gershwin	son of Russian immigrants
+TRACK 12 - George Gershwin , son of Russian immigrants , was born in Brooklyn , New York in 1898 .	8.41898927048	was	Gershwin	son	immigrants
+TRACK 12 - George Gershwin , son of Russian immigrants , was born in Brooklyn , New York in 1898 .	2.00329341437	born	1898
+For those hoping Agassi 's final tournament ends with a title , the Las Vegas native holds a 5 - 1 career mark over Roddick .	15.7986358843	hoping	Agassi	final tournament	career mark over Roddick
+For those hoping Agassi 's final tournament ends with a title , the Las Vegas native holds a 5 - 1 career mark over Roddick .	11.7023440913	ends	Agassi 's final tournament	a title
+For those hoping Agassi 's final tournament ends with a title , the Las Vegas native holds a 5 - 1 career mark over Roddick .	1.00477116758	holds	the Las Vegas native	a 5 -
+The personal library of author Franz Kafka is to be returned to his native Prague .	15.7393116585	is	Kafka	to	returned	Prague
+The personal library of author Franz Kafka is to be returned to his native Prague .	43.2692508406	returned	The personal library of author Franz Kafka	Prague
+It's the birthday of composer George Gershwin , born Jacob Gershvin in Brooklyn , New York ( 1898 ) .	5.03847284644	It's	birthday	Gershwin
+It's the birthday of composer George Gershwin , born Jacob Gershvin in Brooklyn , New York ( 1898 ) .	2.01901875461	born	Jacob Gershvin
+Franz Kafka , author of The Metamorphosis was born in Prague , and Mission Impossible starring Tom Cruise was filmed in this beautiful city .	27.1377245158	was	Prague	this beautiful city
+Franz Kafka , author of The Metamorphosis was born in Prague , and Mission Impossible starring Tom Cruise was filmed in this beautiful city .	7.19141099458	born	Franz Kafka	Prague
+Franz Kafka , author of The Metamorphosis was born in Prague , and Mission Impossible starring Tom Cruise was filmed in this beautiful city .	27.1377245158	was	Prague	this beautiful city
+Franz Kafka , author of The Metamorphosis was born in Prague , and Mission Impossible starring Tom Cruise was filmed in this beautiful city .	5.83526430148	filmed	Mission Impossible starring Tom Cruise
+In fairness , David Robinson of the San Antonio Spurs has built an entire school over many years in San Antonio , and I hear that Andre Agassi has done the same in his native Las Vegas .	44.0129419394	has	David Robinson	the San Antonio Spurs	built	school	Andre Agassi
+In fairness , David Robinson of the San Antonio Spurs has built an entire school over many years in San Antonio , and I hear that Andre Agassi has done the same in his native Las Vegas .	48.661860451	built	David Robinson of the San Antonio Spurs	an entire school
+In fairness , David Robinson of the San Antonio Spurs has built an entire school over many years in San Antonio , and I hear that Andre Agassi has done the same in his native Las Vegas .	44.0129419394	has	David Robinson	the San Antonio Spurs	built	school	Andre Agassi
+In fairness , David Robinson of the San Antonio Spurs has built an entire school over many years in San Antonio , and I hear that Andre Agassi has done the same in his native Las Vegas .	22.0597250298	done	David Robinson of the San Antonio	Andre
+Although he earned the bulk of his fame in the United States and is commonly considered a phenomenon of U.S. culture , Chaplin was actually born in London , England , and never became a U.S. citizen .	6.11510404935	earned	bulk	fame
+Although he earned the bulk of his fame in the United States and is commonly considered a phenomenon of U.S. culture , Chaplin was actually born in London , England , and never became a U.S. citizen .	14.6176297378	is	phenomenon	U.S. culture
+Although he earned the bulk of his fame in the United States and is commonly considered a phenomenon of U.S. culture , Chaplin was actually born in London , England , and never became a U.S. citizen .	5.58962589345	considered	fame	a phenomenon of U.S.
+Although he earned the bulk of his fame in the United States and is commonly considered a phenomenon of U.S. culture , Chaplin was actually born in London , England , and never became a U.S. citizen .	1.48089351191	born	Chaplin
+Although he earned the bulk of his fame in the United States and is commonly considered a phenomenon of U.S. culture , Chaplin was actually born in London , England , and never became a U.S. citizen .	5.64470481553	became	U.S. citizen
+Franz Kafka ( 1883 - 1924 ) Austrian Czech writer , born in Prague best known novels are The Trial ( 1925 ) , The Castle ( 1926 ) and America ( 1927 )	8.04043311415	born	Franz Kafka	Prague	novels
+Franz Kafka ( 1883 - 1924 ) Austrian Czech writer , born in Prague best known novels are The Trial ( 1925 ) , The Castle ( 1926 ) and America ( 1927 )	3.35356871065	known	novels	Trial
+Franz Kafka ( 1883 - 1924 ) Austrian Czech writer , born in Prague best known novels are The Trial ( 1925 ) , The Castle ( 1926 ) and America ( 1927 )	4.10279648454	are	Kafka	Trial
+He ran his Andre Agassi Foundation and held many charity events for his Las Vegas hometown .	4.37425485899	ran	Andre Agassi
+He ran his Andre Agassi Foundation and held many charity events for his Las Vegas hometown .	2.60534042681	held	events
+Andre Kirk Agassi ( born April 29 , 1970 , in Las Vegas , Nevada ) is a former World ... When __ started playing tennis , his ball collection filled 60 .. .	3.49489476969	born	Andre Kirk	April
+Andre Kirk Agassi ( born April 29 , 1970 , in Las Vegas , Nevada ) is a former World ... When __ started playing tennis , his ball collection filled 60 .. .	5.01292428105	is	Andre	former World
+Andre Kirk Agassi ( born April 29 , 1970 , in Las Vegas , Nevada ) is a former World ... When __ started playing tennis , his ball collection filled 60 .. .	6.96289443509	started	Kirk	tennis
+Andre Kirk Agassi ( born April 29 , 1970 , in Las Vegas , Nevada ) is a former World ... When __ started playing tennis , his ball collection filled 60 .. .	2.75566058891	playing	Andre	tennis
+Andre Kirk Agassi ( born April 29 , 1970 , in Las Vegas , Nevada ) is a former World ... When __ started playing tennis , his ball collection filled 60 .. .	2.23412694615	filled	a former World	ball collection
+Franz Kafka is born in Prague on July 3 to Hermann and Julie .	2.42464519054	is	Franz Kafka
+Franz Kafka is born in Prague on July 3 to Hermann and Julie .	1.3956425378	born	Franz Kafka
+Andre Agassi was born April 29 , 1970 in Las Vegas , Nevada .	3.06857396046	was	Andre Agassi
+Andre Agassi was born April 29 , 1970 in Las Vegas , Nevada .	3.05382620484	born	Andre Agassi	April
+1889 Charlie Chaplin , English comedian , was born in London .	2.38836891121	was	Charlie Chaplin
+1889 Charlie Chaplin , English comedian , was born in London .	1.90708061347	born	Charlie Chaplin
+The __ __ College Preparatory Academy located in Agassi 's home town of Las Vegas , Nevada , is a charter school that brings order and hope to a district with the highest crime rate in the city .	32.4942100747	located	College Preparatory Academy	Agassi	home town of Las Vegas , Nevada	charter
+The __ __ College Preparatory Academy located in Agassi 's home town of Las Vegas , Nevada , is a charter school that brings order and hope to a district with the highest crime rate in the city .	15.8612524154	is	College Preparatory Academy	charter school
+The __ __ College Preparatory Academy located in Agassi 's home town of Las Vegas , Nevada , is a charter school that brings order and hope to a district with the highest crime rate in the city .	3.98823450636	brings	charter school	order	a district
+Andre Agassi tennis superstar of Las Vegas joins America Online co - founder Steve Case in developing Exclusive Resorts a worldwide real estate project of multi - million dollar resort homes for luxury travel .	66.3620889801	joins	Andre Agassi tennis superstar	America Online co - founder Steve	- million dollar
+Andre Agassi tennis superstar of Las Vegas joins America Online co - founder Steve Case in developing Exclusive Resorts a worldwide real estate project of multi - million dollar resort homes for luxury travel .	983.590842763	developing	Exclusive Resorts a worldwide real estate project of multi - million dollar resort homes for luxury travel
+Mattel co - founder Ruth Handler in 1959 created the Barbie doll after noticing her daughter preferred playing with paper cut - outs of adult female fashion dolls , . . .	332.578993202	created	Mattel	the Barbie doll after noticing her daughter	playing with paper cut - outs
+Mattel co - founder Ruth Handler in 1959 created the Barbie doll after noticing her daughter preferred playing with paper cut - outs of adult female fashion dolls , . . .	950.07587592	noticing	Mattel co	in	the Barbie doll	her daughter	playing with paper cut - outs	female fashion dolls
+Mattel co - founder Ruth Handler in 1959 created the Barbie doll after noticing her daughter preferred playing with paper cut - outs of adult female fashion dolls , . . .	27.9631730516	preferred	noticing her daughter	paper cut - outs of
+Mattel co - founder Ruth Handler in 1959 created the Barbie doll after noticing her daughter preferred playing with paper cut - outs of adult female fashion dolls , . . .	6.12315675669	playing	co	daughter	paper
+Tim Berners - Lee is the creator of the World Wide Web and director of the coordinating body for Web development , the W3C .	1.16150608421	is	the creator of the World Wide Web and director
+Tim Berners - Lee is the creator of the World Wide Web and director of the coordinating body for Web development , the W3C .	4.40939126411	coordinating	body for Web
+Tim Berners - Lee is the Director of the World Wide Web Consortium , Senior Researcher at MIT\'s CSAIL , and Professor of Computer Science at Southampton ECS	52.8778836623	is	the Director	World Wide	and Professor of	Science
+Watch a webstream - Professor Tim Berners - Lee OBE FRS , inventor of the World Wide Web talks about its future	4.50850214902	Watch	a webstream - Professor Tim Berners
+Ruth Handler is said to be the creator of the Barbie doll .	11.7675228357	is	Ruth Handler	the creator of	doll
+Ruth Handler is said to be the creator of the Barbie doll .	18.6557803746	said	Ruth Handler	the creator of the Barbie doll
+Ruth Handler is said to be the creator of the Barbie doll .	3.06261740792	be	Ruth Handler	the creator of the Barbie doll
+Sir Tim Berners - Lee OBE is the inventor of the World Wide Web .	1.46410157002	is	the inventor of the World Wide Web
+Recent celebrity deaths : Alexander Lebed - Russian General who ran for the presidency against Boris Yeltsin ; Ruth Handler - inventor of the Barbie Doll April 2002 - April 26 2002 .	7.04023424608	ran	Alexander Lebed - Russian General	Boris
+Ruth Handler is officially recognised as the creator of the Barbie doll having come up with the idea for a three dimensional , adult - figured doll in the late fifties .	1.38066828927	is	Ruth Handler
+Ruth Handler is officially recognised as the creator of the Barbie doll having come up with the idea for a three dimensional , adult - figured doll in the late fifties .	16.1655845975	recognised	Ruth Handler	officially	three dimensional , adult - figured doll in the late fifties
+Ruth Handler is officially recognised as the creator of the Barbie doll having come up with the idea for a three dimensional , adult - figured doll in the late fifties .	3.76783806685	having	the idea
+Ruth Handler is officially recognised as the creator of the Barbie doll having come up with the idea for a three dimensional , adult - figured doll in the late fifties .	4.86054072397	come	Barbie doll	idea
+Does Anyone Know anything about Ruth Handler ( She Created The Barbie Doll I have to write a 10 report on her?	1.7699334328	Know	anything
+Does Anyone Know anything about Ruth Handler ( She Created The Barbie Doll I have to write a 10 report on her?	11.7840359253	Created	The Barbie Doll I	write
+Does Anyone Know anything about Ruth Handler ( She Created The Barbie Doll I have to write a 10 report on her?	4.95187650939	have	a 10 report
+Does Anyone Know anything about Ruth Handler ( She Created The Barbie Doll I have to write a 10 report on her?	1.35469231551	write	report
+Tim Berners - Lee is the inventor of the World Wide Web , an internet - based hypermedia initiative for global information sharing .	1.45599997645	is	the inventor of the World Wide Web	internet
+Tim Berners - Lee is the inventor of the World Wide Web , an internet - based hypermedia initiative for global information sharing .	2.04450065682	based	an internet	hypermedia initiative
+News Sir Tim Berners - Lee Sir Tim later founded the World Wide Web consortium and has been an active proponent of open standards on the internet .	25.4059973611	founded	World Wide Web consortium	proponent	standards
+News Sir Tim Berners - Lee Sir Tim later founded the World Wide Web consortium and has been an active proponent of open standards on the internet .	16.7331342248	has	Sir Tim	active	standards
+News Sir Tim Berners - Lee Sir Tim later founded the World Wide Web consortium and has been an active proponent of open standards on the internet .	5.51706221824	been	Tim	an active	standards
+. . . 4. Lack of regulatory Laws When Tim Berners - Lee developed the World Wide Web in	36.4948459249	developed	Tim Berners	World Wide Web
+Tim Berners - Lee is the primary inventor of the World Wide Web , the system of text links and multimedia capabilities that made the Internet accessible to mass audiences .	16.3688140819	is	the primary inventor of	World Wide	multimedia
+Tim Berners - Lee is the primary inventor of the World Wide Web , the system of text links and multimedia capabilities that made the Internet accessible to mass audiences .	4.89281956267	made	multimedia capabilities	Internet accessible to mass audiences
+Founder Ruth Handler in created the Barbie doll after noticing her daughter preferred playing with paper cut .	6.83569691729	created	the Barbie doll after noticing
+Founder Ruth Handler in created the Barbie doll after noticing her daughter preferred playing with paper cut .	54.3551116253	noticing	Founder Ruth	Barbie	her daughter	playing with paper cut
+Founder Ruth Handler in created the Barbie doll after noticing her daughter preferred playing with paper cut .	1.62468217155	preferred	daughter
+Founder Ruth Handler in created the Barbie doll after noticing her daughter preferred playing with paper cut .	69.2908492683	playing	the Barbie doll	daughter	paper cut
+Sir Timothy Berners - Lee is the director of the World Wide Web Consortium ( which oversees its continued development ) , and a senior researcher and holder of . . .	3.99499451446	is	Sir Timothy Berners	the director	World Wide
+Sir Timothy Berners - Lee is the director of the World Wide Web Consortium ( which oversees its continued development ) , and a senior researcher and holder of . . .	109.152554133	oversees	Sir Timothy	director of the World Wide Web Consortium	its continued development
+Sir Timothy Berners - Lee is the director of the World Wide Web Consortium ( which oversees its continued development ) , and a senior researcher and holder of . . .	2.14547155319	continued	development
+In the complex history of innovation flowing to and from the Internet , one major achievement is uncontested : in 1989 - 91 , Tim Berners - Lee invented the World Wide Web .	6.19732090535	flowing	complex	innovation	Internet
+In the complex history of innovation flowing to and from the Internet , one major achievement is uncontested : in 1989 - 91 , Tim Berners - Lee invented the World Wide Web .	1.09465000755	is	uncontested
+In the complex history of innovation flowing to and from the Internet , one major achievement is uncontested : in 1989 - 91 , Tim Berners - Lee invented the World Wide Web .	8.50857551995	invented	Berners	the World Wide Web
+An area of the WWW that Berners - Lee has direct involvement is in his role as the Director of the World Wide Web Consortium ( WC3 ) which has existed since 1994 .	24.5013257526	has	Berners - Lee	direct involvement is in his role as the Director of	World
+An area of the WWW that Berners - Lee has direct involvement is in his role as the Director of the World Wide Web Consortium ( WC3 ) which has existed since 1994 .	4.79771227507	is	involvement	in his role as	Director
+An area of the WWW that Berners - Lee has direct involvement is in his role as the Director of the World Wide Web Consortium ( WC3 ) which has existed since 1994 .	24.5013257526	has	Berners - Lee	direct involvement is in his role as the Director of	World
+An area of the WWW that Berners - Lee has direct involvement is in his role as the Director of the World Wide Web Consortium ( WC3 ) which has existed since 1994 .	297.732554207	existed	Berners - Lee	the World Wide Web Consortium ( WC3 )	since 1994
+Weaving the Web - Tim Berners - Lee : Inventing the world wide web	2.835414046	Weaving	Web	Tim Berners
+Opis : The history of Barbie dolls and inventor Ruth Handler who invented the Barbie Doll in 1959 .	10.5941273041	invented	Barbie Doll
+Tim Berners - Lee to Deliver Keynote at eCC Bermuda 2001 ; The Creator of the World Wide Web to Discuss his Vision for the Future of the Internet .	25.4180099831	Discuss	his Vision for the Future of the Internet
+Lilli is the doll that would inspire Ruth Handler to design the Barbie doll .	1.12783858549	is	Lilli	the doll that would inspire Ruth Handler to design the Barbie doll
+Lilli is the doll that would inspire Ruth Handler to design the Barbie doll .	6.16332105822	inspire	Lilli	the doll	Ruth Handler to design the Barbie doll
+Lilli is the doll that would inspire Ruth Handler to design the Barbie doll .	11.2955709469	design	Lilli	the doll that	the Barbie doll
+Barbie Doll Creator Ruth Handler To Be Featured on PBS Series , Doll Collecting , Ruth Handler , the creator of the Barbie doll , will be featured next week in a	22.969406926	Be	PBS	of the Barbie doll
+Barbie Doll Creator Ruth Handler To Be Featured on PBS Series , Doll Collecting , Ruth Handler , the creator of the Barbie doll , will be featured next week in a	22.969406926	be	PBS	of the Barbie doll
+Barbie Doll Creator Ruth Handler To Be Featured on PBS Series , Doll Collecting , Ruth Handler , the creator of the Barbie doll , will be featured next week in a	13.9142615248	featured	Barbie Doll Creator Ruth Handler	PBS Series	Barbie doll	next week
+In 1994 , Berners - Lee founded the World Wide Web Consortium ( W3C ) at the Massachusetts Institute of Technology .	16.4875777845	founded	1994	World Wide
+Ruth Handler After fighting breast cancer and undergoing a mastectomy in 1970 Ruth Handler , one of the creators of the Barbie Doll , surveyed the market for a suitable prosthetic breast .	2.64317014495	fighting	Ruth	breast cancer
+Ruth Handler After fighting breast cancer and undergoing a mastectomy in 1970 Ruth Handler , one of the creators of the Barbie Doll , surveyed the market for a suitable prosthetic breast .	955.107534196	undergoing	Ruth Handler	mastectomy in 1970 Ruth Handler	one of the creators	the Barbie Doll	the market	suitable	breast
+Ruth Handler After fighting breast cancer and undergoing a mastectomy in 1970 Ruth Handler , one of the creators of the Barbie Doll , surveyed the market for a suitable prosthetic breast .	11.7481867089	surveyed	the Barbie Doll	market	a suitable prosthetic breast
+Berners - Lee still heads the World Wide Web Consortium ( W3C ) at the Massachusetts Institute of Technology in Boston , but is one of the least recognised gurus in the world .	9.75134099029	heads	Berners - Lee	the World Wide Web Consortium ( W3C
+Berners - Lee still heads the World Wide Web Consortium ( W3C ) at the Massachusetts Institute of Technology in Boston , but is one of the least recognised gurus in the world .	24.1343860809	is	World Wide Web	Boston	gurus
+Tim Berners - Lee ( born June 8 , 1955 ) is the inventor of the World Wide Web and . . . developerWorks Interviews : Tim Berners - Lee ( podcast/audio plus transcript ) . . .	1.80880308463	born	June 8 , 1955
+Tim Berners - Lee ( born June 8 , 1955 ) is the inventor of the World Wide Web and . . . developerWorks Interviews : Tim Berners - Lee ( podcast/audio plus transcript ) . . .	2.63170470235	is	the inventor of the World Wide Web and
+In 1996 the University of Southampton was the first university to award Tim Berners - Lee an honorary degree in recognition of his role in developing the World Wide Web .	3.52950847009	was	In 1996 the University of Southampton
+In 1996 the University of Southampton was the first university to award Tim Berners - Lee an honorary degree in recognition of his role in developing the World Wide Web .	4.89232143084	award	the first university	Tim Berners -
+In 1996 the University of Southampton was the first university to award Tim Berners - Lee an honorary degree in recognition of his role in developing the World Wide Web .	11.0544530819	developing	recognition	World Wide Web
+TIM BERNERS - LEE STARTED A REVOLUTION , BUT IT DIDN ' T GO EXACTLY AS PLANNED . . . And Tim Berners - Lee , 41 , the creator of the World Wide Web , no doubt does .	2.13505048327	does	doubt
+Designed by the British software engineer TIM BERNERS - LEE ( 1955 - ) the web is a By the end of 1990 Berners - Lee circulated his work on the World Wide Web	7.31538539676	Designed	the British software engineer TIM BERNERS - LEE	1955	the web
+Designed by the British software engineer TIM BERNERS - LEE ( 1955 - ) the web is a By the end of 1990 Berners - Lee circulated his work on the World Wide Web	5.31437232222	is	web	end
+Designed by the British software engineer TIM BERNERS - LEE ( 1955 - ) the web is a By the end of 1990 Berners - Lee circulated his work on the World Wide Web	23.9699849222	circulated	end of 1990 Berners	Lee	work on	Wide
+Tim Berners - Lee laid the conceptual foundation for the World Wide Web .	76.790506955	laid	the conceptual foundation for the World Wide Web
+Local , National and International events in 2002 . . Ruth Handler dies , inventor of the Barbie doll .	6.90136015982	dies	Ruth Handler	Barbie doll
+Founder Ruth Handler created the Barbie doll in after noticing that her daughter preferred to play with paper cut .	1.18774939425	created	the Barbie doll
+Founder Ruth Handler created the Barbie doll in after noticing that her daughter preferred to play with paper cut .	13.7055919981	noticing	Founder Ruth	Barbie	that her daughter preferred to play with paper cut
+Founder Ruth Handler created the Barbie doll in after noticing that her daughter preferred to play with paper cut .	7.65648074904	preferred	her daughter	to play
+Founder Ruth Handler created the Barbie doll in after noticing that her daughter preferred to play with paper cut .	35.2446938893	play	the Barbie	her daughter	cut
+Ruth Handler ( co - founder of Mattel Toys ) created the Barbie Doll in 1959 .	2.1559699551	created	the Barbie Doll in 1959
+Queen Elizabeth dubs Tim Berners - Lee a knight , in recognition of his contributions to the World Wide Web .	4.89074560476	dubs	Queen Elizabeth	Berners
+Tim Berners - Lee is credited with inventing the World Wide Web .	1.47426097277	is	credited with inventing the World Wide Web
+Tim Berners - Lee is credited with inventing the World Wide Web .	2.84520919381	credited	Tim Berners - Lee	inventing the World Wide Web
+Tim Berners - Lee is credited with inventing the World Wide Web .	7.65945266411	inventing	Tim	the World Wide Web
+Tim Berners - Lee over view : invented the World Wide Web during 1990 - 1991 , while working at CERN , the European Particle Physics Laboratory in Geneva .	8.0269796935	invented	Tim Berners	Wide Web
+Tim Berners - Lee over view : invented the World Wide Web during 1990 - 1991 , while working at CERN , the European Particle Physics Laboratory in Geneva .	4.30605429293	working	Tim Berners	at
+When Wolfgang Amadeus Mozart moved to Vienna in the early 1780's , he knew very well where he was going .	10.1059598925	moved	Amadeus Mozart	Vienna
+When Wolfgang Amadeus Mozart moved to Vienna in the early 1780's , he knew very well where he was going .	2.67501986202	going	Amadeus
+Albert Einstein wins the Nobel Prize for rectal bottle - rocketry .	327.633777474	wins	Einstein	the Nobel Prize	rectal bottle - rocketry
+Whereas President Truman established the Presidential Medal of Freedom in 1945	86.4921633544	established	President Truman	the Presidential Medal of Freedom
+inspiration to Xanadu , but Nelson dislikes the World Wide Web , XML and all	4.75364489376	dislikes	inspiration	Nelson	the World Wide Web
+Yahoo beats Microsoft to punch with IE update	4.45573905428	beats	Yahoo	Microsoft	punch
+Yahoo beats Microsoft to punch with IE update	4.96034697406	punch	Microsoft
+John McCain awarded Purple Heart for wounds suffered in Iraq debate	3.50269232062	awarded	John McCain	Purple Heart
+John McCain awarded Purple Heart for wounds suffered in Iraq debate	2.08394983516	suffered	wounds
+Albert Einstein received his Nobel Prize for the Quantum theory ( rather than the theory of relativity ) .	6.02861540236	received	Albert Einstein	Nobel Prize
+Wolfgang Amadeus Mozart 's arrival in Vienna on March 16 , 1781 marked a period of great change in his life and music .	8.02094656712	marked	period	change	life
+Raymond V. Damadian was denied a share of the 2003 Nobel Prize for Medicine , which was awarded to Paul Lauterbur and Sir Peter Mansfield for developing Magnetic resonance imaging .	2.47667392934	was	Raymond V.
+Raymond V. Damadian was denied a share of the 2003 Nobel Prize for Medicine , which was awarded to Paul Lauterbur and Sir Peter Mansfield for developing Magnetic resonance imaging .	2.57109065666	denied	Damadian
+Raymond V. Damadian was denied a share of the 2003 Nobel Prize for Medicine , which was awarded to Paul Lauterbur and Sir Peter Mansfield for developing Magnetic resonance imaging .	2.47667392934	was	Raymond V.
+Raymond V. Damadian was denied a share of the 2003 Nobel Prize for Medicine , which was awarded to Paul Lauterbur and Sir Peter Mansfield for developing Magnetic resonance imaging .	16.7391607232	awarded	a share	the 2003 Nobel	Paul
+Raymond V. Damadian was denied a share of the 2003 Nobel Prize for Medicine , which was awarded to Paul Lauterbur and Sir Peter Mansfield for developing Magnetic resonance imaging .	1.34200973151	developing	Magnetic resonance imaging
+Pemberton's bookkeeper Frank Robinson named the mixture Coca - Cola - , and wrote it out in his distinct script .	6.08793239882	named	Pemberton's bookkeeper Frank Robinson	the mixture Coca - Cola -
+Pemberton's bookkeeper Frank Robinson named the mixture Coca - Cola - , and wrote it out in his distinct script .	6.961757699	wrote	Pemberton's	Frank	distinct script
+Kamen showed off the Segway on ABC's Good Morning America Monday morning in an exhibition that last week seemed like it would be the first public look at the mystery device .	1.02034673423	showed	Kamen
+Kamen showed off the Segway on ABC's Good Morning America Monday morning in an exhibition that last week seemed like it would be the first public look at the mystery device .	1.42300544442	seemed	Kamen
+Kamen showed off the Segway on ABC's Good Morning America Monday morning in an exhibition that last week seemed like it would be the first public look at the mystery device .	10.0277067706	be	the first public look
+Albert Einstein won the Nobel Prize for Physics in 1921	8.66964914737	won	Albert Einstein	Nobel Prize
+Computer activist Ted Nelson proposed a much more advanced form of the World Wide Web , called Xanadu , in his seminal work Computer Lib .	1.82994671195	proposed	Nelson
+Computer activist Ted Nelson proposed a much more advanced form of the World Wide Web , called Xanadu , in his seminal work Computer Lib .	1.82280511479	called	Xanadu
+In that ruling in December 2003 , Judge Richard G. Stearns dismissed Tevas lawsuit because Pfizer had not accused Teva of infringing its Zoloft patent and __ had no reasonable basis to expect __ would do so .	4.58557985916	dismissed	Stearns	lawsuit
+In that ruling in December 2003 , Judge Richard G. Stearns dismissed Tevas lawsuit because Pfizer had not accused Teva of infringing its Zoloft patent and __ had no reasonable basis to expect __ would do so .	6.76305215387	had	Pfizer	Zoloft patent	__	no reasonable basis	expect
+In that ruling in December 2003 , Judge Richard G. Stearns dismissed Tevas lawsuit because Pfizer had not accused Teva of infringing its Zoloft patent and __ had no reasonable basis to expect __ would do so .	1.53035536382	accused	Teva
+In that ruling in December 2003 , Judge Richard G. Stearns dismissed Tevas lawsuit because Pfizer had not accused Teva of infringing its Zoloft patent and __ had no reasonable basis to expect __ would do so .	15.8117441989	infringing	Judge Richard G. Stearns	Zoloft patent
+In that ruling in December 2003 , Judge Richard G. Stearns dismissed Tevas lawsuit because Pfizer had not accused Teva of infringing its Zoloft patent and __ had no reasonable basis to expect __ would do so .	6.76305215387	had	Pfizer	Zoloft patent	__	no reasonable basis	expect
+In that ruling in December 2003 , Judge Richard G. Stearns dismissed Tevas lawsuit because Pfizer had not accused Teva of infringing its Zoloft patent and __ had no reasonable basis to expect __ would do so .	204.475029214	expect	Richard G. Stearns	lawsuit	reasonable	__ would do so
+NEW DELHI : Pharma major Pfizer has filed a lawsuit against Ranbaxy and Teva , alleging infringement on its product Accupril ( generic Quinapril ) .	1.95096445928	filed	lawsuit
+NEW DELHI : Pharma major Pfizer has filed a lawsuit against Ranbaxy and Teva , alleging infringement on its product Accupril ( generic Quinapril ) .	6.35046441501	alleging	NEW	major Pfizer
+. . . Back in America , fund raising for the pedestal was going particularly slowly , so Joseph Pulitzer noted for the Pulitzer Prize opened up the editorial pages . . .	5.83130506853	was	the pedestal	particularly slowly
+. . . Back in America , fund raising for the pedestal was going particularly slowly , so Joseph Pulitzer noted for the Pulitzer Prize opened up the editorial pages . . .	8.86066914637	going	fund raising for the pedestal	slowly	Joseph
+. . . Back in America , fund raising for the pedestal was going particularly slowly , so Joseph Pulitzer noted for the Pulitzer Prize opened up the editorial pages . . .	2.63530999151	noted	Prize
+. . . Back in America , fund raising for the pedestal was going particularly slowly , so Joseph Pulitzer noted for the Pulitzer Prize opened up the editorial pages . . .	18.8324641043	opened	Joseph Pulitzer	the Pulitzer Prize	pages
+After Pfizer refused to bring suit against Teva or to provide it with a covenant not to sue , __ filed an action seeking a declaration of non - infringement and invalidity .	8.35317325618	refused	Pfizer	to bring suit
+After Pfizer refused to bring suit against Teva or to provide it with a covenant not to sue , __ filed an action seeking a declaration of non - infringement and invalidity .	4.9201496708	bring	Pfizer	suit
+After Pfizer refused to bring suit against Teva or to provide it with a covenant not to sue , __ filed an action seeking a declaration of non - infringement and invalidity .	5.92078260695	provide	covenant	sue
+After Pfizer refused to bring suit against Teva or to provide it with a covenant not to sue , __ filed an action seeking a declaration of non - infringement and invalidity .	351.498581169	filed	an action seeking a declaration of non - infringement and invalidity
+After Pfizer refused to bring suit against Teva or to provide it with a covenant not to sue , __ filed an action seeking a declaration of non - infringement and invalidity .	2.24241026783	seeking	an action	a declaration of non - infringement and invalidity
+2 Yahoo! and Microsoft plan to make the interoperability between their respective IM services broadly available to consumers in the coming months .	758.759482748	make	the interoperability between their respective IM services broadly available	consumers in the coming months
+From then on Mozart resided in Vienna .	3.67093538777	resided	Mozart	Vienna
+Albert Einstein explained the photoelectric effect and received his only Nobel Prize .	3.96082835658	explained	Albert Einstein	effect
+Albert Einstein explained the photoelectric effect and received his only Nobel Prize .	17.6996759588	received	his only Nobel Prize
+Yahoo taking on Google , Microsoft for AOL ?	1.16080632875	taking	Yahoo	Google
+Mozart lived in Vienna for ten years .	3.36758199061	lived	Mozart	Vienna
+The opinion says someone informed imminent Gluck's death to Mozart and he returned to Vienna .	21.563119545	says	The opinion	informed	death
+The opinion says someone informed imminent Gluck's death to Mozart and he returned to Vienna .	1.73279293298	returned	Vienna
+Pfizer brought a patent - infringement suit against Teva Pharmaceuticals ,	2.30078363817	brought	Pfizer	a patent - infringement suit against Teva Pharmaceuticals
+Such contrapuntal movements can be found in those same quartets heard by young Mozart on his fateful visit to Vienna .	47.3573005975	found	Such contrapuntal movements	those same quartets heard	young
+Yahoo! Snipes at Microsoft TheStreet.com 4 : 06 PM	1.22914600165	Snipes	Yahoo!
+John Steinbeck also earned alot of awards , one being the Pulitzer Prize in 1940 .	3.1547938476	earned	John Steinbeck	alot	awards
+John Steinbeck also earned alot of awards , one being the Pulitzer Prize in 1940 .	5.65249692149	being	John Steinbeck	Prize
+Mozart spent two months and came back to Vienna on June 4 .	2.16467498915	spent	Mozart	months
+Mozart spent two months and came back to Vienna on June 4 .	3.9531459811	came	Mozart	back
+Soon after , Mozart was summoned to Vienna by Archbishop Colloredo , but unhappy with his treatment there , __ requested a discharge .	8.23918321606	was	Mozart	requested a discharge
+Soon after , Mozart was summoned to Vienna by Archbishop Colloredo , but unhappy with his treatment there , __ requested a discharge .	7.67794982243	summoned	Mozart	Vienna	discharge
+Soon after , Mozart was summoned to Vienna by Archbishop Colloredo , but unhappy with his treatment there , __ requested a discharge .	5.15167669975	requested	a discharge
+Damadian was passed over for a Nobel prize ( 2003 ) for the discovery and development of MRI .	1.8479028151	was	Damadian
+Damadian was passed over for a Nobel prize ( 2003 ) for the discovery and development of MRI .	1.6396829509	passed	Damadian
+Pfizer settles patent suits against Teva	7.08352163184	settles	Pfizer	patent suits
+John Steinbeck was awarded the nation's highest literary honor , the Pulitzer Prize for literature .	2.86779271403	was	John Steinbeck
+John Steinbeck was awarded the nation's highest literary honor , the Pulitzer Prize for literature .	5.71028007458	awarded	John Steinbeck	the nation's highest literary honor
+Pfizer sues Teva , Sandoz	1.14866083377	sues	Pfizer
+In 1886 , Frank Robinson used his own pen and ink to script the first Coca - Cola - trademark .	4.53013222734	used	Frank Robinson	his own pen and ink	script the first Coca - Cola - trademark
+In 1886 , Frank Robinson used his own pen and ink to script the first Coca - Cola - trademark .	2.83282139023	script	Frank Robinson	ink	the first Coca - Cola - trademark
+Robinson came up with the Coca - Cola - .	1.04899998271	came	Robinson	the Coca - Cola -
+In 1781 , Mozart visited Vienna in the company of his employer , the harsh Prince - Archbishop Colloredo , and had a falling out with him .	2.16177850011	visited	Mozart	Vienna
+In 1781 , Mozart visited Vienna in the company of his employer , the harsh Prince - Archbishop Colloredo , and had a falling out with him .	2.87369715592	had	Mozart	employer
+Pemberton sold Coca - Cola - out of the pharmacy he worked at .	3.84151589018	sold	Pemberton	Coca - Cola - out	pharmacy
+Pemberton sold Coca - Cola - out of the pharmacy he worked at .	104.53684492	worked	Pemberton	Coca - Cola - out	pharmacy
+Pemberton's bookkeeper Frank Robinson came up with the name Coca - Cola - for the new drink and created the name using Spencerian script .	2.12304949328	came	Pemberton's bookkeeper Frank Robinson	the name Coca - Cola - for the new drink
+Pemberton's bookkeeper Frank Robinson came up with the name Coca - Cola - for the new drink and created the name using Spencerian script .	5.70476276148	created	Coca - Cola	the
+Pemberton's bookkeeper Frank Robinson came up with the name Coca - Cola - for the new drink and created the name using Spencerian script .	8.76590742893	using	name	Spencerian script
+Dean Kamen ( left ) , inventor of the Segway Human Transporter Human Transporter wearing the Plantronics Voyager 510 Bluetooth Headset	19.4783341243	wearing	Human Transporter Human Transporter
+Mozart dies on December 5 , 1791 , in Vienna following a protracted illness ( probably a chronic kidney disease that brought on uremia , but __ suspected he had been poisioned ) .	1.07405732674	dies	Mozart
+Mozart dies on December 5 , 1791 , in Vienna following a protracted illness ( probably a chronic kidney disease that brought on uremia , but __ suspected he had been poisioned ) .	6.58467393947	following	Mozart	Vienna	protracted illness
+Mozart dies on December 5 , 1791 , in Vienna following a protracted illness ( probably a chronic kidney disease that brought on uremia , but __ suspected he had been poisioned ) .	10.643876479	brought	chronic kidney disease	uremia
+Mozart dies on December 5 , 1791 , in Vienna following a protracted illness ( probably a chronic kidney disease that brought on uremia , but __ suspected he had been poisioned ) .	3.27392065098	suspected	he had been poisioned )
+Mozart dies on December 5 , 1791 , in Vienna following a protracted illness ( probably a chronic kidney disease that brought on uremia , but __ suspected he had been poisioned ) .	1.15807625006	had	Mozart
+Mozart dies on December 5 , 1791 , in Vienna following a protracted illness ( probably a chronic kidney disease that brought on uremia , but __ suspected he had been poisioned ) .	10.1651304937	been	Mozart	chronic kidney	poisioned
+Mozart dies on December 5 , 1791 , in Vienna following a protracted illness ( probably a chronic kidney disease that brought on uremia , but __ suspected he had been poisioned ) .	3.49972187689	poisioned	Mozart	suspected
+Mozart was buried in a Vienna suburb , with little ceremony and in an unmarked grave , in accordance with prevailing custom .	7.49994215425	was	Mozart	prevailing custom
+Mozart was buried in a Vienna suburb , with little ceremony and in an unmarked grave , in accordance with prevailing custom .	6.89015735522	buried	Mozart	Vienna suburb
+Pemberton and Robinson marketed Coca - Cola - as both a patent medicine and a refreshing beverage .	2.5103103309	marketed	Coca	Cola
+According to the company's website , Kamen was first inspired to create the Segway after seeing a man in a	8.81876593506	According	the	website
+According to the company's website , Kamen was first inspired to create the Segway after seeing a man in a	1.51124289149	was	Kamen
+According to the company's website , Kamen was first inspired to create the Segway after seeing a man in a	6.45059760586	inspired	Kamen	create	Segway
+According to the company's website , Kamen was first inspired to create the Segway after seeing a man in a	4.22987761026	create	Kamen	Segway
+According to the company's website , Kamen was first inspired to create the Segway after seeing a man in a	6.6510199006	seeing	Kamen	a man
+Michelin has also partnered with Dean Kamen ( inventor of the Segway ) and is working with him on wheels for the Segway and the iBOT .	3.58518013933	has	the Segway
+Michelin has also partnered with Dean Kamen ( inventor of the Segway ) and is working with him on wheels for the Segway and the iBOT .	1.03322048023	partnered	Dean Kamen
+Dean Kamen is the inventor of the Segway Human Transporter Human Transporter as well as countless other inventions including the iBot , a wheelchair that can actually climb stairs and the first handheld insulin pump .	3.10578641344	is	Dean Kamen	inventor
+Dean Kamen is the inventor of the Segway Human Transporter Human Transporter as well as countless other inventions including the iBot , a wheelchair that can actually climb stairs and the first handheld insulin pump .	2.10486401371	including	inventions	iBot
+Dean Kamen is the inventor of the Segway Human Transporter Human Transporter as well as countless other inventions including the iBot , a wheelchair that can actually climb stairs and the first handheld insulin pump .	4.61847512204	climb	iBot	stairs
+John Steinbeck is probably most famous for his Pulitzer Prize winning epic , The Grapes of Wrath , but he is also well known for Of Mice and Men , East of Eden and The Red Pony .	112.349893461	is	John Steinbeck	probably most famous for his Pulitzer Prize winning epic	The Grapes of Wrath , but
+John Steinbeck is probably most famous for his Pulitzer Prize winning epic , The Grapes of Wrath , but he is also well known for Of Mice and Men , East of Eden and The Red Pony .	2.684000443	winning	John Steinbeck	The
+John Steinbeck is probably most famous for his Pulitzer Prize winning epic , The Grapes of Wrath , but he is also well known for Of Mice and Men , East of Eden and The Red Pony .	112.349893461	is	John Steinbeck	probably most famous for his Pulitzer Prize winning epic	The Grapes of Wrath , but
+* Atlanta pharmacist John Pemberton invented Coca - Cola - in 1886 .	13.6153370429	invented	John Pemberton	Coca - Cola
+. . . John Pemberton concocted the Coca Cola formula in a three legged brass kettle in . . .	533.87702709	concocted	John Pemberton	the Coca Cola formula in a three legged brass kettle in
+Nelson sees the World Wide Web as a massively nerfed version of his original dream .	7.22368539779	sees	Nelson	the World Wide Web
+John Pemberton was the inventor of Coca Cola	12.0454973184	was	John Pemberton
+“It was Harry Truman who created the Presidential Medal of Freedom when he signed Executive Order 58011 , ” The President said .	1.82959516548	was	“It
+“It was Harry Truman who created the Presidential Medal of Freedom when he signed Executive Order 58011 , ” The President said .	11.1227536517	created	Harry Truman	Presidential Medal
+“It was Harry Truman who created the Presidential Medal of Freedom when he signed Executive Order 58011 , ” The President said .	5.11595766378	signed	Executive Order 58011
+“It was Harry Truman who created the Presidential Medal of Freedom when he signed Executive Order 58011 , ” The President said .	1.11863329858	said	President
+Pfizer , the world's biggest drug maker , sued Teva Pharmaceutical Industries to block a generic version of the painkiller Celebrex , the world's top - selling arthritis drug .	19.4747888782	sued	Teva Pharmaceutical Industries to block a generic version of the painkiller
+Pfizer , the world's biggest drug maker , sued Teva Pharmaceutical Industries to block a generic version of the painkiller Celebrex , the world's top - selling arthritis drug .	67.4938483356	block	Teva Pharmaceutical Industries	a generic version of the painkiller
+Pfizer , the world's biggest drug maker , sued Teva Pharmaceutical Industries to block a generic version of the painkiller Celebrex , the world's top - selling arthritis drug .	5.31215184079	selling	Teva	the world's top
+1886 John Pemberton begins selling medicinal syrup as a fountain drink , creating Coca - Cola - .	15.5212975328	begins	1886 John Pemberton	selling medicinal syrup as a fountain drink , creating Coca - Cola -
+1886 John Pemberton begins selling medicinal syrup as a fountain drink , creating Coca - Cola - .	318.854749907	selling	John Pemberton	medicinal syrup as a fountain drink	Coca - Cola
+1886 John Pemberton begins selling medicinal syrup as a fountain drink , creating Coca - Cola - .	3.5871774472	creating	John Pemberton	Coca - Cola -
+Last fall , Dr. Raymond V. Damadian was denied a Nobel Prize for his role in the development of magnetic resonance imaging .	2.58083001802	was	Dr.	resonance imaging
+Last fall , Dr. Raymond V. Damadian was denied a Nobel Prize for his role in the development of magnetic resonance imaging .	6.81756676396	denied	Damadian	Nobel
+Prize Fight : Raymond Damadian refuses to take his failure to win a Nobel Prize , for a prototype MRI	2.17636535097	refuses	Raymond Damadian
+Prize Fight : Raymond Damadian refuses to take his failure to win a Nobel Prize , for a prototype MRI	11.0877287902	take	Raymond	failure	win
+Prize Fight : Raymond Damadian refuses to take his failure to win a Nobel Prize , for a prototype MRI	41.4767626247	win	Raymond Damadian	a Nobel Prize
+Dean Kamen is best known as the inventor of the Segway Scooter .	2.90878096063	is	Dean	best
+Dean Kamen is best known as the inventor of the Segway Scooter .	33.1533789353	known	Dean Kamen	inventor	the Segway Scooter
+Nelson hates the World Wide Web , the Internet , XML and all embedded markup , and regards Berners - Lee's work as a gross over - simplification of his own work .	6.38510640455	hates	Nelson	World Wide Web
+Nelson hates the World Wide Web , the Internet , XML and all embedded markup , and regards Berners - Lee's work as a gross over - simplification of his own work .	3.67530035841	embedded	Lee's work
+Nelson hates the World Wide Web , the Internet , XML and all embedded markup , and regards Berners - Lee's work as a gross over - simplification of his own work .	4.20538831055	regards	Berners - Lee's work
+Mozart died in Vienna at age 35 of uremia , a kidney disorder that was caused by his excessive consumption of alcohol .	12.5036883652	died	Mozart	Vienna	of alcohol
+Mozart died in Vienna at age 35 of uremia , a kidney disorder that was caused by his excessive consumption of alcohol .	35.5467994921	was	Mozart	kidney	of alcohol
+Mozart died in Vienna at age 35 of uremia , a kidney disorder that was caused by his excessive consumption of alcohol .	13.9964187187	caused	kidney disorder	of
+Established by President Truman as a wartime honor , the Presidential Medal of Freedom was reintroduced by President Kennedy as a way to honor civilian service .	38.8304661251	Established	President Truman as a wartime honor
+Established by President Truman as a wartime honor , the Presidential Medal of Freedom was reintroduced by President Kennedy as a way to honor civilian service .	14.6470786341	was	Presidential	a way to honor civilian service
+Established by President Truman as a wartime honor , the Presidential Medal of Freedom was reintroduced by President Kennedy as a way to honor civilian service .	7.61689985033	reintroduced	Presidential Medal	Freedom	President Kennedy
+Established by President Truman as a wartime honor , the Presidential Medal of Freedom was reintroduced by President Kennedy as a way to honor civilian service .	3.04577902078	honor	President Kennedy	civilian service
+Mozart who became a free musician in Vienna often held concerts by subscription as one of his means to make his living.These	3.97066091718	became	Mozart	free musician
+Mozart who became a free musician in Vienna often held concerts by subscription as one of his means to make his living.These	2.24812562526	held	concerts
+Mozart who became a free musician in Vienna often held concerts by subscription as one of his means to make his living.These	1.63360788837	make	Mozart
+Einstein was awarded the Nobel Prize for physics in 1921 .	1.66449173081	was	Einstein
+Einstein was awarded the Nobel Prize for physics in 1921 .	49.4469598606	awarded	Einstein	the Nobel Prize	physics in 1921
+Albert Einstein , in a condolence letter to the family of the chemist who , like Einstein won a Nobel Prize but unlike him believed that the future of science was in its application .	4.94489640009	won	Einstein	a Nobel
+Albert Einstein , in a condolence letter to the family of the chemist who , like Einstein won a Nobel Prize but unlike him believed that the future of science was in its application .	9.7247681573	believed	future of science
+Albert Einstein , in a condolence letter to the family of the chemist who , like Einstein won a Nobel Prize but unlike him believed that the future of science was in its application .	9.7578847556	was	the future	science	in its application
+Kamen unveiled the Segway .	1.65320183104	unveiled	the Segway
+Steinbeck received the Pulitzer Prize in 1940 and the Nobel Prize for Literature in 1962 .	9.14253952989	received	Steinbeck	Pulitzer Prize	Prize
+Just a year later , in 1762 , Mozart performed in Vienna for the Archduchess Maria Theresia .	3.58845989476	performed	Mozart	Vienna
+Einstein received a variety of honours in his lifetime from the 1921 Nobel Prize in physics to an offer ( which he did not accept ) of the presidency of Israel after Chaim Weizmanns death in 1952 .	1.56160401499	received	Einstein	a variety of honours
+Einstein received a variety of honours in his lifetime from the 1921 Nobel Prize in physics to an offer ( which he did not accept ) of the presidency of Israel after Chaim Weizmanns death in 1952 .	1.29993539321	did	Einstein
+Einstein received a variety of honours in his lifetime from the 1921 Nobel Prize in physics to an offer ( which he did not accept ) of the presidency of Israel after Chaim Weizmanns death in 1952 .	3.30678089423	accept	presidency of Israel
+How many times did Albert Einstein win a Nobel Prize for physics ?	2.51469208853	did	Einstein
+How many times did Albert Einstein win a Nobel Prize for physics ?	5.78805407693	win	Albert	Nobel Prize
+Albert Einstein received his Nobel Prize for the Quantum theory ( rather than the theory of relativity ) .	6.02861540236	received	Albert Einstein	Nobel Prize
+The discovery revolutionized biology , and won Crick and Watson the Nobel Prize in 1962 along with their colleague Maurice Wilkins .	1.8331604052	revolutionized	biology
+The discovery revolutionized biology , and won Crick and Watson the Nobel Prize in 1962 along with their colleague Maurice Wilkins .	5.21117921514	won	Crick	Watson the Nobel Prize
+James Watson and Francis Crick uncovered the mystery of DNA and won the Nobel prize for a little two - page paper  two pages .	10.4826384049	uncovered	the mystery	DNA
+James Watson and Francis Crick uncovered the mystery of DNA and won the Nobel prize for a little two - page paper  two pages .	1.14746551331	won	the Nobel prize
+If you throw in spawning cosmology and modern string theory it's no wonder Albert Einstein won the Nobel Prize in Physics in 1921 .	1.78987254318	throw	spawning
+If you throw in spawning cosmology and modern string theory it's no wonder Albert Einstein won the Nobel Prize in Physics in 1921 .	7.75835996427	spawning	you	Physics	1921
+If you throw in spawning cosmology and modern string theory it's no wonder Albert Einstein won the Nobel Prize in Physics in 1921 .	40.5270386633	won	wonder Albert Einstein	Nobel Prize
+Joseph Pulitzer Is Renowned For Creating the Pulitzer Prize , First . . .	2.2541713198	Is	Pulitzer	Renowned
+Joseph Pulitzer Is Renowned For Creating the Pulitzer Prize , First . . .	5.80947004643	Creating	Joseph Pulitzer	the Pulitzer Prize
+So each is inevitably disappointed . - Albert Einstein ( 1879 - 1955 ) German born American Physicist &amp;amp; Nobel Prize Winner	23.0075383325	is	So
+So each is inevitably disappointed . - Albert Einstein ( 1879 - 1955 ) German born American Physicist &amp;amp; Nobel Prize Winner	3.2909787971	born	Physicist &amp;amp; Nobel
+. . . Back in America , fund raising for the pedestal was going particularly slowly , so Joseph Pulitzer noted for the Pulitzer Prize opened up the editorial pages . . .	5.83130506853	was	the pedestal	particularly slowly
+. . . Back in America , fund raising for the pedestal was going particularly slowly , so Joseph Pulitzer noted for the Pulitzer Prize opened up the editorial pages . . .	8.86066914637	going	fund raising for the pedestal	slowly	Joseph
+. . . Back in America , fund raising for the pedestal was going particularly slowly , so Joseph Pulitzer noted for the Pulitzer Prize opened up the editorial pages . . .	2.63530999151	noted	Prize
+. . . Back in America , fund raising for the pedestal was going particularly slowly , so Joseph Pulitzer noted for the Pulitzer Prize opened up the editorial pages . . .	18.8324641043	opened	Joseph Pulitzer	the Pulitzer Prize	pages
+[ * Crick received a Nobel Prize for discovering the structure of DNA . ]	10.8276856151	received	a Nobel Prize
+[ * Crick received a Nobel Prize for discovering the structure of DNA . ]	11.6347765453	discovering	structure of DNA
+Albert Einstein explained the photoelectric effect and received his only Nobel Prize .	3.96082835658	explained	Albert Einstein	effect
+Albert Einstein explained the photoelectric effect and received his only Nobel Prize .	17.6996759588	received	his only Nobel Prize
+Why did Watson and Crick win the Nobel Prize ?	2.67978430161	win	Nobel Prize
+For examples , the discovery of the structure of the DNA double helix was attributed to Professor Francis Crick ( co - winner of the Nobel Prize in Medicine , 1962 ) who was a physicist by training .	3.97969110005	was	double helix
+For examples , the discovery of the structure of the DNA double helix was attributed to Professor Francis Crick ( co - winner of the Nobel Prize in Medicine , 1962 ) who was a physicist by training .	245.790642242	attributed	the discovery of the structure of the DNA double helix
+For examples , the discovery of the structure of the DNA double helix was attributed to Professor Francis Crick ( co - winner of the Nobel Prize in Medicine , 1962 ) who was a physicist by training .	3.97969110005	was	double helix
+Watson , along with Dr. Francis Crick and Dr. Maurice Wilkins , won the 1962 Nobel Prize in Physiology or Medicine for solving the molecular structure of DNA .	7.99363180827	won	1962 Nobel Prize
+Watson , along with Dr. Francis Crick and Dr. Maurice Wilkins , won the 1962 Nobel Prize in Physiology or Medicine for solving the molecular structure of DNA .	10.4771612909	solving	the molecular structure of DNA
+They published their findings in the journal Nature in April of 1953 ; the discovery was considered tremendously significant , and in 1962 Watson and Crick and their collaborator Maurice Wilkins were awarded the Nobel Prize in Medicine .	9.8678945753	published	findings	April
+They published their findings in the journal Nature in April of 1953 ; the discovery was considered tremendously significant , and in 1962 Watson and Crick and their collaborator Maurice Wilkins were awarded the Nobel Prize in Medicine .	1.65447593647	was	discovery
+They published their findings in the journal Nature in April of 1953 ; the discovery was considered tremendously significant , and in 1962 Watson and Crick and their collaborator Maurice Wilkins were awarded the Nobel Prize in Medicine .	2.75011508515	considered	tremendously significant
+They published their findings in the journal Nature in April of 1953 ; the discovery was considered tremendously significant , and in 1962 Watson and Crick and their collaborator Maurice Wilkins were awarded the Nobel Prize in Medicine .	23.9566059936	awarded	Wilkins	Nobel Prize	Medicine
+Steinbeck receives a Pulitzer Prize and Ford receives an Oscar .	33.7225284274	receives	Steinbeck	Pulitzer Prize	an Oscar
+Steinbeck receives a Pulitzer Prize and Ford receives an Oscar .	33.7225284274	receives	Steinbeck	Pulitzer Prize	an Oscar
+UC San Diego professor Francis Crick received Nobel Prize in Medicine .	4.16046780879	received	Nobel Prize
+John Steinbeck also earned alot of awards , one being the Pulitzer Prize in 1940 .	3.1547938476	earned	John Steinbeck	alot	awards
+John Steinbeck also earned alot of awards , one being the Pulitzer Prize in 1940 .	5.65249692149	being	John Steinbeck	Prize
+James Watson and Francis Crick describe double helix structure of DNA ( receive Nobel Prize in 1962 ) .	5.80165916561	receive	Nobel Prize in 1962
+More than Fifty years ago , James Watson and Francis Crick discovered the structure of DNA for which they received the Nobel Prize .	3.04319511141	discovered	structure
+More than Fifty years ago , James Watson and Francis Crick discovered the structure of DNA for which they received the Nobel Prize .	3.84082098941	received	the structure
+A good deal of the credit for these discoveries has gone to Francis Crick who , together with James Watson , won the Nobel Prize for having determined the nature of DNA .	11.2166165234	has	deal	credit	Crick
+A good deal of the credit for these discoveries has gone to Francis Crick who , together with James Watson , won the Nobel Prize for having determined the nature of DNA .	9.09265870588	gone	good deal of the credit for these discoveries	Francis Crick
+A good deal of the credit for these discoveries has gone to Francis Crick who , together with James Watson , won the Nobel Prize for having determined the nature of DNA .	7.10758702844	won	Francis	Nobel Prize
+A good deal of the credit for these discoveries has gone to Francis Crick who , together with James Watson , won the Nobel Prize for having determined the nature of DNA .	5.68775707802	having	James Watson	the nature of DNA
+A good deal of the credit for these discoveries has gone to Francis Crick who , together with James Watson , won the Nobel Prize for having determined the nature of DNA .	13.2462171843	determined	the nature of DNA
+Although she was instrumental in the discovery of the structure of DNA , Crick and Watson are credited with the discovery and received a Nobel Prize for the achievement .	2.56417488698	credited	Watson
+Although she was instrumental in the discovery of the structure of DNA , Crick and Watson are credited with the discovery and received a Nobel Prize for the achievement .	12.0496596049	received	a Nobel Prize

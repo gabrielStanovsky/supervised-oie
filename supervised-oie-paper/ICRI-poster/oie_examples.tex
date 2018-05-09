@@ -1,0 +1,76 @@
+\begin{table}
+  \resizebox{1\textwidth}{!}{
+    \begin{tabular}{@{}l@{}}
+     %% \toprule
+     %% \textbf{OIE Encoding Examples}  \\ \midrule
+%%          \sent{The president claimed that he won the majority vote} \\
+%%          \begin{tabular}[c]{@{}l@{}}
+%%            \extraction{The president}{claimed that he won}{the majority vote}  \\\cdashline{1-1}
+%% \small{           \ann{The}{A0-B} \ann{president}{A0-I} \ann{claimed}{P-B} \ann{that}{P-I} \ann{he}{P-I} \ann{won}{P-I}
+%%            \ann{the}{A1-B} \ann{majority}{A1-I} \ann{vote}{A1-I}}
+%%          \end{tabular} \\\hline
+
+         \sent{Barack Obama, a former U.S president, was born in Hawaii} \\
+         \begin{tabular}[c]{@{}l@{}}
+           \extraction{Barack Obama}{was born in}{Hawaii}  \\
+           \extraction{a former U.S. president}{was born in}{Hawaii} \\\cdashline{1-1}
+\small{           \ann{Barack}{A0-B} \ann{Obama}{A0-I} \ann{,}{O} \ann{a}{O} \ann{former}{O} \ann{U.S.}{O} \ann{president}{O} \ann{,}{O} \ann{was}{P-B} \ann{born}{P-I} \ann{in}{P-I} \ann{Hawaii}{A1-B} }\\
+\small{           \ann{Barack}{O} \ann{Obama}{O} \ann{,}{O} \ann{a}{A0-B} \ann{former}{A0-I} \ann{U.S.}{A0-I} \ann{president}{A0-I} \ann{,}{O} \ann{was}{P-B} \ann{born}{P-I} \ann{in}{P-I} \ann{Hawaii}{A1-B}}
+         \end{tabular} \\\hline
+
+%%          \sent{Russian plane was carrying ammunition for Syria} \\
+%%          \begin{tabular}[c]{@{}l@{}}
+%%           (Russian plane; \pred{was carrying}; ammunition; for Syria) \\\cdashline{1-1}
+%% \small{           \ann{Russian}{A0-B} \ann{plane}{A0-I} \ann{was}{P-B} \ann{carrying}{P-I} \ann{ammunition}{A1-B}
+%%            \ann{for}{A2-B} \ann{Syria}{A2-I}}
+%%          \end{tabular} \\\hline
+
+%%          \sent{Obama sends note to Russia about the hacking} \\
+%%          \begin{tabular}[c]{@{}l@{}}
+%%            (Obama; \pred{sends note}; to Russia; about the hacking) \\\cdashline{1-1}
+%% \small{           \ann{Obama}{A0-B} \ann{sends}{P-B} \ann{note}{P-I} \ann{to}{A1-B} \ann{Russia}{A1-I} \ann{about}{A2-B} \ann{the}{A2-I} \ann{hacking}{A2-I}}
+%%          \end{tabular} \\\hline
+
+         \sent{Theresa May plans for Brexit, on which the UK has voted on last June} \\
+         \begin{tabular}[c]{@{}l@{}}
+           (Theresa May; \pred{plans for}; Brexit) \\
+           (the UK; \pred{has voted on}; Brexit; last June) \\\cdashline{1-1}
+           \small{           \ann{Theresa}{A0-B} \ann{May}{A0-I} \ann{plans}{P-B} \ann{for}{P-I} \ann{Brexit}{A1-B} \ann{,}{O} \ann{on}{O} \ann{which}{O} \ann{the}{O} \ann{UK}{O} \ann{has}{O} \ann{voted}{O} \ann{on}{O} \ann{last}{O} \ann{June}{O}}\\
+     \small{\ann{Theresa}{O} \ann{May}{O} \ann{plans}{O} \ann{for}{O} \ann{Brexit}{A1-B} \ann{,}{O} \ann{on}{O} \ann{which}{O} \ann{the}{A0-B} \ann{UK}{A0-I} \ann{has}{P-B} \ann{voted}{P-I} \ann{on}{P-I} \ann{last}{A2-B} \ann{June}{A2-I}}
+
+         \end{tabular} \\
+
+       \bottomrule
+      \end{tabular}
+  }
+  %% \caption{Example sentences and respective Open IE extractions.
+  %%   The corresponding encodings are presented below the dashed lines, where subscripts indicate the associated
+  %%   BIO label.}
+  \label{tab:oie_examples}
+  \end{table}
+
+
+
+%% \begin{figure*}[tb!]
+%% %  \vspace{-1\baselineskip}
+%%   \framebox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{
+%%       \begin{enumerate}
+%%         \item
+%%          \sent{The president claimed that he won the majority vote}\\
+%%          \extraction{The president}{claimed that he won}{the majority vote}
+%%        \item
+%%          \sent{Barack Obama, a former U.S president, was born in Hawaii}\\
+%%          \extraction{Barack Obama}{was born in}{Hawaii}\\
+%%          \extraction{a former U.S. president}{was born in}{Hawaii}
+%%        \item
+%%          \sent{Russian plane was carrying ammunition for the Syrian government}\\
+%%          (Russian plane; \pred{was carrying}; ammunition; for the Syrian government)
+%%        \item
+%%          \sent{Obama administration sends note to Russia regarding alleged hacking}\\
+%%          (Obama administration; \pred{sends note}; to Russia; regarding alleged hacking)
+%%       \end{enumerate}
+%%   }}
+%%   \caption{Example sentences and respective Open IE extractions.}
+%%   \label{fig:oie_examples}
+%% \end{figure*}
+%% \todo{Figure \ref{fig:oie_examples}: Should we add the corresponding SRL structures?}

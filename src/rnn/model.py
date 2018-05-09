@@ -4,11 +4,10 @@
 import numpy as np
 import math
 import pandas
-import nltk
 import time
 from docopt import docopt
 from keras.models import Sequential, Model
-from keras.layers import Input, Dense, LSTM, Embedding, TimeDistributedDense,\
+from keras.layers import Input, Dense, LSTM, Embedding, \
     TimeDistributed, merge, Bidirectional, Dropout
 from keras.wrappers.scikit_learn import KerasClassifier
 from keras.utils import np_utils
@@ -24,11 +23,13 @@ from operator import itemgetter
 from keras.callbacks import LambdaCallback, ModelCheckpoint
 from sklearn import metrics
 from pprint import pformat
-from common.symbols import NLTK_POS_TAGS
+from common.symbols import SPACY_POS_TAGS
 from collections import defaultdict
+from parsers.spacy_wrapper import spacy_whitespace_parser as spacy_ws
 
 import os
 import json
+import pdb
 from keras.models import model_from_json
 import logging
 logging.basicConfig(level = logging.DEBUG)
@@ -53,7 +54,6 @@ class RNN_model:
         emb_filename - the filename from which to load the embedding
                        (Currenly only Glove. Idea: parse by filename)
         batch_size - batch size for training
-        pre_trained_emb - an embedding class
         seed - the random seed for reproduciblity
         sep  - separator in the csv dataset files for this model
         hidden_units - number of hidden units per layer
@@ -97,13 +97,13 @@ class RNN_model:
         """
 
         sample_output_callback = LambdaCallback(on_epoch_end = lambda epoch, logs:\
-                                                pprint(self.sample_labels(self.model.predict(X))))
+                                                logging.debug(pformat(self.sample_labels(self.model.predict(X)))))
         checkpoint = ModelCheckpoint(os.path.join(self.model_dir,
                                                   "weights.hdf5"),
                                      verbose = 1,
                                      save_best_only = False)   # TODO: is there a way to save by best val_acc?
 
-        return [#sample_output_callback,
+        return [sample_output_callback,
                 checkpoint]
 
     def plot(self, fn, train_fn):
@@ -150,7 +150,7 @@ class RNN_model:
         logging.debug("Training model on {}".format(train_fn))
         self.model.fit(X_train, Y_train,
                        batch_size = self.batch_size,
-                       nb_epoch = self.epochs,
+                       epochs = self.epochs,
                        validation_data = (X_dev, Y_dev),
                        callbacks = self.get_callbacks(X_train))
 
@@ -175,17 +175,21 @@ class RNN_model:
         sent - a list of string tokens
         """
         ret = []
+        sent_str = " ".join(sent)
 
         # Extract predicates by looking at verbal POS
-        preds = [(ind, pred_word) for ind, (pred_word, pos) in enumerate(nltk.pos_tag(sent))
-                 if pos.startswith("V")]
+
+        preds = [(word.i, str(word))
+                 for word
+                 in spacy_ws(sent_str)
+                 if word.tag_.startswith("V")]
 
         # Calculate num of samples (round up to the nearst multiple of sent_maxlen)
         num_of_samples = np.ceil(float(len(sent)) / self.sent_maxlen) * self.sent_maxlen
 
         # Run RNN for each predicate on this sentence
         for ind, pred in preds:
-            cur_sample = self.create_sample(sent, pred)
+            cur_sample = self.create_sample(sent, ind)
             X = self.encode_inputs([cur_sample])
             ret.append(((ind, pred),
                         [(self.consolidate_label(label), float(prob))
@@ -195,12 +199,13 @@ class RNN_model:
                                                                               2)[:len(sent)]]))
         return ret
 
-    def create_sample(self, sent, pred_word):
+    def create_sample(self, sent, head_pred_id):
         """
         Return a dataframe which could be given to encode_inputs
         """
         return pandas.DataFrame({"word": sent,
-                                 "pred": [pred_word] * len(sent)})
+                                 "run_id": [-1] * len(sent), # Mock running id
+                                 "head_pred_id": head_pred_id})
 
     def test(self, test_fn, eval_metrics):
         """
@@ -233,7 +238,10 @@ class RNN_model:
         """
         Load a supervised OIE dataset from file
         """
-        df = pandas.read_csv(fn, sep = self.sep, header = 0)
+        df = pandas.read_csv(fn,
+                             sep = self.sep,
+                             header = 0,
+                             keep_default_na = False)
 
         # Encode one-hot representation of the labels
         if self.classes_() is None:
@@ -248,8 +256,9 @@ class RNN_model:
         """
         Split a data frame by rows accroding to the sentences
         """
-        return [df[df.run_id == i] for i in range(min(df.run_id), max(df.run_id))]
-
+        return [df[df.run_id == run_id]
+                for run_id
+                in sorted(set(df.run_id.values))]
 
     def get_fixed_size(self, sents):
         """
@@ -260,35 +269,78 @@ class RNN_model:
                 for sent in sents
                 for s_ind in range(0, len(sent), self.sent_maxlen)]
 
+    def get_head_pred_word(self, full_sent):
+        """
+        Get the head predicate word from a full sentence conll.
+        """
+        assert(len(set(full_sent.head_pred_id.values)) == 1) # Sanity check
+        pred_ind = full_sent.head_pred_id.values[0]
+
+        return full_sent.word.values[pred_ind] \
+            if pred_ind != -1 \
+               else full_sent.pred.values[0].split(" ")[0]
 
     def encode_inputs(self, sents):
         """
-        Given a dataframe split to sentences, encode inputs for rnn classification.
+        Given a dataframe which is already split to sentences,
+        encode inputs for rnn classification.
         Should return a dictionary of sequences of sample of length maxlen.
         """
         word_inputs = []
         pred_inputs = []
         pos_inputs = []
-        sents = self.get_fixed_size(sents)
 
+        # Preproc to get all preds per run_id
+        # Sanity check - make sure that all sents agree on run_id
+        assert(all([len(set(sent.run_id.values)) == 1
+                    for sent in sents]))
+        run_id_to_pred = dict([(int(sent.run_id.values[0]),
+                                self.get_head_pred_word(sent))
+                               for sent in sents])
+
+        # Construct a mapping from running word index to pos
+        word_id_to_pos = {}
         for sent in sents:
-            # pd assigns NaN for very infreq. empty string (see wiki train)
-            sent_words = [word
-                         if not (isinstance(word, float) and math.isnan(word)) else " "
-                         for word in sent.word.values]
+            indices = sent.index.values
+            words = sent.word.values
 
-            pos_tags_encodings = [NLTK_POS_TAGS.index(tag)
-                                  for (_, tag)
-                                  in nltk.pos_tag(sent_words)]
-            word_encodings = [self.emb.get_word_index(w) for w in sent_words]
-            pred_word_encodings = [self.emb.get_word_index(w) for w in sent_words]
+            for index, word in zip(indices,
+                                   spacy_ws(" ".join(words))):
+                word_id_to_pos[index] = word.tag_
+
+        fixed_size_sents = self.get_fixed_size(sents)
+
+
+        for sent in fixed_size_sents:
+
+            assert(len(set(sent.run_id.values)) == 1)
+
+            word_indices = sent.index.values
+            sent_words = sent.word.values
+
+            sent_str = " ".join(sent_words)
+
+
+
+            pos_tags_encodings = [(SPACY_POS_TAGS.index(word_id_to_pos[word_ind]) \
+                                   if word_id_to_pos[word_ind] in SPACY_POS_TAGS \
+                                   else 0)
+                                  for word_ind
+                                  in word_indices]
+
+            word_encodings = [self.emb.get_word_index(w)
+                              for w in sent_words]
+
+            # Same pred word encodings for all words in the sentence
+            pred_word = run_id_to_pred[int(sent.run_id.values[0])]
+            pred_word_encodings = [self.emb.get_word_index(pred_word)
+                                    for _ in sent_words]
+
             word_inputs.append([Sample(w) for w in word_encodings])
             pred_inputs.append([Sample(w) for w in pred_word_encodings])
             pos_inputs.append([Sample(pos) for pos in pos_tags_encodings])
 
         # Pad / truncate to desired maximum length
-        ret = {"word_inputs" : [],
-               "predicate_inputs": []}
         ret = defaultdict(lambda: [])
 
         for name, sequence in zip(["word_inputs", "predicate_inputs", "postags_inputs"],
@@ -310,9 +362,8 @@ class RNN_model:
         sents = self.get_fixed_size(sents)
         # Encode outputs
         for sent in sents:
-            output_encodings.append(list(np_utils.to_categorical(\
-                                                list(self.transform_labels(sent.label.values)),
-                                                            nb_classes = self.num_of_classes())))
+            output_encodings.append(list(np_utils.to_categorical(list(self.transform_labels(sent.label.values)),
+                                                                 num_classes = self.num_of_classes())))
 
         # Pad / truncate to maximum length
         return np.ndarray(shape = (len(sents),
@@ -374,7 +425,7 @@ class RNN_model:
         Embed Part of Speech using this instance params
         """
         return Embedding(output_dim = self.pos_tag_embedding_size,
-                         input_dim = len(NLTK_POS_TAGS),
+                         input_dim = len(SPACY_POS_TAGS),
                          input_length = self.sent_maxlen)
 
     def predict_classes(self):
@@ -680,5 +731,4 @@ dimensions to allow for more flexibility while still fitting training data.
 Ideas:
 
 - test performance on arguments vs. adjuncts.
-
 """

@@ -1,0 +1,112 @@
+%\title{emnlp 2017 instructions}
+% File emnlp2017.tex
+%
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage{emnlp2017}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{todonotes}
+\usepackage{url}
+\usepackage{blindtext}
+\usepackage{fancybox, graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{arydshln}
+\usepackage{pgf-pie}
+\usepackage{float}
+
+% Uncomment this line for the final submission:
+%\emnlpfinalcopy
+
+%  Enter the EMNLP Paper ID here:
+\def\emnlppaperid{388}
+
+% To expand the titlebox for more authors, uncomment
+% below and set accordingly.
+% \addtolength\titlebox{.5in}    
+
+\newcommand\BibTeX{B{\sc ib}\TeX}
+
+\input{commands}
+\title{Supervised Open Information Extraction}
+
+% Author information can be set in various styles:
+% For several authors from the same institution:
+% \author{Author 1 \and ... \and Author n \\
+%         Address line \\ ... \\ Address line}
+% if the names do not fit well on one line use
+%         Author 1 \\ {\bf Author 2} \\ ... \\ {\bf Author n} \\
+% For authors from different institutions:
+% \author{Author 1 \\ Address line \\  ... \\ Address line
+%         \And  ... \And
+%         Author n \\ Address line \\ ... \\ Address line}
+% To start a seperate ``row'' of authors use \AND, as in
+% \author{Author 1 \\ Address line \\  ... \\ Address line
+%         \AND
+%         Author 2 \\ Address line \\ ... \\ Address line \And
+%         Author 3 \\ Address line \\ ... \\ Address line}
+% If the title and author information does not fit in the area allocated,
+% place \setlength\titlebox{<new height>} right after
+% at the top, where <new height> can be something larger than 2.25in
+\author{Siddharth Patwardhan \and Preethi Raghavan \\
+  {\tt publication@emnlp2017.net}}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+  Open Information Extraction (Open IE) has gained popularity as an underlying representation in a
+  wide array of semantic applications.
+  However, the lack of a large gold standard corpus for Open IE has
+  limited the development of automatic extraction techniques to largely rule-based algorithms.
+  In a recent advancement, a first large Open IE corpus for verbal predicates was presented, which ``opens the door'' for applying modern machine learning techniques for this task.
+  In this paper, we utilize this corpus to develop a first supervised Open IE extractor.
+  As this is the first supervised Open IE system,
+  we use a deep bi-LSTM transducer, proven to be useful in similar tasks, and focus on laying the basic building blocks needed for supervised Open IE: encoding, decoding, confidence estimation, and proper error analysis.
+  Our evaluation shows that the new extractor significantly outperforms
+  the currently most prominent Open IE systems.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:introduction}
+\input{introduction}
+
+
+\section{Background: Open Information Extraction}
+\label{sec:background}
+\input{background}
+
+
+
+\section{Model}
+\label{sec:model}
+\input{model}
+
+\section{Evaluation}
+\label{sec:evaluation}
+\input{evaluation}
+
+\section{Related Work}
+\label{sec:related}
+\input{related}
+
+\section{Conclusions and Future Work}
+\label{sec:conclusions}
+We presented the first supervised model for Open IE,
+which uses of the recently published large scale corpus for the task \cite{Stanovsky2016EMNLP}.
+We model the task as a word-transducing problem, and presented solutions and
+adjustments for various task-specific challenges: the encoding-decoding of Open IE instances, while providing a relabeling scheme which alleviates an inherent label-bias, a metric for computing the confidence of an extraction,
+and applied a bi-LSTM transducer which follows state-of-the-art models for supervised SRL.
+We tested this model against very strong baselines consisting of the current top performing Open IE systems, and
+found that it is superior in terms of overall aggregated precision and recall.
+In future work, we plan to extend this model to include a more principled learning of the confidence metric,
+as well as to extend it beyond non-verbal predicates, which first require supporting supervised
+data sets for non-verbal Open IE.
+\bibliography{bib}
+\bibliographystyle{emnlp_natbib}
+
+\end{document}

@@ -1,0 +1,45 @@
+%%% Consistency
+\newcommand{\ex}[1]{``\emph{#1}''}
+\newcommand{\ann}[2]{#1$_{#2}$}
+\newcommand{\brand}[1]{{\tt #1}}
+\newcommand{\dbpedia}[0]{DBpedia}
+\newcommand{\triplet}[3]{(#1, \textbf{#2}, {#3})}
+\newcommand{\aap}[0]{\brand{Ask a Patient}}
+\newcommand{\keras}[0]{Keras}
+\newcommand{\tensorflow}[0]{TensorFlow}
+\newcommand{\wv}[0]{Word2Vec}
+\newcommand{\rascal}[0]{RASCAL}
+\newcommand{\oie}[0]{Open IE}
+\newcommand{\sent}[1]{``\emph{#1}''}
+\newcommand{\pred}[1]{\textbf{#1}}
+\newcommand{\extraction}[3]{(#1; \pred{#2}; #3)}
+\newcommand{\oielabel}[1]{\textbf{\emph{#1}}}
+\newcommand{\rnnoie}[0]{RnnOIE}
+\newcommand{\rnnoieVerb}[0]{\rnnoie-verb}
+\newcommand{\rnnoieAw}[0]{\rnnoie-verb+aw}
+
+% Placeholders
+
+\newcommand{\blindfig}[2]{
+  \begin{figure}[ht]
+    \resizebox{1\columnwidth}{!}{
+      \includegraphics{figure-file}
+    }
+    \caption{#1 (placeholder)}
+    \label{#2}
+  \end{figure}
+}
+
+\newcommand{\Blindfig}[2]{
+  \begin{figure*}[ht]
+    \resizebox{1\textwidth}{!}{
+      \includegraphics{figure-file}
+    }
+    \caption{#1 (placeholder)}
+    \label{#2}
+  \end{figure*}
+}
+
+
+% Misc
+\newcommand*\samethanks[1][\value{footnote}]{\footnotemark[#1]}

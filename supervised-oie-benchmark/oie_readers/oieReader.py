@@ -17,13 +17,29 @@ class OieReader:
         """
         raw_sents = [line.strip() for line in open(corpus_fn)]
         with open(out_fn, 'w') as fout:
-            for (sent, exs) in self.oie.iteritems():
+            for line in self.get_tabbed().split('\n'):
+                data = line.split('\t')
+                sent = data[0]
                 if sent in raw_sents:
-                    for ex in exs:
-                        fout.write('\t'.join(map(str,
-                                                  [ex.sent,
-                                                   ex.confidence,
-                                                   ex.pred,
-                                                   '\t'.join(ex.args)])) + '\n')
+                    fout.write(line + '\n')
 
+    def output_tabbed(self, out_fn):
+        """
+        Write a tabbed represenation of this corpus.
+        """
+        with open(out_fn, 'w') as fout:
+            fout.write(self.get_tabbed())
+
+    def get_tabbed(self):
+        """
+        Get a tabbed format representation of this corpus (assumes that input was
+        already read).
+        """
+        return "\n".join(['\t'.join(map(str,
+                                        [ex.sent,
+                                         ex.confidence,
+                                         ex.pred,
+                                         '\t'.join(ex.args)]))
+                          for (sent, exs) in self.oie.iteritems()
+                          for ex in exs])
 

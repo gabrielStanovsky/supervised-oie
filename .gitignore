@@ -95,3 +95,10 @@ model.png
 *.hdf5
 models/
 best_models/
+.venv/
+oie_corpus/
+*.tar.gz
+*.keep
+supervised-oie-benchmark/question_distributions/
+external_datasets/mesquita_2013/experiments/
+*.zip

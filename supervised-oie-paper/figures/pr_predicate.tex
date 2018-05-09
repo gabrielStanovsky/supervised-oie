@@ -1,0 +1,44 @@
+\pgfplotsset{
+	compat=1.5, 
+	label style={font=\footnotesize},
+	legend style={font=\footnotesize},
+	every tick label/.append style={font=\tiny},
+}
+
+
+
+\begin{figure}  
+
+\vspace{-2mm}
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+	xlabel=Recall,
+	ylabel=Precision,
+	ymin=0,
+	ymax=1,
+        xmin=0,
+        xmax=1,
+	%ytick distance=.1,
+	height=0.25\textheight,
+%	width=\columnwidth,
+	axis lines=left,
+	legend entries={RnnOIE,OpenIE-4,PropS,ClausIE},
+	legend style={draw=none,font=\tiny,at={(1,0.01)}, anchor=south east},
+         /pgf/number format/.cd,
+        1000 sep={}
+]
+
+\addplot[red,mark size=0pt] table [x=Recall,y=Precision] {../evaluations/figures/joint/predicate/RnnOIE.dat};
+\addplot[brown,mark size=0pt] table [x=Recall,y=Precision] {../evaluations/figures/joint/predicate/OpenIE-4.dat};
+\addplot[orange,mark size=0pt] table [x=Recall,y=Precision] {../evaluations/figures/joint/predicate/PropS.dat};
+\addplot[blue,mark size=0pt] table [x=Recall,y=Precision] {../evaluations/figures/joint/predicate/ClausIE.dat};
+
+\end{axis}
+\end{tikzpicture}
+\caption{Predicate identification @}
+\label{fig:rascal}
+
+
+
+\end{figure}

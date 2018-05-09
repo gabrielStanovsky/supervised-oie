@@ -13,13 +13,17 @@ class GoldReader(OieReader):
     def read(self, fn):
         d = defaultdict(lambda: [])
         with open(fn) as fin:
-            for line in fin:
+            for line_ind, line in enumerate(fin):
                 data = line.strip().split('\t')
                 text, rel = data[:2]
                 args = data[2:]
                 confidence = 1
                 
-                curExtraction = Extraction(pred = rel, sent = text, confidence = float(confidence))
+                curExtraction = Extraction(pred = rel,
+                                           head_pred_index = None,
+                                           sent = text,
+                                           confidence = float(confidence),
+                                           index = line_ind)
                 for arg in args:
                     curExtraction.addArg(arg)
                     
