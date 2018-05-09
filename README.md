@@ -3,7 +3,7 @@
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [supervised-oie](#supervised-oie)
-  - [Citing](#citing)
+  - [Citing :bookmark:](#citing-bookmark)
   - [Quickstart :hatching_chick:](#quickstart-hatching_chick)
   - [More scripts](#more-scripts)
   - [TODO:](#todo)
@@ -12,8 +12,8 @@
 
 # supervised-oie
 Code for training a supervised Neural Open IE model, as described in our [NAACL2018 paper](https://www.cs.bgu.ac.il/~gabriels/naacl2018.pdf).
-
-Citing
+y
+Citing :bookmark:
 ------
 If you use this software, please cite:
 ```
