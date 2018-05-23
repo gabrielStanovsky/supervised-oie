@@ -10,7 +10,7 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # supervised-oie
-Code for training a supervised Neural Open IE model, as described in our [NAACL2018 paper](https://www.cs.bgu.ac.il/~gabriels/naacl2018.pdf).<br>
+Code for training a supervised Neural Open IE model, as described in our [NAACL2018 paper](http://127.0.0.1:4000/assets/papers/naacl18long/paper.pdf).<br>
 :construction: *Still under construction* :construction:
 
 
