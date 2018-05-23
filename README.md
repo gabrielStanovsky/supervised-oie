@@ -6,13 +6,12 @@
   - [Citing :bookmark:](#citing-bookmark)
   - [Quickstart :hatching_chick:](#quickstart-hatching_chick)
   - [More scripts :bicyclist:](#more-scripts-bicyclist)
-  - [TODO:](#todo)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # supervised-oie
 Code for training a supervised Neural Open IE model, as described in our [NAACL2018 paper](https://www.cs.bgu.ac.il/~gabriels/naacl2018.pdf).<br>
-:construction: Still under construction. :construction:
+:construction: *Still under construction* :construction:
 
 
 Citing :bookmark:

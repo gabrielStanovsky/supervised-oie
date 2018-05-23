@@ -103,3 +103,4 @@ supervised-oie-benchmark/question_distributions/
 external_datasets/mesquita_2013/experiments/
 *.zip
 supervised-oie-paper/
+download_best_models.sh
