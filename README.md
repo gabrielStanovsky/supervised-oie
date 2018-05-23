@@ -12,6 +12,8 @@
 
 # supervised-oie
 Code for training a supervised Neural Open IE model, as described in our [NAACL2018 paper](https://www.cs.bgu.ac.il/~gabriels/naacl2018.pdf).
+:construction: Still under construction. :construction:
+
 
 Citing :bookmark:
 ------
@@ -64,7 +66,4 @@ More scripts :bicyclist:
 ------------
 
 See [src/scripts](src/scripts) for more handy scripts. Additional documentation coming soon!
-
-## TODO:
-* Make sure to delete [oie_benchmark](oie_benchmark)
 

@@ -1,7 +1,0 @@
-#!/bin/bash
-set -e
-# rm -f *.bbl
-pdflatex main
-# bibtex main
-# pdflatex main
-# pdflatex main
