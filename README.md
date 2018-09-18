@@ -1,5 +1,5 @@
 # Deprecated! 
-The maintanence of this project has moved to the [AllenNLP framework](https://allennlp.org/). <br>
+The maintenance of this project has moved to the [AllenNLP framework](https://allennlp.org/). <br>
 Over at the [models page](https://allennlp.org/models) you can find [train and prediction instructions](https://allennlp.org/models#open-information-extraction), as well as an [online demo](http://demo.allennlp.org/open-information-extraction).
 
 
