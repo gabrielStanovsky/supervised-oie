@@ -1,6 +1,7 @@
 # Deprecated! 
 The maintenance of this project has moved to the [AllenNLP framework](https://allennlp.org/). <br>
 Where you can use [the model and an online demo](http://demo.allennlp.org/open-information-extraction).
+This [thin wrapper](https://github.com/gabrielStanovsky/supervised_oie_wrapper) may also be useful if you want to run the pretrained model.
 
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
