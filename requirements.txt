@@ -20,7 +20,7 @@ Markdown==2.2.0
 matplotlib==2.1.0
 mock==2.0.0
 murmurhash==0.26.4
-nltk==3.2.5
+nltk==3.4.5
 numpy==1.11.0
 pandas==0.20.2
 pathlib==1.0.1
