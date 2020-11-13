@@ -43,7 +43,7 @@ six==1.10.0
 sklearn==0.0
 spacy==1.9.0
 subprocess32==3.2.7
-tensorflow==1.2.0
+tensorflow==2.3.1
 termcolor==1.1.0
 Theano==0.9.0
 thinc==6.5.2
