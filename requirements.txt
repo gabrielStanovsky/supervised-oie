@@ -32,7 +32,7 @@ pydot==1.2.3
 pyparsing==2.2.0
 python-dateutil==2.6.0
 pytz==2017.2
-PyYAML==3.12
+PyYAML==5.4
 recurrentshop==1.0.0
 regex==2017.11.9
 requests==2.18.4
