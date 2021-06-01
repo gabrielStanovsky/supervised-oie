@@ -50,7 +50,7 @@ thinc==6.5.2
 toolz==0.8.2
 tqdm==4.19.4
 ujson==1.35
-urllib3==1.22
+urllib3==1.26.5
 wcwidth==0.1.7
 Werkzeug==0.12.2
 wrapt==1.10.11
