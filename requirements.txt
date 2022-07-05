@@ -49,7 +49,7 @@ Theano==0.9.0
 thinc==6.5.2
 toolz==0.8.2
 tqdm==4.19.4
-ujson==1.35
+ujson==5.4.0
 urllib3==1.22
 wcwidth==0.1.7
 Werkzeug==0.12.2
