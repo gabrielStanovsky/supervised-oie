@@ -27,7 +27,7 @@ pathlib==1.0.1
 pbr==3.1.0
 plac==0.9.6
 preshed==1.0.0
-protobuf==3.3.0
+protobuf==3.18.3
 pydot==1.2.3
 pyparsing==2.2.0
 python-dateutil==2.6.0
